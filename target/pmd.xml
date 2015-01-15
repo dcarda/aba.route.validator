@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.1.2" timestamp="2015-01-15T14:37:06.704">
+<file name="D:\projects\CardaTech\aba.route.validator\src\main\java\com\cardatechnologies\utils\validators\abaroutevalidator\AbaRouteValidator.java">
+<violation beginline="64" endline="64" begincolumn="17" endcolumn="20" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validate" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="72" endline="72" begincolumn="13" endcolumn="14" rule="UnusedLocalVariable" ruleset="Unused Code" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateAbaNumberChecksum" variable="i3" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'i3'.
+</violation>
+<violation beginline="75" endline="75" begincolumn="13" endcolumn="14" rule="UnusedLocalVariable" ruleset="Unused Code" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateAbaNumberChecksum" variable="i6" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'i6'.
+</violation>
+<violation beginline="122" endline="128" begincolumn="26" endcolumn="34" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateAbaNumberChecksum" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="122" endline="122" begincolumn="27" endcolumn="32" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateAbaNumberChecksum" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="122" endline="122" begincolumn="38" endcolumn="43" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateAbaNumberChecksum" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="125" endline="125" begincolumn="21" endcolumn="26" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateAbaNumberChecksum" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="128" endline="128" begincolumn="21" endcolumn="26" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateAbaNumberChecksum" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="128" endline="128" begincolumn="32" endcolumn="33" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateAbaNumberChecksum" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="131" endline="131" begincolumn="14" endcolumn="31" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateAbaNumberChecksum" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="158" endline="158" begincolumn="16" endcolumn="50" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="158" endline="158" begincolumn="17" endcolumn="29" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="158" endline="158" begincolumn="36" endcolumn="49" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="158" endline="158" begincolumn="57" endcolumn="92" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="158" endline="158" begincolumn="58" endcolumn="71" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="158" endline="158" begincolumn="78" endcolumn="91" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="159" endline="159" begincolumn="21" endcolumn="56" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="159" endline="159" begincolumn="22" endcolumn="35" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="159" endline="159" begincolumn="42" endcolumn="55" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="159" endline="159" begincolumn="63" endcolumn="78" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="159" endline="159" begincolumn="64" endcolumn="77" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="172" endline="172" begincolumn="25" endcolumn="29" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="isNumeric" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="177" endline="177" begincolumn="17" endcolumn="20" rule="UselessParentheses" ruleset="Unnecessary" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="isNumeric" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+</pmd>
