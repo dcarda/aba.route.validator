@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.cardatechnologies.utils.validators.abaroutevalidator.Test_AbaRouteValidator_13b
--------------------------------------------------------------------------------
-Tests run: 2800, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec - in com.cardatechnologies.utils.validators.abaroutevalidator.Test_AbaRouteValidator_13b

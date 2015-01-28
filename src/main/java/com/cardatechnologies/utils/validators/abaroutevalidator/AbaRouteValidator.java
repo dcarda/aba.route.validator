@@ -176,4 +176,18 @@ public class AbaRouteValidator {
         // All is well!
         return (true);
     }
+    public boolean dupMethod(final String str) {
+
+        // Cycle through the character array
+        for (char _char : str.toCharArray()) {
+            if (!Character.isDigit(_char)) {
+
+                // This is bad!
+                return (false);
+            }
+        }
+
+        // All is well!
+        return (true);
+    }
 }

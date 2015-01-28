@@ -12,7 +12,7 @@ import junit.framework.TestCase;
  * Unit test for simple App.
  */
 public class Test_AbaRouteValidator_01 extends TestCase {
-    AbaRouteValidator aObj;
+    private AbaRouteValidator aObj;
 
     /**
      * Create the test case

@@ -9,7 +9,7 @@ ECHO
 ECHO ===============================  BUILD THE APPLICATION
 call mvn ^
     -Dmaven.test.skip=false ^
-     package test site -X
+     package test site
  
 ECHO
 ECHO ===============================  DONE!
