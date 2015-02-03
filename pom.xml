@@ -15,7 +15,7 @@
         <!--  Artifact Information                                                         -->
         <!-- ============================================================================= -->
         <groupId>com.cardatechnologies.utils.validators</groupId>
-        <artifactId>aba.route.validator</artifactId>
+        <artifactId>aba.route.transmit.validator</artifactId>
         <version>0.5.3-SNAPSHOT</version>
 
         <!-- ============================================================================= -->
@@ -267,6 +267,14 @@
                                     <addExtensions>true</addExtensions>
                                     <classpathMavenRepositoryLayout>true</classpathMavenRepositoryLayout>
                                 </manifest>
+                                <manifestEntries>
+                                    <Copyright>CardaTechnologies, LLC</Copyright>
+                                    <Built-By>Daniel Carda</Built-By>
+                                    <Maven-Version>${maven.version}</Maven-Version>
+                                    <BuildTime>${maven.build.timestamp}</BuildTime>
+                                    <Implementation-Build>${implementation.build}</Implementation-Build>
+                                    <SVN-Revision>${buildNumber}</SVN-Revision>
+                                </manifestEntries>
                             </archive>
                         </configuration>
                     </plugin>
@@ -362,15 +370,9 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
                 </plugin>
-                <!--  Maven Site Plugin   ============================================ -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
-                    <configuration>
-                        <outputEncoding>UTF-8</outputEncoding>
-                        <relativizeDecorationLinks>false</relativizeDecorationLinks>
-                        <skipDeploy>true</skipDeploy>
-                    </configuration>
                 </plugin>
                 <!--  Surefire Report   =============================================  -->
                 <plugin>
@@ -449,6 +451,13 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>${version.javadoc.report.plugin}</version>
+                    <configuration>
+                        <aggregate>true</aggregate>
+                        <detectLinks>true</detectLinks>
+                        <bottom>
+                            Copyright &amp;copy; ${build.copyright.year} &lt;a href="http://www.cardatechnologies.com/"&gt;CardaTechnologies, LLC - ABA Routing Transmit Number Validator&lt;/a&gt;. All Rights Reserved.
+                        </bottom>
+                    </configuration>
                     <reportSets>
                         <reportSet>
                             <id>html</id>
@@ -457,9 +466,6 @@
                             </reports>
                         </reportSet>
                     </reportSets>
-                    <configuration>
-                        <aggregate>true</aggregate>
-                    </configuration>
                 </plugin>
                 <!--  JavaNCSS Report   =============================================  -->
                 <plugin>
