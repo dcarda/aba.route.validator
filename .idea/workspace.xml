@@ -16,8 +16,8 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CloverPlugin" class="com.atlassian.clover.idea.config.IdeaCloverConfig">
     <includePassedTestCoverageOnly>true</includePassedTestCoverageOnly>
-    <manualInitString null="true" />
     <useGeneratedInitString>true</useGeneratedInitString>
+    <manualInitString null="true" />
     <showTooltips>true</showTooltips>
     <failedCoveredHighlight>-3920</failedCoveredHighlight>
     <periodicRefresh>false</periodicRefresh>
@@ -96,8 +96,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5612511" vertical-offset="0" max-vertical-offset="1151">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.2361111" vertical-offset="0" max-vertical-offset="1152">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -119,7 +119,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.5" vertical-offset="1952" max-vertical-offset="3111">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2057" max-vertical-offset="3111">
               <caret line="121" column="17" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
               <folding />
             </state>
@@ -813,12 +813,13 @@
       <workItem from="1422597778895" duration="2176000" />
       <workItem from="1422634802319" duration="199000" />
       <workItem from="1422635096902" duration="23236000" />
-      <workItem from="1422929778822" duration="1177000" />
+      <workItem from="1422929778822" duration="1824000" />
+      <workItem from="1422936441637" duration="246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184460000" />
+    <option name="totallyTimeSpent" value="185353000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="31" y="79" width="1478" height="1349" extended-state="0" />
@@ -1242,7 +1243,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5" vertical-offset="1952" max-vertical-offset="3111">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2057" max-vertical-offset="3111">
           <caret line="121" column="17" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
           <folding />
         </state>
@@ -1250,8 +1251,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5612511" vertical-offset="0" max-vertical-offset="1151">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.2361111" vertical-offset="0" max-vertical-offset="1152">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
           <folding />
         </state>
       </provider>
