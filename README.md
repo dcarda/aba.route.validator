@@ -15,6 +15,11 @@ More information about the ABA routing transmit number can be found in the Book 
 <p>http://en.wikipedia.org/wiki/Routing_transit_number</p>
 
 
+### How To Include In Your Project
+This link should have all the information you need!
+
+file:///D:/projects/CardaTech/aba.route.validator/target/site/dependency-info.html
+
 
 ### Example
 ```javascript
