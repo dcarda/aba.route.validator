@@ -110,6 +110,7 @@
             <!-- Plugins   ==========================================================  -->
             <version.apache.velocity>1.7</version.apache.velocity>
             <version.compiler.plugin>3.2</version.compiler.plugin>
+            <version.jar.plugin>2.5</version.jar.plugin>
             <version.reflow.velocity.tools>1.1.1</version.reflow.velocity.tools>
 
             <!--  Reporting Plugin Settings   =======================================  -->
@@ -250,6 +251,25 @@
                             </execution>
                         </executions>
                     </plugin>
+                    <!--  Maven Jar Plugin   ========================================  -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-jar-plugin</artifactId>
+                        <version>${version.jar.plugin}</version>
+                        <configuration>
+                            <archive>
+                                <index>true</index>
+                                <addMavenDescriptor>false</addMavenDescriptor>
+                                <manifest>
+                                    <addClasspath>true</addClasspath>
+                                    <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                                    <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                                    <addExtensions>true</addExtensions>
+                                    <classpathMavenRepositoryLayout>true</classpathMavenRepositoryLayout>
+                                </manifest>
+                            </archive>
+                        </configuration>
+                    </plugin>
                     <!--  Maven Site Plugin   =======================================  -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
@@ -322,23 +342,6 @@
             <!--  Plugins   =========================================================  -->
             <plugins>
 
-
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-jar-plugin</artifactId>
-                    <configuration>
-                        <archive>
-                            <index>true</index>
-                            <manifest>
-                                <addClasspath>true</addClasspath>
-                            </manifest>
-                        </archive>
-                    </configuration>
-                </plugin>
-                
-
-
-
                 <!--  Compiler Plugin   =============================================  -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -353,6 +356,11 @@
                 <plugin>
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
+                </plugin>
+                <!--  Maven Jar Plugin   ========================================  -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
                 </plugin>
                 <!--  Maven Site Plugin   ============================================ -->
                 <plugin>
