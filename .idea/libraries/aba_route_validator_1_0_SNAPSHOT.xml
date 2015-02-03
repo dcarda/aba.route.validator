@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="aba.route.validator-1.0-SNAPSHOT">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/target/aba.route.validator-1.0-SNAPSHOT.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
