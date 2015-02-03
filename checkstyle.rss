@@ -19,9 +19,9 @@ under the License.
 -->
 <rss version="0.91">
   <channel>
-    <title>ABA Route Validator - Checkstyle report</title>
+    <title>ABA Route Transmit Number Validator - Checkstyle report</title>
     <link>${project.url}</link>
-    <description>ABA Route Validator - Checkstyle report</description>
+    <description>ABA Route Transmit Number Validator - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2014 - 2015 CardaTechnologies, LLC</copyright>
     <item>
