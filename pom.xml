@@ -267,6 +267,14 @@
                                 <addExtensions>true</addExtensions>
                                 <classpathMavenRepositoryLayout>true</classpathMavenRepositoryLayout>
                             </manifest>
+                                <manifestEntries>
+                                    <Copyright>CardaTechnologies, LLC</Copyright>
+                                    <Built-By>Daniel Carda</Built-By>
+                                    <Maven-Version>${maven.version}</Maven-Version>
+                                    <BuildTime>${maven.build.timestamp}</BuildTime>
+                                    <Implementation-Build>${implementation.build}</Implementation-Build>
+                                    <SVN-Revision>${buildNumber}</SVN-Revision>
+                                </manifestEntries>
                         </archive>
                     </configuration>
                 </plugin>
@@ -278,6 +286,7 @@
                     <configuration>
                         <outputEncoding>UTF-8</outputEncoding>
                         <relativizeDecorationLinks>true</relativizeDecorationLinks>
+                        <skipDeploy>true</skipDeploy>
                     </configuration>
                     <dependencies>
                         <dependency>
@@ -366,11 +375,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
-                <configuration>
-                    <outputEncoding>UTF-8</outputEncoding>
-                    <relativizeDecorationLinks>false</relativizeDecorationLinks>
-                    <skipDeploy>true</skipDeploy>
-                </configuration>
             </plugin>
             <!--  Surefire Report   =============================================  -->
             <plugin>
