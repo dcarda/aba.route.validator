@@ -36,4 +36,3 @@ public void testNullParam() {
         // If it gets here its bad
         fail("Should not have got here");
     }```
-

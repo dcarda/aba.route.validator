@@ -19,11 +19,14 @@
         <!-- =============== Global skin configuration ================= -->
         <reflowSkin>
 
-            <!--  This will set the color theme -->
-            <theme>bootswatch-superhero</theme>  
+            <!--  This will set the color theme 
+            <theme>bootswatch-superhero</theme>  -->  
+            <theme>bootswatch-simplex</theme>  
 
             <!-- Comment this out for local development. 
             <absoluteResourceURL>https://grizzly.java.net<;/absoluteResourceURL> -->
+
+            <bootstrapIcons>true</bootstrapIcons>
 
             <!-- Brand on the top menu bar -->
             <brand>
@@ -43,7 +46,7 @@
 
             <!--  Navigation Menus At Bottom Of All Pages  -->
             <bottomNav>
-                <column>Project Links|Download|Donations|Maven Theme</column>
+                <column>Project Links|Download|Donations / Pricing|Maven Theme</column>
                 <column>Developer Reports</column>
                 <column>Project Information</column>
             </bottomNav>
@@ -114,16 +117,16 @@
         </head>
         <menu name="Project Links" inherit="top">
             <item name="About" href="./" />
-            <item name="GitHub project" href="https://github.com/dcarda/aba.route.validator/" />
-            <item name="Blog" href="http://andrius.velykis.lt/tag/reflow-maven-skin/" />
             <item name="Release notes" href="release-notes.html" />
+            <item name="License" href="license.html" />
+            <item name="GitHub project" href="https://github.com/dcarda/aba.route.validator/" />
         </menu>
         <menu name="Download" inherit="top">
-            <item name="Download" href="skin/index.html#Usage" />
-            <item name="License" href="license.html" />
+            <item name="Download .zip" href="https://github.com/dcarda/aba.route.validator/zipball/master" />
+            <item name="Download .tar" href="https://github.com/dcarda/aba.route.validator/tarball/master" />
         </menu>
         <!--  Please Send Poor Dan Money...   ================================ -->
-        <menu name="Donations">
+        <menu name="Donations / Pricing">
             <item name="Buy Me a Beer ↗"
                   href="http://cardatechnologies.com/aba-pricing-donations/" 
                   target="_new" />
@@ -215,16 +218,41 @@
                 name="Project Team" 
                 href="team-list.html" />
             <item 
-                name="Source Repository  XXX" 
+                name="Source Repository"
                 href="source-repository.html" />
         </menu>
 
-
+        <!--  Footer   ======================================================= -->
         <footer>
 
 
-            <div class="row-fluid">Apache Maven, ${project.name}, Apache, the Apache feather logo, and the Apache Maven project logos are trademarks of The Apache Software Foundation.
-                All other marks mentioned may be trademarks or registered trademarks of their respective owners.</div>
+
+      <!--
+
+            <div class="row span16">
+                <div>The ${project.name} is a commercial product.  However, under certain circumstances some individuals or groups might be granted a waver depending on the intended use and the target sales demographic.  Please see <div><a href="http://cardatechnologies.com/aba-pricing-donations/">here</a></div>
+
+            </div>
+
+
+</div> to see which category you fall under.</div>
+
+            <div class="row-fluid">
+                The ${project.name} is a commercial product.  However, under certain circumstances some 
+                individuals or groups might be granted a waver depending on the intended use and the 
+                target sales demographic.  Please see ${<a href="http://cardatechnologies.com/aba-pricing-donations/">}here</a> to see which category you fall under.
+            </div>
+
+            <div class="row span16">
+                <div>Apache Maven, Apache, the Apache feather logo, and the Apache Maven project logos are
+                    trademarks of The Apache Software Foundation.
+                    All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+                </div>
+                <a href="${project.url}/privacy-policy.html">Privacy Policy</a>
+            </div>
+
+
+    -->            
         </footer>
 
     </body>
