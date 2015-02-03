@@ -178,17 +178,19 @@ public class AbaRouteValidator {
     }
     public boolean dupMethod(final String str) {
 
+        // TODO  REMOVE THIS METHOD
+
         // Cycle through the character array
-<span class="nc bnc" id="L182" title="All 2 branches missed.">        for (char _char : str.toCharArray()) {</span>
-<span class="nc bnc" id="L183" title="All 2 branches missed.">            if (!Character.isDigit(_char)) {</span>
+<span class="nc bnc" id="L184" title="All 2 branches missed.">        for (char _char : str.toCharArray()) {</span>
+<span class="nc bnc" id="L185" title="All 2 branches missed.">            if (!Character.isDigit(_char)) {</span>
 
                 // This is bad!
-<span class="nc" id="L186">                return (false);</span>
+<span class="nc" id="L188">                return (false);</span>
             }
         }
 
         // All is well!
-<span class="nc" id="L191">        return (true);</span>
+<span class="nc" id="L193">        return (true);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.2.201409121644</span></div></body></html>
