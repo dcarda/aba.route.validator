@@ -37,6 +37,16 @@
     </organization>
 
     <!--  Licenses   ================================================================  -->
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+<!--
     <licenses>
         <license>
             <name>GNU General Public License, Version 3</name>
@@ -55,6 +65,8 @@
                 the relevant Commercial Agreement.</comments>
         </license>
     </licenses>
+-->
+
 
     <!--  Developers   ==============================================================  -->
     <developers>
@@ -83,6 +95,7 @@
         <connection>scm:git:git@github.com:dcarda/aba.route.validator.git</connection>
         <developerConnection>scm:git:git@github.com:dcarda/aba.route.validator.git</developerConnection>
         <url>https://github.com/dcarda/aba.route.validator</url>
+        <tag>HEAD</tag>
     </scm>
 
     <!--  Issue Management   ========================================================  -->
@@ -112,6 +125,16 @@
         <version.compiler.plugin>3.2</version.compiler.plugin>
         <version.jar.plugin>2.5</version.jar.plugin>
         <version.reflow.velocity.tools>1.1.1</version.reflow.velocity.tools>
+        <version.release.plugin>2.5.1</version.release.plugin>
+        <version.scm.provider.gitexe>1.9.2</version.scm.provider.gitexe>
+
+
+
+
+
+
+
+
 
         <!--  Reporting Plugin Settings   =======================================  -->
         <version.checkstyle.report.plugin>2.13</version.checkstyle.report.plugin>
@@ -143,7 +166,7 @@
     <!--  Dependencies   ============================================================  -->
     <dependencies>
 
-        <!--  Testing Dependencies   ============================================  -->
+        <!--  Testing Scope Dependencies   ======================================  -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -198,6 +221,8 @@
                     <version>${version.github.site.plugin}</version>
                     <!-- Plugin configuration goes here -->
                     <configuration>
+                        <message>Creating site for ${project.artifactId}, ${project.version}</message>
+
                         <server>github</server>
                         <!-- The commit message -->
                         <message>Building site for my project</message>
@@ -278,14 +303,36 @@
                         </archive>
                     </configuration>
                 </plugin>
+                <!--  Maven Release Plugin   ====================================  -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>${version.release.plugin}</version>
+                    <configuration>
+                        <pushChanges>false</pushChanges>
+                        <localCheckout>true</localCheckout>
+                    </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.apache.maven.scm</groupId>
+                            <artifactId>maven-scm-provider-gitexe</artifactId>
+                            <!-- This version is necessary for use with git version 1.8.5 -->
+                            <version>${version.scm.provider.gitexe}</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
                 <!--  Maven Site Plugin   =======================================  -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
                     <version>${version.maven.site.report.plugin}</version>
                     <configuration>
+                        <inputEncoding>UTF-8</inputEncoding>
                         <outputEncoding>UTF-8</outputEncoding>
                         <relativizeDecorationLinks>true</relativizeDecorationLinks>
+                        <generateReports>true</generateReports>
+
+                        <!-- Site deployment done using GitHub site plugin -->
                         <skipDeploy>true</skipDeploy>
                     </configuration>
                     <dependencies>
@@ -370,6 +417,11 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
+            </plugin>
+            <!--  Maven Release Plugin   ========================================= -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
             </plugin>
             <!--  Maven Site Plugin   ============================================ -->
             <plugin>
