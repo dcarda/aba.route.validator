@@ -22,7 +22,7 @@ file:///D:/projects/CardaTech/aba.route.validator/target/site/dependency-info.ht
 
 
 ### Example
-```javascript
+```javas
 public void testNullParam() {
         AbaRouteValidator aObj = null;
         String abaNumber = null;
@@ -41,7 +41,8 @@ public void testNullParam() {
 
         // If it gets here its bad
         fail("Should not have got here");
-    }```
+    }
+```
 
 
 
