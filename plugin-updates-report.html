@@ -103,7 +103,14 @@
 								<li><a href="#Plugin_orgapachemavenpluginsmaven-deploy-plugin" title="Plugin org.apache.maven.plugins:maven-deploy-plugin">Plugin org.apache.maven.plugins:maven-deploy-plugin</a></li>
 								<li><a href="#Plugin_orgapachemavenpluginsmaven-install-plugin" title="Plugin org.apache.maven.plugins:maven-install-plugin">Plugin org.apache.maven.plugins:maven-install-plugin</a></li>
 								<li><a href="#Plugin_orgapachemavenpluginsmaven-jar-plugin" title="Plugin org.apache.maven.plugins:maven-jar-plugin">Plugin org.apache.maven.plugins:maven-jar-plugin</a></li>
-								<li><a href="#Plugin_orgapachemavenpluginsmaven-release-plugin" title="Plugin org.apache.maven.plugins:maven-release-plugin">Plugin org.apache.maven.plugins:maven-release-plugin</a></li>
+								<li class="dropdown-submenu">
+									<a href="#Plugin_orgapachemavenpluginsmaven-release-plugin" title="Plugin org.apache.maven.plugins:maven-release-plugin">Plugin org.apache.maven.plugins:maven-release-plugin</a>
+									<ul class="dropdown-menu" role="menu">
+								<li><a href="#Dependencies_of_orgapachemavenpluginsmaven-release-plugin" title="Dependencies of org.apache.maven.plugins:maven-release-plugin">Dependencies of org.apache.maven.plugins:maven-release-plugin</a></li>
+								<li><a href="#Dependency_orgapachemavenscmmaven-scm-provider-gitexe" title="Dependency org.apache.maven.scm:maven-scm-provider-gitexe">Dependency org.apache.maven.scm:maven-scm-provider-gitexe</a></li>
+
+									</ul>
+								</li>
 								<li><a href="#Plugin_orgapachemavenpluginsmaven-resources-plugin" title="Plugin org.apache.maven.plugins:maven-resources-plugin">Plugin org.apache.maven.plugins:maven-resources-plugin</a></li>
 								<li class="dropdown-submenu">
 									<a href="#Plugin_orgapachemavenpluginsmaven-site-plugin" title="Plugin org.apache.maven.plugins:maven-site-plugin">Plugin org.apache.maven.plugins:maven-site-plugin</a>
@@ -148,7 +155,7 @@
    <tr class="a"> 
     <td><i class="icon-ok"></i></td> 
     <td># of plugins using the latest version available</td> 
-    <td>7</td> 
+    <td>8</td> 
    </tr> 
    <tr class="b"> 
     <td><i class="icon-warning-sign"></i></td> 
@@ -163,7 +170,7 @@
    <tr class="b"> 
     <td><i class="icon-warning-sign"></i></td> 
     <td># of plugins where the next version available is a minor version update</td> 
-    <td>7</td> 
+    <td>6</td> 
    </tr> 
    <tr class="a"> 
     <td><i class="icon-warning-sign"></i></td> 
@@ -274,13 +281,13 @@
      <td><i class="icon-ok"></i></td> 
     </tr> 
     <tr class="b"> 
-     <td><i class="icon-warning-sign"></i></td> 
+     <td><i class="icon-ok"></i></td> 
      <td>org.apache.maven.plugins</td> 
      <td>maven-release-plugin</td> 
-     <td>2.3.2</td> 
+     <td><b>2.5.1</b></td> 
      <td></td> 
      <td></td> 
-     <td><b>2.4</b></td> 
+     <td></td> 
      <td></td> 
      <td><i class="icon-ok"></i></td> 
     </tr> 
@@ -731,15 +738,9 @@
   <h3 id="Plugin_orgapachemavenpluginsmaven-release-plugin">Plugin org.apache.maven.plugins:maven-release-plugin</h3> 
   <table border="0" class="bodyTable table table-striped table-hover"> 
    <thead> 
-    <tr class="a"> 
-     <th width="80%">Newer versions</th> 
-     <td><b>2.4</b>&nbsp;<i>Next Minor</i><br />2.4.1<br />2.4.2<br />2.5<br /><b>2.5.1</b>&nbsp;<i>Latest Minor</i></td> 
-    </tr> 
-   </thead> 
-   <thead> 
     <tr class="b"> 
      <th width="80%">Current Version</th> 
-     <td>2.3.2</td> 
+     <td>2.5.1</td> 
     </tr> 
    </thead> 
    <thead> 
@@ -757,12 +758,102 @@
    <thead> 
     <tr class="a"> 
      <th width="80%">Status</th> 
-     <td><i class="icon-warning-sign"></i>&nbsp;There is at least one newer minor version available. Minor updates are sometimes passive.</td> 
+     <td><i class="icon-ok"></i>&nbsp;No newer versions available.</td> 
     </tr> 
    </thead> 
    <tbody> 
    </tbody> 
   </table> 
+  <div class="section"> 
+   <h4 id="Dependencies_of_orgapachemavenpluginsmaven-release-plugin">Dependencies of org.apache.maven.plugins:maven-release-plugin</h4> 
+   <table border="0" class="bodyTable table table-striped table-hover"> 
+    <thead> 
+     <tr class="a"> 
+      <th>Status</th> 
+      <th>Group Id</th> 
+      <th>Artifact Id</th> 
+      <th>Current Version</th> 
+      <th>Classifier</th> 
+      <th>Type</th> 
+      <th>Next Version</th> 
+      <th>Next Incremental</th> 
+      <th>Next Minor</th> 
+      <th>Next Major</th> 
+     </tr> 
+    </thead> 
+    <thead> 
+     <tr class="a"> 
+      <th>Status</th> 
+      <th>Group Id</th> 
+      <th>Artifact Id</th> 
+      <th>Current Version</th> 
+      <th>Classifier</th> 
+      <th>Type</th> 
+      <th>Next Version</th> 
+      <th>Next Incremental</th> 
+      <th>Next Minor</th> 
+      <th>Next Major</th> 
+     </tr> 
+    </thead> 
+    <tbody> 
+     <tr class="b"> 
+      <td><i class="icon-ok"></i></td> 
+      <td>org.apache.maven.scm</td> 
+      <td>maven-scm-provider-gitexe</td> 
+      <td>1.9.2</td> 
+      <td></td> 
+      <td>jar</td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+     </tr> 
+    </tbody> 
+   </table> 
+  </div> 
+  <div class="section"> 
+   <h4 id="Dependency_orgapachemavenscmmaven-scm-provider-gitexe">Dependency org.apache.maven.scm:maven-scm-provider-gitexe</h4> 
+   <table border="0" class="bodyTable table table-striped table-hover"> 
+    <thead> 
+     <tr class="a"> 
+      <th width="80%">Type</th> 
+      <td>jar</td> 
+     </tr> 
+    </thead> 
+    <thead> 
+     <tr class="b"> 
+      <th width="80%">Classifier</th> 
+      <td></td> 
+     </tr> 
+    </thead> 
+    <thead> 
+     <tr class="a"> 
+      <th width="80%">Current Version</th> 
+      <td>1.9.2</td> 
+     </tr> 
+    </thead> 
+    <thead> 
+     <tr class="b"> 
+      <th width="80%">Artifact Id</th> 
+      <td>maven-scm-provider-gitexe</td> 
+     </tr> 
+    </thead> 
+    <thead> 
+     <tr class="a"> 
+      <th width="80%">Group Id</th> 
+      <td>org.apache.maven.scm</td> 
+     </tr> 
+    </thead> 
+    <thead> 
+     <tr class="b"> 
+      <th width="80%">Status</th> 
+      <td><i class="icon-ok"></i>&nbsp;No newer versions available.</td> 
+     </tr> 
+    </thead> 
+    <tbody> 
+    </tbody> 
+   </table> 
+  </div> 
  </div> 
  <div class="section"> 
   <h3 id="Plugin_orgapachemavenpluginsmaven-resources-plugin">Plugin org.apache.maven.plugins:maven-resources-plugin</h3> 

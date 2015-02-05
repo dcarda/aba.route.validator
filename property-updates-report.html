@@ -109,6 +109,8 @@
 								<li><a href="#aversionmavensitereportplugin" title="${version.maven.site.report.plugin}">${version.maven.site.report.plugin}</a></li>
 								<li><a href="#aversionpmdreportplugin" title="${version.pmd.report.plugin}">${version.pmd.report.plugin}</a></li>
 								<li><a href="#aversionreflowvelocitytools" title="${version.reflow.velocity.tools}">${version.reflow.velocity.tools}</a></li>
+								<li><a href="#aversionreleaseplugin" title="${version.release.plugin}">${version.release.plugin}</a></li>
+								<li><a href="#aversionscmprovidergitexe" title="${version.scm.provider.gitexe}">${version.scm.provider.gitexe}</a></li>
 								<li><a href="#aversionsurefirejunit47plugin" title="${version.surefire.junit47.plugin}">${version.surefire.junit47.plugin}</a></li>
 								<li><a href="#aversionsurefirereportplugin" title="${version.surefire.report.plugin}">${version.surefire.report.plugin}</a></li>
 								<li><a href="#aversiontaglistreportplugin" title="${version.taglist.report.plugin}">${version.taglist.report.plugin}</a></li>
@@ -137,7 +139,7 @@
    <tr class="a"> 
     <td><i class="icon-ok"></i></td> 
     <td># of properties using the latest version available</td> 
-    <td>20</td> 
+    <td>22</td> 
    </tr> 
    <tr class="b"> 
     <td><i class="icon-warning-sign"></i></td> 
@@ -306,8 +308,26 @@
     </tr> 
     <tr class="b"> 
      <td><i class="icon-ok"></i></td> 
+     <td>${version.release.plugin}</td> 
+     <td>2.5.1</td> 
+     <td></td> 
+     <td></td> 
+     <td></td> 
+     <td></td> 
+    </tr> 
+    <tr class="a"> 
+     <td><i class="icon-ok"></i></td> 
      <td>${version.reflow.velocity.tools}</td> 
      <td>1.1.1</td> 
+     <td></td> 
+     <td></td> 
+     <td></td> 
+     <td></td> 
+    </tr> 
+    <tr class="b"> 
+     <td><i class="icon-ok"></i></td> 
+     <td>${version.scm.provider.gitexe}</td> 
+     <td>1.9.2</td> 
      <td></td> 
      <td></td> 
      <td></td> 
@@ -1338,6 +1358,128 @@
     <tr class="b"> 
      <th width="80%">Property</th> 
      <td>${version.reflow.velocity.tools}</td> 
+    </tr> 
+   </thead> 
+   <thead> 
+    <tr class="a"> 
+     <th width="80%">Status</th> 
+     <td><i class="icon-ok"></i>&nbsp;No newer versions available.</td> 
+    </tr> 
+   </thead> 
+   <tbody> 
+   </tbody> 
+  </table> 
+ </div> 
+ <div class="section"> 
+  <h3 id="aversionreleaseplugin">${version.release.plugin}</h3> 
+  <table border="0" class="bodyTable table table-striped table-hover"> 
+   <thead> 
+    <tr class="a"> 
+     <th width="80%">Always use reactor projects (even if older or -SNAPSHOT)</th> 
+     <td>Yes</td> 
+    </tr> 
+   </thead> 
+   <thead> 
+    <tr class="b"> 
+     <th width="80%">Include projects from reactor</th> 
+     <td>Yes</td> 
+    </tr> 
+   </thead> 
+   <thead> 
+    <tr class="a"> 
+     <th width="80%">Only use release versions</th> 
+     <td>No</td> 
+    </tr> 
+   </thead> 
+   <thead> 
+    <tr class="b"> 
+     <th width="80%">Infer associations from project</th> 
+     <td>Yes</td> 
+    </tr> 
+   </thead> 
+   <thead> 
+    <tr class="a"> 
+     <th width="80%">Allowed version range</th> 
+     <td>[,)</td> 
+    </tr> 
+   </thead> 
+   <thead> 
+    <tr class="b"> 
+     <th width="80%">Current Version</th> 
+     <td>2.5.1</td> 
+    </tr> 
+   </thead> 
+   <thead> 
+    <tr class="a"> 
+     <th width="80%">Associated artifacts</th> 
+     <td>org.apache.maven.plugins:maven-release-plugin</td> 
+    </tr> 
+   </thead> 
+   <thead> 
+    <tr class="b"> 
+     <th width="80%">Property</th> 
+     <td>${version.release.plugin}</td> 
+    </tr> 
+   </thead> 
+   <thead> 
+    <tr class="a"> 
+     <th width="80%">Status</th> 
+     <td><i class="icon-ok"></i>&nbsp;No newer versions available.</td> 
+    </tr> 
+   </thead> 
+   <tbody> 
+   </tbody> 
+  </table> 
+ </div> 
+ <div class="section"> 
+  <h3 id="aversionscmprovidergitexe">${version.scm.provider.gitexe}</h3> 
+  <table border="0" class="bodyTable table table-striped table-hover"> 
+   <thead> 
+    <tr class="a"> 
+     <th width="80%">Always use reactor projects (even if older or -SNAPSHOT)</th> 
+     <td>Yes</td> 
+    </tr> 
+   </thead> 
+   <thead> 
+    <tr class="b"> 
+     <th width="80%">Include projects from reactor</th> 
+     <td>Yes</td> 
+    </tr> 
+   </thead> 
+   <thead> 
+    <tr class="a"> 
+     <th width="80%">Only use release versions</th> 
+     <td>No</td> 
+    </tr> 
+   </thead> 
+   <thead> 
+    <tr class="b"> 
+     <th width="80%">Infer associations from project</th> 
+     <td>Yes</td> 
+    </tr> 
+   </thead> 
+   <thead> 
+    <tr class="a"> 
+     <th width="80%">Allowed version range</th> 
+     <td>[,)</td> 
+    </tr> 
+   </thead> 
+   <thead> 
+    <tr class="b"> 
+     <th width="80%">Current Version</th> 
+     <td>1.9.2</td> 
+    </tr> 
+   </thead> 
+   <thead> 
+    <tr class="a"> 
+     <th width="80%">Associated artifacts</th> 
+     <td>org.apache.maven.scm:maven-scm-provider-gitexe</td> 
+    </tr> 
+   </thead> 
+   <thead> 
+    <tr class="b"> 
+     <th width="80%">Property</th> 
+     <td>${version.scm.provider.gitexe}</td> 
     </tr> 
    </thead> 
    <thead> 
