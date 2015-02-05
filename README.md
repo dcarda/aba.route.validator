@@ -45,6 +45,14 @@ public void testNullParam() {
 ```
 
 
+## Bug tracker
+
+Have a bug or a feature request? Please create an issue here on GitHub that conforms with
+[necolas's guidelines](http://github.com/necolas/issue-guidelines).
+
+http://github.com/andriusvelykis/reflow-maven-skin/issues
+
+
 
 ## Author
 
