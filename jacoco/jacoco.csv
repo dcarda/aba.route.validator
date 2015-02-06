@@ -1,3 +1,3 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
 ABA Route Transmit Number Validator,com.cardatechnologies.utils.validators.abaroutevalidator.exceptions,AbaRouteValidationException,40,4,4,0,10,2,6,1,4,1
-ABA Route Transmit Number Validator,com.cardatechnologies.utils.validators.abaroutevalidator,AbaRouteValidator,32,228,10,24,5,47,8,16,1,6
+ABA Route Transmit Number Validator,com.cardatechnologies.utils.validators.abaroutevalidator,AbaRouteValidator,8,228,6,24,1,47,5,16,0,6
