@@ -475,6 +475,7 @@
                 <artifactId>maven-jxr-plugin</artifactId>
                 <version>${version.jxr.report.plugin}</version>
                 <configuration>
+                    <additionalparam>-Xdoclint:none</additionalparam>
                     <linkJavadoc>true</linkJavadoc>
                     <excludes>
                         <exclude>**/Test_*.java</exclude>
@@ -504,7 +505,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
+                <!--
                 <version>${version.javadoc.report.plugin}</version>
+                -->
+                <version>2.9.1</version>
+
+
+
                 <reportSets>
                     <reportSet>
                         <id>html</id>
@@ -515,6 +522,17 @@
                 </reportSets>
                 <configuration>
                     <aggregate>true</aggregate>
+
+
+                    <additionalparam>
+                        <!--
+                        base-dir ${project.basedir}
+                        attribute "name=${project.name}"
+                        attribute "version=${project.version}"
+                        attribute "title-link=http://example.com[${project.name} ${project.version}]"
+                        -->
+
+                    </additionalparam>
                 </configuration>
             </plugin>
             <!--  JavaNCSS Report   =============================================  -->
