@@ -18,8 +18,7 @@ More information about the ABA routing transmit number can be found in the Book 
 ### How To Include In Your Project
 This link should have all the information you need!
 
-file:///D:/projects/CardaTech/aba.route.validator/target/site/dependency-info.html
-
+http://dcarda.github.io/aba.route.validator/dependency-info.html
 
 ### Example
 ```javas
@@ -44,15 +43,12 @@ public void testNullParam() {
     }
 ```
 
-
 ## Bug tracker
 
 Have a bug or a feature request? Please create an issue here on GitHub that conforms with
 [necolas's guidelines](http://github.com/necolas/issue-guidelines).
 
 http://github.com/andriusvelykis/reflow-maven-skin/issues
-
-
 
 ## Author
 
@@ -76,5 +72,4 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-
 

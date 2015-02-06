@@ -7,7 +7,6 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
 //~--- classes ----------------------------------------------------------------
 
 /**
- *
  * <dl>
  * <dt><font face="Arial"><span class="simpleTagLabel">All Rights Reserved</span></font></dt>
  * <dd>Copyright &copy; 2015 - CardaTechnologies, LLC</dd>
@@ -15,8 +14,8 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
  * <dd>This class is used to validate a ABA Routing Transmit Number.</dd>
  * </dl>
  *
- * @author Daniel Carda
- * @version 1.0
+ * @version     1.0.0
+ * @author      Daniel Carda
  */
 public class AbaRouteValidator {
     public AbaRouteValidator() {}
@@ -31,22 +30,6 @@ public class AbaRouteValidator {
 
         // Alright, now see if the number holds up to scrunity!
         validateAbaNumberChecksum( paramAbaRouteNumber );
-    }
-
-    public boolean dupMethod( final String str ) {
-
-        // TODO  REMOVE THIS METHOD
-        // Cycle through the character array
-        for( char _char : str.toCharArray() ) {
-            if( !Character.isDigit( _char ) ) {
-
-                // This is bad!
-                return ( false );
-            }
-        }
-
-        // All is well!
-        return ( true );
     }
 
     //~--- get methods --------------------------------------------------------
