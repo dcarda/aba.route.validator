@@ -14,8 +14,8 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
  * <dd>This class is used to validate a ABA Routing Transmit Number.</dd>
  * </dl>
  *
- * @version     1.0.0
- * @author      Daniel Carda
+ * @version        Enter version here..., 15/02/06
+ * @author         Enter your name here...
  */
 public class AbaRouteValidator {
     public AbaRouteValidator() {}
@@ -73,10 +73,9 @@ public class AbaRouteValidator {
         // Quick Check
         // Make sure the string length is right
         int _strLen;
-
         _strLen = paramAbaRouteNumber.length();
 
-        // Is if it's the right length
+        // See if it's the right length
         if( _strLen != 9 ) {
 
             // Is it to short?
@@ -111,65 +110,22 @@ public class AbaRouteValidator {
             throws AbaRouteValidationException {
 
         // Set up all the int's
-        int  i1;
-        int  i2;
-        int  i3;
-        int  i4;
-        int  i5;
-        int  i6;
-        int  i7;
-        int  i8;
-        int  i9;
+        int  i1 , i2, i3, i4, i5, i6, i7, i8, i9;
 
-        // create the temp char
-        char _tempChar;
-
-        // I1
-        _tempChar = paramAbaRouteNumber.charAt( 0 );
-        i1        = Character.getNumericValue( _tempChar );
-
-        // I2
-        _tempChar = paramAbaRouteNumber.charAt( 1 );
-        i2        = Character.getNumericValue( _tempChar );
-
-        // I3
-        _tempChar = paramAbaRouteNumber.charAt( 2 );
-        i3        = Character.getNumericValue( _tempChar );
-
-        // I4
-        _tempChar = paramAbaRouteNumber.charAt( 3 );
-        i4        = Character.getNumericValue( _tempChar );
-
-        // I5
-        _tempChar = paramAbaRouteNumber.charAt( 4 );
-        i5        = Character.getNumericValue( _tempChar );
-
-        // I6
-        _tempChar = paramAbaRouteNumber.charAt( 5 );
-        i6        = Character.getNumericValue( _tempChar );
-
-        // I7
-        _tempChar = paramAbaRouteNumber.charAt( 6 );
-        i7        = Character.getNumericValue( _tempChar );
-
-        // I8
-        _tempChar = paramAbaRouteNumber.charAt( 7 );
-        i8        = Character.getNumericValue( _tempChar );
-
-        // I9
-        _tempChar = paramAbaRouteNumber.charAt( 8 );
-        i9        = Character.getNumericValue( _tempChar );
+        // Break up the string so we can look at the numbers.
+        i1 = Character.getNumericValue( paramAbaRouteNumber.charAt( 0 ) );
+        i2 = Character.getNumericValue( paramAbaRouteNumber.charAt( 1 ) );
+        i3 = Character.getNumericValue( paramAbaRouteNumber.charAt( 2 ) );
+        i4 = Character.getNumericValue( paramAbaRouteNumber.charAt( 3 ) );
+        i5 = Character.getNumericValue( paramAbaRouteNumber.charAt( 4 ) );
+        i6 = Character.getNumericValue( paramAbaRouteNumber.charAt( 5 ) );
+        i7 = Character.getNumericValue( paramAbaRouteNumber.charAt( 6 ) );
+        i8 = Character.getNumericValue( paramAbaRouteNumber.charAt( 7 ) );
+        i9 = Character.getNumericValue( paramAbaRouteNumber.charAt( 8 ) );
 
         // Okay, lets crank it through the formula
         int checksumTotal;
-
-        checksumTotal = ( ( i1 * 3 ) + ( i2 * 7 ) + ( i3 ) +
-
-        //
-        ( i4 * 3 ) + ( i5 * 7 ) + ( i6 ) +
-
-        //
-        ( i7 * 3 ) + ( i8 * 7 ) + ( i9 ) );
+        checksumTotal = ( ( i3 + i6 + i9 ) + ( 3 * ( i1 + i4 + i7 ) ) + ( 7 * ( i2 + i5 + i8 ) ) );
 
         // Check the modulus and we're done!
         if( ( checksumTotal % 10 ) != 0 ) {
@@ -182,7 +138,6 @@ public class AbaRouteValidator {
 
         // String off the first 2 numbers and see if they validate.
         String _tempStr;
-
         _tempStr = paramAbaRouteNumber.substring( 0, 2 );
 
         // Now, convert the substring to an int
