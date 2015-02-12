@@ -12,7 +12,7 @@
     <!-- ============================================================================= -->
     <groupId>com.cardatechnologies.utils.validators</groupId>
     <artifactId>aba.route.validator</artifactId>
-    <version>1.0.0-FINAL</version>
+    <version>0.9.9-SNAPSHOT</version>
 
     <!-- ============================================================================= -->
     <!--  Miscellaneous Settings                                                       -->
