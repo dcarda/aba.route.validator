@@ -60,12 +60,6 @@ public class Test_AbaRouteValidator_01
 
     //~--- methods ------------------------------------------------------------
 
-    // /**
-//  * @return the suite of tests being tested
-//  */
-//  public static Test suite()
-//  {
-
     /**
      * Method description
      *
