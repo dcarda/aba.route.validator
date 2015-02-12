@@ -47,24 +47,62 @@ ABA Routing Number Validator
 * Examples
 
 +---------------------
-    public void testNullParam() {
-        AbaRouteValidator aObj = null;
-        String abaNumber = null;
+    /**
+     * Rigorous Test :-)
+     */
+    public void testAbaValidation() {
 
-        // Validate
+        // This is the ABA RTN for Wells Fargo.
+        String _abaString = "121000248";
+
+        // Try and validate the number.
         try {
-            aObj.validate(abaNumber);
-        } catch (AbaRouteValidationException e) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue(true);
+            // Run the validation.
+            boolean _isValid;
+            _isValid = validateNumber( _abaString );
 
-            // We're done, just return.
-            return;
+            if ( _isValid == false)
+            {
+                ; // Throw error here
+            }
+        } catch( AbaRouteValidationException e ) {
+            ;    // Do something interesting here...
         }
-
-        // If it gets here its bad
-        fail("Should not have got here");
     }
 
+    /**
+     * This method will validate an incoming ABA Routing Transmit Number.
+     *
+     * @param paramAbaNumber The ABA number to be validated.
+     *
+     * @return True if valid.  False if not valid.
+     *
+     * @throws AbaRouteValidationException Something went *really* wrong.
+     */
+    public boolean validateNumber( final String paramAbaNumber )
+            throws AbaRouteValidationException {
+        boolean _isValid;
+
+        // Static call to validate.
+        _isValid = AbaRouteValidator.validate( paramAbaNumber );
+
+        // Return the result
+        return ( _isValid );
+    }
 +---------------------
+
+
+* Donate
+
+    The ABA Routing Transmit Number Validator is [open source] and licensed under [Apache license][apache-license].
+
+    In the end, if you _really_ like the module and want to support the author, I will
+    be honored to accept a small donation.
+
+    http://cardatechnologies.com/aba-pricing-donations/
+
+
+[mvn-site]: http://maven.apache.org/guides/mini/guide-site.html
+[apache-license]: http://www.apache.org/licenses/LICENSE-2.0
+[donate]: http://cardatechnologies.com/aba-pricing-donations/
