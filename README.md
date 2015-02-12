@@ -15,12 +15,15 @@ More information about the ABA routing transmit number can be found in the Book 
 <p>http://en.wikipedia.org/wiki/Routing_transit_number</p>
 
 
-### How To Include In Your Project
+### How To Include This Module In Your Project
 This link should have all the information you need!
 
 http://dcarda.github.io/aba.route.validator/dependency-info.html
 
 ### Example
+
+Here's an example of the validator in action!
+
 ```java
 
     /**
@@ -66,49 +69,13 @@ http://dcarda.github.io/aba.route.validator/dependency-info.html
         // Return the result
         return ( _isValid );
     }
-
-
-
-
-   public void testApp() {
-
-        // Validate
-        try {
-            AbaRouteValidator.validate( "302075018" );
-        } catch( AbaRouteValidationException e ) {
-            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
-        }
-
-        // This is a good thing!
-        assertTrue( true );
-    }
-
-public void testNullParam() {
-        AbaRouteValidator aObj = null;
-        String abaNumber = null;
-
-        // Validate
-        try {
-            aObj.validate(abaNumber);
-        } catch (AbaRouteValidationException e) {
-
-            // This is good.  We were expecting an exception.
-            assertTrue(true);
-
-            // We're done, just return.
-            return;
-        }
-
-        // If it gets here its bad
-        fail("Should not have got here");
-    }
 ```
 
 ## Bug tracker
 
 Have a bug or a feature request? Please create an issue and I'll see what I can do!
 
-+https://github.com/dcarda/aba.route.validator/issues
++ https://github.com/dcarda/aba.route.validator/issues
 
 ## Author
 
@@ -119,7 +86,7 @@ Have a bug or a feature request? Please create an issue and I'll see what I can 
 
 ## Copyright and license
 
-Copyright (c) 2015 - CardaTechnologies, LLC
+<pre>Copyright (c) 2015 - CardaTechnologies, LLC</pre>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this work except in compliance with the License.
