@@ -88,6 +88,7 @@
 						<ul id="toc" class="nav">
 						<li class="toplevel"><a href="#ABA_Routing_Number_Validator" title="ABA Routing Number Validator">ABA Routing Number Validator</a></li>
 						<li class="toplevel"><a href="#Examples" title="Examples">Examples</a></li>
+						<li class="toplevel"><a href="#Donate" title="Donate">Donate</a></li>
 						</ul>
 					</div>
 				</div>
@@ -123,28 +124,58 @@
  <div class="section"> 
   <h3 id="Examples">Examples</h3> 
   <div class="source"> 
-   <pre>    public void testNullParam() {
-        AbaRouteValidator aObj = null;
-        String abaNumber = null;
+   <pre>    /**
+     * Rigorous Test :-)
+     */
+    public void testAbaValidation() {
 
-        // Validate
+        // This is the ABA RTN for Wells Fargo.
+        String _abaString = &quot;121000248&quot;;
+
+        // Try and validate the number.
         try {
-            aObj.validate(abaNumber);
-        } catch (AbaRouteValidationException e) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue(true);
+            // Run the validation.
+            boolean _isValid;
+            _isValid = validateNumber( _abaString );
 
-            // We're done, just return.
-            return;
+            if ( _isValid == false)
+            {
+                ; // Throw error here
+            }
+        } catch( AbaRouteValidationException e ) {
+            ;    // Do something interesting here...
         }
-
-        // If it gets here its bad
-        fail(&quot;Should not have got here&quot;);
     }
 
+    /**
+     * This method will validate an incoming ABA Routing Transmit Number.
+     *
+     * @param paramAbaNumber The ABA number to be validated.
+     *
+     * @return True if valid.  False if not valid.
+     *
+     * @throws AbaRouteValidationException Something went *really* wrong.
+     */
+    public boolean validateNumber( final String paramAbaNumber )
+            throws AbaRouteValidationException {
+        boolean _isValid;
+
+        // Static call to validate.
+        _isValid = AbaRouteValidator.validate( paramAbaNumber );
+
+        // Return the result
+        return ( _isValid );
+    }
 </pre> 
   </div> 
+ </div> 
+ <div class="section"> 
+  <h3 id="Donate">Donate</h3> 
+  <p>The ABA Routing Transmit Number Validator is [open source] and licensed under [Apache license][apache-license].</p> 
+  <p>In the end, if you _really_ like the module and want to support the author, I will be honored to accept a small donation.</p> 
+  <p>http://cardatechnologies.com/aba-pricing-donations/</p> 
+  <img src="mvn-site" alt=": http://maven.apache.org/guides/mini/guide-site.html [apache-license]: http://www.apache.org/licenses/LICENSE-2.0 [donate]: http://cardatechnologies.com/aba-pricing-donations/" /> 
  </div> 
 </div>
 			</div>
@@ -292,7 +323,7 @@
 		<div class="row">
 			<div class="span12">
 				<p class="pull-right"><a href="#">Back to top</a></p>
-				<p class="copyright">Copyright &copy;2014-2015 <a href="http://cardatechnologies.com/">CardaTechnologies, LLC</a>. All Rights Reserved.</p>
+				<p class="copyright">Copyright &copy;2015 <a href="http://cardatechnologies.com/">CardaTechnologies, LLC</a>. All Rights Reserved.</p>
 					</div>
 		</div>
 	</div>

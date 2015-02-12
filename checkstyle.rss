@@ -23,7 +23,7 @@ under the License.
     <link>${project.url}</link>
     <description>ABA Route Transmit Number Validator - Checkstyle report</description>
     <language>en-us</language>
-    <copyright>&#169;2014 - 2015 CardaTechnologies, LLC</copyright>
+    <copyright>&#169;2015 CardaTechnologies, LLC</copyright>
     <item>
       <title>File: 2,
              Errors: 11,
