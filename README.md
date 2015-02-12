@@ -54,8 +54,8 @@ http://github.com/andriusvelykis/reflow-maven-skin/issues
 
 **Daniel Carda - CardaTechnologies, LLC**
 
-+ http://andrius.velykis.lt
-+ http://github.com/andriusvelykis
++ http://www.danielcarda.net/
++ https://github.com/dcarda/aba.route.validator
 
 ## Copyright and license
 
