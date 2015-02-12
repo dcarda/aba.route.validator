@@ -26,7 +26,7 @@ under the License.
     <copyright>&#169;2014 - 2015 CardaTechnologies, LLC</copyright>
     <item>
       <title>File: 2,
-             Errors: 0,
+             Errors: 11,
              Warnings: 0,
              Infos: 0
       </title>
@@ -55,7 +55,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  0
+                  6
                 </td>
               </tr>
                           <tr>
@@ -69,7 +69,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  0
+                  5
                 </td>
               </tr>
                       </tbody>

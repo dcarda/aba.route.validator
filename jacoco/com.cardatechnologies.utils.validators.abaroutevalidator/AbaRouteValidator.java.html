@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>AbaRouteValidator.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ABA Route Transmit Number Validator</a> &gt; <a href="index.source.html" class="el_package">com.cardatechnologies.utils.validators.abaroutevalidator</a> &gt; <span class="el_source">AbaRouteValidator.java</span></div><h1>AbaRouteValidator.java</h1><pre class="source lang-java linenums">package com.cardatechnologies.utils.validators.abaroutevalidator;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>AbaRouteValidator.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ABA Route Transmit Number Validator</a> &gt; <a href="index.source.html" class="el_package">com.cardatechnologies.utils.validators.abaroutevalidator</a> &gt; <span class="el_source">AbaRouteValidator.java</span></div><h1>AbaRouteValidator.java</h1><pre class="source lang-java linenums">/* ***************************************************************************************
+ * Class: com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.java
+ * Date:  2015/02/11
+ * ***************************************************************************************
+ *
+ * Copyright 2015 - CardaTechnologies, LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * ***************************************************************************************
+ */
+
+package com.cardatechnologies.utils.validators.abaroutevalidator;
 
 //~--- non-JDK imports --------------------------------------------------------
 
@@ -14,44 +36,67 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
  * &lt;dd&gt;This class is used to validate a ABA Routing Transmit Number.&lt;/dd&gt;
  * &lt;/dl&gt;
  *
- * @version     1.0.0
- * @author      Daniel Carda
+ * @version        1.0.0
+ * @author         Daniel Carda
  */
-public class AbaRouteValidator {
-<span class="fc" id="L21">    public AbaRouteValidator() {}</span>
+<span class="fc" id="L42">public class AbaRouteValidator {</span>
 
-    //~--- methods ------------------------------------------------------------
-
-    public void breakdownAbaNumber( final String paramAbaRouteNumber )
+    /**
+     * Method description
+     *
+     * @param paramAbaRouteNumber The incoming ABA Number.
+     *
+     * @throws AbaRouteValidationException
+     */
+     private static void breakdownAbaNumber( final String paramAbaRouteNumber )
             throws AbaRouteValidationException {
 
         // Check first two digits.
-<span class="fc" id="L29">        validateFedNumber( paramAbaRouteNumber );</span>
+<span class="fc" id="L55">        validateFedNumber( paramAbaRouteNumber );</span>
 
         // Alright, now see if the number holds up to scrunity!
-<span class="fc" id="L32">        validateAbaNumberChecksum( paramAbaRouteNumber );</span>
-<span class="fc" id="L33">    }</span>
+<span class="fc" id="L58">        validateAbaNumberChecksum( paramAbaRouteNumber );</span>
+<span class="fc" id="L59">    }</span>
 
     //~--- get methods --------------------------------------------------------
 
-    public boolean isNumeric( final String str ) {
+    /**
+     * Method description
+     *
+     *
+     * @param paramStr The string which needs to be made up of all numbers.
+     *
+     * @return True if all the characters were digits.  False if there was a problem.
+     */
+    static private boolean isNumeric( final String paramStr ) {
 
         // Cycle through the character array
-<span class="fc bfc" id="L40" title="All 2 branches covered.">        for( char _char : str.toCharArray() ) {</span>
-<span class="fc bfc" id="L41" title="All 2 branches covered.">            if( !Character.isDigit( _char ) ) {</span>
+<span class="fc bfc" id="L74" title="All 2 branches covered.">        for( char _char : paramStr.toCharArray() ) {</span>
+<span class="fc bfc" id="L75" title="All 2 branches covered.">            if( !Character.isDigit( _char ) ) {</span>
 
                 // This is bad!
-<span class="fc" id="L44">                return ( false );</span>
+<span class="fc" id="L78">                return ( false );</span>
             }
         }
 
         // All is well!
-<span class="fc" id="L49">        return ( true );</span>
+<span class="fc" id="L83">        return ( true );</span>
     }
 
     //~--- methods ------------------------------------------------------------
 
-    public boolean validate( final String paramAbaRouteNumber )
+    /**
+     * This method is the starting point to validate whether a incoming string is
+     * an ABA Routing Transmit Number.
+     *
+     * @param paramAbaRouteNumber The ABA number to be tested.
+     *
+     * @return  True if it passes validation.  False if it fails validation.
+     *
+     * @throws AbaRouteValidationException A error occurred when parsing the suspect
+     *                                     ABA Routing Transmit Number.
+     */
+    static public boolean validate( final String paramAbaRouteNumber )
             throws AbaRouteValidationException {
 
         // http://en.wikipedia.org/wiki/Routing_transit_number
@@ -60,142 +105,123 @@ public class AbaRouteValidator {
         // &lt;http://www.bankersonline.com/regs/229/a229a.html&gt;
         // Quick Check
         // Is the parameter null
-<span class="fc bfc" id="L63" title="All 2 branches covered.">        if( paramAbaRouteNumber == null ) {</span>
-<span class="fc" id="L64">            throw new AbaRouteValidationException( &quot;The ABA Route Number was null.&quot; );</span>
+<span class="fc bfc" id="L108" title="All 2 branches covered.">        if( paramAbaRouteNumber == null ) {</span>
+<span class="fc" id="L109">            throw new AbaRouteValidationException( &quot;The ABA Route Number was null.&quot; );</span>
         }
 
         // Quick Check
         // Is the parameter empty
-<span class="pc bpc" id="L69" title="1 of 2 branches missed.">        if( paramAbaRouteNumber == null ) {</span>
-<span class="nc" id="L70">            throw new AbaRouteValidationException( &quot;The ABA Route Number was empty.&quot; );</span>
+<span class="fc bfc" id="L114" title="All 2 branches covered.">        if( paramAbaRouteNumber.trim().equals( &quot;&quot; ) ) {</span>
+<span class="fc" id="L115">            throw new AbaRouteValidationException( &quot;The ABA Route Number was empty.&quot; );</span>
         }
 
         // Quick Check
         // Make sure the string length is right
         int _strLen;
 
-<span class="fc" id="L77">        _strLen = paramAbaRouteNumber.length();</span>
+<span class="fc" id="L122">        _strLen = paramAbaRouteNumber.length();</span>
 
-        // Is if it's the right length
-<span class="fc bfc" id="L80" title="All 2 branches covered.">        if( _strLen != 9 ) {</span>
+        // See if it's the right length
+<span class="fc bfc" id="L125" title="All 2 branches covered.">        if( _strLen != 9 ) {</span>
 
             // Is it to short?
-<span class="fc bfc" id="L83" title="All 2 branches covered.">            if( _strLen &lt; 9 ) {</span>
-<span class="fc" id="L84">                throw new AbaRouteValidationException( &quot;The ABA Route Number was not long enough.  (Size was &quot;</span>
+<span class="fc bfc" id="L128" title="All 2 branches covered.">            if( _strLen &lt; 9 ) {</span>
+<span class="fc" id="L129">                throw new AbaRouteValidationException( &quot;The ABA Route Number was not long enough.  (Size was &quot;</span>
                         + _strLen + &quot;).&quot; );
             } else {
 
                 // Must be to long.
-<span class="fc" id="L89">                throw new AbaRouteValidationException( &quot;The ABA Route Number was tot long.  (Size was &quot; + _strLen</span>
+<span class="fc" id="L134">                throw new AbaRouteValidationException( &quot;The ABA Route Number was tot long.  (Size was &quot; + _strLen</span>
                         + &quot;).&quot; );
             }
         }
 
         // Quick Check
         // Finally, let's just do a scan and make sure it's a number
-<span class="fc bfc" id="L96" title="All 2 branches covered.">        if( !isNumeric( paramAbaRouteNumber ) ) {</span>
-<span class="fc" id="L97">            throw new AbaRouteValidationException(</span>
+<span class="fc bfc" id="L141" title="All 2 branches covered.">        if( !isNumeric( paramAbaRouteNumber ) ) {</span>
+<span class="fc" id="L142">            throw new AbaRouteValidationException(</span>
                 &quot;The ABA Route Number appears to have alphanumeric or formatting characters in it.&quot; );
         }
 
         // -----------------------------------------------------------------------------
         // -----------------------------------------------------------------------------
         // So we got this far, lets start breaking it down.
-<span class="fc" id="L104">        breakdownAbaNumber( paramAbaRouteNumber );</span>
+<span class="fc" id="L149">        breakdownAbaNumber( paramAbaRouteNumber );</span>
 
         // Must be good!
-<span class="fc" id="L107">        return ( true );</span>
+<span class="fc" id="L152">        return ( true );</span>
     }
 
-    public void validateAbaNumberChecksum( final String paramAbaRouteNumber )
+    /**
+     * Method description
+     *
+     *
+     * @param paramAbaRouteNumber The target ABA number to test.
+     *
+     * @throws AbaRouteValidationException
+     */
+    static private void validateAbaNumberChecksum( final String paramAbaRouteNumber )
             throws AbaRouteValidationException {
 
         // Set up all the int's
-        int  i1;
-        int  i2;
-        int  i3;
-        int  i4;
-        int  i5;
-        int  i6;
-        int  i7;
-        int  i8;
-        int  i9;
+        int i1, i2, i3, i4, i5, i6, i7, i8, i9;
 
-        // create the temp char
-        char _tempChar;
-
-        // I1
-<span class="fc" id="L128">        _tempChar = paramAbaRouteNumber.charAt( 0 );</span>
-<span class="fc" id="L129">        i1        = Character.getNumericValue( _tempChar );</span>
-
-        // I2
-<span class="fc" id="L132">        _tempChar = paramAbaRouteNumber.charAt( 1 );</span>
-<span class="fc" id="L133">        i2        = Character.getNumericValue( _tempChar );</span>
-
-        // I3
-<span class="fc" id="L136">        _tempChar = paramAbaRouteNumber.charAt( 2 );</span>
-<span class="fc" id="L137">        i3        = Character.getNumericValue( _tempChar );</span>
-
-        // I4
-<span class="fc" id="L140">        _tempChar = paramAbaRouteNumber.charAt( 3 );</span>
-<span class="fc" id="L141">        i4        = Character.getNumericValue( _tempChar );</span>
-
-        // I5
-<span class="fc" id="L144">        _tempChar = paramAbaRouteNumber.charAt( 4 );</span>
-<span class="fc" id="L145">        i5        = Character.getNumericValue( _tempChar );</span>
-
-        // I6
-<span class="fc" id="L148">        _tempChar = paramAbaRouteNumber.charAt( 5 );</span>
-<span class="fc" id="L149">        i6        = Character.getNumericValue( _tempChar );</span>
-
-        // I7
-<span class="fc" id="L152">        _tempChar = paramAbaRouteNumber.charAt( 6 );</span>
-<span class="fc" id="L153">        i7        = Character.getNumericValue( _tempChar );</span>
-
-        // I8
-<span class="fc" id="L156">        _tempChar = paramAbaRouteNumber.charAt( 7 );</span>
-<span class="fc" id="L157">        i8        = Character.getNumericValue( _tempChar );</span>
-
-        // I9
-<span class="fc" id="L160">        _tempChar = paramAbaRouteNumber.charAt( 8 );</span>
-<span class="fc" id="L161">        i9        = Character.getNumericValue( _tempChar );</span>
+        // Break up the string so we can look at the numbers.
+<span class="fc" id="L170">        i1 = Character.getNumericValue( paramAbaRouteNumber.charAt( 0 ) );</span>
+<span class="fc" id="L171">        i2 = Character.getNumericValue( paramAbaRouteNumber.charAt( 1 ) );</span>
+<span class="fc" id="L172">        i3 = Character.getNumericValue( paramAbaRouteNumber.charAt( 2 ) );</span>
+<span class="fc" id="L173">        i4 = Character.getNumericValue( paramAbaRouteNumber.charAt( 3 ) );</span>
+<span class="fc" id="L174">        i5 = Character.getNumericValue( paramAbaRouteNumber.charAt( 4 ) );</span>
+<span class="fc" id="L175">        i6 = Character.getNumericValue( paramAbaRouteNumber.charAt( 5 ) );</span>
+<span class="fc" id="L176">        i7 = Character.getNumericValue( paramAbaRouteNumber.charAt( 6 ) );</span>
+<span class="fc" id="L177">        i8 = Character.getNumericValue( paramAbaRouteNumber.charAt( 7 ) );</span>
+<span class="fc" id="L178">        i9 = Character.getNumericValue( paramAbaRouteNumber.charAt( 8 ) );</span>
 
         // Okay, lets crank it through the formula
         int checksumTotal;
 
-<span class="fc" id="L166">        checksumTotal = ( ( i1 * 3 ) + ( i2 * 7 ) + ( i3 ) +</span>
-
-        //
-        ( i4 * 3 ) + ( i5 * 7 ) + ( i6 ) +
-
-        //
-        ( i7 * 3 ) + ( i8 * 7 ) + ( i9 ) );
+<span class="fc" id="L183">        checksumTotal = ( ( i3 + i6 + i9 ) + ( 3 * ( i1 + i4 + i7 ) ) + ( 7 * ( i2 + i5 + i8 ) ) );</span>
 
         // Check the modulus and we're done!
-<span class="fc bfc" id="L175" title="All 2 branches covered.">        if( ( checksumTotal % 10 ) != 0 ) {</span>
-<span class="fc" id="L176">            throw new AbaRouteValidationException( &quot;The ABA Route Number has failed its checksum test.&quot; );</span>
+<span class="fc bfc" id="L186" title="All 2 branches covered.">        if( ( checksumTotal % 10 ) != 0 ) {</span>
+<span class="fc" id="L187">            throw new AbaRouteValidationException( &quot;The ABA Route Number has failed its checksum test.&quot; );</span>
         }
-<span class="fc" id="L178">    }</span>
+<span class="fc" id="L189">    }</span>
 
-    public void validateFedNumber( final String paramAbaRouteNumber )
+    /**
+     * This method will test to see if the first two characters, when combined to create a
+     * number, are within an acceptable range.
+     *
+     * @param paramAbaRouteNumber The target string to test.
+     *
+     * @throws AbaRouteValidationException
+     */
+    static private void validateFedNumber( final String paramAbaRouteNumber )
             throws AbaRouteValidationException {
 
         // String off the first 2 numbers and see if they validate.
         String _tempStr;
 
-<span class="fc" id="L186">        _tempStr = paramAbaRouteNumber.substring( 0, 2 );</span>
+<span class="fc" id="L205">        _tempStr = paramAbaRouteNumber.substring( 0, 2 );</span>
 
         // Now, convert the substring to an int
         int _fedNumb;
 
-<span class="fc" id="L191">        _fedNumb = Integer.parseInt( _tempStr );</span>
+<span class="fc" id="L210">        _fedNumb = Integer.parseInt( _tempStr );</span>
 
         // Okay, let's see if it works!
-<span class="pc bpc" id="L194" title="5 of 14 branches missed.">        if( !( ( ( _fedNumb &gt;= 0 ) &amp;&amp; ( _fedNumb &lt;= 12 ) ) || ( ( _fedNumb &gt;= 21 ) &amp;&amp; ( _fedNumb &lt;= 32 ) )</span>
+<span class="pc bpc" id="L213" title="5 of 14 branches missed.">        if( !( ( ( _fedNumb &gt;= 0 ) &amp;&amp; ( _fedNumb &lt;= 12 ) ) || ( ( _fedNumb &gt;= 21 ) &amp;&amp; ( _fedNumb &lt;= 32 ) )</span>
                 || ( ( _fedNumb &gt;= 61 ) &amp;&amp; ( _fedNumb &lt;= 72 ) ) || ( ( _fedNumb == 80 ) ) ) ) {
-<span class="fc" id="L196">            throw new AbaRouteValidationException(</span>
+<span class="fc" id="L215">            throw new AbaRouteValidationException(</span>
                 &quot;The first two characters of the ABA Routing Number do no correspond to a valid Federal ABA prefix.&quot; );
         }
-<span class="fc" id="L199">    }</span>
+<span class="fc" id="L218">    }</span>
 }
+
+/* ***************************************************************************************
+ * Copyright 2015 - CardaTechnologies, LLC
+ *
+ * Class: com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.java  
+ * Date:  2015/02/11
+ *************************************************************************************** */
 </pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.2.201409121644</span></div></body></html>
