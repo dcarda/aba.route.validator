@@ -29,23 +29,14 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
 //~--- classes ----------------------------------------------------------------
 
 /**
- * Class Discription: This class is used to validate a ABA Routing Transmit Number.
- *
- * {copyright}
- *
- *
- * <![CDATA[
-
- * All righ
  * <dl>
  * <dt><font face="Arial"><span class="simpleTagLabel">All Rights Reserved</span></font></dt>
  * <dd>Copyright &copy; 2015 - CardaTechnologies, LLC</dd>
  * <dt><font face="Arial"><span class="simpleTagLabel">Class Description:</span></font></dt>
  * <dd>This class is used to validate a ABA Routing Transmit Number.</dd>
  * </dl>
- ]]>
  *
- * @version        {version}
+ * @version        1.0.0
  * @author         Daniel Carda
  */
 public class AbaRouteValidator {

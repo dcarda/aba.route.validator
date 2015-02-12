@@ -46,28 +46,6 @@
         </license>
     </licenses>
 
-<!--
-    <licenses>
-        <license>
-            <name>GNU General Public License, Version 3</name>
-            <url>http://www.gnu.org/licenses/gpl-3.0-standalone.html</url>
-            <comments>The software ("Software") developed and owned by Network Engine for
-                Objects in Lund AB (referred to in this notice as "Neo Technology") is
-                licensed under the GNU GENERAL PUBLIC LICENSE Version 3 to all third
-                parties and that license is included below.
-
-                However, if you have executed an End User Software License and Services
-                Agreement or an OEM Software License and Support Services Agreement, or
-                another commercial license agreement with Neo Technology or one of its
-                affiliates (each, a "Commercial Agreement"), the terms of the license in
-                such Commercial Agreement will supersede the GNU GENERAL PUBLIC LICENSE
-                Version 3 and you may use the Software solely pursuant to the terms of
-                the relevant Commercial Agreement.</comments>
-        </license>
-    </licenses>
--->
-
-
     <!--  Developers   ==============================================================  -->
     <developers>
         <!--  Daniel Carda   ====================================================  -->
@@ -108,10 +86,6 @@
     <!--  Properties                                                                   -->
     <!-- ============================================================================= -->
     <properties>
-
-
-        <Author>Daniel Carda</Author>
-
 
         <!--  Compiler Settings  ================================================  -->
         <java.version>1.8</java.version>
@@ -314,65 +288,6 @@
                         </archive>
                     </configuration>
                 </plugin>
-
-
-
-
-
-
-<!--
-
-http://maven.40175.n5.nabble.com/Read-project-version-from-pom-td127369.html
-
-project.name          = ${project.name}
-project.version       = ${project.version}
-project.description   = ${project.description}
-project.inceptionYear = ${project.inceptionYear}
-
-
-
-<plugin>
-<groupId>org.apache.maven.plugins</groupId>
-<artifactId>maven-jar-plugin</artifactId>
-<configuration>
-<archive>
-<index>true</index>
-<manifest>
-<addDefaultSpecificationEntries>
-                                 true
-</addDefaultSpecificationEntries>
-<addDefaultImplementationEntries>
-                                 true
-</addDefaultImplementationEntries>
-</manifest>
-<manifestEntries>
-<Specification-Title>${project.name}</Specification-Title>
-<Specification-Version>${project.version}</Specification-Version>
-<Implementation-Title>${project.name}</Implementation-Title>
-<Implementation-Version>${project.version} ${buildNumber} -
-${user.name}</Implementation-Version>
-<SCM-Revision>${buildNumber}</SCM-Revision>
-<SCM-url>${scm.url}</SCM-url>
-</manifestEntries>
-</archive>
-</configuration>
-</plugin>
-<plugin>
-
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                 <!--  Maven Release Plugin   ====================================  -->
                 <plugin>
@@ -579,26 +494,9 @@ ${user.name}</Implementation-Version>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>2.9</version>
                 <configuration>
-                    <source>1.7</source>
-                    <doclet>org.asciidoctor.Asciidoclet</doclet>
-                    <docletArtifact>
-                            <groupId>org.asciidoctor</groupId>
-                            <artifactId>asciidoclet</artifactId>
-                            <version>1.5.1</version>
-                    </docletArtifact>
-                    <overview>src/main/java/overview.adoc</overview>
-                    <additionalparam>
-                        --base-dir ${project.basedir}
-
-                        --attribute "name=${project.name}"
-                        --attribute "version=${project.version}"
-                        --attribute "title-link=http://example.com[${project.name} ${project.version}]"
-                        --attribute "copyright=Copyright (C) 2015 - CardaTechnologies LLC"
-                    </additionalparam>
+                    <source>1.8</source>
                 </configuration>
             </plugin>
-
-
             <!--  JavaNCSS Report   =============================================  -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
