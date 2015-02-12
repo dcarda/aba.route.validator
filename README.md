@@ -63,7 +63,7 @@ Here's an example of the validator in action!
             throws AbaRouteValidationException {
         boolean _isValid;
 
-        // Validate
+        // Static call to validate.
         _isValid = AbaRouteValidator.validate( paramAbaNumber );
 
         // Return the result
@@ -86,7 +86,7 @@ Have a bug or a feature request? Please create an issue and I'll see what I can 
 
 ## Copyright and license
 
-<pre>Copyright (c) 2015 - CardaTechnologies, LLC</pre>
+Copyright (c) 2015 - CardaTechnologies, LLC
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this work except in compliance with the License.
