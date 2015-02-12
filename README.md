@@ -21,7 +21,68 @@ This link should have all the information you need!
 http://dcarda.github.io/aba.route.validator/dependency-info.html
 
 ### Example
-```javas
+```java
+
+    /**
+     * Rigorous Test :-)
+     */
+    public void testAbaValidation() {
+
+        // This is the ABA RTN for Wells Fargo.
+        String _abaString = "121000248";
+
+        // Try and validate the number.
+        try {
+
+            // Run the validation.
+            boolean _isValid;
+            _isValid = validateNumber( _abaString );
+
+            if ( _isValid == false)
+            {
+                ; // Throw error here
+            }
+        } catch( AbaRouteValidationException e ) {
+            ;    // Do something interesting here...
+        }
+    }
+
+    /**
+     * This method will validate an incoming ABA Routing Transmit Number.
+     *
+     * @param paramAbaNumber The ABA number to be validated.
+     *
+     * @return True if valid.  False if not valid.
+     *
+     * @throws AbaRouteValidationException Something went *really* wrong.
+     */
+    public boolean validateNumber( final String paramAbaNumber )
+            throws AbaRouteValidationException {
+        boolean _isValid;
+
+        // Validate
+        _isValid = AbaRouteValidator.validate( paramAbaNumber );
+
+        // Return the result
+        return ( _isValid );
+    }
+
+
+
+
+   public void testApp() {
+
+        // Validate
+        try {
+            AbaRouteValidator.validate( "302075018" );
+        } catch( AbaRouteValidationException e ) {
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
+        }
+
+        // This is a good thing!
+        assertTrue( true );
+    }
+
 public void testNullParam() {
         AbaRouteValidator aObj = null;
         String abaNumber = null;
@@ -45,10 +106,9 @@ public void testNullParam() {
 
 ## Bug tracker
 
-Have a bug or a feature request? Please create an issue here on GitHub that conforms with
-[necolas's guidelines](http://github.com/necolas/issue-guidelines).
+Have a bug or a feature request? Please create an issue and I'll see what I can do!
 
-http://github.com/andriusvelykis/reflow-maven-skin/issues
++https://github.com/dcarda/aba.route.validator/issues
 
 ## Author
 
@@ -59,7 +119,7 @@ http://github.com/andriusvelykis/reflow-maven-skin/issues
 
 ## Copyright and license
 
-Copyright 2012-2013 CardaTechnologies, LLC
+Copyright (c) 2015 - CardaTechnologies, LLC
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this work except in compliance with the License.
