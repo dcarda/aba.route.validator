@@ -1,3 +1,25 @@
+/* ***************************************************************************************
+ * Class: com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.java
+ * Date:  2015/02/11
+ * ***************************************************************************************
+ *
+ * Copyright 2015 - CardaTechnologies, LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * ***************************************************************************************
+ */
+
 package com.cardatechnologies.utils.validators.abaroutevalidator;
 
 //~--- non-JDK imports --------------------------------------------------------
@@ -7,22 +29,35 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
 //~--- classes ----------------------------------------------------------------
 
 /**
+ * Class Discription: This class is used to validate a ABA Routing Transmit Number.
+ *
+ * {copyright}
+ *
+ *
+ * <![CDATA[
+
+ * All righ
  * <dl>
  * <dt><font face="Arial"><span class="simpleTagLabel">All Rights Reserved</span></font></dt>
  * <dd>Copyright &copy; 2015 - CardaTechnologies, LLC</dd>
  * <dt><font face="Arial"><span class="simpleTagLabel">Class Description:</span></font></dt>
  * <dd>This class is used to validate a ABA Routing Transmit Number.</dd>
  * </dl>
+ ]]>
  *
- * @version        Enter version here..., 15/02/06
- * @author         Enter your name here...
+ * @version        {version}
+ * @author         Daniel Carda
  */
 public class AbaRouteValidator {
-    public AbaRouteValidator() {}
 
-    //~--- methods ------------------------------------------------------------
-
-    public void breakdownAbaNumber( final String paramAbaRouteNumber )
+    /**
+     * Method description
+     *
+     * @param paramAbaRouteNumber The incoming ABA Number.
+     *
+     * @throws AbaRouteValidationException
+     */
+     private static void breakdownAbaNumber( final String paramAbaRouteNumber )
             throws AbaRouteValidationException {
 
         // Check first two digits.
@@ -34,10 +69,18 @@ public class AbaRouteValidator {
 
     //~--- get methods --------------------------------------------------------
 
-    public boolean isNumeric( final String str ) {
+    /**
+     * Method description
+     *
+     *
+     * @param paramStr The string which needs to be made up of all numbers.
+     *
+     * @return True if all the characters were digits.  False if there was a problem.
+     */
+    static private boolean isNumeric( final String paramStr ) {
 
         // Cycle through the character array
-        for( char _char : str.toCharArray() ) {
+        for( char _char : paramStr.toCharArray() ) {
             if( !Character.isDigit( _char ) ) {
 
                 // This is bad!
@@ -51,7 +94,18 @@ public class AbaRouteValidator {
 
     //~--- methods ------------------------------------------------------------
 
-    public boolean validate( final String paramAbaRouteNumber )
+    /**
+     * This method is the starting point to validate whether a incoming string is
+     * an ABA Routing Transmit Number.
+     *
+     * @param paramAbaRouteNumber The ABA number to be tested.
+     *
+     * @return  True if it passes validation.  False if it fails validation.
+     *
+     * @throws AbaRouteValidationException A error occurred when parsing the suspect
+     *                                     ABA Routing Transmit Number.
+     */
+    static public boolean validate( final String paramAbaRouteNumber )
             throws AbaRouteValidationException {
 
         // http://en.wikipedia.org/wiki/Routing_transit_number
@@ -66,13 +120,14 @@ public class AbaRouteValidator {
 
         // Quick Check
         // Is the parameter empty
-        if( paramAbaRouteNumber == null ) {
+        if( paramAbaRouteNumber.trim().equals( "" ) ) {
             throw new AbaRouteValidationException( "The ABA Route Number was empty." );
         }
 
         // Quick Check
         // Make sure the string length is right
         int _strLen;
+
         _strLen = paramAbaRouteNumber.length();
 
         // See if it's the right length
@@ -106,11 +161,19 @@ public class AbaRouteValidator {
         return ( true );
     }
 
-    public void validateAbaNumberChecksum( final String paramAbaRouteNumber )
+    /**
+     * Method description
+     *
+     *
+     * @param paramAbaRouteNumber The target ABA number to test.
+     *
+     * @throws AbaRouteValidationException
+     */
+    static private void validateAbaNumberChecksum( final String paramAbaRouteNumber )
             throws AbaRouteValidationException {
 
         // Set up all the int's
-        int  i1 , i2, i3, i4, i5, i6, i7, i8, i9;
+        int i1, i2, i3, i4, i5, i6, i7, i8, i9;
 
         // Break up the string so we can look at the numbers.
         i1 = Character.getNumericValue( paramAbaRouteNumber.charAt( 0 ) );
@@ -125,6 +188,7 @@ public class AbaRouteValidator {
 
         // Okay, lets crank it through the formula
         int checksumTotal;
+
         checksumTotal = ( ( i3 + i6 + i9 ) + ( 3 * ( i1 + i4 + i7 ) ) + ( 7 * ( i2 + i5 + i8 ) ) );
 
         // Check the modulus and we're done!
@@ -133,11 +197,20 @@ public class AbaRouteValidator {
         }
     }
 
-    public void validateFedNumber( final String paramAbaRouteNumber )
+    /**
+     * This method will test to see if the first two characters, when combined to create a
+     * number, are within an acceptable range.
+     *
+     * @param paramAbaRouteNumber The target string to test.
+     *
+     * @throws AbaRouteValidationException
+     */
+    static private void validateFedNumber( final String paramAbaRouteNumber )
             throws AbaRouteValidationException {
 
         // String off the first 2 numbers and see if they validate.
         String _tempStr;
+
         _tempStr = paramAbaRouteNumber.substring( 0, 2 );
 
         // Now, convert the substring to an int
@@ -153,3 +226,10 @@ public class AbaRouteValidator {
         }
     }
 }
+
+/* ***************************************************************************************
+ * Copyright 2015 - CardaTechnologies, LLC
+ *
+ * Class: com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.java  
+ * Date:  2015/02/11
+ *************************************************************************************** */

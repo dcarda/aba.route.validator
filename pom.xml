@@ -109,6 +109,10 @@
     <!-- ============================================================================= -->
     <properties>
 
+
+        <Author>Daniel Carda</Author>
+
+
         <!--  Compiler Settings  ================================================  -->
         <java.version>1.8</java.version>
         <javacDebug>true</javacDebug>
@@ -127,14 +131,6 @@
         <version.reflow.velocity.tools>1.1.1</version.reflow.velocity.tools>
         <version.release.plugin>2.5.1</version.release.plugin>
         <version.scm.provider.gitexe>1.9.2</version.scm.provider.gitexe>
-
-
-
-
-
-
-
-
 
         <!--  Reporting Plugin Settings   =======================================  -->
         <version.checkstyle.report.plugin>2.13</version.checkstyle.report.plugin>
@@ -298,11 +294,86 @@
                                     <Maven-Version>${maven.version}</Maven-Version>
                                     <BuildTime>${maven.build.timestamp}</BuildTime>
                                     <Implementation-Build>${implementation.build}</Implementation-Build>
+
+                                    <Implementation-URL>${project.url}</Implementation-URL>
+                                    <Java-Version>${java.version}</Java-Version>
+                                    <Java-Vendor>${java.vendor}</Java-Vendor>
+                                    <Os-Name>${os.name}</Os-Name>
+                                    <Os-Arch>${os.arch}</Os-Arch>
+                                    <Os-Version>${os.version}</Os-Version>
+                                    <Scm-Url>${project.scm.url}</Scm-Url>
+                                    <Scm-Connection>${project.scm.connection}</Scm-Connection>
+                                    <Scm-Revision>${buildNumber}</Scm-Revision>
+                                    <Build-Timestamp>${build.datetime}</Build-Timestamp>
+                                    <Maven-Version>${maven.version}</Maven-Version>
+
                                     <SVN-Revision>${buildNumber}</SVN-Revision>
+
                                 </manifestEntries>
+
                         </archive>
                     </configuration>
                 </plugin>
+
+
+
+
+
+
+<!--
+
+http://maven.40175.n5.nabble.com/Read-project-version-from-pom-td127369.html
+
+project.name          = ${project.name}
+project.version       = ${project.version}
+project.description   = ${project.description}
+project.inceptionYear = ${project.inceptionYear}
+
+
+
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-jar-plugin</artifactId>
+<configuration>
+<archive>
+<index>true</index>
+<manifest>
+<addDefaultSpecificationEntries>
+                                 true
+</addDefaultSpecificationEntries>
+<addDefaultImplementationEntries>
+                                 true
+</addDefaultImplementationEntries>
+</manifest>
+<manifestEntries>
+<Specification-Title>${project.name}</Specification-Title>
+<Specification-Version>${project.version}</Specification-Version>
+<Implementation-Title>${project.name}</Implementation-Title>
+<Implementation-Version>${project.version} ${buildNumber} -
+${user.name}</Implementation-Version>
+<SCM-Revision>${buildNumber}</SCM-Revision>
+<SCM-url>${scm.url}</SCM-url>
+</manifestEntries>
+</archive>
+</configuration>
+</plugin>
+<plugin>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <!--  Maven Release Plugin   ====================================  -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -445,6 +516,7 @@
     <!--  Reporting   ===============================================================  -->
     <reporting>
         <plugins>
+
             <!--  Checkstyle Report Plugin   ====================================  -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -505,36 +577,28 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <!--
-                <version>${version.javadoc.report.plugin}</version>
-                -->
-                <version>2.9.1</version>
-
-
-
-                <reportSets>
-                    <reportSet>
-                        <id>html</id>
-                        <reports>
-                            <report>javadoc</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
+                <version>2.9</version>
                 <configuration>
-                    <aggregate>true</aggregate>
-
-
+                    <source>1.7</source>
+                    <doclet>org.asciidoctor.Asciidoclet</doclet>
+                    <docletArtifact>
+                            <groupId>org.asciidoctor</groupId>
+                            <artifactId>asciidoclet</artifactId>
+                            <version>1.5.1</version>
+                    </docletArtifact>
+                    <overview>src/main/java/overview.adoc</overview>
                     <additionalparam>
-                        <!--
-                        base-dir ${project.basedir}
-                        attribute "name=${project.name}"
-                        attribute "version=${project.version}"
-                        attribute "title-link=http://example.com[${project.name} ${project.version}]"
-                        -->
+                        --base-dir ${project.basedir}
 
+                        --attribute "name=${project.name}"
+                        --attribute "version=${project.version}"
+                        --attribute "title-link=http://example.com[${project.name} ${project.version}]"
+                        --attribute "copyright=Copyright (C) 2015 - CardaTechnologies LLC"
                     </additionalparam>
                 </configuration>
             </plugin>
+
+
             <!--  JavaNCSS Report   =============================================  -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
