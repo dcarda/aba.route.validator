@@ -12,7 +12,7 @@
     <!-- ============================================================================= -->
     <groupId>com.cardatechnologies</groupId>
     <artifactId>aba.routing.transit.validator</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>0.9.9-SNAPSHOT</version>
 
     <!-- ============================================================================= -->
     <!--  Miscellaneous Settings                                                       -->
@@ -25,9 +25,9 @@
         it has passed a small series of edits.
     </description>
     <inceptionYear>2015</inceptionYear>
-
+    
     <!--  Distribution Management   =================================================  -->
-
+    
     <distributionManagement>
         <snapshotRepository>
             <id>ossrh</id>
@@ -786,7 +786,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.5</version>
+                        <version>1.6</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
