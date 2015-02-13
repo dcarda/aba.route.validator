@@ -85,7 +85,7 @@
         <connection>scm:git:git@github.com:dcarda/aba.route.validator.git</connection>
         <developerConnection>scm:git:git@github.com:dcarda/aba.route.validator.git</developerConnection>
         <url>https://github.com/dcarda/aba.route.validator/tree/master</url>
-        <tag>aba.route.validator-1.0.0-FINAL</tag>
+        <tag>n</tag>
     </scm>
 
     <!--  Issue Management   ========================================================  -->
