@@ -12,7 +12,7 @@
     <!-- ============================================================================= -->
     <groupId>com.cardatechnologies</groupId>
     <artifactId>aba.routing.transit.validator</artifactId>
-    <version>1.0.0-FINAL</version>
+    <version>0.9.9-SNAPSHOT</version>
 
     <!-- ============================================================================= -->
     <!--  Miscellaneous Settings                                                       -->
