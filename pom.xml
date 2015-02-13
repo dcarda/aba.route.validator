@@ -10,37 +10,37 @@
     <!-- ============================================================================= -->
     <!--  Artifact Information                                                         -->
     <!-- ============================================================================= -->
-    <groupId>com.cardatechnologies.utils.validators</groupId>
-    <artifactId>aba.route.validator</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <groupId>com.cardatechnologies</groupId>
+    <artifactId>aba.routing.transit.validator</artifactId>
+    <version>0.9.8-SNAPSHOT</version>
 
     <!-- ============================================================================= -->
     <!--  Miscellaneous Settings                                                       -->
     <!-- ============================================================================= -->
     <packaging>jar</packaging>
-    <name>ABA Route Transmit Number Validator</name>
+    <name>ABA Route Transit Number Validator</name>
     <description>
-        This validator will confirm if an ABA Routing Transmit Number Validator
+        This validator will confirm if an ABA Routing Transit Number Validator
         is formatted correctly.  This does not guarantee if it's valid, only that
         it has passed a small series of edits.
     </description>
     <inceptionYear>2015</inceptionYear>
 
     <!--  Distribution Management   =================================================  -->
+
     <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
         <repository>
-            <uniqueVersion>false</uniqueVersion>
-            <id>corp1</id>
-            <name>Corporate Repository</name>
-            <!--
-            <url>scp://repo/maven2</url>
-            -->
-            <url>file:///C:/Users/Joker/.m2/repository</url>
-            <!--
-            <layout>default</layout>
-            -->
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
+
+
+
 
     <!--  Organization   ============================================================  -->
     <organization>
@@ -402,6 +402,37 @@
 
         <!--  Plugins   =========================================================  -->
         <plugins>
+
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.5</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.3</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>ossrh</serverId>
+                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                </configuration>
+            </plugin>
+
+
+
 
             <!--  Compiler Plugin   =============================================  -->
             <plugin>
