@@ -12,7 +12,7 @@
     <!-- ============================================================================= -->
     <groupId>com.cardatechnologies</groupId>
     <artifactId>aba.routing.transit.validator</artifactId>
-    <version>0.9.8</version>
+    <version>0.9.9-SNAPSHOT</version>
 
     <!-- ============================================================================= -->
     <!--  Miscellaneous Settings                                                       -->
@@ -85,7 +85,7 @@
         <connection>scm:git:git@github.com:dcarda/aba.route.validator.git</connection>
         <developerConnection>scm:git:git@github.com:dcarda/aba.route.validator.git</developerConnection>
         <url>https://github.com/dcarda/aba.route.validator/tree/master</url>
-        <tag>aba.routing.transit.validator-0.9.8</tag>
+        <tag>n</tag>
     </scm>
 
     <!--  Issue Management   ========================================================  -->
