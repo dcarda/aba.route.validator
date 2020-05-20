@@ -77,7 +77,7 @@
 
     <!--  Prerequisites   ===========================================================  -->
     <prerequisites>
-        <maven>3.0.0</maven>
+        <maven>3.6.0</maven>
     </prerequisites>
 
     <!--  Source Control Management   ===============================================  -->
@@ -137,7 +137,7 @@
         <version.versions.report.plugin>2.1.4</version.versions.report.plugin>
 
         <!--  Test Related Plugins   ============================================  -->
-        <version.junit>4.12</version.junit>
+        <version.junit>4.13</version.junit>
         <version.surefire.junit47.plugin>2.18.1</version.surefire.junit47.plugin>
 
     </properties>

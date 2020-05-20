@@ -1,7 +1,42 @@
-.idea/
-out/
-target/
-release.properties
+#.gitignore 
 
-/*.cmd
-/*.cmd
+###  Java Files   --------------------------------------------
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+###  Virtual Machine Crash Logs   ----------------------------
+###  see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+###  Log file   ----------------------------------------------
+*.log
+
+###  Clover Coverage   ---------------------------------------
+.clover
+
+###  Temporary Build Directories   ---------------------------
+**/target/
+**/build/
+**/out/
+**/dist/
+**/conf/
+**/db/
+
+###  Gradle   ------------------------------------------------
+**/.gradle
+
+###  Intellij   ----------------------------------------------
+**/.idea/
+**/*.iml
+**/src/test/test.iml*
+**/*.ipr
+**/*.iws
+
+###  Notepad++   ---------------------------------------------
+**/nppBackup/
