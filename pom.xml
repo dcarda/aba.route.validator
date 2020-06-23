@@ -136,6 +136,31 @@
         <version.taglist.report.plugin>2.4</version.taglist.report.plugin>
         <version.versions.report.plugin>2.1.4</version.versions.report.plugin>
 
+
+
+        <version.openclover.clover>4.3.1</version.openclover.clover>
+        <version.openclover.runtime>4.3.1</version.openclover.runtime>
+        <version.openclover.maven.plugin>4.3.1</version.openclover.maven.plugin>
+        <version.openclover.aspectj.compiler>1.0.1</version.openclover.aspectj.compiler>
+
+
+<!--        <version.maven.project.info.reports.plugin>2.9</version.maven.project.info.reports.plugin>-->
+        <version.maven.project.info.reports.plugin>3.0.0</version.maven.project.info.reports.plugin>
+        <version.maven.surefire.plugin>2.19.1</version.maven.surefire.plugin>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!--  Test Related Plugins   ============================================  -->
         <version.junit>4.13</version.junit>
         <version.surefire.junit47.plugin>2.18.1</version.surefire.junit47.plugin>
@@ -198,63 +223,33 @@
                       This is the plugin which will upload the site to the github pages.
                       Good reference here:  http://blog.akquinet.de/2012/04/12/maven-sites-reloaded/
                 -->
-                <plugin>
-                    <groupId>com.github.github</groupId>
-                    <artifactId>site-maven-plugin</artifactId>
-                    <version>${version.github.site.plugin}</version>
-                    <!-- Plugin configuration goes here -->
-                    <configuration>
-                        <message>Creating site for ${project.artifactId}, ${project.version}</message>
-
-                        <server>github</server>
-                        <!-- The commit message -->
-                        <message>Building site for my project</message>
-                        <!-- The location where the site is uploaded -->
-                        <path>${site.path}</path>
-                        <!-- Use merge or override the content -->
-                        <merge>true</merge>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <goals>
-                                <goal>site</goal>
-                            </goals>
-                            <phase>site-deploy</phase>
-                            <configuration>
-                                <!--
-                                <path>${project.version}</path>
-                                -->
-                                <merge>true</merge>
-                            </configuration>
-                        </execution>
-                    </executions>
-                </plugin>
-<!--                &lt;!&ndash;  JaCoCo Report Plugin   ===================================== &ndash;&gt;-->
 <!--                <plugin>-->
-<!--                    <groupId>org.jacoco</groupId>-->
-<!--                    <artifactId>jacoco-maven-plugin</artifactId>-->
-<!--                    <version>${version.jacoco.report.plugin}</version>-->
+<!--                    <groupId>com.github.github</groupId>-->
+<!--                    <artifactId>site-maven-plugin</artifactId>-->
+<!--                    <version>${version.github.site.plugin}</version>-->
+<!--                    &lt;!&ndash; Plugin configuration goes here &ndash;&gt;-->
+<!--                    <configuration>-->
+<!--                        <message>Creating site for ${project.artifactId}, ${project.version}</message>-->
+
+<!--                        <server>github</server>-->
+<!--                        &lt;!&ndash; The commit message &ndash;&gt;-->
+<!--                        <message>Building site for my project</message>-->
+<!--                        &lt;!&ndash; The location where the site is uploaded &ndash;&gt;-->
+<!--                        <path>${site.path}</path>-->
+<!--                        &lt;!&ndash; Use merge or override the content &ndash;&gt;-->
+<!--                        <merge>true</merge>-->
+<!--                    </configuration>-->
 <!--                    <executions>-->
 <!--                        <execution>-->
-<!--                            <id>default-prepare-agent</id>-->
 <!--                            <goals>-->
-<!--                                <goal>prepare-agent</goal>-->
+<!--                                <goal>site</goal>-->
 <!--                            </goals>-->
-<!--                        </execution>-->
-<!--                        <execution>-->
-<!--                            <id>default-report</id>-->
-<!--                            <phase>prepare-package</phase>-->
-<!--                            <goals>-->
-<!--                                <goal>report</goal>-->
-<!--                            </goals>-->
-<!--                        </execution>-->
-<!--                        <execution>-->
-<!--                            <id>default-check</id>-->
-<!--                            <goals>-->
-<!--                                <goal>check</goal>-->
-<!--                            </goals>-->
+<!--                            <phase>site-deploy</phase>-->
 <!--                            <configuration>-->
-<!--                                <rules />-->
+<!--                                &lt;!&ndash;-->
+<!--                                <path>${project.version}</path>-->
+<!--                                &ndash;&gt;-->
+<!--                                <merge>true</merge>-->
 <!--                            </configuration>-->
 <!--                        </execution>-->
 <!--                    </executions>-->
@@ -331,81 +326,80 @@
                         </dependency>
                     </dependencies>
                 </plugin>
-                <!--  Maven Site Plugin   =======================================  -->
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-site-plugin</artifactId>
-                    <version>3.7.1</version>
-                    <configuration>
-                        <inputEncoding>UTF-8</inputEncoding>
-                        <outputEncoding>UTF-8</outputEncoding>
-                        <relativizeDecorationLinks>true</relativizeDecorationLinks>
-                        <generateReports>true</generateReports>
+<!--                &lt;!&ndash;  Maven Site Plugin   =======================================  &ndash;&gt;-->
+<!--                <plugin>-->
+<!--                    <groupId>org.apache.maven.plugins</groupId>-->
+<!--                    <artifactId>maven-site-plugin</artifactId>-->
+<!--                    <version>3.7.1</version>-->
+<!--                    <configuration>-->
+<!--                        <inputEncoding>UTF-8</inputEncoding>-->
+<!--                        <outputEncoding>UTF-8</outputEncoding>-->
+<!--                        <relativizeDecorationLinks>true</relativizeDecorationLinks>-->
+<!--                        <generateReports>true</generateReports>-->
 
-                        <!-- Site deployment done using GitHub site plugin -->
-                        <skipDeploy>true</skipDeploy>
-                    </configuration>
-                    <dependencies>
-                        <dependency>
-                            <groupId>lt.velykis.maven.skins</groupId>
-                            <artifactId>reflow-velocity-tools</artifactId>
-                            <version>${version.reflow.velocity.tools}</version>
-                        </dependency>
-                        <!-- Reflow skin requires Velocity >= 1.7  -->
-                        <dependency>
-                            <groupId>org.apache.velocity</groupId>
-                            <artifactId>velocity</artifactId>
-                            <version>${version.apache.velocity}</version>
-                        </dependency>
-                        <dependency>
-                            <groupId>org.apache.maven.doxia</groupId>
-                            <artifactId>doxia-site-renderer</artifactId>
-                            <version>1.8</version>
-                        </dependency>
-                    </dependencies>
-                </plugin>
-                <!--  Surefire Plugin   =========================================  -->
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>${version.surefire.report.plugin}</version>
-                    <dependencies>
-                        <!-- Force using the latest JUnit 47 provider -->
-                        <dependency>
-                            <groupId>org.apache.maven.surefire</groupId>
-                            <artifactId>surefire-junit47</artifactId>
-                            <version>${version.surefire.junit47.plugin}</version>
-                        </dependency>
-                    </dependencies>
-                    <configuration>
-                        <skipTests>false</skipTests>
-                        <aggregation>true</aggregation>
-                        <testFailureIgnore>false</testFailureIgnore>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <id>test-phase-execution</id>
-                            <phase>test</phase>
-                            <goals>
-                                <goal>test</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-                <!--  Surefire Report Plugin   ==================================  -->
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-surefire-report-plugin</artifactId>
-                    <version>${version.surefire.report.plugin}</version>
-                    <executions>
-                        <execution>
-                            <phase>test</phase>
-                            <goals>
-                                <goal>report-only</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
+<!--                        &lt;!&ndash; Site deployment done using GitHub site plugin &ndash;&gt;-->
+<!--                        <skipDeploy>true</skipDeploy>-->
+<!--                    </configuration>-->
+<!--                    <dependencies>-->
+<!--                        <dependency>-->
+<!--                            <groupId>lt.velykis.maven.skins</groupId>-->
+<!--                            <artifactId>reflow-velocity-tools</artifactId>-->
+<!--                            <version>${version.reflow.velocity.tools}</version>-->
+<!--                        </dependency>-->
+<!--                        &lt;!&ndash; Reflow skin requires Velocity >= 1.7  &ndash;&gt;-->
+<!--                        <dependency>-->
+<!--                            <groupId>org.apache.velocity</groupId>-->
+<!--                            <artifactId>velocity</artifactId>-->
+<!--                            <version>${version.apache.velocity}</version>-->
+<!--                        </dependency>-->
+<!--                        <dependency>-->
+<!--                            <groupId>org.apache.maven.doxia</groupId>-->
+<!--                            <artifactId>doxia-site-renderer</artifactId>-->
+<!--                            <version>1.8</version>-->
+<!--                        </dependency>-->
+<!--                    </dependencies>-->
+<!--                </plugin>-->
+<!--                &lt;!&ndash;  Surefire Plugin   =========================================  &ndash;&gt;-->
+<!--                <plugin>-->
+<!--                    <groupId>org.apache.maven.plugins</groupId>-->
+<!--                    <artifactId>maven-surefire-plugin</artifactId>-->
+<!--                    <version>${version.surefire.report.plugin}</version>-->
+<!--                    <dependencies>-->
+<!--                        &lt;!&ndash; Force using the latest JUnit 47 provider &ndash;&gt;-->
+<!--                        <dependency>-->
+<!--                            <groupId>org.apache.maven.surefire</groupId>-->
+<!--                            <artifactId>surefire-junit47</artifactId>-->
+<!--                            <version>${version.surefire.junit47.plugin}</version>-->
+<!--                        </dependency>-->
+<!--                    </dependencies>-->
+<!--                    <configuration>-->
+<!--                        <skipTests>false</skipTests>-->
+<!--                        <testFailureIgnore>false</testFailureIgnore>-->
+<!--                    </configuration>-->
+<!--                    <executions>-->
+<!--                        <execution>-->
+<!--                            <id>test-phase-execution</id>-->
+<!--                            <phase>test</phase>-->
+<!--                            <goals>-->
+<!--                                <goal>test</goal>-->
+<!--                            </goals>-->
+<!--                        </execution>-->
+<!--                    </executions>-->
+<!--                </plugin>-->
+<!--                &lt;!&ndash;  Surefire Report Plugin   ==================================  &ndash;&gt;-->
+<!--                <plugin>-->
+<!--                    <groupId>org.apache.maven.plugins</groupId>-->
+<!--                    <artifactId>maven-surefire-report-plugin</artifactId>-->
+<!--                    <version>${version.surefire.report.plugin}</version>-->
+<!--                    <executions>-->
+<!--                        <execution>-->
+<!--                            <phase>test</phase>-->
+<!--                            <goals>-->
+<!--                                <goal>report-only</goal>-->
+<!--                            </goals>-->
+<!--                        </execution>-->
+<!--                    </executions>-->
+<!--                </plugin>-->
 
             </plugins>
         </pluginManagement>
@@ -414,20 +408,20 @@
         <plugins>
 
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-gpg-plugin</artifactId>
-                <version>1.5</version>
-                <executions>
-                    <execution>
-                        <id>sign-artifacts</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>sign</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-gpg-plugin</artifactId>-->
+<!--                <version>1.5</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>sign-artifacts</id>-->
+<!--                        <phase>verify</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>sign</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
 
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
@@ -449,41 +443,41 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
             </plugin>
-            <!--  GitHub Site Plugin   ==========================================  -->
-            <plugin>
-                <groupId>com.github.github</groupId>
-                <artifactId>site-maven-plugin</artifactId>
-            </plugin>
+<!--            &lt;!&ndash;  GitHub Site Plugin   ==========================================  &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>com.github.github</groupId>-->
+<!--                <artifactId>site-maven-plugin</artifactId>-->
+<!--            </plugin>-->
 <!--            &lt;!&ndash;  JaCoCo Report Plugin   ========================================= &ndash;&gt;-->
 <!--            <plugin>-->
 <!--                <groupId>org.jacoco</groupId>-->
 <!--                <artifactId>jacoco-maven-plugin</artifactId>-->
 <!--            </plugin>-->
-            <!--  Maven Jar Plugin   ========================================  -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-            </plugin>
-            <!--  Maven Release Plugin   ========================================= -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-            </plugin>
-            <!--  Maven Site Plugin   ============================================ -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-site-plugin</artifactId>
-            </plugin>
-            <!--  Surefire Report   =============================================  -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-            </plugin>
-            <!--  Surefire Report Plugin   ======================================  -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-report-plugin</artifactId>
-            </plugin>
+<!--            &lt;!&ndash;  Maven Jar Plugin   ========================================  &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-jar-plugin</artifactId>-->
+<!--            </plugin>-->
+<!--            &lt;!&ndash;  Maven Release Plugin   ========================================= &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-release-plugin</artifactId>-->
+<!--            </plugin>-->
+<!--            &lt;!&ndash;  Maven Site Plugin   ============================================ &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-site-plugin</artifactId>-->
+<!--            </plugin>-->
+<!--            &lt;!&ndash;  Surefire Report   =============================================  &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-surefire-plugin</artifactId>-->
+<!--            </plugin>-->
+<!--            &lt;!&ndash;  Surefire Report Plugin   ======================================  &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-surefire-report-plugin</artifactId>-->
+<!--            </plugin>-->
         </plugins>
 
     </build>
@@ -492,214 +486,202 @@
     <reporting>
         <plugins>
 
-            <!--  Checkstyle Report Plugin   ====================================  -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>${version.checkstyle.report.plugin}</version>
-                <configuration>
-                    <configLocation>${basedir}/src/main/resources/jboss-as-checkstyle/checkstyle.xml</configLocation>
-                    <consoleOutput>true</consoleOutput>
-                    <failsOnError>false</failsOnError>
-                </configuration>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>checkstyle</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-            </plugin>
-            <!--  GitHub Maven Site Plugin   ====================================  -->
-            <plugin>
-                <groupId>com.github.sevntu-checkstyle</groupId>
-                <artifactId>dsm-maven-plugin</artifactId>
-                <version>${version.github.report.plugin}</version>
-            </plugin>
-            <!--  JXR Cross Reference Report Plugin   ===========================  -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jxr-plugin</artifactId>
-                <version>${version.jxr.report.plugin}</version>
-                <configuration>
-                    <additionalparam>-Xdoclint:none</additionalparam>
-                    <linkJavadoc>true</linkJavadoc>
-                    <excludes>
-                        <exclude>**/Test_*.java</exclude>
-                    </excludes>
-                </configuration>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>jxr</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-            </plugin>
-<!--            &lt;!&ndash;  Findbugs Report   =============================================  &ndash;&gt;-->
+<!--            &lt;!&ndash;  Checkstyle Report Plugin   ====================================  &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-checkstyle-plugin</artifactId>-->
+<!--                <version>${version.checkstyle.report.plugin}</version>-->
+<!--                <configuration>-->
+<!--                    <configLocation>${basedir}/src/main/resources/jboss-as-checkstyle/checkstyle.xml</configLocation>-->
+<!--                    <consoleOutput>true</consoleOutput>-->
+<!--                    <failsOnError>false</failsOnError>-->
+<!--                </configuration>-->
+<!--                <reportSets>-->
+<!--                    <reportSet>-->
+<!--                        <reports>-->
+<!--                            <report>checkstyle</report>-->
+<!--                        </reports>-->
+<!--                    </reportSet>-->
+<!--                </reportSets>-->
+<!--            </plugin>-->
+<!--            &lt;!&ndash;  GitHub Maven Site Plugin   ====================================  &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>com.github.sevntu-checkstyle</groupId>-->
+<!--                <artifactId>dsm-maven-plugin</artifactId>-->
+<!--                <version>${version.github.report.plugin}</version>-->
+<!--            </plugin>-->
+<!--            &lt;!&ndash;  JXR Cross Reference Report Plugin   ===========================  &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-jxr-plugin</artifactId>-->
+<!--                <version>${version.jxr.report.plugin}</version>-->
+<!--                <configuration>-->
+<!--                    <additionalparam>-Xdoclint:none</additionalparam>-->
+<!--                    <linkJavadoc>true</linkJavadoc>-->
+<!--                    <excludes>-->
+<!--                        <exclude>**/Test_*.java</exclude>-->
+<!--                    </excludes>-->
+<!--                </configuration>-->
+<!--                <reportSets>-->
+<!--                    <reportSet>-->
+<!--                        <reports>-->
+<!--                            <report>jxr</report>-->
+<!--                        </reports>-->
+<!--                    </reportSet>-->
+<!--                </reportSets>-->
+<!--            </plugin>-->
+<!--            &lt;!&ndash;  JavaDoc Report   ==============================================  &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-javadoc-plugin</artifactId>-->
+<!--                <version>2.9</version>-->
+<!--                <configuration>-->
+<!--                    <source>1.8</source>-->
+<!--                    <additionalparam>-Xdoclint:none</additionalparam>-->
+<!--                </configuration>-->
+
+<!--            </plugin>-->
+<!--            &lt;!&ndash;  JavaNCSS Report   =============================================  &ndash;&gt;-->
 <!--            <plugin>-->
 <!--                <groupId>org.codehaus.mojo</groupId>-->
-<!--                <artifactId>findbugs-maven-plugin</artifactId>-->
-<!--                <version>${version.findbugs.report.plugin}</version>-->
+<!--                <artifactId>javancss-maven-plugin</artifactId>-->
+<!--                <version>${version.javancss.report.plugin}</version>-->
 <!--            </plugin>-->
-<!--            &lt;!&ndash;  JaCoCo Report   ===============================================  &ndash;&gt;-->
+<!--            &lt;!&ndash;  JDepend Report   ==============================================  &ndash;&gt;-->
 <!--            <plugin>-->
-<!--                <groupId>org.jacoco</groupId>-->
-<!--                <artifactId>jacoco-maven-plugin</artifactId>-->
-<!--                <version>${version.jacoco.report.plugin}</version>-->
+<!--                <groupId>org.codehaus.mojo</groupId>-->
+<!--                <artifactId>jdepend-maven-plugin</artifactId>-->
+<!--                <version>${version.jdepend.report.plugin}</version>-->
 <!--            </plugin>-->
-            <!--  JavaDoc Report   ==============================================  -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.9</version>
-                <configuration>
-                    <source>1.8</source>
-                    <additionalparam>-Xdoclint:none</additionalparam>
-                </configuration>
-
-            </plugin>
-            <!--  JavaNCSS Report   =============================================  -->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>javancss-maven-plugin</artifactId>
-                <version>${version.javancss.report.plugin}</version>
-            </plugin>
-            <!--  JDepend Report   ==============================================  -->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>jdepend-maven-plugin</artifactId>
-                <version>${version.jdepend.report.plugin}</version>
-            </plugin>
-            <!--  PMD/CPD Report Plugin   =======================================  -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-pmd-plugin</artifactId>
-                <version>${version.pmd.report.plugin}</version>
-                <configuration>
-                    <skipEmptyReport>false</skipEmptyReport>
-                </configuration>
-            </plugin>
-            <!--  Maven Project Info Reports Plugin   ===========================  -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>3.0.0</version>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <!-- Not Needed
-                            <report>cim</report>  -->
-                            <report>dependencies</report>
-                            <report>dependency-convergence</report>
-                            <!-- NO NO NO!
-                            <report>dependency-info</report>  -->
-                            <!--  Not Needed
-                            <report>dependency-management</report>
-                            <report>distribution-management</report>
-                            <report>help</report> -->
-                            <report>index</report>
-<!--                            <report>issue-tracking</report>-->
-                            <report>licenses</report>
-                            <!--  Not Needed
-                            <report>mailing-list</report>  -->
-                            <report>modules</report>
-                            <report>plugin-management</report>
-                            <report>team</report>
-                            <report>scm</report>
-                            <report>summary</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-                <configuration />
-            </plugin>
-            <!--  Surefire Report Plugin   ======================================  -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-report-plugin</artifactId>
-                <version>${version.surefire.report.plugin}</version>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>report-only</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-            </plugin>
-            <!--  Maven Versions Plugin   =======================================  -->
-            <plugin>
-                <groupId>de.lgohlke.mojo</groupId>
-                <artifactId>versions-maven-plugin</artifactId>
-                <version>${version.versions.report.plugin}</version>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>dependency-updates-report</report>
-                            <report>plugin-updates-report</report>
-                            <report>property-updates-report</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-            </plugin>
-            <!--  Tag List Report   =============================================  -->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>taglist-maven-plugin</artifactId>
-                <version>${version.taglist.report.plugin}</version>
-                <configuration>
-                    <tagListOptions>
-                        <tagClasses>
-                            <tagClass>
-                                <displayName>Todo Work</displayName>
-                                <tags>
-                                    <tag>
-                                        <matchString>todo</matchString>
-                                        <matchType>ignoreCase</matchType>
-                                    </tag>
-                                    <tag>
-                                        <matchString>FIXME</matchString>
-                                        <matchType>exact</matchType>
-                                    </tag>
-                                    <tag>
-                                        <matchString>QUICKFIX</matchString>
-                                        <matchType>exact</matchType>
-                                    </tag>
-                                    <tag>
-                                        <matchString>WORKAROUND</matchString>
-                                        <matchType>exact</matchType>
-                                    </tag>
-                                    <tag>
-                                        <matchString>@deprecated</matchString>
-                                        <matchType>exact</matchType>
-                                    </tag>
-                                </tags>
-                            </tagClass>
-                        </tagClasses>
-                    </tagListOptions>
-                    <xrefLocation>${xrefLocation}</xrefLocation>
-                    <testXrefLocation>${testXrefLocation}</testXrefLocation>
-                </configuration>
-                <reportSets>
-                    <reportSet>
-                        <!-- defines taglist reports in the modules -->
-                        <id>taglist-report</id>
-                        <reports>
-                            <report>taglist</report>
-                        </reports>
-                    </reportSet>
-                    <reportSet>
-                        <!-- defines taglist aggregate report -->
-                        <id>taglist-aggregate</id>
-                        <inherited>false</inherited>
-                        <reports>
-                            <report>taglist</report>
-                        </reports>
-                        <configuration>
-                            <aggregate>true</aggregate>
-                        </configuration>
-                    </reportSet>
-                </reportSets>
-            </plugin>
+<!--            &lt;!&ndash;  PMD/CPD Report Plugin   =======================================  &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-pmd-plugin</artifactId>-->
+<!--                <version>${version.pmd.report.plugin}</version>-->
+<!--                <configuration>-->
+<!--                    <skipEmptyReport>false</skipEmptyReport>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--            &lt;!&ndash;  Maven Project Info Reports Plugin   ===========================  &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-project-info-reports-plugin</artifactId>-->
+<!--                <version>3.0.0</version>-->
+<!--                <reportSets>-->
+<!--                    <reportSet>-->
+<!--                        <reports>-->
+<!--                            &lt;!&ndash; Not Needed-->
+<!--                            <report>cim</report>  &ndash;&gt;-->
+<!--                            <report>dependencies</report>-->
+<!--                            <report>dependency-convergence</report>-->
+<!--                            &lt;!&ndash; NO NO NO!-->
+<!--                            <report>dependency-info</report>  &ndash;&gt;-->
+<!--                            &lt;!&ndash;  Not Needed-->
+<!--                            <report>dependency-management</report>-->
+<!--                            <report>distribution-management</report>-->
+<!--                            <report>help</report> &ndash;&gt;-->
+<!--                            <report>index</report>-->
+<!--&lt;!&ndash;                            <report>issue-tracking</report>&ndash;&gt;-->
+<!--                            <report>licenses</report>-->
+<!--                            &lt;!&ndash;  Not Needed-->
+<!--                            <report>mailing-list</report>  &ndash;&gt;-->
+<!--                            <report>modules</report>-->
+<!--                            <report>plugin-management</report>-->
+<!--                            <report>team</report>-->
+<!--                            <report>scm</report>-->
+<!--                            <report>summary</report>-->
+<!--                        </reports>-->
+<!--                    </reportSet>-->
+<!--                </reportSets>-->
+<!--                <configuration />-->
+<!--            </plugin>-->
+<!--            &lt;!&ndash;  Surefire Report Plugin   ======================================  &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-surefire-report-plugin</artifactId>-->
+<!--                <version>${version.surefire.report.plugin}</version>-->
+<!--                <reportSets>-->
+<!--                    <reportSet>-->
+<!--                        <reports>-->
+<!--                            <report>report-only</report>-->
+<!--                        </reports>-->
+<!--                    </reportSet>-->
+<!--                </reportSets>-->
+<!--            </plugin>-->
+<!--            &lt;!&ndash;  Maven Versions Plugin   =======================================  &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>de.lgohlke.mojo</groupId>-->
+<!--                <artifactId>versions-maven-plugin</artifactId>-->
+<!--                <version>${version.versions.report.plugin}</version>-->
+<!--                <reportSets>-->
+<!--                    <reportSet>-->
+<!--                        <reports>-->
+<!--                            <report>dependency-updates-report</report>-->
+<!--                            <report>plugin-updates-report</report>-->
+<!--                            <report>property-updates-report</report>-->
+<!--                        </reports>-->
+<!--                    </reportSet>-->
+<!--                </reportSets>-->
+<!--            </plugin>-->
+<!--            &lt;!&ndash;  Tag List Report   =============================================  &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>org.codehaus.mojo</groupId>-->
+<!--                <artifactId>taglist-maven-plugin</artifactId>-->
+<!--                <version>${version.taglist.report.plugin}</version>-->
+<!--                <configuration>-->
+<!--                    <tagListOptions>-->
+<!--                        <tagClasses>-->
+<!--                            <tagClass>-->
+<!--                                <displayName>Todo Work</displayName>-->
+<!--                                <tags>-->
+<!--                                    <tag>-->
+<!--                                        <matchString>todo</matchString>-->
+<!--                                        <matchType>ignoreCase</matchType>-->
+<!--                                    </tag>-->
+<!--                                    <tag>-->
+<!--                                        <matchString>FIXME</matchString>-->
+<!--                                        <matchType>exact</matchType>-->
+<!--                                    </tag>-->
+<!--                                    <tag>-->
+<!--                                        <matchString>QUICKFIX</matchString>-->
+<!--                                        <matchType>exact</matchType>-->
+<!--                                    </tag>-->
+<!--                                    <tag>-->
+<!--                                        <matchString>WORKAROUND</matchString>-->
+<!--                                        <matchType>exact</matchType>-->
+<!--                                    </tag>-->
+<!--                                    <tag>-->
+<!--                                        <matchString>@deprecated</matchString>-->
+<!--                                        <matchType>exact</matchType>-->
+<!--                                    </tag>-->
+<!--                                </tags>-->
+<!--                            </tagClass>-->
+<!--                        </tagClasses>-->
+<!--                    </tagListOptions>-->
+<!--                    <xrefLocation>${xrefLocation}</xrefLocation>-->
+<!--                    <testXrefLocation>${testXrefLocation}</testXrefLocation>-->
+<!--                </configuration>-->
+<!--                <reportSets>-->
+<!--                    <reportSet>-->
+<!--                        &lt;!&ndash; defines taglist reports in the modules &ndash;&gt;-->
+<!--                        <id>taglist-report</id>-->
+<!--                        <reports>-->
+<!--                            <report>taglist</report>-->
+<!--                        </reports>-->
+<!--                    </reportSet>-->
+<!--                    <reportSet>-->
+<!--                        &lt;!&ndash; defines taglist aggregate report &ndash;&gt;-->
+<!--                        <id>taglist-aggregate</id>-->
+<!--                        <inherited>false</inherited>-->
+<!--                        <reports>-->
+<!--                            <report>taglist</report>-->
+<!--                        </reports>-->
+<!--                        <configuration>-->
+<!--                            <aggregate>true</aggregate>-->
+<!--                        </configuration>-->
+<!--                    </reportSet>-->
+<!--                </reportSets>-->
+<!--            </plugin>-->
         </plugins>
     </reporting>
 
@@ -758,6 +740,41 @@
 
                 <plugins>
 
+                    <!--  Maven Site Plugin   =======================================  -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-site-plugin</artifactId>
+                        <version>3.7.1</version>
+                        <configuration>
+                            <inputEncoding>UTF-8</inputEncoding>
+                            <outputEncoding>UTF-8</outputEncoding>
+                            <relativizeDecorationLinks>true</relativizeDecorationLinks>
+                            <generateReports>true</generateReports>
+
+                            <!-- Site deployment done using GitHub site plugin -->
+                            <skipDeploy>true</skipDeploy>
+                        </configuration>
+                        <dependencies>
+                            <dependency>
+                                <groupId>lt.velykis.maven.skins</groupId>
+                                <artifactId>reflow-velocity-tools</artifactId>
+                                <version>${version.reflow.velocity.tools}</version>
+                            </dependency>
+                            <!-- Reflow skin requires Velocity >= 1.7  -->
+                            <dependency>
+                                <groupId>org.apache.velocity</groupId>
+                                <artifactId>velocity</artifactId>
+                                <version>${version.apache.velocity}</version>
+                            </dependency>
+                            <dependency>
+                                <groupId>org.apache.maven.doxia</groupId>
+                                <artifactId>doxia-site-renderer</artifactId>
+                                <version>1.8</version>
+                            </dependency>
+                        </dependencies>
+                    </plugin>
+
+
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
@@ -789,20 +806,20 @@
                         </executions>
                     </plugin>
 
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.6</version>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
+<!--                    <plugin>-->
+<!--                        <groupId>org.apache.maven.plugins</groupId>-->
+<!--                        <artifactId>maven-gpg-plugin</artifactId>-->
+<!--                        <version>1.6</version>-->
+<!--                        <executions>-->
+<!--                            <execution>-->
+<!--                                <id>sign-artifacts</id>-->
+<!--                                <phase>verify</phase>-->
+<!--                                <goals>-->
+<!--                                    <goal>sign</goal>-->
+<!--                                </goals>-->
+<!--                            </execution>-->
+<!--                        </executions>-->
+<!--                    </plugin>-->
 
 
                     <plugin>
@@ -821,6 +838,303 @@
 
             </build>
         </profile>
+
+        <profile>
+            <id>genReports</id>
+
+            <!--  Dependencies   ================================================  -->
+            <dependencies />
+
+            <!--  Build   ========================================================  -->
+            <build>
+                <!--  Plugins   ======================================================  -->
+                <plugins>
+                    <!--  Clover Code Coverage Report   =========================  -->
+                    <!--
+                        https://docs.atlassian.com/clover-maven-plugin/latest/usage.html
+                        -->
+                    <plugin>
+                        <groupId>org.openclover</groupId>
+                        <artifactId>clover-maven-plugin</artifactId>
+                        <version>${version.openclover.clover}</version>
+                        <configuration>
+                            <jdk>1.8</jdk>
+                            <targetPercentage>50%</targetPercentage>
+                            <cloverDatabase>target/clover.db</cloverDatabase>
+                            <generateHtml>true</generateHtml>
+                            <generateJson>false</generateJson>
+                            <generatePdf>false</generatePdf>
+                            <generateXml>false</generateXml>
+                            <!--
+                            <excludes>
+                                <exclude>**/Test*.java</exclude>
+                                <exclude>**/*Test.java</exclude>
+                            </excludes>
+                            -->
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <phase>pre-site</phase>
+                                <goals>
+                                    <goal>instrument</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                </plugins>  <!-- End:  Plugins  -->
+
+                <!--  Plugin Management   =======================================  -->
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-surefire-plugin</artifactId>
+                            <version>${version.maven.surefire.plugin}</version>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>  <!--  End:  Build  -->
+
+            <!--  Reporting   =======================================================  -->
+            <reporting>
+                <plugins>
+
+                    <!--  Clover Code Coverage Report   =========================  -->
+                    <plugin>
+                        <groupId>org.openclover</groupId>
+                        <artifactId>clover-maven-plugin</artifactId>
+                        <version>${version.openclover.clover}</version>
+                        <configuration>
+                            <generateHistorical>false</generateHistorical>
+                            <cloverDatabase>target/clover.db</cloverDatabase>
+                            <generateHtml>true</generateHtml>
+                        </configuration>
+                    </plugin>
+                    <!--  JavaNCSS Report   =====================================  -->
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>javancss-maven-plugin</artifactId>
+                        <version>${version.javancss.report.plugin}</version>
+                        <configuration>
+                            <excludes>
+                                <exclude>**/Test*.java</exclude>
+                                <exclude>**/*Test.java</exclude>
+                            </excludes>
+                        </configuration>
+                    </plugin>
+                    <!--  JDepend Report   ======================================  -->
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>jdepend-maven-plugin</artifactId>
+                        <version>${version.jdepend.report.plugin}</version>
+                    </plugin>
+                    <!--  PMD/CPD Report Plugin   ===============================  -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-pmd-plugin</artifactId>
+                        <version>${version.pmd.report.plugin}</version>
+                        <configuration>
+                            <linkXRef>true</linkXRef>
+                            <skipEmptyReport>false</skipEmptyReport>
+
+                            <excludes>
+                                <exclude>**/Test*.java</exclude>
+                                <exclude>**/*Test.java</exclude>
+                            </excludes>
+                        </configuration>
+                    </plugin>
+                    <!--  Maven JavaDoc Plugin   ================================  -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>${version.javadoc.report.plugin}</version>
+                        <configuration>
+                            <stylesheetfile>${basedir}/src/test/resources/javadoc/oracle_stylesheet.css</stylesheetfile>
+
+                            <failOnError>false</failOnError>
+                            <excludes>
+                                <exclude>**/*Test.java</exclude>
+                                <exclude>**/Test_*.java</exclude>
+                            </excludes>
+
+                            <!-- Default configuration for all reports -->
+                            <stylesheet>maven</stylesheet>
+                        </configuration>
+                        <reportSets>
+                            <reportSet>
+                                <id>default</id>
+                                <configuration>
+                                    <!-- Specific configuration for the given reports -->
+                                </configuration>
+                                <reports>
+                                    <report>javadoc</report>
+                                </reports>
+                            </reportSet>
+                            <reportSet>
+                                <id>aggregate</id>
+                                <configuration>
+                                    <!-- Specific configuration for the given reports -->
+                                </configuration>
+                                <reports>
+                                    <report>aggregate</report>
+                                </reports>
+                            </reportSet>
+                        </reportSets>
+                    </plugin>
+                    <!--  JXR Cross Reference Report Plugin   ===================  -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-jxr-plugin</artifactId>
+                        <version>${version.jxr.report.plugin}</version>
+                        <configuration>
+                            <linkJavadoc>true</linkJavadoc>
+                            <excludes>
+                                <exclude>**/*Test.java</exclude>
+                                <exclude>**/Test_*.java</exclude>
+                            </excludes>
+                        </configuration>
+                        <reportSets>
+                            <reportSet>
+                                <reports>
+                                    <report>jxr</report>
+                                </reports>
+                            </reportSet>
+                        </reportSets>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-project-info-reports-plugin</artifactId>
+                        <version>${version.maven.project.info.reports.plugin}</version>
+                    </plugin>
+                    <!--  Surefire Report Plugin   ==============================  -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-report-plugin</artifactId>
+                        <version>${version.surefire.report.plugin}</version>
+                        <reportSets>
+                            <reportSet>
+                                <reports>
+                                    <report>report-only</report>
+                                </reports>
+                            </reportSet>
+                        </reportSets>
+                    </plugin>
+                    <!--  Tag List Report   =====================================  -->
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>taglist-maven-plugin</artifactId>
+                        <version>${version.taglist.report.plugin}</version>
+                        <configuration>
+                            <tagListOptions>
+                                <tagClasses>
+                                    <tagClass>
+                                        <displayName>Todo Work</displayName>
+                                        <tags>
+                                            <tag>
+                                                <matchString>todo</matchString>
+                                                <matchType>ignoreCase</matchType>
+                                            </tag>
+                                            <tag>
+                                                <matchString>FIXME</matchString>
+                                                <matchType>exact</matchType>
+                                            </tag>
+                                            <tag>
+                                                <matchString>QUICKFIX</matchString>
+                                                <matchType>exact</matchType>
+                                            </tag>
+                                            <tag>
+                                                <matchString>WORKAROUND</matchString>
+                                                <matchType>exact</matchType>
+                                            </tag>
+                                            <tag>
+                                                <matchString>@deprecated</matchString>
+                                                <matchType>exact</matchType>
+                                            </tag>
+                                        </tags>
+                                    </tagClass>
+                                </tagClasses>
+                            </tagListOptions>
+                            <xrefLocation>${xrefLocation}</xrefLocation>
+                            <testXrefLocation>${testXrefLocation}</testXrefLocation>
+                        </configuration>
+                        <reportSets>
+                            <reportSet>
+                                <!-- defines taglist reports in the modules -->
+                                <id>taglist-report</id>
+                                <reports>
+                                    <report>taglist</report>
+                                </reports>
+                            </reportSet>
+                            <reportSet>
+                                <!-- defines taglist aggregate report -->
+                                <id>taglist-aggregate</id>
+                                <inherited>false</inherited>
+                                <reports>
+                                    <report>taglist</report>
+                                </reports>
+                                <configuration>
+                                    <aggregate>true</aggregate>
+                                </configuration>
+                            </reportSet>
+                        </reportSets>
+                    </plugin>
+                    <!--  Maven Versions Plugin   ===============================  -->
+                    <plugin>
+                        <groupId>de.lgohlke.mojo</groupId>
+                        <artifactId>versions-maven-plugin</artifactId>
+                        <version>${version.versions.report.plugin}</version>
+                        <reportSets>
+                            <reportSet>
+                                <reports>
+                                    <report>dependency-updates-report</report>
+                                    <report>plugin-updates-report</report>
+                                    <report>property-updates-report</report>
+                                </reports>
+                            </reportSet>
+                        </reportSets>
+                    </plugin>
+
+                    <!--  Maven Project Info Reports Plugin   ===========================  -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-project-info-reports-plugin</artifactId>
+                        <version>2.9</version>
+                        <reportSets>
+                            <reportSet>
+                                <reports>
+                                    <!-- Not Needed
+                                    <report>cim</report>  -->
+                                    <report>dependencies</report>
+                                    <report>dependency-convergence</report>
+                                    <!-- NO NO NO!
+                                    <report>dependency-info</report>  -->
+                                    <!--  Not Needed
+                                    <report>dependency-management</report>
+                                    <report>distribution-management</report>
+                                    <report>help</report> -->
+                                    <report>index</report>
+        <!--                            <report>issue-tracking</report>-->
+                                    <report>license</report>
+                                    <!--  Not Needed
+                                    <report>mailing-list</report>  -->
+                                    <report>modules</report>
+                                    <report>plugin-management</report>
+                                    <report>project-team</report>
+                                    <report>scm</report>
+                                    <report>summary</report>
+                                </reports>
+                            </reportSet>
+                        </reportSets>
+                        <configuration />
+                    </plugin>
+
+
+                </plugins>  <!--  End:  Plugins  -->
+            </reporting>  <!--  End:  Reporting  -->
+        </profile>  <!--  End: Profile - genReports  -->
+
+
 
     </profiles>
 
