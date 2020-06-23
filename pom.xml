@@ -110,44 +110,9 @@
         <jdk.version>1.8</jdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <!-- Plugins   ==========================================================  -->
-        <version.apache.velocity>1.7</version.apache.velocity>
-        <version.compiler.plugin>3.2</version.compiler.plugin>
-        <version.jar.plugin>2.5</version.jar.plugin>
-        <version.reflow.velocity.tools>1.1.1</version.reflow.velocity.tools>
-        <version.release.plugin>2.5.1</version.release.plugin>
-        <version.scm.provider.gitexe>1.9.2</version.scm.provider.gitexe>
-
-        <!--  Reporting Plugin Settings   =======================================  -->
-        <version.checkstyle.report.plugin>2.13</version.checkstyle.report.plugin>
-<!--        <version.findbugs.report.plugin>3.0.0</version.findbugs.report.plugin>-->
-        <version.github.report.plugin>2.1.3</version.github.report.plugin>
-        <version.github.site.plugin>0.11</version.github.site.plugin>
-<!--        <version.jacoco.report.plugin>0.7.2.201409121644</version.jacoco.report.plugin>-->
-        <version.javadoc.report.plugin>2.10.1</version.javadoc.report.plugin>
-        <version.javancss.report.plugin>2.1</version.javancss.report.plugin>
-        <version.jdepend.report.plugin>2.0</version.jdepend.report.plugin>
-        <version.jxr.report.plugin>2.5</version.jxr.report.plugin>
-        <version.maven.project.info.report.plugin>2.8</version.maven.project.info.report.plugin>
-        <version.maven.site.report.plugin>3.3</version.maven.site.report.plugin>
-        <version.pmd.report.plugin>3.3</version.pmd.report.plugin>
-        <version.surefire.report.plugin>2.18.1</version.surefire.report.plugin>
-        <version.surefire.report.plugin>2.18.1</version.surefire.report.plugin>
-        <version.taglist.report.plugin>2.4</version.taglist.report.plugin>
-        <version.versions.report.plugin>2.1.4</version.versions.report.plugin>
-
-
-
-        <version.openclover.clover>4.3.1</version.openclover.clover>
-        <version.openclover.runtime>4.3.1</version.openclover.runtime>
-        <version.openclover.maven.plugin>4.3.1</version.openclover.maven.plugin>
-        <version.openclover.aspectj.compiler>1.0.1</version.openclover.aspectj.compiler>
-
-
-<!--        <version.maven.project.info.reports.plugin>2.9</version.maven.project.info.reports.plugin>-->
-        <version.maven.project.info.reports.plugin>3.0.0</version.maven.project.info.reports.plugin>
-        <version.maven.surefire.plugin>2.19.1</version.maven.surefire.plugin>
-
+<!--        &lt;!&ndash; Plugins   ==========================================================  &ndash;&gt;-->
+        <version.compiler.plugin>3.5</version.compiler.plugin>
+        <version.jar.plugin>3.1.0</version.jar.plugin>
 
 
 
@@ -254,6 +219,88 @@
 <!--                        </execution>-->
 <!--                    </executions>-->
 <!--                </plugin>-->
+
+
+
+
+                <!--  Maven Jar Plugin   ========================================  -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>${version.jar.plugin}</version>
+                    <configuration>
+                        <archive>
+                            <index>true</index>
+                            <addMavenDescriptor>false</addMavenDescriptor>
+                            <manifest>
+                                <!-- =============================================  -->
+                                <!--  Manifest Information   =====================  -->
+                                <addClasspath>true</addClasspath>
+                                <classpathLayoutType>custom</classpathLayoutType>
+                                <customClasspathLayout>  ${line.separator}./lib/$${artifact.artifactId}-$${artifact.version}$${dashClassifier?}.$${artifact.extension}  </customClasspathLayout>
+                            </manifest>
+                            <manifestSections>
+                                <!-- =============================================  -->
+                                <!--  Ownership Information   ====================  -->
+                                <manifestSection>
+                                    <name>OWNERSHIP INFORMATION</name>
+                                    <manifestEntries>
+                                        <Copyright>United States Department of the Treasury</Copyright>
+                                        <Rights>All Right Reserved</Rights>
+                                        <Built-By>First Data Corporation</Built-By>
+                                        <Organization-Name>${project.organization.name}</Organization-Name>
+                                        <Country>United States of America</Country>
+                                    </manifestEntries>
+                                </manifestSection>
+                                <!-- =============================================  -->
+                                <!--  Build Intelligence   =======================  -->
+                                <manifestSection>
+                                    <name>BUILD INTELLIGENCE</name>
+                                    <manifestEntries>
+                                        <Project-Name>${project.name}</Project-Name>
+                                        <Build-Time>${build.time}</Build-Time>
+                                    </manifestEntries>
+                                </manifestSection>
+                                <!-- =============================================  -->
+                                <!--  Java Information   =========================  -->
+                                <manifestSection>
+                                    <name>JAVA INFORMATION</name>
+                                    <manifestEntries>
+                                        <Build-JDK>${java.version} (${java.vendor} ${java.vm.version})</Build-JDK>
+                                        <Build-OS>${os.name} ${os.arch} ${os.version}</Build-OS>
+                                    </manifestEntries>
+                                </manifestSection>
+                                <!-- =============================================  -->
+                                <!--  Maven Information   ========================  -->
+                                <manifestSection>
+                                    <name>MAVEN INFORMATION</name>
+                                    <manifestEntries>
+                                        <Maven-Version>${maven.version}</Maven-Version>
+                                        <Artifact-Id>${project.artifactId}</Artifact-Id>
+                                        <Group-Id>${project.groupId}</Group-Id>
+                                        <Version>${project.version}</Version>
+                                        <Packaging>${project.packaging}</Packaging>
+                                        <Maven-Version>${maven.version}</Maven-Version>
+                                    </manifestEntries>
+                                </manifestSection>
+                                <!-- =============================================  -->
+                                <!--  SCM Information   ==========================  -->
+                                <manifestSection>
+                                    <name>SCM INFORMATION</name>
+                                    <manifestEntries>
+                                        <SCM-Hash-Revision>${buildNumber}</SCM-Hash-Revision>
+                                        <SCM-Branch>${scmBranch}</SCM-Branch>
+                                    </manifestEntries>
+                                </manifestSection>
+                                <!-- =============================================  -->
+                            </manifestSections>
+                            <manifestEntries />
+                        </archive>
+                    </configuration>
+                </plugin>
+
+
+
                 <!--  Maven Jar Plugin   ========================================  -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -268,7 +315,7 @@
                                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                                 <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
                                 <addExtensions>true</addExtensions>
-                                <classpathMavenRepositoryLayout>true</classpathMavenRepositoryLayout>
+<!--                                <classpathMavenRepositoryLayout>true</classpathMavenRepositoryLayout>-->
                             </manifest>
                                 <manifestEntries>
                                     <Copyright>CardaTechnologies, LLC</Copyright>
@@ -740,39 +787,39 @@
 
                 <plugins>
 
-                    <!--  Maven Site Plugin   =======================================  -->
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-site-plugin</artifactId>
-                        <version>3.7.1</version>
-                        <configuration>
-                            <inputEncoding>UTF-8</inputEncoding>
-                            <outputEncoding>UTF-8</outputEncoding>
-                            <relativizeDecorationLinks>true</relativizeDecorationLinks>
-                            <generateReports>true</generateReports>
+<!--                    &lt;!&ndash;  Maven Site Plugin   =======================================  &ndash;&gt;-->
+<!--                    <plugin>-->
+<!--                        <groupId>org.apache.maven.plugins</groupId>-->
+<!--                        <artifactId>maven-site-plugin</artifactId>-->
+<!--                        <version>3.7.1</version>-->
+<!--                        <configuration>-->
+<!--                            <inputEncoding>UTF-8</inputEncoding>-->
+<!--                            <outputEncoding>UTF-8</outputEncoding>-->
+<!--                            <relativizeDecorationLinks>true</relativizeDecorationLinks>-->
+<!--                            <generateReports>true</generateReports>-->
 
-                            <!-- Site deployment done using GitHub site plugin -->
-                            <skipDeploy>true</skipDeploy>
-                        </configuration>
-                        <dependencies>
-                            <dependency>
-                                <groupId>lt.velykis.maven.skins</groupId>
-                                <artifactId>reflow-velocity-tools</artifactId>
-                                <version>${version.reflow.velocity.tools}</version>
-                            </dependency>
-                            <!-- Reflow skin requires Velocity >= 1.7  -->
-                            <dependency>
-                                <groupId>org.apache.velocity</groupId>
-                                <artifactId>velocity</artifactId>
-                                <version>${version.apache.velocity}</version>
-                            </dependency>
-                            <dependency>
-                                <groupId>org.apache.maven.doxia</groupId>
-                                <artifactId>doxia-site-renderer</artifactId>
-                                <version>1.8</version>
-                            </dependency>
-                        </dependencies>
-                    </plugin>
+<!--                            &lt;!&ndash; Site deployment done using GitHub site plugin &ndash;&gt;-->
+<!--                            <skipDeploy>true</skipDeploy>-->
+<!--                        </configuration>-->
+<!--                        <dependencies>-->
+<!--                            <dependency>-->
+<!--                                <groupId>lt.velykis.maven.skins</groupId>-->
+<!--                                <artifactId>reflow-velocity-tools</artifactId>-->
+<!--                                <version>${version.reflow.velocity.tools}</version>-->
+<!--                            </dependency>-->
+<!--                            &lt;!&ndash; Reflow skin requires Velocity >= 1.7  &ndash;&gt;-->
+<!--                            <dependency>-->
+<!--                                <groupId>org.apache.velocity</groupId>-->
+<!--                                <artifactId>velocity</artifactId>-->
+<!--                                <version>${version.apache.velocity}</version>-->
+<!--                            </dependency>-->
+<!--                            <dependency>-->
+<!--                                <groupId>org.apache.maven.doxia</groupId>-->
+<!--                                <artifactId>doxia-site-renderer</artifactId>-->
+<!--                                <version>1.8</version>-->
+<!--                            </dependency>-->
+<!--                        </dependencies>-->
+<!--                    </plugin>-->
 
 
                     <plugin>
@@ -843,6 +890,59 @@
         <profile>
             <id>genReports</id>
 
+
+            <!-- ============================================================================= -->
+            <!--  Properties                                                                   -->
+            <!-- ============================================================================= -->
+            <properties>
+
+                <!--  Reporting Plugin Settings   =======================================  -->
+                <version.checkstyle.report.plugin>3.1.1</version.checkstyle.report.plugin>
+
+<!--                <version.github.report.plugin>2.1.3</version.github.report.plugin>-->
+<!--                <version.github.site.plugin>0.11</version.github.site.plugin>-->
+                <version.javadoc.report.plugin>3.2.0</version.javadoc.report.plugin>
+                <version.javancss.report.plugin>2.1</version.javancss.report.plugin>
+                <version.jdepend.report.plugin>2.0</version.jdepend.report.plugin>
+                <version.jxr.report.plugin>3.0.0</version.jxr.report.plugin>
+                <version.maven.project.info.reports.plugin>2.9</version.maven.project.info.reports.plugin>
+                <version.maven.site.report.plugin>3.7.1</version.maven.site.report.plugin>
+
+
+
+                <version.maven.surefire.plugin>2.21.0</version.maven.surefire.plugin>
+                <version.pmd.report.plugin>3.13.0</version.pmd.report.plugin>
+                <version.spotbugs.maven.plugin>4.0.4</version.spotbugs.maven.plugin>
+                <version.surefire.report.plugin>3.0.0-M5</version.surefire.report.plugin>
+                <version.taglist.report.plugin>2.4</version.taglist.report.plugin>
+                <version.versions.report.plugin>2.1.4</version.versions.report.plugin>
+
+
+
+
+<!--                <artifactId>maven-changelog-plugin</artifactId>-->
+<!--                <version>2.3</version>-->
+
+                <version.maven.changelog.plugin>2.3</version.maven.changelog.plugin>
+
+
+                <!--        <version.apache.velocity>1.7</version.apache.velocity>-->
+                <!--        <version.reflow.velocity.tools>1.1.1</version.reflow.velocity.tools>-->
+                <!--        <version.release.plugin>2.5.1</version.release.plugin>-->
+                <!--        <version.scm.provider.gitexe>1.9.2</version.scm.provider.gitexe>-->
+
+
+
+
+
+
+                <!--      Open Clover Reporting Properties   ================================  -->
+                <version.openclover.clover>4.4.1</version.openclover.clover>
+                <version.openclover.runtime>4.4.1</version.openclover.runtime>
+                <version.openclover.maven.plugin>4.4.1</version.openclover.maven.plugin>
+                <version.openclover.aspectj.compiler>1.0.2</version.openclover.aspectj.compiler>
+            </properties>
+
             <!--  Dependencies   ================================================  -->
             <dependencies />
 
@@ -850,6 +950,12 @@
             <build>
                 <!--  Plugins   ======================================================  -->
                 <plugins>
+
+
+
+
+
+
                     <!--  Clover Code Coverage Report   =========================  -->
                     <!--
                         https://docs.atlassian.com/clover-maven-plugin/latest/usage.html
@@ -917,13 +1023,15 @@
                     <plugin>
                         <groupId>com.github.spotbugs</groupId>
                         <artifactId>spotbugs-maven-plugin</artifactId>
-                        <version>4.0.0</version>
+                        <version>${version.spotbugs.maven.plugin}</version>
                         <configuration>
                             <xmlOutput>true</xmlOutput>
                             <!-- Optional directory to put spotbugs xdoc xml report -->
                             <xmlOutputDirectory>target/site</xmlOutputDirectory>
                         </configuration>
                     </plugin>
+
+
 
                     <!--  Surefire Report Plugin   ==============================  -->
                     <plugin>
@@ -938,6 +1046,27 @@
                             </reportSet>
                         </reportSets>
                     </plugin>
+
+
+                    <!--  Checkstyle Report Plugin   ====================================  -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-checkstyle-plugin</artifactId>
+                        <version>${version.checkstyle.report.plugin}</version>
+                        <configuration>
+                            <configLocation>src/main/resources/checkstyle/checkstyle.xml</configLocation>
+                            <consoleOutput>true</consoleOutput>
+                            <failsOnError>false</failsOnError>
+                        </configuration>
+                        <reportSets>
+                            <reportSet>
+                                <reports>
+                                    <report>checkstyle</report>
+                                </reports>
+                            </reportSet>
+                        </reportSets>
+                    </plugin>
+
 
                     <!--  Maven JavaDoc Plugin   ================================  -->
                     <plugin>
@@ -1101,7 +1230,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-changelog-plugin</artifactId>
-                        <version>2.3</version>
+                        <version>${version.maven.changelog.plugin}</version>
                     </plugin>
 
                     <!--  Maven Versions Plugin   ===============================  -->
@@ -1120,31 +1249,77 @@
                         </reportSets>
                     </plugin>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!--  Maven Site Plugin   =======================================  -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-site-plugin</artifactId>
+                        <version>${version.maven.site.report.plugin}</version>
+                        <configuration>
+                            <inputEncoding>UTF-8</inputEncoding>
+                            <outputEncoding>UTF-8</outputEncoding>
+                            <relativizeDecorationLinks>true</relativizeDecorationLinks>
+                            <generateReports>true</generateReports>
+
+                            <!-- Site deployment done using GitHub site plugin -->
+                            <skipDeploy>true</skipDeploy>
+                        </configuration>
+                            <!--                        <dependencies>-->
+                            <!--                            <dependency>-->
+                            <!--                                <groupId>lt.velykis.maven.skins</groupId>-->
+                            <!--                                <artifactId>reflow-velocity-tools</artifactId>-->
+                            <!--                                <version>${version.reflow.velocity.tools}</version>-->
+                            <!--                            </dependency>-->
+                            <!--                            &lt;!&ndash; Reflow skin requires Velocity >= 1.7  &ndash;&gt;-->
+                            <!--                            <dependency>-->
+                            <!--                                <groupId>org.apache.velocity</groupId>-->
+                            <!--                                <artifactId>velocity</artifactId>-->
+                            <!--                                <version>${version.apache.velocity}</version>-->
+                            <!--                            </dependency>-->
+                            <!--                            <dependency>-->
+                            <!--                                <groupId>org.apache.maven.doxia</groupId>-->
+                            <!--                                <artifactId>doxia-site-renderer</artifactId>-->
+                            <!--                                <version>1.8</version>-->
+                            <!--                            </dependency>-->
+                            <!--                        </dependencies>-->
+                    </plugin>
+
                     <!--  Maven Project Info Reports Plugin   ===========================  -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-project-info-reports-plugin</artifactId>
-                        <version>2.9</version>
+                        <version>${version.maven.project.info.reports.plugin}</version>
                         <reportSets>
                             <reportSet>
                                 <reports>
-                                    <!-- Not Needed
-                                    <report>cim</report>  -->
+                                    <report>cim</report>
                                     <report>dependencies</report>
                                     <report>dependency-convergence</report>
-                                    <!-- NO NO NO!
-                                    <report>dependency-info</report>  -->
-                                    <!--  Not Needed
+                                    <report>dependency-info</report>
                                     <report>dependency-management</report>
                                     <report>distribution-management</report>
-                                    <report>help</report> -->
+                                    <report>help</report>
                                     <report>index</report>
-        <!--                            <report>issue-tracking</report>-->
+                                    <report>issue-tracking</report>
                                     <report>license</report>
-                                    <!--  Not Needed
-                                    <report>mailing-list</report>  -->
+                                    <report>mailing-list</report>
                                     <report>modules</report>
                                     <report>plugin-management</report>
+                                    <report>plugins</report>
                                     <report>project-team</report>
                                     <report>scm</report>
                                     <report>summary</report>
@@ -1153,8 +1328,6 @@
                         </reportSets>
                         <configuration />
                     </plugin>
-
-
                 </plugins>  <!--  End:  Plugins  -->
             </reporting>  <!--  End:  Reporting  -->
         </profile>  <!--  End: Profile - genReports  -->
