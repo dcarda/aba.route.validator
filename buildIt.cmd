@@ -4,10 +4,8 @@
 cls
 
 ::  Just a little cleanup.  Remove the Maven target/ directory.
-DEL   /F/Q/S target  > NUL
-RMDIR /Q/S target
-
-
+del   /s/q/f target > nul
+rmdir /s/q   target
 
 ::  This will run a Apache Maven dependency update.
 ::  This scan the maven pom.xml file and will download any

@@ -118,6 +118,13 @@
         <version.github.report.plugin>2.1.3</version.github.report.plugin>
         <version.github.site.plugin>0.11</version.github.site.plugin>
 
+        <version.release.plugin>2.5.1</version.release.plugin>
+
+
+        <site.url>https://devacfr.github.io/reflow-maven-skin/</site.url>
+        <scm-url>https://github.com/dcarda/aba.route.validator/</scm-url>
+
+
         <!--  Test Related Plugins   ============================================  -->
         <version.junit>4.13</version.junit>
         <version.surefire.junit47.plugin>2.18.1</version.surefire.junit47.plugin>
@@ -242,9 +249,9 @@
                                 <manifestSection>
                                     <name>OWNERSHIP INFORMATION</name>
                                     <manifestEntries>
-                                        <Copyright>United States Department of the Treasury</Copyright>
-                                        <Rights>All Right Reserved</Rights>
-                                        <Built-By>First Data Corporation</Built-By>
+                                        <Copyright>Licensed Under Apache 2.0</Copyright>
+                                        <Rights>No Rights Reserved</Rights>
+                                        <Built-By>Daniel Carda</Built-By>
                                         <Organization-Name>${project.organization.name}</Organization-Name>
                                         <Country>United States of America</Country>
                                     </manifestEntries>
@@ -548,7 +555,6 @@
             <!--  Properties                                                                   -->
             <!-- ============================================================================= -->
             <properties>
-                <version.release.plugin>2.5.1</version.release.plugin>
                 <version.scm.provider.gitexe>1.9.2</version.scm.provider.gitexe>
             </properties>
 
@@ -708,6 +714,21 @@
                             <!-- Site deployment done using GitHub site plugin -->
                             <skipDeploy>true</skipDeploy>
                         </configuration>
+
+                        <dependencies>
+                        <dependency>
+                            <groupId>io.github.devacfr.maven.skins</groupId>
+                            <artifactId>reflow-velocity-tools</artifactId>
+                            <version>2.3.0</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>org.apache.maven.doxia</groupId>
+                            <artifactId>doxia-module-markdown</artifactId>
+                            <version>1.9</version>
+                        </dependency>
+
+                        </dependencies>
+
                         <!--                                                           -->
                         <!--        <version.reflow.velocity.tools>1.1.1</version.reflow.velocity.tools>-->
                         <!--        <version.apache.velocity>1.7</version.apache.velocity>-->
@@ -1025,6 +1046,14 @@
                         </reportSets>
                         <configuration />
                     </plugin>
+
+                    <plugin>
+                        <groupId>com.github.sevntu-checkstyle</groupId>
+                        <artifactId>dsm-maven-plugin</artifactId>
+                        <version>2.2.0</version>
+                    </plugin>
+
+
                 </plugins>
                 <!--  End:  Plugins  -->
             </reporting>
