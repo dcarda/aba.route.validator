@@ -55,6 +55,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10000_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "07243599" );
@@ -73,6 +75,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10001_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413609" );
@@ -87,6 +91,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10002_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -106,6 +112,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10003_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413612" );
@@ -120,6 +128,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10004_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -139,6 +149,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10005_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413625" );
@@ -154,23 +166,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10006_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413627" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10007_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -186,6 +202,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10008_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -205,6 +223,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10009_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413654" );
@@ -220,23 +240,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10010_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072433654" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10011_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -252,6 +276,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10012_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -271,6 +297,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10013_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413683" );
@@ -285,6 +313,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10014_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -304,6 +334,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10015_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413706" );
@@ -318,6 +350,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10016_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -337,6 +371,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10017_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413719" );
@@ -351,6 +387,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10018_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -370,6 +408,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10019_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413722" );
@@ -384,6 +424,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10020_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -403,6 +445,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10021_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413735" );
@@ -417,6 +461,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10022_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -436,6 +482,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10023_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413748" );
@@ -450,6 +498,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10024_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -469,6 +519,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10025_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413751" );
@@ -483,6 +535,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10026_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -502,6 +556,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10027_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413764" );
@@ -516,6 +572,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10028_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -535,6 +593,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10029_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413777" );
@@ -549,6 +609,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10030_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -568,6 +630,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10031_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413780" );
@@ -582,6 +646,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10032_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -601,6 +667,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10033_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413816" );
@@ -615,6 +683,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10034_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -634,6 +704,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10035_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413829" );
@@ -648,6 +720,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10036_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -667,6 +741,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10037_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413832" );
@@ -681,6 +757,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10038_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -700,6 +778,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10039_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413845" );
@@ -714,6 +794,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10040_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -733,6 +815,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10041_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413858" );
@@ -747,6 +831,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10042_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -766,6 +852,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10043_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413861" );
@@ -780,6 +868,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10044_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -799,6 +889,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10045_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413874" );
@@ -813,6 +905,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10046_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -832,6 +926,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10047_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413887" );
@@ -846,6 +942,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10048_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -865,6 +963,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10049_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413900" );
@@ -879,6 +979,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10050_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -898,6 +1000,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10051_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413926" );
@@ -912,6 +1016,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10052_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -931,6 +1037,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10053_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413939" );
@@ -945,6 +1053,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10054_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -964,6 +1074,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10055_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413942" );
@@ -978,6 +1090,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10056_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -997,6 +1111,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10057_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413968" );
@@ -1011,6 +1127,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10058_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1030,6 +1148,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10059_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413971" );
@@ -1044,6 +1164,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10060_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1063,6 +1185,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10061_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072413997" );
@@ -1077,6 +1201,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10062_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1096,6 +1222,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10063_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414006" );
@@ -1110,6 +1238,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10064_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1129,6 +1259,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10065_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414019" );
@@ -1143,6 +1275,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10066_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1162,6 +1296,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10067_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414022" );
@@ -1176,6 +1312,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10068_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1195,6 +1333,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10069_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414051" );
@@ -1209,6 +1349,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10070_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1228,6 +1370,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10071_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414064" );
@@ -1242,6 +1386,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10072_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1261,6 +1407,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10073_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414077" );
@@ -1275,6 +1423,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10074_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1294,6 +1444,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10075_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414093" );
@@ -1308,6 +1460,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10076_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1327,6 +1481,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10077_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414129" );
@@ -1341,6 +1497,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10078_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1360,6 +1518,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10079_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414132" );
@@ -1374,6 +1534,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10080_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1393,6 +1555,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10081_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414158" );
@@ -1407,6 +1571,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10082_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1426,6 +1592,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10083_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414161" );
@@ -1440,6 +1608,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10084_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1459,6 +1629,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10085_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414174" );
@@ -1473,6 +1645,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10086_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1492,6 +1666,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10087_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414187" );
@@ -1506,6 +1682,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10088_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1525,6 +1703,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10089_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414190" );
@@ -1539,6 +1719,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10090_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1558,6 +1740,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10091_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414200" );
@@ -1572,6 +1756,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10092_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1591,6 +1777,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10093_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414226" );
@@ -1606,23 +1794,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10094_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "032414226" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10095_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1638,6 +1830,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10096_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1657,6 +1851,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10097_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414242" );
@@ -1671,6 +1867,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10098_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1690,6 +1888,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10099_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414255" );
@@ -1704,6 +1904,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10100_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1723,6 +1925,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10101_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414271" );
@@ -1737,6 +1941,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10102_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1756,6 +1962,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10103_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414297" );
@@ -1770,6 +1978,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10104_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1789,6 +1999,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10105_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414310" );
@@ -1803,6 +2015,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10106_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1822,6 +2036,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10107_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414323" );
@@ -1836,6 +2052,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10108_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1855,6 +2073,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10109_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414336" );
@@ -1870,23 +2090,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10110_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414366" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10111_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1902,6 +2126,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10112_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1921,6 +2147,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10113_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414378" );
@@ -1935,6 +2163,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10114_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1954,6 +2184,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10115_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414394" );
@@ -1968,6 +2200,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10116_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -1987,6 +2221,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10117_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414420" );
@@ -2001,6 +2237,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10118_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2020,6 +2258,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10119_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414433" );
@@ -2034,6 +2274,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10120_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2053,6 +2295,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10121_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414446" );
@@ -2067,6 +2311,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10122_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2086,6 +2332,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10123_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072414459" );
@@ -2100,6 +2348,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10124_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2119,6 +2369,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10125_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072471887" );
@@ -2133,6 +2385,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10126_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2152,6 +2406,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10127_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072471939" );
@@ -2166,6 +2422,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10128_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2185,6 +2443,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10129_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072471955" );
@@ -2199,6 +2459,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10130_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2218,6 +2480,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10131_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072478660" );
@@ -2232,6 +2496,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10132_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2251,6 +2517,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10133_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072486788" );
@@ -2265,6 +2533,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10134_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2284,6 +2554,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10135_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072486791" );
@@ -2298,6 +2570,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10136_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2317,6 +2591,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10137_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072486830" );
@@ -2331,6 +2607,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10138_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2350,6 +2628,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10139_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072486843" );
@@ -2364,6 +2644,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10140_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2383,6 +2665,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10141_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072486856" );
@@ -2397,6 +2681,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10142_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2416,6 +2702,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10143_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "072486869" );
@@ -2430,6 +2718,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10144_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2449,6 +2739,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10145_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073000176" );
@@ -2463,6 +2755,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10146_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2482,6 +2776,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10147_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073000228" );
@@ -2496,6 +2792,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10148_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2515,6 +2813,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10149_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073000338" );
@@ -2529,6 +2829,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10150_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2548,6 +2850,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10151_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073000545" );
@@ -2562,6 +2866,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10152_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2581,6 +2887,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10153_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073000642" );
@@ -2595,6 +2903,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10154_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2614,6 +2924,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10155_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073000794" );
@@ -2628,6 +2940,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10156_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2647,6 +2961,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10157_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073000820" );
@@ -2661,6 +2977,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10158_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2680,6 +2998,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10159_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073000914" );
@@ -2694,6 +3014,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10160_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2713,6 +3035,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10161_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073022691" );
@@ -2727,6 +3051,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10162_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2746,6 +3072,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10163_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073900085" );
@@ -2760,6 +3088,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10164_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2779,6 +3109,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10165_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073900108" );
@@ -2793,6 +3125,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10166_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2812,6 +3146,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10167_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073900182" );
@@ -2826,6 +3162,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10168_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2845,6 +3183,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10169_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073900438" );
@@ -2859,6 +3199,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10170_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2878,6 +3220,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10171_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073900441" );
@@ -2892,6 +3236,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10172_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2911,6 +3257,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10173_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073900522" );
@@ -2925,6 +3273,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10174_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2944,6 +3294,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10175_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073900535" );
@@ -2958,6 +3310,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10176_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -2977,6 +3331,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10177_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073900577" );
@@ -2991,6 +3347,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10178_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3010,6 +3368,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10179_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073900580" );
@@ -3024,6 +3384,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10180_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3043,6 +3405,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10181_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073900690" );
@@ -3057,6 +3421,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10182_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3076,6 +3442,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10183_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073900739" );
@@ -3090,6 +3458,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10184_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3109,6 +3479,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10185_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073900742" );
@@ -3123,6 +3495,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10186_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3142,6 +3516,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10187_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073900755" );
@@ -3156,6 +3532,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10188_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3175,6 +3553,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10189_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073900807" );
@@ -3189,6 +3569,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10190_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3208,6 +3590,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10191_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073900878" );
@@ -3222,6 +3606,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10192_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3241,6 +3627,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10193_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073900894" );
@@ -3255,6 +3643,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10194_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3274,6 +3664,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10195_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073900975" );
@@ -3288,6 +3680,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10196_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3307,6 +3701,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10197_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073901097" );
@@ -3321,6 +3717,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10198_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3340,6 +3738,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10199_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073901233" );
@@ -3354,6 +3754,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10200_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3373,6 +3775,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10201_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073901288" );
@@ -3387,6 +3791,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10202_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3406,6 +3812,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10203_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073901301" );
@@ -3420,6 +3828,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10204_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3439,6 +3849,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10205_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073901314" );
@@ -3453,6 +3865,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10206_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3472,6 +3886,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10207_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073901411" );
@@ -3486,6 +3902,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10208_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3505,6 +3923,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10209_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073901479" );
@@ -3519,6 +3939,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10210_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3538,6 +3960,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10211_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073901495" );
@@ -3552,6 +3976,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10212_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3571,6 +3997,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10213_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073901592" );
@@ -3585,6 +4013,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10214_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3604,6 +4034,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10215_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073901602" );
@@ -3618,6 +4050,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10216_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3637,6 +4071,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10217_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073901725" );
@@ -3651,6 +4087,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10218_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3670,6 +4108,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10219_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073901851" );
@@ -3684,6 +4124,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10220_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3703,6 +4145,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10221_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073901864" );
@@ -3717,6 +4161,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10222_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3736,6 +4182,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10223_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073901877" );
@@ -3750,6 +4198,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10224_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3769,6 +4219,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10225_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073901880" );
@@ -3783,6 +4235,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10226_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3802,6 +4256,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10227_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073901903" );
@@ -3816,6 +4272,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10228_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3835,6 +4293,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10229_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073901929" );
@@ -3849,6 +4309,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10230_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3868,6 +4330,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10231_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073901961" );
@@ -3882,6 +4346,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10232_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3901,6 +4367,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10233_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073901974" );
@@ -3915,6 +4383,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10234_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3934,6 +4404,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10235_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073902096" );
@@ -3949,23 +4421,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10236_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073902097" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10237_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -3981,6 +4457,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10238_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4000,6 +4478,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10239_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073902180" );
@@ -4014,6 +4494,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10240_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4033,6 +4515,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10241_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073902216" );
@@ -4047,6 +4531,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10242_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4066,6 +4552,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10243_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073902232" );
@@ -4080,6 +4568,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10244_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4099,6 +4589,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10245_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073902245" );
@@ -4113,6 +4605,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10246_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4132,6 +4626,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10247_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073902274" );
@@ -4146,6 +4642,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10248_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4165,6 +4663,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10249_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073902287" );
@@ -4179,6 +4679,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10250_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4198,6 +4700,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10251_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073902290" );
@@ -4212,6 +4716,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10252_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4231,6 +4737,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10253_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073902313" );
@@ -4245,6 +4753,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10254_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4264,6 +4774,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10255_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073902397" );
@@ -4278,6 +4790,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10256_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4297,6 +4811,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10257_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073902436" );
@@ -4311,6 +4827,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10258_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4330,6 +4848,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10259_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073902494" );
@@ -4344,6 +4864,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10260_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4363,6 +4885,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10261_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073902546" );
@@ -4377,6 +4901,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10262_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4396,6 +4922,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10263_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073902672" );
@@ -4410,6 +4938,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10264_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4429,6 +4959,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10265_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073902766" );
@@ -4443,6 +4975,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10266_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4462,6 +4996,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10267_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073902779" );
@@ -4476,6 +5012,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10268_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4495,6 +5033,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10269_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073902821" );
@@ -4509,6 +5049,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10270_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4528,6 +5070,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10271_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073902889" );
@@ -4543,23 +5087,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10272_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073902881" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10273_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4575,6 +5123,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10274_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4594,6 +5144,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10275_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073903147" );
@@ -4608,6 +5160,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10276_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4627,6 +5181,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10277_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073903150" );
@@ -4641,6 +5197,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10278_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4660,6 +5218,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10279_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073903244" );
@@ -4674,6 +5234,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10280_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4693,6 +5255,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10281_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073903286" );
@@ -4707,6 +5271,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10282_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4726,6 +5292,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10283_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073903312" );
@@ -4740,6 +5308,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10284_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4759,6 +5329,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10285_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073903325" );
@@ -4773,6 +5345,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10286_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4792,6 +5366,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10287_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073903354" );
@@ -4806,6 +5382,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10288_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4825,6 +5403,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10289_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073903367" );
@@ -4839,6 +5419,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10290_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4858,6 +5440,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10291_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073903383" );
@@ -4872,6 +5456,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10292_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4891,6 +5477,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10293_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073903419" );
@@ -4905,6 +5493,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10294_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4924,6 +5514,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10295_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073903493" );
@@ -4938,6 +5530,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10296_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4957,6 +5551,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10297_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073903503" );
@@ -4971,6 +5567,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10298_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -4990,6 +5588,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10299_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073903516" );
@@ -5004,6 +5604,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10300_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5023,6 +5625,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10301_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073903529" );
@@ -5037,6 +5641,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10302_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5056,6 +5662,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10303_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073903642" );
@@ -5070,6 +5678,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10304_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5089,6 +5699,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10305_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073903749" );
@@ -5103,6 +5715,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10306_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5122,6 +5736,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10307_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073903891" );
@@ -5136,6 +5752,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10308_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5155,6 +5773,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10309_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073903943" );
@@ -5169,6 +5789,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10310_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5188,6 +5810,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10311_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073903985" );
@@ -5203,23 +5827,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10312_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073903955" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10313_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5235,6 +5863,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10314_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5254,6 +5884,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10315_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073904117" );
@@ -5268,6 +5900,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10316_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5287,6 +5921,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10317_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073904159" );
@@ -5301,6 +5937,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10318_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5320,6 +5958,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10319_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073904188" );
@@ -5334,6 +5974,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10320_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5353,6 +5995,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10321_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073904230" );
@@ -5367,6 +6011,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10322_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5386,6 +6032,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10323_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073904447" );
@@ -5400,6 +6048,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10324_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5419,6 +6069,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10325_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073904502" );
@@ -5433,6 +6085,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10326_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5452,6 +6106,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10327_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073904531" );
@@ -5467,23 +6123,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10328_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "093904531" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10329_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5499,6 +6159,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10330_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5518,6 +6180,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10331_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073904638" );
@@ -5532,6 +6196,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10332_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5551,6 +6217,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10333_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073904696" );
@@ -5565,6 +6233,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10334_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5584,6 +6254,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10335_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073904751" );
@@ -5598,6 +6270,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10336_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5617,6 +6291,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10337_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073904777" );
@@ -5631,6 +6307,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10338_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5650,6 +6328,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10339_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073904890" );
@@ -5664,6 +6344,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10340_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5683,6 +6365,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10341_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073904939" );
@@ -5697,6 +6381,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10342_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5716,6 +6402,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10343_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073905006" );
@@ -5730,6 +6418,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10344_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5749,6 +6439,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10345_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073905064" );
@@ -5763,6 +6455,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10346_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5782,6 +6476,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10347_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073905116" );
@@ -5796,6 +6492,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10348_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5815,6 +6513,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10349_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073905187" );
@@ -5829,6 +6529,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10350_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5848,6 +6550,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10351_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073905268" );
@@ -5862,6 +6566,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10352_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5881,6 +6587,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10353_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073905284" );
@@ -5895,6 +6603,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10354_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5914,6 +6624,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10355_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073905352" );
@@ -5928,6 +6640,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10356_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5947,6 +6661,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10357_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073905417" );
@@ -5961,6 +6677,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10358_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -5980,6 +6698,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10359_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073905527" );
@@ -5994,6 +6714,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10360_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6013,6 +6735,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10361_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073905608" );
@@ -6027,6 +6751,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10362_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6046,6 +6772,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10363_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073905637" );
@@ -6060,6 +6788,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10364_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6079,6 +6809,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10365_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073905653" );
@@ -6093,6 +6825,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10366_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6112,6 +6846,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10367_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073905718" );
@@ -6126,6 +6862,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10368_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6145,6 +6883,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10369_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073905873" );
@@ -6159,6 +6899,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10370_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6178,6 +6920,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10371_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073905912" );
@@ -6192,6 +6936,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10372_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6211,6 +6957,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10373_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073906005" );
@@ -6225,6 +6973,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10374_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6244,6 +6994,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10375_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073906034" );
@@ -6258,6 +7010,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10376_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6277,6 +7031,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10377_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073906047" );
@@ -6291,6 +7047,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10378_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6310,6 +7068,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10379_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073906092" );
@@ -6324,6 +7084,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10380_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6343,6 +7105,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10381_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073906131" );
@@ -6357,6 +7121,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10382_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6376,6 +7142,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10383_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073906160" );
@@ -6391,23 +7159,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10384_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073306160" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10385_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6423,6 +7195,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10386_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6442,6 +7216,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10387_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073906335" );
@@ -6456,6 +7232,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10388_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6475,6 +7253,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10389_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073906445" );
@@ -6489,6 +7269,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10390_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6508,6 +7290,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10391_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073906665" );
@@ -6522,6 +7306,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10392_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6541,6 +7327,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10393_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073906788" );
@@ -6555,6 +7343,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10394_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6574,6 +7364,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10395_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073906801" );
@@ -6589,23 +7381,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10396_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "076906801" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10397_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6621,6 +7417,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10398_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6640,6 +7438,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10399_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073906872" );
@@ -6654,6 +7454,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10400_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6673,6 +7475,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10401_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073907091" );
@@ -6687,6 +7491,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10402_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6706,6 +7512,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10403_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073907127" );
@@ -6720,6 +7528,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10404_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6739,6 +7549,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10405_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073907208" );
@@ -6753,6 +7565,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10406_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6772,6 +7586,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10407_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073907334" );
@@ -6786,6 +7602,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10408_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6805,6 +7623,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10409_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073907389" );
@@ -6819,6 +7639,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10410_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6838,6 +7660,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10411_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073907509" );
@@ -6852,6 +7676,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10412_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6871,6 +7697,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10413_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073907541" );
@@ -6885,6 +7713,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10414_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6904,6 +7734,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10415_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073907583" );
@@ -6918,6 +7750,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10416_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6937,6 +7771,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10417_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073907664" );
@@ -6951,6 +7787,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10418_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -6970,6 +7808,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10419_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073907729" );
@@ -6985,23 +7825,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10420_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "071907729" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10421_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7017,6 +7861,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10422_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7036,6 +7882,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10423_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073907774" );
@@ -7050,6 +7898,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10424_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7069,6 +7919,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10425_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073907855" );
@@ -7083,6 +7935,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10426_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7102,6 +7956,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10427_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073907868" );
@@ -7116,6 +7972,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10428_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7135,6 +7993,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10429_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073907897" );
@@ -7149,6 +8009,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10430_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7168,6 +8030,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10431_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073907952" );
@@ -7182,6 +8046,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10432_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7201,6 +8067,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10433_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073908045" );
@@ -7215,6 +8083,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10434_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7234,6 +8104,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10435_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073908155" );
@@ -7248,6 +8120,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10436_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7267,6 +8141,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10437_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073908252" );
@@ -7281,6 +8157,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10438_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7300,6 +8178,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10439_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073908278" );
@@ -7314,6 +8194,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10440_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7333,6 +8215,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10441_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073908317" );
@@ -7347,6 +8231,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10442_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7366,6 +8252,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10443_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073908359" );
@@ -7380,6 +8268,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10444_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7399,6 +8289,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10445_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073908511" );
@@ -7413,6 +8305,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10446_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7432,6 +8326,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10447_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073908621" );
@@ -7446,6 +8342,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10448_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7465,6 +8363,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10449_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073908634" );
@@ -7479,6 +8379,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10450_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7498,6 +8400,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10451_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073908728" );
@@ -7512,6 +8416,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10452_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7531,6 +8437,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10453_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073908731" );
@@ -7545,6 +8453,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10454_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7564,6 +8474,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10455_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073908760" );
@@ -7578,6 +8490,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10456_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7597,6 +8511,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10457_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073908980" );
@@ -7611,6 +8527,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10458_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7630,6 +8548,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10459_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073909015" );
@@ -7644,6 +8564,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10460_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7663,6 +8585,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10461_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073909031" );
@@ -7677,6 +8601,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10462_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7696,6 +8622,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10463_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073909183" );
@@ -7710,6 +8638,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10464_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7729,6 +8659,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10465_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073909222" );
@@ -7743,6 +8675,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10466_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7762,6 +8696,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10467_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073909345" );
@@ -7776,6 +8712,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10468_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7795,6 +8733,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10469_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073909361" );
@@ -7809,6 +8749,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10470_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7828,6 +8770,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10471_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073909468" );
@@ -7842,6 +8786,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10472_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7861,6 +8807,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10473_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073909507" );
@@ -7875,6 +8823,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10474_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7894,6 +8844,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10475_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073909578" );
@@ -7908,6 +8860,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10476_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7927,6 +8881,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10477_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073909620" );
@@ -7941,6 +8897,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10478_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7960,6 +8918,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10479_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073909714" );
@@ -7974,6 +8934,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10480_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -7993,6 +8955,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10481_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073909992" );
@@ -8007,6 +8971,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10482_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8026,6 +8992,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10483_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073910046" );
@@ -8040,6 +9008,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10484_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8059,6 +9029,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10485_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073910091" );
@@ -8073,6 +9045,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10486_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8092,6 +9066,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10487_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073910114" );
@@ -8106,6 +9082,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10488_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8125,6 +9103,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10489_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073910237" );
@@ -8139,6 +9119,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10490_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8158,6 +9140,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10491_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073910266" );
@@ -8172,6 +9156,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10492_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8191,6 +9177,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10493_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073910389" );
@@ -8205,6 +9193,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10494_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8224,6 +9214,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10495_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073910745" );
@@ -8238,6 +9230,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10496_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8257,6 +9251,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10497_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073910923" );
@@ -8271,6 +9267,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10498_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8290,6 +9288,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10499_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073911061" );
@@ -8304,6 +9304,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10500_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8323,6 +9325,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10501_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073911278" );
@@ -8337,6 +9341,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10502_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8356,6 +9362,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10503_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073911511" );
@@ -8370,6 +9378,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10504_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8389,6 +9399,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10505_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073911582" );
@@ -8403,6 +9415,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10506_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8422,6 +9436,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10507_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073911676" );
@@ -8436,6 +9452,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10508_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8455,6 +9473,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10509_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073911812" );
@@ -8470,23 +9490,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10510_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073911817" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10511_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8502,6 +9526,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10512_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8521,6 +9547,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10513_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073911951" );
@@ -8535,6 +9563,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10514_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8554,6 +9584,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10515_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073912060" );
@@ -8568,6 +9600,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10516_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8587,6 +9621,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10517_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073912073" );
@@ -8602,23 +9638,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10518_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073912074" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10519_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8634,6 +9674,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10520_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8653,6 +9695,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10521_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073912196" );
@@ -8667,6 +9711,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10522_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8686,6 +9732,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10523_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073912222" );
@@ -8700,6 +9748,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10524_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8719,6 +9769,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10525_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073912264" );
@@ -8733,6 +9785,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10526_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8752,6 +9806,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10527_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073912552" );
@@ -8766,6 +9822,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10528_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8785,6 +9843,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10529_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073912756" );
@@ -8799,6 +9859,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10530_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8818,6 +9880,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10531_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073912808" );
@@ -8832,6 +9896,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10532_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8851,6 +9917,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10533_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073912837" );
@@ -8865,6 +9933,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10534_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8884,6 +9954,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10535_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073913195" );
@@ -8898,6 +9970,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10536_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8917,6 +9991,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10537_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073913218" );
@@ -8931,6 +10007,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10538_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8950,6 +10028,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10539_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073913302" );
@@ -8964,6 +10044,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10540_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -8983,6 +10065,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10541_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073913344" );
@@ -8997,6 +10081,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10542_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9016,6 +10102,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10543_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073913373" );
@@ -9030,6 +10118,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10544_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9049,6 +10139,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10545_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073913425" );
@@ -9063,6 +10155,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10546_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9082,6 +10176,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10547_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073913467" );
@@ -9096,6 +10192,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10548_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9115,6 +10213,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10549_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073913580" );
@@ -9129,6 +10229,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10550_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9148,6 +10250,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10551_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073913674" );
@@ -9162,6 +10266,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10552_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9181,6 +10287,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10553_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073913755" );
@@ -9195,6 +10303,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10554_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9214,6 +10324,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10555_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073913836" );
@@ -9228,6 +10340,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10556_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9247,6 +10361,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10557_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073913959" );
@@ -9261,6 +10377,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10558_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9280,6 +10398,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10559_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073914220" );
@@ -9294,6 +10414,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10560_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9313,6 +10435,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10561_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073914262" );
@@ -9327,6 +10451,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10562_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9346,6 +10472,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10563_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073914288" );
@@ -9360,6 +10488,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10564_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9379,6 +10509,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10565_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073914356" );
@@ -9393,6 +10525,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10566_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9412,6 +10546,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10567_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073914369" );
@@ -9426,6 +10562,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10568_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9445,6 +10583,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10569_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073914398" );
@@ -9459,6 +10599,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10570_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9478,6 +10620,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10571_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073914411" );
@@ -9492,6 +10636,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10572_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9511,6 +10657,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10573_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073914550" );
@@ -9525,6 +10673,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10574_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9544,6 +10694,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10575_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073914822" );
@@ -9558,6 +10710,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10576_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9577,6 +10731,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10577_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073914864" );
@@ -9591,6 +10747,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10578_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9610,6 +10768,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10579_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073914961" );
@@ -9624,6 +10784,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10580_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9643,6 +10805,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10581_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073915193" );
@@ -9657,6 +10821,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10582_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9676,6 +10842,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10583_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073915342" );
@@ -9690,6 +10858,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10584_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9709,6 +10879,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10585_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073915449" );
@@ -9723,6 +10895,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10586_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9742,6 +10916,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10587_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073915494" );
@@ -9756,6 +10932,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10588_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9775,6 +10953,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10589_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073915520" );
@@ -9789,6 +10969,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10590_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9808,6 +10990,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10591_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073915656" );
@@ -9822,6 +11006,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10592_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9841,6 +11027,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10593_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073915672" );
@@ -9855,6 +11043,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10594_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9874,6 +11064,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10595_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073915782" );
@@ -9888,6 +11080,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10596_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9907,6 +11101,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10597_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073915818" );
@@ -9921,6 +11117,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10598_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9940,6 +11138,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10599_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073915847" );
@@ -9954,6 +11154,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10600_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -9973,6 +11175,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10601_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073915889" );
@@ -9987,6 +11191,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10602_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10006,6 +11212,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10603_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073915915" );
@@ -10020,6 +11228,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10604_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10039,6 +11249,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10605_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073916367" );
@@ -10053,6 +11265,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10606_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10072,6 +11286,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10607_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073916406" );
@@ -10086,6 +11302,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10608_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10105,6 +11323,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10609_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073916422" );
@@ -10119,6 +11339,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10610_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10138,6 +11360,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10611_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073916477" );
@@ -10152,6 +11376,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10612_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10171,6 +11397,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10613_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073916480" );
@@ -10185,6 +11413,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10614_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10204,6 +11434,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10615_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073916532" );
@@ -10218,6 +11450,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10616_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10237,6 +11471,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10617_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073916545" );
@@ -10251,6 +11487,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10618_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10270,6 +11508,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10619_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073916668" );
@@ -10284,6 +11524,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10620_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10303,6 +11545,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10621_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073916778" );
@@ -10317,6 +11561,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10622_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10336,6 +11582,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10623_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073917175" );
@@ -10350,6 +11598,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10624_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10369,6 +11619,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10625_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073917285" );
@@ -10384,23 +11636,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10626_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073917585" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10627_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10416,6 +11672,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10628_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10435,6 +11693,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10629_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073917641" );
@@ -10449,6 +11709,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10630_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10468,6 +11730,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10631_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073917748" );
@@ -10482,6 +11746,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10632_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10501,6 +11767,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10633_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073917764" );
@@ -10515,6 +11783,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10634_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10534,6 +11804,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10635_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073917887" );
@@ -10548,6 +11820,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10636_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10567,6 +11841,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10637_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073918077" );
@@ -10581,6 +11857,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10638_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10600,6 +11878,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10639_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073918103" );
@@ -10614,6 +11894,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10640_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10633,6 +11915,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10641_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073918323" );
@@ -10647,6 +11931,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10642_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10666,6 +11952,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10643_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073918378" );
@@ -10680,6 +11968,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10644_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10699,6 +11989,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10645_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073918394" );
@@ -10713,6 +12005,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10646_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10732,6 +12026,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10647_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073918459" );
@@ -10746,6 +12042,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10648_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10765,6 +12063,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10649_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073918569" );
@@ -10779,6 +12079,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10650_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10798,6 +12100,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10651_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073918598" );
@@ -10812,6 +12116,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10652_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10831,6 +12137,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10653_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073918608" );
@@ -10845,6 +12153,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10654_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10864,6 +12174,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10655_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073918653" );
@@ -10878,6 +12190,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10656_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10897,6 +12211,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10657_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073918844" );
@@ -10911,6 +12227,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10658_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10930,6 +12248,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10659_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073918857" );
@@ -10944,6 +12264,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10660_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10963,6 +12285,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10661_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073919005" );
@@ -10977,6 +12301,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10662_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -10996,6 +12322,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10663_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073919212" );
@@ -11010,6 +12338,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10664_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11029,6 +12359,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10665_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073919283" );
@@ -11043,6 +12375,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10666_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11062,6 +12396,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10667_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073919416" );
@@ -11076,6 +12412,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10668_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11095,6 +12433,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10669_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073919571" );
@@ -11109,6 +12449,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10670_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11128,6 +12470,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10671_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073919911" );
@@ -11142,6 +12486,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10672_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11161,6 +12507,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10673_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920162" );
@@ -11175,6 +12523,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10674_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11194,6 +12544,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10675_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920285" );
@@ -11208,6 +12560,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10676_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11227,6 +12581,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10677_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920395" );
@@ -11241,6 +12597,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10678_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11260,6 +12618,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10679_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920405" );
@@ -11274,6 +12634,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10680_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11293,6 +12655,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10681_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920418" );
@@ -11307,6 +12671,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10682_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11326,6 +12692,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10683_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920463" );
@@ -11340,6 +12708,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10684_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11359,6 +12729,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10685_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920531" );
@@ -11373,6 +12745,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10686_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11392,6 +12766,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10687_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920557" );
@@ -11406,6 +12782,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10688_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11425,6 +12803,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10689_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920612" );
@@ -11439,6 +12819,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10690_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11458,6 +12840,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10691_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920638" );
@@ -11472,6 +12856,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10692_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11491,6 +12877,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10693_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920654" );
@@ -11505,6 +12893,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10694_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11524,6 +12914,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10695_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920683" );
@@ -11538,6 +12930,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10696_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11557,6 +12951,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10697_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920706" );
@@ -11571,6 +12967,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10698_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11590,6 +12988,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10699_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920735" );
@@ -11604,6 +13004,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10700_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11623,6 +13025,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10701_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920764" );
@@ -11637,6 +13041,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10702_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11656,6 +13062,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10703_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920777" );
@@ -11670,6 +13078,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10704_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11689,6 +13099,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10705_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920780" );
@@ -11703,6 +13115,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10706_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11722,6 +13136,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10707_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920832" );
@@ -11736,6 +13152,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10708_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11755,6 +13173,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10709_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920845" );
@@ -11769,6 +13189,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10710_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11788,6 +13210,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10711_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920861" );
@@ -11803,23 +13227,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10712_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073910861" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10713_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11835,6 +13263,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10714_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11854,6 +13284,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10715_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920887" );
@@ -11868,6 +13300,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10716_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11887,6 +13321,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10717_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920890" );
@@ -11902,23 +13338,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10718_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073520890" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10719_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11934,6 +13374,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10720_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11953,6 +13395,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10721_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920913" );
@@ -11967,6 +13411,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10722_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -11986,6 +13432,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10723_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920926" );
@@ -12000,6 +13448,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10724_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12019,6 +13469,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10725_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920939" );
@@ -12033,6 +13485,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10726_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12052,6 +13506,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10727_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920942" );
@@ -12066,6 +13522,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10728_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12085,6 +13543,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10729_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073920997" );
@@ -12099,6 +13559,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10730_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12118,6 +13580,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10731_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921006" );
@@ -12132,6 +13596,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10732_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12151,6 +13617,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10733_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921048" );
@@ -12165,6 +13633,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10734_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12184,6 +13654,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10735_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921093" );
@@ -12198,6 +13670,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10736_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12217,6 +13691,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10737_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921129" );
@@ -12231,6 +13707,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10738_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12250,6 +13728,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10739_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921132" );
@@ -12264,6 +13744,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10740_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12283,6 +13765,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10741_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921145" );
@@ -12297,6 +13781,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10742_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12316,6 +13802,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10743_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921158" );
@@ -12330,6 +13818,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10744_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12349,6 +13839,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10745_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921161" );
@@ -12363,6 +13855,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10746_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12382,6 +13876,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10747_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921187" );
@@ -12396,6 +13892,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10748_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12415,6 +13913,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10749_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921190" );
@@ -12429,6 +13929,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10750_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12448,6 +13950,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10751_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921200" );
@@ -12462,6 +13966,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10752_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12481,6 +13987,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10753_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921213" );
@@ -12495,6 +14003,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10754_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12514,6 +14024,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10755_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921226" );
@@ -12528,6 +14040,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10756_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12547,6 +14061,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10757_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921323" );
@@ -12561,6 +14077,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10758_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12580,6 +14098,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10759_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921404" );
@@ -12594,6 +14114,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10760_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12613,6 +14135,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10761_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921420" );
@@ -12627,6 +14151,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10762_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12646,6 +14172,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10763_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921433" );
@@ -12660,6 +14188,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10764_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12679,6 +14209,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10765_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921446" );
@@ -12693,6 +14225,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10766_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12712,6 +14246,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10767_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921514" );
@@ -12726,6 +14262,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10768_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12745,6 +14283,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10769_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921527" );
@@ -12759,6 +14299,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10770_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12778,6 +14320,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10771_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921530" );
@@ -12792,6 +14336,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10772_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12811,6 +14357,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10773_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921543" );
@@ -12826,23 +14374,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10774_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921563" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10775_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12858,6 +14410,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10776_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12877,6 +14431,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10777_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921569" );
@@ -12891,6 +14447,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10778_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12910,6 +14468,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10779_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921585" );
@@ -12925,23 +14485,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10780_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "053921585" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10781_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12957,6 +14521,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10782_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -12976,6 +14542,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10783_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921624" );
@@ -12990,6 +14558,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10784_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13009,6 +14579,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10785_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921637" );
@@ -13023,6 +14595,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10786_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13042,6 +14616,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10787_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921653" );
@@ -13056,6 +14632,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10788_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13075,6 +14653,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10789_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921666" );
@@ -13089,6 +14669,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10790_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13108,6 +14690,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10791_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921679" );
@@ -13122,6 +14706,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10792_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13141,6 +14727,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10793_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921682" );
@@ -13155,6 +14743,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10794_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13174,6 +14764,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10795_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921695" );
@@ -13188,6 +14780,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10796_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13207,6 +14801,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10797_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921718" );
@@ -13221,6 +14817,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10798_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13240,6 +14838,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10799_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921721" );
@@ -13254,6 +14854,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10800_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13273,6 +14875,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10801_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921763" );
@@ -13287,6 +14891,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10802_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13306,6 +14912,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10803_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921776" );
@@ -13320,6 +14928,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10804_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13339,6 +14949,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10805_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921792" );
@@ -13353,6 +14965,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10806_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13372,6 +14986,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10807_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921802" );
@@ -13387,23 +15003,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10808_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073928802" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10809_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13419,6 +15039,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10810_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13438,6 +15060,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10811_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921844" );
@@ -13452,6 +15076,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10812_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13471,6 +15097,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10813_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921860" );
@@ -13485,6 +15113,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10814_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13504,6 +15134,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10815_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921873" );
@@ -13518,6 +15150,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10816_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13537,6 +15171,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10817_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921909" );
@@ -13551,6 +15187,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10818_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13570,6 +15208,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10819_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921912" );
@@ -13584,6 +15224,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10820_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13603,6 +15245,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10821_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921938" );
@@ -13617,6 +15261,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10822_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13636,6 +15282,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10823_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921954" );
@@ -13650,6 +15298,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10824_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13669,6 +15319,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10825_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921967" );
@@ -13683,6 +15335,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10826_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13702,6 +15356,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10827_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073921970" );
@@ -13716,6 +15372,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10828_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13735,6 +15393,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10829_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922005" );
@@ -13749,6 +15409,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10830_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13768,6 +15430,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10831_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922018" );
@@ -13782,6 +15446,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10832_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13801,6 +15467,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10833_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922021" );
@@ -13815,6 +15483,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10834_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13834,6 +15504,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10835_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922063" );
@@ -13848,6 +15520,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10836_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13867,6 +15541,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10837_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922089" );
@@ -13882,23 +15558,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10838_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073022089" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10839_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13914,6 +15594,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10840_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13933,6 +15615,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10841_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922115" );
@@ -13947,6 +15631,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10842_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13966,6 +15652,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10843_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922238" );
@@ -13980,6 +15668,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10844_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -13999,6 +15689,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10845_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922241" );
@@ -14013,6 +15705,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10846_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14032,6 +15726,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10847_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922254" );
@@ -14046,6 +15742,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10848_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14065,6 +15763,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10849_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922296" );
@@ -14079,6 +15779,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10850_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14098,6 +15800,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10851_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922322" );
@@ -14112,6 +15816,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10852_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14131,6 +15837,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10853_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922351" );
@@ -14145,6 +15853,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10854_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14164,6 +15874,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10855_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922364" );
@@ -14178,6 +15890,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10856_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14197,6 +15911,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10857_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922377" );
@@ -14211,6 +15927,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10858_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14230,6 +15948,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10859_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922403" );
@@ -14244,6 +15964,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10860_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14263,6 +15985,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10861_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922429" );
@@ -14277,6 +16001,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10862_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14296,6 +16022,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10863_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922432" );
@@ -14311,23 +16039,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10864_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922442" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10865_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14343,6 +16075,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10866_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14362,6 +16096,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10867_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922474" );
@@ -14376,6 +16112,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10868_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14395,6 +16133,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10869_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922490" );
@@ -14409,6 +16149,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10870_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14428,6 +16170,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10871_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922513" );
@@ -14442,6 +16186,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10872_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14461,6 +16207,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10873_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922526" );
@@ -14475,6 +16223,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10874_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14494,6 +16244,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10875_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922539" );
@@ -14508,6 +16260,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10876_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14527,6 +16281,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10877_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922542" );
@@ -14541,6 +16297,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10878_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14560,6 +16318,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10879_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922555" );
@@ -14574,6 +16334,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10880_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14593,6 +16355,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10881_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922571" );
@@ -14607,6 +16371,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10882_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14626,6 +16392,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10883_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922597" );
@@ -14640,6 +16408,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10884_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14659,6 +16429,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10885_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922607" );
@@ -14673,6 +16445,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10886_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14692,6 +16466,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10887_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922610" );
@@ -14706,6 +16482,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10888_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14725,6 +16503,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10889_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922623" );
@@ -14739,6 +16519,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10890_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14758,6 +16540,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10891_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922652" );
@@ -14773,23 +16557,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10892_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073322652" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_10893_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14805,6 +16593,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10894_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14824,6 +16614,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10895_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922681" );
@@ -14838,6 +16630,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10896_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14857,6 +16651,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10897_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922704" );
@@ -14871,6 +16667,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10898_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14890,6 +16688,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10899_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922720" );
@@ -14904,6 +16704,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10900_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14923,6 +16725,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10901_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922733" );
@@ -14937,6 +16741,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10902_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14956,6 +16762,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10903_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922746" );
@@ -14970,6 +16778,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10904_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -14989,6 +16799,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10905_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922762" );
@@ -15003,6 +16815,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10906_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15022,6 +16836,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10907_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922791" );
@@ -15036,6 +16852,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10908_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15055,6 +16873,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10909_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922801" );
@@ -15069,6 +16889,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10910_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15088,6 +16910,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10911_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922843" );
@@ -15102,6 +16926,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10912_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15121,6 +16947,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10913_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922856" );
@@ -15135,6 +16963,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10914_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15154,6 +16984,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10915_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922869" );
@@ -15168,6 +17000,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10916_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15187,6 +17021,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10917_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922885" );
@@ -15201,6 +17037,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10918_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15220,6 +17058,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10919_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922898" );
@@ -15234,6 +17074,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10920_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15253,6 +17095,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10921_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922908" );
@@ -15267,6 +17111,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10922_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15286,6 +17132,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10923_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922911" );
@@ -15300,6 +17148,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10924_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15319,6 +17169,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10925_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922937" );
@@ -15333,6 +17185,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10926_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15352,6 +17206,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10927_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922940" );
@@ -15366,6 +17222,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10928_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15385,6 +17243,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10929_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922953" );
@@ -15399,6 +17259,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10930_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15418,6 +17280,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10931_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922966" );
@@ -15432,6 +17296,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10932_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15451,6 +17317,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10933_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922979" );
@@ -15465,6 +17333,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10934_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15484,6 +17354,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10935_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073922995" );
@@ -15498,6 +17370,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10936_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15517,6 +17391,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10937_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073923017" );
@@ -15531,6 +17407,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10938_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15550,6 +17428,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10939_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073923020" );
@@ -15564,6 +17444,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10940_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15583,6 +17465,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10941_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073923033" );
@@ -15597,6 +17481,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10942_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15616,6 +17502,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10943_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073972071" );
@@ -15630,6 +17518,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10944_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15649,6 +17539,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10945_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073972084" );
@@ -15663,6 +17555,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10946_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15682,6 +17576,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10947_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073972110" );
@@ -15696,6 +17592,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10948_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15715,6 +17613,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10949_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073972165" );
@@ -15729,6 +17629,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10950_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15748,6 +17650,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10951_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073972181" );
@@ -15762,6 +17666,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10952_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15781,6 +17687,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10953_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073983125" );
@@ -15795,6 +17703,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10954_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15814,6 +17724,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10955_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073983141" );
@@ -15828,6 +17740,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10956_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15847,6 +17761,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10957_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073983170" );
@@ -15861,6 +17777,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10958_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15880,6 +17798,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10959_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073983206" );
@@ -15894,6 +17814,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10960_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15913,6 +17835,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10961_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "073983235" );
@@ -15927,6 +17851,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10962_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15946,6 +17872,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10963_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074000010" );
@@ -15960,6 +17888,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10964_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -15979,6 +17909,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10965_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074000065" );
@@ -15993,6 +17925,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10966_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16012,6 +17946,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10967_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074000078" );
@@ -16026,6 +17962,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10968_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16045,6 +17983,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10969_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074000162" );
@@ -16059,6 +17999,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10970_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16078,6 +18020,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10971_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074000515" );
@@ -16092,6 +18036,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10972_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16111,6 +18057,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10973_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074001019" );
@@ -16125,6 +18073,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10974_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16144,6 +18094,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10975_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074001048" );
@@ -16158,6 +18110,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10976_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16177,6 +18131,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10977_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074006674" );
@@ -16191,6 +18147,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10978_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16210,6 +18168,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10979_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074014035" );
@@ -16224,6 +18184,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10980_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16243,6 +18205,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10981_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074014187" );
@@ -16257,6 +18221,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10982_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16276,6 +18242,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10983_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074014213" );
@@ -16290,6 +18258,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10984_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16309,6 +18279,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10985_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074014420" );
@@ -16323,6 +18295,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10986_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16342,6 +18316,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10987_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074014433" );
@@ -16356,6 +18332,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10988_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16375,6 +18353,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10989_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074036026" );
@@ -16389,6 +18369,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10990_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16408,6 +18390,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10991_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074036039" );
@@ -16422,6 +18406,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10992_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16441,6 +18427,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10993_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074036042" );
@@ -16455,6 +18443,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10994_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16474,6 +18464,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10995_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074036055" );
@@ -16488,6 +18480,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10996_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16507,6 +18501,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10997_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074036068" );
@@ -16521,6 +18517,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_10998_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16540,6 +18538,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_10999_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074036071" );
@@ -16554,6 +18554,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11000_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16573,6 +18575,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11001_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074036084" );
@@ -16587,6 +18591,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11002_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16606,6 +18612,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11003_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074036181" );
@@ -16620,6 +18628,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11004_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16639,6 +18649,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11005_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074036194" );
@@ -16653,6 +18665,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11006_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16672,6 +18686,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11007_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074071926" );
@@ -16686,6 +18702,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11008_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16705,6 +18723,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11009_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074900194" );
@@ -16719,6 +18739,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11010_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16738,6 +18760,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11011_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074900275" );
@@ -16752,6 +18776,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11012_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16771,6 +18797,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11013_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074900356" );
@@ -16785,6 +18813,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11014_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16804,6 +18834,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11015_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074900657" );
@@ -16818,6 +18850,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11016_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16837,6 +18871,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11017_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074900783" );
@@ -16851,6 +18887,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11018_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16870,6 +18908,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11019_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074901009" );
@@ -16884,6 +18924,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11020_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16903,6 +18945,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11021_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074901290" );
@@ -16917,6 +18961,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11022_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16936,6 +18982,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11023_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074901672" );
@@ -16950,6 +18998,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11024_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -16969,6 +19019,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11025_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074902082" );
@@ -16983,6 +19035,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11026_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17002,6 +19056,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11027_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074902215" );
@@ -17016,6 +19072,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11028_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17035,6 +19093,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11029_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074902228" );
@@ -17049,6 +19109,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11030_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17068,6 +19130,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11031_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074902341" );
@@ -17082,6 +19146,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11032_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17101,6 +19167,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11033_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074902503" );
@@ -17115,6 +19183,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11034_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17134,6 +19204,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11035_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074903308" );
@@ -17148,6 +19220,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11036_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17167,6 +19241,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11037_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074903337" );
@@ -17181,6 +19257,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11038_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17200,6 +19278,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11039_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074903353" );
@@ -17214,6 +19294,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11040_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17233,6 +19315,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11041_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074903544" );
@@ -17247,6 +19331,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11042_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17266,6 +19352,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11043_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074903670" );
@@ -17280,6 +19368,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11044_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17299,6 +19389,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11045_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074903719" );
@@ -17313,6 +19405,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11046_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17332,6 +19426,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11047_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074903764" );
@@ -17346,6 +19442,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11048_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17365,6 +19463,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11049_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074903803" );
@@ -17379,6 +19479,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11050_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17398,6 +19500,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11051_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074903890" );
@@ -17412,6 +19516,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11052_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17431,6 +19537,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11053_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074903955" );
@@ -17445,6 +19553,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11054_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17464,6 +19574,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11055_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074904132" );
@@ -17478,6 +19590,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11056_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17497,6 +19611,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11057_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074904158" );
@@ -17511,6 +19627,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11058_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17530,6 +19648,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11059_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074904187" );
@@ -17544,6 +19664,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11060_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17563,6 +19685,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11061_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074904190" );
@@ -17577,6 +19701,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11062_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17596,6 +19722,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11063_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074904352" );
@@ -17610,6 +19738,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11064_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17629,6 +19759,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11065_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074904365" );
@@ -17644,23 +19776,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11066_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "071904365" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11067_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17676,6 +19812,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11068_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17695,6 +19833,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11069_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074904530" );
@@ -17709,6 +19849,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11070_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17728,6 +19870,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11071_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074904640" );
@@ -17742,6 +19886,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11072_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17761,6 +19907,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11073_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074904860" );
@@ -17775,6 +19923,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11074_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17794,6 +19944,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11075_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074904954" );
@@ -17808,6 +19960,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11076_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17827,6 +19981,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11077_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074905173" );
@@ -17841,6 +19997,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11078_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17860,6 +20018,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11079_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074905225" );
@@ -17874,6 +20034,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11080_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17893,6 +20055,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11081_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074905319" );
@@ -17907,6 +20071,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11082_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17926,6 +20092,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11083_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074905380" );
@@ -17940,6 +20108,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11084_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -17959,6 +20129,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11085_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074905403" );
@@ -17974,23 +20146,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11086_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "078905403" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11087_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18006,6 +20182,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11088_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18025,6 +20203,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11089_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074905474" );
@@ -18039,6 +20219,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11090_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18058,6 +20240,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11091_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074905539" );
@@ -18072,6 +20256,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11092_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18091,6 +20277,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11093_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074905872" );
@@ -18105,6 +20293,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11094_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18124,6 +20314,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11095_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074905953" );
@@ -18138,6 +20330,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11096_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18157,6 +20351,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11097_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074906059" );
@@ -18171,6 +20367,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11098_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18190,6 +20388,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11099_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074906091" );
@@ -18204,6 +20404,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11100_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18223,6 +20425,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11101_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074906211" );
@@ -18237,6 +20441,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11102_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18256,6 +20462,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11103_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074906347" );
@@ -18270,6 +20478,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11104_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18289,6 +20499,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11105_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074906428" );
@@ -18303,6 +20515,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11106_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18322,6 +20536,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11107_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074906541" );
@@ -18336,6 +20552,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11108_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18355,6 +20573,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11109_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074906622" );
@@ -18369,6 +20589,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11110_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18388,6 +20610,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11111_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074906729" );
@@ -18402,6 +20626,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11112_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18421,6 +20647,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11113_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074906800" );
@@ -18435,6 +20663,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11114_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18454,6 +20684,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11115_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074906826" );
@@ -18468,6 +20700,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11116_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18487,6 +20721,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11117_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074906949" );
@@ -18501,6 +20737,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11118_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18520,6 +20758,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11119_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074907126" );
@@ -18534,6 +20774,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11120_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18553,6 +20795,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11121_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074907317" );
@@ -18567,6 +20811,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11122_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18586,6 +20832,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11123_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074907414" );
@@ -18600,6 +20848,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11124_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18619,6 +20869,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11125_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074907634" );
@@ -18633,6 +20885,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11126_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18652,6 +20906,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11127_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074908112" );
@@ -18666,6 +20922,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11128_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18685,6 +20943,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11129_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074908138" );
@@ -18699,6 +20959,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11130_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18718,6 +20980,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11131_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074908303" );
@@ -18732,6 +20996,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11132_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18751,6 +21017,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11133_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074908426" );
@@ -18765,6 +21033,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11134_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18784,6 +21054,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11135_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074908471" );
@@ -18798,6 +21070,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11136_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18817,6 +21091,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11137_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074908510" );
@@ -18831,6 +21107,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11138_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18850,6 +21128,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11139_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074908594" );
@@ -18864,6 +21144,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11140_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18883,6 +21165,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11141_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074908688" );
@@ -18897,6 +21181,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11142_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18916,6 +21202,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11143_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074908921" );
@@ -18930,6 +21218,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11144_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18949,6 +21239,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11145_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074908934" );
@@ -18963,6 +21255,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11146_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -18982,6 +21276,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11147_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074909111" );
@@ -18996,6 +21292,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11148_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19015,6 +21313,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11149_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074909153" );
@@ -19029,6 +21329,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11150_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19048,6 +21350,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11151_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074909218" );
@@ -19062,6 +21366,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11152_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19081,6 +21387,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11153_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074909357" );
@@ -19095,6 +21403,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11154_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19114,6 +21424,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11155_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074909470" );
@@ -19128,6 +21440,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11156_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19147,6 +21461,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11157_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074909661" );
@@ -19161,6 +21477,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11158_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19180,6 +21498,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11159_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074909988" );
@@ -19194,6 +21514,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11160_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19213,6 +21535,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11161_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074910087" );
@@ -19227,6 +21551,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11162_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19246,6 +21572,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11163_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074910126" );
@@ -19260,6 +21588,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11164_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19279,6 +21609,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11165_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074910692" );
@@ -19293,6 +21625,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11166_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19312,6 +21646,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11167_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074910799" );
@@ -19326,6 +21662,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11168_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19345,6 +21683,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11169_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074910854" );
@@ -19359,6 +21699,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11170_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19378,6 +21720,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11171_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074911138" );
@@ -19392,6 +21736,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11172_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19411,6 +21757,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11173_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074911219" );
@@ -19425,6 +21773,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11174_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19444,6 +21794,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11175_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074911578" );
@@ -19458,6 +21810,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11176_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19477,6 +21831,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11177_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074911581" );
@@ -19491,6 +21847,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11178_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19510,6 +21868,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11179_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074912302" );
@@ -19524,6 +21884,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11180_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19543,6 +21905,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11181_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074912344" );
@@ -19557,6 +21921,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11182_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19576,6 +21942,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11183_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074912483" );
@@ -19590,6 +21958,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11184_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19609,6 +21979,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11185_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074912577" );
@@ -19623,6 +21995,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11186_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19642,6 +22016,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11187_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074912603" );
@@ -19656,6 +22032,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11188_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19675,6 +22053,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11189_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074912645" );
@@ -19689,6 +22069,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11190_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19708,6 +22090,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11191_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074912674" );
@@ -19722,6 +22106,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11192_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19741,6 +22127,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11193_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074912690" );
@@ -19755,6 +22143,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11194_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19774,6 +22164,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11195_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074912755" );
@@ -19788,6 +22180,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11196_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19807,6 +22201,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11197_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074912784" );
@@ -19821,6 +22217,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11198_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19840,6 +22238,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11199_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074912807" );
@@ -19854,6 +22254,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11200_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19873,6 +22275,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11201_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074912849" );
@@ -19887,6 +22291,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11202_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19906,6 +22312,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11203_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074912865" );
@@ -19920,6 +22328,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11204_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19939,6 +22349,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11205_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074912988" );
@@ -19953,6 +22365,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11206_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -19972,6 +22386,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11207_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074913194" );
@@ -19986,6 +22402,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11208_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20005,6 +22423,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11209_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074913233" );
@@ -20019,6 +22439,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11210_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20038,6 +22460,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11211_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074913275" );
@@ -20052,6 +22476,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11212_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20071,6 +22497,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11213_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074913301" );
@@ -20085,6 +22513,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11214_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20104,6 +22534,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11215_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074913314" );
@@ -20118,6 +22550,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11216_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20137,6 +22571,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11217_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074913327" );
@@ -20151,6 +22587,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11218_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20170,6 +22608,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11219_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074913660" );
@@ -20184,6 +22624,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11220_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20203,6 +22645,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11221_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074913699" );
@@ -20217,6 +22661,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11222_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20236,6 +22682,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11223_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074913712" );
@@ -20250,6 +22698,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11224_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20269,6 +22719,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11225_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074913851" );
@@ -20283,6 +22735,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11226_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20302,6 +22756,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11227_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074914067" );
@@ -20316,6 +22772,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11228_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20335,6 +22793,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11229_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074914229" );
@@ -20349,6 +22809,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11230_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20368,6 +22830,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11231_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074914274" );
@@ -20382,6 +22846,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11232_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20401,6 +22867,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11233_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074914313" );
@@ -20415,6 +22883,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11234_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20434,6 +22904,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11235_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074914407" );
@@ -20448,6 +22920,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11236_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20467,6 +22941,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11237_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074914449" );
@@ -20481,6 +22957,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11238_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20500,6 +22978,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11239_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074914452" );
@@ -20514,6 +22994,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11240_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20533,6 +23015,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11241_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074914481" );
@@ -20547,6 +23031,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11242_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20566,6 +23052,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11243_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074914517" );
@@ -20580,6 +23068,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11244_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20599,6 +23089,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11245_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074914533" );
@@ -20613,6 +23105,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11246_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20632,6 +23126,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11247_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074914614" );
@@ -20646,6 +23142,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11248_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20665,6 +23163,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11249_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074914627" );
@@ -20679,6 +23179,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11250_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20698,6 +23200,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11251_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074914643" );
@@ -20712,6 +23216,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11252_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20731,6 +23237,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11253_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074914656" );
@@ -20745,6 +23253,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11254_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20764,6 +23274,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11255_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074971945" );
@@ -20778,6 +23290,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11256_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20797,6 +23311,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11257_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074986804" );
@@ -20811,6 +23327,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11258_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20830,6 +23348,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11259_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "074986820" );
@@ -20844,6 +23364,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11260_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20863,6 +23385,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11261_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075000019" );
@@ -20877,6 +23401,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11262_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20896,6 +23422,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11263_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075000022" );
@@ -20910,6 +23438,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11264_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20929,6 +23459,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11265_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075000051" );
@@ -20943,6 +23475,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11266_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20962,6 +23496,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11267_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075000103" );
@@ -20976,6 +23512,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11268_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -20995,6 +23533,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11269_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075000569" );
@@ -21009,6 +23549,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11270_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21028,6 +23570,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11271_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075000666" );
@@ -21042,6 +23586,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11272_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21061,6 +23607,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11273_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075000721" );
@@ -21075,6 +23623,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11274_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21094,6 +23644,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11275_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075000734" );
@@ -21108,6 +23660,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11276_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21127,6 +23681,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11277_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075000941" );
@@ -21142,23 +23698,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11278_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075000441" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11279_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21174,6 +23734,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11280_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21193,6 +23755,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11281_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075001199" );
@@ -21207,6 +23771,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11282_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21226,6 +23792,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11283_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075001322" );
@@ -21241,23 +23809,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11284_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "095001322" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11285_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21274,23 +23846,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11286_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "035005496" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11287_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21306,6 +23882,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11288_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21325,6 +23903,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11289_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075010193" );
@@ -21339,6 +23919,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11290_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21358,6 +23940,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11291_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075011888" );
@@ -21372,6 +23956,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11292_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21391,6 +23977,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11293_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075011930" );
@@ -21405,6 +23993,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11294_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21424,6 +24014,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11295_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075012531" );
@@ -21438,6 +24030,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11296_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21457,6 +24051,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11297_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075012683" );
@@ -21471,6 +24067,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11298_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21490,6 +24088,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11299_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075017853" );
@@ -21504,6 +24104,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11300_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21523,6 +24125,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11301_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075017947" );
@@ -21537,6 +24141,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11302_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21556,6 +24162,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11303_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075072157" );
@@ -21571,23 +24179,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11304_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075372157" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11305_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21603,6 +24215,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11306_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21622,6 +24236,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11307_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075083214" );
@@ -21636,6 +24252,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11308_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21655,6 +24273,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11309_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075083243" );
@@ -21669,6 +24289,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11310_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21688,6 +24310,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11311_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075900148" );
@@ -21702,6 +24326,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11312_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21721,6 +24347,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11313_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075900229" );
@@ -21735,6 +24363,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11314_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21754,6 +24384,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11315_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075900465" );
@@ -21768,6 +24400,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11316_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21787,6 +24421,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11317_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075900575" );
@@ -21801,6 +24437,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11318_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21820,6 +24458,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11319_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075900766" );
@@ -21834,6 +24474,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11320_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21853,6 +24495,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11321_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075900863" );
@@ -21867,6 +24511,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11322_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21886,6 +24532,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11323_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075900902" );
@@ -21900,6 +24548,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11324_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21919,6 +24569,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11325_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075900973" );
@@ -21933,6 +24585,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11326_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21952,6 +24606,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11327_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075900986" );
@@ -21966,6 +24622,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11328_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -21985,6 +24643,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11329_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075901011" );
@@ -21999,6 +24659,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11330_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22018,6 +24680,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11331_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075901037" );
@@ -22032,6 +24696,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11332_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22051,6 +24717,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11333_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075901082" );
@@ -22065,6 +24733,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11334_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22084,6 +24754,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11335_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075901121" );
@@ -22098,6 +24770,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11336_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22117,6 +24791,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11337_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075901134" );
@@ -22131,6 +24807,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11338_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22150,6 +24828,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11339_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075901273" );
@@ -22164,6 +24844,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11340_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22183,6 +24865,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11341_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075901341" );
@@ -22197,6 +24881,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11342_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22216,6 +24902,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11343_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075901354" );
@@ -22230,6 +24918,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11344_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22249,6 +24939,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11345_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075901480" );
@@ -22263,6 +24955,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11346_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22282,6 +24976,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11347_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075901516" );
@@ -22296,6 +24992,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11348_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22315,6 +25013,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11349_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075901561" );
@@ -22329,6 +25029,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11350_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22348,6 +25050,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11351_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075901590" );
@@ -22363,23 +25067,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11352_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075901591" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11353_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22395,6 +25103,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11354_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22414,6 +25124,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11355_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075901710" );
@@ -22428,6 +25140,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11356_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22447,6 +25161,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11357_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075901723" );
@@ -22461,6 +25177,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11358_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22480,6 +25198,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11359_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075901956" );
@@ -22494,6 +25214,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11360_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22513,6 +25235,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11361_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075901972" );
@@ -22527,6 +25251,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11362_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22546,6 +25272,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11363_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075901998" );
@@ -22560,6 +25288,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11364_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22579,6 +25309,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11365_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902007" );
@@ -22593,6 +25325,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11366_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22612,6 +25346,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11367_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902049" );
@@ -22626,6 +25362,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11368_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22645,6 +25383,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11369_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902052" );
@@ -22659,6 +25399,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11370_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22678,6 +25420,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11371_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902065" );
@@ -22692,6 +25436,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11372_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22711,6 +25457,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11373_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902104" );
@@ -22725,6 +25473,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11374_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22744,6 +25494,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11375_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902120" );
@@ -22758,6 +25510,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11376_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22777,6 +25531,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11377_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902175" );
@@ -22791,6 +25547,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11378_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22810,6 +25568,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11379_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902188" );
@@ -22824,6 +25584,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11380_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22843,6 +25605,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11381_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902227" );
@@ -22858,23 +25622,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11382_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902228" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11383_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22890,6 +25658,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11384_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22909,6 +25679,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11385_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902308" );
@@ -22923,6 +25695,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11386_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22942,6 +25716,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11387_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902337" );
@@ -22956,6 +25732,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11388_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -22975,6 +25753,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11389_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902340" );
@@ -22989,6 +25769,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11390_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23008,6 +25790,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11391_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902421" );
@@ -23022,6 +25806,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11392_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23041,6 +25827,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11393_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902463" );
@@ -23055,6 +25843,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11394_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23074,6 +25864,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11395_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902560" );
@@ -23088,6 +25880,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11396_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23107,6 +25901,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11397_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902573" );
@@ -23121,6 +25917,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11398_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23140,6 +25938,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11399_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902609" );
@@ -23154,6 +25954,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11400_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23173,6 +25975,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11401_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902625" );
@@ -23187,6 +25991,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11402_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23206,6 +26012,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11403_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902670" );
@@ -23220,6 +26028,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11404_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23239,6 +26049,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11405_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902722" );
@@ -23253,6 +26065,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11406_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23272,6 +26086,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11407_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902735" );
@@ -23286,6 +26102,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11408_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23305,6 +26123,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11409_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902816" );
@@ -23319,6 +26139,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11410_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23338,6 +26160,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11411_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902832" );
@@ -23352,6 +26176,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11412_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23371,6 +26197,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11413_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075902968" );
@@ -23385,6 +26213,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11414_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23404,6 +26234,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11415_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903006" );
@@ -23418,6 +26250,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11416_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23437,6 +26271,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11417_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903019" );
@@ -23451,6 +26287,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11418_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23470,6 +26308,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11419_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903116" );
@@ -23484,6 +26324,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11420_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23503,6 +26345,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11421_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903158" );
@@ -23517,6 +26361,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11422_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23536,6 +26382,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11423_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903161" );
@@ -23550,6 +26398,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11424_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23569,6 +26419,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11425_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903174" );
@@ -23583,6 +26435,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11426_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23602,6 +26456,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11427_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903200" );
@@ -23616,6 +26472,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11428_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23635,6 +26493,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11429_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903226" );
@@ -23649,6 +26509,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11430_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23668,6 +26530,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11431_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903242" );
@@ -23682,6 +26546,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11432_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23701,6 +26567,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11433_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903394" );
@@ -23715,6 +26583,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11434_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23734,6 +26604,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11435_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903446" );
@@ -23748,6 +26620,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11436_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23767,6 +26641,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11437_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903527" );
@@ -23781,6 +26657,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11438_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23800,6 +26678,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11439_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903530" );
@@ -23814,6 +26694,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11440_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23833,6 +26715,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11441_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903637" );
@@ -23847,6 +26731,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11442_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23866,6 +26752,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11443_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903705" );
@@ -23881,23 +26769,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11444_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906705" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11445_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23913,6 +26805,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11446_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23932,6 +26826,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11447_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903763" );
@@ -23946,6 +26842,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11448_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23965,6 +26863,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11449_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903789" );
@@ -23979,6 +26879,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11450_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -23998,6 +26900,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11451_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903792" );
@@ -24013,23 +26917,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11452_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903799" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11453_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24045,6 +26953,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11454_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24064,6 +26974,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11455_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903912" );
@@ -24078,6 +26990,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11456_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24097,6 +27011,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11457_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075903983" );
@@ -24111,6 +27027,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11458_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24130,6 +27048,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11459_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075904092" );
@@ -24144,6 +27064,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11460_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24163,6 +27085,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11461_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075904115" );
@@ -24178,23 +27102,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11462_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075934115" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11463_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24210,6 +27138,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11464_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24229,6 +27159,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11465_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075904254" );
@@ -24243,6 +27175,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11466_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24262,6 +27196,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11467_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075904377" );
@@ -24276,6 +27212,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11468_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24295,6 +27233,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11469_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075904380" );
@@ -24309,6 +27249,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11470_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24328,6 +27270,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11471_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075904445" );
@@ -24342,6 +27286,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11472_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24361,6 +27307,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11473_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075904513" );
@@ -24375,6 +27323,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11474_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24394,6 +27344,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11475_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075904526" );
@@ -24408,6 +27360,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11476_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24427,6 +27381,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11477_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075904542" );
@@ -24441,6 +27397,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11478_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24460,6 +27418,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11479_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075904597" );
@@ -24474,6 +27434,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11480_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24493,6 +27455,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11481_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075904762" );
@@ -24507,6 +27471,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11482_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24526,6 +27492,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11483_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075904775" );
@@ -24540,6 +27508,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11484_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24559,6 +27529,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11485_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075904856" );
@@ -24574,23 +27546,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11486_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075934856" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11487_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24606,6 +27582,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11488_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24625,6 +27603,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11489_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075904937" );
@@ -24639,6 +27619,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11490_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24658,6 +27640,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11491_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075904953" );
@@ -24672,6 +27656,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11492_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24691,6 +27677,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11493_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075905004" );
@@ -24705,6 +27693,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11494_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24724,6 +27714,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11495_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075905033" );
@@ -24738,6 +27730,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11496_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24757,6 +27751,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11497_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075905059" );
@@ -24771,6 +27767,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11498_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24790,6 +27788,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11499_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075905253" );
@@ -24804,6 +27804,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11500_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24823,6 +27825,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11501_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075905363" );
@@ -24837,6 +27841,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11502_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24856,6 +27862,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11503_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075905431" );
@@ -24870,6 +27878,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11504_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24889,6 +27899,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11505_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075905457" );
@@ -24903,6 +27915,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11506_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24922,6 +27936,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11507_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075905486" );
@@ -24936,6 +27952,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11508_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24955,6 +27973,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11509_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075905554" );
@@ -24969,6 +27989,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11510_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -24988,6 +28010,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11511_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075905622" );
@@ -25002,6 +28026,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11512_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25021,6 +28047,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11513_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075905664" );
@@ -25035,6 +28063,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11514_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25054,6 +28084,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11515_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075905732" );
@@ -25068,6 +28100,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11516_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25087,6 +28121,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11517_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075905787" );
@@ -25101,6 +28137,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11518_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25120,6 +28158,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11519_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075905868" );
@@ -25134,6 +28174,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11520_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25153,6 +28195,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11521_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075905871" );
@@ -25167,6 +28211,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11522_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25186,6 +28232,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11523_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075905910" );
@@ -25200,6 +28248,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11524_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25219,6 +28269,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11525_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075905936" );
@@ -25233,6 +28285,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11526_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25252,6 +28306,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11527_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075905965" );
@@ -25266,6 +28322,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11528_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25285,6 +28343,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11529_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075905994" );
@@ -25299,6 +28359,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11530_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25318,6 +28380,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11531_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906003" );
@@ -25332,6 +28396,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11532_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25351,6 +28417,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11533_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906016" );
@@ -25366,23 +28434,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11534_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075909016" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11535_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25398,6 +28470,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11536_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25417,6 +28491,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11537_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906061" );
@@ -25432,23 +28508,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11538_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075406061" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11539_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25464,6 +28544,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11540_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25483,6 +28565,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11541_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906126" );
@@ -25497,6 +28581,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11542_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25516,6 +28602,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11543_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906142" );
@@ -25530,6 +28618,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11544_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25549,6 +28639,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11545_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906171" );
@@ -25563,6 +28655,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11546_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25582,6 +28676,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11547_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906197" );
@@ -25596,6 +28692,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11548_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25615,6 +28713,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11549_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906236" );
@@ -25629,6 +28729,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11550_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25648,6 +28750,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11551_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906304" );
@@ -25662,6 +28766,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11552_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25681,6 +28787,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11553_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906346" );
@@ -25695,6 +28803,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11554_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25714,6 +28824,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11555_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906362" );
@@ -25728,6 +28840,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11556_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25747,6 +28861,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11557_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906469" );
@@ -25761,6 +28877,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11558_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25780,6 +28898,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11559_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906524" );
@@ -25794,6 +28914,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11560_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25813,6 +28935,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11561_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906595" );
@@ -25827,6 +28951,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11562_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25846,6 +28972,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11563_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906634" );
@@ -25860,6 +28988,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11564_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25879,6 +29009,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11565_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906702" );
@@ -25893,6 +29025,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11566_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25912,6 +29046,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11567_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906838" );
@@ -25926,6 +29062,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11568_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25945,6 +29083,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11569_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906854" );
@@ -25959,6 +29099,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11570_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -25978,6 +29120,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11571_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906896" );
@@ -25992,6 +29136,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11572_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26011,6 +29157,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11573_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906948" );
@@ -26025,6 +29173,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11574_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26044,6 +29194,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11575_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906951" );
@@ -26059,23 +29211,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11576_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075906751" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11577_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26091,6 +29247,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11578_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26110,6 +29268,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11579_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075907002" );
@@ -26124,6 +29284,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11580_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26143,6 +29305,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11581_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075907031" );
@@ -26157,6 +29321,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11582_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26176,6 +29342,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11583_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075907073" );
@@ -26190,6 +29358,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11584_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26209,6 +29379,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11585_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075907099" );
@@ -26223,6 +29395,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11586_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26242,6 +29416,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11587_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075907112" );
@@ -26256,6 +29432,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11588_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26275,6 +29453,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11589_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075907235" );
@@ -26289,6 +29469,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11590_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26308,6 +29490,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11591_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075907248" );
@@ -26322,6 +29506,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11592_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26341,6 +29527,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11593_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075907345" );
@@ -26355,6 +29543,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11594_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26374,6 +29564,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11595_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075907374" );
@@ -26389,23 +29581,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11596_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075927374" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11597_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26421,6 +29617,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11598_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26440,6 +29638,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11599_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075907442" );
@@ -26454,6 +29654,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11600_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26473,6 +29675,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11601_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075907497" );
@@ -26487,6 +29691,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11602_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26506,6 +29712,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11603_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075907552" );
@@ -26520,6 +29728,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11604_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26539,6 +29749,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11605_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075907581" );
@@ -26553,6 +29765,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11606_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26572,6 +29786,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11607_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075907594" );
@@ -26586,6 +29802,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11608_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26605,6 +29823,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11609_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075907646" );
@@ -26619,6 +29839,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11610_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26638,6 +29860,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11611_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075907743" );
@@ -26652,6 +29876,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11612_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26671,6 +29897,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11613_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075907808" );
@@ -26685,6 +29913,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11614_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26704,6 +29934,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11615_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075907866" );
@@ -26718,6 +29950,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11616_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26737,6 +29971,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11617_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075907947" );
@@ -26751,6 +29987,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11618_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26770,6 +30008,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11619_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075908001" );
@@ -26784,6 +30024,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11620_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26803,6 +30045,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11621_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075908027" );
@@ -26817,6 +30061,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11622_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26836,6 +30082,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11623_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075908043" );
@@ -26850,6 +30098,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11624_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26869,6 +30119,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11625_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075908098" );
@@ -26883,6 +30135,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11626_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26902,6 +30156,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11627_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075908195" );
@@ -26917,23 +30173,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11628_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075908295" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11629_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26949,6 +30209,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11630_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -26968,6 +30230,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11631_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075908218" );
@@ -26982,6 +30246,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11632_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27001,6 +30267,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11633_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075908276" );
@@ -27015,6 +30283,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11634_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27034,6 +30304,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11635_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075908616" );
@@ -27048,6 +30320,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11636_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27067,6 +30341,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11637_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075908658" );
@@ -27081,6 +30357,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11638_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27100,6 +30378,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11639_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075908687" );
@@ -27114,6 +30394,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11640_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27133,6 +30415,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11641_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075908920" );
@@ -27147,6 +30431,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11642_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27166,6 +30452,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11643_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075909178" );
@@ -27180,6 +30468,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11644_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27199,6 +30489,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11645_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075909204" );
@@ -27213,6 +30505,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11646_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27232,6 +30526,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11647_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075909408" );
@@ -27246,6 +30542,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11648_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27265,6 +30563,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11649_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075909576" );
@@ -27280,23 +30580,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11650_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075909566" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11651_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27313,23 +30617,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11652_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075709589" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11653_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27345,6 +30653,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11654_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27364,6 +30674,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11655_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075909903" );
@@ -27378,6 +30690,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11656_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27397,6 +30711,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11657_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075909945" );
@@ -27411,6 +30727,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11658_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27430,6 +30748,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11659_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075910206" );
@@ -27444,6 +30764,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11660_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27463,6 +30785,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11661_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075910387" );
@@ -27477,6 +30801,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11662_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27496,6 +30822,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11663_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075910400" );
@@ -27510,6 +30838,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11664_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27529,6 +30859,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11665_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075910484" );
@@ -27543,6 +30875,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11666_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27562,6 +30896,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11667_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075910523" );
@@ -27576,6 +30912,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11668_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27595,6 +30933,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11669_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075910659" );
@@ -27609,6 +30949,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11670_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27628,6 +30970,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11671_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075910798" );
@@ -27642,6 +30986,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11672_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27661,6 +31007,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11673_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075910882" );
@@ -27675,6 +31023,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11674_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27694,6 +31044,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11675_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075910921" );
@@ -27709,23 +31061,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11676_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075910922" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11677_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27741,6 +31097,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11678_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27760,6 +31118,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11679_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075911182" );
@@ -27774,6 +31134,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11680_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27793,6 +31155,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11681_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075911195" );
@@ -27807,6 +31171,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11682_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27826,6 +31192,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11683_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075911205" );
@@ -27840,6 +31208,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11684_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27859,6 +31229,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11685_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075911357" );
@@ -27873,6 +31245,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11686_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27892,6 +31266,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11687_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075911360" );
@@ -27906,6 +31282,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11688_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27925,6 +31303,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11689_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075911373" );
@@ -27939,6 +31319,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11690_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27958,6 +31340,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11691_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075911603" );
@@ -27972,6 +31356,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11692_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -27991,6 +31377,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11693_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075911616" );
@@ -28005,6 +31393,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11694_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28024,6 +31414,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11695_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075911713" );
@@ -28038,6 +31430,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11696_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28057,6 +31451,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11697_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075911742" );
@@ -28071,6 +31467,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11698_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28090,6 +31488,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11699_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075911768" );
@@ -28104,6 +31504,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11700_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28123,6 +31525,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11701_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075911852" );
@@ -28137,6 +31541,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11702_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28156,6 +31562,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11703_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075911920" );
@@ -28170,6 +31578,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11704_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28189,6 +31599,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11705_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075911988" );
@@ -28203,6 +31615,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11706_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28222,6 +31636,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11707_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912165" );
@@ -28236,6 +31652,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11708_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28255,6 +31673,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11709_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912233" );
@@ -28269,6 +31689,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11710_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28288,6 +31710,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11711_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912275" );
@@ -28302,6 +31726,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11712_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28321,6 +31747,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11713_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912479" );
@@ -28335,6 +31763,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11714_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28354,6 +31784,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11715_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912615" );
@@ -28368,6 +31800,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11716_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28387,6 +31821,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11717_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912628" );
@@ -28401,6 +31837,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11718_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28420,6 +31858,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11719_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912644" );
@@ -28434,6 +31874,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11720_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28453,6 +31895,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11721_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912673" );
@@ -28467,6 +31911,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11722_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28486,6 +31932,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11723_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912712" );
@@ -28500,6 +31948,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11724_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28519,6 +31969,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11725_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912738" );
@@ -28533,6 +31985,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11726_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28552,6 +32006,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11727_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912741" );
@@ -28566,6 +32022,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11728_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28585,6 +32043,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11729_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912770" );
@@ -28599,6 +32059,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11730_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28618,6 +32080,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11731_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912783" );
@@ -28632,6 +32096,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11732_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28651,6 +32117,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11733_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912806" );
@@ -28665,6 +32133,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11734_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28684,6 +32154,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11735_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912819" );
@@ -28698,6 +32170,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11736_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28717,6 +32191,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11737_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912822" );
@@ -28731,6 +32207,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11738_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28750,6 +32228,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11739_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912835" );
@@ -28764,6 +32244,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11740_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28783,6 +32265,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11741_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912848" );
@@ -28797,6 +32281,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11742_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28816,6 +32302,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11743_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912851" );
@@ -28830,6 +32318,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11744_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28849,6 +32339,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11745_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912864" );
@@ -28863,6 +32355,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11746_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28882,6 +32376,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11747_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075912877" );
@@ -28896,6 +32392,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11748_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28915,6 +32413,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11749_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075917791" );
@@ -28929,6 +32429,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11750_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28948,6 +32450,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11751_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075917843" );
@@ -28962,6 +32466,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11752_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -28981,6 +32487,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11753_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075917869" );
@@ -28995,6 +32503,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11754_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29014,6 +32524,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11755_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075917872" );
@@ -29028,6 +32540,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11756_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29047,6 +32561,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11757_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075917898" );
@@ -29061,6 +32577,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11758_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29080,6 +32598,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11759_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075917908" );
@@ -29094,6 +32614,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11760_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29113,6 +32635,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11761_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075917911" );
@@ -29127,6 +32651,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11762_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29146,6 +32672,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11763_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075917924" );
@@ -29160,6 +32688,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11764_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29179,6 +32709,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11765_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075917937" );
@@ -29193,6 +32725,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11766_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29212,6 +32746,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11767_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075917979" );
@@ -29226,6 +32762,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11768_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29245,6 +32783,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11769_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075918004" );
@@ -29259,6 +32799,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11770_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29278,6 +32820,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11771_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075918017" );
@@ -29292,6 +32836,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11772_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29311,6 +32857,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11773_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075918033" );
@@ -29325,6 +32873,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11774_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29344,6 +32894,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11775_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075918075" );
@@ -29358,6 +32910,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11776_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29377,6 +32931,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11777_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075918091" );
@@ -29391,6 +32947,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11778_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29410,6 +32968,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11779_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075918101" );
@@ -29424,6 +32984,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11780_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29443,6 +33005,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11781_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075918130" );
@@ -29457,6 +33021,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11782_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29476,6 +33042,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11783_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075918185" );
@@ -29491,23 +33059,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11784_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075918885" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11785_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29523,6 +33095,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11786_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29542,6 +33116,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11787_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075918237" );
@@ -29556,6 +33132,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11788_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29575,6 +33153,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11789_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075918282" );
@@ -29589,6 +33169,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11790_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29608,6 +33190,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11791_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075918295" );
@@ -29622,6 +33206,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11792_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29641,6 +33227,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11793_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075918305" );
@@ -29655,6 +33243,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11794_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29674,6 +33264,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11795_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075918318" );
@@ -29688,6 +33280,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11796_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29707,6 +33301,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11797_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075918334" );
@@ -29721,6 +33317,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11798_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29740,6 +33338,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11799_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075918389" );
@@ -29754,6 +33354,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11800_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29773,6 +33375,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11801_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075918402" );
@@ -29787,6 +33391,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11802_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29806,6 +33412,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11803_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075972105" );
@@ -29820,6 +33428,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11804_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29839,6 +33449,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11805_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075972134" );
@@ -29853,6 +33465,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11806_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29872,6 +33486,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11807_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075972147" );
@@ -29886,6 +33502,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11808_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29905,6 +33523,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11809_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075972176" );
@@ -29920,23 +33540,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11810_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "075572176" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11811_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29952,6 +33576,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11812_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -29971,6 +33597,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11813_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081000032" );
@@ -29985,6 +33613,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11814_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30004,6 +33634,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11815_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081000045" );
@@ -30018,6 +33650,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11816_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30037,6 +33671,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11817_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081000058" );
@@ -30051,6 +33687,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11818_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30070,6 +33708,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11819_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081000168" );
@@ -30084,6 +33724,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11820_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30103,6 +33745,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11821_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081000210" );
@@ -30117,6 +33761,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11822_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30136,6 +33782,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11823_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081000524" );
@@ -30150,6 +33798,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11824_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30169,6 +33819,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11825_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081000553" );
@@ -30183,6 +33835,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11826_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30202,6 +33856,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11827_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081000566" );
@@ -30216,6 +33872,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11828_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30235,6 +33893,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11829_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081000605" );
@@ -30249,6 +33909,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11830_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30268,6 +33930,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11831_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081000676" );
@@ -30282,6 +33946,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11832_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30301,6 +33967,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11833_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081000702" );
@@ -30315,6 +33983,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11834_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30334,6 +34004,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11835_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081000728" );
@@ -30348,6 +34020,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11836_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30367,6 +34041,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11837_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081000980" );
@@ -30381,6 +34057,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11838_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30400,6 +34078,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11839_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081000993" );
@@ -30414,6 +34094,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11840_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30433,6 +34115,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11841_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081001073" );
@@ -30447,6 +34131,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11842_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30466,6 +34152,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11843_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081001387" );
@@ -30480,6 +34168,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11844_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30499,6 +34189,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11845_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081001413" );
@@ -30513,6 +34205,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11846_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30532,6 +34226,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11847_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081001439" );
@@ -30546,6 +34242,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11848_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30565,6 +34263,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11849_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081001714" );
@@ -30579,6 +34279,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11850_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30598,6 +34300,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11851_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081001727" );
@@ -30612,6 +34316,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11852_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30631,6 +34337,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11853_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081003275" );
@@ -30645,6 +34353,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11854_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30664,6 +34374,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11855_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081004070" );
@@ -30678,6 +34390,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11856_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30697,6 +34411,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11857_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081004517" );
@@ -30711,6 +34427,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11858_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30730,6 +34448,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11859_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081004591" );
@@ -30744,6 +34464,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11860_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30763,6 +34485,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11861_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081004601" );
@@ -30777,6 +34501,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11862_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30796,6 +34522,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11863_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081005794" );
@@ -30810,6 +34538,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11864_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30829,6 +34559,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11865_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081006052" );
@@ -30843,6 +34575,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11866_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30862,6 +34596,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11867_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081006162" );
@@ -30876,6 +34612,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11868_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30895,6 +34633,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11869_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081006201" );
@@ -30909,6 +34649,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11870_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30928,6 +34670,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11871_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081006340" );
@@ -30942,6 +34686,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11872_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30961,6 +34707,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11873_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081006395" );
@@ -30975,6 +34723,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11874_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -30994,6 +34744,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11875_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081006434" );
@@ -31008,6 +34760,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11876_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31027,6 +34781,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11877_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081007022" );
@@ -31041,6 +34797,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11878_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31060,6 +34818,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11879_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081009428" );
@@ -31074,6 +34834,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11880_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31093,6 +34855,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11881_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081009813" );
@@ -31108,23 +34872,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11882_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081009814" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11883_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31140,6 +34908,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11884_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31159,6 +34929,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11885_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081010860" );
@@ -31173,6 +34945,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11886_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31192,6 +34966,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11887_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081011461" );
@@ -31206,6 +34982,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11888_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31225,6 +35003,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11889_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081012952" );
@@ -31239,6 +35019,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11890_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31258,6 +35040,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11891_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081013692" );
@@ -31272,6 +35056,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11892_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31291,6 +35077,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11893_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081015218" );
@@ -31305,6 +35093,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11894_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31324,6 +35114,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11895_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081015535" );
@@ -31338,6 +35130,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11896_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31357,6 +35151,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11897_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081017342" );
@@ -31371,6 +35167,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11898_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31390,6 +35188,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11899_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081017478" );
@@ -31404,6 +35204,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11900_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31423,6 +35225,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11901_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081017575" );
@@ -31437,6 +35241,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11902_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31456,6 +35262,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11903_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081017711" );
@@ -31470,6 +35278,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11904_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31489,6 +35299,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11905_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081018794" );
@@ -31503,6 +35315,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11906_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31522,6 +35336,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11907_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081018833" );
@@ -31537,23 +35353,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11908_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081018803" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11909_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31570,23 +35390,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11910_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081018838" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11911_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31602,6 +35426,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11912_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31621,6 +35447,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11913_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081018972" );
@@ -31635,6 +35463,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11914_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31654,6 +35484,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11915_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081018998" );
@@ -31668,6 +35500,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11916_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31687,6 +35521,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11917_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081019104" );
@@ -31701,6 +35537,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11918_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31720,6 +35558,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11919_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081019117" );
@@ -31734,6 +35574,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11920_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31753,6 +35595,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11921_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081019120" );
@@ -31767,6 +35611,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11922_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31786,6 +35632,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11923_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081019133" );
@@ -31800,6 +35648,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11924_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31819,6 +35669,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11925_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081019162" );
@@ -31833,6 +35685,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11926_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31852,6 +35706,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11927_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081019175" );
@@ -31866,6 +35722,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11928_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31885,6 +35743,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11929_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081019227" );
@@ -31899,6 +35759,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11930_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31918,6 +35780,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11931_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081019230" );
@@ -31932,6 +35796,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11932_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31951,6 +35817,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11933_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081019256" );
@@ -31965,6 +35833,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11934_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -31984,6 +35854,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11935_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081019298" );
@@ -31998,6 +35870,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11936_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32017,6 +35891,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11937_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081019405" );
@@ -32031,6 +35907,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11938_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32050,6 +35928,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11939_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081023019" );
@@ -32064,6 +35944,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11940_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32083,6 +35965,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11941_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081023776" );
@@ -32097,6 +35981,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11942_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32116,6 +36002,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11943_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081024571" );
@@ -32130,6 +36018,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11944_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32149,6 +36039,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11945_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081025114" );
@@ -32163,6 +36055,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11946_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32182,6 +36076,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11947_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081025198" );
@@ -32196,6 +36092,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11948_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32215,6 +36113,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11949_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081025208" );
@@ -32230,23 +36130,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11950_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "041025208" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11951_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32262,6 +36166,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11952_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32281,6 +36187,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11953_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081025415" );
@@ -32295,6 +36203,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11954_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32314,6 +36224,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11955_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081025761" );
@@ -32328,6 +36240,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11956_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32347,6 +36261,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11957_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081026540" );
@@ -32361,6 +36277,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11958_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32380,6 +36298,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11959_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081036307" );
@@ -32394,6 +36314,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11960_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32413,6 +36335,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11961_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081074440" );
@@ -32427,6 +36351,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11962_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32446,6 +36372,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11963_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081074495" );
@@ -32460,6 +36388,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11964_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32479,6 +36409,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11965_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081074505" );
@@ -32493,6 +36425,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11966_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32512,6 +36446,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11967_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081086674" );
@@ -32526,6 +36462,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11968_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32545,6 +36483,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11969_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081086700" );
@@ -32559,6 +36499,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11970_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32578,6 +36520,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11971_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081200528" );
@@ -32592,6 +36536,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11972_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32611,6 +36557,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11973_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081200531" );
@@ -32625,6 +36573,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11974_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32644,6 +36594,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11975_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081200544" );
@@ -32659,23 +36611,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11976_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081200504" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11977_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32691,6 +36647,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11978_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32710,6 +36668,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11979_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081200586" );
@@ -32724,6 +36684,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11980_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32743,6 +36705,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11981_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081201695" );
@@ -32757,6 +36721,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11982_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32776,6 +36742,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11983_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081202759" );
@@ -32790,6 +36758,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11984_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32809,6 +36779,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11985_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081202869" );
@@ -32823,6 +36795,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11986_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32842,6 +36816,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11987_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081203208" );
@@ -32856,6 +36832,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11988_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32875,6 +36853,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11989_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081203318" );
@@ -32889,6 +36869,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11990_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32908,6 +36890,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11991_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081204126" );
@@ -32922,6 +36906,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11992_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32941,6 +36927,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11993_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081204142" );
@@ -32956,23 +36944,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11994_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "021204142" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11995_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -32989,23 +36981,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11996_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081264265" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_11997_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33021,6 +37017,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_11998_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33040,6 +37038,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_11999_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081204540" );
@@ -33054,6 +37054,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12000_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33073,6 +37075,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12001_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081204854" );
@@ -33087,6 +37091,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12002_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33106,6 +37112,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12003_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081204867" );
@@ -33120,6 +37128,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12004_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33139,6 +37149,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12005_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081205109" );
@@ -33153,6 +37165,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12006_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33172,6 +37186,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12007_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081205112" );
@@ -33186,6 +37202,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12008_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33205,6 +37223,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12009_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081205138" );
@@ -33219,6 +37239,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12010_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33238,6 +37260,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12011_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081205222" );
@@ -33252,6 +37276,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12012_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33271,6 +37297,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12013_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081205264" );
@@ -33285,6 +37313,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12014_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33304,6 +37334,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12015_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081205455" );
@@ -33318,6 +37350,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12016_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33337,6 +37371,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12017_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081205727" );
@@ -33351,6 +37387,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12018_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33370,6 +37408,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12019_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081206328" );
@@ -33384,6 +37424,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12020_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33403,6 +37445,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12021_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081206331" );
@@ -33417,6 +37461,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12022_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33436,6 +37482,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12023_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081206373" );
@@ -33450,6 +37498,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12024_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33469,6 +37519,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12025_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081206496" );
@@ -33483,6 +37535,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12026_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33502,6 +37556,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12027_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081206807" );
@@ -33516,6 +37572,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12028_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33535,6 +37593,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12029_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081206946" );
@@ -33549,6 +37609,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12030_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33568,6 +37630,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12031_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081206962" );
@@ -33582,6 +37646,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12032_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33601,6 +37667,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12033_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081207068" );
@@ -33615,6 +37683,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12034_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33634,6 +37704,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12035_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081207097" );
@@ -33648,6 +37720,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12036_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33667,6 +37741,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12037_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081207479" );
@@ -33681,6 +37757,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12038_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33700,6 +37778,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12039_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081207932" );
@@ -33714,6 +37794,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12040_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33733,6 +37815,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12041_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081208685" );
@@ -33747,6 +37831,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12042_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33766,6 +37852,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12043_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081208928" );
@@ -33780,6 +37868,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12044_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33799,6 +37889,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12045_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081209985" );
@@ -33813,6 +37905,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12046_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33832,6 +37926,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12047_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081210314" );
@@ -33846,6 +37942,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12048_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33865,6 +37963,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12049_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081210398" );
@@ -33879,6 +37979,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12050_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33898,6 +38000,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12051_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081211106" );
@@ -33912,6 +38016,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12052_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33931,6 +38037,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12053_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081211135" );
@@ -33945,6 +38053,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12054_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33964,6 +38074,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12055_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081211300" );
@@ -33978,6 +38090,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12056_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -33997,6 +38111,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12057_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081211520" );
@@ -34011,6 +38127,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12058_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34030,6 +38148,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12059_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081211669" );
@@ -34044,6 +38164,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12060_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34063,6 +38185,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12061_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081211795" );
@@ -34077,6 +38201,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12062_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34096,6 +38222,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12063_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081211928" );
@@ -34110,6 +38238,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12064_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34129,6 +38259,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12065_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081212273" );
@@ -34143,6 +38275,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12066_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34162,6 +38296,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12067_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081212574" );
@@ -34176,6 +38312,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12068_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34195,6 +38333,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12069_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081212600" );
@@ -34209,6 +38349,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12070_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34228,6 +38370,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12071_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081212613" );
@@ -34242,6 +38386,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12072_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34261,6 +38407,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12073_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081212752" );
@@ -34276,23 +38424,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12074_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081211752" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_12075_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34308,6 +38460,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12076_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34327,6 +38481,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12077_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081213269" );
@@ -34341,6 +38497,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12078_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34360,6 +38518,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12079_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081213285" );
@@ -34374,6 +38534,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12080_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34393,6 +38555,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12081_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081213780" );
@@ -34407,6 +38571,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12082_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34426,6 +38592,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12083_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081213832" );
@@ -34440,6 +38608,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12084_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34459,6 +38629,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12085_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081214161" );
@@ -34473,6 +38645,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12086_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34492,6 +38666,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12087_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081214174" );
@@ -34507,23 +38683,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12088_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081244174" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_12089_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34539,6 +38719,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12090_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34558,6 +38740,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12091_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081215649" );
@@ -34572,6 +38756,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12092_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34591,6 +38777,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12093_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081216169" );
@@ -34605,6 +38793,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12094_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34624,6 +38814,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12095_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081216172" );
@@ -34638,6 +38830,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12096_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34657,6 +38851,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12097_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081216240" );
@@ -34671,6 +38867,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12098_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34690,6 +38888,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12099_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081216389" );
@@ -34704,6 +38904,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12100_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34723,6 +38925,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12101_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081216758" );
@@ -34737,6 +38941,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12102_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34756,6 +38962,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12103_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081217919" );
@@ -34770,6 +38978,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12104_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34789,6 +38999,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12105_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081218536" );
@@ -34803,6 +39015,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12106_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34822,6 +39036,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12107_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081218879" );
@@ -34836,6 +39052,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12108_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34855,6 +39073,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12109_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081219108" );
@@ -34869,6 +39089,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12110_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34888,6 +39110,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12111_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081219535" );
@@ -34902,6 +39126,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12112_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34921,6 +39147,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12113_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081220074" );
@@ -34935,6 +39163,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12114_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34954,6 +39184,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12115_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081220087" );
@@ -34968,6 +39200,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12116_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -34987,6 +39221,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12117_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081220508" );
@@ -35001,6 +39237,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12118_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35020,6 +39258,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12119_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081220524" );
@@ -35034,6 +39274,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12120_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35053,6 +39295,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12121_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081220537" );
@@ -35067,6 +39311,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12122_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35086,6 +39332,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12123_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081221235" );
@@ -35100,6 +39348,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12124_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35119,6 +39369,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12125_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081221497" );
@@ -35133,6 +39385,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12126_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35152,6 +39406,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12127_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081221549" );
@@ -35167,23 +39423,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12128_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "001221549" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_12129_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35199,6 +39459,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12130_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35218,6 +39480,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12131_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081222137" );
@@ -35232,6 +39496,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12132_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35251,6 +39517,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12133_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081222438" );
@@ -35265,6 +39533,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12134_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35284,6 +39554,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12135_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081222593" );
@@ -35298,6 +39570,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12136_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35317,6 +39591,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12137_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081222658" );
@@ -35331,6 +39607,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12138_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35350,6 +39628,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12139_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081222797" );
@@ -35364,6 +39644,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12140_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35383,6 +39665,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12141_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081224122" );
@@ -35397,6 +39681,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12142_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35416,6 +39702,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12143_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081224724" );
@@ -35430,6 +39718,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12144_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35449,6 +39739,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12145_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081224944" );
@@ -35463,6 +39755,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12146_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35482,6 +39776,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12147_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081225707" );
@@ -35496,6 +39792,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12148_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35515,6 +39813,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12149_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081225804" );
@@ -35529,6 +39829,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12150_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35548,6 +39850,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12151_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081225901" );
@@ -35562,6 +39866,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12152_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35581,6 +39887,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12153_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081225972" );
@@ -35595,6 +39903,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12154_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35614,6 +39924,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12155_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081226298" );
@@ -35628,6 +39940,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12156_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35647,6 +39961,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12157_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081226421" );
@@ -35661,6 +39977,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12158_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35680,6 +39998,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12159_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081226829" );
@@ -35694,6 +40014,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12160_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35713,6 +40035,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12161_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081227077" );
@@ -35727,6 +40051,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12162_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35746,6 +40072,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12163_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081227129" );
@@ -35760,6 +40088,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12164_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35779,6 +40109,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12165_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081302633" );
@@ -35793,6 +40125,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12166_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35812,6 +40146,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12167_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081303823" );
@@ -35826,6 +40162,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12168_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35845,6 +40183,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12169_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081303920" );
@@ -35859,6 +40199,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12170_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35878,6 +40220,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12171_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081304615" );
@@ -35892,6 +40236,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12172_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35911,6 +40257,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12173_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081304822" );
@@ -35925,6 +40273,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12174_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35944,6 +40294,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12175_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081307227" );
@@ -35958,6 +40310,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12176_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -35977,6 +40331,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12177_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081307382" );
@@ -35991,6 +40347,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12178_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36010,6 +40368,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12179_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081308006" );
@@ -36024,6 +40384,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12180_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36043,6 +40405,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12181_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081308161" );
@@ -36057,6 +40421,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12182_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36076,6 +40442,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12183_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081308705" );
@@ -36090,6 +40458,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12184_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36109,6 +40479,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12185_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081309364" );
@@ -36123,6 +40495,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12186_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36142,6 +40516,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12187_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081311666" );
@@ -36156,6 +40532,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12188_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36175,6 +40553,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12189_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081500477" );
@@ -36189,6 +40569,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12190_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36208,6 +40590,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12191_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081500480" );
@@ -36222,6 +40606,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12192_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36241,6 +40627,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12193_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081500493" );
@@ -36255,6 +40643,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12194_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36274,6 +40664,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12195_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081500749" );
@@ -36288,6 +40680,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12196_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36307,6 +40701,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12197_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081500859" );
@@ -36321,6 +40717,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12198_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36340,6 +40738,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12199_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081500862" );
@@ -36354,6 +40754,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12200_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36373,6 +40775,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12201_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081500875" );
@@ -36387,6 +40791,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12202_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36406,6 +40812,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12203_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081501023" );
@@ -36420,6 +40828,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12204_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36439,6 +40849,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12205_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081501049" );
@@ -36453,6 +40865,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12206_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36472,6 +40886,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12207_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081501065" );
@@ -36486,6 +40902,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12208_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36505,6 +40923,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12209_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081501175" );
@@ -36519,6 +40939,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12210_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36538,6 +40960,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12211_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081501227" );
@@ -36552,6 +40976,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12212_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36571,6 +40997,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12213_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081501340" );
@@ -36585,6 +41013,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12214_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36604,6 +41034,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12215_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081501353" );
@@ -36618,6 +41050,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12216_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36637,6 +41071,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12217_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081501489" );
@@ -36651,6 +41087,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12218_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36670,6 +41108,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12219_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081501492" );
@@ -36684,6 +41124,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12220_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36703,6 +41145,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12221_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081501696" );
@@ -36717,6 +41161,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12222_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36736,6 +41182,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12223_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081501735" );
@@ -36750,6 +41198,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12224_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36769,6 +41219,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12225_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081501780" );
@@ -36783,6 +41235,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12226_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36802,6 +41256,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12227_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081501793" );
@@ -36816,6 +41272,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12228_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36835,6 +41293,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12229_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081501803" );
@@ -36849,6 +41309,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12230_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36868,6 +41330,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12231_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081502006" );
@@ -36882,6 +41346,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12232_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36901,6 +41367,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12233_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081502019" );
@@ -36915,6 +41383,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12234_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36934,6 +41404,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12235_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081502530" );
@@ -36948,6 +41420,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12236_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -36967,6 +41441,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12237_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081502556" );
@@ -36981,6 +41457,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12238_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37000,6 +41478,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12239_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081502637" );
@@ -37014,6 +41494,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12240_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37033,6 +41515,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12241_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081502815" );
@@ -37047,6 +41531,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12242_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37066,6 +41552,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12243_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081502899" );
@@ -37080,6 +41568,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12244_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37099,6 +41589,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12245_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081503089" );
@@ -37113,6 +41605,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12246_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37132,6 +41626,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12247_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081503102" );
@@ -37146,6 +41642,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12248_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37165,6 +41663,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12249_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081503322" );
@@ -37179,6 +41679,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12250_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37198,6 +41700,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12251_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081503380" );
@@ -37212,6 +41716,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12252_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37231,6 +41737,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12253_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081503490" );
@@ -37246,23 +41754,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12254_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "084503490" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_12255_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37279,23 +41791,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12256_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081503497" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_12257_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37311,6 +41827,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12258_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37330,6 +41848,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12259_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081503694" );
@@ -37344,6 +41864,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12260_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37363,6 +41885,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12261_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081503704" );
@@ -37377,6 +41901,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12262_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37396,6 +41922,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12263_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081503814" );
@@ -37410,6 +41938,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12264_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37429,6 +41959,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12265_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081503827" );
@@ -37443,6 +41975,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12266_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37462,6 +41996,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12267_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081503911" );
@@ -37476,6 +42012,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12268_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37495,6 +42033,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12269_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081503953" );
@@ -37509,6 +42049,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12270_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37528,6 +42070,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12271_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081504172" );
@@ -37543,23 +42087,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12272_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "085504172" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_12273_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37575,6 +42123,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12274_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37594,6 +42144,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12275_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081504415" );
@@ -37608,6 +42160,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12276_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37627,6 +42181,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12277_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081504651" );
@@ -37641,6 +42197,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12278_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37660,6 +42218,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12279_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081504693" );
@@ -37674,6 +42234,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12280_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37693,6 +42255,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12281_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081504839" );
@@ -37707,6 +42271,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12282_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37726,6 +42292,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12283_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081504855" );
@@ -37740,6 +42308,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12284_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37759,6 +42329,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12285_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081505155" );
@@ -37773,6 +42345,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12286_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37792,6 +42366,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12287_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081505184" );
@@ -37806,6 +42382,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12288_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37825,6 +42403,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12289_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081505388" );
@@ -37839,6 +42419,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12290_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37858,6 +42440,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12291_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081505498" );
@@ -37872,6 +42456,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12292_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37891,6 +42477,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12293_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081505634" );
@@ -37905,6 +42493,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12294_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37924,6 +42514,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12295_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081505702" );
@@ -37938,6 +42530,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12296_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37957,6 +42551,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12297_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081505731" );
@@ -37971,6 +42567,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12298_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -37990,6 +42588,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12299_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081505964" );
@@ -38004,6 +42604,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12300_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38023,6 +42625,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12301_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081506044" );
@@ -38037,6 +42641,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12302_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38056,6 +42662,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12303_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081506316" );
@@ -38070,6 +42678,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12304_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38089,6 +42699,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12305_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081506358" );
@@ -38103,6 +42715,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12306_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38122,6 +42736,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12307_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081506390" );
@@ -38136,6 +42752,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12308_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38155,6 +42773,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12309_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081506523" );
@@ -38169,6 +42789,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12310_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38188,6 +42810,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12311_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081506552" );
@@ -38202,6 +42826,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12312_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38221,6 +42847,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12313_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081506646" );
@@ -38235,6 +42863,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12314_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38254,6 +42884,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12315_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081506837" );
@@ -38268,6 +42900,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12316_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38287,6 +42921,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12317_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081507014" );
@@ -38301,6 +42937,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12318_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38320,6 +42958,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12319_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081507072" );
@@ -38334,6 +42974,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12320_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38353,6 +42995,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12321_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081507124" );
@@ -38367,6 +43011,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12322_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38386,6 +43032,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12323_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081507166" );
@@ -38400,6 +43048,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12324_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38419,6 +43069,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12325_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081507234" );
@@ -38433,6 +43085,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12326_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38452,6 +43106,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12327_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081507425" );
@@ -38466,6 +43122,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12328_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38485,6 +43143,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12329_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081507470" );
@@ -38499,6 +43159,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12330_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38518,6 +43180,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12331_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081508178" );
@@ -38532,6 +43196,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12332_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38551,6 +43217,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12333_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081508217" );
@@ -38565,6 +43233,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12334_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38584,6 +43254,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12335_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081508466" );
@@ -38598,6 +43270,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12336_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38617,6 +43291,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12337_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081508602" );
@@ -38631,6 +43307,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12338_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38650,6 +43328,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12339_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081509070" );
@@ -38665,23 +43345,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12340_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "083509070" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_12341_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38697,6 +43381,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12342_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38716,6 +43402,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12343_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081509193" );
@@ -38730,6 +43418,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12344_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38749,6 +43439,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12345_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081509449" );
@@ -38763,6 +43455,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12346_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38782,6 +43476,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12347_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081509737" );
@@ -38796,6 +43492,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12348_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38815,6 +43513,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12349_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081509902" );
@@ -38829,6 +43529,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12350_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38848,6 +43550,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12351_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081509957" );
@@ -38862,6 +43566,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12352_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38881,6 +43587,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12353_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081509973" );
@@ -38895,6 +43603,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12354_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38914,6 +43624,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12355_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081510564" );
@@ -38928,6 +43640,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12356_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38947,6 +43661,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12357_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081510593" );
@@ -38961,6 +43677,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12358_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -38980,6 +43698,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12359_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081510739" );
@@ -38994,6 +43714,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12360_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39013,6 +43735,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12361_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081510933" );
@@ -39027,6 +43751,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12362_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39046,6 +43772,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12363_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081511110" );
@@ -39060,6 +43788,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12364_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39079,6 +43809,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12365_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081511631" );
@@ -39093,6 +43825,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12366_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39112,6 +43846,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12367_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081511754" );
@@ -39126,6 +43862,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12368_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39145,6 +43883,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12369_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081511990" );
@@ -39159,6 +43899,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12370_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39178,6 +43920,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12371_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081512106" );
@@ -39192,6 +43936,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12372_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39211,6 +43957,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12373_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081512232" );
@@ -39225,6 +43973,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12374_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39244,6 +43994,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12375_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081512355" );
@@ -39258,6 +44010,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12376_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39277,6 +44031,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12377_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081512371" );
@@ -39292,23 +44048,27 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12378_bad() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081512351" );
         } catch( AbaRouteValidationException e ) {
 
-            // This is good.  We were expecting an exception.
-            assertTrue( true );
+            // This should not have happened
+            fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
             // We're done, just return.
             return;
         }
 
-        // If it gets here its bad
-        fail( "Should not have got here" );
+        // The ABA number was bad.  This should be false.
+        assertFalse(returnBool);
     }
 
     public void testAbaNumberCheck_12379_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39324,6 +44084,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12380_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39343,6 +44105,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12381_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081512834" );
@@ -39357,6 +44121,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12382_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39376,6 +44142,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12383_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081512928" );
@@ -39390,6 +44158,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12384_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39409,6 +44179,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12385_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081513121" );
@@ -39423,6 +44195,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12386_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39442,6 +44216,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12387_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081513574" );
@@ -39456,6 +44232,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12388_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39475,6 +44253,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12389_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081513930" );
@@ -39489,6 +44269,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12390_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39508,6 +44290,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12391_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081513969" );
@@ -39522,6 +44306,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12392_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39541,6 +44327,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12393_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081514010" );
@@ -39555,6 +44343,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12394_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39574,6 +44364,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12395_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081514052" );
@@ -39588,6 +44380,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12396_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39607,6 +44401,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12397_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081514146" );
@@ -39621,6 +44417,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12398_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39640,6 +44438,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12399_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081514450" );
@@ -39654,6 +44454,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12400_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39673,6 +44475,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12401_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081514748" );
@@ -39687,6 +44491,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12402_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39706,6 +44512,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12403_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081514829" );
@@ -39720,6 +44528,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12404_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39739,6 +44549,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12405_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081514874" );
@@ -39753,6 +44565,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12406_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39772,6 +44586,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12407_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081515462" );
@@ -39786,6 +44602,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12408_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39805,6 +44623,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12409_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081516610" );
@@ -39819,6 +44639,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12410_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39838,6 +44660,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12411_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081516872" );
@@ -39852,6 +44676,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12412_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39871,6 +44697,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12413_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081516940" );
@@ -39885,6 +44713,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12414_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39904,6 +44734,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12415_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081517677" );
@@ -39918,6 +44750,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12416_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39937,6 +44771,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12417_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081517693" );
@@ -39951,6 +44787,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12418_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -39970,6 +44808,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12419_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081517729" );
@@ -39984,6 +44824,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12420_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -40003,6 +44845,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12421_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081517732" );
@@ -40017,6 +44861,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12422_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -40036,6 +44882,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12423_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081517761" );
@@ -40050,6 +44898,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12424_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -40069,6 +44919,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12425_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081517871" );
@@ -40083,6 +44935,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12426_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -40102,6 +44956,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12427_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081517897" );
@@ -40116,6 +44972,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12428_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -40135,6 +44993,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12429_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081517907" );
@@ -40149,6 +45009,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12430_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -40168,6 +45030,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12431_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081517910" );
@@ -40182,6 +45046,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12432_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -40201,6 +45067,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12433_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081517936" );
@@ -40215,6 +45083,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12434_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -40234,6 +45104,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12435_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081517965" );
@@ -40248,6 +45120,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12436_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -40267,6 +45141,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12437_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081517981" );
@@ -40281,6 +45157,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12438_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -40300,6 +45178,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12439_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081518016" );
@@ -40314,6 +45194,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12440_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -40333,6 +45215,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12441_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081518045" );
@@ -40347,6 +45231,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12442_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -40366,6 +45252,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12443_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081518058" );
@@ -40380,6 +45268,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12444_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -40399,6 +45289,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12445_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081518090" );
@@ -40413,6 +45305,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12446_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -40432,6 +45326,8 @@ public class Test_AbaRouteValidator_06
 
     public void testAbaNumberCheck_12447_good() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
             AbaRouteValidator.validate( "081518113" );
@@ -40446,6 +45342,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12448_bad() {
+
+        boolean returnBool = false;
 
         // Validate
         try {
@@ -40464,6 +45362,8 @@ public class Test_AbaRouteValidator_06
     }
 
     public void testAbaNumberCheck_12449_good() {
+
+        boolean returnBool = false;
 
         // Validate
         try {

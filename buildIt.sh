@@ -54,7 +54,7 @@ function build_EarArtifact() {
   # Check results.
   if [ $? -ne 0 ]; then
     echo
-    echo "Failure: Cannot Delete:  schwab-rps-richfield-authorization-services-earchive-wsdl/target/"
+    echo "Failure: Cannot Delete:  target/"
     terminationAbnormal
   fi
 } # ---  End Function build_EarArtifact()
@@ -79,7 +79,7 @@ function build_SiteReports() {
   # Check results.
   if [ $? -ne 0 ]; then
     echo
-    echo "Failure: Cannot Delete:  schwab-rps-richfield-authorization-services-earchive-wsdl/target/"
+    echo "Failure: Cannot Delete:  target/"
    terminationAbnormal
   fi
 } # ---  End Function build_SiteReports()

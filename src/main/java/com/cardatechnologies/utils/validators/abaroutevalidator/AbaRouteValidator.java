@@ -19,52 +19,62 @@
  *
  * ***************************************************************************************
  */
-
-
-
 package com.cardatechnologies.utils.validators.abaroutevalidator;
 
 import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException;
 
 /**
- * <dl>
- * <dt><font face="Arial"><span class="simpleTagLabel">All Rights Reserved</span></font></dt>
- * <dd>Copyright &copy; 2015 - CardaTechnologies, LLC</dd>
- * <dt><font face="Arial"><span class="simpleTagLabel">Class Description:</span></font></dt>
- * <dd>This class is used to validate a ABA Routing Transit Number.</dd>
- * </dl>
+ * Class: com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.java
  *
- * @version        1.0.0
- * @author         Daniel Carda
+ * Description:
+ *        This class is used to validate a ABA Routing Transit Number.
+ * <p>
+ *
+ * <pre>
+ * yyyy mm dd  Who             Description
+ * ----------  --------------  --------------------------------------------------
+ * 2015/02/11  Daniel Carda    Initial Module Creation...
+ * </pre>
+ *
+ * @author    Daniel Carda, CardaTechnologies, LLC
  */
 public class AbaRouteValidator {
 
     /**
      * Method description
      *
-     * @param paramAbaRouteNumber The incoming ABA Number.
+     * @param  paramAbaRouteNumber
+     *         The incoming ABA Number.
      *
      * @throws AbaRouteValidationException
+     *         There was a problem somewhere not related to checking the ABA number.
      */
-    private static void breakdownAbaNumber(final String paramAbaRouteNumber) throws AbaRouteValidationException {
+    private static boolean breakdownAbaNumber(final String paramAbaRouteNumber) throws AbaRouteValidationException {
 
         // Check first two digits.
         validateFedNumber(paramAbaRouteNumber);
 
-        // Alright, now see if the number holds up to scrunity!
-        validateAbaNumberChecksum(paramAbaRouteNumber);
+        // Alright, now see if the number holds up to scrutiny!
+        boolean returnBool;
+
+        returnBool = validateAbaNumberChecksum(paramAbaRouteNumber);
+
+        // Return the result
+        return (returnBool);
     }
 
     /**
      * This method is the starting point to validate whether a incoming string is
      * an ABA Routing Transit Number.
      *
-     * @param paramAbaRouteNumber The ABA number to be tested.
+     * @param   paramAbaRouteNumber The ABA number to be tested.
      *
-     * @return  True if it passes validation.  False if it fails validation.
+     * @return  True if it passes validation.
+     *          False if it fails validation.
      *
-     * @throws AbaRouteValidationException A error occurred when parsing the suspect
-     *                                     ABA Routing Transit Number.
+     * @throws AbaRouteValidationException
+     *         A error occurred when parsing the suspect
+     *         ABA Routing Transit Number.
      */
     static public boolean validate(final String paramAbaRouteNumber) throws AbaRouteValidationException {
 
@@ -115,10 +125,12 @@ public class AbaRouteValidator {
         // -----------------------------------------------------------------------------
         // -----------------------------------------------------------------------------
         // So we got this far, lets start breaking it down.
-        breakdownAbaNumber(paramAbaRouteNumber);
+        boolean returnBool;
+
+        returnBool = breakdownAbaNumber(paramAbaRouteNumber);
 
         // Must be good!
-        return (true);
+        return (returnBool);
     }
 
     /**
@@ -127,11 +139,10 @@ public class AbaRouteValidator {
      *
      * @param paramAbaRouteNumber The target ABA number to test.
      *
-     * @throws AbaRouteValidationException
      */
-    static private void validateAbaNumberChecksum(final String paramAbaRouteNumber) throws AbaRouteValidationException {
+    static private boolean validateAbaNumberChecksum(final String paramAbaRouteNumber) {
 
-        // Set up all the int's
+        // Set up all the ints
         int i1, i2, i3, i4, i5, i6, i7, i8, i9;
 
         // Break up the string so we can look at the numbers.
@@ -152,7 +163,11 @@ public class AbaRouteValidator {
 
         // Check the modulus and we're done!
         if ((checksumTotal % 10) != 0) {
-            throw new AbaRouteValidationException("The ABA Route Number has failed its checksum test.");
+            // Checksum has failed
+            return (false);
+        } else {
+            // Checksum is good!
+            return (true);
         }
     }
 
@@ -160,9 +175,10 @@ public class AbaRouteValidator {
      * This method will test to see if the first two characters, when combined to create a
      * number, are within an acceptable range.
      *
-     * @param paramAbaRouteNumber The target string to test.
+     * @param  paramAbaRouteNumber The target string to test.
      *
      * @throws AbaRouteValidationException
+     *         There was a problem in converting the ABA number.
      */
     static private void validateFedNumber(final String paramAbaRouteNumber) throws AbaRouteValidationException {
 
@@ -216,6 +232,3 @@ public class AbaRouteValidator {
  * Class: com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.java
  * Date:  2015/02/11
  *************************************************************************************** */
-
-
-//~ Formatted by Jindent --- http://www.jindent.com

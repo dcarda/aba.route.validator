@@ -76,15 +76,17 @@ public class Test_AbaRouteValidator_01
      */
     public void testApp() {
 
+        boolean returnBool = false;
+
         // Validate
         try {
-            AbaRouteValidator.validate( "302075018" );
+            returnBool = AbaRouteValidator.validate( "302075018" );
         } catch( AbaRouteValidationException e ) {
             fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
         }
 
-        // This is a good thing!
-        assertTrue( true );
+        // Run the asserts   --------------------------------------------------
+        assertTrue( returnBool );
     }
 
     /**

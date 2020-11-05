@@ -1,21 +1,75 @@
-# Created by https://www.toptal.com/developers/gitignore/
+.gitignore 
 
-########################################################################
-###   Java                                                           ###
-########################################################################
-
-# Compiled class file
+#  Java Files   --------------------------------------------
 *.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar
+*.tar.gz
+*.rar
 
-# Log file
+#  Virtual Machine Crash Logs   ----------------------------
+#  see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+#  Log file   ----------------------------------------------
 *.log
 
+#  Clover Coverage   ---------------------------------------
+.clover
+
+#  Temporary Build Directories   ---------------------------
+**/target/
+**/build/
+**/out/
+**/dist/
+**/conf/
+**/db/
+
+#  Eclipse Directories   ----------------------------------
+**/.project
+**/.settings
+**/.classpath
+**/.metadata
+**/.externalToolBuilders
+**/.recommenders
+
+
+#  Gradle   ------------------------------------------------
+**/.gradle
+
+#  Intellij   ----------------------------------------------
+**/.idea/
+**/*.iml
+**/*.ipr
+**/*.iws
+
+#  Batch Provider Client Specific Files   ------------------
+build.properties
+**/nppBackup
+
+
+
+# Created by https://www.toptal.com/developers/gitignore/
+ 
+########################################################################
+###   Java                                                           ###
+########################################################################
+ 
+# Compiled class file
+*.class
+ 
+# Log file
+*.log
+ 
 # BlueJ files
 *.ctxt
-
+ 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
-
+ 
 # Package Files #
 *.jar
 *.war
@@ -25,14 +79,14 @@
 *.tar
 *.tar.gz
 *.rar
-
+ 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-
+ 
 # End ==================================================================
-
+ 
 ########################################################################
-###   Maven                                                          ###
+###   Maven                                                          ###
 ########################################################################
 target/
 pom.xml.tag
@@ -45,13 +99,13 @@ buildNumber.properties
 .mvn/timing.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
-
+ 
 # End ==================================================================
-
+ 
 ########################################################################
-###   Intellij                                                       ###
+###   Intellij                                                       ###
 ########################################################################
-
+ 
 # User-specific stuff
 .idea/
 .idea/**/workspace.xml
@@ -59,10 +113,10 @@ buildNumber.properties
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
-
+ 
 # Generated files
 .idea/**/contentModel.xml
-
+ 
 # Sensitive or high-churn files
 .idea/**/dataSources/
 .idea/**/dataSources.ids
@@ -71,56 +125,50 @@ buildNumber.properties
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
-
+ 
 # Gradle
 .idea/**/gradle.xml
 .idea/**/libraries
-
+ 
 # Mongo Explorer plugin
 .idea/**/mongoSettings.xml
-
+ 
 # File-based project format
 *.iws
-
+ 
 # IntelliJ
 out/
-
+ 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
-
+ 
 # JIRA plugin
 atlassian-ide-plugin.xml
-
+ 
 # Cursive Clojure plugin
 .idea/replstate.xml
-
+ 
 # Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
-
+ 
 # Editor-based Rest Client
 .idea/httpRequests
-
+ 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
-
+ 
 ### Intellij+iml Patch ###
 # Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023
-
+ 
 *.iml
 modules.xml
 .idea/misc.xml
 *.ipr
-
+ 
 # End ==================================================================
 
-########################################################################
-###   Notepad ++                                                     ###
-########################################################################
 
-*.bak
-nppBackup/
 
-# End of https://www.toptal.com/developers/gitignore/api/notepadpp
