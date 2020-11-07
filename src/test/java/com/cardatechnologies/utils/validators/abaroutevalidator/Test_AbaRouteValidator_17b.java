@@ -3843,11 +3843,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35292_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30117956");
+            AbaRouteValidator.validate("30117956");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -6256,11 +6255,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35422_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30117998?");
+            AbaRouteValidator.validate("30117998?");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -6775,11 +6773,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35450_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30118026p");
+            AbaRouteValidator.validate("30118026p");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -6813,11 +6810,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35452_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30118+292");
+            AbaRouteValidator.validate("30118+292");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -6926,11 +6922,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35458_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30�189170");
+            AbaRouteValidator.validate("30�189170");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -7112,11 +7107,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35468_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("301�71758");
+            AbaRouteValidator.validate("301�71758");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -7150,11 +7144,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35470_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30127178z");
+            AbaRouteValidator.validate("30127178z");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -7188,11 +7181,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35472_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30121790");
+            AbaRouteValidator.validate("30121790");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -8225,11 +8217,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35528_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30207531�");
+            AbaRouteValidator.validate("30207531�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -8300,11 +8291,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35532_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3020753(4");
+            AbaRouteValidator.validate("3020753(4");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -8338,11 +8328,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35534_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3y2075380");
+            AbaRouteValidator.validate("3y2075380");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -8413,11 +8402,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35538_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3020{5432");
+            AbaRouteValidator.validate("3020{5432");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -8526,11 +8514,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35544_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30u075555");
+            AbaRouteValidator.validate("30u075555");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -8564,11 +8551,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35546_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30F075568");
+            AbaRouteValidator.validate("30F075568");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -8602,11 +8588,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35548_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30o075694");
+            AbaRouteValidator.validate("30o075694");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -8640,11 +8625,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35550_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3020757 8");
+            AbaRouteValidator.validate("3020757 8");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -8678,11 +8662,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35552_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("32075814");
+            AbaRouteValidator.validate("32075814");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -8716,11 +8699,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35554_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3020<5830");
+            AbaRouteValidator.validate("3020<5830");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -8754,11 +8736,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35556_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("302075�72");
+            AbaRouteValidator.validate("302075�72");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -8792,11 +8773,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35558_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3020759H7");
+            AbaRouteValidator.validate("3020759H7");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -8830,11 +8810,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35560_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3020}5982");
+            AbaRouteValidator.validate("3020}5982");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -8944,11 +8923,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35566_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30207603");
+            AbaRouteValidator.validate("30207603");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -8982,11 +8960,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35568_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30207666");
+            AbaRouteValidator.validate("30207666");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -9020,11 +8997,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35570_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3020�6295");
+            AbaRouteValidator.validate("3020�6295");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -9058,11 +9034,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35572_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("302+88092");
+            AbaRouteValidator.validate("302+88092");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -10170,11 +10145,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35632_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("302177x10");
+            AbaRouteValidator.validate("302177x10");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -10208,11 +10182,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35634_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3t2177398");
+            AbaRouteValidator.validate("3t2177398");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -10284,11 +10257,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35638_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("302177�79");
+            AbaRouteValidator.validate("302177�79");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -10322,11 +10294,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35640_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("302177g76");
+            AbaRouteValidator.validate("302177g76");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -10360,11 +10331,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35642_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30$188675");
+            AbaRouteValidator.validate("30$188675");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -10398,11 +10368,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35644_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30r283994");
+            AbaRouteValidator.validate("30r283994");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -10436,11 +10405,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35646_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3022?4032");
+            AbaRouteValidator.validate("3022?4032");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -10511,11 +10479,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35650_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30228�087");
+            AbaRouteValidator.validate("30228�087");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -10549,11 +10516,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35652_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30c284090");
+            AbaRouteValidator.validate("30c284090");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -10661,11 +10627,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35658_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3022W4469");
+            AbaRouteValidator.validate("3022W4469");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -10699,11 +10664,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35660_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("302373�11");
+            AbaRouteValidator.validate("302373�11");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -10737,11 +10701,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35662_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("302373?79");
+            AbaRouteValidator.validate("302373?79");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -10775,11 +10738,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35664_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("302E73118");
+            AbaRouteValidator.validate("302E73118");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -10851,11 +10813,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35668_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�2386529");
+            AbaRouteValidator.validate("3�2386529");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -10889,11 +10850,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35670_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3023865�8");
+            AbaRouteValidator.validate("3023865�8");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -10927,11 +10887,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35672_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30238657�");
+            AbaRouteValidator.validate("30238657�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -10965,11 +10924,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35674_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30238658d");
+            AbaRouteValidator.validate("30238658d");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11003,11 +10961,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35676_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30238672�");
+            AbaRouteValidator.validate("30238672�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11041,11 +10998,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35678_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30P386736");
+            AbaRouteValidator.validate("30P386736");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11079,11 +11035,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35680_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3023867�9");
+            AbaRouteValidator.validate("3023867�9");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11117,11 +11072,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35682_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30238?752");
+            AbaRouteValidator.validate("30238?752");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11155,11 +11109,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35684_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("302386?65");
+            AbaRouteValidator.validate("302386?65");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11193,11 +11146,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35686_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3023u6778");
+            AbaRouteValidator.validate("3023u6778");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11231,11 +11183,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35688_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3023867 4");
+            AbaRouteValidator.validate("3023867 4");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11269,11 +11220,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35690_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("302@86817");
+            AbaRouteValidator.validate("302@86817");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11307,11 +11257,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35692_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3023869?0");
+            AbaRouteValidator.validate("3023869?0");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11345,11 +11294,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35694_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30386943");
+            AbaRouteValidator.validate("30386943");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11383,11 +11331,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35696_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3L2386956");
+            AbaRouteValidator.validate("3L2386956");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11421,11 +11368,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35698_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3023�7023");
+            AbaRouteValidator.validate("3023�7023");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11459,11 +11405,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35700_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("303072T80");
+            AbaRouteValidator.validate("303072T80");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11497,11 +11442,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35702_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30307279?");
+            AbaRouteValidator.validate("30307279?");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11535,11 +11479,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35704_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("303085_07");
+            AbaRouteValidator.validate("303085_07");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11573,11 +11516,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35706_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3v3085078");
+            AbaRouteValidator.validate("3v3085078");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11611,11 +11553,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35708_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30308x094");
+            AbaRouteValidator.validate("30308x094");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11649,11 +11590,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35710_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30�085133");
+            AbaRouteValidator.validate("30�085133");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11687,11 +11627,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35712_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3030851�8");
+            AbaRouteValidator.validate("3030851�8");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11725,11 +11664,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35714_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30305191");
+            AbaRouteValidator.validate("30305191");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11763,11 +11701,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35716_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3030?5227");
+            AbaRouteValidator.validate("3030?5227");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11801,11 +11738,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35718_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3030�5230");
+            AbaRouteValidator.validate("3030�5230");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11876,11 +11812,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35722_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30308535�");
+            AbaRouteValidator.validate("30308535�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11914,11 +11849,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35724_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3030?5418");
+            AbaRouteValidator.validate("3030?5418");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -11990,11 +11924,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35728_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30308543�");
+            AbaRouteValidator.validate("30308543�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -12028,11 +11961,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35730_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30308n476");
+            AbaRouteValidator.validate("30308n476");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -12066,11 +11998,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35732_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3030?5528");
+            AbaRouteValidator.validate("3030?5528");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -12104,11 +12035,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35734_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("303�85531");
+            AbaRouteValidator.validate("303�85531");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -12142,11 +12072,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35736_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("303085�73");
+            AbaRouteValidator.validate("303085�73");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -12180,11 +12109,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35738_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30308560?");
+            AbaRouteValidator.validate("30308560?");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -12218,11 +12146,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35740_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("303?85638");
+            AbaRouteValidator.validate("303?85638");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -12293,11 +12220,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35744_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3X3085829");
+            AbaRouteValidator.validate("3X3085829");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -12331,11 +12257,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35746_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3(3087995");
+            AbaRouteValidator.validate("3(3087995");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -12369,11 +12294,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35748_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30317265i");
+            AbaRouteValidator.validate("30317265i");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -12407,11 +12331,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35750_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3031726�4");
+            AbaRouteValidator.validate("3031726�4");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -12445,11 +12368,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35752_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30317285");
+            AbaRouteValidator.validate("30317285");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -12483,11 +12405,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35754_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3031d3773");
+            AbaRouteValidator.validate("3031d3773");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -13039,11 +12960,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35784_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("303�84979");
+            AbaRouteValidator.validate("303�84979");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -13077,11 +12997,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35786_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("303�84982");
+            AbaRouteValidator.validate("303�84982");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -13115,11 +13034,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35788_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30318?059");
+            AbaRouteValidator.validate("30318?059");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -13153,11 +13071,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35790_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("303q85703");
+            AbaRouteValidator.validate("303q85703");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -13191,11 +13108,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35792_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3031b5758");
+            AbaRouteValidator.validate("3031b5758");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -14266,11 +14182,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35850_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3039>6384");
+            AbaRouteValidator.validate("3039>6384");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -14934,11 +14849,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35886_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("304P83244");
+            AbaRouteValidator.validate("304P83244");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -14972,11 +14886,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35888_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3040832?7");
+            AbaRouteValidator.validate("3040832?7");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15010,11 +14923,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35890_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30408�260");
+            AbaRouteValidator.validate("30408�260");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15048,11 +14960,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35892_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30408329v");
+            AbaRouteValidator.validate("30408329v");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15086,11 +14997,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35894_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30408�309");
+            AbaRouteValidator.validate("30408�309");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15124,11 +15034,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35896_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("304083�12");
+            AbaRouteValidator.validate("304083�12");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15162,11 +15071,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35898_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("304083�67");
+            AbaRouteValidator.validate("304083�67");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15200,11 +15108,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35900_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("304083�70");
+            AbaRouteValidator.validate("304083�70");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15238,11 +15145,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35902_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30408339?");
+            AbaRouteValidator.validate("30408339?");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15276,11 +15182,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35904_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3040?3448");
+            AbaRouteValidator.validate("3040?3448");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15314,11 +15219,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35906_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30?083451");
+            AbaRouteValidator.validate("30?083451");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15352,11 +15256,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35908_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30Y083480");
+            AbaRouteValidator.validate("30Y083480");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15390,11 +15293,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35910_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("384083493");
+            AbaRouteValidator.validate("384083493");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15428,11 +15330,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35912_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30408723J");
+            AbaRouteValidator.validate("30408723J");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15504,11 +15405,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35916_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("304171S39");
+            AbaRouteValidator.validate("304171S39");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15542,11 +15442,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35918_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30417221Q");
+            AbaRouteValidator.validate("30417221Q");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15580,11 +15479,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35920_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30418209A");
+            AbaRouteValidator.validate("30418209A");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15618,11 +15516,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35922_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3?4182103");
+            AbaRouteValidator.validate("3?4182103");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15656,11 +15553,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35924_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3+4182116");
+            AbaRouteValidator.validate("3+4182116");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15694,11 +15590,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35926_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30418m187");
+            AbaRouteValidator.validate("30418m187");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15732,11 +15627,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35928_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30418?365");
+            AbaRouteValidator.validate("30418?365");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15808,11 +15702,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35932_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3041+3584");
+            AbaRouteValidator.validate("3041+3584");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15846,11 +15739,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35934_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30418597");
+            AbaRouteValidator.validate("30418597");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15884,11 +15776,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35936_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3j4187331");
+            AbaRouteValidator.validate("3j4187331");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15922,11 +15813,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35938_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3049719  2");
+            AbaRouteValidator.validate("3049719  2");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15960,11 +15850,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35940_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("304971Y45");
+            AbaRouteValidator.validate("304971Y45");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -15998,11 +15887,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35942_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30497974");
+            AbaRouteValidator.validate("30497974");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16036,11 +15924,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35944_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3049719�7");
+            AbaRouteValidator.validate("3049719�7");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16074,11 +15961,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35946_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30497`990");
+            AbaRouteValidator.validate("30497`990");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16112,11 +15998,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35948_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3049�2038");
+            AbaRouteValidator.validate("3049�2038");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16150,11 +16035,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35950_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3=4972232");
+            AbaRouteValidator.validate("3=4972232");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16188,11 +16072,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35952_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3049G3985");
+            AbaRouteValidator.validate("3049G3985");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16226,11 +16109,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35954_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("304M77677");
+            AbaRouteValidator.validate("304M77677");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16264,11 +16146,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35956_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3049821�8");
+            AbaRouteValidator.validate("3049821�8");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16302,11 +16183,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35958_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("304982�70");
+            AbaRouteValidator.validate("304982�70");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16340,11 +16220,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35960_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30498w196");
+            AbaRouteValidator.validate("30498w196");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16378,11 +16257,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35962_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30498226");
+            AbaRouteValidator.validate("30498226");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16416,11 +16294,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35964_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("304982�22");
+            AbaRouteValidator.validate("304982�22");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16492,11 +16369,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35968_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("304y82251");
+            AbaRouteValidator.validate("304y82251");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16530,11 +16406,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35970_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3049822?4");
+            AbaRouteValidator.validate("3049822?4");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16568,11 +16443,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35972_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3049823�6");
+            AbaRouteValidator.validate("3049823�6");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16606,11 +16480,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35974_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30498235q");
+            AbaRouteValidator.validate("30498235q");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16644,11 +16517,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35976_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30498240�");
+            AbaRouteValidator.validate("30498240�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16682,11 +16554,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35978_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30498243");
+            AbaRouteValidator.validate("30498243");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16720,11 +16591,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35980_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("304982�42");
+            AbaRouteValidator.validate("304982�42");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16758,11 +16628,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35982_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�4982468");
+            AbaRouteValidator.validate("3�4982468");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16796,11 +16665,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35984_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3049S2497");
+            AbaRouteValidator.validate("3049S2497");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16872,11 +16740,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35988_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3049p2536");
+            AbaRouteValidator.validate("3049p2536");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16910,11 +16777,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35990_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30498255|");
+            AbaRouteValidator.validate("30498255|");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16948,11 +16814,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35992_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3049825�8");
+            AbaRouteValidator.validate("3049825�8");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -16986,11 +16851,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_35994_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("34982581");
+            AbaRouteValidator.validate("34982581");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -19617,11 +19481,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36136_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3070840�4");
+            AbaRouteValidator.validate("3070840�4");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -19655,11 +19518,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36138_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30708�211");
+            AbaRouteValidator.validate("30708�211");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -19731,11 +19593,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36142_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3?7084240");
+            AbaRouteValidator.validate("3?7084240");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -19769,11 +19630,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36144_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("307084�47");
+            AbaRouteValidator.validate("307084�47");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -19807,11 +19667,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36146_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30+084415");
+            AbaRouteValidator.validate("30+084415");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -19845,11 +19704,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36148_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3070�4431");
+            AbaRouteValidator.validate("3070�4431");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -19883,11 +19741,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36150_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30708660?");
+            AbaRouteValidator.validate("30708660?");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -19921,11 +19778,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36152_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("307(86617");
+            AbaRouteValidator.validate("307(86617");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -19959,11 +19815,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36154_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3^7086620");
+            AbaRouteValidator.validate("3^7086620");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -19997,11 +19852,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36156_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("307086?33");
+            AbaRouteValidator.validate("307086?33");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -20035,11 +19889,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36158_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3070_6662");
+            AbaRouteValidator.validate("3070_6662");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -20147,11 +20000,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36164_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30708614");
+            AbaRouteValidator.validate("30708614");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -20444,11 +20296,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36180_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("307�87713");
+            AbaRouteValidator.validate("307�87713");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -20557,11 +20408,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36186_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("30K089096");
+            AbaRouteValidator.validate("30K089096");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -20632,11 +20482,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36190_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3y1074288");
+            AbaRouteValidator.validate("3y1074288");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -20708,11 +20557,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36194_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3110�8857");
+            AbaRouteValidator.validate("3110�8857");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -20746,11 +20594,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36196_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3?1078873");
+            AbaRouteValidator.validate("3?1078873");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -20784,11 +20631,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36198_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31107<886");
+            AbaRouteValidator.validate("31107<886");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -20822,11 +20668,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36200_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3110D8938");
+            AbaRouteValidator.validate("3110D8938");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -20860,11 +20705,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36202_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311079K21");
+            AbaRouteValidator.validate("311079K21");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -20898,11 +20742,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36204_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3^1079050");
+            AbaRouteValidator.validate("3^1079050");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -20936,11 +20779,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36206_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31109186");
+            AbaRouteValidator.validate("31109186");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -20974,11 +20816,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36208_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311079<09");
+            AbaRouteValidator.validate("311079<09");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21012,11 +20853,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36210_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31079238");
+            AbaRouteValidator.validate("31079238");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21050,11 +20890,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36212_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311079k41");
+            AbaRouteValidator.validate("311079k41");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21088,11 +20927,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36214_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31107?270");
+            AbaRouteValidator.validate("31107?270");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21126,11 +20964,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36216_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3?1079296");
+            AbaRouteValidator.validate("3?1079296");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21164,11 +21001,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36218_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�1079306");
+            AbaRouteValidator.validate("3�1079306");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21202,11 +21038,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36220_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311079B19");
+            AbaRouteValidator.validate("311079B19");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21240,11 +21075,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36222_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�079335");
+            AbaRouteValidator.validate("31�079335");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21278,11 +21112,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36224_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3110793W8");
+            AbaRouteValidator.validate("3110793W8");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21316,11 +21149,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36226_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31107938D");
+            AbaRouteValidator.validate("31107938D");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21354,11 +21186,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36228_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3110�9474");
+            AbaRouteValidator.validate("3110�9474");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21392,11 +21223,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36230_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3110795)0");
+            AbaRouteValidator.validate("3110795)0");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21430,11 +21260,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36232_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3110795^9");
+            AbaRouteValidator.validate("3110795^9");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21468,11 +21297,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36234_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3110?9571");
+            AbaRouteValidator.validate("3110?9571");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21506,11 +21334,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36236_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31107967?");
+            AbaRouteValidator.validate("31107967?");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21544,11 +21371,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36238_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31107e694");
+            AbaRouteValidator.validate("31107e694");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21582,11 +21408,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36240_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31107982l");
+            AbaRouteValidator.validate("31107982l");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21620,11 +21445,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36242_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31107i843");
+            AbaRouteValidator.validate("31107i843");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21658,11 +21482,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36244_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3110�9869");
+            AbaRouteValidator.validate("3110�9869");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21696,11 +21519,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36246_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31107989=");
+            AbaRouteValidator.validate("31107989=");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21734,11 +21556,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36248_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31107+908");
+            AbaRouteValidator.validate("31107+908");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21772,11 +21593,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36250_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311079?37");
+            AbaRouteValidator.validate("311079?37");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21810,11 +21630,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36252_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3110�9982");
+            AbaRouteValidator.validate("3110�9982");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21848,11 +21667,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36254_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3110V0049");
+            AbaRouteValidator.validate("3110V0049");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21886,11 +21704,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36256_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�1080052");
+            AbaRouteValidator.validate("3�1080052");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21924,11 +21741,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36258_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�080162");
+            AbaRouteValidator.validate("31�080162");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -21962,11 +21778,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36260_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3d1080285");
+            AbaRouteValidator.validate("3d1080285");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22000,11 +21815,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36262_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31D080311");
+            AbaRouteValidator.validate("31D080311");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22038,11 +21852,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36264_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31108039�");
+            AbaRouteValidator.validate("31108039�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22076,11 +21889,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36266_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31108�531");
+            AbaRouteValidator.validate("31108�531");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22152,11 +21964,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36270_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�1090673");
+            AbaRouteValidator.validate("3�1090673");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22228,11 +22039,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36274_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31109312Z");
+            AbaRouteValidator.validate("31109312Z");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22266,11 +22076,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36276_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3111701,6");
+            AbaRouteValidator.validate("3111701,6");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22304,11 +22113,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36278_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3111702*0");
+            AbaRouteValidator.validate("3111702*0");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22342,11 +22150,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36280_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311�70276");
+            AbaRouteValidator.validate("311�70276");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22380,11 +22187,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36282_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31175093");
+            AbaRouteValidator.validate("31175093");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22418,11 +22224,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36284_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31117510?");
+            AbaRouteValidator.validate("31117510?");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22456,11 +22261,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36286_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31117(116");
+            AbaRouteValidator.validate("31117(116");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22494,11 +22298,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36288_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31117129");
+            AbaRouteValidator.validate("31117129");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22532,11 +22335,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36290_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31117(158");
+            AbaRouteValidator.validate("31117(158");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22608,11 +22410,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36294_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31&175271");
+            AbaRouteValidator.validate("31&175271");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22646,11 +22447,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36296_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31175297");
+            AbaRouteValidator.validate("31175297");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22684,11 +22484,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36298_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311175h07");
+            AbaRouteValidator.validate("311175h07");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22722,11 +22521,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36300_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311175L10");
+            AbaRouteValidator.validate("311175L10");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22760,11 +22558,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36302_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311175�52");
+            AbaRouteValidator.validate("311175�52");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22798,11 +22595,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36304_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�1175462");
+            AbaRouteValidator.validate("3�1175462");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22836,11 +22632,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36306_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3111755>4");
+            AbaRouteValidator.validate("3111755>4");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22874,11 +22669,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36308_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3111)5527");
+            AbaRouteValidator.validate("3111)5527");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22912,11 +22706,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36310_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�1175569");
+            AbaRouteValidator.validate("3�1175569");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -22950,11 +22743,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36312_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3+1175608");
+            AbaRouteValidator.validate("3+1175608");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23099,11 +22891,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36320_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31175860");
+            AbaRouteValidator.validate("31175860");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23137,11 +22928,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36322_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31117587?");
+            AbaRouteValidator.validate("31117587?");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23175,11 +22965,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36324_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3111758�6");
+            AbaRouteValidator.validate("3111758�6");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23213,11 +23002,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36326_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3111�5899");
+            AbaRouteValidator.validate("3111�5899");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23251,11 +23039,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36328_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31117593D");
+            AbaRouteValidator.validate("31117593D");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23289,11 +23076,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36330_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3 1175941");
+            AbaRouteValidator.validate("3 1175941");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23327,11 +23113,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36332_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�175954");
+            AbaRouteValidator.validate("31�175954");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23365,11 +23150,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36334_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31117597.");
+            AbaRouteValidator.validate("31117597.");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23403,11 +23187,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36336_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3111L5983");
+            AbaRouteValidator.validate("3111L5983");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23441,11 +23224,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36338_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3111760?1");
+            AbaRouteValidator.validate("3111760?1");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23479,11 +23261,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36340_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31192610");
+            AbaRouteValidator.validate("31192610");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23517,11 +23298,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36342_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3111�3059");
+            AbaRouteValidator.validate("3111�3059");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23555,11 +23335,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36344_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311371�72");
+            AbaRouteValidator.validate("311371�72");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23593,11 +23372,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36346_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3113722M2");
+            AbaRouteValidator.validate("3113722M2");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23631,11 +23409,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36348_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3g1372744");
+            AbaRouteValidator.validate("3g1372744");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23669,11 +23446,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36350_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3113�3125");
+            AbaRouteValidator.validate("3113�3125");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23707,11 +23483,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36352_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3,1376494");
+            AbaRouteValidator.validate("3,1376494");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23745,11 +23520,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36354_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31137504");
+            AbaRouteValidator.validate("31137504");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23783,11 +23557,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36356_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3113z6517");
+            AbaRouteValidator.validate("3113z6517");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23821,11 +23594,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36358_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�1376520");
+            AbaRouteValidator.validate("3�1376520");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23859,11 +23631,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36360_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311�76533");
+            AbaRouteValidator.validate("311�76533");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23935,11 +23706,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36364_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311%76614");
+            AbaRouteValidator.validate("311%76614");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -23973,11 +23743,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36366_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311h76643");
+            AbaRouteValidator.validate("311h76643");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24011,11 +23780,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36368_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3?1376737");
+            AbaRouteValidator.validate("3?1376737");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24049,11 +23817,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36370_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31137740");
+            AbaRouteValidator.validate("31137740");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24087,11 +23854,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36372_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3113767?3");
+            AbaRouteValidator.validate("3113767?3");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24125,11 +23891,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36374_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311?76766");
+            AbaRouteValidator.validate("311?76766");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24163,11 +23928,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36376_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3J1376782");
+            AbaRouteValidator.validate("3J1376782");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24201,11 +23965,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36378_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311�76818");
+            AbaRouteValidator.validate("311�76818");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24239,11 +24002,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36380_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3113768H0");
+            AbaRouteValidator.validate("3113768H0");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24277,11 +24039,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36382_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3?1376876");
+            AbaRouteValidator.validate("3?1376876");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24315,11 +24076,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36384_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�376902");
+            AbaRouteValidator.validate("31�376902");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24353,11 +24113,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36386_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3113778�8");
+            AbaRouteValidator.validate("3113778�8");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24391,11 +24150,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36388_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31137789�");
+            AbaRouteValidator.validate("31137789�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24429,11 +24187,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36390_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31137�901");
+            AbaRouteValidator.validate("31137�901");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24467,11 +24224,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36392_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311�77927");
+            AbaRouteValidator.validate("311�77927");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24505,11 +24261,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36394_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31137?943");
+            AbaRouteValidator.validate("31137?943");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24543,11 +24298,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36396_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3?1378023");
+            AbaRouteValidator.validate("3?1378023");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24581,11 +24335,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36398_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311+78052");
+            AbaRouteValidator.validate("311+78052");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24619,11 +24372,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36400_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311378I65");
+            AbaRouteValidator.validate("311378I65");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24657,11 +24409,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36402_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31138084�");
+            AbaRouteValidator.validate("31138084�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24695,11 +24446,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36404_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311O80859");
+            AbaRouteValidator.validate("311O80859");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24771,11 +24521,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36408_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311@82116");
+            AbaRouteValidator.validate("311@82116");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24809,11 +24558,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36410_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3113w2527");
+            AbaRouteValidator.validate("3113w2527");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24847,11 +24595,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36412_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31138�776");
+            AbaRouteValidator.validate("31138�776");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24885,11 +24632,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36414_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311 85524");
+            AbaRouteValidator.validate("311 85524");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24923,11 +24669,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36416_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31138(676");
+            AbaRouteValidator.validate("31138(676");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24961,11 +24706,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36418_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311?85689");
+            AbaRouteValidator.validate("311?85689");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -24999,11 +24743,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36420_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3113859~8");
+            AbaRouteValidator.validate("3113859~8");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25037,11 +24780,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36422_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31138-964");
+            AbaRouteValidator.validate("31138-964");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25075,11 +24817,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36424_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3113x6031");
+            AbaRouteValidator.validate("3113x6031");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25113,11 +24854,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36426_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3113860?4");
+            AbaRouteValidator.validate("3113860?4");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25151,11 +24891,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36428_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31138603");
+            AbaRouteValidator.validate("31138603");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25189,11 +24928,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36430_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311�86277");
+            AbaRouteValidator.validate("311�86277");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25227,11 +24965,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36432_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31138u620");
+            AbaRouteValidator.validate("31138u620");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25265,11 +25002,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36434_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311?87069");
+            AbaRouteValidator.validate("311?87069");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25303,11 +25039,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36436_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3113r7111");
+            AbaRouteValidator.validate("3113r7111");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25341,11 +25076,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36438_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311+87137");
+            AbaRouteValidator.validate("311+87137");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25379,11 +25113,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36440_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31138714�");
+            AbaRouteValidator.validate("31138714�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25455,11 +25188,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36444_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3?1387409");
+            AbaRouteValidator.validate("3?1387409");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25493,11 +25225,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36446_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31?387412");
+            AbaRouteValidator.validate("31?387412");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25531,11 +25262,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36448_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3113878?5");
+            AbaRouteValidator.validate("3113878?5");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25569,11 +25299,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36450_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3113879R3");
+            AbaRouteValidator.validate("3113879R3");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25607,11 +25336,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36452_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311387�46");
+            AbaRouteValidator.validate("311387�46");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25645,11 +25373,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36454_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31138799�");
+            AbaRouteValidator.validate("31138799�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25683,11 +25410,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36456_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31138106");
+            AbaRouteValidator.validate("31138106");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25721,11 +25447,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36458_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3*1389119");
+            AbaRouteValidator.validate("3*1389119");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25759,11 +25484,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36460_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311d89151");
+            AbaRouteValidator.validate("311d89151");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25797,11 +25521,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36462_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31138920h");
+            AbaRouteValidator.validate("31138920h");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25835,11 +25558,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36464_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31139014�");
+            AbaRouteValidator.validate("31139014�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25911,11 +25633,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36468_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3I1390467");
+            AbaRouteValidator.validate("3I1390467");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25949,11 +25670,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36470_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311�71705");
+            AbaRouteValidator.validate("311�71705");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -25987,11 +25707,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36472_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311971?76");
+            AbaRouteValidator.validate("311971?76");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26025,11 +25744,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36474_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3119722?8");
+            AbaRouteValidator.validate("3119722?8");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26063,11 +25781,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36476_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31197Q526");
+            AbaRouteValidator.validate("31197Q526");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26101,11 +25818,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36478_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3&1972652");
+            AbaRouteValidator.validate("3&1972652");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26139,11 +25855,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36480_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�972704");
+            AbaRouteValidator.validate("31�972704");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26177,11 +25892,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36482_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31973208");
+            AbaRouteValidator.validate("31973208");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26215,11 +25929,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36484_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31?973279");
+            AbaRouteValidator.validate("31?973279");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26253,11 +25966,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36486_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3119736?7");
+            AbaRouteValidator.validate("3119736?7");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26291,11 +26003,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36488_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31974032");
+            AbaRouteValidator.validate("31974032");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26329,11 +26040,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36490_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31197701�");
+            AbaRouteValidator.validate("31197701�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26367,11 +26077,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36492_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3A1977026");
+            AbaRouteValidator.validate("3A1977026");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26405,11 +26114,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36494_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3119770�5");
+            AbaRouteValidator.validate("3119770�5");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26443,11 +26151,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36496_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�1977084");
+            AbaRouteValidator.validate("3�1977084");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26481,11 +26188,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36498_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31Z977877");
+            AbaRouteValidator.validate("31Z977877");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26519,11 +26225,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36500_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31A977990");
+            AbaRouteValidator.validate("31A977990");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26557,11 +26262,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36502_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198164");
+            AbaRouteValidator.validate("31198164");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26595,11 +26299,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36504_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311978`32");
+            AbaRouteValidator.validate("311978`32");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26671,11 +26374,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36508_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31978290");
+            AbaRouteValidator.validate("31978290");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26747,11 +26449,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36512_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3119788�8");
+            AbaRouteValidator.validate("3119788�8");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26785,11 +26486,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36514_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31979752");
+            AbaRouteValidator.validate("31979752");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26823,11 +26523,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36516_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311979�75");
+            AbaRouteValidator.validate("311979�75");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26861,11 +26560,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36518_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31h980699");
+            AbaRouteValidator.validate("31h980699");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26899,11 +26597,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36520_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198025");
+            AbaRouteValidator.validate("31198025");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26937,11 +26634,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36522_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31980754");
+            AbaRouteValidator.validate("31980754");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -26975,11 +26671,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36524_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31<981342");
+            AbaRouteValidator.validate("31<981342");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27013,11 +26708,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36526_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31981410");
+            AbaRouteValidator.validate("31981410");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27051,11 +26745,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36528_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�981436");
+            AbaRouteValidator.validate("31�981436");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27127,11 +26820,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36532_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198o533");
+            AbaRouteValidator.validate("31198o533");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27165,11 +26857,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36534_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31981562");
+            AbaRouteValidator.validate("31981562");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27203,11 +26894,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36536_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311>81614");
+            AbaRouteValidator.validate("311>81614");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27241,11 +26931,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36538_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�1981627");
+            AbaRouteValidator.validate("3�1981627");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27279,11 +26968,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36540_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3119K1669");
+            AbaRouteValidator.validate("3119K1669");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27317,11 +27005,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36542_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311981�72");
+            AbaRouteValidator.validate("311981�72");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27355,11 +27042,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36544_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311981B98");
+            AbaRouteValidator.validate("311981B98");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27393,11 +27079,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36546_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198172q");
+            AbaRouteValidator.validate("31198172q");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27431,11 +27116,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36548_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3119817�7");
+            AbaRouteValidator.validate("3119817�7");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27469,11 +27153,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36550_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3119817�0");
+            AbaRouteValidator.validate("3119817�0");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27507,11 +27190,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36552_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31;981805");
+            AbaRouteValidator.validate("31;981805");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27545,11 +27227,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36554_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31181902");
+            AbaRouteValidator.validate("31181902");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27583,11 +27264,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36556_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3119819�1");
+            AbaRouteValidator.validate("3119819�1");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27621,11 +27301,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36558_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198196]");
+            AbaRouteValidator.validate("31198196]");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27659,11 +27338,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36560_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198�999");
+            AbaRouteValidator.validate("31198�999");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27697,11 +27375,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36562_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198U134");
+            AbaRouteValidator.validate("31198U134");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27735,11 +27412,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36564_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311�82147");
+            AbaRouteValidator.validate("311�82147");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27773,11 +27449,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36566_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3119�2435");
+            AbaRouteValidator.validate("3119�2435");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27811,11 +27486,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36568_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3119825U2");
+            AbaRouteValidator.validate("3119825U2");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27849,11 +27523,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36570_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31y982561");
+            AbaRouteValidator.validate("31y982561");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27887,11 +27560,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36572_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3119i5238");
+            AbaRouteValidator.validate("3119i5238");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27925,11 +27597,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36574_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198541'");
+            AbaRouteValidator.validate("31198541'");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -27963,11 +27634,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36576_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31m985429");
+            AbaRouteValidator.validate("31m985429");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28001,11 +27671,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36578_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198|542");
+            AbaRouteValidator.validate("31198|542");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28039,11 +27708,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36580_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�985746");
+            AbaRouteValidator.validate("31�985746");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28077,11 +27745,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36582_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3119857�9");
+            AbaRouteValidator.validate("3119857�9");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28115,11 +27782,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36584_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31(985788");
+            AbaRouteValidator.validate("31(985788");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28153,11 +27819,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36586_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198591");
+            AbaRouteValidator.validate("31198591");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28191,11 +27856,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36588_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198a814");
+            AbaRouteValidator.validate("31198a814");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28229,11 +27893,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36590_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3119�5830");
+            AbaRouteValidator.validate("3119�5830");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28267,11 +27930,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36592_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311u85856");
+            AbaRouteValidator.validate("311u85856");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28305,11 +27967,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36594_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�1985869");
+            AbaRouteValidator.validate("3�1985869");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28343,11 +28004,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36596_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�1985872");
+            AbaRouteValidator.validate("3�1985872");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28381,11 +28041,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36598_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3119�6253");
+            AbaRouteValidator.validate("3119�6253");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28419,11 +28078,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36600_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�1986318");
+            AbaRouteValidator.validate("3�1986318");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28457,11 +28115,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36602_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3?1986334");
+            AbaRouteValidator.validate("3?1986334");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28495,11 +28152,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36604_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311  86347");
+            AbaRouteValidator.validate("311  86347");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28533,11 +28189,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36606_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198637");
+            AbaRouteValidator.validate("31198637");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28571,11 +28226,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36608_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198727");
+            AbaRouteValidator.validate("31198727");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28609,11 +28263,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36610_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198?773");
+            AbaRouteValidator.validate("31198?773");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28647,11 +28300,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36612_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3F1987786");
+            AbaRouteValidator.validate("3F1987786");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28685,11 +28337,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36614_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311987�09");
+            AbaRouteValidator.validate("311987�09");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28723,11 +28374,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36616_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198787S");
+            AbaRouteValidator.validate("31198787S");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28761,11 +28411,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36618_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31988976");
+            AbaRouteValidator.validate("31988976");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28799,11 +28448,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36620_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311u89001");
+            AbaRouteValidator.validate("311u89001");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28837,11 +28485,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36622_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3119�9030");
+            AbaRouteValidator.validate("3119�9030");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28875,11 +28522,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36624_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3119�9072");
+            AbaRouteValidator.validate("3119�9072");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28913,11 +28559,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36626_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198923]");
+            AbaRouteValidator.validate("31198923]");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -28989,11 +28634,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36630_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31989250");
+            AbaRouteValidator.validate("31989250");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29027,11 +28671,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36632_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311N89263");
+            AbaRouteValidator.validate("311N89263");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29065,11 +28708,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36634_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�989302");
+            AbaRouteValidator.validate("31�989302");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29103,11 +28745,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36636_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3119893  5");
+            AbaRouteValidator.validate("3119893  5");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29141,11 +28782,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36638_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�1989328");
+            AbaRouteValidator.validate("3�1989328");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29217,11 +28857,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36642_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311�89344");
+            AbaRouteValidator.validate("311�89344");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29255,11 +28894,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36644_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31g989357");
+            AbaRouteValidator.validate("31g989357");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29293,11 +28931,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36646_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311�89360");
+            AbaRouteValidator.validate("311�89360");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29331,11 +28968,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36648_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31S989522");
+            AbaRouteValidator.validate("31S989522");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29369,11 +29005,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36650_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�989548");
+            AbaRouteValidator.validate("31�989548");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29407,11 +29042,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36652_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198903");
+            AbaRouteValidator.validate("31198903");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29445,11 +29079,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36654_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198963�");
+            AbaRouteValidator.validate("31198963�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29483,11 +29116,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36656_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311989z45");
+            AbaRouteValidator.validate("311989z45");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29521,11 +29153,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36658_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311�89658");
+            AbaRouteValidator.validate("311�89658");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29559,11 +29190,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36660_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198966�");
+            AbaRouteValidator.validate("31198966�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29597,11 +29227,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36662_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198967F");
+            AbaRouteValidator.validate("31198967F");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29635,11 +29264,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36664_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198980N");
+            AbaRouteValidator.validate("31198980N");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29673,11 +29301,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36666_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198983A");
+            AbaRouteValidator.validate("31198983A");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29711,11 +29338,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36668_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311989�52");
+            AbaRouteValidator.validate("311989�52");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29749,11 +29375,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36670_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�989878");
+            AbaRouteValidator.validate("31�989878");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29787,11 +29412,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36672_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3I1989917");
+            AbaRouteValidator.validate("3I1989917");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29825,11 +29449,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36674_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31198993!");
+            AbaRouteValidator.validate("31198993!");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29863,11 +29486,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36676_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311989M75");
+            AbaRouteValidator.validate("311989M75");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29901,11 +29523,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36678_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31199�003");
+            AbaRouteValidator.validate("31199�003");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29939,11 +29560,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36680_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3?1990016");
+            AbaRouteValidator.validate("3?1990016");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -29977,11 +29597,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36682_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31190029");
+            AbaRouteValidator.validate("31190029");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30015,11 +29634,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36684_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31190045");
+            AbaRouteValidator.validate("31190045");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30053,11 +29671,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36686_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�990058");
+            AbaRouteValidator.validate("31�990058");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30091,11 +29708,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36688_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311990$61");
+            AbaRouteValidator.validate("311990$61");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30129,11 +29745,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36690_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31199026�");
+            AbaRouteValidator.validate("31199026�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30167,11 +29782,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36692_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31199?294");
+            AbaRouteValidator.validate("31199?294");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30205,11 +29819,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36694_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311990?75");
+            AbaRouteValidator.validate("311990?75");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30243,11 +29856,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36696_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3?1990388");
+            AbaRouteValidator.validate("3?1990388");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30319,11 +29931,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36700_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31190498");
+            AbaRouteValidator.validate("31190498");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30357,11 +29968,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36702_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311990?11");
+            AbaRouteValidator.validate("311990?11");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30395,11 +30005,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36704_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3]1990809");
+            AbaRouteValidator.validate("3]1990809");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30433,11 +30042,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36706_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3?1991484");
+            AbaRouteValidator.validate("3?1991484");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30471,11 +30079,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36708_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3119916�5");
+            AbaRouteValidator.validate("3119916�5");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30509,11 +30116,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36710_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3%1991866");
+            AbaRouteValidator.validate("3%1991866");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30547,11 +30153,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36712_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311�92250");
+            AbaRouteValidator.validate("311�92250");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30585,11 +30190,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36714_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3119929~4");
+            AbaRouteValidator.validate("3119929~4");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30623,11 +30227,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36716_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311u93149");
+            AbaRouteValidator.validate("311u93149");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30661,11 +30264,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36718_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("311?93330");
+            AbaRouteValidator.validate("311?93330");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30699,11 +30301,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36720_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3}2080941");
+            AbaRouteValidator.validate("3}2080941");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30737,11 +30338,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36722_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3120�0970");
+            AbaRouteValidator.validate("3120�0970");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30775,11 +30375,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36724_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�2080996");
+            AbaRouteValidator.validate("3�2080996");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30813,11 +30412,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36726_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31208100O");
+            AbaRouteValidator.validate("31208100O");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30851,11 +30449,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36728_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31208103?");
+            AbaRouteValidator.validate("31208103?");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30889,11 +30486,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36730_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("312g81089");
+            AbaRouteValidator.validate("312g81089");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30927,11 +30523,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36732_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31208118O");
+            AbaRouteValidator.validate("31208118O");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -30965,11 +30560,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36734_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�2081209");
+            AbaRouteValidator.validate("3�2081209");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31003,11 +30597,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36736_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31208:212");
+            AbaRouteValidator.validate("31208:212");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31041,11 +30634,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36738_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31220010");
+            AbaRouteValidator.validate("31220010");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31079,11 +30671,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36740_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3U2270023");
+            AbaRouteValidator.validate("3U2270023");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31117,11 +30708,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36742_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3122703!4");
+            AbaRouteValidator.validate("3122703!4");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31155,11 +30745,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36744_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31220379");
+            AbaRouteValidator.validate("31220379");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31193,11 +30782,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36746_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31?270450");
+            AbaRouteValidator.validate("31?270450");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31231,11 +30819,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36748_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("312?70463");
+            AbaRouteValidator.validate("312?70463");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31269,11 +30856,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36750_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�2270476");
+            AbaRouteValidator.validate("3�2270476");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31307,11 +30893,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36752_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("312?76030");
+             AbaRouteValidator.validate("312?76030");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31345,11 +30930,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36754_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31227607");
+            AbaRouteValidator.validate("31227607");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31383,11 +30967,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36756_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3?2276085");
+            AbaRouteValidator.validate("3?2276085");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31421,11 +31004,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36758_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("312276 08");
+            AbaRouteValidator.validate("312276 08");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31459,11 +31041,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36760_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31:276111");
+            AbaRouteValidator.validate("31:276111");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31497,11 +31078,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36762_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�276124");
+            AbaRouteValidator.validate("31�276124");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31535,11 +31115,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36764_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�2276140");
+            AbaRouteValidator.validate("3�2276140");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31573,11 +31152,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36766_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31227:182");
+            AbaRouteValidator.validate("31227:182");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31611,11 +31189,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36768_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3122762?7");
+            AbaRouteValidator.validate("3122762?7");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31687,11 +31264,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36772_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("312z76331");
+            AbaRouteValidator.validate("312z76331");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31725,11 +31301,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36774_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3122?6360");
+            AbaRouteValidator.validate("3122?6360");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31763,11 +31338,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36776_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31276409");
+            AbaRouteValidator.validate("31276409");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31801,11 +31375,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36778_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�2276412");
+            AbaRouteValidator.validate("3�2276412");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31839,11 +31412,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36780_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31227645R");
+            AbaRouteValidator.validate("31227645R");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31877,11 +31449,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36782_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3122764&0");
+            AbaRouteValidator.validate("3122764&0");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31915,11 +31486,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36784_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31O293505");
+            AbaRouteValidator.validate("31O293505");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31953,11 +31523,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36786_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31237?684");
+            AbaRouteValidator.validate("31237?684");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -31991,11 +31560,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36788_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("312T78747");
+            AbaRouteValidator.validate("312T78747");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32029,11 +31597,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36790_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3@2385303");
+            AbaRouteValidator.validate("3@2385303");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32067,11 +31634,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36792_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31286616");
+            AbaRouteValidator.validate("31286616");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32105,11 +31671,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36794_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3130l1920");
+            AbaRouteValidator.validate("3130l1920");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32181,11 +31746,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36798_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31307=370");
+            AbaRouteValidator.validate("31307=370");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32219,11 +31783,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36800_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31307B493");
+            AbaRouteValidator.validate("31307B493");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32257,11 +31820,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36802_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31\077513");
+            AbaRouteValidator.validate("31\077513");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32295,11 +31857,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36804_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3?3080584");
+            AbaRouteValidator.validate("3?3080584");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32333,11 +31894,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36806_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�080597");
+            AbaRouteValidator.validate("31�080597");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32371,11 +31931,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36808_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3=3080610");
+            AbaRouteValidator.validate("3=3080610");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32409,11 +31968,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36810_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�3080623");
+            AbaRouteValidator.validate("3�3080623");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32447,11 +32005,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36812_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31308063�");
+            AbaRouteValidator.validate("31308063�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32485,11 +32042,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36814_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�080649");
+            AbaRouteValidator.validate("31�080649");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32523,11 +32079,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36816_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31+082171");
+            AbaRouteValidator.validate("31+082171");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32561,11 +32116,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36818_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31382838");
+            AbaRouteValidator.validate("31382838");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32599,11 +32153,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36820_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31308V906");
+            AbaRouteValidator.validate("31308V906");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32675,11 +32228,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36824_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3r3082964");
+            AbaRouteValidator.validate("3r3082964");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32713,11 +32265,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36826_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("33082980");
+            AbaRouteValidator.validate("33082980");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32751,11 +32302,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36828_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31308325");
+            AbaRouteValidator.validate("31308325");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32789,11 +32339,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36830_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�083167");
+            AbaRouteValidator.validate("31�083167");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32827,11 +32376,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36832_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313083I96");
+            AbaRouteValidator.validate("313083I96");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32865,11 +32413,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36834_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31308319");
+            AbaRouteValidator.validate("31308319");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32903,11 +32450,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36836_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31308322o");
+            AbaRouteValidator.validate("31308322o");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32941,11 +32487,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36838_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�083235");
+            AbaRouteValidator.validate("31�083235");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -32979,11 +32524,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36840_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3?3083251");
+            AbaRouteValidator.validate("3?3083251");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33017,11 +32561,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36842_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31d083264");
+            AbaRouteValidator.validate("31d083264");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33055,11 +32598,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36844_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31@083303");
+            AbaRouteValidator.validate("31@083303");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33093,11 +32635,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36846_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3130834G3");
+            AbaRouteValidator.validate("3130834G3");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33131,11 +32672,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36848_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313083b26");
+            AbaRouteValidator.validate("313083b26");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33169,11 +32709,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36850_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31303468");
+            AbaRouteValidator.validate("31303468");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33207,11 +32746,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36852_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�3083471");
+            AbaRouteValidator.validate("3�3083471");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33283,11 +32821,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36856_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�083581");
+            AbaRouteValidator.validate("31�083581");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33321,11 +32858,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36858_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�083604");
+            AbaRouteValidator.validate("31�083604");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33359,11 +32895,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36860_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3130836 0");
+            AbaRouteValidator.validate("3130836 0");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33435,11 +32970,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36864_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31308364?");
+            AbaRouteValidator.validate("31308364?");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33473,11 +33007,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36866_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313L83659");
+            AbaRouteValidator.validate("313L83659");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33511,11 +33044,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36868_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3130�3675");
+            AbaRouteValidator.validate("3130�3675");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33549,11 +33081,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36870_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�3083714");
+            AbaRouteValidator.validate("3�3083714");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33587,11 +33118,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36872_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313083�27");
+            AbaRouteValidator.validate("313083�27");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33625,11 +33155,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36874_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31308�772");
+            AbaRouteValidator.validate("31308�772");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33663,11 +33192,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36876_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31308382�");
+            AbaRouteValidator.validate("31308382�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33701,11 +33229,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36878_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313+83837");
+            AbaRouteValidator.validate("313+83837");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33739,11 +33266,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36880_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313083E66");
+            AbaRouteValidator.validate("313083E66");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33777,11 +33303,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36882_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31083879");
+            AbaRouteValidator.validate("31083879");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33815,11 +33340,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36884_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3130�3992");
+            AbaRouteValidator.validate("3130�3992");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33853,11 +33377,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36886_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31308G001");
+            AbaRouteValidator.validate("31308G001");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33891,11 +33414,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36888_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3130?4124");
+            AbaRouteValidator.validate("3130?4124");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -33929,11 +33451,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36890_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31;084292");
+            AbaRouteValidator.validate("31;084292");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34005,11 +33526,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36894_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3130843E7");
+            AbaRouteValidator.validate("3130843E7");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34043,11 +33563,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36896_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3130�4409");
+            AbaRouteValidator.validate("3130�4409");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34081,11 +33600,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36898_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3130.4412");
+            AbaRouteValidator.validate("3130.4412");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34119,11 +33637,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36900_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3130844�7");
+            AbaRouteValidator.validate("3130844�7");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34157,11 +33674,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36902_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313�84470");
+            AbaRouteValidator.validate("313�84470");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34195,11 +33711,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36904_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3130845�4");
+            AbaRouteValidator.validate("3130845�4");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34233,11 +33748,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36906_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3130,4593");
+            AbaRouteValidator.validate("3130,4593");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34271,11 +33785,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36908_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31308i632");
+            AbaRouteValidator.validate("31308i632");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34309,11 +33822,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36910_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313084$58");
+            AbaRouteValidator.validate("313084$58");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34347,11 +33859,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36912_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�084674");
+            AbaRouteValidator.validate("31�084674");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34385,11 +33896,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36914_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313084*07");
+            AbaRouteValidator.validate("313084*07");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34423,11 +33933,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36916_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3130�4881");
+            AbaRouteValidator.validate("3130�4881");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34461,11 +33970,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36918_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313�84904");
+            AbaRouteValidator.validate("313�84904");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34499,11 +34007,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36920_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3130�4917");
+            AbaRouteValidator.validate("3130�4917");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34537,11 +34044,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36922_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31308498�");
+            AbaRouteValidator.validate("31308498�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34575,11 +34081,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36924_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3A3085039");
+            AbaRouteValidator.validate("3A3085039");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34613,11 +34118,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36926_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3130850?1");
+            AbaRouteValidator.validate("3130850?1");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34651,11 +34155,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36928_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3130850�4");
+            AbaRouteValidator.validate("3130850�4");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34689,11 +34192,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36930_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31385181");
+            AbaRouteValidator.validate("31385181");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34727,11 +34229,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36932_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31308�275");
+            AbaRouteValidator.validate("31308�275");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34765,11 +34266,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36934_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31308g288");
+            AbaRouteValidator.validate("31308g288");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34803,11 +34303,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36936_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313085N95");
+            AbaRouteValidator.validate("313085N95");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34879,11 +34378,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36940_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313087�44");
+            AbaRouteValidator.validate("313087�44");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34917,11 +34415,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36942_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("33087257");
+            AbaRouteValidator.validate("33087257");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -34993,11 +34490,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36946_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313087A86");
+            AbaRouteValidator.validate("313087A86");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35031,11 +34527,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36948_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31308729");
+            AbaRouteValidator.validate("31308729");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35069,11 +34564,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36950_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�090561");
+            AbaRouteValidator.validate("31�090561");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35107,11 +34601,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36952_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3130�0914");
+            AbaRouteValidator.validate("3130�0914");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35145,11 +34638,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36954_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31309096v");
+            AbaRouteValidator.validate("31309096v");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35183,11 +34675,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36956_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3130r1515");
+            AbaRouteValidator.validate("3130r1515");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35221,11 +34712,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36958_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31092093");
+            AbaRouteValidator.validate("31092093");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35297,11 +34787,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36962_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313170�57");
+            AbaRouteValidator.validate("313170�57");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35335,11 +34824,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36964_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31317P052");
+            AbaRouteValidator.validate("31317P052");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35373,11 +34861,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36966_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313172H70");
+            AbaRouteValidator.validate("313172H70");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35411,11 +34898,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36968_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3131}2913");
+            AbaRouteValidator.validate("3131}2913");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35449,11 +34935,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36970_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3131Q3336");
+            AbaRouteValidator.validate("3131Q3336");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35487,11 +34972,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36972_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31317349");
+            AbaRouteValidator.validate("31317349");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35525,11 +35009,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36974_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313173T76");
+            AbaRouteValidator.validate("313173T76");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35563,11 +35046,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36976_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31l173792");
+            AbaRouteValidator.validate("31l173792");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35601,11 +35083,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36978_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3131?3938");
+            AbaRouteValidator.validate("3131?3938");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35639,11 +35120,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36980_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3131766�2");
+            AbaRouteValidator.validate("3131766�2");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35677,11 +35157,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36982_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31l176715");
+            AbaRouteValidator.validate("31l176715");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35715,11 +35194,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36984_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313177�68");
+            AbaRouteValidator.validate("313177�68");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35753,11 +35231,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36986_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31317748�");
+            AbaRouteValidator.validate("31317748�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35791,11 +35268,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36988_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3131&7581");
+            AbaRouteValidator.validate("3131&7581");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35829,11 +35305,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36990_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31317759?");
+            AbaRouteValidator.validate("31317759?");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35867,11 +35342,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36992_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31317?604");
+            AbaRouteValidator.validate("31317?604");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35905,11 +35379,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36994_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313177�62");
+            AbaRouteValidator.validate("313177�62");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35943,11 +35416,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36996_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3131776>8");
+            AbaRouteValidator.validate("3131776>8");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -35981,11 +35453,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_36998_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313177?27");
+            AbaRouteValidator.validate("313177?27");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36019,11 +35490,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37000_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31317775");
+            AbaRouteValidator.validate("31317775");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36057,11 +35527,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37002_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�3177785");
+            AbaRouteValidator.validate("3�3177785");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36095,11 +35564,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37004_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31317818�");
+            AbaRouteValidator.validate("31317818�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36133,11 +35601,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37006_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3131%0808");
+            AbaRouteValidator.validate("3131%0808");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36171,11 +35638,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37008_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31318K918");
+            AbaRouteValidator.validate("31318K918");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36209,11 +35675,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37010_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31?182068");
+             AbaRouteValidator.validate("31?182068");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36247,11 +35712,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37012_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31318218?");
+            AbaRouteValidator.validate("31318218?");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36285,11 +35749,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37014_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3131�2217");
+            AbaRouteValidator.validate("3131�2217");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36323,11 +35786,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37016_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313�82220");
+            AbaRouteValidator.validate("313�82220");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36361,11 +35823,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37018_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3B3182602");
+            AbaRouteValidator.validate("3B3182602");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36399,11 +35860,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37020_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31318261�");
+            AbaRouteValidator.validate("31318261�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36437,11 +35897,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37022_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�3182631");
+            AbaRouteValidator.validate("3�3182631");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36475,11 +35934,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37024_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31183368");
+            AbaRouteValidator.validate("31183368");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36513,11 +35971,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37026_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313185?91");
+            AbaRouteValidator.validate("313185?91");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36551,11 +36008,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37028_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31318521");
+            AbaRouteValidator.validate("31318521");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36589,11 +36045,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37030_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31318^515");
+            AbaRouteValidator.validate("31318^515");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36627,11 +36082,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37032_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31318$722");
+            AbaRouteValidator.validate("31318$722");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36665,11 +36119,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37034_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31318693");
+            AbaRouteValidator.validate("31318693");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36703,11 +36156,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37036_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�186103");
+            AbaRouteValidator.validate("31�186103");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36741,11 +36193,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37038_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313T86129");
+            AbaRouteValidator.validate("313T86129");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36779,11 +36230,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37040_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31318�158");
+            AbaRouteValidator.validate("31318�158");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36817,11 +36267,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37042_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3o3186640");
+            AbaRouteValidator.validate("3o3186640");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36855,11 +36304,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37044_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31318667�");
+            AbaRouteValidator.validate("31318667�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36893,11 +36341,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37046_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313186�18");
+            AbaRouteValidator.validate("313186�18");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36931,11 +36378,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37048_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313p86909");
+            AbaRouteValidator.validate("313p86909");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -36969,11 +36415,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37050_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313186e38");
+            AbaRouteValidator.validate("313186e38");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37007,11 +36452,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37052_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313186B83");
+            AbaRouteValidator.validate("313186B83");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37045,11 +36489,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37054_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3?3186996");
+            AbaRouteValidator.validate("3?3186996");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37083,11 +36526,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37056_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313?87021");
+            AbaRouteValidator.validate("313?87021");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37121,11 +36563,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37058_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3w3187047");
+            AbaRouteValidator.validate("3w3187047");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37159,11 +36600,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37060_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31318750");
+            AbaRouteValidator.validate("31318750");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37197,11 +36637,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37062_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31318745�");
+            AbaRouteValidator.validate("31318745�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37235,11 +36674,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37064_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31318747,");
+            AbaRouteValidator.validate("31318747,");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37273,11 +36711,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37066_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31]187500");
+            AbaRouteValidator.validate("31]187500");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37311,11 +36748,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37068_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31187571");
+            AbaRouteValidator.validate("31187571");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37349,11 +36785,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37070_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31318759%");
+            AbaRouteValidator.validate("31318759%");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37387,11 +36822,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37072_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3131'7623");
+            AbaRouteValidator.validate("3131'7623");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37425,11 +36859,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37074_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3131876�6");
+            AbaRouteValidator.validate("3131876�6");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37463,11 +36896,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37076_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313187�49");
+            AbaRouteValidator.validate("313187�49");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37501,11 +36933,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37078_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31f187652");
+            AbaRouteValidator.validate("31f187652");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37539,11 +36970,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37080_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313187�04");
+            AbaRouteValidator.validate("313187�04");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37577,11 +37007,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37082_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31387830");
+            AbaRouteValidator.validate("31387830");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37615,11 +37044,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37084_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313|87843");
+            AbaRouteValidator.validate("313|87843");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37653,11 +37081,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37086_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("33189087");
+            AbaRouteValidator.validate("33189087");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37691,11 +37118,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37088_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31318W171");
+            AbaRouteValidator.validate("31318W171");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37729,11 +37155,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37090_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3131?9197");
+            AbaRouteValidator.validate("3131?9197");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37767,11 +37192,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37092_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31318�391");
+            AbaRouteValidator.validate("31318�391");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37805,11 +37229,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37094_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31318901");
+            AbaRouteValidator.validate("31318901");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37843,11 +37266,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37096_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�3189430");
+            AbaRouteValidator.validate("3�3189430");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37881,11 +37303,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37098_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3i3189443");
+            AbaRouteValidator.validate("3i3189443");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37919,11 +37340,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37100_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�3189472");
+            AbaRouteValidator.validate("3�3189472");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37957,11 +37377,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37102_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3131894$8");
+            AbaRouteValidator.validate("3131894$8");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -37995,11 +37414,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37104_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3131�9715");
+            AbaRouteValidator.validate("3131�9715");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38033,11 +37451,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37106_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�189731");
+            AbaRouteValidator.validate("31�189731");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38071,11 +37488,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37108_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�189744");
+            AbaRouteValidator.validate("31�189744");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38109,11 +37525,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37110_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31318976p");
+            AbaRouteValidator.validate("31318976p");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38147,11 +37562,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37112_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3131897�3");
+            AbaRouteValidator.validate("3131897�3");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38185,11 +37599,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37114_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("313�92647");
+            AbaRouteValidator.validate("313�92647");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38223,11 +37636,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37116_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("343193073");
+            AbaRouteValidator.validate("343193073");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38261,11 +37673,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37118_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31319322");
+            AbaRouteValidator.validate("31319322");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38299,11 +37710,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37120_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3140729�6");
+            AbaRouteValidator.validate("3140729�6");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38337,11 +37747,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37122_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31407300");
+            AbaRouteValidator.validate("31407300");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38375,11 +37784,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37124_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31^074269");
+           AbaRouteValidator.validate("31^074269");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38413,11 +37821,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37126_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314T78469");
+            AbaRouteValidator.validate("314T78469");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38451,11 +37858,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37128_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31405504");
+            AbaRouteValidator.validate("31405504");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38489,11 +37895,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37130_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3140g8048");
+            AbaRouteValidator.validate("3140g8048");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38527,11 +37932,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37132_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314{88190");
+            AbaRouteValidator.validate("314{88190");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38565,11 +37969,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37134_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3C4088200");
+            AbaRouteValidator.validate("3C4088200");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38603,11 +38006,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37136_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314V88239");
+            AbaRouteValidator.validate("314V88239");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38641,11 +38043,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37138_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�088284");
+            AbaRouteValidator.validate("31�088284");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38679,11 +38080,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37140_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31088352");
+            AbaRouteValidator.validate("31088352");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38755,11 +38155,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37144_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3140�8446");
+            AbaRouteValidator.validate("3140�8446");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38793,11 +38192,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37146_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314088l30");
+            AbaRouteValidator.validate("314088l30");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38831,11 +38229,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37148_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3140885H6");
+            AbaRouteValidator.validate("3140885H6");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38869,11 +38266,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37150_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314F88572");
+            AbaRouteValidator.validate("314F88572");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38907,11 +38303,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37152_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314O88585");
+            AbaRouteValidator.validate("314O88585");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38945,11 +38340,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37154_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31408V598");
+            AbaRouteValidator.validate("31408V598");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -38983,11 +38377,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37156_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31488637");
+            AbaRouteValidator.validate("31488637");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39021,11 +38414,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37158_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314088?66");
+            AbaRouteValidator.validate("314088?66");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39059,11 +38451,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37160_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3140[8705");
+            AbaRouteValidator.validate("3140[8705");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39097,11 +38488,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37162_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31408871Y");
+            AbaRouteValidator.validate("31408871Y");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39135,11 +38525,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37164_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314?88747");
+            AbaRouteValidator.validate("314?88747");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39173,11 +38562,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37166_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314088k28");
+            AbaRouteValidator.validate("314088k28");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39211,11 +38599,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37168_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31408%860");
+            AbaRouteValidator.validate("31408%860");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39249,11 +38636,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37170_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314�89681");
+            AbaRouteValidator.validate("314�89681");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39287,11 +38673,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37172_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3140910�5");
+            AbaRouteValidator.validate("3140910�5");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39325,11 +38710,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37174_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3D4092128");
+            AbaRouteValidator.validate("3D4092128");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39363,11 +38747,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37176_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31409�717");
+            AbaRouteValidator.validate("31409�717");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39401,11 +38784,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37178_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31497�664");
+            AbaRouteValidator.validate("31497�664");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39439,11 +38821,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37180_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�971168");
+            AbaRouteValidator.validate("31�971168");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39477,11 +38858,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37182_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3149724�9");
+            AbaRouteValidator.validate("3149724�9");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39515,11 +38895,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37184_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31497285l");
+            AbaRouteValidator.validate("31497285l");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39553,11 +38932,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37186_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31497341<");
+            AbaRouteValidator.validate("31497341<");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39591,11 +38969,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37188_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314?73548");
+            AbaRouteValidator.validate("314?73548");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39629,11 +39006,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37190_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314973?93");
+            AbaRouteValidator.validate("314973?93");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39705,11 +39081,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37194_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3149740�1");
+            AbaRouteValidator.validate("3149740�1");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39743,11 +39118,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37196_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31497436");
+            AbaRouteValidator.validate("31497436");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39781,11 +39155,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37198_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31497104");
+            AbaRouteValidator.validate("31497104");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39819,11 +39192,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37200_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314977�33");
+            AbaRouteValidator.validate("314977�33");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39857,11 +39229,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37202_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31477146");
+            AbaRouteValidator.validate("31477146");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39895,11 +39266,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37204_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314+77162");
+            AbaRouteValidator.validate("314+77162");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39933,11 +39303,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37206_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31497717D");
+            AbaRouteValidator.validate("31497717D");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -39971,11 +39340,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37208_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�4977188");
+            AbaRouteValidator.validate("3�4977188");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40009,11 +39377,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37210_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31497~191");
+            AbaRouteValidator.validate("31497~191");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40047,11 +39414,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37212_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314977?14");
+            AbaRouteValidator.validate("314977?14");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40085,11 +39451,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37214_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314977\27");
+            AbaRouteValidator.validate("314977\27");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40123,11 +39488,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37216_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3149b7243");
+            AbaRouteValidator.validate("3149b7243");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40161,11 +39525,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37218_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�4977298");
+            AbaRouteValidator.validate("3�4977298");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40199,11 +39562,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37220_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31497?324");
+            AbaRouteValidator.validate("31497?324");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40237,11 +39599,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37222_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31497o337");
+            AbaRouteValidator.validate("31497o337");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40275,11 +39636,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37224_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31497-340");
+            AbaRouteValidator.validate("31497-340");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40313,11 +39673,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37226_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314=77382");
+            AbaRouteValidator.validate("314=77382");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40351,11 +39710,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37228_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31497740^");
+            AbaRouteValidator.validate("31497740^");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40427,11 +39785,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37232_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3149&7421");
+            AbaRouteValidator.validate("3149&7421");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40465,11 +39822,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37234_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3149779r1");
+            AbaRouteValidator.validate("3149779r1");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40541,11 +39897,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37238_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3149c8132");
+            AbaRouteValidator.validate("3149c8132");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40579,11 +39934,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37240_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314�78352");
+            AbaRouteValidator.validate("314�78352");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40617,11 +39971,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37242_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31497d381");
+            AbaRouteValidator.validate("31497d381");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40655,11 +40008,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37244_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314D78394");
+            AbaRouteValidator.validate("314D78394");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40693,11 +40045,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37246_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3   4978404");
+            AbaRouteValidator.validate("3   4978404");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40731,11 +40082,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37248_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3149784(7");
+            AbaRouteValidator.validate("3149784(7");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40769,11 +40119,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37250_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("34978433");
+            AbaRouteValidator.validate("34978433");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40807,11 +40156,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37252_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3149n8446");
+            AbaRouteValidator.validate("3149n8446");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40845,11 +40193,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37254_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31N978488");
+            AbaRouteValidator.validate("31N978488");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40883,11 +40230,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37256_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31978543");
+            AbaRouteValidator.validate("31978543");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40921,11 +40267,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37258_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3149&8556");
+            AbaRouteValidator.validate("3149&8556");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40959,11 +40304,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37260_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�978598");
+            AbaRouteValidator.validate("31�978598");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -40997,11 +40341,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37262_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31497860�");
+            AbaRouteValidator.validate("31497860�");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41035,11 +40378,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37264_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314978�37");
+             AbaRouteValidator.validate("314978�37");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41073,11 +40415,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37266_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31498653");
+            AbaRouteValidator.validate("31498653");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41111,11 +40452,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37268_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314980�67");
+            AbaRouteValidator.validate("314980�67");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41149,11 +40489,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37270_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31Q980874");
+            AbaRouteValidator.validate("31Q980874");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41187,11 +40526,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37272_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31498088x");
+            AbaRouteValidator.validate("31498088x");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41225,11 +40563,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37274_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3149$2694");
+            AbaRouteValidator.validate("3149$2694");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41263,11 +40600,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37276_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31498N791");
+            AbaRouteValidator.validate("31498N791");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41301,11 +40637,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37278_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("34985293");
+            AbaRouteValidator.validate("34985293");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41339,11 +40674,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37280_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3�4985329");
+            AbaRouteValidator.validate("3�4985329");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41377,11 +40711,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37282_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3  4985332");
+            AbaRouteValidator.validate("3  4985332");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41415,11 +40748,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37284_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3149p5345");
+            AbaRouteValidator.validate("3149p5345");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41453,11 +40785,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37286_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31498?442");
+            AbaRouteValidator.validate("31498?442");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41491,11 +40822,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37288_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31498o455");
+            AbaRouteValidator.validate("31498o455");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41529,11 +40859,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37290_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�985468");
+            AbaRouteValidator.validate("31�985468");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41567,11 +40896,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37292_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3149855?2");
+            AbaRouteValidator.validate("3149855?2");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41643,11 +40971,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37296_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3a4985581");
+            AbaRouteValidator.validate("3a4985581");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41681,11 +41008,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37298_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314985n17");
+            AbaRouteValidator.validate("314985n17");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41719,11 +41045,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37300_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31Y985659");
+            AbaRouteValidator.validate("31Y985659");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41757,11 +41082,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37302_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31495662");
+            AbaRouteValidator.validate("31495662");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41795,11 +41119,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37304_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314,86292");
+            AbaRouteValidator.validate("314,86292");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41833,11 +41156,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37306_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�986302");
+            AbaRouteValidator.validate("31�986302");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41871,11 +41193,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37308_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3n4987369");
+            AbaRouteValidator.validate("3n4987369");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41909,11 +41230,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37310_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31$987372");
+            AbaRouteValidator.validate("31$987372");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41947,11 +41267,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37312_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31987699");
+            AbaRouteValidator.validate("31987699");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -41985,11 +41304,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37314_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314u87712");
+            AbaRouteValidator.validate("314u87712");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42023,11 +41341,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37316_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31I987754");
+            AbaRouteValidator.validate("31I987754");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42061,11 +41378,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37318_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3149877t6");
+            AbaRouteValidator.validate("3149877t6");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42099,11 +41415,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37320_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31498909K");
+            AbaRouteValidator.validate("31498909K");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42137,11 +41452,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37322_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("314?90165");
+            AbaRouteValidator.validate("314?90165");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42175,11 +41489,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37324_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�386434");
+            AbaRouteValidator.validate("31�386434");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42213,11 +41526,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37326_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("316386�76");
+            AbaRouteValidator.validate("316386�76");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42251,11 +41563,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37328_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31I386489");
+            AbaRouteValidator.validate("31I386489");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42289,11 +41600,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37330_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31638?492");
+            AbaRouteValidator.validate("31638?492");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42327,11 +41637,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37332_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31�386735");
+            AbaRouteValidator.validate("31�386735");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42365,11 +41674,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37334_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("316�86777");
+            AbaRouteValidator.validate("316�86777");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42403,11 +41711,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37336_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3163868�3");
+            AbaRouteValidator.validate("3163868�3");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42441,11 +41748,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37338_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("316c86829");
+            AbaRouteValidator.validate("316c86829");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42479,11 +41785,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37340_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31x386832");
+            AbaRouteValidator.validate("31x386832");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42517,11 +41822,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37342_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3163868#5");
+            AbaRouteValidator.validate("3163868#5");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42555,11 +41859,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37344_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("31636858");
+            AbaRouteValidator.validate("31636858");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42593,11 +41896,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37346_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("316�86874");
+            AbaRouteValidator.validate("316�86874");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42631,11 +41933,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37348_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("321!70007");
+            AbaRouteValidator.validate("321!70007");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42669,11 +41970,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37350_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("32?070104");
+            AbaRouteValidator.validate("32?070104");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42707,11 +42007,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37352_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("32107�227");
+            AbaRouteValidator.validate("32107�227");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42745,11 +42044,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37354_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3210704U0");
+            AbaRouteValidator.validate("3210704U0");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42783,11 +42081,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37356_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("32100829");
+            AbaRouteValidator.validate("32100829");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42859,11 +42156,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37360_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("321071<29");
+            AbaRouteValidator.validate("321071<29");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42897,11 +42193,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37362_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("32107116T");
+            AbaRouteValidator.validate("32107116T");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42935,11 +42230,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37364_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3210�5866");
+            AbaRouteValidator.validate("3210�5866");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -42973,11 +42267,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37366_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("321075�34");
+            AbaRouteValidator.validate("321075�34");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -43011,11 +42304,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37368_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("3210<5947");
+            AbaRouteValidator.validate("3210<5947");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.
@@ -43049,11 +42341,10 @@ public class Test_AbaRouteValidator_17b extends TestCase {
     }
 
     public void testAbaNumberCheck_37370_bad() {
-        boolean returnBool;
 
         // Validate
         try {
-            returnBool = AbaRouteValidator.validate("321075�89");
+            AbaRouteValidator.validate("321075�89");
         } catch (AbaRouteValidationException e) {
 
             // This is good.  We were expecting an exception.

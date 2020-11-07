@@ -1,35 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-                             http://maven.apache.org/maven-v4_0_0.xsd">
-
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+        http://maven.apache.org/maven-v4_0_0.xsd">
     <!-- ============================================================================= -->
     <!--  Model Version                                                                -->
     <!-- ============================================================================= -->
     <modelVersion>4.0.0</modelVersion>
-
     <!-- ============================================================================= -->
     <!--  Artifact Information                                                         -->
     <!-- ============================================================================= -->
     <groupId>com.cardatechnologies</groupId>
     <artifactId>aba.routing.transit.validator</artifactId>
     <version>1.0.1-SNAPSHOT</version>
-
     <!-- ============================================================================= -->
     <!--  Miscellaneous Settings                                                       -->
     <!-- ============================================================================= -->
     <packaging>jar</packaging>
     <name>ABA Route Transit Number Validator</name>
-    <description>
-        This validator will confirm if an ABA Routing Transit Number Validator
+    <description>This validator will confirm if an ABA Routing Transit Number Validator
         is formatted correctly.  This does not guarantee if it's valid, only that
-        it has passed a small series of edits.
-    </description>
+        it has passed a small series of edits.</description>
     <inceptionYear>2015</inceptionYear>
     <url>http://cardatechnologies.com</url>
     <!--  Distribution Management   =================================================  -->
-    
     <distributionManagement>
         <snapshotRepository>
             <id>ossrh</id>
@@ -40,18 +32,12 @@
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
-
-
-
-
     <!--  Organization   ============================================================  -->
     <organization>
         <name>CardaTechnologies, LLC</name>
         <url>http://cardatechnologies.com/</url>
     </organization>
-
     <!--  Licenses   ================================================================  -->
-
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
@@ -59,7 +45,6 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
-
     <!--  Developers   ==============================================================  -->
     <developers>
         <!--  Daniel Carda   ====================================================  -->
@@ -72,16 +57,13 @@
             <organizationUrl />
             <roles />
             <timezone>America/Denver</timezone>
-            <properties>
-            </properties>
+            <properties />
         </developer>
     </developers>
-
     <!--  Prerequisites   ===========================================================  -->
     <prerequisites>
         <maven>3.6.0</maven>
     </prerequisites>
-
     <!--  Source Control Management   ===============================================  -->
     <scm>
         <connection>scm:git:git@github.com:dcarda/aba.route.validator.git</connection>
@@ -89,18 +71,15 @@
         <url>https://github.com/dcarda/aba.route.validator/tree/master</url>
         <tag>aba.routing.transit.validator-1.0.0-FINAL</tag>
     </scm>
-
     <!--  Issue Management   ========================================================  -->
     <issueManagement>
         <system>github</system>
         <url>https://github.com/dcarda/aba.route.validator/issues</url>
     </issueManagement>
-
     <!-- ============================================================================= -->
     <!--  Properties                                                                   -->
     <!-- ============================================================================= -->
     <properties>
-
         <!--  Compiler Settings  ================================================  -->
         <java.version>1.8</java.version>
         <javacDebug>true</javacDebug>
@@ -111,35 +90,39 @@
         <jdk.compiler.version>1.8</jdk.compiler.version>
         <jdk.version>1.8</jdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
         <!-- Plugins   ==========================================================  -->
         <version.compiler.plugin>3.8.1</version.compiler.plugin>
         <version.jar.plugin>3.2.0</version.jar.plugin>
-
         <!--      GitHub Deployment Properties   ====================================  -->
         <version.github.report.plugin>2.1.3</version.github.report.plugin>
         <version.github.site.plugin>0.11</version.github.site.plugin>
-
         <version.release.plugin>2.5.1</version.release.plugin>
-
-
         <site.url>https://devacfr.github.io/reflow-maven-skin/</site.url>
         <scm-url>https://github.com/dcarda/aba.route.validator/</scm-url>
-
-
         <!--  Test Related Plugins   ============================================  -->
         <version.junit>4.13</version.junit>
         <version.surefire.junit47.plugin>2.18.1</version.surefire.junit47.plugin>
-
     </properties>
-
     <!--  Dependency Management   ===================================================  -->
     <dependencyManagement />
-
     <!--  Dependencies   ============================================================  -->
     <dependencies>
 
         <!--  Testing Scope Dependencies   ======================================  -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.6.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <version>5.6.0</version>
+            <scope>test</scope>
+        </dependency>
+
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -147,10 +130,8 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
     <!--  Build   ===================================================================  -->
     <build>
-
         <!--  Resources   =======================================================  -->
         <resources>
             <resource>
@@ -160,15 +141,9 @@
                 </includes>
             </resource>
         </resources>
-
         <!--  Plugin Management   ===============================================  -->
         <pluginManagement>
-
             <plugins>
-
-
-
-
                 <!--  Maven Compiler Plugin   ===================================  -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -187,48 +162,41 @@
                         <verbose>${javacVerbose}</verbose>
                     </configuration>
                 </plugin>
-
-
                 <!--  GitHub Site Plugin   ======================================  -->
                 <!--
                       This is the plugin which will upload the site to the github pages.
                       Good reference here:  http://blog.akquinet.de/2012/04/12/maven-sites-reloaded/
                 -->
-<!--                <plugin>-->
-<!--                    <groupId>com.github.github</groupId>-->
-<!--                    <artifactId>site-maven-plugin</artifactId>-->
-<!--                    <version>${version.github.site.plugin}</version>-->
-<!--                    &lt;!&ndash; Plugin configuration goes here &ndash;&gt;-->
-<!--                    <configuration>-->
-<!--                        <message>Creating site for ${project.artifactId}, ${project.version}</message>-->
-
-<!--                        <server>github</server>-->
-<!--                        &lt;!&ndash; The commit message &ndash;&gt;-->
-<!--                        <message>Building site for my project</message>-->
-<!--                        &lt;!&ndash; The location where the site is uploaded &ndash;&gt;-->
-<!--                        <path>${site.path}</path>-->
-<!--                        &lt;!&ndash; Use merge or override the content &ndash;&gt;-->
-<!--                        <merge>true</merge>-->
-<!--                    </configuration>-->
-<!--                    <executions>-->
-<!--                        <execution>-->
-<!--                            <goals>-->
-<!--                                <goal>site</goal>-->
-<!--                            </goals>-->
-<!--                            <phase>site-deploy</phase>-->
-<!--                            <configuration>-->
-<!--                                &lt;!&ndash;-->
-<!--                                <path>${project.version}</path>-->
-<!--                                &ndash;&gt;-->
-<!--                                <merge>true</merge>-->
-<!--                            </configuration>-->
-<!--                        </execution>-->
-<!--                    </executions>-->
-<!--                </plugin>-->
-
-
-
-
+                <!--                <plugin>-->
+                <!--                    <groupId>com.github.github</groupId>-->
+                <!--                    <artifactId>site-maven-plugin</artifactId>-->
+                <!--                    <version>${version.github.site.plugin}</version>-->
+                <!--                    &lt;!&ndash; Plugin configuration goes here &ndash;&gt;-->
+                <!--                    <configuration>-->
+                <!--                        <message>Creating site for ${project.artifactId}, ${project.version}</message>-->
+                <!--                        <server>github</server>-->
+                <!--                        &lt;!&ndash; The commit message &ndash;&gt;-->
+                <!--                        <message>Building site for my project</message>-->
+                <!--                        &lt;!&ndash; The location where the site is uploaded &ndash;&gt;-->
+                <!--                        <path>${site.path}</path>-->
+                <!--                        &lt;!&ndash; Use merge or override the content &ndash;&gt;-->
+                <!--                        <merge>true</merge>-->
+                <!--                    </configuration>-->
+                <!--                    <executions>-->
+                <!--                        <execution>-->
+                <!--                            <goals>-->
+                <!--                                <goal>site</goal>-->
+                <!--                            </goals>-->
+                <!--                            <phase>site-deploy</phase>-->
+                <!--                            <configuration>-->
+                <!--                                &lt;!&ndash;-->
+                <!--                                <path>${project.version}</path>-->
+                <!--                                &ndash;&gt;-->
+                <!--                                <merge>true</merge>-->
+                <!--                            </configuration>-->
+                <!--                        </execution>-->
+                <!--                    </executions>-->
+                <!--                </plugin>-->
                 <!--  Maven Jar Plugin   ========================================  -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -243,7 +211,7 @@
                                 <!--  Manifest Information   =====================  -->
                                 <addClasspath>true</addClasspath>
                                 <classpathLayoutType>custom</classpathLayoutType>
-                                <customClasspathLayout>  ${line.separator}./lib/$${artifact.artifactId}-$${artifact.version}$${dashClassifier?}.$${artifact.extension}  </customClasspathLayout>
+                                <customClasspathLayout>${line.separator}./lib/$${artifact.artifactId}-$${artifact.version}$${dashClassifier?}.$${artifact.extension}</customClasspathLayout>
                             </manifest>
                             <manifestSections>
                                 <!-- =============================================  -->
@@ -304,52 +272,44 @@
                         </archive>
                     </configuration>
                 </plugin>
-
-
-
-<!--                &lt;!&ndash;  Maven Jar Plugin   ========================================  &ndash;&gt;-->
-<!--                <plugin>-->
-<!--                    <groupId>org.apache.maven.plugins</groupId>-->
-<!--                    <artifactId>maven-jar-plugin</artifactId>-->
-<!--                    <version>${version.jar.plugin}</version>-->
-<!--                    <configuration>-->
-<!--                        <archive>-->
-<!--                            <index>true</index>-->
-<!--                            <addMavenDescriptor>false</addMavenDescriptor>-->
-<!--                            <manifest>-->
-<!--                                <addClasspath>true</addClasspath>-->
-<!--                                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>-->
-<!--                                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>-->
-<!--                                <addExtensions>true</addExtensions>-->
-<!--&lt;!&ndash;                                <classpathMavenRepositoryLayout>true</classpathMavenRepositoryLayout>&ndash;&gt;-->
-<!--                            </manifest>-->
-<!--                                <manifestEntries>-->
-<!--                                    <Copyright>CardaTechnologies, LLC</Copyright>-->
-<!--                                    <Built-By>Daniel Carda</Built-By>-->
-<!--                                    <Maven-Version>${maven.version}</Maven-Version>-->
-<!--                                    <BuildTime>${maven.build.timestamp}</BuildTime>-->
-<!--                                    <Implementation-Build>${implementation.build}</Implementation-Build>-->
-
-<!--                                    <Implementation-URL>${project.url}</Implementation-URL>-->
-<!--                                    <Java-Version>${java.version}</Java-Version>-->
-<!--                                    <Java-Vendor>${java.vendor}</Java-Vendor>-->
-<!--                                    <Os-Name>${os.name}</Os-Name>-->
-<!--                                    <Os-Arch>${os.arch}</Os-Arch>-->
-<!--                                    <Os-Version>${os.version}</Os-Version>-->
-<!--                                    <Scm-Url>${project.scm.url}</Scm-Url>-->
-<!--                                    <Scm-Connection>${project.scm.connection}</Scm-Connection>-->
-<!--                                    <Scm-Revision>${buildNumber}</Scm-Revision>-->
-<!--                                    <Build-Timestamp>${build.datetime}</Build-Timestamp>-->
-<!--                                    <Maven-Version>${maven.version}</Maven-Version>-->
-
-<!--                                    <SVN-Revision>${buildNumber}</SVN-Revision>-->
-
-<!--                                </manifestEntries>-->
-
-<!--                        </archive>-->
-<!--                    </configuration>-->
-<!--                </plugin>-->
-
+                <!--                &lt;!&ndash;  Maven Jar Plugin   ========================================  &ndash;&gt;-->
+                <!--                <plugin>-->
+                <!--                    <groupId>org.apache.maven.plugins</groupId>-->
+                <!--                    <artifactId>maven-jar-plugin</artifactId>-->
+                <!--                    <version>${version.jar.plugin}</version>-->
+                <!--                    <configuration>-->
+                <!--                        <archive>-->
+                <!--                            <index>true</index>-->
+                <!--                            <addMavenDescriptor>false</addMavenDescriptor>-->
+                <!--                            <manifest>-->
+                <!--                                <addClasspath>true</addClasspath>-->
+                <!--                                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>-->
+                <!--                                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>-->
+                <!--                                <addExtensions>true</addExtensions>-->
+                <!--&lt;!&ndash;                                <classpathMavenRepositoryLayout>true</classpathMavenRepositoryLayout>&ndash;&gt;-->
+                <!--                            </manifest>-->
+                <!--                                <manifestEntries>-->
+                <!--                                    <Copyright>CardaTechnologies, LLC</Copyright>-->
+                <!--                                    <Built-By>Daniel Carda</Built-By>-->
+                <!--                                    <Maven-Version>${maven.version}</Maven-Version>-->
+                <!--                                    <BuildTime>${maven.build.timestamp}</BuildTime>-->
+                <!--                                    <Implementation-Build>${implementation.build}</Implementation-Build>-->
+                <!--                                    <Implementation-URL>${project.url}</Implementation-URL>-->
+                <!--                                    <Java-Version>${java.version}</Java-Version>-->
+                <!--                                    <Java-Vendor>${java.vendor}</Java-Vendor>-->
+                <!--                                    <Os-Name>${os.name}</Os-Name>-->
+                <!--                                    <Os-Arch>${os.arch}</Os-Arch>-->
+                <!--                                    <Os-Version>${os.version}</Os-Version>-->
+                <!--                                    <Scm-Url>${project.scm.url}</Scm-Url>-->
+                <!--                                    <Scm-Connection>${project.scm.connection}</Scm-Connection>-->
+                <!--                                    <Scm-Revision>${buildNumber}</Scm-Revision>-->
+                <!--                                    <Build-Timestamp>${build.datetime}</Build-Timestamp>-->
+                <!--                                    <Maven-Version>${maven.version}</Maven-Version>-->
+                <!--                                    <SVN-Revision>${buildNumber}</SVN-Revision>-->
+                <!--                                </manifestEntries>-->
+                <!--                        </archive>-->
+                <!--                    </configuration>-->
+                <!--                </plugin>-->
                 <!--  Maven Release Plugin   ====================================  -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -358,17 +318,13 @@
                     <configuration>
                         <pushChanges>false</pushChanges>
                         <localCheckout>true</localCheckout>
-
                         <!--
                                 During release:perform, enable the "release" profile
                         <releaseProfiles>src,javadoc</releaseProfiles>
                                -->
-
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <useReleaseProfile>false</useReleaseProfile>
                         <releaseProfiles>release</releaseProfiles>
-
-
                     </configuration>
                     <dependencies>
                         <dependency>
@@ -379,106 +335,97 @@
                         </dependency>
                     </dependencies>
                 </plugin>
-<!--                &lt;!&ndash;  Maven Site Plugin   =======================================  &ndash;&gt;-->
-<!--                <plugin>-->
-<!--                    <groupId>org.apache.maven.plugins</groupId>-->
-<!--                    <artifactId>maven-site-plugin</artifactId>-->
-<!--                    <version>3.7.1</version>-->
-<!--                    <configuration>-->
-<!--                        <inputEncoding>UTF-8</inputEncoding>-->
-<!--                        <outputEncoding>UTF-8</outputEncoding>-->
-<!--                        <relativizeDecorationLinks>true</relativizeDecorationLinks>-->
-<!--                        <generateReports>true</generateReports>-->
-
-<!--                        &lt;!&ndash; Site deployment done using GitHub site plugin &ndash;&gt;-->
-<!--                        <skipDeploy>true</skipDeploy>-->
-<!--                    </configuration>-->
-<!--                    <dependencies>-->
-<!--                        <dependency>-->
-<!--                            <groupId>lt.velykis.maven.skins</groupId>-->
-<!--                            <artifactId>reflow-velocity-tools</artifactId>-->
-<!--                            <version>${version.reflow.velocity.tools}</version>-->
-<!--                        </dependency>-->
-<!--                        &lt;!&ndash; Reflow skin requires Velocity >= 1.7  &ndash;&gt;-->
-<!--                        <dependency>-->
-<!--                            <groupId>org.apache.velocity</groupId>-->
-<!--                            <artifactId>velocity</artifactId>-->
-<!--                            <version>${version.apache.velocity}</version>-->
-<!--                        </dependency>-->
-<!--                        <dependency>-->
-<!--                            <groupId>org.apache.maven.doxia</groupId>-->
-<!--                            <artifactId>doxia-site-renderer</artifactId>-->
-<!--                            <version>1.8</version>-->
-<!--                        </dependency>-->
-<!--                    </dependencies>-->
-<!--                </plugin>-->
-<!--                &lt;!&ndash;  Surefire Plugin   =========================================  &ndash;&gt;-->
-<!--                <plugin>-->
-<!--                    <groupId>org.apache.maven.plugins</groupId>-->
-<!--                    <artifactId>maven-surefire-plugin</artifactId>-->
-<!--                    <version>${version.surefire.report.plugin}</version>-->
-<!--                    <dependencies>-->
-<!--                        &lt;!&ndash; Force using the latest JUnit 47 provider &ndash;&gt;-->
-<!--                        <dependency>-->
-<!--                            <groupId>org.apache.maven.surefire</groupId>-->
-<!--                            <artifactId>surefire-junit47</artifactId>-->
-<!--                            <version>${version.surefire.junit47.plugin}</version>-->
-<!--                        </dependency>-->
-<!--                    </dependencies>-->
-<!--                    <configuration>-->
-<!--                        <skipTests>false</skipTests>-->
-<!--                        <testFailureIgnore>false</testFailureIgnore>-->
-<!--                    </configuration>-->
-<!--                    <executions>-->
-<!--                        <execution>-->
-<!--                            <id>test-phase-execution</id>-->
-<!--                            <phase>test</phase>-->
-<!--                            <goals>-->
-<!--                                <goal>test</goal>-->
-<!--                            </goals>-->
-<!--                        </execution>-->
-<!--                    </executions>-->
-<!--                </plugin>-->
-<!--                &lt;!&ndash;  Surefire Report Plugin   ==================================  &ndash;&gt;-->
-<!--                <plugin>-->
-<!--                    <groupId>org.apache.maven.plugins</groupId>-->
-<!--                    <artifactId>maven-surefire-report-plugin</artifactId>-->
-<!--                    <version>${version.surefire.report.plugin}</version>-->
-<!--                    <executions>-->
-<!--                        <execution>-->
-<!--                            <phase>test</phase>-->
-<!--                            <goals>-->
-<!--                                <goal>report-only</goal>-->
-<!--                            </goals>-->
-<!--                        </execution>-->
-<!--                    </executions>-->
-<!--                </plugin>-->
-
+                <!--                &lt;!&ndash;  Maven Site Plugin   =======================================  &ndash;&gt;-->
+                <!--                <plugin>-->
+                <!--                    <groupId>org.apache.maven.plugins</groupId>-->
+                <!--                    <artifactId>maven-site-plugin</artifactId>-->
+                <!--                    <version>3.7.1</version>-->
+                <!--                    <configuration>-->
+                <!--                        <inputEncoding>UTF-8</inputEncoding>-->
+                <!--                        <outputEncoding>UTF-8</outputEncoding>-->
+                <!--                        <relativizeDecorationLinks>true</relativizeDecorationLinks>-->
+                <!--                        <generateReports>true</generateReports>-->
+                <!--                        &lt;!&ndash; Site deployment done using GitHub site plugin &ndash;&gt;-->
+                <!--                        <skipDeploy>true</skipDeploy>-->
+                <!--                    </configuration>-->
+                <!--                    <dependencies>-->
+                <!--                        <dependency>-->
+                <!--                            <groupId>lt.velykis.maven.skins</groupId>-->
+                <!--                            <artifactId>reflow-velocity-tools</artifactId>-->
+                <!--                            <version>${version.reflow.velocity.tools}</version>-->
+                <!--                        </dependency>-->
+                <!--                        &lt;!&ndash; Reflow skin requires Velocity >= 1.7  &ndash;&gt;-->
+                <!--                        <dependency>-->
+                <!--                            <groupId>org.apache.velocity</groupId>-->
+                <!--                            <artifactId>velocity</artifactId>-->
+                <!--                            <version>${version.apache.velocity}</version>-->
+                <!--                        </dependency>-->
+                <!--                        <dependency>-->
+                <!--                            <groupId>org.apache.maven.doxia</groupId>-->
+                <!--                            <artifactId>doxia-site-renderer</artifactId>-->
+                <!--                            <version>1.8</version>-->
+                <!--                        </dependency>-->
+                <!--                    </dependencies>-->
+                <!--                </plugin>-->
+                <!--                &lt;!&ndash;  Surefire Plugin   =========================================  &ndash;&gt;-->
+                <!--                <plugin>-->
+                <!--                    <groupId>org.apache.maven.plugins</groupId>-->
+                <!--                    <artifactId>maven-surefire-plugin</artifactId>-->
+                <!--                    <version>${version.surefire.report.plugin}</version>-->
+                <!--                    <dependencies>-->
+                <!--                        &lt;!&ndash; Force using the latest JUnit 47 provider &ndash;&gt;-->
+                <!--                        <dependency>-->
+                <!--                            <groupId>org.apache.maven.surefire</groupId>-->
+                <!--                            <artifactId>surefire-junit47</artifactId>-->
+                <!--                            <version>${version.surefire.junit47.plugin}</version>-->
+                <!--                        </dependency>-->
+                <!--                    </dependencies>-->
+                <!--                    <configuration>-->
+                <!--                        <skipTests>false</skipTests>-->
+                <!--                        <testFailureIgnore>false</testFailureIgnore>-->
+                <!--                    </configuration>-->
+                <!--                    <executions>-->
+                <!--                        <execution>-->
+                <!--                            <id>test-phase-execution</id>-->
+                <!--                            <phase>test</phase>-->
+                <!--                            <goals>-->
+                <!--                                <goal>test</goal>-->
+                <!--                            </goals>-->
+                <!--                        </execution>-->
+                <!--                    </executions>-->
+                <!--                </plugin>-->
+                <!--                &lt;!&ndash;  Surefire Report Plugin   ==================================  &ndash;&gt;-->
+                <!--                <plugin>-->
+                <!--                    <groupId>org.apache.maven.plugins</groupId>-->
+                <!--                    <artifactId>maven-surefire-report-plugin</artifactId>-->
+                <!--                    <version>${version.surefire.report.plugin}</version>-->
+                <!--                    <executions>-->
+                <!--                        <execution>-->
+                <!--                            <phase>test</phase>-->
+                <!--                            <goals>-->
+                <!--                                <goal>report-only</goal>-->
+                <!--                            </goals>-->
+                <!--                        </execution>-->
+                <!--                    </executions>-->
+                <!--                </plugin>-->
             </plugins>
         </pluginManagement>
-
         <!--  Plugins   =========================================================  -->
         <plugins>
-
-
-
-
-
             <!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-gpg-plugin</artifactId>-->
-<!--                <version>1.5</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <id>sign-artifacts</id>-->
-<!--                        <phase>verify</phase>-->
-<!--                        <goals>-->
-<!--                            <goal>sign</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
-
+            <!--                <groupId>org.apache.maven.plugins</groupId>-->
+            <!--                <artifactId>maven-gpg-plugin</artifactId>-->
+            <!--                <version>1.5</version>-->
+            <!--                <executions>-->
+            <!--                    <execution>-->
+            <!--                        <id>sign-artifacts</id>-->
+            <!--                        <phase>verify</phase>-->
+            <!--                        <goals>-->
+            <!--                            <goal>sign</goal>-->
+            <!--                        </goals>-->
+            <!--                    </execution>-->
+            <!--                </executions>-->
+            <!--            </plugin>-->
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
@@ -490,21 +437,14 @@
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>
                 </configuration>
             </plugin>
-
-
-
-
             <!--  Compiler Plugin   =============================================  -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
             </plugin>
         </plugins>
-
     </build>
-
     <!--  Reporting   ===============================================================  -->
-
     <profiles>
         <profile>
             <id>src</id>
@@ -548,62 +488,53 @@
                 </plugins>
             </build>
         </profile>
-
         <profile>
             <id>release</id>
-
-
             <!-- ============================================================================= -->
             <!--  Properties                                                                   -->
             <!-- ============================================================================= -->
             <properties>
                 <version.scm.provider.gitexe>1.9.2</version.scm.provider.gitexe>
             </properties>
-
             <build>
                 <!--
                 ...
                 javadoc, source and gpg plugin from above
                 ...
                 -->
-
                 <plugins>
-
-<!--                    &lt;!&ndash;  Maven Site Plugin   =======================================  &ndash;&gt;-->
-<!--                    <plugin>-->
-<!--                        <groupId>org.apache.maven.plugins</groupId>-->
-<!--                        <artifactId>maven-site-plugin</artifactId>-->
-<!--                        <version>3.7.1</version>-->
-<!--                        <configuration>-->
-<!--                            <inputEncoding>UTF-8</inputEncoding>-->
-<!--                            <outputEncoding>UTF-8</outputEncoding>-->
-<!--                            <relativizeDecorationLinks>true</relativizeDecorationLinks>-->
-<!--                            <generateReports>true</generateReports>-->
-
-<!--                            &lt;!&ndash; Site deployment done using GitHub site plugin &ndash;&gt;-->
-<!--                            <skipDeploy>true</skipDeploy>-->
-<!--                        </configuration>-->
-<!--                        <dependencies>-->
-<!--                            <dependency>-->
-<!--                                <groupId>lt.velykis.maven.skins</groupId>-->
-<!--                                <artifactId>reflow-velocity-tools</artifactId>-->
-<!--                                <version>${version.reflow.velocity.tools}</version>-->
-<!--                            </dependency>-->
-<!--                            &lt;!&ndash; Reflow skin requires Velocity >= 1.7  &ndash;&gt;-->
-<!--                            <dependency>-->
-<!--                                <groupId>org.apache.velocity</groupId>-->
-<!--                                <artifactId>velocity</artifactId>-->
-<!--                                <version>${version.apache.velocity}</version>-->
-<!--                            </dependency>-->
-<!--                            <dependency>-->
-<!--                                <groupId>org.apache.maven.doxia</groupId>-->
-<!--                                <artifactId>doxia-site-renderer</artifactId>-->
-<!--                                <version>1.8</version>-->
-<!--                            </dependency>-->
-<!--                        </dependencies>-->
-<!--                    </plugin>-->
-
-
+                    <!--                    &lt;!&ndash;  Maven Site Plugin   =======================================  &ndash;&gt;-->
+                    <!--                    <plugin>-->
+                    <!--                        <groupId>org.apache.maven.plugins</groupId>-->
+                    <!--                        <artifactId>maven-site-plugin</artifactId>-->
+                    <!--                        <version>3.7.1</version>-->
+                    <!--                        <configuration>-->
+                    <!--                            <inputEncoding>UTF-8</inputEncoding>-->
+                    <!--                            <outputEncoding>UTF-8</outputEncoding>-->
+                    <!--                            <relativizeDecorationLinks>true</relativizeDecorationLinks>-->
+                    <!--                            <generateReports>true</generateReports>-->
+                    <!--                            &lt;!&ndash; Site deployment done using GitHub site plugin &ndash;&gt;-->
+                    <!--                            <skipDeploy>true</skipDeploy>-->
+                    <!--                        </configuration>-->
+                    <!--                        <dependencies>-->
+                    <!--                            <dependency>-->
+                    <!--                                <groupId>lt.velykis.maven.skins</groupId>-->
+                    <!--                                <artifactId>reflow-velocity-tools</artifactId>-->
+                    <!--                                <version>${version.reflow.velocity.tools}</version>-->
+                    <!--                            </dependency>-->
+                    <!--                            &lt;!&ndash; Reflow skin requires Velocity >= 1.7  &ndash;&gt;-->
+                    <!--                            <dependency>-->
+                    <!--                                <groupId>org.apache.velocity</groupId>-->
+                    <!--                                <artifactId>velocity</artifactId>-->
+                    <!--                                <version>${version.apache.velocity}</version>-->
+                    <!--                            </dependency>-->
+                    <!--                            <dependency>-->
+                    <!--                                <groupId>org.apache.maven.doxia</groupId>-->
+                    <!--                                <artifactId>doxia-site-renderer</artifactId>-->
+                    <!--                                <version>1.8</version>-->
+                    <!--                            </dependency>-->
+                    <!--                        </dependencies>-->
+                    <!--                    </plugin>-->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
@@ -618,8 +549,6 @@
                             </execution>
                         </executions>
                     </plugin>
-
-
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
@@ -634,23 +563,20 @@
                             </execution>
                         </executions>
                     </plugin>
-
-<!--                    <plugin>-->
-<!--                        <groupId>org.apache.maven.plugins</groupId>-->
-<!--                        <artifactId>maven-gpg-plugin</artifactId>-->
-<!--                        <version>1.6</version>-->
-<!--                        <executions>-->
-<!--                            <execution>-->
-<!--                                <id>sign-artifacts</id>-->
-<!--                                <phase>verify</phase>-->
-<!--                                <goals>-->
-<!--                                    <goal>sign</goal>-->
-<!--                                </goals>-->
-<!--                            </execution>-->
-<!--                        </executions>-->
-<!--                    </plugin>-->
-
-
+                    <!--                    <plugin>-->
+                    <!--                        <groupId>org.apache.maven.plugins</groupId>-->
+                    <!--                        <artifactId>maven-gpg-plugin</artifactId>-->
+                    <!--                        <version>1.6</version>-->
+                    <!--                        <executions>-->
+                    <!--                            <execution>-->
+                    <!--                                <id>sign-artifacts</id>-->
+                    <!--                                <phase>verify</phase>-->
+                    <!--                                <goals>-->
+                    <!--                                    <goal>sign</goal>-->
+                    <!--                                </goals>-->
+                    <!--                            </execution>-->
+                    <!--                        </executions>-->
+                    <!--                    </plugin>-->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-release-plugin</artifactId>
@@ -662,12 +588,9 @@
                             <goals>deploy</goals>
                         </configuration>
                     </plugin>
-
                 </plugins>
-
             </build>
         </profile>
-
         <!--  Generate Reports   ========================================================  -->
         <profile>
             <id>genReports</id>
@@ -688,13 +611,11 @@
                 <version.taglist.report.plugin>2.4</version.taglist.report.plugin>
                 <version.versions.report.plugin>2.1.4</version.versions.report.plugin>
                 <version.maven.changelog.plugin>2.3</version.maven.changelog.plugin>
-
                 <!--      Open Clover Reporting Properties   ========================  -->
                 <version.openclover.clover>4.4.1</version.openclover.clover>
                 <version.openclover.runtime>4.4.1</version.openclover.runtime>
                 <version.openclover.maven.plugin>4.4.1</version.openclover.maven.plugin>
                 <version.openclover.aspectj.compiler>1.0.2</version.openclover.aspectj.compiler>
-
             </properties>
             <!--  Dependencies   ====================================================  -->
             <dependencies />
@@ -716,21 +637,18 @@
                             <!-- Site deployment done using GitHub site plugin -->
                             <skipDeploy>true</skipDeploy>
                         </configuration>
-
                         <dependencies>
-                        <dependency>
-                            <groupId>io.github.devacfr.maven.skins</groupId>
-                            <artifactId>reflow-velocity-tools</artifactId>
-                            <version>2.3.0</version>
-                        </dependency>
-                        <dependency>
-                            <groupId>org.apache.maven.doxia</groupId>
-                            <artifactId>doxia-module-markdown</artifactId>
-                            <version>1.9</version>
-                        </dependency>
-
+                            <dependency>
+                                <groupId>io.github.devacfr.maven.skins</groupId>
+                                <artifactId>reflow-velocity-tools</artifactId>
+                                <version>2.3.0</version>
+                            </dependency>
+                            <dependency>
+                                <groupId>org.apache.maven.doxia</groupId>
+                                <artifactId>doxia-module-markdown</artifactId>
+                                <version>1.9</version>
+                            </dependency>
                         </dependencies>
-
                         <!--                                                           -->
                         <!--        <version.reflow.velocity.tools>1.1.1</version.reflow.velocity.tools>-->
                         <!--        <version.apache.velocity>1.7</version.apache.velocity>-->
@@ -787,14 +705,15 @@
                             </execution>
                         </executions>
                     </plugin>
-                </plugins>  <!-- End:  Plugins  -->
-
+                </plugins>
+                <!-- End:  Plugins  -->
                 <!--  Plugin Management   ===========================================  -->
                 <pluginManagement>
                     <plugins />
-                </pluginManagement>  <!--  End:  pluginManagement  -->
-            </build>  <!--  End:  Build  -->
-
+                </pluginManagement>
+                <!--  End:  pluginManagement  -->
+            </build>
+            <!--  End:  Build  -->
             <!--  Reporting   =======================================================  -->
             <reporting>
                 <plugins>
@@ -1048,20 +967,20 @@
                         </reportSets>
                         <configuration />
                     </plugin>
-
                     <plugin>
                         <groupId>com.github.sevntu-checkstyle</groupId>
                         <artifactId>dsm-maven-plugin</artifactId>
                         <version>2.2.0</version>
                     </plugin>
-
-
                 </plugins>
                 <!--  End:  Plugins  -->
             </reporting>
             <!--  End:  Reporting  -->
         </profile>
         <!--  End: Profile - genReports  -->
-    </profiles>  <!--  End: Profiles  -->
-
+    </profiles>
+    <!--  End: Profiles  -->
 </project>
+
+
+
