@@ -68,7 +68,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30002_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -87,7 +86,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30003_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -103,7 +101,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30004_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -157,7 +154,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30007_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -173,7 +169,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30008_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -192,7 +187,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30009_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -208,7 +202,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30010_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -227,7 +220,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30011_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -243,7 +235,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30012_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -262,7 +253,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30013_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -278,7 +268,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30014_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -297,7 +286,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30015_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -313,7 +301,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30016_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -332,7 +319,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30017_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -348,7 +334,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30018_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -367,7 +352,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30019_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -383,7 +367,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30020_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -402,7 +385,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30021_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -418,7 +400,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30022_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -441,7 +422,7 @@ public class Test_AbaRouteValidator_14 extends TestCase {
 
         // Validate
         try {
-            AbaRouteValidator.validate("262277189");
+            returnBool = AbaRouteValidator.validate("262277189");
         } catch (AbaRouteValidationException e) {
 
             // This should not have happened
@@ -449,7 +430,7 @@ public class Test_AbaRouteValidator_14 extends TestCase {
         }
 
         // This is a good thing!
-        assertTrue(true);
+        assertTrue(returnBool );
     }
 
     public void testAbaNumberCheck_30024_bad() {
@@ -523,7 +504,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30028_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -577,7 +557,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30031_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -593,7 +572,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30032_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -612,7 +590,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30033_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -628,7 +605,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30034_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -647,7 +623,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30035_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -663,7 +638,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30036_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -682,7 +656,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30037_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -698,7 +671,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30038_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -717,7 +689,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30039_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -733,7 +704,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30040_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -752,7 +722,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30041_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -768,7 +737,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30042_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -787,7 +755,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30043_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -822,7 +789,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30045_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -838,7 +804,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30046_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -857,7 +822,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30047_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -873,7 +837,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30048_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -892,7 +855,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30049_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -908,7 +870,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30050_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -927,7 +888,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30051_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -943,7 +903,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30052_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -962,7 +921,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30053_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -978,7 +936,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30054_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -997,7 +954,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30055_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1013,7 +969,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30056_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1032,7 +987,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30057_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1048,7 +1002,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30058_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1067,7 +1020,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30059_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1083,7 +1035,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30060_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1102,7 +1053,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30061_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1118,7 +1068,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30062_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1137,7 +1086,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30063_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1153,7 +1101,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30064_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1172,7 +1119,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30065_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1188,7 +1134,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30066_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1207,7 +1152,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30067_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1223,7 +1167,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30068_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1242,7 +1185,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30069_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1258,7 +1200,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30070_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1277,7 +1218,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30071_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1293,7 +1233,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30072_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1312,7 +1251,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30073_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1328,7 +1266,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30074_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1347,7 +1284,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30075_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1363,7 +1299,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30076_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1382,7 +1317,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30077_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1398,7 +1332,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30078_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1417,7 +1350,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30079_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1452,7 +1384,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30081_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1468,7 +1399,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30082_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1487,7 +1417,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30083_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1503,7 +1432,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30084_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1522,7 +1450,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30085_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1538,7 +1465,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30086_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1557,7 +1483,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30087_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1573,7 +1498,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30088_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1592,7 +1516,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30089_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1608,7 +1531,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30090_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1627,7 +1549,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30091_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1643,7 +1564,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30092_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1662,7 +1582,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30093_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1678,7 +1597,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30094_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1697,7 +1615,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30095_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1713,7 +1630,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30096_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1732,7 +1648,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30097_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1748,7 +1663,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30098_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1767,7 +1681,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30099_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1802,7 +1715,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30101_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1818,7 +1730,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30102_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1837,7 +1748,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30103_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1853,7 +1763,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30104_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1872,7 +1781,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30105_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1888,7 +1796,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30106_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1907,7 +1814,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30107_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1923,7 +1829,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30108_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1942,7 +1847,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30109_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1958,7 +1862,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30110_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1977,7 +1880,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30111_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -1993,7 +1895,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30112_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2012,7 +1913,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30113_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2028,7 +1928,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30114_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2047,7 +1946,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30115_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2063,7 +1961,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30116_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2082,7 +1979,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30117_good() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2098,7 +1994,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30118_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2121,7 +2016,7 @@ public class Test_AbaRouteValidator_14 extends TestCase {
 
         // Validate
         try {
-            AbaRouteValidator.validate("263078837");
+            returnBool = AbaRouteValidator.validate("263078837");
         } catch (AbaRouteValidationException e) {
 
             // This should not have happened
@@ -2168,7 +2063,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30122_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2203,7 +2097,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30124_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2238,7 +2131,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30126_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2296,7 +2188,7 @@ public class Test_AbaRouteValidator_14 extends TestCase {
 
         // Validate
         try {
-            AbaRouteValidator.validate("263078950");
+            returnBool =  AbaRouteValidator.validate("263078950");
         } catch (AbaRouteValidationException e) {
 
             // This should not have happened
@@ -2304,7 +2196,7 @@ public class Test_AbaRouteValidator_14 extends TestCase {
         }
 
         // This is a good thing!
-        assertTrue(true);
+        assertTrue(returnBool );
     }
 
     public void testAbaNumberCheck_30130_bad() {
@@ -2343,7 +2235,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30132_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2378,7 +2269,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30134_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2413,7 +2303,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30136_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2448,7 +2337,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30138_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2483,7 +2371,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30140_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2518,7 +2405,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30142_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2553,7 +2439,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30144_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2588,7 +2473,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30146_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2623,7 +2507,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30148_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2658,7 +2541,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30150_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2693,7 +2575,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30152_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2728,7 +2609,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30154_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2763,7 +2643,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30156_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2798,7 +2677,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30158_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2833,7 +2711,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30160_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2868,7 +2745,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30162_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2903,7 +2779,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30164_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2938,7 +2813,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30166_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -2973,7 +2847,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30168_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3008,7 +2881,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30170_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3043,7 +2915,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30172_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3078,7 +2949,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30174_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3113,7 +2983,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30176_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3148,7 +3017,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30178_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3183,7 +3051,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30180_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3218,7 +3085,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30182_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3253,7 +3119,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30184_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3288,7 +3153,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30186_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3323,7 +3187,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30188_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3358,7 +3221,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30190_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3393,7 +3255,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30192_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3428,7 +3289,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30194_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3463,7 +3323,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30196_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3498,7 +3357,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30198_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3533,7 +3391,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30200_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3568,7 +3425,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30202_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3603,7 +3459,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30204_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3638,7 +3493,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30206_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3673,7 +3527,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30208_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3708,7 +3561,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30210_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3743,7 +3595,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30212_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3778,7 +3629,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30214_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3813,7 +3663,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30216_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3848,7 +3697,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30218_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3883,7 +3731,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30220_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3918,7 +3765,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30222_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3953,7 +3799,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30224_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -3988,7 +3833,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30226_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4023,7 +3867,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30228_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4058,7 +3901,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30230_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4093,7 +3935,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30232_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4128,7 +3969,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30234_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4163,7 +4003,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30236_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4198,7 +4037,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30238_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4233,7 +4071,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30240_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4268,7 +4105,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30242_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4303,7 +4139,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30244_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4338,7 +4173,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30246_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4373,7 +4207,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30248_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4408,7 +4241,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30250_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4443,7 +4275,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30252_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4478,7 +4309,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30254_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4513,7 +4343,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30256_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4548,7 +4377,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30258_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4583,7 +4411,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30260_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4618,7 +4445,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30262_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4653,7 +4479,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30264_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4688,7 +4513,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30266_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4723,7 +4547,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30268_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4758,7 +4581,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30270_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4793,7 +4615,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30272_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4828,7 +4649,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30274_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4863,7 +4683,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30276_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4898,7 +4717,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30278_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4933,7 +4751,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30280_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -4968,7 +4785,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30282_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -5003,7 +4819,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30284_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -5038,7 +4853,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30286_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -5073,7 +4887,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30288_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -5108,7 +4921,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30290_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -5143,7 +4955,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30292_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -5178,7 +4989,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30294_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -5213,7 +5023,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30296_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -5248,7 +5057,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30298_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -5283,7 +5091,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30300_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -5318,7 +5125,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30302_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -5353,7 +5159,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30304_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -5388,7 +5193,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30306_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -5423,7 +5227,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30308_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -5458,7 +5261,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30310_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -5493,7 +5295,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30312_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -5528,7 +5329,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30314_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -5563,7 +5363,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30316_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -5598,7 +5397,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30318_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
@@ -5668,7 +5466,7 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30322_bad() {
-        boolean returnBool = false;
+
 
         // Validate
         try {
@@ -5738,7 +5536,6 @@ public class Test_AbaRouteValidator_14 extends TestCase {
     }
 
     public void testAbaNumberCheck_30326_bad() {
-        boolean returnBool = false;
 
         // Validate
         try {
