@@ -38,8 +38,6 @@ import junit.framework.TestCase;
 public class Test_AbaRouteValidator_14
         extends TestCase {
 
-    AbaRouteValidator aObj;
-
     /**
      * Create the test case
      *
@@ -53,9 +51,6 @@ public class Test_AbaRouteValidator_14
     protected void tearDown()
             throws Exception {
         super.tearDown();
-
-        // Remove the reference
-        aObj = null;
     }
 
     /**
