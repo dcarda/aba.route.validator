@@ -1,23 +1,13 @@
-/* ***************************************************************************************
- * Class: com.cardatechnologies.utils.validators.abaroutevalidator.Test_AbaRouteValidator_01.java
- * Date:  2015/02/12
- * ***************************************************************************************
+/* ---------------------------------------------------------------------------------------
+ * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.Test_AbaRouteValidator_01.java
+ * Date:   2015/01/15
+ * ---------------------------------------------------------------------------------------
  *
- * Copyright 2015 - CardaTechnologies, LLC
+ *  License: Apache 2.0
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- *
- * ***************************************************************************************
+ *  This software is provided "AS IS" without warranty of any kind, either expressed or implied,
+ *  including, but not limited to, the implied warranties of merchantability and fitness
+ *  for a particular purpose.
  */
 
 package com.cardatechnologies.utils.validators.abaroutevalidator;
@@ -28,10 +18,21 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
 
 import junit.framework.TestCase;
 
-//~--- classes ----------------------------------------------------------------
-
 /**
- * Unit test for simple App.
+ * Package:    com.cardatechnologies.utils.validators.abaroutevalidator
+ * Class:      Test_AbaRouteValidator_01.java
+ * Desc:       ...
+ *
+ * @author     Daniel Carda
+ *
+ * Maintenance History:
+ * <p><pre>
+ * yyyy mm dd  Who               Description
+ * ----------  ----------------  ----------------------------------------------------
+ * 2020/12/20  JavaDan           Initial Module Creation...
+ * </pre>
+ *
+ * Copyright, © 2020 - Carda Technologies, LLC
  */
 public class Test_AbaRouteValidator_01
         extends TestCase {
@@ -45,25 +46,9 @@ public class Test_AbaRouteValidator_01
         super( testName );
     }
 
-    //~--- set methods --------------------------------------------------------
-
     /**
      * Method description
      *
-     * @throws Exception
-     */
-    @Override
-    protected void setUp()
-            throws Exception {
-        super.setUp();
-    }
-
-    //~--- methods ------------------------------------------------------------
-
-    /**
-     * Method description
-     *
-     * @throws Exception
      */
     @Override
     protected void tearDown()
@@ -72,16 +57,16 @@ public class Test_AbaRouteValidator_01
     }
 
     /**
-     * Rigourous Test :-)
+     * Rigorous Test :-)
      */
     public void testApp() {
-
         boolean returnBool = false;
 
         // Validate
         try {
             returnBool = AbaRouteValidator.validate( "302075018" );
-        } catch( AbaRouteValidationException e ) {
+        }
+        catch( AbaRouteValidationException e ) {
             fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
         }
 
@@ -98,7 +83,9 @@ public class Test_AbaRouteValidator_01
         // Validate
         try {
             AbaRouteValidator.validate( abaNumber );
-        } catch( AbaRouteValidationException e ) {
+        }
+        catch( AbaRouteValidationException e ) {
+
             assertTrue( true );
 
             return;
@@ -117,7 +104,8 @@ public class Test_AbaRouteValidator_01
         // Validate
         try {
             AbaRouteValidator.validate( abaNumber );
-        } catch( AbaRouteValidationException e ) {
+        }
+        catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
             assertTrue( true );
@@ -139,7 +127,9 @@ public class Test_AbaRouteValidator_01
         // Validate
         try {
             AbaRouteValidator.validate( abaNumber );
-        } catch( AbaRouteValidationException e ) {
+        }
+        catch( AbaRouteValidationException e ) {
+
             assertTrue( true );
 
             return;
@@ -158,7 +148,9 @@ public class Test_AbaRouteValidator_01
         // Validate
         try {
             AbaRouteValidator.validate( abaNumber );
-        } catch( AbaRouteValidationException e ) {
+        }
+        catch( AbaRouteValidationException e ) {
+
             assertTrue( true );
 
             // We're done, just return.
@@ -178,7 +170,9 @@ public class Test_AbaRouteValidator_01
         // Validate
         try {
             AbaRouteValidator.validate( abaNumber );
-        } catch( AbaRouteValidationException e ) {
+        }
+        catch( AbaRouteValidationException e ) {
+
             assertTrue( true );
 
             // We're done, just return.
@@ -188,11 +182,17 @@ public class Test_AbaRouteValidator_01
         // If it gets here its bad
         fail( "Should not have got here" );
     }
+
+    @Override
+    protected void setUp()
+            throws Exception {
+        super.setUp();
+    }
 }
 
 /* ***************************************************************************************
  * Copyright 2015 - CardaTechnologies, LLC
  *
- * Class: com.cardatechnologies.utils.validators.abaroutevalidator.Test_AbaRouteValidator_01.java  
- * Date:  2015/02/12
+ * Class: com.cardatechnologies.utils.validators.abaroutevalidator.Test_AbaRouteValidator_01.java
+ * Date:  2015/01/15
  *************************************************************************************** */
