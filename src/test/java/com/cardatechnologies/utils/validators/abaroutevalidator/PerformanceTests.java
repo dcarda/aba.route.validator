@@ -1,17 +1,51 @@
+/* ---------------------------------------------------------------------------------------
+ * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.PerformanceTests.java
+ * Date:   2020/12/21
+ * ---------------------------------------------------------------------------------------
+ *
+ *  License: Apache 2.0
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+ *  this file except in compliance with the License.
+ *
+ *  You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software distributed under
+ *  the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
+ *  OF ANY KIND, either express or implied including the implied warranties of
+ *  merchantability and fitness for a particular purpose.
+ *
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+
 package com.cardatechnologies.utils.validators.abaroutevalidator;
 
 //~--- non-JDK imports --------------------------------------------------------
+
+import org.junit.Test;
 
 import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException;
 
 import junit.framework.TestCase;
 
-import org.junit.Test;
-
-//~--- classes ----------------------------------------------------------------
-
 /**
- * Unit test for simple App.
+ * Package:    com.cardatechnologies.utils.validators.abaroutevalidator
+ * Class:      PerformanceTests.java
+ * Desc:       ...
+ *
+ * @author     Daniel Carda
+ *
+ * Maintenance History:
+ * <p><pre>
+ * yyyy mm dd  Who               Description
+ * ----------  ----------------  ----------------------------------------------------
+ * 2020/12/21  JavaDan           Initial Module Creation...
+ * </pre>
+ *
+ * Copyright, © 2020 - Carda Technologies, LLC
  */
 public class PerformanceTests
         extends TestCase {
@@ -24,16 +58,6 @@ public class PerformanceTests
     public PerformanceTests( String testName ) {
         super( testName );
     }
-
-    //~--- set methods --------------------------------------------------------
-
-    @Override
-    protected void setUp()
-            throws Exception {
-        super.setUp();
-    }
-
-    //~--- methods ------------------------------------------------------------
 
     @Override
     protected void tearDown()
@@ -54,6 +78,7 @@ public class PerformanceTests
 
         for( int i = 0; i < _maxLoops; i++ ) {
             try {
+
                 AbaRouteValidator.validate( "302075018" );
                 AbaRouteValidator.validate( "011000138" );
                 AbaRouteValidator.validate( "011600525" );
@@ -88,7 +113,8 @@ public class PerformanceTests
                 AbaRouteValidator.validate( "311985830" );
                 AbaRouteValidator.validate( "312276111" );
                 AbaRouteValidator.validate( "313173336" );
-            } catch( AbaRouteValidationException e ) {
+            }
+            catch( AbaRouteValidationException e ) {
                 fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
             }
         }
@@ -102,4 +128,34 @@ public class PerformanceTests
         // This is a good thing!
         assertTrue( true );
     }
+
+    @Override
+    protected void setUp()
+            throws Exception {
+        super.setUp();
+    }
 }
+
+/* ---------------------------------------------------------------------------------------
+ *
+ *  License: Apache 2.0
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+ *  this file except in compliance with the License.
+ *
+ *  You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software distributed under
+ *  the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
+ *  OF ANY KIND, either express or implied including the implied warranties of
+ *  merchantability and fitness for a particular purpose.
+ *
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ * ---------------------------------------------------------------------------------------
+ * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.PerformanceTests.java
+ * Date:   2020/12/21
+ * --------------------------------------------------------------------------------------- */
