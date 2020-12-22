@@ -34,7 +34,7 @@ import junit.framework.TestCase;
 /**
  * Package:    com.cardatechnologies.utils.validators.abaroutevalidator
  * Class:      PerformanceTests.java
- * Desc:       ...
+ * Desc:       JUnit test file.
  *
  * @author     Daniel Carda
  *

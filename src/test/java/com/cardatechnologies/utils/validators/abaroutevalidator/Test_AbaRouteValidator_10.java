@@ -32,7 +32,7 @@ import junit.framework.TestCase;
 /**
  * Package:    com.cardatechnologies.utils.validators.abaroutevalidator
  * Class:      Test_AbaRouteValidator_10.java
- * Desc:       ...
+ * Desc:       JUnit test file.
  *
  * @author     Daniel Carda
  *
