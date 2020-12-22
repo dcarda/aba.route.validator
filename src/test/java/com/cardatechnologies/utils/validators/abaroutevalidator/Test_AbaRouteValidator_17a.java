@@ -43,7 +43,6 @@ import junit.framework.TestCase;
  * 2020/11/15  JavaDan           Updated unit tests.
  * </pre>
  *
- * Copyright, © 2020 - Carda Technologies, LLC
  */
 public class Test_AbaRouteValidator_17a
         extends TestCase {

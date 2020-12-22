@@ -45,7 +45,6 @@ import junit.framework.TestCase;
  * 2020/12/21  JavaDan           Initial Module Creation...
  * </pre>
  *
- * Copyright, © 2020 - Carda Technologies, LLC
  */
 public class PerformanceTests
         extends TestCase {

@@ -43,7 +43,6 @@ import junit.framework.TestCase;
  * 2020/12/20  JavaDan           Initial Module Creation...
  * </pre>
  *
- * Copyright, © 2020 - Carda Technologies, LLC
  */
 public class Test_AbaRouteValidator_01
         extends TestCase {

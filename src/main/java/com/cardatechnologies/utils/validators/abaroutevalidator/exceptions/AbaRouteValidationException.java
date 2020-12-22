@@ -3,8 +3,7 @@
  * Date:  2015/02/11
  * ***************************************************************************************
  *
- * Copyright 2015 - CardaTechnologies, LLC
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -25,7 +24,6 @@ package com.cardatechnologies.utils.validators.abaroutevalidator.exceptions;
 /**
  * <dl>
  * <dt><font face="Arial"><span class="simpleTagLabel">All Rights Reserved</span></font></dt>
- * <dd>Copyright &copy; 2015 - CardaTechnologies, LLC</dd>
  * <dt><font face="Arial"><span class="simpleTagLabel">Class Description:</span></font></dt>
  * <dd>This class is used to validate a ABA Routing Transit Number.</dd>
  * </dl>
@@ -90,7 +88,6 @@ public class AbaRouteValidationException
 }
 
 /* ***************************************************************************************
- * Copyright 2015 - CardaTechnologies, LLC
  *
  * Class: com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException.java  
  * Date:  2015/02/11

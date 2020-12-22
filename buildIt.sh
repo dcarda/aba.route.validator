@@ -21,8 +21,6 @@ clear
 #       CREATED:  02/15/2015
 #      REVISION:  ---
 #
-#                       Copyright 2020
-#                     All rights reserved.
 #================================================================
  
 #numberOfArgs=0

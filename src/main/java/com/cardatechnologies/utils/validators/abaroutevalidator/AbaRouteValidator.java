@@ -3,7 +3,6 @@
  * Date:  2015/02/11
  * ***************************************************************************************
  *
- * Copyright 2015 - CardaTechnologies, LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -227,7 +226,6 @@ public class AbaRouteValidator {
 }
 
 /* ***************************************************************************************
- * Copyright 2015 - CardaTechnologies, LLC
  *
  * Class: com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.java
  * Date:  2015/02/11
