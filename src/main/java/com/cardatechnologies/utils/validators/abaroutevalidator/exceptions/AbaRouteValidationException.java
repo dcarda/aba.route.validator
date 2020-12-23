@@ -1,52 +1,53 @@
-/* ***************************************************************************************
- * Class: com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException.java  
- * Date:  2015/02/11
- * ***************************************************************************************
+/* ---------------------------------------------------------------------------------------
+ * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException.java
+ * Date:   2015/04/15
+ * ---------------------------------------------------------------------------------------
  *
+ *  License: Apache 2.0
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *   http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+ *  this file except in compliance with the License.
  *
- * ***************************************************************************************
+ *  You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software distributed under
+ *  the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
+ *  OF ANY KIND, either express or implied including the implied warranties of
+ *  merchantability and fitness for a particular purpose.
+ *
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
  */
 
 package com.cardatechnologies.utils.validators.abaroutevalidator.exceptions;
 
 /**
- * <dl>
- * <dt><font face="Arial"><span class="simpleTagLabel">All Rights Reserved</span></font></dt>
- * <dt><font face="Arial"><span class="simpleTagLabel">Class Description:</span></font></dt>
- * <dd>This class is used to validate a ABA Routing Transit Number.</dd>
- * </dl>
+ * Package:    com.cardatechnologies.utils.validators.abaroutevalidator.exceptions
+ * Class:      AbaRouteValidationException.java
+ * Desc:       ...
  *
- * @version        {version}
- * @author         Enter your name here...    
+ * @author     Daniel Carda
+ *
+ * Maintenance History:
+ * <p><pre>
+ * yyyy mm dd  Who               Description
+ * ----------  ----------------  ----------------------------------------------------
+ * 2015/01/15  JavaDan           Initial Module Creation...
+ * 2020/12/22  JavaDan           Improved internal error handling.
+ * </pre>
+ *
+ * Copyright, © 2020 - Carda Technologies, LLC
  */
 public class AbaRouteValidationException
         extends Exception {
 
-    /**
-     * Constructs ...
-     *
-     *
-     * @param message
-     */
-    public AbaRouteValidationException( String message ) {
-        super( message );
-    }
+    private String errorMessage;
+    private int    errorCode;
 
     /**
      * Constructs ...
-     *
      *
      * @param cause
      */
@@ -57,38 +58,87 @@ public class AbaRouteValidationException
     /**
      * Constructs ...
      *
-     *
-     * @param message
-     * @param cause
+     * @param errorCode
+     * @param errorMessage
      */
-    public AbaRouteValidationException( String message,
-            Throwable                          cause ) {
-        super( message,
-               cause );
+    public AbaRouteValidationException( final int    errorCode,
+                                        final String errorMessage ) {
+        super( errorMessage );
+
+        //
+        this.errorCode    = errorCode;
+        this.errorMessage = errorMessage;
     }
 
     /**
      * Constructs ...
      *
-     *
      * @param message
      * @param cause
-     * @param enableSuppression
-     * @param writableStackTrace
      */
-    protected AbaRouteValidationException( String message,
-            Throwable                             cause,
-            boolean                               enableSuppression,
-            boolean                               writableStackTrace ) {
-        super( message,
-               cause,
-               enableSuppression,
-               writableStackTrace );
+    public AbaRouteValidationException( String    message,
+                                        Throwable cause ) {
+        super( message, cause );
+    }
+
+    /**
+     * Method: getErrorCode
+     *
+     * @return int
+     */
+    public int getErrorCode() {
+        return errorCode;
+    }
+
+    /**
+     * Method: setErrorCode
+     *
+     * @param errorCode
+     *         Param Desc...
+     */
+    public void setErrorCode( int errorCode ) {
+        this.errorCode = errorCode;
+    }
+
+    /**
+     * Method: getErrorMessage
+     *
+     * @return String
+     */
+    public String getErrorMessage() {
+        return errorMessage;
+    }
+
+    /**
+     * Method: setErrorMessage
+     *
+     * @param errorMessage
+     *         Param Desc...
+     */
+    public void setErrorMessage( String errorMessage ) {
+        this.errorMessage = errorMessage;
     }
 }
 
-/* ***************************************************************************************
+/* ---------------------------------------------------------------------------------------
+ *  License: Apache 2.0
  *
- * Class: com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException.java  
- * Date:  2015/02/11
- *************************************************************************************** */
+ *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+ *  this file except in compliance with the License.
+ *
+ *  You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software distributed under
+ *  the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
+ *  OF ANY KIND, either express or implied including the implied warranties of
+ *  merchantability and fitness for a particular purpose.
+ *
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ * ---------------------------------------------------------------------------------------
+ * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException.java
+ * Date:   2015/04/15
+ * --------------------------------------------------------------------------------------- */
