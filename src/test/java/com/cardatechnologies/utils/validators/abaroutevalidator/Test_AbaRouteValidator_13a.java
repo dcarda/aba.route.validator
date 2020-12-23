@@ -44,7 +44,6 @@ import junit.framework.TestCase;
  * 2020/11/15  JavaDan           Updated unit tests.
  * 2020/12/22  JavaDan           Improved unit test results.
  * </pre>
- *
  */
 public class Test_AbaRouteValidator_13a
         extends TestCase {
