@@ -1,24 +1,24 @@
-/* ---------------------------------------------------------------------------------------
- * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.Test_AbaRouteValidator_06.java
- * Date:   2015/01/15
- * ---------------------------------------------------------------------------------------
- *
- *  License: Apache 2.0
- *
- *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use
- *  this file except in compliance with the License.
- *
- *  You may obtain a copy of the License at
- *
- *    http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software distributed under
- *  the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
- *  OF ANY KIND, either express or implied including the implied warranties of
- *  merchantability and fitness for a particular purpose.
- *
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
+/*---------------------------------------------------------------------------------------
+* Class:  com.cardatechnologies.utils.validators.abaroutevalidator.Test_AbaRouteValidator_06.java
+* Date:   2015/01/15
+* ---------------------------------------------------------------------------------------
+*
+*  License: Apache 2.0
+*
+*  Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+*  this file except in compliance with the License.
+*
+*  You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+*  Unless required by applicable law or agreed to in writing, software distributed under
+*  the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
+*  OF ANY KIND, either express or implied including the implied warranties of
+*  merchantability and fitness for a particular purpose.
+*
+*  See the License for the specific language governing permissions and
+*  limitations under the License.
  */
 package com.cardatechnologies.utils.validators.abaroutevalidator;
 
@@ -41,6 +41,7 @@ import junit.framework.TestCase;
  * ----------  ----------------  ----------------------------------------------------
  * 2020/12/20  JavaDan           Initial Module Creation...
  * 2020/12/20  JavaDan           Updated unit tests.
+ * 2020/12/22  JavaDan           Improved unit test results.
  * </pre>
  *
  */
@@ -74,7 +75,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -88,7 +90,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10001_good
      */
     public void testAbaNumberCheck_10001_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -119,7 +121,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -133,7 +136,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10003_good
      */
     public void testAbaNumberCheck_10003_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -164,7 +167,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -178,7 +182,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10005_good
      */
     public void testAbaNumberCheck_10005_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -224,7 +228,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10007_good
      */
     public void testAbaNumberCheck_10007_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -255,7 +259,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -269,7 +274,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10009_good
      */
     public void testAbaNumberCheck_10009_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -315,7 +320,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10011_good
      */
     public void testAbaNumberCheck_10011_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -346,7 +351,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -360,7 +366,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10013_good
      */
     public void testAbaNumberCheck_10013_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -391,7 +397,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -405,7 +412,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10015_good
      */
     public void testAbaNumberCheck_10015_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -436,7 +443,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -450,7 +458,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10017_good
      */
     public void testAbaNumberCheck_10017_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -481,7 +489,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -495,7 +504,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10019_good
      */
     public void testAbaNumberCheck_10019_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -526,7 +535,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -540,7 +550,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10021_good
      */
     public void testAbaNumberCheck_10021_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -571,7 +581,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -585,7 +596,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10023_good
      */
     public void testAbaNumberCheck_10023_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -616,7 +627,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -630,7 +642,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10025_good
      */
     public void testAbaNumberCheck_10025_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -661,7 +673,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -675,7 +688,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10027_good
      */
     public void testAbaNumberCheck_10027_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -706,7 +719,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -720,7 +734,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10029_good
      */
     public void testAbaNumberCheck_10029_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -751,7 +765,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -765,7 +780,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10031_good
      */
     public void testAbaNumberCheck_10031_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -796,7 +811,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -810,7 +826,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10033_good
      */
     public void testAbaNumberCheck_10033_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -841,7 +857,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -855,7 +872,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10035_good
      */
     public void testAbaNumberCheck_10035_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -886,7 +903,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -900,7 +918,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10037_good
      */
     public void testAbaNumberCheck_10037_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -931,7 +949,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -945,7 +964,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10039_good
      */
     public void testAbaNumberCheck_10039_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -976,7 +995,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -990,7 +1010,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10041_good
      */
     public void testAbaNumberCheck_10041_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1021,7 +1041,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1035,7 +1056,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10043_good
      */
     public void testAbaNumberCheck_10043_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1066,7 +1087,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1080,7 +1102,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10045_good
      */
     public void testAbaNumberCheck_10045_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1111,7 +1133,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1125,7 +1148,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10047_good
      */
     public void testAbaNumberCheck_10047_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1156,7 +1179,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1170,7 +1194,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10049_good
      */
     public void testAbaNumberCheck_10049_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1201,7 +1225,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1215,7 +1240,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10051_good
      */
     public void testAbaNumberCheck_10051_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1246,7 +1271,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1260,7 +1286,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10053_good
      */
     public void testAbaNumberCheck_10053_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1291,7 +1317,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1305,7 +1332,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10055_good
      */
     public void testAbaNumberCheck_10055_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1336,7 +1363,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1350,7 +1378,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10057_good
      */
     public void testAbaNumberCheck_10057_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1381,7 +1409,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1395,7 +1424,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10059_good
      */
     public void testAbaNumberCheck_10059_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1426,7 +1455,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1440,7 +1470,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10061_good
      */
     public void testAbaNumberCheck_10061_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1471,7 +1501,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1485,7 +1516,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10063_good
      */
     public void testAbaNumberCheck_10063_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1516,7 +1547,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1530,7 +1562,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10065_good
      */
     public void testAbaNumberCheck_10065_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1561,7 +1593,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1575,7 +1608,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10067_good
      */
     public void testAbaNumberCheck_10067_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1606,7 +1639,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1620,7 +1654,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10069_good
      */
     public void testAbaNumberCheck_10069_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1651,7 +1685,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1665,7 +1700,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10071_good
      */
     public void testAbaNumberCheck_10071_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1696,7 +1731,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1710,7 +1746,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10073_good
      */
     public void testAbaNumberCheck_10073_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1741,7 +1777,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1755,7 +1792,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10075_good
      */
     public void testAbaNumberCheck_10075_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1786,7 +1823,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1800,7 +1838,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10077_good
      */
     public void testAbaNumberCheck_10077_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1831,7 +1869,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1845,7 +1884,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10079_good
      */
     public void testAbaNumberCheck_10079_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1876,7 +1915,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1890,7 +1930,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10081_good
      */
     public void testAbaNumberCheck_10081_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1921,7 +1961,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1935,7 +1976,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10083_good
      */
     public void testAbaNumberCheck_10083_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -1966,7 +2007,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -1980,7 +2022,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10085_good
      */
     public void testAbaNumberCheck_10085_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2011,7 +2053,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -2025,7 +2068,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10087_good
      */
     public void testAbaNumberCheck_10087_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2056,7 +2099,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -2070,7 +2114,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10089_good
      */
     public void testAbaNumberCheck_10089_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2101,7 +2145,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -2115,7 +2160,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10091_good
      */
     public void testAbaNumberCheck_10091_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2146,7 +2191,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -2160,7 +2206,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10093_good
      */
     public void testAbaNumberCheck_10093_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2206,7 +2252,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10095_good
      */
     public void testAbaNumberCheck_10095_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2237,7 +2283,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -2251,7 +2298,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10097_good
      */
     public void testAbaNumberCheck_10097_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2282,7 +2329,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -2296,7 +2344,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10099_good
      */
     public void testAbaNumberCheck_10099_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2327,7 +2375,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -2341,7 +2390,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10101_good
      */
     public void testAbaNumberCheck_10101_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2372,7 +2421,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -2386,7 +2436,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10103_good
      */
     public void testAbaNumberCheck_10103_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2417,7 +2467,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -2431,7 +2482,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10105_good
      */
     public void testAbaNumberCheck_10105_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2462,7 +2513,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -2476,7 +2528,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10107_good
      */
     public void testAbaNumberCheck_10107_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2507,7 +2559,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -2521,7 +2574,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10109_good
      */
     public void testAbaNumberCheck_10109_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2567,7 +2620,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10111_good
      */
     public void testAbaNumberCheck_10111_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2598,7 +2651,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -2612,7 +2666,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10113_good
      */
     public void testAbaNumberCheck_10113_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2643,7 +2697,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -2657,7 +2712,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10115_good
      */
     public void testAbaNumberCheck_10115_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2688,7 +2743,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -2702,7 +2758,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10117_good
      */
     public void testAbaNumberCheck_10117_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2733,7 +2789,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -2747,7 +2804,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10119_good
      */
     public void testAbaNumberCheck_10119_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2778,7 +2835,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -2792,7 +2850,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10121_good
      */
     public void testAbaNumberCheck_10121_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2823,7 +2881,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -2837,7 +2896,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10123_good
      */
     public void testAbaNumberCheck_10123_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2868,7 +2927,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -2882,7 +2942,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10125_good
      */
     public void testAbaNumberCheck_10125_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2913,7 +2973,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -2927,7 +2988,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10127_good
      */
     public void testAbaNumberCheck_10127_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -2958,7 +3019,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -2972,7 +3034,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10129_good
      */
     public void testAbaNumberCheck_10129_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3003,7 +3065,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3017,7 +3080,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10131_good
      */
     public void testAbaNumberCheck_10131_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3048,7 +3111,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3062,7 +3126,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10133_good
      */
     public void testAbaNumberCheck_10133_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3093,7 +3157,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3107,7 +3172,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10135_good
      */
     public void testAbaNumberCheck_10135_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3138,7 +3203,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3152,7 +3218,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10137_good
      */
     public void testAbaNumberCheck_10137_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3183,7 +3249,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3197,7 +3264,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10139_good
      */
     public void testAbaNumberCheck_10139_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3228,7 +3295,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3242,7 +3310,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10141_good
      */
     public void testAbaNumberCheck_10141_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3273,7 +3341,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3287,7 +3356,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10143_good
      */
     public void testAbaNumberCheck_10143_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3318,7 +3387,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3332,7 +3402,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10145_good
      */
     public void testAbaNumberCheck_10145_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3363,7 +3433,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3377,7 +3448,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10147_good
      */
     public void testAbaNumberCheck_10147_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3408,7 +3479,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3422,7 +3494,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10149_good
      */
     public void testAbaNumberCheck_10149_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3453,7 +3525,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3467,7 +3540,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10151_good
      */
     public void testAbaNumberCheck_10151_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3498,7 +3571,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3512,7 +3586,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10153_good
      */
     public void testAbaNumberCheck_10153_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3543,7 +3617,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3557,7 +3632,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10155_good
      */
     public void testAbaNumberCheck_10155_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3588,7 +3663,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3602,7 +3678,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10157_good
      */
     public void testAbaNumberCheck_10157_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3633,7 +3709,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3647,7 +3724,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10159_good
      */
     public void testAbaNumberCheck_10159_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3678,7 +3755,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3692,7 +3770,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10161_good
      */
     public void testAbaNumberCheck_10161_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3723,7 +3801,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3737,7 +3816,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10163_good
      */
     public void testAbaNumberCheck_10163_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3768,7 +3847,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3782,7 +3862,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10165_good
      */
     public void testAbaNumberCheck_10165_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3813,7 +3893,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3827,7 +3908,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10167_good
      */
     public void testAbaNumberCheck_10167_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3858,7 +3939,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3872,7 +3954,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10169_good
      */
     public void testAbaNumberCheck_10169_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3903,7 +3985,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3917,7 +4000,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10171_good
      */
     public void testAbaNumberCheck_10171_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3948,7 +4031,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -3962,7 +4046,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10173_good
      */
     public void testAbaNumberCheck_10173_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -3993,7 +4077,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4007,7 +4092,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10175_good
      */
     public void testAbaNumberCheck_10175_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4038,7 +4123,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4052,7 +4138,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10177_good
      */
     public void testAbaNumberCheck_10177_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4083,7 +4169,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4097,7 +4184,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10179_good
      */
     public void testAbaNumberCheck_10179_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4128,7 +4215,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4142,7 +4230,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10181_good
      */
     public void testAbaNumberCheck_10181_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4173,7 +4261,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4187,7 +4276,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10183_good
      */
     public void testAbaNumberCheck_10183_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4218,7 +4307,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4232,7 +4322,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10185_good
      */
     public void testAbaNumberCheck_10185_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4263,7 +4353,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4277,7 +4368,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10187_good
      */
     public void testAbaNumberCheck_10187_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4308,7 +4399,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4322,7 +4414,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10189_good
      */
     public void testAbaNumberCheck_10189_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4353,7 +4445,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4367,7 +4460,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10191_good
      */
     public void testAbaNumberCheck_10191_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4398,7 +4491,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4412,7 +4506,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10193_good
      */
     public void testAbaNumberCheck_10193_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4443,7 +4537,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4457,7 +4552,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10195_good
      */
     public void testAbaNumberCheck_10195_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4488,7 +4583,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4502,7 +4598,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10197_good
      */
     public void testAbaNumberCheck_10197_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4533,7 +4629,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4547,7 +4644,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10199_good
      */
     public void testAbaNumberCheck_10199_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4578,7 +4675,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4592,7 +4690,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10201_good
      */
     public void testAbaNumberCheck_10201_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4623,7 +4721,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4637,7 +4736,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10203_good
      */
     public void testAbaNumberCheck_10203_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4668,7 +4767,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4682,7 +4782,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10205_good
      */
     public void testAbaNumberCheck_10205_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4713,7 +4813,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4727,7 +4828,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10207_good
      */
     public void testAbaNumberCheck_10207_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4758,7 +4859,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4772,7 +4874,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10209_good
      */
     public void testAbaNumberCheck_10209_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4803,7 +4905,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4817,7 +4920,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10211_good
      */
     public void testAbaNumberCheck_10211_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4848,7 +4951,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4862,7 +4966,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10213_good
      */
     public void testAbaNumberCheck_10213_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4893,7 +4997,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4907,7 +5012,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10215_good
      */
     public void testAbaNumberCheck_10215_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4938,7 +5043,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4952,7 +5058,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10217_good
      */
     public void testAbaNumberCheck_10217_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -4983,7 +5089,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1002, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.too.short", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -4997,7 +5104,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10219_good
      */
     public void testAbaNumberCheck_10219_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5028,7 +5135,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5042,7 +5150,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10221_good
      */
     public void testAbaNumberCheck_10221_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5073,7 +5181,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5087,7 +5196,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10223_good
      */
     public void testAbaNumberCheck_10223_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5118,7 +5227,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5132,7 +5242,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10225_good
      */
     public void testAbaNumberCheck_10225_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5163,7 +5273,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5177,7 +5288,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10227_good
      */
     public void testAbaNumberCheck_10227_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5208,7 +5319,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5222,7 +5334,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10229_good
      */
     public void testAbaNumberCheck_10229_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5253,7 +5365,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5267,7 +5380,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10231_good
      */
     public void testAbaNumberCheck_10231_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5298,7 +5411,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5312,7 +5426,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10233_good
      */
     public void testAbaNumberCheck_10233_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5343,7 +5457,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5357,7 +5472,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10235_good
      */
     public void testAbaNumberCheck_10235_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5403,7 +5518,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10237_good
      */
     public void testAbaNumberCheck_10237_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5434,7 +5549,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5448,7 +5564,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10239_good
      */
     public void testAbaNumberCheck_10239_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5479,7 +5595,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5493,7 +5610,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10241_good
      */
     public void testAbaNumberCheck_10241_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5524,7 +5641,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5538,7 +5656,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10243_good
      */
     public void testAbaNumberCheck_10243_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5569,7 +5687,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5583,7 +5702,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10245_good
      */
     public void testAbaNumberCheck_10245_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5614,7 +5733,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5628,7 +5748,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10247_good
      */
     public void testAbaNumberCheck_10247_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5659,7 +5779,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5673,7 +5794,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10249_good
      */
     public void testAbaNumberCheck_10249_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5704,7 +5825,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5718,7 +5840,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10251_good
      */
     public void testAbaNumberCheck_10251_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5749,7 +5871,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5763,7 +5886,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10253_good
      */
     public void testAbaNumberCheck_10253_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5794,7 +5917,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5808,7 +5932,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10255_good
      */
     public void testAbaNumberCheck_10255_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5839,7 +5963,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5853,7 +5978,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10257_good
      */
     public void testAbaNumberCheck_10257_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5884,7 +6009,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5898,7 +6024,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10259_good
      */
     public void testAbaNumberCheck_10259_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5929,7 +6055,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5943,7 +6070,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10261_good
      */
     public void testAbaNumberCheck_10261_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -5974,7 +6101,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -5988,7 +6116,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10263_good
      */
     public void testAbaNumberCheck_10263_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6019,7 +6147,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6033,7 +6162,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10265_good
      */
     public void testAbaNumberCheck_10265_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6064,7 +6193,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6078,7 +6208,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10267_good
      */
     public void testAbaNumberCheck_10267_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6109,7 +6239,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6123,7 +6254,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10269_good
      */
     public void testAbaNumberCheck_10269_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6154,7 +6285,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6168,7 +6300,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10271_good
      */
     public void testAbaNumberCheck_10271_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6214,7 +6346,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10273_good
      */
     public void testAbaNumberCheck_10273_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6245,7 +6377,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6259,7 +6392,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10275_good
      */
     public void testAbaNumberCheck_10275_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6290,7 +6423,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6304,7 +6438,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10277_good
      */
     public void testAbaNumberCheck_10277_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6335,7 +6469,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6349,7 +6484,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10279_good
      */
     public void testAbaNumberCheck_10279_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6380,7 +6515,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6394,7 +6530,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10281_good
      */
     public void testAbaNumberCheck_10281_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6425,7 +6561,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6439,7 +6576,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10283_good
      */
     public void testAbaNumberCheck_10283_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6470,7 +6607,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6484,7 +6622,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10285_good
      */
     public void testAbaNumberCheck_10285_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6515,7 +6653,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6529,7 +6668,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10287_good
      */
     public void testAbaNumberCheck_10287_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6560,7 +6699,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6574,7 +6714,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10289_good
      */
     public void testAbaNumberCheck_10289_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6605,7 +6745,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6619,7 +6760,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10291_good
      */
     public void testAbaNumberCheck_10291_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6650,7 +6791,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6664,7 +6806,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10293_good
      */
     public void testAbaNumberCheck_10293_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6695,7 +6837,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6709,7 +6852,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10295_good
      */
     public void testAbaNumberCheck_10295_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6740,7 +6883,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6754,7 +6898,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10297_good
      */
     public void testAbaNumberCheck_10297_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6785,7 +6929,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6799,7 +6944,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10299_good
      */
     public void testAbaNumberCheck_10299_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6830,7 +6975,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6844,7 +6990,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10301_good
      */
     public void testAbaNumberCheck_10301_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6875,7 +7021,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6889,7 +7036,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10303_good
      */
     public void testAbaNumberCheck_10303_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6920,7 +7067,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6934,7 +7082,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10305_good
      */
     public void testAbaNumberCheck_10305_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -6965,7 +7113,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -6979,7 +7128,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10307_good
      */
     public void testAbaNumberCheck_10307_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7010,7 +7159,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -7024,7 +7174,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10309_good
      */
     public void testAbaNumberCheck_10309_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7055,7 +7205,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -7069,7 +7220,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10311_good
      */
     public void testAbaNumberCheck_10311_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7115,7 +7266,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10313_good
      */
     public void testAbaNumberCheck_10313_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7146,7 +7297,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -7160,7 +7312,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10315_good
      */
     public void testAbaNumberCheck_10315_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7191,7 +7343,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -7205,7 +7358,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10317_good
      */
     public void testAbaNumberCheck_10317_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7236,7 +7389,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -7250,7 +7404,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10319_good
      */
     public void testAbaNumberCheck_10319_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7281,7 +7435,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -7295,7 +7450,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10321_good
      */
     public void testAbaNumberCheck_10321_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7326,7 +7481,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -7340,7 +7496,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10323_good
      */
     public void testAbaNumberCheck_10323_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7371,7 +7527,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -7385,7 +7542,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10325_good
      */
     public void testAbaNumberCheck_10325_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7416,7 +7573,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -7430,7 +7588,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10327_good
      */
     public void testAbaNumberCheck_10327_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7476,7 +7634,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10329_good
      */
     public void testAbaNumberCheck_10329_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7507,7 +7665,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -7521,7 +7680,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10331_good
      */
     public void testAbaNumberCheck_10331_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7552,7 +7711,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -7566,7 +7726,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10333_good
      */
     public void testAbaNumberCheck_10333_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7597,7 +7757,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -7611,7 +7772,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10335_good
      */
     public void testAbaNumberCheck_10335_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7642,7 +7803,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -7656,7 +7818,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10337_good
      */
     public void testAbaNumberCheck_10337_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7687,7 +7849,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -7701,7 +7864,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10339_good
      */
     public void testAbaNumberCheck_10339_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7732,7 +7895,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -7746,7 +7910,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10341_good
      */
     public void testAbaNumberCheck_10341_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7777,7 +7941,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -7791,7 +7956,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10343_good
      */
     public void testAbaNumberCheck_10343_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7822,7 +7987,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -7836,7 +8002,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10345_good
      */
     public void testAbaNumberCheck_10345_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7867,7 +8033,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -7881,7 +8048,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10347_good
      */
     public void testAbaNumberCheck_10347_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7912,7 +8079,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -7926,7 +8094,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10349_good
      */
     public void testAbaNumberCheck_10349_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -7957,7 +8125,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -7971,7 +8140,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10351_good
      */
     public void testAbaNumberCheck_10351_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8002,7 +8171,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8016,7 +8186,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10353_good
      */
     public void testAbaNumberCheck_10353_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8047,7 +8217,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8061,7 +8232,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10355_good
      */
     public void testAbaNumberCheck_10355_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8092,7 +8263,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8106,7 +8278,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10357_good
      */
     public void testAbaNumberCheck_10357_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8137,7 +8309,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8151,7 +8324,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10359_good
      */
     public void testAbaNumberCheck_10359_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8182,7 +8355,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8196,7 +8370,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10361_good
      */
     public void testAbaNumberCheck_10361_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8227,7 +8401,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8241,7 +8416,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10363_good
      */
     public void testAbaNumberCheck_10363_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8272,7 +8447,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8286,7 +8462,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10365_good
      */
     public void testAbaNumberCheck_10365_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8317,7 +8493,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8331,7 +8508,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10367_good
      */
     public void testAbaNumberCheck_10367_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8362,7 +8539,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8376,7 +8554,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10369_good
      */
     public void testAbaNumberCheck_10369_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8407,7 +8585,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8421,7 +8600,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10371_good
      */
     public void testAbaNumberCheck_10371_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8452,7 +8631,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8466,7 +8646,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10373_good
      */
     public void testAbaNumberCheck_10373_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8497,7 +8677,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8511,7 +8692,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10375_good
      */
     public void testAbaNumberCheck_10375_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8542,7 +8723,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8556,7 +8738,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10377_good
      */
     public void testAbaNumberCheck_10377_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8587,7 +8769,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8601,7 +8784,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10379_good
      */
     public void testAbaNumberCheck_10379_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8632,7 +8815,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8646,7 +8830,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10381_good
      */
     public void testAbaNumberCheck_10381_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8677,7 +8861,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8691,7 +8876,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10383_good
      */
     public void testAbaNumberCheck_10383_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8737,7 +8922,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10385_good
      */
     public void testAbaNumberCheck_10385_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8768,7 +8953,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8782,7 +8968,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10387_good
      */
     public void testAbaNumberCheck_10387_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8813,7 +8999,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8827,7 +9014,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10389_good
      */
     public void testAbaNumberCheck_10389_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8858,7 +9045,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8872,7 +9060,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10391_good
      */
     public void testAbaNumberCheck_10391_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8903,7 +9091,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8917,7 +9106,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10393_good
      */
     public void testAbaNumberCheck_10393_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -8948,7 +9137,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -8962,7 +9152,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10395_good
      */
     public void testAbaNumberCheck_10395_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9008,7 +9198,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10397_good
      */
     public void testAbaNumberCheck_10397_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9039,7 +9229,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9053,7 +9244,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10399_good
      */
     public void testAbaNumberCheck_10399_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9084,7 +9275,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1002, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.too.short", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9098,7 +9290,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10401_good
      */
     public void testAbaNumberCheck_10401_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9129,7 +9321,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9143,7 +9336,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10403_good
      */
     public void testAbaNumberCheck_10403_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9174,7 +9367,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9188,7 +9382,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10405_good
      */
     public void testAbaNumberCheck_10405_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9219,7 +9413,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9233,7 +9428,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10407_good
      */
     public void testAbaNumberCheck_10407_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9264,7 +9459,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9278,7 +9474,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10409_good
      */
     public void testAbaNumberCheck_10409_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9309,7 +9505,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9323,7 +9520,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10411_good
      */
     public void testAbaNumberCheck_10411_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9354,7 +9551,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9368,7 +9566,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10413_good
      */
     public void testAbaNumberCheck_10413_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9399,7 +9597,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9413,7 +9612,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10415_good
      */
     public void testAbaNumberCheck_10415_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9444,7 +9643,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9458,7 +9658,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10417_good
      */
     public void testAbaNumberCheck_10417_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9489,7 +9689,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9503,7 +9704,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10419_good
      */
     public void testAbaNumberCheck_10419_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9549,7 +9750,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10421_good
      */
     public void testAbaNumberCheck_10421_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9580,7 +9781,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9594,7 +9796,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10423_good
      */
     public void testAbaNumberCheck_10423_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9625,7 +9827,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9639,7 +9842,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10425_good
      */
     public void testAbaNumberCheck_10425_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9670,7 +9873,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9684,7 +9888,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10427_good
      */
     public void testAbaNumberCheck_10427_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9715,7 +9919,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9729,7 +9934,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10429_good
      */
     public void testAbaNumberCheck_10429_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9760,7 +9965,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9774,7 +9980,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10431_good
      */
     public void testAbaNumberCheck_10431_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9805,7 +10011,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9819,7 +10026,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10433_good
      */
     public void testAbaNumberCheck_10433_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9850,7 +10057,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9864,7 +10072,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10435_good
      */
     public void testAbaNumberCheck_10435_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9895,7 +10103,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9909,7 +10118,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10437_good
      */
     public void testAbaNumberCheck_10437_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9940,7 +10149,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9954,7 +10164,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10439_good
      */
     public void testAbaNumberCheck_10439_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -9985,7 +10195,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -9999,7 +10210,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10441_good
      */
     public void testAbaNumberCheck_10441_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10030,7 +10241,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10044,7 +10256,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10443_good
      */
     public void testAbaNumberCheck_10443_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10075,7 +10287,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10089,7 +10302,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10445_good
      */
     public void testAbaNumberCheck_10445_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10120,7 +10333,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10134,7 +10348,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10447_good
      */
     public void testAbaNumberCheck_10447_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10165,7 +10379,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10179,7 +10394,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10449_good
      */
     public void testAbaNumberCheck_10449_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10210,7 +10425,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1002, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.too.short", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10224,7 +10440,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10451_good
      */
     public void testAbaNumberCheck_10451_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10255,7 +10471,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10269,7 +10486,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10453_good
      */
     public void testAbaNumberCheck_10453_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10300,7 +10517,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10314,7 +10532,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10455_good
      */
     public void testAbaNumberCheck_10455_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10345,7 +10563,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10359,7 +10578,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10457_good
      */
     public void testAbaNumberCheck_10457_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10390,7 +10609,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10404,7 +10624,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10459_good
      */
     public void testAbaNumberCheck_10459_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10435,7 +10655,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10449,7 +10670,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10461_good
      */
     public void testAbaNumberCheck_10461_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10480,7 +10701,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10494,7 +10716,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10463_good
      */
     public void testAbaNumberCheck_10463_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10525,7 +10747,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10539,7 +10762,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10465_good
      */
     public void testAbaNumberCheck_10465_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10570,7 +10793,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10584,7 +10808,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10467_good
      */
     public void testAbaNumberCheck_10467_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10615,7 +10839,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10629,7 +10854,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10469_good
      */
     public void testAbaNumberCheck_10469_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10660,7 +10885,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10674,7 +10900,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10471_good
      */
     public void testAbaNumberCheck_10471_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10705,7 +10931,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10719,7 +10946,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10473_good
      */
     public void testAbaNumberCheck_10473_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10750,7 +10977,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10764,7 +10992,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10475_good
      */
     public void testAbaNumberCheck_10475_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10795,7 +11023,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10809,7 +11038,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10477_good
      */
     public void testAbaNumberCheck_10477_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10840,7 +11069,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10854,7 +11084,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10479_good
      */
     public void testAbaNumberCheck_10479_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10885,7 +11115,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10899,7 +11130,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10481_good
      */
     public void testAbaNumberCheck_10481_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10930,7 +11161,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10944,7 +11176,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10483_good
      */
     public void testAbaNumberCheck_10483_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -10975,7 +11207,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -10989,7 +11222,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10485_good
      */
     public void testAbaNumberCheck_10485_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11020,7 +11253,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -11034,7 +11268,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10487_good
      */
     public void testAbaNumberCheck_10487_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11065,7 +11299,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -11079,7 +11314,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10489_good
      */
     public void testAbaNumberCheck_10489_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11110,7 +11345,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -11124,7 +11360,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10491_good
      */
     public void testAbaNumberCheck_10491_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11155,7 +11391,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -11169,7 +11406,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10493_good
      */
     public void testAbaNumberCheck_10493_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11200,7 +11437,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -11214,7 +11452,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10495_good
      */
     public void testAbaNumberCheck_10495_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11245,7 +11483,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -11259,7 +11498,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10497_good
      */
     public void testAbaNumberCheck_10497_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11290,7 +11529,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -11304,7 +11544,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10499_good
      */
     public void testAbaNumberCheck_10499_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11335,7 +11575,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -11349,7 +11590,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10501_good
      */
     public void testAbaNumberCheck_10501_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11380,7 +11621,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -11394,7 +11636,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10503_good
      */
     public void testAbaNumberCheck_10503_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11425,7 +11667,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -11439,7 +11682,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10505_good
      */
     public void testAbaNumberCheck_10505_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11470,7 +11713,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -11484,7 +11728,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10507_good
      */
     public void testAbaNumberCheck_10507_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11515,7 +11759,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -11529,7 +11774,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10509_good
      */
     public void testAbaNumberCheck_10509_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11575,7 +11820,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10511_good
      */
     public void testAbaNumberCheck_10511_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11606,7 +11851,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -11620,7 +11866,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10513_good
      */
     public void testAbaNumberCheck_10513_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11651,7 +11897,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -11665,7 +11912,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10515_good
      */
     public void testAbaNumberCheck_10515_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11696,7 +11943,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -11710,7 +11958,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10517_good
      */
     public void testAbaNumberCheck_10517_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11756,7 +12004,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10519_good
      */
     public void testAbaNumberCheck_10519_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11787,7 +12035,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -11801,7 +12050,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10521_good
      */
     public void testAbaNumberCheck_10521_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11832,7 +12081,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -11846,7 +12096,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10523_good
      */
     public void testAbaNumberCheck_10523_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11877,7 +12127,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -11891,7 +12142,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10525_good
      */
     public void testAbaNumberCheck_10525_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11922,7 +12173,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -11936,7 +12188,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10527_good
      */
     public void testAbaNumberCheck_10527_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -11967,7 +12219,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -11981,7 +12234,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10529_good
      */
     public void testAbaNumberCheck_10529_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12012,7 +12265,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12026,7 +12280,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10531_good
      */
     public void testAbaNumberCheck_10531_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12057,7 +12311,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12071,7 +12326,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10533_good
      */
     public void testAbaNumberCheck_10533_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12102,7 +12357,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12116,7 +12372,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10535_good
      */
     public void testAbaNumberCheck_10535_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12147,7 +12403,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12161,7 +12418,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10537_good
      */
     public void testAbaNumberCheck_10537_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12192,7 +12449,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12206,7 +12464,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10539_good
      */
     public void testAbaNumberCheck_10539_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12237,7 +12495,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12251,7 +12510,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10541_good
      */
     public void testAbaNumberCheck_10541_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12282,7 +12541,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12296,7 +12556,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10543_good
      */
     public void testAbaNumberCheck_10543_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12327,7 +12587,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12341,7 +12602,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10545_good
      */
     public void testAbaNumberCheck_10545_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12372,7 +12633,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12386,7 +12648,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10547_good
      */
     public void testAbaNumberCheck_10547_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12417,7 +12679,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12431,7 +12694,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10549_good
      */
     public void testAbaNumberCheck_10549_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12462,7 +12725,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12476,7 +12740,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10551_good
      */
     public void testAbaNumberCheck_10551_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12507,7 +12771,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12521,7 +12786,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10553_good
      */
     public void testAbaNumberCheck_10553_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12552,7 +12817,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12566,7 +12832,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10555_good
      */
     public void testAbaNumberCheck_10555_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12597,7 +12863,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12611,7 +12878,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10557_good
      */
     public void testAbaNumberCheck_10557_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12642,7 +12909,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12656,7 +12924,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10559_good
      */
     public void testAbaNumberCheck_10559_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12687,7 +12955,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12701,7 +12970,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10561_good
      */
     public void testAbaNumberCheck_10561_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12732,7 +13001,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12746,7 +13016,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10563_good
      */
     public void testAbaNumberCheck_10563_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12777,7 +13047,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12791,7 +13062,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10565_good
      */
     public void testAbaNumberCheck_10565_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12822,7 +13093,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12836,7 +13108,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10567_good
      */
     public void testAbaNumberCheck_10567_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12867,7 +13139,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12881,7 +13154,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10569_good
      */
     public void testAbaNumberCheck_10569_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12912,7 +13185,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12926,7 +13200,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10571_good
      */
     public void testAbaNumberCheck_10571_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -12957,7 +13231,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -12971,7 +13246,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10573_good
      */
     public void testAbaNumberCheck_10573_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13002,7 +13277,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13016,7 +13292,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10575_good
      */
     public void testAbaNumberCheck_10575_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13047,7 +13323,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13061,7 +13338,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10577_good
      */
     public void testAbaNumberCheck_10577_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13092,7 +13369,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13106,7 +13384,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10579_good
      */
     public void testAbaNumberCheck_10579_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13137,7 +13415,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13151,7 +13430,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10581_good
      */
     public void testAbaNumberCheck_10581_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13182,7 +13461,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13196,7 +13476,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10583_good
      */
     public void testAbaNumberCheck_10583_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13227,7 +13507,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13241,7 +13522,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10585_good
      */
     public void testAbaNumberCheck_10585_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13272,7 +13553,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13286,7 +13568,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10587_good
      */
     public void testAbaNumberCheck_10587_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13317,7 +13599,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13331,7 +13614,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10589_good
      */
     public void testAbaNumberCheck_10589_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13362,7 +13645,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13376,7 +13660,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10591_good
      */
     public void testAbaNumberCheck_10591_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13407,7 +13691,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13421,7 +13706,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10593_good
      */
     public void testAbaNumberCheck_10593_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13452,7 +13737,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13466,7 +13752,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10595_good
      */
     public void testAbaNumberCheck_10595_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13497,7 +13783,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13511,7 +13798,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10597_good
      */
     public void testAbaNumberCheck_10597_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13542,7 +13829,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13556,7 +13844,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10599_good
      */
     public void testAbaNumberCheck_10599_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13587,7 +13875,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13601,7 +13890,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10601_good
      */
     public void testAbaNumberCheck_10601_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13632,7 +13921,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13646,7 +13936,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10603_good
      */
     public void testAbaNumberCheck_10603_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13677,7 +13967,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13691,7 +13982,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10605_good
      */
     public void testAbaNumberCheck_10605_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13722,7 +14013,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13736,7 +14028,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10607_good
      */
     public void testAbaNumberCheck_10607_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13767,7 +14059,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13781,7 +14074,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10609_good
      */
     public void testAbaNumberCheck_10609_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13812,7 +14105,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13826,7 +14120,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10611_good
      */
     public void testAbaNumberCheck_10611_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13857,7 +14151,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13871,7 +14166,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10613_good
      */
     public void testAbaNumberCheck_10613_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13902,7 +14197,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13916,7 +14212,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10615_good
      */
     public void testAbaNumberCheck_10615_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13947,7 +14243,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -13961,7 +14258,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10617_good
      */
     public void testAbaNumberCheck_10617_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -13992,7 +14289,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14006,7 +14304,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10619_good
      */
     public void testAbaNumberCheck_10619_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14037,7 +14335,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14051,7 +14350,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10621_good
      */
     public void testAbaNumberCheck_10621_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14082,7 +14381,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14096,7 +14396,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10623_good
      */
     public void testAbaNumberCheck_10623_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14127,7 +14427,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14141,7 +14442,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10625_good
      */
     public void testAbaNumberCheck_10625_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14187,7 +14488,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10627_good
      */
     public void testAbaNumberCheck_10627_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14218,7 +14519,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14232,7 +14534,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10629_good
      */
     public void testAbaNumberCheck_10629_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14263,7 +14565,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14277,7 +14580,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10631_good
      */
     public void testAbaNumberCheck_10631_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14308,7 +14611,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14322,7 +14626,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10633_good
      */
     public void testAbaNumberCheck_10633_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14353,7 +14657,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14367,7 +14672,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10635_good
      */
     public void testAbaNumberCheck_10635_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14398,7 +14703,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14412,7 +14718,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10637_good
      */
     public void testAbaNumberCheck_10637_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14443,7 +14749,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14457,7 +14764,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10639_good
      */
     public void testAbaNumberCheck_10639_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14488,7 +14795,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14502,7 +14810,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10641_good
      */
     public void testAbaNumberCheck_10641_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14533,7 +14841,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14547,7 +14856,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10643_good
      */
     public void testAbaNumberCheck_10643_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14578,7 +14887,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14592,7 +14902,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10645_good
      */
     public void testAbaNumberCheck_10645_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14623,7 +14933,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14637,7 +14948,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10647_good
      */
     public void testAbaNumberCheck_10647_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14668,7 +14979,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14682,7 +14994,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10649_good
      */
     public void testAbaNumberCheck_10649_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14713,7 +15025,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14727,7 +15040,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10651_good
      */
     public void testAbaNumberCheck_10651_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14758,7 +15071,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14772,7 +15086,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10653_good
      */
     public void testAbaNumberCheck_10653_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14803,7 +15117,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14817,7 +15132,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10655_good
      */
     public void testAbaNumberCheck_10655_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14848,7 +15163,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14862,7 +15178,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10657_good
      */
     public void testAbaNumberCheck_10657_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14893,7 +15209,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14907,7 +15224,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10659_good
      */
     public void testAbaNumberCheck_10659_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14938,7 +15255,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14952,7 +15270,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10661_good
      */
     public void testAbaNumberCheck_10661_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -14983,7 +15301,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -14997,7 +15316,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10663_good
      */
     public void testAbaNumberCheck_10663_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15028,7 +15347,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15042,7 +15362,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10665_good
      */
     public void testAbaNumberCheck_10665_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15073,7 +15393,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15087,7 +15408,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10667_good
      */
     public void testAbaNumberCheck_10667_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15118,7 +15439,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15132,7 +15454,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10669_good
      */
     public void testAbaNumberCheck_10669_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15163,7 +15485,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15177,7 +15500,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10671_good
      */
     public void testAbaNumberCheck_10671_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15208,7 +15531,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15222,7 +15546,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10673_good
      */
     public void testAbaNumberCheck_10673_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15253,7 +15577,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15267,7 +15592,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10675_good
      */
     public void testAbaNumberCheck_10675_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15298,7 +15623,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15312,7 +15638,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10677_good
      */
     public void testAbaNumberCheck_10677_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15343,7 +15669,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15357,7 +15684,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10679_good
      */
     public void testAbaNumberCheck_10679_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15388,7 +15715,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15402,7 +15730,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10681_good
      */
     public void testAbaNumberCheck_10681_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15433,7 +15761,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15447,7 +15776,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10683_good
      */
     public void testAbaNumberCheck_10683_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15478,7 +15807,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15492,7 +15822,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10685_good
      */
     public void testAbaNumberCheck_10685_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15523,7 +15853,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15537,7 +15868,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10687_good
      */
     public void testAbaNumberCheck_10687_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15568,7 +15899,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15582,7 +15914,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10689_good
      */
     public void testAbaNumberCheck_10689_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15613,7 +15945,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15627,7 +15960,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10691_good
      */
     public void testAbaNumberCheck_10691_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15658,7 +15991,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15672,7 +16006,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10693_good
      */
     public void testAbaNumberCheck_10693_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15703,7 +16037,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15717,7 +16052,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10695_good
      */
     public void testAbaNumberCheck_10695_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15748,7 +16083,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15762,7 +16098,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10697_good
      */
     public void testAbaNumberCheck_10697_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15793,7 +16129,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15807,7 +16144,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10699_good
      */
     public void testAbaNumberCheck_10699_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15838,7 +16175,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15852,7 +16190,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10701_good
      */
     public void testAbaNumberCheck_10701_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15883,7 +16221,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15897,7 +16236,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10703_good
      */
     public void testAbaNumberCheck_10703_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15928,7 +16267,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15942,7 +16282,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10705_good
      */
     public void testAbaNumberCheck_10705_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -15973,7 +16313,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -15987,7 +16328,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10707_good
      */
     public void testAbaNumberCheck_10707_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16018,7 +16359,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -16032,7 +16374,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10709_good
      */
     public void testAbaNumberCheck_10709_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16063,7 +16405,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -16077,7 +16420,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10711_good
      */
     public void testAbaNumberCheck_10711_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16123,7 +16466,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10713_good
      */
     public void testAbaNumberCheck_10713_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16154,7 +16497,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -16168,7 +16512,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10715_good
      */
     public void testAbaNumberCheck_10715_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16199,7 +16543,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -16213,7 +16558,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10717_good
      */
     public void testAbaNumberCheck_10717_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16259,7 +16604,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10719_good
      */
     public void testAbaNumberCheck_10719_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16290,7 +16635,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -16304,7 +16650,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10721_good
      */
     public void testAbaNumberCheck_10721_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16335,7 +16681,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -16349,7 +16696,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10723_good
      */
     public void testAbaNumberCheck_10723_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16380,7 +16727,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -16394,7 +16742,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10725_good
      */
     public void testAbaNumberCheck_10725_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16425,7 +16773,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -16439,7 +16788,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10727_good
      */
     public void testAbaNumberCheck_10727_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16470,7 +16819,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -16484,7 +16834,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10729_good
      */
     public void testAbaNumberCheck_10729_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16515,7 +16865,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -16529,7 +16880,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10731_good
      */
     public void testAbaNumberCheck_10731_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16560,7 +16911,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -16574,7 +16926,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10733_good
      */
     public void testAbaNumberCheck_10733_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16605,7 +16957,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -16619,7 +16972,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10735_good
      */
     public void testAbaNumberCheck_10735_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16650,7 +17003,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -16664,7 +17018,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10737_good
      */
     public void testAbaNumberCheck_10737_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16695,7 +17049,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -16709,7 +17064,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10739_good
      */
     public void testAbaNumberCheck_10739_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16740,7 +17095,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -16754,7 +17110,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10741_good
      */
     public void testAbaNumberCheck_10741_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16785,7 +17141,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -16799,7 +17156,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10743_good
      */
     public void testAbaNumberCheck_10743_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16830,7 +17187,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -16844,7 +17202,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10745_good
      */
     public void testAbaNumberCheck_10745_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16875,7 +17233,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -16889,7 +17248,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10747_good
      */
     public void testAbaNumberCheck_10747_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16920,7 +17279,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -16934,7 +17294,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10749_good
      */
     public void testAbaNumberCheck_10749_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -16965,7 +17325,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -16979,7 +17340,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10751_good
      */
     public void testAbaNumberCheck_10751_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17010,7 +17371,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -17024,7 +17386,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10753_good
      */
     public void testAbaNumberCheck_10753_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17055,7 +17417,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -17069,7 +17432,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10755_good
      */
     public void testAbaNumberCheck_10755_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17100,7 +17463,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -17114,7 +17478,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10757_good
      */
     public void testAbaNumberCheck_10757_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17145,7 +17509,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -17159,7 +17524,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10759_good
      */
     public void testAbaNumberCheck_10759_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17190,7 +17555,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -17204,7 +17570,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10761_good
      */
     public void testAbaNumberCheck_10761_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17235,7 +17601,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -17249,7 +17616,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10763_good
      */
     public void testAbaNumberCheck_10763_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17280,7 +17647,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -17294,7 +17662,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10765_good
      */
     public void testAbaNumberCheck_10765_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17325,7 +17693,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -17339,7 +17708,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10767_good
      */
     public void testAbaNumberCheck_10767_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17370,7 +17739,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -17384,7 +17754,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10769_good
      */
     public void testAbaNumberCheck_10769_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17415,7 +17785,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -17429,7 +17800,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10771_good
      */
     public void testAbaNumberCheck_10771_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17460,7 +17831,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -17474,7 +17846,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10773_good
      */
     public void testAbaNumberCheck_10773_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17520,7 +17892,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10775_good
      */
     public void testAbaNumberCheck_10775_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17551,7 +17923,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -17565,7 +17938,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10777_good
      */
     public void testAbaNumberCheck_10777_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17596,7 +17969,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -17610,7 +17984,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10779_good
      */
     public void testAbaNumberCheck_10779_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17656,7 +18030,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10781_good
      */
     public void testAbaNumberCheck_10781_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17687,7 +18061,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -17701,7 +18076,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10783_good
      */
     public void testAbaNumberCheck_10783_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17732,7 +18107,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -17746,7 +18122,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10785_good
      */
     public void testAbaNumberCheck_10785_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17777,7 +18153,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -17791,7 +18168,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10787_good
      */
     public void testAbaNumberCheck_10787_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17822,7 +18199,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -17836,7 +18214,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10789_good
      */
     public void testAbaNumberCheck_10789_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17867,7 +18245,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -17881,7 +18260,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10791_good
      */
     public void testAbaNumberCheck_10791_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17912,7 +18291,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -17926,7 +18306,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10793_good
      */
     public void testAbaNumberCheck_10793_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -17957,7 +18337,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -17971,7 +18352,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10795_good
      */
     public void testAbaNumberCheck_10795_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18002,7 +18383,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -18016,7 +18398,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10797_good
      */
     public void testAbaNumberCheck_10797_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18047,7 +18429,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -18061,7 +18444,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10799_good
      */
     public void testAbaNumberCheck_10799_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18092,7 +18475,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -18106,7 +18490,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10801_good
      */
     public void testAbaNumberCheck_10801_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18137,7 +18521,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -18151,7 +18536,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10803_good
      */
     public void testAbaNumberCheck_10803_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18182,7 +18567,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -18196,7 +18582,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10805_good
      */
     public void testAbaNumberCheck_10805_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18227,7 +18613,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -18241,7 +18628,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10807_good
      */
     public void testAbaNumberCheck_10807_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18287,7 +18674,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10809_good
      */
     public void testAbaNumberCheck_10809_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18318,7 +18705,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -18332,7 +18720,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10811_good
      */
     public void testAbaNumberCheck_10811_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18363,7 +18751,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -18377,7 +18766,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10813_good
      */
     public void testAbaNumberCheck_10813_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18408,7 +18797,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -18422,7 +18812,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10815_good
      */
     public void testAbaNumberCheck_10815_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18453,7 +18843,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -18467,7 +18858,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10817_good
      */
     public void testAbaNumberCheck_10817_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18498,7 +18889,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -18512,7 +18904,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10819_good
      */
     public void testAbaNumberCheck_10819_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18543,7 +18935,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -18557,7 +18950,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10821_good
      */
     public void testAbaNumberCheck_10821_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18588,7 +18981,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -18602,7 +18996,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10823_good
      */
     public void testAbaNumberCheck_10823_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18633,7 +19027,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -18647,7 +19042,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10825_good
      */
     public void testAbaNumberCheck_10825_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18678,7 +19073,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -18692,7 +19088,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10827_good
      */
     public void testAbaNumberCheck_10827_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18723,7 +19119,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -18737,7 +19134,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10829_good
      */
     public void testAbaNumberCheck_10829_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18768,7 +19165,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -18782,7 +19180,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10831_good
      */
     public void testAbaNumberCheck_10831_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18813,7 +19211,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -18827,7 +19226,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10833_good
      */
     public void testAbaNumberCheck_10833_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18858,7 +19257,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -18872,7 +19272,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10835_good
      */
     public void testAbaNumberCheck_10835_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18903,7 +19303,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -18917,7 +19318,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10837_good
      */
     public void testAbaNumberCheck_10837_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18963,7 +19364,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10839_good
      */
     public void testAbaNumberCheck_10839_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -18994,7 +19395,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19008,7 +19410,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10841_good
      */
     public void testAbaNumberCheck_10841_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19039,7 +19441,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19053,7 +19456,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10843_good
      */
     public void testAbaNumberCheck_10843_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19084,7 +19487,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1002, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.too.short", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19098,7 +19502,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10845_good
      */
     public void testAbaNumberCheck_10845_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19129,7 +19533,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19143,7 +19548,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10847_good
      */
     public void testAbaNumberCheck_10847_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19174,7 +19579,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19188,7 +19594,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10849_good
      */
     public void testAbaNumberCheck_10849_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19219,7 +19625,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19233,7 +19640,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10851_good
      */
     public void testAbaNumberCheck_10851_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19264,7 +19671,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19278,7 +19686,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10853_good
      */
     public void testAbaNumberCheck_10853_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19309,7 +19717,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19323,7 +19732,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10855_good
      */
     public void testAbaNumberCheck_10855_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19354,7 +19763,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19368,7 +19778,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10857_good
      */
     public void testAbaNumberCheck_10857_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19399,7 +19809,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19413,7 +19824,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10859_good
      */
     public void testAbaNumberCheck_10859_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19444,7 +19855,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19458,7 +19870,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10861_good
      */
     public void testAbaNumberCheck_10861_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19489,7 +19901,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19503,7 +19916,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10863_good
      */
     public void testAbaNumberCheck_10863_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19549,7 +19962,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10865_good
      */
     public void testAbaNumberCheck_10865_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19580,7 +19993,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19594,7 +20008,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10867_good
      */
     public void testAbaNumberCheck_10867_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19625,7 +20039,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19639,7 +20054,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10869_good
      */
     public void testAbaNumberCheck_10869_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19670,7 +20085,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19684,7 +20100,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10871_good
      */
     public void testAbaNumberCheck_10871_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19715,7 +20131,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19729,7 +20146,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10873_good
      */
     public void testAbaNumberCheck_10873_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19760,7 +20177,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19774,7 +20192,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10875_good
      */
     public void testAbaNumberCheck_10875_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19805,7 +20223,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19819,7 +20238,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10877_good
      */
     public void testAbaNumberCheck_10877_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19850,7 +20269,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19864,7 +20284,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10879_good
      */
     public void testAbaNumberCheck_10879_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19895,7 +20315,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1003, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.too.long", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19909,7 +20330,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10881_good
      */
     public void testAbaNumberCheck_10881_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19940,7 +20361,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19954,7 +20376,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10883_good
      */
     public void testAbaNumberCheck_10883_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -19985,7 +20407,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -19999,7 +20422,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10885_good
      */
     public void testAbaNumberCheck_10885_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20030,7 +20453,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20044,7 +20468,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10887_good
      */
     public void testAbaNumberCheck_10887_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20075,7 +20499,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20089,7 +20514,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10889_good
      */
     public void testAbaNumberCheck_10889_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20120,7 +20545,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20134,7 +20560,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10891_good
      */
     public void testAbaNumberCheck_10891_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20180,7 +20606,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10893_good
      */
     public void testAbaNumberCheck_10893_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20211,7 +20637,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20225,7 +20652,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10895_good
      */
     public void testAbaNumberCheck_10895_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20256,7 +20683,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20270,7 +20698,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10897_good
      */
     public void testAbaNumberCheck_10897_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20301,7 +20729,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20315,7 +20744,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10899_good
      */
     public void testAbaNumberCheck_10899_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20346,7 +20775,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20360,7 +20790,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10901_good
      */
     public void testAbaNumberCheck_10901_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20391,7 +20821,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20405,7 +20836,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10903_good
      */
     public void testAbaNumberCheck_10903_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20436,7 +20867,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20450,7 +20882,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10905_good
      */
     public void testAbaNumberCheck_10905_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20481,7 +20913,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20495,7 +20928,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10907_good
      */
     public void testAbaNumberCheck_10907_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20526,7 +20959,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20540,7 +20974,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10909_good
      */
     public void testAbaNumberCheck_10909_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20571,7 +21005,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20585,7 +21020,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10911_good
      */
     public void testAbaNumberCheck_10911_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20616,7 +21051,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20630,7 +21066,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10913_good
      */
     public void testAbaNumberCheck_10913_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20661,7 +21097,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20675,7 +21112,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10915_good
      */
     public void testAbaNumberCheck_10915_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20706,7 +21143,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20720,7 +21158,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10917_good
      */
     public void testAbaNumberCheck_10917_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20751,7 +21189,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20765,7 +21204,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10919_good
      */
     public void testAbaNumberCheck_10919_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20796,7 +21235,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20810,7 +21250,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10921_good
      */
     public void testAbaNumberCheck_10921_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20841,7 +21281,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20855,7 +21296,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10923_good
      */
     public void testAbaNumberCheck_10923_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20886,7 +21327,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20900,7 +21342,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10925_good
      */
     public void testAbaNumberCheck_10925_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20931,7 +21373,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20945,7 +21388,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10927_good
      */
     public void testAbaNumberCheck_10927_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -20976,7 +21419,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -20990,7 +21434,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10929_good
      */
     public void testAbaNumberCheck_10929_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21021,7 +21465,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21035,7 +21480,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10931_good
      */
     public void testAbaNumberCheck_10931_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21066,7 +21511,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21080,7 +21526,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10933_good
      */
     public void testAbaNumberCheck_10933_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21111,7 +21557,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21125,7 +21572,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10935_good
      */
     public void testAbaNumberCheck_10935_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21156,7 +21603,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21170,7 +21618,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10937_good
      */
     public void testAbaNumberCheck_10937_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21201,7 +21649,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21215,7 +21664,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10939_good
      */
     public void testAbaNumberCheck_10939_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21246,7 +21695,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21260,7 +21710,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10941_good
      */
     public void testAbaNumberCheck_10941_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21291,7 +21741,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21305,7 +21756,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10943_good
      */
     public void testAbaNumberCheck_10943_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21336,7 +21787,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21350,7 +21802,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10945_good
      */
     public void testAbaNumberCheck_10945_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21381,7 +21833,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21395,7 +21848,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10947_good
      */
     public void testAbaNumberCheck_10947_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21426,7 +21879,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21440,7 +21894,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10949_good
      */
     public void testAbaNumberCheck_10949_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21471,7 +21925,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21485,7 +21940,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10951_good
      */
     public void testAbaNumberCheck_10951_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21516,7 +21971,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21530,7 +21986,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10953_good
      */
     public void testAbaNumberCheck_10953_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21561,7 +22017,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21575,7 +22032,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10955_good
      */
     public void testAbaNumberCheck_10955_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21606,7 +22063,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21620,7 +22078,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10957_good
      */
     public void testAbaNumberCheck_10957_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21651,7 +22109,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21665,7 +22124,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10959_good
      */
     public void testAbaNumberCheck_10959_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21696,7 +22155,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21710,7 +22170,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10961_good
      */
     public void testAbaNumberCheck_10961_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21741,7 +22201,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21755,7 +22216,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10963_good
      */
     public void testAbaNumberCheck_10963_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21786,7 +22247,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21800,7 +22262,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10965_good
      */
     public void testAbaNumberCheck_10965_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21831,7 +22293,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21845,7 +22308,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10967_good
      */
     public void testAbaNumberCheck_10967_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21876,7 +22339,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21890,7 +22354,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10969_good
      */
     public void testAbaNumberCheck_10969_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21921,7 +22385,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21935,7 +22400,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10971_good
      */
     public void testAbaNumberCheck_10971_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -21966,7 +22431,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -21980,7 +22446,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10973_good
      */
     public void testAbaNumberCheck_10973_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22011,7 +22477,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22025,7 +22492,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10975_good
      */
     public void testAbaNumberCheck_10975_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22056,7 +22523,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22070,7 +22538,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10977_good
      */
     public void testAbaNumberCheck_10977_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22101,7 +22569,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22115,7 +22584,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10979_good
      */
     public void testAbaNumberCheck_10979_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22146,7 +22615,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22160,7 +22630,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10981_good
      */
     public void testAbaNumberCheck_10981_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22191,7 +22661,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22205,7 +22676,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10983_good
      */
     public void testAbaNumberCheck_10983_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22236,7 +22707,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22250,7 +22722,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10985_good
      */
     public void testAbaNumberCheck_10985_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22281,7 +22753,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22295,7 +22768,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10987_good
      */
     public void testAbaNumberCheck_10987_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22326,7 +22799,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22340,7 +22814,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10989_good
      */
     public void testAbaNumberCheck_10989_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22371,7 +22845,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22385,7 +22860,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10991_good
      */
     public void testAbaNumberCheck_10991_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22416,7 +22891,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22430,7 +22906,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10993_good
      */
     public void testAbaNumberCheck_10993_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22461,7 +22937,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22475,7 +22952,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10995_good
      */
     public void testAbaNumberCheck_10995_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22506,7 +22983,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22520,7 +22998,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10997_good
      */
     public void testAbaNumberCheck_10997_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22551,7 +23029,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22565,7 +23044,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_10999_good
      */
     public void testAbaNumberCheck_10999_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22596,7 +23075,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22610,7 +23090,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11001_good
      */
     public void testAbaNumberCheck_11001_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22641,7 +23121,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22655,7 +23136,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11003_good
      */
     public void testAbaNumberCheck_11003_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22686,7 +23167,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22700,7 +23182,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11005_good
      */
     public void testAbaNumberCheck_11005_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22731,7 +23213,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22745,7 +23228,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11007_good
      */
     public void testAbaNumberCheck_11007_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22776,7 +23259,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22790,7 +23274,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11009_good
      */
     public void testAbaNumberCheck_11009_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22821,7 +23305,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22835,7 +23320,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11011_good
      */
     public void testAbaNumberCheck_11011_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22866,7 +23351,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22880,7 +23366,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11013_good
      */
     public void testAbaNumberCheck_11013_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22911,7 +23397,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22925,7 +23412,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11015_good
      */
     public void testAbaNumberCheck_11015_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -22956,7 +23443,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -22970,7 +23458,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11017_good
      */
     public void testAbaNumberCheck_11017_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23001,7 +23489,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23015,7 +23504,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11019_good
      */
     public void testAbaNumberCheck_11019_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23046,7 +23535,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23060,7 +23550,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11021_good
      */
     public void testAbaNumberCheck_11021_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23091,7 +23581,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23105,7 +23596,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11023_good
      */
     public void testAbaNumberCheck_11023_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23136,7 +23627,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23150,7 +23642,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11025_good
      */
     public void testAbaNumberCheck_11025_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23181,7 +23673,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23195,7 +23688,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11027_good
      */
     public void testAbaNumberCheck_11027_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23226,7 +23719,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23240,7 +23734,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11029_good
      */
     public void testAbaNumberCheck_11029_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23271,7 +23765,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23285,7 +23780,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11031_good
      */
     public void testAbaNumberCheck_11031_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23316,7 +23811,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23330,7 +23826,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11033_good
      */
     public void testAbaNumberCheck_11033_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23361,7 +23857,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23375,7 +23872,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11035_good
      */
     public void testAbaNumberCheck_11035_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23406,7 +23903,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23420,7 +23918,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11037_good
      */
     public void testAbaNumberCheck_11037_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23451,7 +23949,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23465,7 +23964,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11039_good
      */
     public void testAbaNumberCheck_11039_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23496,7 +23995,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23510,7 +24010,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11041_good
      */
     public void testAbaNumberCheck_11041_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23541,7 +24041,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23555,7 +24056,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11043_good
      */
     public void testAbaNumberCheck_11043_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23586,7 +24087,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23600,7 +24102,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11045_good
      */
     public void testAbaNumberCheck_11045_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23631,7 +24133,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23645,7 +24148,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11047_good
      */
     public void testAbaNumberCheck_11047_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23676,7 +24179,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23690,7 +24194,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11049_good
      */
     public void testAbaNumberCheck_11049_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23721,7 +24225,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23735,7 +24240,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11051_good
      */
     public void testAbaNumberCheck_11051_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23766,7 +24271,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23780,7 +24286,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11053_good
      */
     public void testAbaNumberCheck_11053_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23811,7 +24317,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23825,7 +24332,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11055_good
      */
     public void testAbaNumberCheck_11055_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23856,7 +24363,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23870,7 +24378,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11057_good
      */
     public void testAbaNumberCheck_11057_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23901,7 +24409,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23915,7 +24424,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11059_good
      */
     public void testAbaNumberCheck_11059_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23946,7 +24455,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -23960,7 +24470,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11061_good
      */
     public void testAbaNumberCheck_11061_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -23991,7 +24501,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24005,7 +24516,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11063_good
      */
     public void testAbaNumberCheck_11063_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24036,7 +24547,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24050,7 +24562,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11065_good
      */
     public void testAbaNumberCheck_11065_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24096,7 +24608,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11067_good
      */
     public void testAbaNumberCheck_11067_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24127,7 +24639,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24141,7 +24654,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11069_good
      */
     public void testAbaNumberCheck_11069_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24172,7 +24685,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24186,7 +24700,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11071_good
      */
     public void testAbaNumberCheck_11071_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24217,7 +24731,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24231,7 +24746,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11073_good
      */
     public void testAbaNumberCheck_11073_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24262,7 +24777,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24276,7 +24792,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11075_good
      */
     public void testAbaNumberCheck_11075_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24307,7 +24823,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24321,7 +24838,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11077_good
      */
     public void testAbaNumberCheck_11077_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24352,7 +24869,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24366,7 +24884,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11079_good
      */
     public void testAbaNumberCheck_11079_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24397,7 +24915,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24411,7 +24930,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11081_good
      */
     public void testAbaNumberCheck_11081_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24442,7 +24961,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24456,7 +24976,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11083_good
      */
     public void testAbaNumberCheck_11083_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24487,7 +25007,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24501,7 +25022,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11085_good
      */
     public void testAbaNumberCheck_11085_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24547,7 +25068,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11087_good
      */
     public void testAbaNumberCheck_11087_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24578,7 +25099,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24592,7 +25114,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11089_good
      */
     public void testAbaNumberCheck_11089_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24623,7 +25145,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24637,7 +25160,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11091_good
      */
     public void testAbaNumberCheck_11091_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24668,7 +25191,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24682,7 +25206,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11093_good
      */
     public void testAbaNumberCheck_11093_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24713,7 +25237,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24727,7 +25252,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11095_good
      */
     public void testAbaNumberCheck_11095_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24758,7 +25283,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24772,7 +25298,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11097_good
      */
     public void testAbaNumberCheck_11097_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24803,7 +25329,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24817,7 +25344,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11099_good
      */
     public void testAbaNumberCheck_11099_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24848,7 +25375,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24862,7 +25390,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11101_good
      */
     public void testAbaNumberCheck_11101_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24893,7 +25421,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24907,7 +25436,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11103_good
      */
     public void testAbaNumberCheck_11103_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24938,7 +25467,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24952,7 +25482,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11105_good
      */
     public void testAbaNumberCheck_11105_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -24983,7 +25513,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -24997,7 +25528,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11107_good
      */
     public void testAbaNumberCheck_11107_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25028,7 +25559,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25042,7 +25574,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11109_good
      */
     public void testAbaNumberCheck_11109_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25073,7 +25605,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25087,7 +25620,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11111_good
      */
     public void testAbaNumberCheck_11111_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25118,7 +25651,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25132,7 +25666,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11113_good
      */
     public void testAbaNumberCheck_11113_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25163,7 +25697,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25177,7 +25712,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11115_good
      */
     public void testAbaNumberCheck_11115_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25208,7 +25743,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25222,7 +25758,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11117_good
      */
     public void testAbaNumberCheck_11117_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25253,7 +25789,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25267,7 +25804,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11119_good
      */
     public void testAbaNumberCheck_11119_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25298,7 +25835,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25312,7 +25850,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11121_good
      */
     public void testAbaNumberCheck_11121_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25343,7 +25881,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25357,7 +25896,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11123_good
      */
     public void testAbaNumberCheck_11123_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25388,7 +25927,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25402,7 +25942,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11125_good
      */
     public void testAbaNumberCheck_11125_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25433,7 +25973,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25447,7 +25988,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11127_good
      */
     public void testAbaNumberCheck_11127_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25478,7 +26019,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25492,7 +26034,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11129_good
      */
     public void testAbaNumberCheck_11129_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25523,7 +26065,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25537,7 +26080,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11131_good
      */
     public void testAbaNumberCheck_11131_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25568,7 +26111,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25582,7 +26126,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11133_good
      */
     public void testAbaNumberCheck_11133_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25613,7 +26157,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1002, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.too.short", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25627,7 +26172,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11135_good
      */
     public void testAbaNumberCheck_11135_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25658,7 +26203,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25672,7 +26218,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11137_good
      */
     public void testAbaNumberCheck_11137_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25703,7 +26249,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25717,7 +26264,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11139_good
      */
     public void testAbaNumberCheck_11139_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25748,7 +26295,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25762,7 +26310,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11141_good
      */
     public void testAbaNumberCheck_11141_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25793,7 +26341,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25807,7 +26356,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11143_good
      */
     public void testAbaNumberCheck_11143_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25838,7 +26387,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25852,7 +26402,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11145_good
      */
     public void testAbaNumberCheck_11145_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25883,7 +26433,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25897,7 +26448,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11147_good
      */
     public void testAbaNumberCheck_11147_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25928,7 +26479,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25942,7 +26494,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11149_good
      */
     public void testAbaNumberCheck_11149_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -25973,7 +26525,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -25987,7 +26540,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11151_good
      */
     public void testAbaNumberCheck_11151_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26018,7 +26571,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26032,7 +26586,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11153_good
      */
     public void testAbaNumberCheck_11153_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26063,7 +26617,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26077,7 +26632,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11155_good
      */
     public void testAbaNumberCheck_11155_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26108,7 +26663,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26122,7 +26678,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11157_good
      */
     public void testAbaNumberCheck_11157_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26153,7 +26709,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26167,7 +26724,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11159_good
      */
     public void testAbaNumberCheck_11159_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26198,7 +26755,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26212,7 +26770,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11161_good
      */
     public void testAbaNumberCheck_11161_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26243,7 +26801,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26257,7 +26816,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11163_good
      */
     public void testAbaNumberCheck_11163_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26288,7 +26847,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26302,7 +26862,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11165_good
      */
     public void testAbaNumberCheck_11165_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26333,7 +26893,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26347,7 +26908,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11167_good
      */
     public void testAbaNumberCheck_11167_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26378,7 +26939,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26392,7 +26954,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11169_good
      */
     public void testAbaNumberCheck_11169_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26423,7 +26985,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26437,7 +27000,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11171_good
      */
     public void testAbaNumberCheck_11171_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26468,7 +27031,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26482,7 +27046,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11173_good
      */
     public void testAbaNumberCheck_11173_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26513,7 +27077,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26527,7 +27092,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11175_good
      */
     public void testAbaNumberCheck_11175_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26558,7 +27123,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26572,7 +27138,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11177_good
      */
     public void testAbaNumberCheck_11177_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26603,7 +27169,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26617,7 +27184,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11179_good
      */
     public void testAbaNumberCheck_11179_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26648,7 +27215,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26662,7 +27230,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11181_good
      */
     public void testAbaNumberCheck_11181_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26693,7 +27261,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26707,7 +27276,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11183_good
      */
     public void testAbaNumberCheck_11183_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26738,7 +27307,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26752,7 +27322,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11185_good
      */
     public void testAbaNumberCheck_11185_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26783,7 +27353,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26797,7 +27368,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11187_good
      */
     public void testAbaNumberCheck_11187_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26828,7 +27399,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26842,7 +27414,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11189_good
      */
     public void testAbaNumberCheck_11189_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26873,7 +27445,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26887,7 +27460,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11191_good
      */
     public void testAbaNumberCheck_11191_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26918,7 +27491,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26932,7 +27506,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11193_good
      */
     public void testAbaNumberCheck_11193_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -26963,7 +27537,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -26977,7 +27552,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11195_good
      */
     public void testAbaNumberCheck_11195_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27008,7 +27583,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27022,7 +27598,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11197_good
      */
     public void testAbaNumberCheck_11197_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27053,7 +27629,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27067,7 +27644,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11199_good
      */
     public void testAbaNumberCheck_11199_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27098,7 +27675,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27112,7 +27690,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11201_good
      */
     public void testAbaNumberCheck_11201_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27143,7 +27721,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27157,7 +27736,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11203_good
      */
     public void testAbaNumberCheck_11203_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27188,7 +27767,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27202,7 +27782,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11205_good
      */
     public void testAbaNumberCheck_11205_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27233,7 +27813,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27247,7 +27828,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11207_good
      */
     public void testAbaNumberCheck_11207_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27278,7 +27859,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27292,7 +27874,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11209_good
      */
     public void testAbaNumberCheck_11209_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27323,7 +27905,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27337,7 +27920,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11211_good
      */
     public void testAbaNumberCheck_11211_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27368,7 +27951,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27382,7 +27966,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11213_good
      */
     public void testAbaNumberCheck_11213_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27413,7 +27997,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27427,7 +28012,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11215_good
      */
     public void testAbaNumberCheck_11215_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27458,7 +28043,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27472,7 +28058,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11217_good
      */
     public void testAbaNumberCheck_11217_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27503,7 +28089,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27517,7 +28104,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11219_good
      */
     public void testAbaNumberCheck_11219_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27548,7 +28135,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27562,7 +28150,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11221_good
      */
     public void testAbaNumberCheck_11221_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27593,7 +28181,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27607,7 +28196,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11223_good
      */
     public void testAbaNumberCheck_11223_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27638,7 +28227,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27652,7 +28242,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11225_good
      */
     public void testAbaNumberCheck_11225_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27683,7 +28273,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27697,7 +28288,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11227_good
      */
     public void testAbaNumberCheck_11227_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27728,7 +28319,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27742,7 +28334,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11229_good
      */
     public void testAbaNumberCheck_11229_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27773,7 +28365,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27787,7 +28380,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11231_good
      */
     public void testAbaNumberCheck_11231_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27818,7 +28411,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27832,7 +28426,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11233_good
      */
     public void testAbaNumberCheck_11233_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27863,7 +28457,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27877,7 +28472,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11235_good
      */
     public void testAbaNumberCheck_11235_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27908,7 +28503,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27922,7 +28518,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11237_good
      */
     public void testAbaNumberCheck_11237_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27953,7 +28549,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -27967,7 +28564,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11239_good
      */
     public void testAbaNumberCheck_11239_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -27998,7 +28595,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28012,7 +28610,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11241_good
      */
     public void testAbaNumberCheck_11241_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28043,7 +28641,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28057,7 +28656,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11243_good
      */
     public void testAbaNumberCheck_11243_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28088,7 +28687,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28102,7 +28702,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11245_good
      */
     public void testAbaNumberCheck_11245_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28133,7 +28733,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28147,7 +28748,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11247_good
      */
     public void testAbaNumberCheck_11247_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28178,7 +28779,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28192,7 +28794,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11249_good
      */
     public void testAbaNumberCheck_11249_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28223,7 +28825,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28237,7 +28840,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11251_good
      */
     public void testAbaNumberCheck_11251_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28268,7 +28871,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28282,7 +28886,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11253_good
      */
     public void testAbaNumberCheck_11253_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28313,7 +28917,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28327,7 +28932,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11255_good
      */
     public void testAbaNumberCheck_11255_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28358,7 +28963,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28372,7 +28978,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11257_good
      */
     public void testAbaNumberCheck_11257_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28403,7 +29009,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28417,7 +29024,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11259_good
      */
     public void testAbaNumberCheck_11259_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28448,7 +29055,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28462,7 +29070,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11261_good
      */
     public void testAbaNumberCheck_11261_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28493,7 +29101,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28507,7 +29116,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11263_good
      */
     public void testAbaNumberCheck_11263_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28538,7 +29147,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28552,7 +29162,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11265_good
      */
     public void testAbaNumberCheck_11265_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28583,7 +29193,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28597,7 +29208,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11267_good
      */
     public void testAbaNumberCheck_11267_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28628,7 +29239,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28642,7 +29254,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11269_good
      */
     public void testAbaNumberCheck_11269_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28673,7 +29285,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28687,7 +29300,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11271_good
      */
     public void testAbaNumberCheck_11271_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28718,7 +29331,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28732,7 +29346,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11273_good
      */
     public void testAbaNumberCheck_11273_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28763,7 +29377,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28777,7 +29392,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11275_good
      */
     public void testAbaNumberCheck_11275_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28808,7 +29423,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28822,7 +29438,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11277_good
      */
     public void testAbaNumberCheck_11277_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28868,7 +29484,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11279_good
      */
     public void testAbaNumberCheck_11279_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28899,7 +29515,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28913,7 +29530,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11281_good
      */
     public void testAbaNumberCheck_11281_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -28944,7 +29561,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -28958,7 +29576,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11283_good
      */
     public void testAbaNumberCheck_11283_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29004,7 +29622,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11285_good
      */
     public void testAbaNumberCheck_11285_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29050,7 +29668,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11287_good
      */
     public void testAbaNumberCheck_11287_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29081,7 +29699,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -29095,7 +29714,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11289_good
      */
     public void testAbaNumberCheck_11289_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29126,7 +29745,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -29140,7 +29760,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11291_good
      */
     public void testAbaNumberCheck_11291_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29171,7 +29791,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -29185,7 +29806,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11293_good
      */
     public void testAbaNumberCheck_11293_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29216,7 +29837,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -29230,7 +29852,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11295_good
      */
     public void testAbaNumberCheck_11295_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29261,7 +29883,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -29275,7 +29898,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11297_good
      */
     public void testAbaNumberCheck_11297_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29306,7 +29929,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -29320,7 +29944,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11299_good
      */
     public void testAbaNumberCheck_11299_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29351,7 +29975,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -29365,7 +29990,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11301_good
      */
     public void testAbaNumberCheck_11301_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29396,7 +30021,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -29410,7 +30036,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11303_good
      */
     public void testAbaNumberCheck_11303_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29456,7 +30082,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11305_good
      */
     public void testAbaNumberCheck_11305_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29487,7 +30113,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -29501,7 +30128,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11307_good
      */
     public void testAbaNumberCheck_11307_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29532,7 +30159,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -29546,7 +30174,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11309_good
      */
     public void testAbaNumberCheck_11309_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29577,7 +30205,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -29591,7 +30220,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11311_good
      */
     public void testAbaNumberCheck_11311_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29622,7 +30251,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -29636,7 +30266,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11313_good
      */
     public void testAbaNumberCheck_11313_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29667,7 +30297,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -29681,7 +30312,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11315_good
      */
     public void testAbaNumberCheck_11315_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29712,7 +30343,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -29726,7 +30358,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11317_good
      */
     public void testAbaNumberCheck_11317_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29757,7 +30389,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -29771,7 +30404,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11319_good
      */
     public void testAbaNumberCheck_11319_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29802,7 +30435,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -29816,7 +30450,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11321_good
      */
     public void testAbaNumberCheck_11321_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29847,7 +30481,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -29861,7 +30496,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11323_good
      */
     public void testAbaNumberCheck_11323_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29892,7 +30527,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -29906,7 +30542,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11325_good
      */
     public void testAbaNumberCheck_11325_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29937,7 +30573,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -29951,7 +30588,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11327_good
      */
     public void testAbaNumberCheck_11327_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -29982,7 +30619,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -29996,7 +30634,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11329_good
      */
     public void testAbaNumberCheck_11329_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30027,7 +30665,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30041,7 +30680,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11331_good
      */
     public void testAbaNumberCheck_11331_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30072,7 +30711,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30086,7 +30726,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11333_good
      */
     public void testAbaNumberCheck_11333_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30117,7 +30757,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30131,7 +30772,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11335_good
      */
     public void testAbaNumberCheck_11335_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30162,7 +30803,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30176,7 +30818,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11337_good
      */
     public void testAbaNumberCheck_11337_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30207,7 +30849,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30221,7 +30864,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11339_good
      */
     public void testAbaNumberCheck_11339_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30252,7 +30895,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30266,7 +30910,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11341_good
      */
     public void testAbaNumberCheck_11341_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30297,7 +30941,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30311,7 +30956,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11343_good
      */
     public void testAbaNumberCheck_11343_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30342,7 +30987,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30356,7 +31002,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11345_good
      */
     public void testAbaNumberCheck_11345_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30387,7 +31033,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30401,7 +31048,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11347_good
      */
     public void testAbaNumberCheck_11347_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30432,7 +31079,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30446,7 +31094,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11349_good
      */
     public void testAbaNumberCheck_11349_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30477,7 +31125,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30491,7 +31140,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11351_good
      */
     public void testAbaNumberCheck_11351_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30537,7 +31186,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11353_good
      */
     public void testAbaNumberCheck_11353_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30568,7 +31217,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30582,7 +31232,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11355_good
      */
     public void testAbaNumberCheck_11355_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30613,7 +31263,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30627,7 +31278,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11357_good
      */
     public void testAbaNumberCheck_11357_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30658,7 +31309,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30672,7 +31324,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11359_good
      */
     public void testAbaNumberCheck_11359_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30703,7 +31355,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30717,7 +31370,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11361_good
      */
     public void testAbaNumberCheck_11361_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30748,7 +31401,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30762,7 +31416,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11363_good
      */
     public void testAbaNumberCheck_11363_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30793,7 +31447,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30807,7 +31462,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11365_good
      */
     public void testAbaNumberCheck_11365_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30838,7 +31493,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30852,7 +31508,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11367_good
      */
     public void testAbaNumberCheck_11367_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30883,7 +31539,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30897,7 +31554,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11369_good
      */
     public void testAbaNumberCheck_11369_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30928,7 +31585,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30942,7 +31600,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11371_good
      */
     public void testAbaNumberCheck_11371_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -30973,7 +31631,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -30987,7 +31646,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11373_good
      */
     public void testAbaNumberCheck_11373_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31018,7 +31677,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31032,7 +31692,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11375_good
      */
     public void testAbaNumberCheck_11375_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31063,7 +31723,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31077,7 +31738,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11377_good
      */
     public void testAbaNumberCheck_11377_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31108,7 +31769,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31122,7 +31784,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11379_good
      */
     public void testAbaNumberCheck_11379_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31153,7 +31815,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31167,7 +31830,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11381_good
      */
     public void testAbaNumberCheck_11381_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31213,7 +31876,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11383_good
      */
     public void testAbaNumberCheck_11383_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31244,7 +31907,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31258,7 +31922,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11385_good
      */
     public void testAbaNumberCheck_11385_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31289,7 +31953,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31303,7 +31968,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11387_good
      */
     public void testAbaNumberCheck_11387_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31334,7 +31999,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31348,7 +32014,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11389_good
      */
     public void testAbaNumberCheck_11389_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31379,7 +32045,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31393,7 +32060,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11391_good
      */
     public void testAbaNumberCheck_11391_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31424,7 +32091,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31438,7 +32106,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11393_good
      */
     public void testAbaNumberCheck_11393_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31469,7 +32137,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31483,7 +32152,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11395_good
      */
     public void testAbaNumberCheck_11395_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31514,7 +32183,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31528,7 +32198,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11397_good
      */
     public void testAbaNumberCheck_11397_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31559,7 +32229,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31573,7 +32244,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11399_good
      */
     public void testAbaNumberCheck_11399_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31604,7 +32275,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31618,7 +32290,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11401_good
      */
     public void testAbaNumberCheck_11401_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31649,7 +32321,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31663,7 +32336,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11403_good
      */
     public void testAbaNumberCheck_11403_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31694,7 +32367,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31708,7 +32382,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11405_good
      */
     public void testAbaNumberCheck_11405_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31739,7 +32413,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31753,7 +32428,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11407_good
      */
     public void testAbaNumberCheck_11407_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31784,7 +32459,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31798,7 +32474,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11409_good
      */
     public void testAbaNumberCheck_11409_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31829,7 +32505,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31843,7 +32520,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11411_good
      */
     public void testAbaNumberCheck_11411_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31874,7 +32551,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31888,7 +32566,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11413_good
      */
     public void testAbaNumberCheck_11413_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31919,7 +32597,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31933,7 +32612,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11415_good
      */
     public void testAbaNumberCheck_11415_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -31964,7 +32643,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -31978,7 +32658,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11417_good
      */
     public void testAbaNumberCheck_11417_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32009,7 +32689,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -32023,7 +32704,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11419_good
      */
     public void testAbaNumberCheck_11419_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32054,7 +32735,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -32068,7 +32750,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11421_good
      */
     public void testAbaNumberCheck_11421_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32099,7 +32781,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -32113,7 +32796,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11423_good
      */
     public void testAbaNumberCheck_11423_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32144,7 +32827,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -32158,7 +32842,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11425_good
      */
     public void testAbaNumberCheck_11425_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32189,7 +32873,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -32203,7 +32888,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11427_good
      */
     public void testAbaNumberCheck_11427_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32234,7 +32919,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -32248,7 +32934,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11429_good
      */
     public void testAbaNumberCheck_11429_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32279,7 +32965,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -32293,7 +32980,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11431_good
      */
     public void testAbaNumberCheck_11431_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32324,7 +33011,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -32338,7 +33026,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11433_good
      */
     public void testAbaNumberCheck_11433_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32369,7 +33057,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -32383,7 +33072,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11435_good
      */
     public void testAbaNumberCheck_11435_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32414,7 +33103,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -32428,7 +33118,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11437_good
      */
     public void testAbaNumberCheck_11437_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32459,7 +33149,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -32473,7 +33164,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11439_good
      */
     public void testAbaNumberCheck_11439_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32504,7 +33195,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -32518,7 +33210,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11441_good
      */
     public void testAbaNumberCheck_11441_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32549,7 +33241,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -32563,7 +33256,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11443_good
      */
     public void testAbaNumberCheck_11443_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32609,7 +33302,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11445_good
      */
     public void testAbaNumberCheck_11445_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32640,7 +33333,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -32654,7 +33348,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11447_good
      */
     public void testAbaNumberCheck_11447_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32685,7 +33379,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -32699,7 +33394,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11449_good
      */
     public void testAbaNumberCheck_11449_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32730,7 +33425,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -32744,7 +33440,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11451_good
      */
     public void testAbaNumberCheck_11451_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32790,7 +33486,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11453_good
      */
     public void testAbaNumberCheck_11453_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32821,7 +33517,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -32835,7 +33532,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11455_good
      */
     public void testAbaNumberCheck_11455_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32866,7 +33563,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -32880,7 +33578,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11457_good
      */
     public void testAbaNumberCheck_11457_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32911,7 +33609,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -32925,7 +33624,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11459_good
      */
     public void testAbaNumberCheck_11459_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -32956,7 +33655,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -32970,7 +33670,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11461_good
      */
     public void testAbaNumberCheck_11461_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33016,7 +33716,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11463_good
      */
     public void testAbaNumberCheck_11463_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33047,7 +33747,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -33061,7 +33762,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11465_good
      */
     public void testAbaNumberCheck_11465_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33092,7 +33793,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -33106,7 +33808,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11467_good
      */
     public void testAbaNumberCheck_11467_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33137,7 +33839,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -33151,7 +33854,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11469_good
      */
     public void testAbaNumberCheck_11469_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33182,7 +33885,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -33196,7 +33900,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11471_good
      */
     public void testAbaNumberCheck_11471_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33227,7 +33931,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -33241,7 +33946,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11473_good
      */
     public void testAbaNumberCheck_11473_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33272,7 +33977,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -33286,7 +33992,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11475_good
      */
     public void testAbaNumberCheck_11475_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33317,7 +34023,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -33331,7 +34038,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11477_good
      */
     public void testAbaNumberCheck_11477_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33362,7 +34069,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -33376,7 +34084,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11479_good
      */
     public void testAbaNumberCheck_11479_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33407,7 +34115,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -33421,7 +34130,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11481_good
      */
     public void testAbaNumberCheck_11481_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33452,7 +34161,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -33466,7 +34176,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11483_good
      */
     public void testAbaNumberCheck_11483_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33497,7 +34207,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -33511,7 +34222,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11485_good
      */
     public void testAbaNumberCheck_11485_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33557,7 +34268,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11487_good
      */
     public void testAbaNumberCheck_11487_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33588,7 +34299,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -33602,7 +34314,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11489_good
      */
     public void testAbaNumberCheck_11489_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33633,7 +34345,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -33647,7 +34360,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11491_good
      */
     public void testAbaNumberCheck_11491_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33678,7 +34391,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -33692,7 +34406,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11493_good
      */
     public void testAbaNumberCheck_11493_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33723,7 +34437,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -33737,7 +34452,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11495_good
      */
     public void testAbaNumberCheck_11495_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33768,7 +34483,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -33782,7 +34498,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11497_good
      */
     public void testAbaNumberCheck_11497_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33813,7 +34529,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -33827,7 +34544,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11499_good
      */
     public void testAbaNumberCheck_11499_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33858,7 +34575,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -33872,7 +34590,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11501_good
      */
     public void testAbaNumberCheck_11501_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33903,7 +34621,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -33917,7 +34636,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11503_good
      */
     public void testAbaNumberCheck_11503_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33948,7 +34667,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -33962,7 +34682,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11505_good
      */
     public void testAbaNumberCheck_11505_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -33993,7 +34713,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34007,7 +34728,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11507_good
      */
     public void testAbaNumberCheck_11507_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34038,7 +34759,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34052,7 +34774,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11509_good
      */
     public void testAbaNumberCheck_11509_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34083,7 +34805,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34097,7 +34820,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11511_good
      */
     public void testAbaNumberCheck_11511_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34128,7 +34851,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34142,7 +34866,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11513_good
      */
     public void testAbaNumberCheck_11513_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34173,7 +34897,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34187,7 +34912,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11515_good
      */
     public void testAbaNumberCheck_11515_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34218,7 +34943,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34232,7 +34958,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11517_good
      */
     public void testAbaNumberCheck_11517_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34263,7 +34989,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34277,7 +35004,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11519_good
      */
     public void testAbaNumberCheck_11519_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34308,7 +35035,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34322,7 +35050,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11521_good
      */
     public void testAbaNumberCheck_11521_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34353,7 +35081,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34367,7 +35096,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11523_good
      */
     public void testAbaNumberCheck_11523_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34398,7 +35127,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34412,7 +35142,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11525_good
      */
     public void testAbaNumberCheck_11525_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34443,7 +35173,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34457,7 +35188,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11527_good
      */
     public void testAbaNumberCheck_11527_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34488,7 +35219,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34502,7 +35234,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11529_good
      */
     public void testAbaNumberCheck_11529_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34533,7 +35265,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34547,7 +35280,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11531_good
      */
     public void testAbaNumberCheck_11531_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34578,7 +35311,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34592,7 +35326,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11533_good
      */
     public void testAbaNumberCheck_11533_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34638,7 +35372,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11535_good
      */
     public void testAbaNumberCheck_11535_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34669,7 +35403,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34683,7 +35418,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11537_good
      */
     public void testAbaNumberCheck_11537_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34729,7 +35464,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11539_good
      */
     public void testAbaNumberCheck_11539_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34760,7 +35495,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34774,7 +35510,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11541_good
      */
     public void testAbaNumberCheck_11541_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34805,7 +35541,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34819,7 +35556,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11543_good
      */
     public void testAbaNumberCheck_11543_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34850,7 +35587,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34864,7 +35602,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11545_good
      */
     public void testAbaNumberCheck_11545_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34895,7 +35633,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34909,7 +35648,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11547_good
      */
     public void testAbaNumberCheck_11547_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34940,7 +35679,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34954,7 +35694,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11549_good
      */
     public void testAbaNumberCheck_11549_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -34985,7 +35725,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -34999,7 +35740,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11551_good
      */
     public void testAbaNumberCheck_11551_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35030,7 +35771,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35044,7 +35786,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11553_good
      */
     public void testAbaNumberCheck_11553_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35075,7 +35817,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35089,7 +35832,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11555_good
      */
     public void testAbaNumberCheck_11555_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35120,7 +35863,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35134,7 +35878,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11557_good
      */
     public void testAbaNumberCheck_11557_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35165,7 +35909,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35179,7 +35924,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11559_good
      */
     public void testAbaNumberCheck_11559_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35210,7 +35955,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35224,7 +35970,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11561_good
      */
     public void testAbaNumberCheck_11561_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35255,7 +36001,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35269,7 +36016,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11563_good
      */
     public void testAbaNumberCheck_11563_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35300,7 +36047,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35314,7 +36062,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11565_good
      */
     public void testAbaNumberCheck_11565_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35345,7 +36093,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35359,7 +36108,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11567_good
      */
     public void testAbaNumberCheck_11567_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35390,7 +36139,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35404,7 +36154,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11569_good
      */
     public void testAbaNumberCheck_11569_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35435,7 +36185,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35449,7 +36200,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11571_good
      */
     public void testAbaNumberCheck_11571_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35480,7 +36231,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35494,7 +36246,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11573_good
      */
     public void testAbaNumberCheck_11573_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35525,7 +36277,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35539,7 +36292,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11575_good
      */
     public void testAbaNumberCheck_11575_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35585,7 +36338,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11577_good
      */
     public void testAbaNumberCheck_11577_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35616,7 +36369,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35630,7 +36384,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11579_good
      */
     public void testAbaNumberCheck_11579_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35661,7 +36415,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35675,7 +36430,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11581_good
      */
     public void testAbaNumberCheck_11581_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35706,7 +36461,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35720,7 +36476,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11583_good
      */
     public void testAbaNumberCheck_11583_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35751,7 +36507,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35765,7 +36522,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11585_good
      */
     public void testAbaNumberCheck_11585_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35796,7 +36553,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35810,7 +36568,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11587_good
      */
     public void testAbaNumberCheck_11587_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35841,7 +36599,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35855,7 +36614,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11589_good
      */
     public void testAbaNumberCheck_11589_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35886,7 +36645,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35900,7 +36660,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11591_good
      */
     public void testAbaNumberCheck_11591_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35931,7 +36691,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35945,7 +36706,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11593_good
      */
     public void testAbaNumberCheck_11593_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -35976,7 +36737,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -35990,7 +36752,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11595_good
      */
     public void testAbaNumberCheck_11595_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36036,7 +36798,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11597_good
      */
     public void testAbaNumberCheck_11597_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36067,7 +36829,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -36081,7 +36844,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11599_good
      */
     public void testAbaNumberCheck_11599_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36112,7 +36875,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -36126,7 +36890,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11601_good
      */
     public void testAbaNumberCheck_11601_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36157,7 +36921,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -36171,7 +36936,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11603_good
      */
     public void testAbaNumberCheck_11603_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36202,7 +36967,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -36216,7 +36982,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11605_good
      */
     public void testAbaNumberCheck_11605_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36247,7 +37013,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -36261,7 +37028,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11607_good
      */
     public void testAbaNumberCheck_11607_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36292,7 +37059,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -36306,7 +37074,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11609_good
      */
     public void testAbaNumberCheck_11609_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36337,7 +37105,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -36351,7 +37120,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11611_good
      */
     public void testAbaNumberCheck_11611_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36382,7 +37151,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -36396,7 +37166,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11613_good
      */
     public void testAbaNumberCheck_11613_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36427,7 +37197,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -36441,7 +37212,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11615_good
      */
     public void testAbaNumberCheck_11615_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36472,7 +37243,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -36486,7 +37258,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11617_good
      */
     public void testAbaNumberCheck_11617_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36517,7 +37289,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -36531,7 +37304,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11619_good
      */
     public void testAbaNumberCheck_11619_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36562,7 +37335,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -36576,7 +37350,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11621_good
      */
     public void testAbaNumberCheck_11621_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36607,7 +37381,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -36621,7 +37396,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11623_good
      */
     public void testAbaNumberCheck_11623_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36652,7 +37427,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -36666,7 +37442,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11625_good
      */
     public void testAbaNumberCheck_11625_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36697,7 +37473,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -36711,7 +37488,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11627_good
      */
     public void testAbaNumberCheck_11627_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36757,7 +37534,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11629_good
      */
     public void testAbaNumberCheck_11629_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36788,7 +37565,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -36802,7 +37580,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11631_good
      */
     public void testAbaNumberCheck_11631_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36833,7 +37611,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -36847,7 +37626,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11633_good
      */
     public void testAbaNumberCheck_11633_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36878,7 +37657,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -36892,7 +37672,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11635_good
      */
     public void testAbaNumberCheck_11635_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36923,7 +37703,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -36937,7 +37718,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11637_good
      */
     public void testAbaNumberCheck_11637_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -36968,7 +37749,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -36982,7 +37764,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11639_good
      */
     public void testAbaNumberCheck_11639_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37013,7 +37795,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -37027,7 +37810,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11641_good
      */
     public void testAbaNumberCheck_11641_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37058,7 +37841,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -37072,7 +37856,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11643_good
      */
     public void testAbaNumberCheck_11643_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37103,7 +37887,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -37117,7 +37902,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11645_good
      */
     public void testAbaNumberCheck_11645_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37148,7 +37933,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -37162,7 +37948,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11647_good
      */
     public void testAbaNumberCheck_11647_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37193,7 +37979,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -37207,7 +37994,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11649_good
      */
     public void testAbaNumberCheck_11649_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37253,7 +38040,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11651_good
      */
     public void testAbaNumberCheck_11651_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37299,7 +38086,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11653_good
      */
     public void testAbaNumberCheck_11653_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37330,7 +38117,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -37344,7 +38132,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11655_good
      */
     public void testAbaNumberCheck_11655_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37375,7 +38163,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -37389,7 +38178,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11657_good
      */
     public void testAbaNumberCheck_11657_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37420,7 +38209,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -37434,7 +38224,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11659_good
      */
     public void testAbaNumberCheck_11659_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37465,7 +38255,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -37479,7 +38270,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11661_good
      */
     public void testAbaNumberCheck_11661_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37510,7 +38301,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -37524,7 +38316,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11663_good
      */
     public void testAbaNumberCheck_11663_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37555,7 +38347,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -37569,7 +38362,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11665_good
      */
     public void testAbaNumberCheck_11665_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37600,7 +38393,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -37614,7 +38408,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11667_good
      */
     public void testAbaNumberCheck_11667_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37645,7 +38439,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -37659,7 +38454,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11669_good
      */
     public void testAbaNumberCheck_11669_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37690,7 +38485,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -37704,7 +38500,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11671_good
      */
     public void testAbaNumberCheck_11671_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37735,7 +38531,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -37749,7 +38546,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11673_good
      */
     public void testAbaNumberCheck_11673_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37780,7 +38577,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -37794,7 +38592,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11675_good
      */
     public void testAbaNumberCheck_11675_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37840,7 +38638,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11677_good
      */
     public void testAbaNumberCheck_11677_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37871,7 +38669,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -37885,7 +38684,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11679_good
      */
     public void testAbaNumberCheck_11679_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37916,7 +38715,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -37930,7 +38730,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11681_good
      */
     public void testAbaNumberCheck_11681_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -37961,7 +38761,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -37975,7 +38776,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11683_good
      */
     public void testAbaNumberCheck_11683_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38006,7 +38807,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38020,7 +38822,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11685_good
      */
     public void testAbaNumberCheck_11685_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38051,7 +38853,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38065,7 +38868,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11687_good
      */
     public void testAbaNumberCheck_11687_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38096,7 +38899,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38110,7 +38914,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11689_good
      */
     public void testAbaNumberCheck_11689_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38141,7 +38945,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38155,7 +38960,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11691_good
      */
     public void testAbaNumberCheck_11691_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38186,7 +38991,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38200,7 +39006,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11693_good
      */
     public void testAbaNumberCheck_11693_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38231,7 +39037,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38245,7 +39052,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11695_good
      */
     public void testAbaNumberCheck_11695_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38276,7 +39083,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38290,7 +39098,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11697_good
      */
     public void testAbaNumberCheck_11697_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38321,7 +39129,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38335,7 +39144,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11699_good
      */
     public void testAbaNumberCheck_11699_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38366,7 +39175,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38380,7 +39190,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11701_good
      */
     public void testAbaNumberCheck_11701_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38411,7 +39221,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38425,7 +39236,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11703_good
      */
     public void testAbaNumberCheck_11703_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38456,7 +39267,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38470,7 +39282,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11705_good
      */
     public void testAbaNumberCheck_11705_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38501,7 +39313,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38515,7 +39328,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11707_good
      */
     public void testAbaNumberCheck_11707_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38546,7 +39359,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38560,7 +39374,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11709_good
      */
     public void testAbaNumberCheck_11709_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38591,7 +39405,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38605,7 +39420,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11711_good
      */
     public void testAbaNumberCheck_11711_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38636,7 +39451,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38650,7 +39466,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11713_good
      */
     public void testAbaNumberCheck_11713_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38681,7 +39497,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38695,7 +39512,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11715_good
      */
     public void testAbaNumberCheck_11715_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38726,7 +39543,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38740,7 +39558,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11717_good
      */
     public void testAbaNumberCheck_11717_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38771,7 +39589,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38785,7 +39604,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11719_good
      */
     public void testAbaNumberCheck_11719_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38816,7 +39635,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38830,7 +39650,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11721_good
      */
     public void testAbaNumberCheck_11721_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38861,7 +39681,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38875,7 +39696,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11723_good
      */
     public void testAbaNumberCheck_11723_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38906,7 +39727,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38920,7 +39742,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11725_good
      */
     public void testAbaNumberCheck_11725_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38951,7 +39773,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -38965,7 +39788,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11727_good
      */
     public void testAbaNumberCheck_11727_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -38996,7 +39819,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39010,7 +39834,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11729_good
      */
     public void testAbaNumberCheck_11729_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39041,7 +39865,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39055,7 +39880,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11731_good
      */
     public void testAbaNumberCheck_11731_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39086,7 +39911,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39100,7 +39926,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11733_good
      */
     public void testAbaNumberCheck_11733_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39131,7 +39957,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39145,7 +39972,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11735_good
      */
     public void testAbaNumberCheck_11735_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39176,7 +40003,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39190,7 +40018,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11737_good
      */
     public void testAbaNumberCheck_11737_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39221,7 +40049,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39235,7 +40064,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11739_good
      */
     public void testAbaNumberCheck_11739_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39266,7 +40095,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39280,7 +40110,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11741_good
      */
     public void testAbaNumberCheck_11741_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39311,7 +40141,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39325,7 +40156,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11743_good
      */
     public void testAbaNumberCheck_11743_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39356,7 +40187,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39370,7 +40202,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11745_good
      */
     public void testAbaNumberCheck_11745_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39401,7 +40233,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39415,7 +40248,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11747_good
      */
     public void testAbaNumberCheck_11747_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39446,7 +40279,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39460,7 +40294,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11749_good
      */
     public void testAbaNumberCheck_11749_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39491,7 +40325,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39505,7 +40340,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11751_good
      */
     public void testAbaNumberCheck_11751_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39536,7 +40371,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39550,7 +40386,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11753_good
      */
     public void testAbaNumberCheck_11753_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39581,7 +40417,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39595,7 +40432,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11755_good
      */
     public void testAbaNumberCheck_11755_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39626,7 +40463,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39640,7 +40478,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11757_good
      */
     public void testAbaNumberCheck_11757_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39671,7 +40509,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39685,7 +40524,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11759_good
      */
     public void testAbaNumberCheck_11759_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39716,7 +40555,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39730,7 +40570,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11761_good
      */
     public void testAbaNumberCheck_11761_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39761,7 +40601,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39775,7 +40616,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11763_good
      */
     public void testAbaNumberCheck_11763_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39806,7 +40647,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39820,7 +40662,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11765_good
      */
     public void testAbaNumberCheck_11765_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39851,7 +40693,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39865,7 +40708,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11767_good
      */
     public void testAbaNumberCheck_11767_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39896,7 +40739,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39910,7 +40754,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11769_good
      */
     public void testAbaNumberCheck_11769_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39941,7 +40785,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -39955,7 +40800,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11771_good
      */
     public void testAbaNumberCheck_11771_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -39986,7 +40831,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40000,7 +40846,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11773_good
      */
     public void testAbaNumberCheck_11773_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40031,7 +40877,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40045,7 +40892,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11775_good
      */
     public void testAbaNumberCheck_11775_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40076,7 +40923,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40090,7 +40938,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11777_good
      */
     public void testAbaNumberCheck_11777_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40121,7 +40969,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40135,7 +40984,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11779_good
      */
     public void testAbaNumberCheck_11779_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40166,7 +41015,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40180,7 +41030,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11781_good
      */
     public void testAbaNumberCheck_11781_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40211,7 +41061,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40225,7 +41076,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11783_good
      */
     public void testAbaNumberCheck_11783_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40271,7 +41122,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11785_good
      */
     public void testAbaNumberCheck_11785_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40302,7 +41153,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40316,7 +41168,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11787_good
      */
     public void testAbaNumberCheck_11787_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40347,7 +41199,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40361,7 +41214,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11789_good
      */
     public void testAbaNumberCheck_11789_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40392,7 +41245,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40406,7 +41260,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11791_good
      */
     public void testAbaNumberCheck_11791_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40437,7 +41291,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40451,7 +41306,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11793_good
      */
     public void testAbaNumberCheck_11793_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40482,7 +41337,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40496,7 +41352,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11795_good
      */
     public void testAbaNumberCheck_11795_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40527,7 +41383,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40541,7 +41398,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11797_good
      */
     public void testAbaNumberCheck_11797_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40572,7 +41429,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40586,7 +41444,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11799_good
      */
     public void testAbaNumberCheck_11799_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40617,7 +41475,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40631,7 +41490,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11801_good
      */
     public void testAbaNumberCheck_11801_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40662,7 +41521,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40676,7 +41536,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11803_good
      */
     public void testAbaNumberCheck_11803_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40707,7 +41567,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40721,7 +41582,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11805_good
      */
     public void testAbaNumberCheck_11805_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40752,7 +41613,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40766,7 +41628,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11807_good
      */
     public void testAbaNumberCheck_11807_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40797,7 +41659,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40811,7 +41674,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11809_good
      */
     public void testAbaNumberCheck_11809_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40857,7 +41720,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11811_good
      */
     public void testAbaNumberCheck_11811_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40888,7 +41751,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40902,7 +41766,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11813_good
      */
     public void testAbaNumberCheck_11813_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40933,7 +41797,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40947,7 +41812,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11815_good
      */
     public void testAbaNumberCheck_11815_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -40978,7 +41843,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -40992,7 +41858,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11817_good
      */
     public void testAbaNumberCheck_11817_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41023,7 +41889,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41037,7 +41904,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11819_good
      */
     public void testAbaNumberCheck_11819_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41068,7 +41935,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41082,7 +41950,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11821_good
      */
     public void testAbaNumberCheck_11821_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41113,7 +41981,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41127,7 +41996,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11823_good
      */
     public void testAbaNumberCheck_11823_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41158,7 +42027,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41172,7 +42042,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11825_good
      */
     public void testAbaNumberCheck_11825_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41203,7 +42073,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41217,7 +42088,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11827_good
      */
     public void testAbaNumberCheck_11827_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41248,7 +42119,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41262,7 +42134,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11829_good
      */
     public void testAbaNumberCheck_11829_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41293,7 +42165,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41307,7 +42180,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11831_good
      */
     public void testAbaNumberCheck_11831_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41338,7 +42211,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41352,7 +42226,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11833_good
      */
     public void testAbaNumberCheck_11833_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41383,7 +42257,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41397,7 +42272,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11835_good
      */
     public void testAbaNumberCheck_11835_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41428,7 +42303,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41442,7 +42318,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11837_good
      */
     public void testAbaNumberCheck_11837_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41473,7 +42349,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41487,7 +42364,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11839_good
      */
     public void testAbaNumberCheck_11839_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41518,7 +42395,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41532,7 +42410,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11841_good
      */
     public void testAbaNumberCheck_11841_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41563,7 +42441,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41577,7 +42456,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11843_good
      */
     public void testAbaNumberCheck_11843_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41608,7 +42487,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41622,7 +42502,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11845_good
      */
     public void testAbaNumberCheck_11845_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41653,7 +42533,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41667,7 +42548,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11847_good
      */
     public void testAbaNumberCheck_11847_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41698,7 +42579,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41712,7 +42594,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11849_good
      */
     public void testAbaNumberCheck_11849_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41743,7 +42625,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41757,7 +42640,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11851_good
      */
     public void testAbaNumberCheck_11851_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41788,7 +42671,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41802,7 +42686,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11853_good
      */
     public void testAbaNumberCheck_11853_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41833,7 +42717,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41847,7 +42732,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11855_good
      */
     public void testAbaNumberCheck_11855_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41878,7 +42763,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41892,7 +42778,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11857_good
      */
     public void testAbaNumberCheck_11857_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41923,7 +42809,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41937,7 +42824,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11859_good
      */
     public void testAbaNumberCheck_11859_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -41968,7 +42855,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -41982,7 +42870,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11861_good
      */
     public void testAbaNumberCheck_11861_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42013,7 +42901,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42027,7 +42916,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11863_good
      */
     public void testAbaNumberCheck_11863_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42058,7 +42947,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42072,7 +42962,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11865_good
      */
     public void testAbaNumberCheck_11865_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42103,7 +42993,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42117,7 +43008,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11867_good
      */
     public void testAbaNumberCheck_11867_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42148,7 +43039,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42162,7 +43054,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11869_good
      */
     public void testAbaNumberCheck_11869_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42193,7 +43085,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42207,7 +43100,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11871_good
      */
     public void testAbaNumberCheck_11871_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42238,7 +43131,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42252,7 +43146,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11873_good
      */
     public void testAbaNumberCheck_11873_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42283,7 +43177,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42297,7 +43192,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11875_good
      */
     public void testAbaNumberCheck_11875_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42328,7 +43223,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42342,7 +43238,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11877_good
      */
     public void testAbaNumberCheck_11877_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42373,7 +43269,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42387,7 +43284,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11879_good
      */
     public void testAbaNumberCheck_11879_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42418,7 +43315,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42432,7 +43330,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11881_good
      */
     public void testAbaNumberCheck_11881_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42478,7 +43376,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11883_good
      */
     public void testAbaNumberCheck_11883_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42509,7 +43407,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42523,7 +43422,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11885_good
      */
     public void testAbaNumberCheck_11885_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42554,7 +43453,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42568,7 +43468,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11887_good
      */
     public void testAbaNumberCheck_11887_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42599,7 +43499,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42613,7 +43514,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11889_good
      */
     public void testAbaNumberCheck_11889_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42644,7 +43545,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42658,7 +43560,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11891_good
      */
     public void testAbaNumberCheck_11891_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42689,7 +43591,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42703,7 +43606,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11893_good
      */
     public void testAbaNumberCheck_11893_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42734,7 +43637,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42748,7 +43652,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11895_good
      */
     public void testAbaNumberCheck_11895_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42779,7 +43683,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42793,7 +43698,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11897_good
      */
     public void testAbaNumberCheck_11897_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42824,7 +43729,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42838,7 +43744,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11899_good
      */
     public void testAbaNumberCheck_11899_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42869,7 +43775,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42883,7 +43790,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11901_good
      */
     public void testAbaNumberCheck_11901_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42914,7 +43821,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42928,7 +43836,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11903_good
      */
     public void testAbaNumberCheck_11903_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -42959,7 +43867,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -42973,7 +43882,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11905_good
      */
     public void testAbaNumberCheck_11905_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43004,7 +43913,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -43018,7 +43928,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11907_good
      */
     public void testAbaNumberCheck_11907_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43064,7 +43974,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11909_good
      */
     public void testAbaNumberCheck_11909_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43110,7 +44020,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11911_good
      */
     public void testAbaNumberCheck_11911_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43141,7 +44051,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -43155,7 +44066,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11913_good
      */
     public void testAbaNumberCheck_11913_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43186,7 +44097,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -43200,7 +44112,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11915_good
      */
     public void testAbaNumberCheck_11915_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43231,7 +44143,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -43245,7 +44158,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11917_good
      */
     public void testAbaNumberCheck_11917_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43276,7 +44189,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -43290,7 +44204,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11919_good
      */
     public void testAbaNumberCheck_11919_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43321,7 +44235,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -43335,7 +44250,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11921_good
      */
     public void testAbaNumberCheck_11921_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43366,7 +44281,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -43380,7 +44296,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11923_good
      */
     public void testAbaNumberCheck_11923_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43411,7 +44327,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -43425,7 +44342,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11925_good
      */
     public void testAbaNumberCheck_11925_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43456,7 +44373,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -43470,7 +44388,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11927_good
      */
     public void testAbaNumberCheck_11927_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43501,7 +44419,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -43515,7 +44434,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11929_good
      */
     public void testAbaNumberCheck_11929_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43546,7 +44465,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -43560,7 +44480,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11931_good
      */
     public void testAbaNumberCheck_11931_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43591,7 +44511,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -43605,7 +44526,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11933_good
      */
     public void testAbaNumberCheck_11933_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43636,7 +44557,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -43650,7 +44572,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11935_good
      */
     public void testAbaNumberCheck_11935_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43681,7 +44603,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -43695,7 +44618,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11937_good
      */
     public void testAbaNumberCheck_11937_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43726,7 +44649,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -43740,7 +44664,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11939_good
      */
     public void testAbaNumberCheck_11939_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43771,7 +44695,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -43785,7 +44710,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11941_good
      */
     public void testAbaNumberCheck_11941_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43816,7 +44741,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -43830,7 +44756,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11943_good
      */
     public void testAbaNumberCheck_11943_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43861,7 +44787,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -43875,7 +44802,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11945_good
      */
     public void testAbaNumberCheck_11945_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43906,7 +44833,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -43920,7 +44848,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11947_good
      */
     public void testAbaNumberCheck_11947_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -43951,7 +44879,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -43965,7 +44894,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11949_good
      */
     public void testAbaNumberCheck_11949_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44011,7 +44940,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11951_good
      */
     public void testAbaNumberCheck_11951_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44042,7 +44971,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -44056,7 +44986,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11953_good
      */
     public void testAbaNumberCheck_11953_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44087,7 +45017,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -44101,7 +45032,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11955_good
      */
     public void testAbaNumberCheck_11955_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44132,7 +45063,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -44146,7 +45078,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11957_good
      */
     public void testAbaNumberCheck_11957_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44177,7 +45109,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -44191,7 +45124,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11959_good
      */
     public void testAbaNumberCheck_11959_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44222,7 +45155,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -44236,7 +45170,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11961_good
      */
     public void testAbaNumberCheck_11961_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44267,7 +45201,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -44281,7 +45216,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11963_good
      */
     public void testAbaNumberCheck_11963_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44312,7 +45247,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -44326,7 +45262,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11965_good
      */
     public void testAbaNumberCheck_11965_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44357,7 +45293,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -44371,7 +45308,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11967_good
      */
     public void testAbaNumberCheck_11967_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44402,7 +45339,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -44416,7 +45354,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11969_good
      */
     public void testAbaNumberCheck_11969_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44447,7 +45385,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -44461,7 +45400,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11971_good
      */
     public void testAbaNumberCheck_11971_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44492,7 +45431,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -44506,7 +45446,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11973_good
      */
     public void testAbaNumberCheck_11973_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44537,7 +45477,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -44551,7 +45492,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11975_good
      */
     public void testAbaNumberCheck_11975_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44597,7 +45538,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11977_good
      */
     public void testAbaNumberCheck_11977_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44628,7 +45569,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -44642,7 +45584,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11979_good
      */
     public void testAbaNumberCheck_11979_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44673,7 +45615,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -44687,7 +45630,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11981_good
      */
     public void testAbaNumberCheck_11981_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44718,7 +45661,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -44732,7 +45676,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11983_good
      */
     public void testAbaNumberCheck_11983_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44763,7 +45707,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -44777,7 +45722,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11985_good
      */
     public void testAbaNumberCheck_11985_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44808,7 +45753,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -44822,7 +45768,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11987_good
      */
     public void testAbaNumberCheck_11987_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44853,7 +45799,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -44867,7 +45814,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11989_good
      */
     public void testAbaNumberCheck_11989_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44898,7 +45845,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -44912,7 +45860,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11991_good
      */
     public void testAbaNumberCheck_11991_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -44943,7 +45891,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -44957,7 +45906,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11993_good
      */
     public void testAbaNumberCheck_11993_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45003,7 +45952,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11995_good
      */
     public void testAbaNumberCheck_11995_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45049,7 +45998,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11997_good
      */
     public void testAbaNumberCheck_11997_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45080,7 +46029,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45094,7 +46044,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_11999_good
      */
     public void testAbaNumberCheck_11999_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45125,7 +46075,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45139,7 +46090,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12001_good
      */
     public void testAbaNumberCheck_12001_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45170,7 +46121,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45184,7 +46136,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12003_good
      */
     public void testAbaNumberCheck_12003_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45215,7 +46167,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45229,7 +46182,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12005_good
      */
     public void testAbaNumberCheck_12005_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45260,7 +46213,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45274,7 +46228,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12007_good
      */
     public void testAbaNumberCheck_12007_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45305,7 +46259,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45319,7 +46274,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12009_good
      */
     public void testAbaNumberCheck_12009_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45350,7 +46305,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45364,7 +46320,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12011_good
      */
     public void testAbaNumberCheck_12011_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45395,7 +46351,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45409,7 +46366,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12013_good
      */
     public void testAbaNumberCheck_12013_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45440,7 +46397,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45454,7 +46412,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12015_good
      */
     public void testAbaNumberCheck_12015_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45485,7 +46443,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45499,7 +46458,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12017_good
      */
     public void testAbaNumberCheck_12017_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45530,7 +46489,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45544,7 +46504,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12019_good
      */
     public void testAbaNumberCheck_12019_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45575,7 +46535,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45589,7 +46550,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12021_good
      */
     public void testAbaNumberCheck_12021_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45620,7 +46581,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45634,7 +46596,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12023_good
      */
     public void testAbaNumberCheck_12023_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45665,7 +46627,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45679,7 +46642,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12025_good
      */
     public void testAbaNumberCheck_12025_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45710,7 +46673,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45724,7 +46688,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12027_good
      */
     public void testAbaNumberCheck_12027_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45755,7 +46719,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45769,7 +46734,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12029_good
      */
     public void testAbaNumberCheck_12029_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45800,7 +46765,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45814,7 +46780,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12031_good
      */
     public void testAbaNumberCheck_12031_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45845,7 +46811,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45859,7 +46826,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12033_good
      */
     public void testAbaNumberCheck_12033_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45890,7 +46857,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45904,7 +46872,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12035_good
      */
     public void testAbaNumberCheck_12035_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45935,7 +46903,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45949,7 +46918,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12037_good
      */
     public void testAbaNumberCheck_12037_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -45980,7 +46949,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -45994,7 +46964,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12039_good
      */
     public void testAbaNumberCheck_12039_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46025,7 +46995,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46039,7 +47010,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12041_good
      */
     public void testAbaNumberCheck_12041_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46070,7 +47041,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46084,7 +47056,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12043_good
      */
     public void testAbaNumberCheck_12043_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46115,7 +47087,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46129,7 +47102,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12045_good
      */
     public void testAbaNumberCheck_12045_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46160,7 +47133,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46174,7 +47148,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12047_good
      */
     public void testAbaNumberCheck_12047_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46205,7 +47179,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46219,7 +47194,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12049_good
      */
     public void testAbaNumberCheck_12049_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46250,7 +47225,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46264,7 +47240,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12051_good
      */
     public void testAbaNumberCheck_12051_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46295,7 +47271,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46309,7 +47286,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12053_good
      */
     public void testAbaNumberCheck_12053_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46340,7 +47317,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46354,7 +47332,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12055_good
      */
     public void testAbaNumberCheck_12055_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46385,7 +47363,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46399,7 +47378,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12057_good
      */
     public void testAbaNumberCheck_12057_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46430,7 +47409,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46444,7 +47424,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12059_good
      */
     public void testAbaNumberCheck_12059_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46475,7 +47455,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46489,7 +47470,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12061_good
      */
     public void testAbaNumberCheck_12061_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46520,7 +47501,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46534,7 +47516,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12063_good
      */
     public void testAbaNumberCheck_12063_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46565,7 +47547,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46579,7 +47562,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12065_good
      */
     public void testAbaNumberCheck_12065_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46610,7 +47593,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46624,7 +47608,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12067_good
      */
     public void testAbaNumberCheck_12067_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46655,7 +47639,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46669,7 +47654,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12069_good
      */
     public void testAbaNumberCheck_12069_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46700,7 +47685,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46714,7 +47700,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12071_good
      */
     public void testAbaNumberCheck_12071_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46745,7 +47731,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46759,7 +47746,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12073_good
      */
     public void testAbaNumberCheck_12073_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46805,7 +47792,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12075_good
      */
     public void testAbaNumberCheck_12075_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46836,7 +47823,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1003, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.too.long", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46850,7 +47838,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12077_good
      */
     public void testAbaNumberCheck_12077_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46881,7 +47869,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46895,7 +47884,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12079_good
      */
     public void testAbaNumberCheck_12079_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46926,7 +47915,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46940,7 +47930,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12081_good
      */
     public void testAbaNumberCheck_12081_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -46971,7 +47961,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -46985,7 +47976,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12083_good
      */
     public void testAbaNumberCheck_12083_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47016,7 +48007,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47030,7 +48022,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12085_good
      */
     public void testAbaNumberCheck_12085_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47061,7 +48053,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47075,7 +48068,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12087_good
      */
     public void testAbaNumberCheck_12087_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47121,7 +48114,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12089_good
      */
     public void testAbaNumberCheck_12089_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47152,7 +48145,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47166,7 +48160,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12091_good
      */
     public void testAbaNumberCheck_12091_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47197,7 +48191,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47211,7 +48206,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12093_good
      */
     public void testAbaNumberCheck_12093_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47242,7 +48237,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47256,7 +48252,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12095_good
      */
     public void testAbaNumberCheck_12095_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47287,7 +48283,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47301,7 +48298,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12097_good
      */
     public void testAbaNumberCheck_12097_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47332,7 +48329,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47346,7 +48344,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12099_good
      */
     public void testAbaNumberCheck_12099_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47377,7 +48375,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47391,7 +48390,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12101_good
      */
     public void testAbaNumberCheck_12101_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47422,7 +48421,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47436,7 +48436,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12103_good
      */
     public void testAbaNumberCheck_12103_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47467,7 +48467,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47481,7 +48482,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12105_good
      */
     public void testAbaNumberCheck_12105_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47512,7 +48513,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47526,7 +48528,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12107_good
      */
     public void testAbaNumberCheck_12107_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47557,7 +48559,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47571,7 +48574,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12109_good
      */
     public void testAbaNumberCheck_12109_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47602,7 +48605,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47616,7 +48620,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12111_good
      */
     public void testAbaNumberCheck_12111_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47647,7 +48651,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47661,7 +48666,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12113_good
      */
     public void testAbaNumberCheck_12113_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47692,7 +48697,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47706,7 +48712,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12115_good
      */
     public void testAbaNumberCheck_12115_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47737,7 +48743,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47751,7 +48758,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12117_good
      */
     public void testAbaNumberCheck_12117_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47782,7 +48789,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47796,7 +48804,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12119_good
      */
     public void testAbaNumberCheck_12119_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47827,7 +48835,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47841,7 +48850,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12121_good
      */
     public void testAbaNumberCheck_12121_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47872,7 +48881,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47886,7 +48896,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12123_good
      */
     public void testAbaNumberCheck_12123_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47917,7 +48927,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47931,7 +48942,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12125_good
      */
     public void testAbaNumberCheck_12125_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -47962,7 +48973,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -47976,7 +48988,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12127_good
      */
     public void testAbaNumberCheck_12127_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48022,7 +49034,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12129_good
      */
     public void testAbaNumberCheck_12129_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48053,7 +49065,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48067,7 +49080,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12131_good
      */
     public void testAbaNumberCheck_12131_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48098,7 +49111,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48112,7 +49126,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12133_good
      */
     public void testAbaNumberCheck_12133_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48143,7 +49157,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48157,7 +49172,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12135_good
      */
     public void testAbaNumberCheck_12135_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48188,7 +49203,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48202,7 +49218,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12137_good
      */
     public void testAbaNumberCheck_12137_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48233,7 +49249,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48247,7 +49264,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12139_good
      */
     public void testAbaNumberCheck_12139_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48278,7 +49295,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48292,7 +49310,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12141_good
      */
     public void testAbaNumberCheck_12141_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48323,7 +49341,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48337,7 +49356,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12143_good
      */
     public void testAbaNumberCheck_12143_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48368,7 +49387,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48382,7 +49402,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12145_good
      */
     public void testAbaNumberCheck_12145_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48413,7 +49433,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48427,7 +49448,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12147_good
      */
     public void testAbaNumberCheck_12147_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48458,7 +49479,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48472,7 +49494,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12149_good
      */
     public void testAbaNumberCheck_12149_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48503,7 +49525,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48517,7 +49540,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12151_good
      */
     public void testAbaNumberCheck_12151_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48548,7 +49571,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48562,7 +49586,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12153_good
      */
     public void testAbaNumberCheck_12153_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48593,7 +49617,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48607,7 +49632,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12155_good
      */
     public void testAbaNumberCheck_12155_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48638,7 +49663,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48652,7 +49678,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12157_good
      */
     public void testAbaNumberCheck_12157_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48683,7 +49709,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48697,7 +49724,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12159_good
      */
     public void testAbaNumberCheck_12159_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48728,7 +49755,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48742,7 +49770,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12161_good
      */
     public void testAbaNumberCheck_12161_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48773,7 +49801,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48787,7 +49816,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12163_good
      */
     public void testAbaNumberCheck_12163_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48818,7 +49847,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48832,7 +49862,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12165_good
      */
     public void testAbaNumberCheck_12165_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48863,7 +49893,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48877,7 +49908,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12167_good
      */
     public void testAbaNumberCheck_12167_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48908,7 +49939,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48922,7 +49954,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12169_good
      */
     public void testAbaNumberCheck_12169_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48953,7 +49985,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -48967,7 +50000,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12171_good
      */
     public void testAbaNumberCheck_12171_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -48998,7 +50031,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49012,7 +50046,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12173_good
      */
     public void testAbaNumberCheck_12173_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49043,7 +50077,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49057,7 +50092,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12175_good
      */
     public void testAbaNumberCheck_12175_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49088,7 +50123,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49102,7 +50138,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12177_good
      */
     public void testAbaNumberCheck_12177_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49133,7 +50169,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49147,7 +50184,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12179_good
      */
     public void testAbaNumberCheck_12179_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49178,7 +50215,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49192,7 +50230,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12181_good
      */
     public void testAbaNumberCheck_12181_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49223,7 +50261,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49237,7 +50276,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12183_good
      */
     public void testAbaNumberCheck_12183_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49268,7 +50307,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49282,7 +50322,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12185_good
      */
     public void testAbaNumberCheck_12185_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49313,7 +50353,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49327,7 +50368,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12187_good
      */
     public void testAbaNumberCheck_12187_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49358,7 +50399,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49372,7 +50414,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12189_good
      */
     public void testAbaNumberCheck_12189_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49403,7 +50445,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49417,7 +50460,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12191_good
      */
     public void testAbaNumberCheck_12191_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49448,7 +50491,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49462,7 +50506,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12193_good
      */
     public void testAbaNumberCheck_12193_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49493,7 +50537,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49507,7 +50552,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12195_good
      */
     public void testAbaNumberCheck_12195_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49538,7 +50583,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49552,7 +50598,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12197_good
      */
     public void testAbaNumberCheck_12197_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49583,7 +50629,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49597,7 +50644,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12199_good
      */
     public void testAbaNumberCheck_12199_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49628,7 +50675,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49642,7 +50690,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12201_good
      */
     public void testAbaNumberCheck_12201_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49673,7 +50721,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49687,7 +50736,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12203_good
      */
     public void testAbaNumberCheck_12203_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49718,7 +50767,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49732,7 +50782,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12205_good
      */
     public void testAbaNumberCheck_12205_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49763,7 +50813,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49777,7 +50828,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12207_good
      */
     public void testAbaNumberCheck_12207_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49808,7 +50859,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49822,7 +50874,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12209_good
      */
     public void testAbaNumberCheck_12209_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49853,7 +50905,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49867,7 +50920,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12211_good
      */
     public void testAbaNumberCheck_12211_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49898,7 +50951,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49912,7 +50966,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12213_good
      */
     public void testAbaNumberCheck_12213_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49943,7 +50997,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -49957,7 +51012,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12215_good
      */
     public void testAbaNumberCheck_12215_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -49988,7 +51043,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50002,7 +51058,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12217_good
      */
     public void testAbaNumberCheck_12217_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50033,7 +51089,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50047,7 +51104,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12219_good
      */
     public void testAbaNumberCheck_12219_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50078,7 +51135,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50092,7 +51150,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12221_good
      */
     public void testAbaNumberCheck_12221_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50123,7 +51181,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50137,7 +51196,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12223_good
      */
     public void testAbaNumberCheck_12223_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50168,7 +51227,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50182,7 +51242,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12225_good
      */
     public void testAbaNumberCheck_12225_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50213,7 +51273,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50227,7 +51288,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12227_good
      */
     public void testAbaNumberCheck_12227_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50258,7 +51319,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50272,7 +51334,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12229_good
      */
     public void testAbaNumberCheck_12229_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50303,7 +51365,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50317,7 +51380,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12231_good
      */
     public void testAbaNumberCheck_12231_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50348,7 +51411,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50362,7 +51426,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12233_good
      */
     public void testAbaNumberCheck_12233_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50393,7 +51457,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50407,7 +51472,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12235_good
      */
     public void testAbaNumberCheck_12235_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50438,7 +51503,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50452,7 +51518,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12237_good
      */
     public void testAbaNumberCheck_12237_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50483,7 +51549,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50497,7 +51564,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12239_good
      */
     public void testAbaNumberCheck_12239_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50528,7 +51595,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50542,7 +51610,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12241_good
      */
     public void testAbaNumberCheck_12241_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50573,7 +51641,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50587,7 +51656,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12243_good
      */
     public void testAbaNumberCheck_12243_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50618,7 +51687,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50632,7 +51702,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12245_good
      */
     public void testAbaNumberCheck_12245_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50663,7 +51733,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50677,7 +51748,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12247_good
      */
     public void testAbaNumberCheck_12247_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50708,7 +51779,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50722,7 +51794,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12249_good
      */
     public void testAbaNumberCheck_12249_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50753,7 +51825,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50767,7 +51840,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12251_good
      */
     public void testAbaNumberCheck_12251_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50798,7 +51871,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50812,7 +51886,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12253_good
      */
     public void testAbaNumberCheck_12253_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50858,7 +51932,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12255_good
      */
     public void testAbaNumberCheck_12255_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50904,7 +51978,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12257_good
      */
     public void testAbaNumberCheck_12257_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50935,7 +52009,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50949,7 +52024,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12259_good
      */
     public void testAbaNumberCheck_12259_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -50980,7 +52055,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -50994,7 +52070,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12261_good
      */
     public void testAbaNumberCheck_12261_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51025,7 +52101,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51039,7 +52116,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12263_good
      */
     public void testAbaNumberCheck_12263_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51070,7 +52147,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51084,7 +52162,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12265_good
      */
     public void testAbaNumberCheck_12265_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51115,7 +52193,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51129,7 +52208,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12267_good
      */
     public void testAbaNumberCheck_12267_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51160,7 +52239,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51174,7 +52254,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12269_good
      */
     public void testAbaNumberCheck_12269_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51205,7 +52285,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51219,7 +52300,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12271_good
      */
     public void testAbaNumberCheck_12271_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51265,7 +52346,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12273_good
      */
     public void testAbaNumberCheck_12273_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51296,7 +52377,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51310,7 +52392,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12275_good
      */
     public void testAbaNumberCheck_12275_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51341,7 +52423,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51355,7 +52438,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12277_good
      */
     public void testAbaNumberCheck_12277_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51386,7 +52469,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51400,7 +52484,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12279_good
      */
     public void testAbaNumberCheck_12279_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51431,7 +52515,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51445,7 +52530,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12281_good
      */
     public void testAbaNumberCheck_12281_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51476,7 +52561,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51490,7 +52576,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12283_good
      */
     public void testAbaNumberCheck_12283_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51521,7 +52607,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51535,7 +52622,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12285_good
      */
     public void testAbaNumberCheck_12285_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51566,7 +52653,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51580,7 +52668,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12287_good
      */
     public void testAbaNumberCheck_12287_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51611,7 +52699,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51625,7 +52714,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12289_good
      */
     public void testAbaNumberCheck_12289_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51656,7 +52745,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51670,7 +52760,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12291_good
      */
     public void testAbaNumberCheck_12291_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51701,7 +52791,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51715,7 +52806,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12293_good
      */
     public void testAbaNumberCheck_12293_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51746,7 +52837,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51760,7 +52852,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12295_good
      */
     public void testAbaNumberCheck_12295_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51791,7 +52883,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51805,7 +52898,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12297_good
      */
     public void testAbaNumberCheck_12297_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51836,7 +52929,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51850,7 +52944,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12299_good
      */
     public void testAbaNumberCheck_12299_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51881,7 +52975,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51895,7 +52990,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12301_good
      */
     public void testAbaNumberCheck_12301_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51926,7 +53021,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51940,7 +53036,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12303_good
      */
     public void testAbaNumberCheck_12303_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -51971,7 +53067,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -51985,7 +53082,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12305_good
      */
     public void testAbaNumberCheck_12305_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52016,7 +53113,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52030,7 +53128,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12307_good
      */
     public void testAbaNumberCheck_12307_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52061,7 +53159,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52075,7 +53174,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12309_good
      */
     public void testAbaNumberCheck_12309_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52106,7 +53205,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52120,7 +53220,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12311_good
      */
     public void testAbaNumberCheck_12311_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52151,7 +53251,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52165,7 +53266,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12313_good
      */
     public void testAbaNumberCheck_12313_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52196,7 +53297,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52210,7 +53312,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12315_good
      */
     public void testAbaNumberCheck_12315_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52241,7 +53343,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52255,7 +53358,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12317_good
      */
     public void testAbaNumberCheck_12317_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52286,7 +53389,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52300,7 +53404,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12319_good
      */
     public void testAbaNumberCheck_12319_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52331,7 +53435,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52345,7 +53450,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12321_good
      */
     public void testAbaNumberCheck_12321_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52376,7 +53481,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52390,7 +53496,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12323_good
      */
     public void testAbaNumberCheck_12323_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52421,7 +53527,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52435,7 +53542,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12325_good
      */
     public void testAbaNumberCheck_12325_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52466,7 +53573,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52480,7 +53588,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12327_good
      */
     public void testAbaNumberCheck_12327_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52511,7 +53619,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52525,7 +53634,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12329_good
      */
     public void testAbaNumberCheck_12329_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52556,7 +53665,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52570,7 +53680,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12331_good
      */
     public void testAbaNumberCheck_12331_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52601,7 +53711,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52615,7 +53726,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12333_good
      */
     public void testAbaNumberCheck_12333_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52646,7 +53757,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52660,7 +53772,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12335_good
      */
     public void testAbaNumberCheck_12335_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52691,7 +53803,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52705,7 +53818,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12337_good
      */
     public void testAbaNumberCheck_12337_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52736,7 +53849,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52750,7 +53864,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12339_good
      */
     public void testAbaNumberCheck_12339_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52796,7 +53910,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12341_good
      */
     public void testAbaNumberCheck_12341_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52827,7 +53941,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52841,7 +53956,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12343_good
      */
     public void testAbaNumberCheck_12343_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52872,7 +53987,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52886,7 +54002,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12345_good
      */
     public void testAbaNumberCheck_12345_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52917,7 +54033,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52931,7 +54048,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12347_good
      */
     public void testAbaNumberCheck_12347_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -52962,7 +54079,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -52976,7 +54094,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12349_good
      */
     public void testAbaNumberCheck_12349_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53007,7 +54125,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53021,7 +54140,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12351_good
      */
     public void testAbaNumberCheck_12351_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53052,7 +54171,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53066,7 +54186,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12353_good
      */
     public void testAbaNumberCheck_12353_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53097,7 +54217,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53111,7 +54232,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12355_good
      */
     public void testAbaNumberCheck_12355_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53142,7 +54263,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53156,7 +54278,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12357_good
      */
     public void testAbaNumberCheck_12357_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53187,7 +54309,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53201,7 +54324,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12359_good
      */
     public void testAbaNumberCheck_12359_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53232,7 +54355,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53246,7 +54370,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12361_good
      */
     public void testAbaNumberCheck_12361_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53277,7 +54401,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53291,7 +54416,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12363_good
      */
     public void testAbaNumberCheck_12363_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53322,7 +54447,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53336,7 +54462,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12365_good
      */
     public void testAbaNumberCheck_12365_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53367,7 +54493,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53381,7 +54508,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12367_good
      */
     public void testAbaNumberCheck_12367_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53412,7 +54539,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53426,7 +54554,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12369_good
      */
     public void testAbaNumberCheck_12369_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53457,7 +54585,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53471,7 +54600,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12371_good
      */
     public void testAbaNumberCheck_12371_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53502,7 +54631,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53516,7 +54646,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12373_good
      */
     public void testAbaNumberCheck_12373_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53547,7 +54677,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53561,7 +54692,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12375_good
      */
     public void testAbaNumberCheck_12375_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53592,7 +54723,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53606,7 +54738,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12377_good
      */
     public void testAbaNumberCheck_12377_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53652,7 +54784,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12379_good
      */
     public void testAbaNumberCheck_12379_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53683,7 +54815,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53697,7 +54830,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12381_good
      */
     public void testAbaNumberCheck_12381_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53728,7 +54861,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53742,7 +54876,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12383_good
      */
     public void testAbaNumberCheck_12383_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53773,7 +54907,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53787,7 +54922,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12385_good
      */
     public void testAbaNumberCheck_12385_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53818,7 +54953,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53832,7 +54968,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12387_good
      */
     public void testAbaNumberCheck_12387_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53863,7 +54999,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53877,7 +55014,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12389_good
      */
     public void testAbaNumberCheck_12389_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53908,7 +55045,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53922,7 +55060,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12391_good
      */
     public void testAbaNumberCheck_12391_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53953,7 +55091,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -53967,7 +55106,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12393_good
      */
     public void testAbaNumberCheck_12393_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -53998,7 +55137,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54012,7 +55152,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12395_good
      */
     public void testAbaNumberCheck_12395_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54043,7 +55183,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54057,7 +55198,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12397_good
      */
     public void testAbaNumberCheck_12397_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54088,7 +55229,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54102,7 +55244,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12399_good
      */
     public void testAbaNumberCheck_12399_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54133,7 +55275,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54147,7 +55290,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12401_good
      */
     public void testAbaNumberCheck_12401_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54178,7 +55321,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54192,7 +55336,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12403_good
      */
     public void testAbaNumberCheck_12403_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54223,7 +55367,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54237,7 +55382,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12405_good
      */
     public void testAbaNumberCheck_12405_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54268,7 +55413,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54282,7 +55428,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12407_good
      */
     public void testAbaNumberCheck_12407_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54313,7 +55459,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54327,7 +55474,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12409_good
      */
     public void testAbaNumberCheck_12409_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54358,7 +55505,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54372,7 +55520,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12411_good
      */
     public void testAbaNumberCheck_12411_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54403,7 +55551,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54417,7 +55566,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12413_good
      */
     public void testAbaNumberCheck_12413_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54448,7 +55597,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54462,7 +55612,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12415_good
      */
     public void testAbaNumberCheck_12415_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54493,7 +55643,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54507,7 +55658,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12417_good
      */
     public void testAbaNumberCheck_12417_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54538,7 +55689,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54552,7 +55704,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12419_good
      */
     public void testAbaNumberCheck_12419_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54583,7 +55735,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54597,7 +55750,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12421_good
      */
     public void testAbaNumberCheck_12421_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54628,7 +55781,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54642,7 +55796,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12423_good
      */
     public void testAbaNumberCheck_12423_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54673,7 +55827,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54687,7 +55842,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12425_good
      */
     public void testAbaNumberCheck_12425_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54718,7 +55873,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54732,7 +55888,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12427_good
      */
     public void testAbaNumberCheck_12427_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54763,7 +55919,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54777,7 +55934,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12429_good
      */
     public void testAbaNumberCheck_12429_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54808,7 +55965,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54822,7 +55980,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12431_good
      */
     public void testAbaNumberCheck_12431_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54853,7 +56011,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54867,7 +56026,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12433_good
      */
     public void testAbaNumberCheck_12433_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54898,7 +56057,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54912,7 +56072,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12435_good
      */
     public void testAbaNumberCheck_12435_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54943,7 +56103,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -54957,7 +56118,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12437_good
      */
     public void testAbaNumberCheck_12437_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -54988,7 +56149,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -55002,7 +56164,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12439_good
      */
     public void testAbaNumberCheck_12439_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -55033,7 +56195,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -55047,7 +56210,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12441_good
      */
     public void testAbaNumberCheck_12441_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -55078,7 +56241,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -55092,7 +56256,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12443_good
      */
     public void testAbaNumberCheck_12443_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -55123,7 +56287,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -55137,7 +56302,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12445_good
      */
     public void testAbaNumberCheck_12445_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -55168,7 +56333,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -55182,7 +56348,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12447_good
      */
     public void testAbaNumberCheck_12447_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
@@ -55213,7 +56379,8 @@ public class Test_AbaRouteValidator_06
         catch( AbaRouteValidationException e ) {
 
             // This is good.  We were expecting an exception.
-            assertTrue( true );
+            assertEquals( -1004, e.getErrorCode() );
+            assertEquals( "com.cardatechnologies.aba.number.not.numeric", e.getErrorMessage() );
 
             // We're done, just return.
             return;
@@ -55227,7 +56394,7 @@ public class Test_AbaRouteValidator_06
      * Method: testAbaNumberCheck_12449_good
      */
     public void testAbaNumberCheck_12449_good() {
-        boolean returnBool ;
+        boolean returnBool;
 
         // Validate
         try {
