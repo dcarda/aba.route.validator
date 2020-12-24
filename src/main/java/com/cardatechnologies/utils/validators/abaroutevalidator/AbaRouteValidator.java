@@ -1,6 +1,6 @@
 /* ---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.java
- * Date:  2015/02/11
+ * Date:   2015/02/11
  * ---------------------------------------------------------------------------------------
  *
  *  License: Apache 2.0
@@ -36,10 +36,10 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
  * <pre>
  * yyyy mm dd  Who             Description
  * ----------  --------------  --------------------------------------------------
- * 2015/02/11  Daniel Carda    Initial Module Creation...
+ * 2015/02/11  JavaDan         Initial Module Creation...
+ * 2020/12/23  JavaDan         Started using and ENum for error content.
+ * 2020/12/24  JavaDan         Optimized algorithms.
  * </pre>
- *
- * @author    Daniel Carda, CardaTechnologies, LLC
  */
 public class AbaRouteValidator {
 
@@ -50,6 +50,9 @@ public class AbaRouteValidator {
      *         The incoming ABA Number.
      *
      * @return boolean
+     *         True if all the characters were digits.
+     *         False if there was a problem.
+     *
      * @throws AbaRouteValidationException
      *         There was a problem somewhere not related to checking the ABA number.
      */
@@ -70,12 +73,13 @@ public class AbaRouteValidator {
 
     /**
      * This method is the starting point to validate whether a incoming string is
-     * an ABA Routing Transit Number.
+     * a valid ABA Routing Transit Number.
      *
      * @param   paramAbaRouteNumber The ABA number to be tested.
      *
-     * @return  True if it passes validation.
-     *          False if it fails validation.
+     * @return boolean
+     *         True if all the characters were digits.
+     *         False if there was a problem.
      *
      * @throws AbaRouteValidationException
      *         A error occurred when parsing the suspect
@@ -91,13 +95,15 @@ public class AbaRouteValidator {
         // Quick Check
         // Is the parameter null
         if( paramAbaRouteNumber == null ) {
-            throw new AbaRouteValidationException( ErrorCodes.ABA_1000.getErrorCode(), ErrorCodes.ABA_1000.getErrorMnemonic() );
+            throw new AbaRouteValidationException( ErrorCodes.ABA_1000.getErrorCode(),
+                                                   ErrorCodes.ABA_1000.getErrorMnemonic() );
         }
 
         // Quick Check
         // Is the parameter empty/blank
         if( paramAbaRouteNumber.trim().equals( "" ) ) {
-            throw new AbaRouteValidationException( ErrorCodes.ABA_1001.getErrorCode(), ErrorCodes.ABA_1001.getErrorMnemonic() );
+            throw new AbaRouteValidationException( ErrorCodes.ABA_1001.getErrorCode(),
+                                                   ErrorCodes.ABA_1001.getErrorMnemonic() );
         }
 
         // Quick Check
@@ -111,19 +117,22 @@ public class AbaRouteValidator {
 
             // Is it to short?
             if( _strLen < 9 ) {
-                throw new AbaRouteValidationException( ErrorCodes.ABA_1002.getErrorCode(), ErrorCodes.ABA_1002.getErrorMnemonic() );
+                throw new AbaRouteValidationException( ErrorCodes.ABA_1002.getErrorCode(),
+                                                       ErrorCodes.ABA_1002.getErrorMnemonic() );
             }
             else {
+
                 // Must be to long.
-                throw new AbaRouteValidationException( ErrorCodes.ABA_1003.getErrorCode(), ErrorCodes.ABA_1003.getErrorMnemonic() );
+                throw new AbaRouteValidationException( ErrorCodes.ABA_1003.getErrorCode(),
+                                                       ErrorCodes.ABA_1003.getErrorMnemonic() );
             }
         }
 
         // Quick Check
         // Finally, let's just do a scan and make sure it's a number
         if( !isNumeric( paramAbaRouteNumber ) ) {
-
-            throw new AbaRouteValidationException( ErrorCodes.ABA_1004.getErrorCode(), ErrorCodes.ABA_1004.getErrorMnemonic() );
+            throw new AbaRouteValidationException( ErrorCodes.ABA_1004.getErrorCode(),
+                                                   ErrorCodes.ABA_1004.getErrorMnemonic() );
         }
 
         // -----------------------------------------------------------------------------
@@ -138,20 +147,27 @@ public class AbaRouteValidator {
     }
 
     /**
-     * Method description
+     * Method: validateAbaNumberChecksum
      *
-     *
-     * @param paramAbaRouteNumber The target ABA number to test.
-     *
+     * @param  paramAbaRouteNumber
+     *         The target ABA number to test.
      *
      * @return boolean
+     *         True if all the characters were digits.
+     *         False if there was a problem.
      */
     static private boolean validateAbaNumberChecksum( final String paramAbaRouteNumber ) {
+
+        // Even thought initializing this to zero is redundant, performance tests
+        // were slightly improved.
+        int checksumTotal = 0;
 
         // Set up all the ints
         int i1, i2, i3, i4, i5, i6, i7, i8, i9;
 
         // Break up the string so we can look at the numbers.
+        // Although this is a bit simplistic, doing it this way (as opposed to
+        // to a loop) produced much faster results.
         i1 = Character.getNumericValue( paramAbaRouteNumber.charAt( 0 ) );
         i2 = Character.getNumericValue( paramAbaRouteNumber.charAt( 1 ) );
         i3 = Character.getNumericValue( paramAbaRouteNumber.charAt( 2 ) );
@@ -163,8 +179,6 @@ public class AbaRouteValidator {
         i9 = Character.getNumericValue( paramAbaRouteNumber.charAt( 8 ) );
 
         // Okay, lets crank it through the formula
-        int checksumTotal;
-
         checksumTotal = ( ( i3 + i6 + i9 ) + ( 3 * ( i1 + i4 + i7 ) ) + ( 7 * ( i2 + i5 + i8 ) ) );
 
         // Check the modulus and we're done!
@@ -207,37 +221,62 @@ public class AbaRouteValidator {
                 || ( ( _fedNumb >= 21 ) && ( _fedNumb <= 32 ) )
                 || ( ( _fedNumb >= 61 ) && ( _fedNumb <= 72 ) )
                 || ( ( _fedNumb == 80 ) ) ) ) {
-            throw new AbaRouteValidationException( ErrorCodes.ABA_1005.getErrorCode(), ErrorCodes.ABA_1005.getErrorMnemonic() );
+            throw new AbaRouteValidationException( ErrorCodes.ABA_1005.getErrorCode(),
+                                                   ErrorCodes.ABA_1005.getErrorMnemonic() );
         }
     }
 
     /**
-     * Method description
+     * Method: isNumeric
      *
+     * Description:
+     *         This method will scan the individual numbers in the ABA number
+     *         and makre sure they are numeric digits.
      *
-     * @param paramStr The string which needs to be made up of all numbers.
+     * @param  paramStr
+     *         The string which needs to be made up of all numbers.
      *
-     * @return True if all the characters were digits.  False if there was a problem.
+     * @return boolean
+     *         True if all the characters were digits.
+     *         False if there was a problem.
      */
     static private boolean isNumeric( final String paramStr ) {
 
-        // Cycle through the character array
-        for( char _char : paramStr.toCharArray() ) {
-            if( !Character.isDigit( _char ) ) {
+          // Cycle through the character array
+          int size = paramStr.length();
+          for( int i = 0; i < size; i++ ) {
+              if( !Character.isDigit( paramStr.charAt(i) ) ) {
 
-                // This is bad!
-                return( false );
-            }
-        }
+                  // This is bad!
+                  return( false );
+              }
+          }
 
-        // All is well!
+          // All is well!
         return( true );
     }
 }
 
-/* ***************************************************************************************
+/* ---------------------------------------------------------------------------------------
  *
- * Class: com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.java
- * Date:  2015/02/11
- *************************************************************************************** */
-
+ *  License: Apache 2.0
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+ *  this file except in compliance with the License.
+ *
+ *  You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software distributed under
+ *  the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
+ *  OF ANY KIND, either express or implied including the implied warranties of
+ *  merchantability and fitness for a particular purpose.
+ *
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ * ---------------------------------------------------------------------------------------
+ * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.java
+ * Date:   2015/02/11
+ * --------------------------------------------------------------------------------------- */
