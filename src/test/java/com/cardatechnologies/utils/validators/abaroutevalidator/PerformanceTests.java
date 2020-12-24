@@ -60,12 +60,12 @@ public class PerformanceTests {
 
         // Okay, this litterally is going to run millions of these just to I can get
         // a guage on performance.
-        int  _maxLoops = 5000000;
+        int  _maxLoops = 7500000;
         long startTime = System.nanoTime();
 
         for( int i = 0; i < _maxLoops; i++ ) {
-            try {
 
+            try {
                 AbaRouteValidator.validate( "302075018" );
                 AbaRouteValidator.validate( "011000138" );
                 AbaRouteValidator.validate( "011600525" );
@@ -100,10 +100,11 @@ public class PerformanceTests {
                 AbaRouteValidator.validate( "311985830" );
                 AbaRouteValidator.validate( "312276111" );
                 AbaRouteValidator.validate( "313173336" );
+
+            } catch (AbaRouteValidationException e) {
+                e.printStackTrace();
             }
-            catch( AbaRouteValidationException e ) {
-                fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
-            }
+
         }
 
         long   endTime  = System.nanoTime();
