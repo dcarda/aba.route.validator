@@ -37,8 +37,6 @@ package com.cardatechnologies.utils.validators.abaroutevalidator.exceptions;
  * 2015/04/15  JavaDan           Initial Module Creation...
  * 2020/12/22  JavaDan           Improved internal error handling.
  * </pre>
- *
- * Copyright, © 2020 - Carda Technologies, LLC
  */
 public class AbaRouteValidationException
         extends Exception {
