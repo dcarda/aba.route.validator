@@ -80,7 +80,8 @@
     <!--  Properties                                                                   -->
     <!-- ============================================================================= -->
     <properties>
-        <!--  Compiler Settings  ================================================  -->
+
+        <!--  Compiler Settings  ················································  -->
         <java.version>1.8</java.version>
         <javacDebug>true</javacDebug>
         <javacDebugLevel>lines,vars,source</javacDebugLevel>
@@ -90,6 +91,7 @@
         <jdk.compiler.version>1.8</jdk.compiler.version>
         <jdk.version>1.8</jdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
         <!-- Plugins   ==========================================================  -->
         <version.compiler.plugin>3.8.1</version.compiler.plugin>
         <version.jar.plugin>3.2.0</version.jar.plugin>
@@ -102,33 +104,24 @@
         <!--  Test Related Plugins   ============================================  -->
         <version.junit>4.13</version.junit>
         <version.surefire.junit47.plugin>2.18.1</version.surefire.junit47.plugin>
+
+        <version.junit.jupiter>5.7.0</version.junit.jupiter>
+
+
     </properties>
     <!--  Dependency Management   ===================================================  -->
     <dependencyManagement />
     <!--  Dependencies   ============================================================  -->
     <dependencies>
 
-        <!--  Testing Scope Dependencies   ======================================  -->
+        <!--  Testing Scope Dependencies   ·····································   -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.6.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.vintage</groupId>
-            <artifactId>junit-vintage-engine</artifactId>
-            <version>5.6.0</version>
+            <version>${version.junit.jupiter}</version>
             <scope>test</scope>
         </dependency>
 
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${version.junit}</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
     <!--  Build   ===================================================================  -->
     <build>
@@ -144,7 +137,7 @@
         <!--  Plugin Management   ===============================================  -->
         <pluginManagement>
             <plugins>
-                <!--  Maven Compiler Plugin   ===================================  -->
+                <!--  Maven Compiler Plugin   ···································  -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
@@ -160,8 +153,27 @@
                         <showDeprecation>true</showDeprecation>
                         <showWarnings>true</showWarnings>
                         <verbose>${javacVerbose}</verbose>
+
+                        <compilerArgs>
+                            <arg>-Xlint:all</arg>
+                            <!-- Override options warnings to support cross-compilation -->
+                            <arg>-Xlint:-options</arg>
+                            <!-- Temporary lint overrides, to be removed over time. -->
+                            <arg>-Xlint:-cast</arg>
+                            <arg>-Xlint:-deprecation</arg>
+                            <arg>-Xlint:-processing</arg>
+                            <arg>-Xlint:-rawtypes</arg>
+                            <arg>-Xlint:-serial</arg>
+                            <arg>-Xlint:-try</arg>
+                            <arg>-Xlint:-unchecked</arg>
+                            <arg>-Xlint:-varargs</arg>
+                            <!-- Uncomment the following args to display more warnings. -->
+                            <!-- -Xmaxwarns -->
+                            <!-- 10000 -->
+                        </compilerArgs>
                     </configuration>
                 </plugin>
+
                 <!--  GitHub Site Plugin   ======================================  -->
                 <!--
                       This is the plugin which will upload the site to the github pages.
@@ -272,44 +284,7 @@
                         </archive>
                     </configuration>
                 </plugin>
-                <!--                &lt;!&ndash;  Maven Jar Plugin   ========================================  &ndash;&gt;-->
-                <!--                <plugin>-->
-                <!--                    <groupId>org.apache.maven.plugins</groupId>-->
-                <!--                    <artifactId>maven-jar-plugin</artifactId>-->
-                <!--                    <version>${version.jar.plugin}</version>-->
-                <!--                    <configuration>-->
-                <!--                        <archive>-->
-                <!--                            <index>true</index>-->
-                <!--                            <addMavenDescriptor>false</addMavenDescriptor>-->
-                <!--                            <manifest>-->
-                <!--                                <addClasspath>true</addClasspath>-->
-                <!--                                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>-->
-                <!--                                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>-->
-                <!--                                <addExtensions>true</addExtensions>-->
-                <!--&lt;!&ndash;                                <classpathMavenRepositoryLayout>true</classpathMavenRepositoryLayout>&ndash;&gt;-->
-                <!--                            </manifest>-->
-                <!--                                <manifestEntries>-->
-                <!--                                    <Copyright>CardaTechnologies, LLC</Copyright>-->
-                <!--                                    <Built-By>Daniel Carda</Built-By>-->
-                <!--                                    <Maven-Version>${maven.version}</Maven-Version>-->
-                <!--                                    <BuildTime>${maven.build.timestamp}</BuildTime>-->
-                <!--                                    <Implementation-Build>${implementation.build}</Implementation-Build>-->
-                <!--                                    <Implementation-URL>${project.url}</Implementation-URL>-->
-                <!--                                    <Java-Version>${java.version}</Java-Version>-->
-                <!--                                    <Java-Vendor>${java.vendor}</Java-Vendor>-->
-                <!--                                    <Os-Name>${os.name}</Os-Name>-->
-                <!--                                    <Os-Arch>${os.arch}</Os-Arch>-->
-                <!--                                    <Os-Version>${os.version}</Os-Version>-->
-                <!--                                    <Scm-Url>${project.scm.url}</Scm-Url>-->
-                <!--                                    <Scm-Connection>${project.scm.connection}</Scm-Connection>-->
-                <!--                                    <Scm-Revision>${buildNumber}</Scm-Revision>-->
-                <!--                                    <Build-Timestamp>${build.datetime}</Build-Timestamp>-->
-                <!--                                    <Maven-Version>${maven.version}</Maven-Version>-->
-                <!--                                    <SVN-Revision>${buildNumber}</SVN-Revision>-->
-                <!--                                </manifestEntries>-->
-                <!--                        </archive>-->
-                <!--                    </configuration>-->
-                <!--                </plugin>-->
+
                 <!--  Maven Release Plugin   ====================================  -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -412,6 +387,15 @@
         </pluginManagement>
         <!--  Plugins   =========================================================  -->
         <plugins>
+
+            <!--  Surefire Plugin   ·············································  -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <!-- JUnit 5 requires Surefire version 2.22.0 or higher -->
+                <version>2.22.0</version>
+            </plugin>
+
             <!--            <plugin>-->
             <!--                <groupId>org.apache.maven.plugins</groupId>-->
             <!--                <artifactId>maven-gpg-plugin</artifactId>-->
@@ -623,6 +607,13 @@
             <build>
                 <!--  Plugins   =====================================================  -->
                 <plugins>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.22.0</version>
+                    </plugin>
+                    
                     <!--  Maven Site Plugin   =======================================  -->
                     <!--    This has to be the first one...                            -->
                     <plugin>

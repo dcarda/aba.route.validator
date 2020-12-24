@@ -20,16 +20,18 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-
 package com.cardatechnologies.utils.validators.abaroutevalidator;
 
 //~--- non-JDK imports --------------------------------------------------------
 
-import org.junit.Test;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException;
-
-import junit.framework.TestCase;
 
 /**
  * Package:    com.cardatechnologies.utils.validators.abaroutevalidator
@@ -43,30 +45,16 @@ import junit.framework.TestCase;
  * yyyy mm dd  Who               Description
  * ----------  ----------------  ----------------------------------------------------
  * 2020/12/21  JavaDan           Initial Module Creation...
+ * 2020/12/23  JavaDan           Updated module to use JUint Jupiter.
  * </pre>
  *
  */
-public class PerformanceTests
-        extends TestCase {
-
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public PerformanceTests( String testName ) {
-        super( testName );
-    }
-
-    @Override
-    protected void tearDown()
-            throws Exception {
-        super.tearDown();
-    }
+public class PerformanceTests {
 
     /**
      * Rigourous Test :-)
      */
+    @Disabled
     @Test
     public void testApp() {
 
@@ -126,12 +114,6 @@ public class PerformanceTests
 
         // This is a good thing!
         assertTrue( true );
-    }
-
-    @Override
-    protected void setUp()
-            throws Exception {
-        super.setUp();
     }
 }
 

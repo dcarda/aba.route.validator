@@ -1,4 +1,4 @@
-/*---------------------------------------------------------------------------------------
+/* ---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.Test_AbaRouteValidator_01.java
  * Date:   2015/01/15
  * ---------------------------------------------------------------------------------------
@@ -24,9 +24,13 @@ package com.cardatechnologies.utils.validators.abaroutevalidator;
 
 //~--- non-JDK imports --------------------------------------------------------
 
-import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException;
+import org.junit.jupiter.api.Test;
 
-import junit.framework.TestCase;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
+
+import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException;
 
 /**
  * Package:    com.cardatechnologies.utils.validators.abaroutevalidator
@@ -41,33 +45,15 @@ import junit.framework.TestCase;
  * ----------  ----------------  ----------------------------------------------------
  * 2015/01/15  JavaDan           Initial Module Creation...
  * 2020/12/22  JavaDan           Improved unit test results.
+ * 2020/12/23  JavaDan           Updated module to use JUint Jupiter.
  * </pre>
  */
-public class Test_AbaRouteValidator_01
-        extends TestCase {
-
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public Test_AbaRouteValidator_01( String testName ) {
-        super( testName );
-    }
-
-    /**
-     * Method description
-     *
-     */
-    @Override
-    protected void tearDown()
-            throws Exception {
-        super.tearDown();
-    }
+public class Test_AbaRouteValidator_01 {
 
     /**
      * Rigorous Test :-)
      */
+    @Test
     public void testApp() {
         boolean returnBool = false;
 
@@ -86,6 +72,7 @@ public class Test_AbaRouteValidator_01
     /**
      * Method description
      */
+    @Test
     public void testBlankParam() {
         String abaNumber = "";
 
@@ -109,6 +96,7 @@ public class Test_AbaRouteValidator_01
     /**
      * Method description
      */
+    @Test
     public void testNullParam() {
         String abaNumber = null;
 
@@ -133,6 +121,7 @@ public class Test_AbaRouteValidator_01
     /**
      * Method description
      */
+    @Test
     public void testParamNonNumeric() {
         String abaNumber = "123456a89";
 
@@ -156,6 +145,7 @@ public class Test_AbaRouteValidator_01
     /**
      * Method description
      */
+    @Test
     public void testParamToLong() {
         String abaNumber = "123451234512";
 
@@ -180,6 +170,7 @@ public class Test_AbaRouteValidator_01
     /**
      * Method description
      */
+    @Test
     public void testParamToShort() {
         String abaNumber = "123412";
 
@@ -199,12 +190,6 @@ public class Test_AbaRouteValidator_01
 
         // If it gets here its bad
         fail( "Should not have got here" );
-    }
-
-    @Override
-    protected void setUp()
-            throws Exception {
-        super.setUp();
     }
 }
 
