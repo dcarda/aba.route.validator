@@ -31,7 +31,7 @@ package com.cardatechnologies.utils.validators.abaroutevalidator.exceptions;
  * @author     Daniel Carda
  *
  * Maintenance History:
- * <p><pre>
+ * </p><pre>
  * yyyy mm dd  Who               Description
  * ----------  ----------------  ----------------------------------------------------
  * 2015/04/15  JavaDan           Initial Module Creation...
@@ -57,7 +57,9 @@ public class AbaRouteValidationException
      * Constructs ...
      *
      * @param errorCode
+     *        The integer code assicated with this error.
      * @param errorMessage
+     *        A textual message about the error.
      */
     public AbaRouteValidationException( final int    errorCode,
                                         final String errorMessage ) {
@@ -69,20 +71,10 @@ public class AbaRouteValidationException
     }
 
     /**
-     * Constructs ...
-     *
-     * @param message
-     * @param cause
-     */
-    public AbaRouteValidationException( String    message,
-                                        Throwable cause ) {
-        super( message, cause );
-    }
-
-    /**
      * Method: getErrorCode
      *
      * @return int
+     *         The integer code associated with this error.
      */
     public int getErrorCode() {
         return errorCode;
@@ -92,7 +84,7 @@ public class AbaRouteValidationException
      * Method: setErrorCode
      *
      * @param errorCode
-     *         Param Desc...
+     *        The integer code associated with this error.
      */
     public void setErrorCode( int errorCode ) {
         this.errorCode = errorCode;
@@ -102,6 +94,7 @@ public class AbaRouteValidationException
      * Method: getErrorMessage
      *
      * @return String
+     *         A text description of the error.
      */
     public String getErrorMessage() {
         return errorMessage;
@@ -111,7 +104,7 @@ public class AbaRouteValidationException
      * Method: setErrorMessage
      *
      * @param errorMessage
-     *         Param Desc...
+     *        A textual message about the error.
      */
     public void setErrorMessage( String errorMessage ) {
         this.errorMessage = errorMessage;

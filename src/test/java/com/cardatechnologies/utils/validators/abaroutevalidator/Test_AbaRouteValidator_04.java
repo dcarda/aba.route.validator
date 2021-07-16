@@ -24,6 +24,8 @@ package com.cardatechnologies.utils.validators.abaroutevalidator;
 
 //~--- non-JDK imports --------------------------------------------------------
 
+import com.cardatechnologies.utils.TraceUnitExtension;
+import org.junit.Rule;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -32,6 +34,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
 import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 /**
  * Package:    com.cardatechnologies.utils.validators.abaroutevalidator
@@ -48,9 +51,23 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
  * 2020/12/20  JavaDan           Updated unit tests.
  * 2020/12/22  JavaDan           Improved unit test results.
  * 2020/12/23  JavaDan           Updated module to use JUint Jupiter.
+ * 2021/05/14  JavaDan           Added @Rule and TraceUnitExtension.
  * </pre>
  */
+@ExtendWith({ TraceUnitExtension.class })
 public class Test_AbaRouteValidator_04 {
+
+    @Rule
+    public org.junit.rules.MethodRule watchman = new org.junit.rules.TestWatchman() {
+        public void starting(org.junit.runners.model.FrameworkMethod method) {
+            System.out.println("Starting Test: " + method.getName());
+        }
+        @Override
+        public void finished(org.junit.runners.model.FrameworkMethod method) {
+            System.out.println("  Ending Test: " + method.getName());
+            System.out.println("");
+        }
+    };
 
     /**
      * Method: testAbaNumberCheck_5001_good
