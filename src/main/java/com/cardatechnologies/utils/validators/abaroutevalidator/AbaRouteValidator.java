@@ -27,19 +27,22 @@ package com.cardatechnologies.utils.validators.abaroutevalidator;
 import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException;
 
 /**
- * Class: com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.java
+ * <b>Description:</b><br>
+ *     This class is used to validate a ABA Routing Transit Number.
  *
- * Description:
- *        This class is used to validate a ABA Routing Transit Number.
- * <p>
- *
- * <pre>
- * yyyy mm dd  Who             Description
- * ----------  --------------  --------------------------------------------------
- * 2015/02/11  JavaDan         Initial Module Creation...
- * 2020/12/23  JavaDan         Started using and ENum for error content.
- * 2020/12/24  JavaDan         Optimized algorithms.
- * </pre>
+ * @author     Daniel Carda
+ * <br>
+ * <br><b>Maintenance History:</b>
+ * <br>
+<pre>
+    yyyy mm dd  Who               Description
+    ----------  ----------------  ----------------------------------------------------
+    2015/02/11  Daniel Carda      Initial Module Creation...
+    2020/12/23  Daniel Carda      Started using and ENum for error content.
+    2020/12/24  Daniel Carda      Optimized algorithms.
+    2021/08/01  Daniel Carda      Improved Class Javadocs
+</pre>
+ * <hr>
  */
 public class AbaRouteValidator {
 

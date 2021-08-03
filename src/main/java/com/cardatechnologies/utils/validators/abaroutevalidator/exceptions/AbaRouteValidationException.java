@@ -24,19 +24,21 @@
 package com.cardatechnologies.utils.validators.abaroutevalidator.exceptions;
 
 /**
- * Package:    com.cardatechnologies.utils.validators.abaroutevalidator.exceptions
- * Class:      AbaRouteValidationException.java
- * Desc:       ...
+ * <b>Description:</b><br>
+ *     This class is used throwing error messages relating to the ABA Routing code.
  *
  * @author     Daniel Carda
- *
- * Maintenance History:
- * </p><pre>
- * yyyy mm dd  Who               Description
- * ----------  ----------------  ----------------------------------------------------
- * 2015/04/15  JavaDan           Initial Module Creation...
- * 2020/12/22  JavaDan           Improved internal error handling.
- * </pre>
+ * <br>
+ * <br><b>Maintenance History:</b>
+ * <br>
+<pre>
+    yyyy mm dd  Who               Description
+    ----------  ----------------  ----------------------------------------------------
+    2015/04/15  Daniel Carda      Initial Module Creation...
+    2020/12/22  Daniel Carda      Improved internal error handling.
+    2021/08/01  Daniel Carda      Improved Class Javadocs
+</pre>
+ * <hr>
  */
 public class AbaRouteValidationException
         extends Exception {
@@ -48,6 +50,7 @@ public class AbaRouteValidationException
      * Constructs ...
      *
      * @param cause
+     *        Throwable reason.
      */
     public AbaRouteValidationException( Throwable cause ) {
         super( cause );

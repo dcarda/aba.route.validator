@@ -55,6 +55,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 @ExtendWith({ TraceUnitExtension.class })
 public class Test_AbaRouteValidator_01 {
 
+
+//    https://stackoverflow.com/questions/12965423/why-have-junit-methodrule-and-testwatchman-have-been-deprecated
     @Rule
     public org.junit.rules.MethodRule watchman = new org.junit.rules.TestWatchman() {
         public void starting(org.junit.runners.model.FrameworkMethod method) {

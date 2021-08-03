@@ -23,19 +23,21 @@
 package com.cardatechnologies.utils.validators.abaroutevalidator;
 
 /**
- * Package:    com.cardatechnologies.utils.validators.abaroutevalidator
- * Class:      ErrorCodes.java
- * Desc:       JUnit test file.
+ * <b>Description:</b><br>
+ *     This class is used to run unit tests against the main code.
  *
  * @author     Daniel Carda
- *
- * Maintenance History:
- * <p><pre>
- * yyyy mm dd  Who               Description
- * ----------  ----------------  ----------------------------------------------------
- * 2015/12/22  JavaDan           Initial Module Creation...
- * 2020/12/20  JavaDan           Updated formatting.
- * </pre>
+ * <br>
+ * <br><b>Maintenance History:</b>
+ * <br>
+<pre>
+    yyyy mm dd  Who               Description
+    ----------  ----------------  ----------------------------------------------------
+    2015/12/22  JavaDan           Initial Module Creation...
+    2020/12/20  JavaDan           Updated formatting.
+    2021/08/01  Daniel Carda      Improved Class Javadocs
+</pre>
+ * <hr>
  */
 public enum ErrorCodes {
     ABA_1000(-1000, "com.cardatechnologies.aba.number.null"),
