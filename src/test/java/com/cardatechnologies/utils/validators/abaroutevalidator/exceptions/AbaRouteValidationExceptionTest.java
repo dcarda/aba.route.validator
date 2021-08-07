@@ -11,6 +11,7 @@ package com.cardatechnologies.utils.validators.abaroutevalidator.exceptions;
 
 //~--- non-JDK imports --------------------------------------------------------
 
+import com.cardatechnologies.utils.TestWatcherExtension;
 import org.junit.Rule;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -20,37 +21,23 @@ import static org.junit.jupiter.api.Assertions.*;
 import com.cardatechnologies.utils.TraceUnitExtension;
 
 /**
- * Package:    com.cardatechnologies.utils.validators.abaroutevalidator.exceptions
- * Class:      AbaRouteValidationExceptionTest.java
- * Desc:       ...
+ * <b>Description:</b><br>
+ *     This class is used throwing error messages relating to the ABA Routing code.
  *
  * @author     Daniel Carda
- *
- * Maintenance History:
- * <p><pre>
-  yyyy mm dd  Who               Description
-  ----------  ----------------  ----------------------------------------------------
-  2021/07/08  JavaDan           Initial Module Creation...
- * </pre>
- *
- * Copyright, © 2020 - Carda Technologies, LLC
+ * <br>
+ * <br><b>Maintenance History:</b>
+ * <br>
+<pre>
+    yyyy mm dd  Who                       Description
+    ----------  ------------------------  ----------------------------------------------------
+    2021/07/08  Daniel Carda              Initial Module Creation...
+    2021/08/07  Daniel Carda              Improved class header JavaDoc.
+</pre>
+ * <hr>
  */
-@ExtendWith({ TraceUnitExtension.class })
+@ExtendWith({ TraceUnitExtension.class, TestWatcherExtension.class })
 class AbaRouteValidationExceptionTest {
-
-    @Rule
-    public org.junit.rules.MethodRule watchman = new org.junit.rules.TestWatchman() {
-
-        public void starting( org.junit.runners.model.FrameworkMethod method ) {
-            System.out.println( "Starting Test: " + method.getName() );
-        }
-        @Override
-        public void finished( org.junit.runners.model.FrameworkMethod method ) {
-            System.out.println( "  Ending Test: " + method.getName() );
-            System.out.println( "" );
-        }
-    };
-
 
     @Test
     void testConstructor() {

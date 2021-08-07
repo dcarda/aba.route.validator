@@ -31,11 +31,11 @@ package com.cardatechnologies.utils.validators.abaroutevalidator;
  * <br><b>Maintenance History:</b>
  * <br>
 <pre>
-    yyyy mm dd  Who               Description
-    ----------  ----------------  ----------------------------------------------------
-    2015/12/22  JavaDan           Initial Module Creation...
-    2020/12/20  JavaDan           Updated formatting.
-    2021/08/01  Daniel Carda      Improved Class Javadocs
+    yyyy mm dd  Who                       Description
+    ----------  ------------------------  ----------------------------------------------------
+    2015/12/22  JavaDan                   Initial Module Creation...
+    2020/12/20  JavaDan                   Updated formatting.
+    2021/08/01  Daniel Carda              Improved Class Javadocs
 </pre>
  * <hr>
  */

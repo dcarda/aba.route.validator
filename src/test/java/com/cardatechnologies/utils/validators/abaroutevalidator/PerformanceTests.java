@@ -34,20 +34,21 @@ import static org.junit.jupiter.api.Assertions.fail;
 import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException;
 
 /**
- * Package:    com.cardatechnologies.utils.validators.abaroutevalidator
- * Class:      PerformanceTests.java
- * Desc:       JUnit test file.
+ * <b>Description:</b><br>
+ *     This class is used throwing error messages relating to the ABA Routing code.
  *
  * @author     Daniel Carda
- *
- * Maintenance History:
- * <p><pre>
- * yyyy mm dd  Who               Description
- * ----------  ----------------  ----------------------------------------------------
- * 2020/12/21  JavaDan           Initial Module Creation...
- * 2020/12/23  JavaDan           Updated module to use JUint Jupiter.
- * </pre>
- *
+ * <br>
+ * <br><b>Maintenance History:</b>
+ * <br>
+<pre>
+    yyyy mm dd  Who                       Description
+    ----------  ------------------------  ----------------------------------------------------
+    2020/12/21  Daniel Carda              Initial Module Creation...
+    2020/12/23  Daniel Carda              Updated module to use JUint Jupiter.
+    2021/08/07  Daniel Carda              Improved class header JavaDoc.
+</pre>
+ * <hr>
  */
 public class PerformanceTests {
 

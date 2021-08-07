@@ -35,12 +35,12 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
  * <br><b>Maintenance History:</b>
  * <br>
 <pre>
-    yyyy mm dd  Who               Description
-    ----------  ----------------  ----------------------------------------------------
-    2015/02/11  Daniel Carda      Initial Module Creation...
-    2020/12/23  Daniel Carda      Started using and ENum for error content.
-    2020/12/24  Daniel Carda      Optimized algorithms.
-    2021/08/01  Daniel Carda      Improved Class Javadocs
+    yyyy mm dd  Who                       Description
+    ----------  ------------------------  ----------------------------------------------------
+    2015/02/11  Daniel Carda              Initial Module Creation...
+    2020/12/23  Daniel Carda              Started using and ENum for error content.
+    2020/12/24  Daniel Carda              Optimized algorithms.
+    2021/08/01  Daniel Carda              Improved Class Javadocs
 </pre>
  * <hr>
  */

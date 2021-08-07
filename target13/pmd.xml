@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.29.0" timestamp="2021-08-07T12:47:42.056">
+<file name="D:\Projects\GitHub\aba.route.validator\src\main\java\com\cardatechnologies\utils\validators\abaroutevalidator\AbaRouteValidator.java">
+<violation beginline="74" endline="74" begincolumn="17" endcolumn="26" rule="UselessParentheses" ruleset="Code Style" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="breakdownAbaNumber" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="149" endline="149" begincolumn="17" endcolumn="26" rule="UselessParentheses" ruleset="Code Style" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validate" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="185" endline="185" begincolumn="27" endcolumn="96" rule="UselessParentheses" ruleset="Code Style" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateAbaNumberChecksum" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="185" endline="185" begincolumn="29" endcolumn="40" rule="UselessParentheses" ruleset="Code Style" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateAbaNumberChecksum" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="188" endline="188" begincolumn="15" endcolumn="32" rule="UselessParentheses" ruleset="Code Style" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateAbaNumberChecksum" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="191" endline="191" begincolumn="21" endcolumn="25" rule="UselessParentheses" ruleset="Code Style" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateAbaNumberChecksum" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="196" endline="196" begincolumn="21" endcolumn="24" rule="UselessParentheses" ruleset="Code Style" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateAbaNumberChecksum" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="223" endline="223" begincolumn="18" endcolumn="56" rule="UselessParentheses" ruleset="Code Style" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="223" endline="223" begincolumn="20" endcolumn="32" rule="UselessParentheses" ruleset="Code Style" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="223" endline="223" begincolumn="41" endcolumn="54" rule="UselessParentheses" ruleset="Code Style" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="224" endline="224" begincolumn="22" endcolumn="61" rule="UselessParentheses" ruleset="Code Style" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="224" endline="224" begincolumn="24" endcolumn="37" rule="UselessParentheses" ruleset="Code Style" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="224" endline="224" begincolumn="46" endcolumn="59" rule="UselessParentheses" ruleset="Code Style" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="225" endline="225" begincolumn="22" endcolumn="61" rule="UselessParentheses" ruleset="Code Style" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="225" endline="225" begincolumn="24" endcolumn="37" rule="UselessParentheses" ruleset="Code Style" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="225" endline="225" begincolumn="46" endcolumn="59" rule="UselessParentheses" ruleset="Code Style" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="226" endline="226" begincolumn="22" endcolumn="39" rule="UselessParentheses" ruleset="Code Style" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="validateFedNumber" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="254" endline="254" begincolumn="27" endcolumn="31" rule="UselessParentheses" ruleset="Code Style" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="isNumeric" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="259" endline="259" begincolumn="17" endcolumn="20" rule="UselessParentheses" ruleset="Code Style" package="com.cardatechnologies.utils.validators.abaroutevalidator" class="AbaRouteValidator" method="isNumeric" externalInfoUrl="https://pmd.github.io/pmd-6.29.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+</pmd>

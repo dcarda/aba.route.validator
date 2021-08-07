@@ -1,4 +1,4 @@
-/* ---------------------------------------------------------------------------------------
+/*---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.Test_AbaRouteValidator_01.java
  * Date:   2015/01/15
  * ---------------------------------------------------------------------------------------
@@ -6,7 +6,7 @@
  *  License: Apache 2.0
  *
  *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use
- *  this file except in compliance with the License.
+ *   this file except in compliance with the License.
  *
  *  You may obtain a copy of the License at
  *
@@ -24,50 +24,38 @@ package com.cardatechnologies.utils.validators.abaroutevalidator;
 
 //~--- non-JDK imports --------------------------------------------------------
 
-import com.cardatechnologies.utils.TraceUnitExtension;
-import org.junit.Rule;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
+import com.cardatechnologies.utils.TestWatcherExtension;
+import com.cardatechnologies.utils.TraceUnitExtension;
 import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException;
-import org.junit.jupiter.api.extension.ExtendWith;
 
 /**
- * Package:    com.cardatechnologies.utils.validators.abaroutevalidator
- * Class:      Test_AbaRouteValidator_01.java
- * Desc:       JUnit test file.
+ * <b>Description:</b><br>
+ *     This class is used throwing error messages relating to the ABA Routing code.
  *
  * @author     Daniel Carda
- *
- * Maintenance History:
- * <p><pre>
- * yyyy mm dd  Who               Description
- * ----------  ----------------  ----------------------------------------------------
- * 2015/01/15  JavaDan           Initial Module Creation...
- * 2020/12/22  JavaDan           Improved unit test results.
- * 2020/12/23  JavaDan           Updated module to use JUint Jupiter.
- * 2021/05/14  JavaDan           Added @Rule and TraceUnitExtension.
- * </pre>
+ * <br>
+ * <br><b>Maintenance History:</b>
+ * <br>
+<pre>
+    yyyy mm dd  Who                       Description
+    ----------  ------------------------  ----------------------------------------------------
+    2015/01/15  Daniel Carda              Initial Module Creation...
+    2020/12/22  Daniel Carda              Improved unit test results.
+    2020/12/23  Daniel Carda              Updated module to use JUint Jupiter.
+    2021/05/14  Daniel Carda              Added @Rule and TraceUnitExtension.
+    2021/08/07  Daniel Carda              Improved class header JavaDoc.
+</pre>
+ * <hr>
  */
-@ExtendWith({ TraceUnitExtension.class })
+@ExtendWith({ TraceUnitExtension.class, TestWatcherExtension.class })
 public class Test_AbaRouteValidator_01 {
-
-
-//    https://stackoverflow.com/questions/12965423/why-have-junit-methodrule-and-testwatchman-have-been-deprecated
-    @Rule
-    public org.junit.rules.MethodRule watchman = new org.junit.rules.TestWatchman() {
-        public void starting(org.junit.runners.model.FrameworkMethod method) {
-            System.out.println("Starting Test: " + method.getName());
-        }
-        @Override
-        public void finished(org.junit.runners.model.FrameworkMethod method) {
-            System.out.println("  Ending Test: " + method.getName());
-            System.out.println("");
-        }
-    };
 
     /**
      * Rigorous Test :-)
@@ -234,3 +222,4 @@ public class Test_AbaRouteValidator_01 {
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.Test_AbaRouteValidator_01.java
  * Date:   2015/01/15
  *************************************************************************************** */
+

@@ -24,6 +24,7 @@ package com.cardatechnologies.utils.validators.abaroutevalidator;
 
 //~--- non-JDK imports --------------------------------------------------------
 
+import com.cardatechnologies.utils.TestWatcherExtension;
 import com.cardatechnologies.utils.TraceUnitExtension;
 import org.junit.Rule;
 import org.junit.jupiter.api.Test;
@@ -37,37 +38,27 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
 import org.junit.jupiter.api.extension.ExtendWith;
 
 /**
- * Package:    com.cardatechnologies.utils.validators.abaroutevalidator
- * Class:      Test_AbaRouteValidator_12.java
- * Desc:       JUnit test file.
+ * <b>Description:</b><br>
+ *     This class is used throwing error messages relating to the ABA Routing code.
  *
  * @author     Daniel Carda
- *
- * Maintenance History:
- * <p><pre>
- * yyyy mm dd  Who               Description
- * ----------  ----------------  ----------------------------------------------------
- * 2015/01/15  JavaDan           Initial Module Creation...
- * 2020/11/28  JavaDan           Updated unit tests.
- * 2020/12/22  JavaDan           Improved unit test results.
- * 2020/12/23  JavaDan           Updated module to use JUint Jupiter.
- * 2021/05/14  JavaDan           Added @Rule and TraceUnitExtension.
- * </pre>
+ * <br>
+ * <br><b>Maintenance History:</b>
+ * <br>
+<pre>
+     yyyy mm dd  Who                       Description
+     ----------  ------------------------  ----------------------------------------------------
+     2015/01/15  Daniel Carda              Initial Module Creation...
+     2020/11/28  Daniel Carda              Updated unit tests.
+     2020/12/22  Daniel Carda              Improved unit test results.
+     2020/12/23  Daniel Carda              Updated module to use JUint Jupiter.
+     2021/05/14  Daniel Carda              Added @Rule and TraceUnitExtension.
+     2021/08/07  Daniel Carda              Improved class header JavaDoc.
+</pre>
+ * <hr>
  */
-@ExtendWith({ TraceUnitExtension.class })
+@ExtendWith({ TraceUnitExtension.class, TestWatcherExtension.class })
 public class Test_AbaRouteValidator_12 {
-
-    @Rule
-    public org.junit.rules.MethodRule watchman = new org.junit.rules.TestWatchman() {
-        public void starting(org.junit.runners.model.FrameworkMethod method) {
-            System.out.println("Starting Test: " + method.getName());
-        }
-        @Override
-        public void finished(org.junit.runners.model.FrameworkMethod method) {
-            System.out.println("  Ending Test: " + method.getName());
-            System.out.println("");
-        }
-    };
 
     /**
      * Method: testAbaNumberCheck_25000_bad

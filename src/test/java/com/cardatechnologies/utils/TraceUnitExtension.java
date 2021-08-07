@@ -40,8 +40,8 @@ public class TraceUnitExtension
     @Override
     public void afterEach( ExtensionContext extensionContext )
             throws Exception {
-        System.out.println( "\n  Exiting Method: " + extensionContext.getDisplayName() );
-        System.out.println( "----------------------------------------------------------------------\n" );
+        System.out.println( "\n   Exiting Method: " + extensionContext.getDisplayName() );
+//        System.out.println( "----------------------------------------------------------------------\n" );
     }
 
     @Override
