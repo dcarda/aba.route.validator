@@ -60,7 +60,7 @@ public class AbaRouteValidationException
      * Constructs ...
      *
      * @param errorCode
-     *        The integer code assicated with this error.
+     *        The integer code associated with this error.
      * @param errorMessage
      *        A textual message about the error.
      */
