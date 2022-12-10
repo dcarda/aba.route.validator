@@ -33,7 +33,7 @@ package com.cardatechnologies.utils.validators.abaroutevalidator.exceptions;
  * <br>
 <pre>
     yyyy mm dd  Who                       Description
-    ----------  ------------------------  ----------------------------------------------------
+----------  ------------------------  ----------------------------------------------------
     2015/04/15  Daniel Carda              Initial Module Creation...
     2020/12/22  Daniel Carda              Improved internal error handling.
     2021/08/01  Daniel Carda              Improved Class Javadocs

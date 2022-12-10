@@ -1,4 +1,0 @@
-# Created at 2021-08-07T12:30:16.643
-Boot Manifest-JAR contains absolute paths in classpath 'D:\Projects\GitHub\aba.route.validator\target\clover\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-
