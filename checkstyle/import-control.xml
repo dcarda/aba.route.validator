@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE import-control PUBLIC "-//Checkstyle//DTD ImportControl Configuration 1.4//EN" "https://checkstyle.org/dtds/import_control_1_4.dtd">
+<import-control pkg="com.lancethomps">
+
+  <!-- The 'javax.annotation.Nullable' and 'javax.annotation.Nonnnull' annotations should be used instead of annotations from the 'javax.validation.constraints' package -->
+  <disallow pkg="javax.validation.constraints" />
+
+  <!-- Because the server is deployed in so many different environments with different configs, the Spring @Scheduled annotation does not play well and should not be used. The TimerManager bean has everything that is needed for scheduling. -->
+  <disallow pkg="org.springframework.scheduling.annotation" />
+
+  <allow pkg="com.fasterxml" />
+  <allow pkg="com.github.bohnman.squiggly" />
+  <allow pkg="com.github.mustachejava" />
+  <allow pkg="com.google" />
+  <allow pkg="de" />
+  <allow pkg="difflib" />
+  <allow pkg="eu.bitwalker.useragentutils" />
+  <allow pkg="io.bit3" />
+  <allow pkg="io.dropwizard.metrics5" />
+  <allow pkg="java" />
+  <allow pkg="javax" />
+  <allow pkg="jdk.nashorn.api"/>
+  <allow pkg="net.jcip" />
+  <allow pkg="net.jpountz.lz4" />
+  <allow pkg="ognl" />
+  <allow pkg="org" />
+  <allow pkg="ua_parser" />
+
+  <subpackage name="javastrap">
+    <allow regex="true" pkg=".*"/>
+  </subpackage>
+
+  <subpackage name="lava">
+
+    <subpackage name="common">
+      <!-- Allow self -->
+      <allow pkg="com.lancethomps.lava.common" />
+
+      <!-- Thirdparty -->
+      <allow pkg="com.opencsv" local-only="true" />
+      <allow pkg="com.sun.management" />
+
+      <subpackage name="(collections|file)" regex="true">
+        <allow pkg="com.opencsv" local-only="true" />
+      </subpackage>
+
+      <subpackage name="ser">
+        <allow pkg="com.opencsv" />
+      </subpackage>
+
+    </subpackage>
+
+  </subpackage>
+
+</import-control>
