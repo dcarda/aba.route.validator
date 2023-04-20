@@ -26,7 +26,6 @@ package com.cardatechnologies.utils.validators.abaroutevalidator;
 
 import com.cardatechnologies.utils.TestWatcherExtension;
 import com.cardatechnologies.utils.TraceUnitExtension;
-import org.junit.Rule;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

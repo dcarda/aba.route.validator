@@ -28,7 +28,6 @@ import com.cardatechnologies.utils.TestWatcherExtension;
 import com.cardatechnologies.utils.TraceUnitExtension;
 import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException;
 
-import org.junit.Rule;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 

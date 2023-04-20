@@ -12,7 +12,6 @@ package com.cardatechnologies.utils.validators.abaroutevalidator.exceptions;
 //~--- non-JDK imports --------------------------------------------------------
 
 import com.cardatechnologies.utils.TestWatcherExtension;
-import org.junit.Rule;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
