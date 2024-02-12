@@ -1,6 +1,6 @@
 /*---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.Test_AbaRouteValidator_01.java
- * Date:   2015/01/15
+ * Date:   2024/02/11
  * ---------------------------------------------------------------------------------------
  *
  *  License: Apache 2.0
@@ -24,14 +24,17 @@ package com.cardatechnologies.utils.validators.abaroutevalidator;
 
 //~--- non-JDK imports --------------------------------------------------------
 
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInfo;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.api.extension.TestWatcher;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
-import com.cardatechnologies.utils.TestWatcherExtension;
 import com.cardatechnologies.utils.TraceUnitExtension;
 import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException;
 
@@ -51,17 +54,25 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
     2020/12/23  Daniel Carda              Updated module to use JUint Jupiter.
     2021/05/14  Daniel Carda              Added @Rule and TraceUnitExtension.
     2021/08/07  Daniel Carda              Improved class header JavaDoc.
+    2024/02/11  Daniel Carda              Updated to run with JUnit 5.
 </pre>
  * <hr>
  */
-@ExtendWith({ TraceUnitExtension.class, TestWatcherExtension.class })
-public class Test_AbaRouteValidator_01 {
-
+@ExtendWith({ TraceUnitExtension.class })
+public class Test_AbaRouteValidator_01
+        implements TestWatcher {
     /**
      * Rigorous Test :-)
+     *
+     * @param testInfo
+     *         Param Desc...
      */
     @Test
-    public void testApp() {
+    public void testApp( TestInfo testInfo ) {
+        System.out.println( "    Test: " + testInfo.getDisplayName() );
+
+        // --------------------------------------------------------------------
+
         boolean returnBool = false;
 
         // Validate
@@ -78,9 +89,16 @@ public class Test_AbaRouteValidator_01 {
 
     /**
      * Method description
+     *
+     * @param testInfo
+     *         Param Desc...
      */
     @Test
-    public void testBlankParam() {
+    public void testBlankParam( TestInfo testInfo ) {
+        System.out.println( "    Test: " + testInfo.getDisplayName() );
+
+        // --------------------------------------------------------------------
+
         String abaNumber = "";
 
         // Validate
@@ -102,9 +120,16 @@ public class Test_AbaRouteValidator_01 {
 
     /**
      * Method description
+     *
+     * @param testInfo
+     *         Param Desc...
      */
     @Test
-    public void testNullParam() {
+    public void testNullParam( TestInfo testInfo ) {
+        System.out.println( "    Test: " + testInfo.getDisplayName() );
+
+        // --------------------------------------------------------------------
+
         String abaNumber = null;
 
         // Validate
@@ -127,9 +152,16 @@ public class Test_AbaRouteValidator_01 {
 
     /**
      * Method description
+     *
+     * @param testInfo
+     *         Param Desc...
      */
     @Test
-    public void testParamNonNumeric() {
+    public void testParamNonNumeric( TestInfo testInfo ) {
+        System.out.println( "    Test: " + testInfo.getDisplayName() );
+
+        // --------------------------------------------------------------------
+
         String abaNumber = "123456a89";
 
         // Validate
@@ -151,9 +183,16 @@ public class Test_AbaRouteValidator_01 {
 
     /**
      * Method description
+     *
+     * @param testInfo
+     *         Param Desc...
      */
     @Test
-    public void testParamToLong() {
+    public void testParamToLong( TestInfo testInfo ) {
+        System.out.println( "    Test: " + testInfo.getDisplayName() );
+
+        // --------------------------------------------------------------------
+
         String abaNumber = "123451234512";
 
         // Validate
@@ -176,9 +215,16 @@ public class Test_AbaRouteValidator_01 {
 
     /**
      * Method description
+     *
+     * @param testInfo
+     *         Param Desc...
      */
     @Test
-    public void testParamToShort() {
+    public void testParamToShort( TestInfo testInfo ) {
+        System.out.println( "    Test: " + testInfo.getDisplayName() );
+
+        // --------------------------------------------------------------------
+
         String abaNumber = "123412";
 
         // Validate
@@ -220,6 +266,5 @@ public class Test_AbaRouteValidator_01 {
  *
  * ---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.Test_AbaRouteValidator_01.java
- * Date:   2015/01/15
+ * Date:   2024/02/11
  *************************************************************************************** */
-

@@ -9,12 +9,14 @@
 
 package com.cardatechnologies.utils;
 
+//~--- JDK imports ------------------------------------------------------------
+
+import java.util.Optional;
+
 //~--- non-JDK imports --------------------------------------------------------
 
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.TestWatcher;
-
-import java.util.Optional;
 
 /**
  * <b>Description:</b><br>
@@ -31,50 +33,56 @@ import java.util.Optional;
     ----------  ------------------------  ----------------------------------------------------
     2021/05/14  Daniel Carda              Initial Module Creation...
     2020/12/20  JavaDan                   Updated TestWatcher code.
+    2024/02/11  Daniel Carda              Updated to run with JUnit 5.
 </pre>
  * <hr>
  */
-public class TestWatcherExtension implements TestWatcher{
+public class TestWatcherExtension
+        implements TestWatcher {
 
     public static String testStatus;
     public static String testCaseName;
 
     @Override
-    public void testAborted(ExtensionContext Context, Throwable throwable) {
-        testStatus = "Aborted";
+    public void testAborted( ExtensionContext Context,
+                             Throwable        throwable ) {
+        testStatus   = "Aborted";
         testCaseName = Context.getDisplayName();
-        System.out.println("     ***");
-        System.out.println("     ***  Test Aborted: " + Context.getDisplayName());
-        System.out.println("     ***");
+        System.out.println( "     ***" );
+        System.out.println( "     ***  Test Aborted: " + Context.getDisplayName() );
+        System.out.println( "     ***" );
         System.out.println( "----------------------------------------------------------------------\n" );
     }
 
     @Override
-    public void testDisabled(ExtensionContext Context, Optional<String> optional) {
-        testStatus = "Skipped";
+    public void testDisabled( ExtensionContext Context,
+                              Optional<String> optional ) {
+        testStatus   = "Skipped";
         testCaseName = Context.getDisplayName();
-        System.out.println("     ***");
-        System.out.println("     ***  Test Skipped: " + Context.getDisplayName());
-        System.out.println("     ***");
+        System.out.println( "     ***" );
+        System.out.println( "     ***  Test Skipped: " + Context.getDisplayName() );
+        System.out.println( "     ***" );
         System.out.println( "----------------------------------------------------------------------\n" );
     }
 
     @Override
-    public void testFailed(ExtensionContext Context, Throwable throwable) {
-        testStatus = "Failed";
+    public void testFailed( ExtensionContext Context,
+                            Throwable        throwable ) {
+        testStatus   = "Failed";
         testCaseName = Context.getDisplayName();
-        System.out.println("     ***");
-        System.out.println("     ***  Test Failed: " + Context.getDisplayName());
-        System.out.println("     ***");
+        System.out.println( "     ***" );
+        System.out.println( "     ***  Test Failed: " + Context.getDisplayName() );
+        System.out.println( "     ***" );
         System.out.println( "----------------------------------------------------------------------\n" );
     }
 
     @Override
-    public void testSuccessful(ExtensionContext Context) {
-        testStatus = "Passed";
+    public void testSuccessful( ExtensionContext Context ) {
+        testStatus   = "Passed";
         testCaseName = Context.getDisplayName();
-        //  System.out.println("          Test Failed: " + Context.getDisplayName());
-        System.out.println( "----------------------------------------------------------------------\n" );
+
+        // System.out.println("          Test Successful: " + Context.getDisplayName());
+        // System.out.println( "----------------------------------------------------------------------\n" );
     }
 }
 

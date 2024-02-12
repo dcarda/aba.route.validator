@@ -1,6 +1,6 @@
-/* ---------------------------------------------------------------------------------------
+/*---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.PerformanceTests.java
- * Date:   2020/12/21
+ * Date:   2024/02/11
  * ---------------------------------------------------------------------------------------
  *
  *  License: Apache 2.0
@@ -63,8 +63,8 @@ public class PerformanceTests {
         long startTime = System.nanoTime();
 
         for( int i = 0; i < _maxLoops; i++ ) {
-
             try {
+
                 AbaRouteValidator.validate( "302075018" );
                 AbaRouteValidator.validate( "011000138" );
                 AbaRouteValidator.validate( "011600525" );
@@ -99,11 +99,10 @@ public class PerformanceTests {
                 AbaRouteValidator.validate( "311985830" );
                 AbaRouteValidator.validate( "312276111" );
                 AbaRouteValidator.validate( "313173336" );
-
-            } catch (AbaRouteValidationException e) {
+            }
+            catch( AbaRouteValidationException e ) {
                 e.printStackTrace();
             }
-
         }
 
         long   endTime  = System.nanoTime();
@@ -138,5 +137,5 @@ public class PerformanceTests {
  *
  * ---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.PerformanceTests.java
- * Date:   2020/12/21
+ * Date:   2024/02/11
  * --------------------------------------------------------------------------------------- */
