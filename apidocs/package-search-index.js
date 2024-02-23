@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.cardatechnologies.utils.validators.abaroutevalidator"},{"l":"com.cardatechnologies.utils.validators.abaroutevalidator.exceptions"}];updateSearchResults();
