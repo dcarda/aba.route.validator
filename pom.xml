@@ -131,14 +131,14 @@
         <version.jar.plugin>3.3.0</version.jar.plugin>
         <version.release.plugin>3.0.1</version.release.plugin>
         <version.maven.invoker.plugin>3.6.0</version.maven.invoker.plugin>
-        <version.extra.enforcer.rules>1.7.0</version.extra.enforcer.rules>
+        <version.extra.enforcer.rules>1.8.0</version.extra.enforcer.rules>
         <version.maven.clean.plugin>3.3.2</version.maven.clean.plugin>
         <version.maven.plugin.plugin>3.11.0</version.maven.plugin.plugin>
         <version.enforcer.plugin>3.4.1</version.enforcer.plugin>
 
         <!-- Testing Plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-        <junit.jupiter.version>5.10.1</junit.jupiter.version>
-        <junit.jupiter.engine.version>5.10.1</junit.jupiter.engine.version>
+        <junit.jupiter.version>5.10.2</junit.jupiter.version>
+        <junit.jupiter.engine.version>5.10.2</junit.jupiter.engine.version>
 
         <!-- Reporting Plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙······∙∙∙∙∙∙∙  -->
         <version.jacoco.reporting.plugin>0.8.11</version.jacoco.reporting.plugin>
@@ -174,6 +174,14 @@
     <!--  ───────────────────────────────────────────────────────────────────────────  -->
     <!--   Dependencies   ···························································· -->
     <dependencies>
+
+
+<!--        <dependency>-->
+<!--            <groupId>org.webjars</groupId>-->
+<!--            <artifactId>bootswatch-spacelab</artifactId>-->
+<!--            <version>5.0.2</version>-->
+<!--        </dependency>-->
+
 
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -839,7 +847,7 @@
             <!--   genReports: Properties   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
             <properties>
 
-                <version.assembly.plugin>3.6.0</version.assembly.plugin>
+                <version.assembly.plugin>3.7.0</version.assembly.plugin>
                 <version.duplicate.finder.plugin>2.0.1</version.duplicate.finder.plugin>
                 <version.dependency.plugin>3.6.1</version.dependency.plugin>
                 <version.deploy.plugin>3.1.1</version.deploy.plugin>
@@ -863,7 +871,7 @@
                 <version.pmd.reporting.plugin>3.21.2</version.pmd.reporting.plugin>
                 <version.project.info.reports.plugin>3.5.0</version.project.info.reports.plugin>
                 <version.dependency.plugin>3.6.1</version.dependency.plugin>
-                <version.spotbugs.reporting.plugin>4.8.3.0</version.spotbugs.reporting.plugin>
+                <version.spotbugs.reporting.plugin>4.8.3.1</version.spotbugs.reporting.plugin>
                 <Version.surefire.reports.plugin>3.2.5</Version.surefire.reports.plugin>
                 <version.taglist.report.plugin>3.0.0</version.taglist.report.plugin>
                 <version.versions.report.plugin>2.1.4</version.versions.report.plugin>
