@@ -54,6 +54,18 @@
         <version.extra.enforcer.rules>1.8.0</version.extra.enforcer.rules>
         <version.git.commit.id.plugin>4.9.10</version.git.commit.id.plugin>
 
+
+        <version.maven.antrun.plugin>3.1.0</version.maven.antrun.plugin>
+        <version.maven.clean.plugin>3.3.2</version.maven.clean.plugin>
+        <version.maven.plugin.plugin>3.11.0</version.maven.plugin.plugin>
+        <version.maven.invoker.plugin>3.6.0</version.maven.invoker.plugin>
+        <version.maven.install.plugin>3.1.1</version.maven.install.plugin>
+        <version.maven.deploy.plugin>3.1.1</version.maven.deploy.plugin>
+        <version.maven.resources.plugin>3.3.1</version.maven.resources.plugin>
+
+
+
+
         <!-- Reporting Plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙······∙∙∙∙∙∙∙  -->
         <version.jacoco.reporting.plugin>0.8.11</version.jacoco.reporting.plugin>
         <version.jar.plugin>3.3.0</version.jar.plugin>
@@ -78,6 +90,60 @@
         <!--   pluginManagement   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
         <pluginManagement>
             <plugins>
+
+                <!-- lock down plugins versions to avoid using Maven defaults (can be moved to parent pom) -->
+                <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_maven-plugin_packaging -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>${version.maven.antrun.plugin}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>${version.maven.clean.plugin}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>${version.maven.resources.plugin}</version>
+                </plugin>
+                <!--  <plugin>-->
+                <!--     <groupId>org.apache.maven.plugins</groupId>-->
+                <!--     <artifactId>maven-compiler-plugin</artifactId>-->
+                <!--     <version>${version.maven.compiler.plugin}</version>-->
+                <!--  </plugin>-->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-plugin-plugin</artifactId>
+                    <version>${version.maven.plugin.plugin}</version>
+                </plugin>
+                <!--  <plugin>-->
+                <!--     <groupId>org.apache.maven.plugins</groupId>-->
+                <!--     <artifactId>maven-surefire-plugin</artifactId>-->
+                <!--     <version>${version.surefire.plugin}</version>-->
+                <!--  </plugin>-->
+                <!--  <plugin>-->
+                <!--     <groupId>org.apache.maven.plugins</groupId>-->
+                <!--     <artifactId>maven-jar-plugin</artifactId>-->
+                <!--     <version>${version.maven.jar.plugin}</version>-->
+                <!--  </plugin>-->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>${version.maven.install.plugin}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>${version.maven.deploy.plugin}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-invoker-plugin</artifactId>
+                    <version>${version.maven.invoker.plugin}</version>
+                </plugin>
 
                 <!--   Enforcer Resource Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                 <!--   https://maven.apache.org/enforcer/maven-enforcer-plugin/usage.html    -->
@@ -215,7 +281,7 @@
                 </plugin>
 
                 <!--   Jar Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-                <!--   https://maven.apache.org/plugins/maven-install-plugin/                  -->
+                <!--   https://maven.apache.org/plugins/maven-jar-plugin/                      -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
@@ -405,7 +471,7 @@
             </plugin>
 
             <!--   Jar Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-            <!--   https://maven.apache.org/plugins/maven-install-plugin/                  -->
+            <!--   https://maven.apache.org/plugins/maven-jar-plugin/                      -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -471,6 +537,14 @@
             <properties>
                 <version.project.info.reports.plugin>3.5.0</version.project.info.reports.plugin>
                 <version.maven.site.plugin>3.12.1</version.maven.site.plugin>
+
+                <version.checkstyle.report.plugin>3.3.1</version.checkstyle.report.plugin>
+
+                <version.changelog.reporting.plugin>2.3</version.changelog.reporting.plugin>
+
+                <version.assembly.plugin>3.7.1</version.assembly.plugin>
+
+
             </properties>
             <!--  ───────────────────────────────────────────────────────────────  -->
             <!--   genReports: Build   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
@@ -481,40 +555,6 @@
                 <pluginManagement>
 
                     <plugins>
-
-                        <!--   Maven Project Info Reports Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-                        <!--   https://maven.apache.org/plugins/maven-project-info-reports-plugin/   -->
-                        <plugin>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-project-info-reports-plugin</artifactId>
-                            <version>${version.project.info.reports.plugin}</version>
-                        </plugin>
-
-                        <!--   Maven Site Report Report   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-                        <!--   https://maven.apache.org/plugins/maven-site-plugin/         -->
-                        <plugin>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-site-plugin</artifactId>
-                            <version>${version.maven.site.plugin}</version>
-                            <configuration>
-                                <inputEncoding>UTF-8</inputEncoding>
-                                <outputEncoding>UTF-8</outputEncoding>
-                                <relativizeDecorationLinks>false</relativizeDecorationLinks>
-                                <generateReports>true</generateReports>
-                                <!-- Site deployment done using GitHub site plugin         -->
-                                <skipDeploy>true</skipDeploy>
-                            </configuration>
-                            <dependencies>
-                                <dependency>
-                                    <groupId>io.github.olamy.maven.skins</groupId>
-                                    <artifactId>reflow-velocity-tools</artifactId>
-                                    <version>2.0.0</version>
-                                </dependency>
-                            </dependencies>
-                        </plugin>
-
-                        <!--   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-                        <!--   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
 
 
                         <!--   Versions Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
@@ -534,6 +574,145 @@
                                 </execution>
                             </executions>
                         </plugin>
+
+
+
+                        <!--   Maven Project Info Reports Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   https://maven.apache.org/plugins/maven-project-info-reports-plugin/   -->
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-project-info-reports-plugin</artifactId>
+                            <version>${version.project.info.reports.plugin}</version>
+                        </plugin>
+
+                        <!--   Maven Site Report Report   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   https://maven.apache.org/plugins/maven-site-plugin/         -->
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-site-plugin</artifactId>
+<!--                            <version>${version.maven.site.plugin}</version>-->
+                            <version>4.0.0-M9</version>
+                            <configuration>
+                                <inputEncoding>UTF-8</inputEncoding>
+                                <outputEncoding>UTF-8</outputEncoding>
+                                <generateReports>true</generateReports>
+                                <!-- Site deployment done using GitHub site plugin         -->
+                                <skipDeploy>true</skipDeploy>
+                            </configuration>
+                            <dependencies>
+                                <dependency>
+                                    <groupId>io.github.devacfr.maven.skins</groupId>
+                                    <artifactId>reflow-velocity-tools</artifactId>
+                                    <version>2.3.4</version>
+                                </dependency>
+                            </dependencies>
+                        </plugin>
+
+                        <!--   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+
+
+                        <!--   Maven Assembly Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   https://maven.apache.org/plugins/maven-assembly-plugin/     -->
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-assembly-plugin</artifactId>
+                            <version>${version.assembly.plugin}</version>
+                        </plugin>
+
+                        <!--   Apache Maven Changelog Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   https://maven.apache.org/plugins/maven-changelog-plugin/    -->
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-changelog-plugin</artifactId>
+                            <version>${version.changelog.reporting.plugin}</version>
+                        </plugin>
+
+                        <!--   Checkstyle Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   https://checkstyle.sourceforge.io/                          -->
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-checkstyle-plugin</artifactId>
+                            <version>${version.checkstyle.report.plugin}</version>
+                            <configuration>
+                                <consoleOutput>true</consoleOutput>
+                                <encoding>UTF-8</encoding>
+                                <failOnViolation>false</failOnViolation>
+                                <logViolationsToConsole>true</logViolationsToConsole>
+                                <outputFileFormat>xml</outputFileFormat>
+                                <propertyExpansion>basedir=${project.basedir}</propertyExpansion>
+                            </configuration>
+                            <dependencies>
+                                <dependency>
+                                    <groupId>com.puppycrawl.tools</groupId>
+                                    <artifactId>checkstyle</artifactId>
+                                    <version>${version.puppycrawl.tools.checkstyle}</version>
+                                </dependency>
+                                <dependency>
+                                    <groupId>com.github.sevntu-checkstyle</groupId>
+                                    <artifactId>sevntu-checks</artifactId>
+                                    <version>${version.github.sevntu-checks}</version>
+                                </dependency>
+                            </dependencies>
+                            <executions>
+                                <execution>
+                                    <id>validate-java</id>
+                                    <goals>
+                                        <goal>check</goal>
+                                    </goals>
+                                    <phase>validate</phase>
+                                    <configuration>
+                                        <cacheFile>${project.basedir}/checkstyle-cachefile</cacheFile>
+                                        <configLocation>checkstyle/java-checkstyle.xml</configLocation>
+                                        <includeResources>false</includeResources>
+                                        <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                                        <includes>**/*.java</includes>
+                                        <outputFile>${project.build.directory}/checkstyle-report-java.xml</outputFile>
+                                    </configuration>
+                                </execution>
+                                <execution>
+                                    <id>validate-non-java</id>
+                                    <goals>
+                                        <goal>check</goal>
+                                    </goals>
+                                    <phase>validate</phase>
+                                    <configuration>
+                                        <cacheFile>${project.basedir}/checkstyle-cachefile-non-java</cacheFile>
+                                        <configLocation>checkstyle/non-java-checkstyle.xml</configLocation>
+                                        <includeResources>false</includeResources>
+                                        <includeTestSourceDirectory>false</includeTestSourceDirectory>
+                                        <outputFile>${project.build.directory}/checkstyle-report-non-java.xml</outputFile>
+                                        <sourceDirectories>${project.basedir}/src</sourceDirectories>
+                                        <includes>**/*.ftl,
+                                            **/spring-*.xml,
+                                            **/conf/*/resources/*.xml,
+                                            **/web*.xml</includes>
+                                        <excludes>**/target/**,
+                                            **/thirdparty/**,
+                                            **/*.properties,
+                                            log4j.jsp</excludes>
+                                    </configuration>
+                                </execution>
+                                <execution>
+                                    <id>validate-java-import-control</id>
+                                    <goals>
+                                        <goal>check</goal>
+                                    </goals>
+                                    <phase>none</phase>
+                                    <configuration>
+                                        <cacheFile>${project.basedir}/checkstyle-cachefile-import-control-only</cacheFile>
+                                        <configLocation>checkstyle/java-checkstyle-import-control-only.xml</configLocation>
+                                        <includeResources>false</includeResources>
+                                        <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                                        <includes>**/*.java</includes>
+                                        <outputFile>${project.build.directory}/checkstyle-report-java-import-control-only.xml</outputFile>
+                                    </configuration>
+                                </execution>
+                            </executions>
+                        </plugin>
+
+
+
 
                     </plugins>
                     <!--  End:  pluginManagement - plugins -->
