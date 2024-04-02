@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AbaRouteValidationException.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ABA Route Transit Number Validator</a> &gt; <a href="index.source.html" class="el_package">com.cardatechnologies.utils.validators.abaroutevalidator.exceptions</a> &gt; <span class="el_source">AbaRouteValidationException.java</span></div><h1>AbaRouteValidationException.java</h1><pre class="source lang-java linenums">/* ---------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AbaRouteValidationException.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ABA Validator</a> &gt; <a href="index.source.html" class="el_package">com.cardatechnologies.utils.validators.abaroutevalidator.exceptions</a> &gt; <span class="el_source">AbaRouteValidationException.java</span></div><h1>AbaRouteValidationException.java</h1><pre class="source lang-java linenums">/* ---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException.java
  * Date:   2015/04/15
  * ---------------------------------------------------------------------------------------
@@ -53,8 +53,8 @@ public class AbaRouteValidationException
      *        Throwable reason.
      */
     public AbaRouteValidationException( Throwable cause ) {
-<span class="nc" id="L56">        super( cause );</span>
-<span class="nc" id="L57">    }</span>
+<span class="fc" id="L56">        super( cause );</span>
+<span class="fc" id="L57">    }</span>
 
     /**
      * Constructs ...
@@ -66,12 +66,12 @@ public class AbaRouteValidationException
      */
     public AbaRouteValidationException( final int    errorCode,
                                         final String errorMessage ) {
-<span class="nc" id="L69">        super( errorMessage );</span>
+<span class="fc" id="L69">        super( errorMessage );</span>
 
         //
-<span class="nc" id="L72">        this.errorCode    = errorCode;</span>
-<span class="nc" id="L73">        this.errorMessage = errorMessage;</span>
-<span class="nc" id="L74">    }</span>
+<span class="fc" id="L72">        this.errorCode    = errorCode;</span>
+<span class="fc" id="L73">        this.errorMessage = errorMessage;</span>
+<span class="fc" id="L74">    }</span>
 
     /**
      * Method: getErrorCode
@@ -80,7 +80,7 @@ public class AbaRouteValidationException
      *         The integer code associated with this error.
      */
     public int getErrorCode() {
-<span class="nc" id="L83">        return errorCode;</span>
+<span class="fc" id="L83">        return errorCode;</span>
     }
 
     /**
@@ -90,8 +90,8 @@ public class AbaRouteValidationException
      *        The integer code associated with this error.
      */
     public void setErrorCode( int errorCode ) {
-<span class="nc" id="L93">        this.errorCode = errorCode;</span>
-<span class="nc" id="L94">    }</span>
+<span class="fc" id="L93">        this.errorCode = errorCode;</span>
+<span class="fc" id="L94">    }</span>
 
     /**
      * Method: getErrorMessage
@@ -100,7 +100,7 @@ public class AbaRouteValidationException
      *         A text description of the error.
      */
     public String getErrorMessage() {
-<span class="nc" id="L103">        return errorMessage;</span>
+<span class="fc" id="L103">        return errorMessage;</span>
     }
 
     /**
@@ -110,8 +110,8 @@ public class AbaRouteValidationException
      *        A textual message about the error.
      */
     public void setErrorMessage( String errorMessage ) {
-<span class="nc" id="L113">        this.errorMessage = errorMessage;</span>
-<span class="nc" id="L114">    }</span>
+<span class="fc" id="L113">        this.errorMessage = errorMessage;</span>
+<span class="fc" id="L114">    }</span>
 }
 
 /* ---------------------------------------------------------------------------------------

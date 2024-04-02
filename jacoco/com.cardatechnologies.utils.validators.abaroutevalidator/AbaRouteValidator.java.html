@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AbaRouteValidator.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ABA Route Transit Number Validator</a> &gt; <a href="index.source.html" class="el_package">com.cardatechnologies.utils.validators.abaroutevalidator</a> &gt; <span class="el_source">AbaRouteValidator.java</span></div><h1>AbaRouteValidator.java</h1><pre class="source lang-java linenums">/* ---------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AbaRouteValidator.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ABA Validator</a> &gt; <a href="index.source.html" class="el_package">com.cardatechnologies.utils.validators.abaroutevalidator</a> &gt; <span class="el_source">AbaRouteValidator.java</span></div><h1>AbaRouteValidator.java</h1><pre class="source lang-java linenums">/* ---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.java
  * Date:   2015/02/11
  * ---------------------------------------------------------------------------------------
@@ -63,15 +63,15 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
             throws AbaRouteValidationException {
 
         // Check first two digits.
-<span class="nc" id="L66">        validateFedNumber( paramAbaRouteNumber );</span>
+<span class="fc" id="L66">        validateFedNumber( paramAbaRouteNumber );</span>
 
         // Alright, now see if the number holds up to scrutiny!
         boolean returnBool;
 
-<span class="nc" id="L71">        returnBool = validateAbaNumberChecksum( paramAbaRouteNumber );</span>
+<span class="fc" id="L71">        returnBool = validateAbaNumberChecksum( paramAbaRouteNumber );</span>
 
         // Return the result
-<span class="nc" id="L74">        return( returnBool );</span>
+<span class="fc" id="L74">        return( returnBool );</span>
     }
 
     /**
@@ -97,45 +97,45 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
         // &lt;http://www.bankersonline.com/regs/229/a229a.html&gt;
         // Quick Check
         // Is the parameter null
-<span class="nc bnc" id="L100" title="All 2 branches missed.">        if( paramAbaRouteNumber == null ) {</span>
-<span class="nc" id="L101">            throw new AbaRouteValidationException( ErrorCodes.ABA_1000.getErrorCode(),</span>
-<span class="nc" id="L102">                                                   ErrorCodes.ABA_1000.getErrorMnemonic() );</span>
+<span class="fc bfc" id="L100" title="All 2 branches covered.">        if( paramAbaRouteNumber == null ) {</span>
+<span class="fc" id="L101">            throw new AbaRouteValidationException( ErrorCodes.ABA_1000.getErrorCode(),</span>
+<span class="fc" id="L102">                                                   ErrorCodes.ABA_1000.getErrorMnemonic() );</span>
         }
 
         // Quick Check
         // Is the parameter empty/blank
-<span class="nc bnc" id="L107" title="All 2 branches missed.">        if( paramAbaRouteNumber.trim().equals( &quot;&quot; ) ) {</span>
-<span class="nc" id="L108">            throw new AbaRouteValidationException( ErrorCodes.ABA_1001.getErrorCode(),</span>
-<span class="nc" id="L109">                                                   ErrorCodes.ABA_1001.getErrorMnemonic() );</span>
+<span class="fc bfc" id="L107" title="All 2 branches covered.">        if( paramAbaRouteNumber.trim().equals( &quot;&quot; ) ) {</span>
+<span class="fc" id="L108">            throw new AbaRouteValidationException( ErrorCodes.ABA_1001.getErrorCode(),</span>
+<span class="fc" id="L109">                                                   ErrorCodes.ABA_1001.getErrorMnemonic() );</span>
         }
 
         // Quick Check
         // Make sure the string length is right
         int _strLen;
 
-<span class="nc" id="L116">        _strLen = paramAbaRouteNumber.length();</span>
+<span class="fc" id="L116">        _strLen = paramAbaRouteNumber.length();</span>
 
         // See if it's the right length
-<span class="nc bnc" id="L119" title="All 2 branches missed.">        if( _strLen != 9 ) {</span>
+<span class="fc bfc" id="L119" title="All 2 branches covered.">        if( _strLen != 9 ) {</span>
 
             // Is it to short?
-<span class="nc bnc" id="L122" title="All 2 branches missed.">            if( _strLen &lt; 9 ) {</span>
-<span class="nc" id="L123">                throw new AbaRouteValidationException( ErrorCodes.ABA_1002.getErrorCode(),</span>
-<span class="nc" id="L124">                                                       ErrorCodes.ABA_1002.getErrorMnemonic() );</span>
+<span class="fc bfc" id="L122" title="All 2 branches covered.">            if( _strLen &lt; 9 ) {</span>
+<span class="fc" id="L123">                throw new AbaRouteValidationException( ErrorCodes.ABA_1002.getErrorCode(),</span>
+<span class="fc" id="L124">                                                       ErrorCodes.ABA_1002.getErrorMnemonic() );</span>
             }
             else {
 
                 // Must be to long.
-<span class="nc" id="L129">                throw new AbaRouteValidationException( ErrorCodes.ABA_1003.getErrorCode(),</span>
-<span class="nc" id="L130">                                                       ErrorCodes.ABA_1003.getErrorMnemonic() );</span>
+<span class="fc" id="L129">                throw new AbaRouteValidationException( ErrorCodes.ABA_1003.getErrorCode(),</span>
+<span class="fc" id="L130">                                                       ErrorCodes.ABA_1003.getErrorMnemonic() );</span>
             }
         }
 
         // Quick Check
         // Finally, let's just do a scan and make sure it's a number
-<span class="nc bnc" id="L136" title="All 2 branches missed.">        if( !isNumeric( paramAbaRouteNumber ) ) {</span>
-<span class="nc" id="L137">            throw new AbaRouteValidationException( ErrorCodes.ABA_1004.getErrorCode(),</span>
-<span class="nc" id="L138">                                                   ErrorCodes.ABA_1004.getErrorMnemonic() );</span>
+<span class="fc bfc" id="L136" title="All 2 branches covered.">        if( !isNumeric( paramAbaRouteNumber ) ) {</span>
+<span class="fc" id="L137">            throw new AbaRouteValidationException( ErrorCodes.ABA_1004.getErrorCode(),</span>
+<span class="fc" id="L138">                                                   ErrorCodes.ABA_1004.getErrorMnemonic() );</span>
         }
 
         // -----------------------------------------------------------------------------
@@ -143,10 +143,10 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
         // So we got this far, lets start breaking it down.
         boolean returnBool;
 
-<span class="nc" id="L146">        returnBool = breakdownAbaNumber( paramAbaRouteNumber );</span>
+<span class="fc" id="L146">        returnBool = breakdownAbaNumber( paramAbaRouteNumber );</span>
 
         // Must be good!
-<span class="nc" id="L149">        return( returnBool );</span>
+<span class="fc" id="L149">        return( returnBool );</span>
     }
 
     /**
@@ -163,7 +163,7 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
 
         // Even thought initializing this to zero is redundant, performance tests
         // were slightly improved.
-<span class="nc" id="L166">        int checksumTotal = 0;</span>
+<span class="fc" id="L166">        int checksumTotal = 0;</span>
 
         // Set up all the ints
         int i1, i2, i3, i4, i5, i6, i7, i8, i9;
@@ -171,29 +171,29 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
         // Break up the string so we can look at the numbers.
         // Although this is a bit simplistic, doing it this way (as opposed to
         // to a loop) produced much faster results.
-<span class="nc" id="L174">        i1 = Character.getNumericValue( paramAbaRouteNumber.charAt( 0 ) );</span>
-<span class="nc" id="L175">        i2 = Character.getNumericValue( paramAbaRouteNumber.charAt( 1 ) );</span>
-<span class="nc" id="L176">        i3 = Character.getNumericValue( paramAbaRouteNumber.charAt( 2 ) );</span>
-<span class="nc" id="L177">        i4 = Character.getNumericValue( paramAbaRouteNumber.charAt( 3 ) );</span>
-<span class="nc" id="L178">        i5 = Character.getNumericValue( paramAbaRouteNumber.charAt( 4 ) );</span>
-<span class="nc" id="L179">        i6 = Character.getNumericValue( paramAbaRouteNumber.charAt( 5 ) );</span>
-<span class="nc" id="L180">        i7 = Character.getNumericValue( paramAbaRouteNumber.charAt( 6 ) );</span>
-<span class="nc" id="L181">        i8 = Character.getNumericValue( paramAbaRouteNumber.charAt( 7 ) );</span>
-<span class="nc" id="L182">        i9 = Character.getNumericValue( paramAbaRouteNumber.charAt( 8 ) );</span>
+<span class="fc" id="L174">        i1 = Character.getNumericValue( paramAbaRouteNumber.charAt( 0 ) );</span>
+<span class="fc" id="L175">        i2 = Character.getNumericValue( paramAbaRouteNumber.charAt( 1 ) );</span>
+<span class="fc" id="L176">        i3 = Character.getNumericValue( paramAbaRouteNumber.charAt( 2 ) );</span>
+<span class="fc" id="L177">        i4 = Character.getNumericValue( paramAbaRouteNumber.charAt( 3 ) );</span>
+<span class="fc" id="L178">        i5 = Character.getNumericValue( paramAbaRouteNumber.charAt( 4 ) );</span>
+<span class="fc" id="L179">        i6 = Character.getNumericValue( paramAbaRouteNumber.charAt( 5 ) );</span>
+<span class="fc" id="L180">        i7 = Character.getNumericValue( paramAbaRouteNumber.charAt( 6 ) );</span>
+<span class="fc" id="L181">        i8 = Character.getNumericValue( paramAbaRouteNumber.charAt( 7 ) );</span>
+<span class="fc" id="L182">        i9 = Character.getNumericValue( paramAbaRouteNumber.charAt( 8 ) );</span>
 
         // Okay, lets crank it through the formula
-<span class="nc" id="L185">        checksumTotal = ( ( i3 + i6 + i9 ) + ( 3 * ( i1 + i4 + i7 ) ) + ( 7 * ( i2 + i5 + i8 ) ) );</span>
+<span class="fc" id="L185">        checksumTotal = ( ( i3 + i6 + i9 ) + ( 3 * ( i1 + i4 + i7 ) ) + ( 7 * ( i2 + i5 + i8 ) ) );</span>
 
         // Check the modulus and we're done!
-<span class="nc bnc" id="L188" title="All 2 branches missed.">        if( ( checksumTotal % 10 ) != 0 ) {</span>
+<span class="fc bfc" id="L188" title="All 2 branches covered.">        if( ( checksumTotal % 10 ) != 0 ) {</span>
 
             // Checksum has failed
-<span class="nc" id="L191">            return( false );</span>
+<span class="fc" id="L191">            return( false );</span>
         }
         else {
 
             // Checksum is good!
-<span class="nc" id="L196">            return( true );</span>
+<span class="fc" id="L196">            return( true );</span>
         }
     }
 
@@ -212,22 +212,22 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
         // String off the first 2 numbers and see if they validate.
         String _tempStr;
 
-<span class="nc" id="L215">        _tempStr = paramAbaRouteNumber.substring( 0, 2 );</span>
+<span class="fc" id="L215">        _tempStr = paramAbaRouteNumber.substring( 0, 2 );</span>
 
         // Now, convert the substring to an int
         int _fedNumb;
 
-<span class="nc" id="L220">        _fedNumb = Integer.parseInt( _tempStr );</span>
+<span class="fc" id="L220">        _fedNumb = Integer.parseInt( _tempStr );</span>
 
         // Okay, let's see if it works!
-<span class="nc bnc" id="L223" title="All 14 branches missed.">        if( !( ( ( _fedNumb &gt;= 0 ) &amp;&amp; ( _fedNumb &lt;= 12 ) )</span>
+<span class="pc bpc" id="L223" title="5 of 14 branches missed.">        if( !( ( ( _fedNumb &gt;= 0 ) &amp;&amp; ( _fedNumb &lt;= 12 ) )</span>
                 || ( ( _fedNumb &gt;= 21 ) &amp;&amp; ( _fedNumb &lt;= 32 ) )
                 || ( ( _fedNumb &gt;= 61 ) &amp;&amp; ( _fedNumb &lt;= 72 ) )
                 || ( ( _fedNumb == 80 ) ) ) ) {
-<span class="nc" id="L227">            throw new AbaRouteValidationException( ErrorCodes.ABA_1005.getErrorCode(),</span>
-<span class="nc" id="L228">                                                   ErrorCodes.ABA_1005.getErrorMnemonic() );</span>
+<span class="fc" id="L227">            throw new AbaRouteValidationException( ErrorCodes.ABA_1005.getErrorCode(),</span>
+<span class="fc" id="L228">                                                   ErrorCodes.ABA_1005.getErrorMnemonic() );</span>
         }
-<span class="nc" id="L230">    }</span>
+<span class="fc" id="L230">    }</span>
 
     /**
      * Method: isNumeric
@@ -246,17 +246,17 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
     static private boolean isNumeric( final String paramStr ) {
 
           // Cycle through the character array
-<span class="nc" id="L249">          int size = paramStr.length();</span>
-<span class="nc bnc" id="L250" title="All 2 branches missed.">          for( int i = 0; i &lt; size; i++ ) {</span>
-<span class="nc bnc" id="L251" title="All 2 branches missed.">              if( !Character.isDigit( paramStr.charAt(i) ) ) {</span>
+<span class="fc" id="L249">          int size = paramStr.length();</span>
+<span class="fc bfc" id="L250" title="All 2 branches covered.">          for( int i = 0; i &lt; size; i++ ) {</span>
+<span class="fc bfc" id="L251" title="All 2 branches covered.">              if( !Character.isDigit( paramStr.charAt(i) ) ) {</span>
 
                   // This is bad!
-<span class="nc" id="L254">                  return( false );</span>
+<span class="fc" id="L254">                  return( false );</span>
               }
           }
 
           // All is well!
-<span class="nc" id="L259">        return( true );</span>
+<span class="fc" id="L259">        return( true );</span>
     }
 }
 
