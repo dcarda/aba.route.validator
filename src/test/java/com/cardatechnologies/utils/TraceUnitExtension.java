@@ -19,7 +19,7 @@ import org.junit.jupiter.api.extension.BeforeAllCallback;
 import org.junit.jupiter.api.extension.BeforeEachCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
 
-import com.cardatechnologies.utils.validators.abaroutevalidator.Test_AbaRouteValidator_01;
+import com.cardatechnologies.utils.validators.abaroutevalidator.TestAbaRouteValidator_01;
 
 /**
  * Package:    com.cardatechnologies.utils.validators.abaroutevalidator
@@ -49,7 +49,7 @@ public class TraceUnitExtension
     @Override
     public void afterAll( ExtensionContext extensionContext )
             throws Exception {
-        String className = Test_AbaRouteValidator_01.class.getName();
+        String className = TestAbaRouteValidator_01.class.getName();
 
         System.out.println( "\nFinished Test Class: " + className );
         System.out.println( "------------------------------------------------------------" );
@@ -60,7 +60,7 @@ public class TraceUnitExtension
      */
     @AfterAll
     public static void afterClass() {
-        String className = Test_AbaRouteValidator_01.class.getName();
+        String className = TestAbaRouteValidator_01.class.getName();
 
         System.out.println( "\nFinished: " + className );
         System.out.println( "x-----------------------------------------------------------" );
@@ -73,7 +73,7 @@ public class TraceUnitExtension
     @Override
     public void beforeAll( ExtensionContext extensionContext )
             throws Exception {
-        String className = Test_AbaRouteValidator_01.class.getName();
+        String className = TestAbaRouteValidator_01.class.getName();
 
         System.out.println( "------------------------------------------------------------" );
         System.out.println( "Running Test Class: " + className + "\n" );
@@ -84,7 +84,7 @@ public class TraceUnitExtension
      */
     @BeforeAll
     public static void beforeClass() {
-        String className = Test_AbaRouteValidator_01.class.getName();
+        String className = TestAbaRouteValidator_01.class.getName();
 
         System.out.println( "y-----------------------------------------------------------" );
         System.out.println( "Running Test Class: " + className + "\n" );

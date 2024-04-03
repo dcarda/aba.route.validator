@@ -24,8 +24,6 @@ package com.cardatechnologies.utils.validators.abaroutevalidator;
 
 //~--- non-JDK imports --------------------------------------------------------
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInfo;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -59,7 +57,7 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
  * <hr>
  */
 @ExtendWith({ TraceUnitExtension.class })
-public class Test_AbaRouteValidator_01
+public class TestAbaRouteValidator_01
         implements TestWatcher {
     /**
      * Rigorous Test :-)

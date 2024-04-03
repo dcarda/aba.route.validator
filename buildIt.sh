@@ -117,7 +117,7 @@ function build_SiteReports() {
     mvn                \
       -P genReports    \
       clean            \
-      package          \
+      install          \
       site
 #      site site:stage
 
@@ -226,7 +226,7 @@ function display_ArtifactInformation() {
     echo "File Information: "
     cd target/
     echo "  "
-    ls -l  CogEngine-*.jar
+    ls -l  aba.routing.transit.validator-*.jar
     cd ..
 
     #  Time to print out the manifest information.
@@ -237,8 +237,10 @@ function display_ArtifactInformation() {
     echo
 
     cd target/
-    unzip -p CogEngine-*.jar META-INF/MANIFEST.MF >file.txt
-    tail -37 file.txt
+#    gunzip -p aba.routing.transit.validator-*.jar META-INF/MANIFEST.MF >file.txt
+    jar xf aba.routing.transit.validator-*.jar META-INF/MANIFEST.MF
+
+    tail -37 META-INF/MANIFEST.MF
 }  # ---  End Function display_ArtifactInformation()
 
 #===  FUNCTION   ================================================

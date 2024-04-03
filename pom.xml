@@ -15,7 +15,7 @@
     <!--   Miscellaneous Information                                                   -->
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
-    <name>ABA Route Transit Number Validator</name>
+    <name>ABA Validator</name>
     <description>This validator will confirm if an ABA Routing Transit Number Validator
         is formatted correctly.  This does not guarantee if it's valid, only that
         it has passed a small series of edits.</description>
@@ -23,67 +23,193 @@
     <url>http://cardatechnologies.com</url>
 
     <!--  ───────────────────────────────────────────────────────────────────────────  -->
+    <!--   Organization                                                                -->
+    <organization>
+        <name>Daniel Carda</name>
+        <url>http://www.danielcarda.net</url>
+    </organization>
+    <!--  End:  organization  -->
+
+    <!--  ───────────────────────────────────────────────────────────────────────────  -->
+    <!--   Licenses                                                                    -->
+    <licenses>
+        <license>
+            <name>Apache-2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+    <!--  End:  licenses  -->
+
+    <!--  ───────────────────────────────────────────────────────────────────────────  -->
+    <!--   Developers                                                                  -->
+    <developers>
+        <!--  Daniel Carda   ····················································  -->
+        <developer>
+            <name>Daniel Carda</name>
+            <email>GoneBy2025@CardaTechnologies.com</email>
+            <url>http://danielcarda.net/</url>
+            <timezone>America/Denver</timezone>
+            <roles>
+                <role>Architect</role>
+                <role>Developer</role>
+                <role>Tester</role>
+            </roles>
+        </developer>
+    </developers>
+    <!--  End:  developers  -->
+
+    <!--  ───────────────────────────────────────────────────────────────────────────  -->
+    <!--   Contributors                                                                -->
+    <contributors>
+        <!--  Daniel Carda   ····················································  -->
+        <contributor>
+            <name>Daniel Carda</name>
+            <email>GoneBy2025@CardaTechnologies.com</email>
+            <url>http://danielcarda.net/</url>
+            <timezone>America/Denver</timezone>
+            <roles>
+                <role>Architect</role>
+                <role>Developer</role>
+                <role>Tester</role>
+            </roles>
+        </contributor>
+    </contributors>
+    <!--  End:  contributors  -->
+
+    <!--  ───────────────────────────────────────────────────────────────────────────  -->
+    <!--  Source Control Management                                                    -->
+    <scm>
+        <connection>scm:git:git@github.com:dcarda/aba.route.validator.git</connection>
+        <developerConnection>scm:git:git@github.com:dcarda/aba.route.validator.git</developerConnection>
+        <url>https://github.com/dcarda/aba.route.validator/tree/master</url>
+        <tag>aba.routing.transit.validator-1.0.0-FINAL</tag>
+    </scm>
+    <!--  End:  scm  -->
+
+    <!--  ───────────────────────────────────────────────────────────────────────────  -->
+    <!--  Issue Management                                                             -->
+    <issueManagement>
+        <system>github</system>
+        <url>https://github.com/dcarda/aba.route.validator/issues</url>
+    </issueManagement>
+    <!--  End:  issueManagement  -->
+
+    <!--  ───────────────────────────────────────────────────────────────────────────  -->
     <!--  Properties                                                                   -->
     <properties>
         <!--  https://stackoverflow.com/questions/9170832/list-of-java-class-file-format-major-version-numbers  -->
         <enforce.java.major.version>61</enforce.java.major.version>
-        <failsafe.argLine>-DdummyProperty=notUsed</failsafe.argLine>
-        <java.jdk.version>17</java.jdk.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!--  Compiler Settings  ================================================  -->
         <java.source.level>17</java.source.level>
         <java.target.level>17</java.target.level>
+        <java.jdk.version>17</java.jdk.version>
         <javacDebug>true</javacDebug>
         <javacDebugLevel>lines,vars,source</javacDebugLevel>
         <javacFork>false</javacFork>
         <javacOptimize>false</javacOptimize>
         <javacVerbose>true</javacVerbose>
-        <junit.jupiter.engine.version>5.10.2</junit.jupiter.engine.version>
 
-        <!-- Testing Plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-        <junit.jupiter.version>5.10.2</junit.jupiter.version>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
+        <!--  Miscellaneous                                                        -->
+        <failsafe.argLine>-DdummyProperty=notUsed</failsafe.argLine>
         <surefire.argLine>-Xmx1024m -Xms512m -ea -Dfile.encoding=UTF-8</surefire.argLine>
 
-        <!-- Miscellaneous Plugins                                                 -->
+        <!--  Plugins                                                             -->
         <version.compiler.plugin>3.13.0</version.compiler.plugin>
-        <version.enforcer.plugin>3.4.1</version.enforcer.plugin>
-        <version.extra.enforcer.rules>1.8.0</version.extra.enforcer.rules>
         <version.git.commit.id.plugin>4.9.10</version.git.commit.id.plugin>
-
-
+        <version.jar.plugin>3.3.0</version.jar.plugin>
         <version.maven.antrun.plugin>3.1.0</version.maven.antrun.plugin>
         <version.maven.clean.plugin>3.3.2</version.maven.clean.plugin>
-        <version.maven.plugin.plugin>3.11.0</version.maven.plugin.plugin>
-        <version.maven.invoker.plugin>3.6.0</version.maven.invoker.plugin>
-        <version.maven.install.plugin>3.1.1</version.maven.install.plugin>
         <version.maven.deploy.plugin>3.1.1</version.maven.deploy.plugin>
+        <version.maven.install.plugin>3.1.1</version.maven.install.plugin>
+        <version.maven.invoker.plugin>3.6.1</version.maven.invoker.plugin>
+        <version.maven.plugin.plugin>3.12.0</version.maven.plugin.plugin>
         <version.maven.resources.plugin>3.3.1</version.maven.resources.plugin>
 
-
-
-
         <!-- Reporting Plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙······∙∙∙∙∙∙∙  -->
-        <version.jacoco.reporting.plugin>0.8.11</version.jacoco.reporting.plugin>
-        <version.jar.plugin>3.3.0</version.jar.plugin>
+        <version.enforcer.extra.rules>1.8.0</version.enforcer.extra.rules>
+        <version.enforcer.plugin>3.4.1</version.enforcer.plugin>
+        <version.jacoco.reporting.plugin>0.8.12</version.jacoco.reporting.plugin>
         <version.maven.versions.plugin>2.16.2</version.maven.versions.plugin>
+        <version.owasp.dependency.check>9.1.0</version.owasp.dependency.check>
         <!--   WARMNING: DON'T UPDATE THIS.  WON'T WORK WITH JACOCO  -->
         <version.surefire.plugin>2.22.2</version.surefire.plugin>
 
+        <!-- Testing Plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+        <version.junit.jupiter>5.10.2</version.junit.jupiter>
+        <version.junit.platform>1.10.2</version.junit.platform>
+
     </properties>
+
+    <!--  ───────────────────────────────────────────────────────────────────────────  -->
+    <!--  Dependency Management                                                        -->
+    <dependencyManagement>
+        <dependencies>
+
+            <!--  Testing Plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+            <!--  https://junit.org/junit4/                                            -->
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>${version.junit.jupiter}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${version.junit.jupiter}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-params</artifactId>
+                <version>${version.junit.jupiter}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.platform</groupId>
+                <artifactId>junit-platform-suite</artifactId>
+                <version>${version.junit.platform}</version>
+                <scope>test</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+    <!--  End:  dependancyManagement  -->
+
+    <!--  ───────────────────────────────────────────────────────────────────────────  -->
+    <!--   Dependencies   ···························································· -->
     <dependencies>
-        <!-- testing -->
+
+        <!--  Testing Plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+        <!--  https://junit.org/junit4/                                            -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.jupiter.engine.version}</version>
-            <scope>test</scope>
         </dependency>
-    </dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-suite</artifactId>
+        </dependency>
 
+    </dependencies>
+    <!--  End:  dependancies  -->
+
+    <!--  ───────────────────────────────────────────────────────────────────────────  -->
+    <!--  Build                                                                        -->
     <build>
 
         <!--  ───────────────────────────────────────────────────────────────────────  -->
@@ -170,17 +296,48 @@
                         <dependency>
                             <groupId>org.codehaus.mojo</groupId>
                             <artifactId>extra-enforcer-rules</artifactId>
-                            <version>${version.extra.enforcer.rules}</version>
+                            <version>${version.enforcer.extra.rules}</version>
                             <scope>compile</scope>
                         </dependency>
                     </dependencies>
+                    <!--  <executions>-->
+                    <!--     <execution>-->
+                    <!--        <id>validate-enforcer</id>-->
+                    <!--        <goals>-->
+                    <!--           <goal>enforce</goal>-->
+                    <!--        </goals>-->
+                    <!--        <phase>validate</phase>-->
+                    <!--     </execution>-->
+                    <!--  </executions>-->
                     <executions>
                         <execution>
-                            <id>validate-enforcer</id>
+                            <id>enforce-rules</id>
                             <goals>
                                 <goal>enforce</goal>
                             </goals>
-                            <phase>validate</phase>
+                            <configuration>
+                                <!-- Rule rules: https://maven.apache.org/enforcer/enforcer-rules/index.html -->
+                                <rules>
+                                    <bannedDependencies>
+                                        <excludes>
+                                            <!--  <exclude>org.apache.logging.log4j:log4j-core:(,2.17.0)</exclude>  -->
+                                        </excludes>
+                                    </bannedDependencies>
+                                    <!-- 52 is the major version numbering for 1.8; Using 1.8 caused
+                                         this to fail if there was any minor version -->
+                                    <requireJavaVersion>
+                                        <version>(,${enforce.java.major.version}]</version>
+                                    </requireJavaVersion>
+                                    <enforceBytecodeVersion>
+                                        <maxJdkVersion>${maven.compiler.source}</maxJdkVersion>
+                                        <excludes>
+                                            <!--  <exclude>com.oracle.database.jdbc:ojdbc8</exclude>  -->
+                                            <!--  <exclude>org.codelibs:jcifs</exclude>  -->
+                                        </excludes>
+                                    </enforceBytecodeVersion>
+                                </rules>
+                                <fail>true</fail>
+                                 </configuration>
                         </execution>
                     </executions>
                 </plugin>
@@ -518,80 +675,91 @@
                 </executions>
             </plugin>
 
-            <!--   GIT Commit Plugin Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+            <!--   GIT Commit Plugin    ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
             <!--   https://github.com/git-commit-id/git-commit-id-maven-plugin             -->
             <plugin>
                 <groupId>pl.project13.maven</groupId>
                 <artifactId>git-commit-id-plugin</artifactId>
             </plugin>
 
+            <!--   OWASP Vulnerability Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+            <!--   https://jeremylong.github.io/DependencyCheck/dependency-check-maven/    -->
+            <plugin>
+                <groupId>org.owasp</groupId>
+                <artifactId>dependency-check-maven</artifactId>
+                <version>9.1.0</version>
+                <executions>
+                    <execution>
+                        <!--                        <phase>package</phase>-->
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <!--                    <failBuildOnCVSS>6</failBuildOnCVSS>-->
+                    <!--                    <format>ALL</format>-->
+                    <!--                    <outputDirectory>${dependency.check.report.dir}</outputDirectory>-->
+                </configuration>
+            </plugin>
         </plugins>
-    </build>
 
+
+    </build>
+    <!--  End:  build  -->
+
+    <!--  ───────────────────────────────────────────────────────────────────────────  -->
+    <!--   Profiles                                                                    -->
     <profiles>
+
+        <!--  ───────────────────────────────────────────────────────────────────  -->
+        <!--   Profile: Generate Reports   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
         <profile>
             <id>genReports</id>
 
             <!--  ───────────────────────────────────────────────────────────────  -->
             <!--   genReports: Properties   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
             <properties>
-                <version.project.info.reports.plugin>3.5.0</version.project.info.reports.plugin>
-                <version.maven.site.plugin>3.12.1</version.maven.site.plugin>
-
-                <version.checkstyle.report.plugin>3.3.1</version.checkstyle.report.plugin>
-
-                <version.changelog.reporting.plugin>2.3</version.changelog.reporting.plugin>
-
                 <version.assembly.plugin>3.7.1</version.assembly.plugin>
-
-
+                <version.changelog.reporting.plugin>2.3</version.changelog.reporting.plugin>
+                <version.changelog.reporting.plugin>2.3</version.changelog.reporting.plugin>
+                <version.checkstyle.github.sevntu-checks>1.44.1</version.checkstyle.github.sevntu-checks>
+                <version.checkstyle.puppycrawl.tools>10.9.3</version.checkstyle.puppycrawl.tools>
+                <version.checkstyle.report.plugin>3.3.1</version.checkstyle.report.plugin>
+                <version.javadoc.reporting.plugin>3.6.3</version.javadoc.reporting.plugin>
+                <version.javancss.reporting.plugin>2.1</version.javancss.reporting.plugin>
+                <version.jdepend.reporting.plugin>2.0</version.jdepend.reporting.plugin>
+                <version.jxr.reporting.plugin>3.3.2</version.jxr.reporting.plugin>
+                <version.license.reporting.plugin>2.4.0</version.license.reporting.plugin>
+                <version.maven.site.plugin>4.0.0-M9</version.maven.site.plugin>
+                <version.pmd.reporting.plugin>3.21.2</version.pmd.reporting.plugin>
+                <version.project.info.reports.plugin>3.5.0</version.project.info.reports.plugin>
+                <version.sourceforge.pmd.core>6.55.0</version.sourceforge.pmd.core>
+                <version.sourceforge.pmd.java>6.55.0</version.sourceforge.pmd.java>
+                <version.sourceforge.pmd.javascript>6.55.0</version.sourceforge.pmd.javascript>
+                <version.sourceforge.pmd.jsp>6.55.0</version.sourceforge.pmd.jsp>
+                <version.spotbugs.reporting.plugin>4.8.3.1</version.spotbugs.reporting.plugin>
+                <version.surefire.reports.plugin>3.2.5</version.surefire.reports.plugin>
+                <version.taglist.report.plugin>3.0.0</version.taglist.report.plugin>
             </properties>
+            <!--  End:  genReports : pluginManagement  -->
+
             <!--  ───────────────────────────────────────────────────────────────  -->
-            <!--   genReports: Build   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+            <!--   genReports: build   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
             <build>
 
                 <!--  ───────────────────────────────────────────────────────────  -->
-                <!--   genReports: build: pluginManagement   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                <!--   genReports: build : pluginManagement   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                 <pluginManagement>
 
                     <plugins>
-
-
-                        <!--   Versions Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-                        <!--   https://www.mojohaus.org/versions/versions-maven-plugin/index.html   -->
-                        <plugin>
-                            <groupId>org.codehaus.mojo</groupId>
-                            <artifactId>versions-maven-plugin</artifactId>
-                            <version>${version.maven.versions.plugin}</version>
-                            <executions>
-                                <execution>
-                                    <phase>compile</phase>
-                                    <goals>
-                                        <goal>display-property-updates</goal>
-                                        <goal>display-dependency-updates</goal>
-                                        <goal>display-plugin-updates</goal>
-                                    </goals>
-                                </execution>
-                            </executions>
-                        </plugin>
-
-
-
-                        <!--   Maven Project Info Reports Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-                        <!--   https://maven.apache.org/plugins/maven-project-info-reports-plugin/   -->
-                        <plugin>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-project-info-reports-plugin</artifactId>
-                            <version>${version.project.info.reports.plugin}</version>
-                        </plugin>
 
                         <!--   Maven Site Report Report   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                         <!--   https://maven.apache.org/plugins/maven-site-plugin/         -->
                         <plugin>
                             <groupId>org.apache.maven.plugins</groupId>
                             <artifactId>maven-site-plugin</artifactId>
-<!--                            <version>${version.maven.site.plugin}</version>-->
-                            <version>4.0.0-M9</version>
+                            <version>${version.maven.site.plugin}</version>
                             <configuration>
                                 <inputEncoding>UTF-8</inputEncoding>
                                 <outputEncoding>UTF-8</outputEncoding>
@@ -610,7 +778,6 @@
 
                         <!--   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                         <!--   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-
 
                         <!--   Maven Assembly Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                         <!--   https://maven.apache.org/plugins/maven-assembly-plugin/     -->
@@ -646,12 +813,12 @@
                                 <dependency>
                                     <groupId>com.puppycrawl.tools</groupId>
                                     <artifactId>checkstyle</artifactId>
-                                    <version>${version.puppycrawl.tools.checkstyle}</version>
+                                    <version>${version.checkstyle.puppycrawl.tools}</version>
                                 </dependency>
                                 <dependency>
                                     <groupId>com.github.sevntu-checkstyle</groupId>
                                     <artifactId>sevntu-checks</artifactId>
-                                    <version>${version.github.sevntu-checks}</version>
+                                    <version>${version.checkstyle.github.sevntu-checks}</version>
                                 </dependency>
                             </dependencies>
                             <executions>
@@ -711,22 +878,588 @@
                             </executions>
                         </plugin>
 
+                        <!--   JavaDoc Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   https://maven.apache.org/plugins/maven-javadoc-plugin/      -->
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-javadoc-plugin</artifactId>
+                            <version>${version.javadoc.reporting.plugin}</version>
+                        </plugin>
 
+                        <!--   JavaNCSS Report   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   https://javancss.github.io/                                 -->
+                        <plugin>
+                            <groupId>org.codehaus.mojo</groupId>
+                            <artifactId>javancss-maven-plugin</artifactId>
+                            <version>${version.javancss.reporting.plugin}</version>
+                            <configuration>
+                                <excludes>
+                                    <exclude>**/Test*.java</exclude>
+                                    <exclude>**/*Test.java</exclude>
+                                </excludes>
+                            </configuration>
+                        </plugin>
 
+<!--                        &lt;!&ndash;   JDepend Dependency Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  &ndash;&gt;-->
+<!--                        &lt;!&ndash;   https://www.mojohaus.org/jdepend-maven-plugin/              &ndash;&gt;-->
+<!--                        &lt;!&ndash;   We are just going to wait until the 2.1 version of this     &ndash;&gt;-->
+<!--                        &lt;!&ndash;   plugin comes out.  There is an incompatibility with         &ndash;&gt;-->
+<!--                        &lt;!&ndash;   Java 11.                                                    &ndash;&gt;-->
+<!--                        <plugin>-->
+<!--                            <groupId>org.codehaus.mojo</groupId>-->
+<!--                            <artifactId>jdepend-maven-plugin</artifactId>-->
+<!--                            <version>${version.jdepend.reporting.plugin}</version>-->
+<!--                        </plugin>-->
+
+                        <!--   JXR Cross Reference Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   https://maven.apache.org/jxr/maven-jxr-plugin/              -->
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-jxr-plugin</artifactId>
+                            <version>${version.jxr.reporting.plugin}</version>
+                        </plugin>
+
+                        <!--   License Information Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   mojohaus.org/license-maven-plugin/                          -->
+                        <plugin>
+                            <groupId>org.codehaus.mojo</groupId>
+                            <artifactId>license-maven-plugin</artifactId>
+                            <version>${version.license.reporting.plugin}</version>
+                            <executions>
+                                <execution>
+                                    <goals>
+                                        <goal>add-third-party</goal>
+                                    </goals>
+                                </execution>
+                            </executions>
+                        </plugin>
+
+                        <!--   PMD/CPD Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   https://maven.apache.org/plugins/maven-pmd-plugin/index.html  -->
+                        <!--   https://docs.pmd-code.org/latest/pmd_userdocs_tools_maven.html#maven-2-and-3  -->
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-pmd-plugin</artifactId>
+                            <version>${version.pmd.reporting.plugin}</version>
+                            <configuration>
+                                <linkXRef>true</linkXRef>
+                                <sourceEncoding>UTF-8</sourceEncoding>
+                                <minimumTokens>100</minimumTokens>
+                                <!--                                <targetJdk>22</targetJdk>-->
+                                <targetJdk>17</targetJdk>
+
+                                <analysisCache>true</analysisCache>
+                                <!--  <analysisCacheLocation>${env.HOME}/code-analysis/pmd-analysis-cache/${project.name}</analysisCacheLocation>-->
+                                <skipEmptyReport>false</skipEmptyReport>
+                                <failOnViolation>false</failOnViolation>
+                                <printFailingErrors>true</printFailingErrors>
+                                <includeTests>false</includeTests>
+                                <verbose>true</verbose>
+                                <!--  <rulesets>-->
+                                <!--     <ruleset>/pmd.xml</ruleset>-->
+                                <!--  </rulesets>-->
+                                <excludes>
+                                    <exclude>**/*Bean.java</exclude>
+                                    <exclude>**/generated/*.java</exclude>
+                                    <exclude>**/Test*.java</exclude>
+                                    <exclude>**/*Test.java</exclude>
+                                </excludes>
+                                <excludeRoots>
+                                    <excludeRoot>target/generated-sources/stubs</excludeRoot>
+                                </excludeRoots>
+                            </configuration>
+                            <dependencies>
+                                <dependency>
+                                    <groupId>net.sourceforge.pmd</groupId>
+                                    <artifactId>pmd-javascript</artifactId>
+                                    <version>6.55.0</version>
+                                </dependency>
+                                <dependency>
+                                    <groupId>net.sourceforge.pmd</groupId>
+                                    <artifactId>pmd-jsp</artifactId>
+                                    <version>6.55.0</version>
+                                </dependency>
+                                <!-- https://mvnrepository.com/artifact/net.sourceforge.pmd/pmd-java -->
+                                <dependency>
+                                    <groupId>net.sourceforge.pmd</groupId>
+                                    <artifactId>pmd-java</artifactId>
+                                    <version>6.55.0</version>
+                                </dependency>
+                                <!-- https://mvnrepository.com/artifact/net.sourceforge.pmd/pmd-core -->
+                                <dependency>
+                                    <groupId>net.sourceforge.pmd</groupId>
+                                    <artifactId>pmd-core</artifactId>
+                                    <version>6.55.0</version>
+                                </dependency>
+                                <dependency>
+                                    <groupId>net.sourceforge.pmd</groupId>
+                                    <artifactId>pmd-apex</artifactId>
+                                    <version>6.55.0</version>
+                                </dependency>
+                                <dependency>
+                                    <groupId>net.sourceforge.pmd</groupId>
+                                    <artifactId>pmd-visualforce</artifactId>
+                                    <version>6.55.0</version>
+                                </dependency>
+                            </dependencies>
+                        </plugin>
+
+                        <!--   Spot Bugs Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   https://spotbugs.github.io/spotbugs-maven-plugin            -->
+                        <plugin>
+                            <groupId>com.github.spotbugs</groupId>
+                            <artifactId>spotbugs-maven-plugin</artifactId>
+                            <version>${version.spotbugs.reporting.plugin}</version>
+                        </plugin>
+
+                        <!--   Surefire Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-surefire-report-plugin</artifactId>
+                            <version>${version.surefire.reports.plugin}</version>
+                        </plugin>
+
+                        <!--   Tag List Report   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   http://www.mojohaus.org/taglist-maven-plugin/               -->
+                        <plugin>
+                            <groupId>org.codehaus.mojo</groupId>
+                            <artifactId>taglist-maven-plugin</artifactId>
+                            <version>${version.taglist.report.plugin}</version>
+                            <configuration>
+                                <tagListOptions>
+                                    <tagClasses>
+                                        <tagClass>
+                                            <displayName>Todo Work</displayName>
+                                            <tags>
+                                                <tag>
+                                                    <matchString>todo</matchString>
+                                                    <matchType>ignoreCase</matchType>
+                                                </tag>
+                                                <tag>
+                                                    <matchString>FIXME</matchString>
+                                                    <matchType>exact</matchType>
+                                                </tag>
+                                                <tag>
+                                                    <matchString>QUICKFIX</matchString>
+                                                    <matchType>exact</matchType>
+                                                </tag>
+                                                <tag>
+                                                    <matchString>WORKAROUND</matchString>
+                                                    <matchType>exact</matchType>
+                                                </tag>
+                                                <tag>
+                                                    <matchString>@deprecated</matchString>
+                                                    <matchType>exact</matchType>
+                                                </tag>
+                                            </tags>
+                                        </tagClass>
+                                    </tagClasses>
+                                </tagListOptions>
+                                <xrefLocation>${xrefLocation}</xrefLocation>
+                                <testXrefLocation>${testXrefLocation}</testXrefLocation>
+                            </configuration>
+                        </plugin>
+
+                        <!--   License Report   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   https://www.mojohaus.org/license-maven-plugin/              -->
+                        <plugin>
+                            <groupId>com.mycila.maven-license-plugin</groupId>
+                            <artifactId>maven-license-plugin</artifactId>
+                            <version>1.10.b1</version>
+                            <configuration>
+
+                                <licenseName>apache_2_0</licenseName>
+                                <licenseResolver>${project.basedir}/LICENSE</licenseResolver>
+                                <header>${project.basedir}/LICENSE</header>
+                                <!--  <header>${basedir}/license.txt</header>-->
+                                <properties>
+                                    <project>
+                                        ${project.name}
+                                    </project>
+                                    <founder>${project.organization.name}</founder>
+                                    <year>${project.inceptionYear}</year>
+                                    <website>${founder-website}</website>
+                                </properties>
+                                <includes>
+                                    <include>src/main/java/**</include>
+                                    <include>src/test/java/**</include>
+                                </includes>
+                            </configuration>
+                            <executions>
+                                <execution>
+                                    <goals>
+                                        <goal>format</goal>
+                                    </goals>
+                                    <phase>process-sources</phase>
+                                </execution>
+                            </executions>
+                            <dependencies>
+                                <dependency>
+                                    <groupId>com.mycila</groupId>
+                                    <artifactId>licenses</artifactId>
+                                    <version>1</version>
+                                </dependency>
+                            </dependencies>
+                        </plugin>
+
+                        <!--   Versions Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   https://www.mojohaus.org/versions/versions-maven-plugin/index.html   -->
+                        <plugin>
+                            <groupId>org.codehaus.mojo</groupId>
+                            <artifactId>versions-maven-plugin</artifactId>
+                            <version>${version.maven.versions.plugin}</version>
+                            <executions>
+                                <execution>
+                                    <phase>compile</phase>
+                                    <goals>
+                                        <goal>display-property-updates</goal>
+                                        <goal>display-dependency-updates</goal>
+                                        <goal>display-plugin-updates</goal>
+                                    </goals>
+                                </execution>
+                            </executions>
+                        </plugin>
 
                     </plugins>
-                    <!--  End:  pluginManagement - plugins -->
+                    <!--  End:  genReports : pluginManagement - plugins -->
                 </pluginManagement>
-                <!--  End:  pluginManagement  -->
+                <!--  End:  genReports : build : pluginManagement  -->
 
+                <!--  ───────────────────────────────────────────────────────────  -->
+                <!--   genReports: build : plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                <plugins>
 
+                    <!--   License Information Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   mojohaus.org/license-maven-plugin/                              -->
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>license-maven-plugin</artifactId>
+                    </plugin>
 
+                    <!--   Spot Bugs Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   https://spotbugs.github.io/spotbugs-maven-plugin                -->
+                    <plugin>
+                        <groupId>com.github.spotbugs</groupId>
+                        <artifactId>spotbugs-maven-plugin</artifactId>
+                    </plugin>
+
+                </plugins>
+                <!--  End:  genReports : build : plugins  -->
             </build>
+            <!--  End:  genReports : build  -->
 
             <!--  ───────────────────────────────────────────────────────────────────────  -->
             <!--   genReports: Reporting   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
             <reporting>
                 <plugins>
+
+                    <!--  NOTE:  The order of this section is reflected on the             -->
+                    <!--         Maven Site Reports layout                                 -->
+
+                    <!--   Maven Project Info Reports Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   https://maven.apache.org/plugins/maven-project-info-reports-plugin/   -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-project-info-reports-plugin</artifactId>
+                        <reportSets>
+                            <reportSet>
+                                <reports>
+                                    <!-- GOOD / WORKING  -->
+                                    <report>index</report>
+                                    <report>summary</report>
+                                    <report>dependencies</report>
+                                    <report>dependency-info</report>
+                                    <report>dependency-management</report>
+                                    <report>dependency-convergence</report>
+                                    <report>licenses</report>
+                                    <report>plugins</report>
+                                    <report>plugin-management</report>
+                                    <report>team</report>
+
+                                    <!--  NOT WORKING                                      -->
+                                    <!--  NOT NECESSARY                                    -->
+                                    <!--  <report>ci-management</report>                   -->
+                                    <!--  <report>scm</report>                             -->
+                                    <!--  <report>modules</report>                         -->
+                                    <!--  <report>issue-management</report>                -->
+                                    <!--  <report>mailing-lists</report>                   -->
+                                    <!--  <report>distribution-management</report>         -->
+
+                                    <!-- BAD TARGET?                                       -->
+                                    <!--   <report>help</report>                           -->
+
+                                </reports>
+                            </reportSet>
+                        </reportSets>
+                    </plugin>
+
+                    <!--   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+
+                    <!--   Apache Maven Changelog Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   https://maven.apache.org/plugins/maven-changelog-plugin/        -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-changelog-plugin</artifactId>
+                    </plugin>
+
+                    <!--   Checkstyle Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   https://checkstyle.sourceforge.io/                              -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-checkstyle-plugin</artifactId>
+                        <configuration>
+                            <!--                     <configLocation>checkstyle/java-checkstyle.xml</configLocation>-->
+                            <suppressionsLocation>checkstyle/java-suppressions.xml</suppressionsLocation>
+                            <propertyExpansion>basedir=${basedir}</propertyExpansion>
+                            <propertyExpansion>samedir=${project.basedir}/src/test/resources/checkstyle</propertyExpansion>
+                            <consoleOutput>true</consoleOutput>
+                            <logViolationsToConsole>true</logViolationsToConsole>
+                            <failOnViolation>true</failOnViolation>
+                            <linkXRef>false</linkXRef>
+                            <enableFilesSummary>true</enableFilesSummary>
+                            <includes>**/*.java</includes>
+                            <includeResources>false</includeResources>
+                            <includeTestSourceDirectory>false</includeTestSourceDirectory>
+                            <outputFile>${project.build.directory}/checkstyle-report-java.xml</outputFile>
+                            <outputFileFormat>xml</outputFileFormat>
+                        </configuration>
+                        <reportSets>
+                            <reportSet>
+                                <reports>
+                                    <report>checkstyle</report>
+                                </reports>
+                            </reportSet>
+                        </reportSets>
+                    </plugin>
+
+                    <!--   Maven JavaDoc Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   https://maven.apache.org/plugins/maven-javadoc-plugin/          -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+
+                        <configuration>
+                            <stylesheetfile>${basedir}/src/test/resources/javadoc/oracle_stylesheet.css</stylesheetfile>
+                            <failOnError>false</failOnError>
+                            <excludes>
+                                <exclude>**/*Test.java</exclude>
+                                <exclude>**/Test_*.java</exclude>
+                            </excludes>
+                            <!-- Default configuration for all reports -->
+                            <stylesheet>maven</stylesheet>
+
+                            <!--    <additionalparam>-Xdoclint:none</additionalparam>-->
+                            <!-- needed for Java 8u121 -->
+                            <additionalJOption>--allow-script-in-comments</additionalJOption>
+
+                        </configuration>
+                        <reportSets>
+                            <reportSet>
+                                <id>default</id>
+                                <reports>
+                                    <report>javadoc</report>
+                                </reports>
+                                <configuration>
+                                    <!-- Specific configuration for the given reports      -->
+                                </configuration>
+                            </reportSet>
+                            <reportSet>
+                                <id>aggregate</id>
+                                <reports>
+                                    <report>aggregate</report>
+                                </reports>
+                                <configuration>
+                                    <!-- Specific configuration for the given reports      -->
+                                </configuration>
+                            </reportSet>
+                        </reportSets>
+                    </plugin>
+
+                    <!--   JavaNCSS Report   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   https://javancss.github.io/                                     -->
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>javancss-maven-plugin</artifactId>
+                    </plugin>
+
+<!--                    &lt;!&ndash;   JDepend Dependancy Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙   &ndash;&gt;-->
+<!--                    &lt;!&ndash;   https://www.mojohaus.org/jdepend-maven-plugin/                  &ndash;&gt;-->
+<!--                    &lt;!&ndash;   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙   &ndash;&gt;-->
+<!--                    &lt;!&ndash;   We are just going to wait until the 2.1 version of this         &ndash;&gt;-->
+<!--                    &lt;!&ndash;   plugin comes out.  There is an incompatibility with             &ndash;&gt;-->
+<!--                    &lt;!&ndash;   Java 11.                                                        &ndash;&gt;-->
+<!--                    <plugin>-->
+<!--                        <groupId>org.codehaus.mojo</groupId>-->
+<!--                        <artifactId>jdepend-maven-plugin</artifactId>-->
+<!--                        <reportSets>-->
+<!--                            <reportSet>-->
+<!--                                <id>jdepend-report</id>-->
+<!--                                <reports>-->
+<!--                                    <report>generate-no-fork</report>-->
+<!--                                </reports>-->
+<!--                                <inherited>true</inherited>-->
+<!--                            </reportSet>-->
+<!--                        </reportSets>-->
+<!--                    </plugin>-->
+
+                    <!--   JXR Cross Reference Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   https://maven.apache.org/jxr/maven-jxr-plugin/                 -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-jxr-plugin</artifactId>
+                        <reportSets>
+                            <reportSet>
+                                <id>jxr-report</id>
+                                <reports>
+                                    <report>jxr</report>
+                                </reports>
+                            </reportSet>
+                            <reportSet>
+                                <id>jxr-report-aggregate</id>
+                                <reports>
+                                    <report>aggregate</report>
+                                </reports>
+                                <inherited>false</inherited>
+                            </reportSet>
+                        </reportSets>
+                    </plugin>
+
+                    <!--   License Information Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   mojohaus.org/license-maven-plugin/                              -->
+                    <!--   https://www.michael.beiter.org/2015/02/06/configure-the-codehaus-license-maven-plugin-in-multi-module-builds/ -->
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>license-maven-plugin</artifactId>
+                        <configuration>
+                            <licenseName>3-bsd-mb</licenseName>
+                            <licenseResolver>classpath://license</licenseResolver>
+                            <descriptionTemplate>${basedir}/src/license/licenseDescription.ftl</descriptionTemplate>
+                            <canUpdateCopyright>true</canUpdateCopyright>
+                            <canUpdateDescription>true</canUpdateDescription>
+                            <addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
+                            <failOnMissingHeader>true</failOnMissingHeader>
+                            <failOnNotUptodateHeader>true</failOnNotUptodateHeader>
+                            <excludes>
+                                <exclude>**/licenseDescription.ftl</exclude>
+                                <exclude>**/package-info.java</exclude>
+                                <exclude>**/*.txt</exclude>
+                                <exclude>**/*.properties</exclude>
+                            </excludes>
+                        </configuration>                        <reportSets>
+                        <reportSet>
+                            <reports>
+                                <report>third-party-report</report>
+                            </reports>
+                        </reportSet>
+                    </reportSets>
+                    </plugin>
+
+                    <!--   PMD/CPD Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   https://maven.apache.org/plugins/maven-pmd-plugin/index.html    -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-pmd-plugin</artifactId>
+                        <configuration>
+                            <rulesets>
+                                <!--  <ruleset>pmd/non-test-rules.xml</ruleset>-->
+                                <ruleset>${basedir}/src/test/resources/pmd/non-test-rules.xml</ruleset>
+                                <ruleset>${basedir}/src/test/resources/pmd/standard-rules.xml</ruleset>
+                            </rulesets>
+                        </configuration>
+                        <reportSets>
+                            <reportSet>
+                                <!-- by default, id = "default" -->
+                                <reports>
+                                    <!-- select non-aggregate reports -->
+                                    <report>pmd</report>
+                                    <report>cpd</report>
+                                </reports>
+                            </reportSet>
+                            <reportSet>
+                                <!-- aggregate reportSet, to define in poms having modules -->
+                                <id>aggregate</id>
+                                <!-- don't run aggregate in child modules -->
+                                <reports>
+                                    <report>aggregate-pmd</report>
+                                    <report>aggregate-cpd</report>
+                                </reports>
+                                <inherited>false</inherited>
+                            </reportSet>
+                        </reportSets>
+                    </plugin>
+
+                    <!--   Spot Bugs Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   https://spotbugs.github.io/spotbugs-maven-plugin                -->
+                    <plugin>
+                        <groupId>com.github.spotbugs</groupId>
+                        <artifactId>spotbugs-maven-plugin</artifactId>
+                        <configuration>
+                            <xmlOutput>true</xmlOutput>
+                            <!-- Optional directory to put spotbugs xdoc xml report -->
+                            <xmlOutputDirectory>target/site</xmlOutputDirectory>
+                        </configuration>
+                    </plugin>
+
+                    <!--   Surefire Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   https://maven.apache.org/surefire/maven-surefire-report-plugin/   -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-report-plugin</artifactId>
+                        <reportSets>
+                            <reportSet>
+                                <reports>
+                                    <report>report-only</report>
+                                </reports>
+                            </reportSet>
+                        </reportSets>
+                    </plugin>
+
+                    <!--   Tag List Report   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   http://www.mojohaus.org/taglist-maven-plugin/                   -->
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>taglist-maven-plugin</artifactId>
+                        <reportSets>
+                            <reportSet>
+                                <!-- defines taglist reports in the modules                -->
+                                <id>taglist-report</id>
+                                <reports>
+                                    <report>taglist</report>
+                                </reports>
+                            </reportSet>
+                            <reportSet>
+                                <!-- defines taglist aggregate report                      -->
+                                <id>taglist-aggregate</id>
+                                <reports>
+                                    <report>taglist</report>
+                                </reports>
+                                <inherited>false</inherited>
+                                <configuration>
+                                    <aggregate>true</aggregate>
+                                </configuration>
+                            </reportSet>
+                        </reportSets>
+
+                    </plugin>
+
+                    <!--   OWASP Vulnerability Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   https://jeremylong.github.io/DependencyCheck/dependency-check-maven/   -->
+                    <plugin>
+                        <groupId>org.owasp</groupId>
+                        <artifactId>dependency-check-maven</artifactId>
+                        <version>${version.owasp.dependency.check}</version>
+                        <configuration>
+                            <name>Vulnerability Report</name>
+                        </configuration>
+                        <reportSets>
+                            <reportSet>
+                                <reports>
+                                    <report>aggregate</report>
+                                </reports>
+                            </reportSet>
+                        </reportSets>
+                    </plugin>
 
                     <!--   Versions Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   https://www.mojohaus.org/versions/versions-maven-plugin/index.html   -->
@@ -748,8 +1481,12 @@
                 <!--  End:  genReports : profile : reporting : plugins  -->
 
             </reporting>
-            <!--  End:  genReports : profile : reporting  -->
+            <!--  End:  genReports : reporting  -->
+
         </profile>
+        <!--  End:  genReports : profile  -->
+
     </profiles>
+    <!--  End:  profiles  -->
 
 </project>

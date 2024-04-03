@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="https://maven.apache.org/DECORATION/1.3.0"
+         xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+         name="ABA Transit Routing Validator"
+         xsi:schemaLocation="https://maven.apache.org/DECORATION/1.3.0
+                             https://maven.apache.org/xsd/decoration-1.3.0.xsd">
+
+    <!-- ───────────────────────────────────────────────────────────────────── -->
+    <bannerLeft>
+        <name><![CDATA[<span class="color-highlight">ABA Routhing Validator</span>]]></name>
+        <href>http://dcarda.github.io/aba.route.validator/</href>
+    </bannerLeft>
+    <publishDate position="bottom" format="yyyy-MM-dd" />
+    <version position="bottom" />
+    <!-- ───────────────────────────────────────────────────────────────────── -->
+    <skin>
+        <groupId>io.github.devacfr.maven.skins</groupId>
+        <artifactId>reflow-maven-skin</artifactId>
+        <version>2.3.4</version>
+    </skin>
+    <!-- ───────────────────────────────────────────────────────────────────── -->
+    <custom>
+        <reflowSkin>
+            <theme>bootswatch-superhero</theme>
+
+            <!-- Make this to 'false' for local development, i.e. file:// URLs -->
+            <protocolRelativeURLs>false</protocolRelativeURLs>
+            <smoothScroll>true</smoothScroll>
+            <highlightJs>true</highlightJs>
+            <highlightJsTheme>github</highlightJsTheme>
+            <!--      <absoluteResourceURL>http://dcarda.github.io/aba.route.validator/</absoluteResourceURL>-->
+            <!--            <brand>-->
+            <!--                &lt;!&ndash; Brand text in top-left part of the site &ndash;&gt;-->
+            <!--                <name><![CDATA[<span class="color-highlight">ABA Transit Routing Validator</span>]]></name>-->
+            <!--                <href>http://dcarda.github.io/aba.route.validator/</href>-->
+            <!--            </brand>-->
+            <slogan>Responsive Apache Maven skin to reflow the standard Maven site with a modern feel</slogan>
+            <titleTemplate>%2$s | %1$s</titleTemplate>
+            <header>data-bs-theme="dark"</header>
+            <!-- Use Table of Contents at the top of the page (max 6 elements) -->
+            <toc theme="light">top</toc>
+            <tocTopMax>6</tocTopMax>
+            <!-- Include the documentation and tools in the top navigation (in addition to links) -->
+            <topNav>Documentation|Tools|Contribute</topNav>
+            <!-- ───────────────────────────────────────────────────────────────── -->
+            <!-- Split menus in the bottom navigation -->
+            <bottomNav maxSpan="9">
+                <column>Project Links|Tools|Contribute|Documentation</column>
+                <column>Developer Reports</column>
+                <column>Project Information</column>
+                <column>Reports</column>
+            </bottomNav>
+            <bottomDescription quote="false"><![CDATA[<div>
+            <span class="color-highlight">ABA Validator</span> This is a very good project doing interesting and valuable things.
+            <a href="http://getbootstrap.com" title="Bootstrap">Bootstrap</a>.
+            It allows various structural and stylistic customizations to create a
+            modern-looking Maven-generated website.
+
+
+            <div class="m-1">
+              <a href="https://github.com/dcarda/aba.route.validator/" class="p-1 text-secondary" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="mailto:HireDan@CardaTechnologies.com" class="p-1 text-secondary"><i class="fas fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/danielcarda" class="p-1 text-secondary" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>]]></bottomDescription>
+            <pages>
+                <index project="reflow-parent">
+                    <!-- Override the title -->
+                    <titleTemplate>Reflow Maven Skin</titleTemplate>
+                    <!-- no breadcrumbs on the main index page -->
+                    <breadcrumbs>false</breadcrumbs>
+                    <!-- no ToC on the main index page -->
+                    <toc>false</toc>
+                    <markPageHeader>false</markPageHeader>
+                    <sections>
+                        <carousel />
+                        <columns>2</columns>
+                        <body />
+                        <sidebar />
+                    </sections>
+                </index>
+                <contribute>
+                    <breadcrumbs>false</breadcrumbs>
+                </contribute>
+                <!-- Disable source highlighting for Maven reports -->
+                <source-repository>
+                    <highlightJs>false</highlightJs>
+                </source-repository>
+                <issue-tracking>
+                    <highlightJs>false</highlightJs>
+                    <toc>false</toc>
+                </issue-tracking>
+                <license>
+                    <highlightJs>false</highlightJs>
+                    <toc>false</toc>
+                </license>
+                <!-- Disable ToC for some Maven reports -->
+                <project-info>
+                    <toc>false</toc>
+                </project-info>
+                <github-report>
+                    <toc>false</toc>
+                </github-report>
+                <dependencies>
+                    <tocTopMax>4</tocTopMax>
+                </dependencies>
+            </pages>
+            <googleAnalytics>
+                <useGtag>true</useGtag>
+            </googleAnalytics>
+        </reflowSkin>
+        <gitHub combine.children="append">
+            <projectId>olamy/reflow-maven-skin</projectId>
+            <ribbonOrientation>right</ribbonOrientation>
+            <ribbonColor>gray</ribbonColor>
+        </gitHub>
+    </custom>
+    <!--  <googleAnalyticsAccountId>G-7V4CRXTEYB</googleAnalyticsAccountId>-->
+    <!-- ───────────────────────────────────────────────────────────────────── -->
+    <body>
+        <!-- Add a rel to Google profile for all pages -->
+        <links>
+            <!--      <item name="Download" href="skin/index.html#Usage" />-->
+            <item name="GitHub project" href="https://github.com/dcarda/aba.route.validator/" />
+            <item name="Release notes" href="https://github.com/dcarda/aba.route.validator/releases" />
+        </links>
+        <breadcrumbs>
+            <item name="Daniel Carda" href="/" />
+        </breadcrumbs>
+        <menu name="Project Links" inherit="top">
+            <item name="About" href="./" />
+            <item name="GitHub project" href="https://github.com/dcarda/aba.route.validator/" />
+            <item name="Release notes" href="https://github.com/dcarda/aba.route.validator/releases" />
+        </menu>
+        <menu name="Tools" inherit="bottom">
+            <item name="Reflow Skin" href="https://olamy.github.io/reflow-maven-skin/" />
+        </menu>
+        <menu name="Contribute" inherit="bottom">
+            <item name="Buy Me Beer" href="contribute.html" />
+            <item name="Issues" href="https://github.com/dcarda/aba.route.validator/issues/" />
+        </menu>
+        <!--    <menu name="Maven documentation" ref="reports" inherit="bottom"   />-->
+        <!--  Generated Developer Reports   ================================== -->
+        <menu name="Developer Reports" inherit="bottom">
+            <item name="Checkstyle Report" href="checkstyle.html" />
+            <item name="CPD Report" href="cpd.html" />
+            <item name="JaCoCo Coverage" href="jacoco/index.html" />
+            <item name="JavaDocs Report" href="apidocs/index.html" />
+            <item name="JavaNCSS Report" href="javancss.html" />
+<!--            <item name="JDepend Metrics" href="jdepend-report.html" />-->
+
+            <item name="JXR XRef Report" href="xref/index.html" />
+
+            <item name="PMD Report" href="pmd.html" />
+            <item name="Spotbugs Report" href="spotbugs.html" />
+            <item name="Surefire Report" href="surefire-report.html" />
+            <item name="Tag List Report" href="taglist.html" />
+            <item name="Vulnerability Report" href="dependency-check-report.html" />
+
+            <!--  <item name="SCM Activity" href="" collapse="false"  >-->
+                <item name="-----------------------------" />
+                <item name="Change Log Report" href="changelog.html" />
+                <item name="File Activity Report" href="file-activity.html" />
+                <item name="Developer Report" href="dev-activity.html" />
+            <!--  </item>-->
+
+            <!--  <item name="Versions Report"  collapse="false" >  -->
+                <item name="-----------------------------" />
+                <item name="Dependency Updates Report" href="dependency-updates-report.html" />
+                <item name="Plugin Updates Report" href="plugin-updates-report.html" />
+                <item name="Property Updates Report" href="property-updates-report.html" />
+            <!--  </item>  -->
+
+        </menu>
+        <!--  Project Information   ========================================== -->
+        <menu name="Project Information">
+            <!--              NOT WORKING-->
+            <item name="About" href="http://dcarda.github.io/aba.route.validator/" />
+            <item name="Summary" href="summary.html" />
+            <item name="Dependencies" href="dependencies.html" />
+            <item name="Dependency Convergence" href="dependency-convergence.html" />
+            <item name="Dependency Information" href="dependency-info.html" />
+            <item name="Dependency Management" href="dependency-management.html" />
+            <item name="Issue Management" href="https://github.com/dcarda/aba.route.validator/issues" />
+            <item name="Plugins" href="plugins.html" />
+            <item name="Plugin Management" href="plugin-management.html" />
+            <item name="Source Repository" href="https://github.com/dcarda/aba.route.validator" />
+            <!--              NEEDS IMPROVEMENT-->
+            <item name="Licenses" href="licenses.html" />
+            <item name="3d Party Licenses" href="third-party-report.html" />
+            <item name="Team" href="team.html" />
+        </menu>
+    </body>
+</project>
