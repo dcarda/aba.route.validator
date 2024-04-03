@@ -103,20 +103,21 @@ https://opensource.org/license/apache-2-0/
 
 Show your support!
 
-Bitcoin Address
+
+Bitcoin Address:  
 35c1dhcpi5kJ6kiY6Pg9HCpXYSQeiZqezD
 
-![](../resources/images/BitcoinAddress_QRCode.png)
+![Bitcoin](images/BitcoinAddress_QRCode.png)
 
-Shiba Inu Address
+Shiba Inu Address:  
 0xE108399fA5313EB545937694ACb4ba7F5b0467a8
 
-![](../resources/images/ShibaInuAddress_QRCode.png)
+![](images/ShibaInuAddress_QRCode.png)
 
-Ethereum Address
+Ethereum Address:  
 0x636BBd19Db23e890A9cE2aef0Da47C4f0Af73c78
 
-![](../resources/images/EthereumAddress_ARCode.png)
+![](images/EthereumAddress_ARCode.png)
 
 
 
