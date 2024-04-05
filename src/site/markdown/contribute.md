@@ -21,28 +21,6 @@ Show your support!
 
 
 
-Bitcoin Address:  
-35c1dhcpi5kJ6kiY6Pg9HCpXYSQeiZqezD
-
-![Bitcoin](images/BitcoinAddress_QRCode.png)
-
-Shiba Inu Address:  
-0xE108399fA5313EB545937694ACb4ba7F5b0467a8
-
-![](images/ShibaInuAddress_QRCode.png)
-
-Ethereum Address:  
-0x636BBd19Db23e890A9cE2aef0Da47C4f0Af73c78
-
-![](images/EthereumAddress_ARCode.png)
-
-
-
-
-
-s
-
-
 Reflow skin is an open-source project and all contributions are welcome to assist with its
 development and maintenance. The skin originated as a new skin for the upcoming
 [Community Z Tools][czt] release, which uses Maven site for its documentation.
