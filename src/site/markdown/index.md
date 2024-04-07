@@ -120,5 +120,7 @@ Ethereum Address:
 ![](images/EthereumAddress_ARCode.png)
 
 
+----------------------------------------------------------------------------
+About the developer  👋 
 
-
+talk about myself

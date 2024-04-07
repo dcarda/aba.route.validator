@@ -34,7 +34,7 @@
             <!--                <name><![CDATA[<span class="color-highlight">ABA Transit Routing Validator</span>]]></name>-->
             <!--                <href>http://dcarda.github.io/aba.route.validator/</href>-->
             <!--            </brand>-->
-            <slogan>Responsive Apache Maven skin to reflow the standard Maven site with a modern feel</slogan>
+            <slogan>Example application with great reporting!</slogan>
             <titleTemplate>%2$s | %1$s</titleTemplate>
             <header>data-bs-theme="dark"</header>
             <!-- Use Table of Contents at the top of the page (max 6 elements) -->
@@ -78,7 +78,7 @@
             <pages>
                 <index project="reflow-parent">
                     <!-- Override the title -->
-                    <titleTemplate>Reflow Maven Skin</titleTemplate>
+                    <titleTemplate>ABA Validator Project</titleTemplate>
                     <!-- no breadcrumbs on the main index page -->
                     <breadcrumbs>false</breadcrumbs>
                     <!-- no ToC on the main index page -->
@@ -143,6 +143,7 @@
             <item name="About" href="https://dcarda.github.io/aba.route.validator/" />
             <item name="GitHub project" href="https://github.com/dcarda/aba.route.validator/" />
             <item name="Release notes" href="https://github.com/dcarda/aba.route.validator/releases" />
+            <item name="Copyright/License" href="copyright.html" />
         </menu>
         <menu name="Tools" inherit="bottom">
             <item name="Reflow Skin" href="https://olamy.github.io/reflow-maven-skin/" />
