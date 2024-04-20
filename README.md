@@ -103,23 +103,15 @@ Have a bug or a feature request? Please create an issue and I'll see what I can 
 + http://www.danielcarda.net/
 + https://github.com/dcarda/aba.route.validator
 
-## Copyright and license
+----------------------------------------------------------------------------
+##  Copyright
 
-Copyright (c) 2015 - CardaTechnologies, LLC
+(c) 2015-2024  Daniel Carda <CodeWarrior@CardaTechnologies.com>\
+All rights reserved.
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this work except in compliance with the License.
-You may obtain a copy of the License in the LICENSE file, or at:
+<!-- End:  Copyright -->
 
-   http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
-
+----------------------------------------------------------------------------
 
 ##  License
 
@@ -149,7 +141,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.This is how you dropdown.
 ```
 </details>
 
-
+<!-- End:  License -->
 
 ----------------------------------------------------------------------------
 ##  Donate
@@ -163,7 +155,6 @@ talk about myself
 
 ----
 
-<!-- License + Copyright -->
 <p align="center">
   <i>© <a href="https://aliciasykes.com">Daniel Carda </a>20156-2024</i>\
   <i>Licensed under <a href="https://gist.github.com/Lissy93/143d2ee01ccc5c052a17">MIT</a></i>
