@@ -160,7 +160,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.This is how you dropdown.
 ##  Donate
 Donations are always welcome!  Help me out this this and other projects!
 
-[Show your support!](DONATE.md)
+[Show your support!](.github/donate.md)
 
 <!-- End:  Donate -->
 
