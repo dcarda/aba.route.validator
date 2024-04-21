@@ -16,7 +16,7 @@ routing transit number (ABA RTN) just to make sure it *might* be authentic.
 
 The ABA routing transit number (ABA RTN) is a nine digit code used in the United States to identify a financial institution. All financial institutions in the United States will have at least one ABA RTN number. The ABA routing transit number was created in 1910 by the American Bankers Association. The number is used by the Federal Reserve Banks to process Fedwire fund transfers. It is also used by the Automated Clearing House to process automated transfers, bill payments, and deposits.
 
-The ABA RTN number can usually (but not always) be found on the bottom left-hand corner of your personal check. 
+The ABA RTN number can usually (but not always) be found on the bottom left-hand corner of your personal check.
 
 The last digit of the ABA number is actually called a “check digit”. It’s a crude hash of the first eight digits and provides an initial check for the numbers authenticity.
 
@@ -24,14 +24,14 @@ More information about the ABA routing transit number can be found in the Book o
 <p>http://en.wikipedia.org/wiki/Routing_transit_number</p>
 
 
-##Technology Stack <a name="TechStack"></a>
+## Technology Stack <a name="TechStack"></a>
 
 The following software is required to build this project:
 
 | Software | Version | Download                                                                        |
 |:--------:|---------|:--------------------------------------------------------------------------------|
-|   Java   | 17.0.9  | https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html  |
-|  Maven   | 3.9.6   | https://maven.apache.org/download.cgi                                           |
+|  ![JAVA](https://img.shields.io/badge/_-JAVA-B07219.svg?style=for-the-badge) | 17.0.9  | https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html  |
+| ![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)  | 3.9.6   | https://maven.apache.org/download.cgi                                           |
 
 
 ### How To Include This Module In Your Project
@@ -96,6 +96,8 @@ Have a bug or a feature request? Please create an issue and I'll see what I can 
 
 + https://github.com/dcarda/aba.route.validator/issues
 
+<!--  ───────────────────────────────────────────────────────────────────────────  -->
+
 ## Author
 
 **Daniel Carda - CardaTechnologies, LLC**
@@ -103,15 +105,22 @@ Have a bug or a feature request? Please create an issue and I'll see what I can 
 + http://www.danielcarda.net/
 + https://github.com/dcarda/aba.route.validator
 
-----------------------------------------------------------------------------
+About the developer  👋
+
+talk about myself
+
+<!-- End:  Author -->
+<!--  ───────────────────────────────────────────────────────────────────────────  -->
+
+
+
 ##  Copyright
 
 (c) 2015-2024  Daniel Carda <CodeWarrior@CardaTechnologies.com>\
 All rights reserved.
 
 <!-- End:  Copyright -->
-
-----------------------------------------------------------------------------
+<!--  ───────────────────────────────────────────────────────────────────────────  -->
 
 ##  License
 
@@ -122,6 +131,10 @@ All rights reserved.
 <summary>This project is licensed under terms of the MIT license.</summary>
 
 ```
+The MIT License (MIT)
+
+Copyright (c) Daniel Carda <CodeWarrior@CardaTechnologies.com>
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -142,44 +155,25 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.This is how you dropdown.
 </details>
 
 <!-- End:  License -->
+<!--  ───────────────────────────────────────────────────────────────────────────  -->
 
-----------------------------------------------------------------------------
 ##  Donate
-[Show your support!  Help me out with this project!](contribute.html)
+Donations are always welcome!  Help me out this this and other projects!
 
+[Show your support!](contribute.html)
+
+<!-- End:  Donate -->
+
+<!--  ───────────────────────────────────────────────────────────────────────────  -->
 ----------------------------------------------------------------------------
-About the developer  👋
-
-talk about myself
-
-
-----
-
-<p align="center">
-  <i>© <a href="https://aliciasykes.com">Daniel Carda </a>20156-2024</i>\
-  <i>Licensed under <a href="https://gist.github.com/Lissy93/143d2ee01ccc5c052a17">MIT</a></i>
-
-
-[//]: # (<i>Â© <a href="https://aliciasykes.com">Alicia Sykes</a> 2024</i><br>)
-
-[//]: # (<i>Licensed under <a href="https://gist.github.com/Lissy93/143d2ee01ccc5c052a17">MIT</a></i><br>)
-[//]: # (<a href="https://github.com/lissy93"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" /></a> )
-
-[//]: # (<sup>Thanks for visiting :&#41;</sup>)
-
-
+<p  align="center">
+  <i>© <a href="https://danielcarda.net/">Daniel Carda</a> 2015-2024</i><br>
+  <i>Licensed under <a href="https://choosealicense.com/licenses/mit/">MIT</a></i><br>
+  <a href="https://github.com/lissy93">
+  <img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" /></a><br>
+  <sup>Thanks for visiting :)</sup>
 </p>
 
-
-[//]: # (<p  align="center">)
-
-[//]: # (  <i>Â© <a href="https://aliciasykes.com">Alicia Sykes</a> 2024</i><br>)
-
-[//]: # (  <i>Licensed under <a href="https://gist.github.com/Lissy93/143d2ee01ccc5c052a17">MIT</a></i><br>)
-
-[//]: # (  <a href="https://github.com/lissy93"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" /></a><br>)
-
-[//]: # (  <sup>Thanks for visiting :&#41;</sup>)
-
-[//]: # (</p>)
+<!-- End:  Thanks for visiting -->
+<!--  ───────────────────────────────────────────────────────────────────────────  -->
 
