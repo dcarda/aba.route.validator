@@ -122,11 +122,11 @@
         <!--  Plugins                                                             -->
         <version.compiler.plugin>3.13.0</version.compiler.plugin>
         <version.git.commit.id.plugin>4.9.10</version.git.commit.id.plugin>
-        <version.jar.plugin>3.3.0</version.jar.plugin>
+        <version.jar.plugin>3.4.1</version.jar.plugin>
         <version.maven.antrun.plugin>3.1.0</version.maven.antrun.plugin>
         <version.maven.clean.plugin>3.3.2</version.maven.clean.plugin>
-        <version.maven.deploy.plugin>3.1.1</version.maven.deploy.plugin>
-        <version.maven.install.plugin>3.1.1</version.maven.install.plugin>
+        <version.maven.deploy.plugin>3.1.2</version.maven.deploy.plugin>
+        <version.maven.install.plugin>3.1.2</version.maven.install.plugin>
         <version.maven.invoker.plugin>3.6.1</version.maven.invoker.plugin>
         <version.maven.plugin.plugin>3.12.0</version.maven.plugin.plugin>
         <version.maven.resources.plugin>3.3.1</version.maven.resources.plugin>
@@ -141,8 +141,13 @@
         <version.surefire.plugin>2.22.2</version.surefire.plugin>
 
         <!-- Testing Plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-        <version.junit.jupiter>5.10.2</version.junit.jupiter>
-        <version.junit.platform>1.10.2</version.junit.platform>
+<!--        <version.junit.jupiter>5.10.2</version.junit.jupiter>-->
+        <version.junit.jupiter>5.11.0-M1</version.junit.jupiter>
+
+
+
+<!--        <version.junit.platform>1.10.2</version.junit.platform>-->
+        <version.junit.platform>1.11.0-M1</version.junit.platform>
 
     </properties>
 
