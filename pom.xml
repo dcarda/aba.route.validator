@@ -128,7 +128,7 @@
         <version.maven.deploy.plugin>3.1.2</version.maven.deploy.plugin>
         <version.maven.install.plugin>3.1.2</version.maven.install.plugin>
         <version.maven.invoker.plugin>3.6.1</version.maven.invoker.plugin>
-        <version.maven.plugin.plugin>3.12.0</version.maven.plugin.plugin>
+        <version.maven.plugin.plugin>3.13.0</version.maven.plugin.plugin>
         <version.maven.resources.plugin>3.3.1</version.maven.resources.plugin>
 
         <!-- Reporting Plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙······∙∙∙∙∙∙∙  -->
@@ -743,7 +743,7 @@
                 <version.sourceforge.pmd.java>6.55.0</version.sourceforge.pmd.java>
                 <version.sourceforge.pmd.javascript>6.55.0</version.sourceforge.pmd.javascript>
                 <version.sourceforge.pmd.jsp>6.55.0</version.sourceforge.pmd.jsp>
-                <version.spotbugs.reporting.plugin>4.8.3.1</version.spotbugs.reporting.plugin>
+                <version.spotbugs.reporting.plugin>4.8.5.0</version.spotbugs.reporting.plugin>
                 <version.surefire.reports.plugin>3.2.5</version.surefire.reports.plugin>
                 <version.taglist.report.plugin>3.0.0</version.taglist.report.plugin>
             </properties>
