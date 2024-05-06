@@ -2,24 +2,20 @@
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.ErrorCodes.java
  * Date:   2020/12/22
  * ---------------------------------------------------------------------------------------
+ * Copyright:  Daniel Carda
+ *             All Rights Reserved
+ * ---------------------------------------------------------------------------------------
  *
- *  License: Apache 2.0
+ *  License: MIT license
  *
- *  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use
- *  this file except in compliance with the License.
- *
- *  You may obtain a copy of the License at
- *
- *    http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software distributed under
- *  the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS
- *  OF ANY KIND, either express or implied including the implied warranties of
- *  merchantability and fitness for a particular purpose.
- *
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
+ * THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+ * INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANT ABILITY, FITNESS FOR A
+ * PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+ * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+ * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
+
 package com.cardatechnologies.utils.validators.abaroutevalidator;
 
 /**
@@ -39,13 +35,13 @@ package com.cardatechnologies.utils.validators.abaroutevalidator;
 &lt;/pre&gt;
  * &lt;hr&gt;
  */
-<span class="fc" id="L42">public enum ErrorCodes {</span>
-<span class="fc" id="L43">    ABA_1000(-1000, &quot;com.cardatechnologies.aba.number.null&quot;),</span>
-<span class="fc" id="L44">    ABA_1001(-1001, &quot;com.cardatechnologies.aba.number.blank&quot;),</span>
-<span class="fc" id="L45">    ABA_1002(-1002, &quot;com.cardatechnologies.aba.number.too.short&quot;),</span>
-<span class="fc" id="L46">    ABA_1003(-1003, &quot;com.cardatechnologies.aba.number.too.long&quot;),</span>
-<span class="fc" id="L47">    ABA_1004(-1004, &quot;com.cardatechnologies.aba.number.not.numeric&quot;),</span>
-<span class="fc" id="L48">    ABA_1005(-1005, &quot;com.cardatechnologies.aba.number.failed.federalcheck&quot;);</span>
+<span class="fc" id="L38">public enum ErrorCodes {</span>
+<span class="fc" id="L39">    ABA_1000(-1000, &quot;com.cardatechnologies.aba.number.null&quot;),</span>
+<span class="fc" id="L40">    ABA_1001(-1001, &quot;com.cardatechnologies.aba.number.blank&quot;),</span>
+<span class="fc" id="L41">    ABA_1002(-1002, &quot;com.cardatechnologies.aba.number.too.short&quot;),</span>
+<span class="fc" id="L42">    ABA_1003(-1003, &quot;com.cardatechnologies.aba.number.too.long&quot;),</span>
+<span class="fc" id="L43">    ABA_1004(-1004, &quot;com.cardatechnologies.aba.number.not.numeric&quot;),</span>
+<span class="fc" id="L44">    ABA_1005(-1005, &quot;com.cardatechnologies.aba.number.failed.federalcheck&quot;);</span>
 
     private final int    errorCode;
     private final String errorMnemonic;
@@ -57,10 +53,10 @@ package com.cardatechnologies.utils.validators.abaroutevalidator;
      * @param errorMnemonic
      */
     ErrorCodes( int    errorCode,
-<span class="fc" id="L60">                String errorMnemonic ) {</span>
-<span class="fc" id="L61">        this.errorCode     = errorCode;</span>
-<span class="fc" id="L62">        this.errorMnemonic = errorMnemonic;</span>
-<span class="fc" id="L63">    }</span>
+<span class="fc" id="L56">                String errorMnemonic ) {</span>
+<span class="fc" id="L57">        this.errorCode     = errorCode;</span>
+<span class="fc" id="L58">        this.errorMnemonic = errorMnemonic;</span>
+<span class="fc" id="L59">    }</span>
 
     /**
      * Method: getErrorCode
@@ -68,7 +64,7 @@ package com.cardatechnologies.utils.validators.abaroutevalidator;
      * @return int
      */
     public int getErrorCode() {
-<span class="fc" id="L71">        return errorCode;</span>
+<span class="fc" id="L67">        return errorCode;</span>
     }
 
     /**
@@ -77,29 +73,11 @@ package com.cardatechnologies.utils.validators.abaroutevalidator;
      * @return String
      */
     public String getErrorMnemonic() {
-<span class="fc" id="L80">        return errorMnemonic;</span>
+<span class="fc" id="L76">        return errorMnemonic;</span>
     }
 }
 
 /* ---------------------------------------------------------------------------------------
- *  License: Apache 2.0
- *
- *  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use
- *  this file except in compliance with the License.
- *
- *  You may obtain a copy of the License at
- *
- *    http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software distributed under
- *  the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS
- *  OF ANY KIND, either express or implied including the implied warranties of
- *  merchantability and fitness for a particular purpose.
- *
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
- *
- * ---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.ErrorCodes.java
  * Date:   2020/12/22
  * --------------------------------------------------------------------------------------- */
