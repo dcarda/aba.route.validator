@@ -127,14 +127,18 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.This is how you dropdown.
 
 
 ----------------------------------------------------------------------------
-##  Donate
-[Show your support!  Help me out with this project!](contribute.html)
+Donations are always welcome!  Help me out this this and other projects!
+
+[Show your support!](.github/donate.md)
+
+<!-- End:  Donate -->
 
 ----------------------------------------------------------------------------
-About the developer  👋 
+## About the Developer  👋
 
-talk about myself
+Follow this link to learn more about me:  [Daniel Carda](https://github.com/dcarda)
 
+<!-- End:  Developer  -->
 
 ----
 

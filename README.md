@@ -111,18 +111,18 @@ Have a bug or a feature request? Please create an issue and I'll see what I can 
 + http://www.danielcarda.net/
 + https://github.com/dcarda/aba.route.validator
 
-About the developer  👋
+## About the Developer  👋
 
-talk about myself
+Follow this link to learn more about me:  [Daniel Carda](https://github.com/dcarda)
 
-<!-- End:  Author -->
+<!-- End:  Developer  -->
 <!--  ───────────────────────────────────────────────────────────────────────────  -->
 
 
 
 ##  Copyright
 
-(c) 2015-2024  Daniel Carda <CodeWarrior@CardaTechnologies.com>\
+(c) 2015-2024  Daniel Carda <GoneBy2025@CardaTechnologies.com>\
 All rights reserved.
 
 <!-- End:  Copyright -->
