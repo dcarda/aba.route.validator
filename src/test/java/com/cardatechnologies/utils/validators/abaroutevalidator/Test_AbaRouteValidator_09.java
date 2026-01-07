@@ -2,24 +2,20 @@
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.Test_AbaRouteValidator_09.java
  * Date:   2024/02/11
  * ---------------------------------------------------------------------------------------
+ * Copyright:  Daniel Carda
+ *             All Rights Reserved
+ * ---------------------------------------------------------------------------------------
  *
- *  License: Apache 2.0
+ *  License: MIT license
  *
- *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use
- *  this file except in compliance with the License.
- *
- *  You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software distributed under
- *  the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
- *  OF ANY KIND, either express or implied including the implied warranties of
- *  merchantability and fitness for a particular purpose.
- *
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+ * INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANT ABILITY, FITNESS FOR A
+ * PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+ * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+ * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
+
 package com.cardatechnologies.utils.validators.abaroutevalidator;
 
 //~--- non-JDK imports --------------------------------------------------------
@@ -46,17 +42,17 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
  * <br>
  * <br><b>Maintenance History:</b>
  * <br>
-<pre>
-    yyyy mm dd  Who                       Description
-    ----------  ------------------------  ----------------------------------------------------
-    2015/01/15  Daniel Carda              Initial Module Creation...
-    2020/12/10  Daniel Carda              Updated unit tests.
-    2020/12/22  Daniel Carda              Improved unit test results.
-    2020/12/23  Daniel Carda              Updated module to use JUint Jupiter.
-    2021/05/14  Daniel Carda              Added @Rule and TraceUnitExtension.
-    2021/08/07  Daniel Carda              Improved class header JavaDoc.
-    2024/02/11  Daniel Carda              Updated to run with JUnit 5.
-</pre>
+ * <pre>
+ *   yyyy mm dd  Who                       Description
+ *   ----------  ------------------------  ----------------------------------------------------
+ *   2015/01/15  Daniel Carda              Initial Module Creation...
+ *   2020/12/10  Daniel Carda              Updated unit tests.
+ *   2020/12/22  Daniel Carda              Improved unit test results.
+ *   2020/12/23  Daniel Carda              Updated module to use JUint Jupiter.
+ *   2021/05/14  Daniel Carda              Added @Rule and TraceUnitExtension.
+ *   2021/08/07  Daniel Carda              Improved class header JavaDoc.
+ *   2024/02/11  Daniel Carda              Updated to run with JUnit 5.
+ * </pre>
  * <hr>
  */
 @ExtendWith({ TraceUnitExtension.class, TestWatcherExtension.class })
@@ -70,9 +66,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17550_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1z3105213" );
@@ -99,9 +93,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17551_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -126,12 +117,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17552_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�105394" );
+            AbaRouteValidator.validate( "10?105394" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -155,9 +144,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17553_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -182,9 +168,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17554_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "103105&46" );
@@ -211,9 +195,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17555_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -238,9 +219,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17556_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10310548K" );
@@ -267,9 +246,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17557_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -294,9 +270,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17558_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "13105530" );
@@ -323,9 +297,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17559_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -350,9 +321,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17560_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10310!637" );
@@ -379,9 +348,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17561_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -406,9 +372,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17562_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10?105640" );
@@ -435,9 +399,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17563_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -462,9 +423,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17564_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1031056?5" );
@@ -491,9 +450,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17565_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -518,12 +474,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17566_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1031�5831" );
+            AbaRouteValidator.validate( "1031?5831" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -547,9 +501,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17567_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -574,9 +525,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17568_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "103105?86" );
@@ -603,9 +552,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17569_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -630,9 +576,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17570_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1.3106092" );
@@ -659,9 +603,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17571_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -686,9 +627,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17572_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10310l160" );
@@ -715,9 +654,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17573_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -742,12 +678,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17574_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10310�186" );
+            AbaRouteValidator.validate( "10310?186" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -771,9 +705,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17575_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -798,12 +729,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17576_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10310�225" );
+            AbaRouteValidator.validate( "10310?225" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -827,9 +756,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17577_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -854,9 +780,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17578_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "13106283" );
@@ -883,9 +807,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17579_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -910,9 +831,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17580_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10310677" );
@@ -939,9 +858,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17581_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -966,12 +882,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17582_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "103106�42" );
+            AbaRouteValidator.validate( "103106?42" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -995,9 +909,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17583_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -1022,12 +933,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17584_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "103�06775" );
+            AbaRouteValidator.validate( "103?06775" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -1051,9 +960,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17585_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -1078,9 +984,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17586_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "103106i27" );
@@ -1107,9 +1011,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17587_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -1134,9 +1035,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17588_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10310684}" );
@@ -1163,9 +1062,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17589_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -1190,12 +1086,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17590_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1031�7004" );
+            AbaRouteValidator.validate( "1031?7004" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -1219,9 +1113,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17591_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -1246,9 +1137,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17592_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -1276,9 +1164,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17593_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -1303,9 +1188,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17594_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "103s07392" );
@@ -1332,9 +1215,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17595_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -1359,9 +1239,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17596_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1031c7402" );
@@ -1388,9 +1266,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17597_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -1415,9 +1290,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17598_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10310M415" );
@@ -1444,9 +1317,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17599_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -1471,9 +1341,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17600_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10307444" );
@@ -1500,9 +1368,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17601_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -1527,12 +1392,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17602_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1031074�6" );
+            AbaRouteValidator.validate( "1031074?6" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -1556,9 +1419,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17603_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -1583,9 +1443,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17604_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10307622" );
@@ -1612,9 +1470,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17605_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -1639,12 +1494,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17606_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1031�7635" );
+            AbaRouteValidator.validate( "1031?7635" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -1668,9 +1521,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17607_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -1695,9 +1545,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17608_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10B107839" );
@@ -1724,9 +1572,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17609_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -1751,9 +1596,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17610_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?3107897" );
@@ -1780,9 +1623,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17611_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -1807,9 +1647,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17612_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10310804?" );
@@ -1836,9 +1674,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17613_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -1863,9 +1698,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17614_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10310824" );
@@ -1892,9 +1725,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17615_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -1919,9 +1749,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17616_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10T108443" );
@@ -1948,9 +1776,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17617_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -1975,12 +1800,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17618_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "103�08605" );
+            AbaRouteValidator.validate( "103?08605" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -2004,9 +1827,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17619_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -2031,9 +1851,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17620_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10310862?" );
@@ -2060,9 +1878,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17621_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -2087,9 +1902,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17622_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -2117,9 +1929,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17623_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -2144,12 +1953,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17624_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1031�8757" );
+            AbaRouteValidator.validate( "1031?8757" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -2173,9 +1980,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17625_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -2200,9 +2004,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17626_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10310I015" );
@@ -2229,9 +2031,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17627_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -2256,9 +2055,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17628_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10:109031" );
@@ -2285,9 +2082,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17629_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -2312,9 +2106,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17630_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10310912B" );
@@ -2341,9 +2133,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17631_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -2368,9 +2157,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17632_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1031092?6" );
@@ -2397,9 +2184,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17633_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -2424,12 +2208,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17634_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�3109264" );
+            AbaRouteValidator.validate( "1?3109264" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -2453,9 +2235,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17635_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -2480,12 +2259,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17636_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�109345" );
+            AbaRouteValidator.validate( "10?109345" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -2509,9 +2286,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17637_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -2536,9 +2310,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17638_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10310374" );
@@ -2565,9 +2337,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17639_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -2592,9 +2361,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17640_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1031:9390" );
@@ -2621,9 +2388,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17641_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -2648,12 +2412,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17642_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10310950�" );
+            AbaRouteValidator.validate( "10310950?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -2677,9 +2439,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17643_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -2704,9 +2463,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17644_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10310c523" );
@@ -2733,9 +2490,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17645_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -2760,9 +2514,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17646_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10319581" );
@@ -2789,9 +2541,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17647_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -2816,9 +2565,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17648_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "103109\14" );
@@ -2845,9 +2592,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17649_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -2872,9 +2616,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17650_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10310977," );
@@ -2901,9 +2643,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17651_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -2928,9 +2667,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17652_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1031?9840" );
@@ -2957,9 +2694,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17653_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -2984,9 +2718,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17654_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10310v882" );
@@ -3013,9 +2745,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17655_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -3040,12 +2769,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17656_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1031�0046" );
+            AbaRouteValidator.validate( "1031?0046" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -3069,9 +2796,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17657_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -3096,12 +2820,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17658_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�110237" );
+            AbaRouteValidator.validate( "10?110237" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -3125,9 +2847,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17659_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -3152,12 +2871,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17660_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�3110305" );
+            AbaRouteValidator.validate( "1?3110305" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -3181,9 +2898,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17661_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -3208,9 +2922,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17662_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1031103L6" );
@@ -3237,9 +2949,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17663_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -3264,12 +2973,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17664_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�3110392" );
+            AbaRouteValidator.validate( "1?3110392" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -3293,9 +3000,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17665_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -3320,9 +3024,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17666_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10311)428" );
@@ -3349,9 +3051,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17667_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -3376,12 +3075,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17668_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1031�0813" );
+            AbaRouteValidator.validate( "1031?0813" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -3405,9 +3102,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17669_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -3432,12 +3126,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17670_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�3110907" );
+            AbaRouteValidator.validate( "1?3110907" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -3461,9 +3153,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17671_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -3488,9 +3177,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17672_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10|111058" );
@@ -3517,9 +3204,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17673_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -3531,7 +3215,7 @@ public class Test_AbaRouteValidator_09 {
             // This should not have happened
             fail( e.getClass().getSimpleName() + "\n" + e.getMessage() );
 
-            // There's nothing left to do.  Just return…
+            // There's nothing left to do.  Just return
             return;
         }
 
@@ -3547,9 +3231,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17674_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1031?1087" );
@@ -3576,9 +3258,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17675_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -3603,12 +3282,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17676_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "103111�55" );
+            AbaRouteValidator.validate( "103111?55" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -3632,9 +3309,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17677_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -3659,9 +3333,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17678_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "103+11197" );
@@ -3688,9 +3360,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17679_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -3715,9 +3384,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17680_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10311252" );
@@ -3744,9 +3411,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17681_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -3771,9 +3435,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17682_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "103111(62" );
@@ -3800,9 +3462,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17683_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -3827,9 +3486,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17684_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -3857,9 +3513,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17685_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -3884,9 +3537,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17686_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "103111?50" );
@@ -3913,9 +3564,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17687_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -3940,12 +3588,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17688_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10311�744" );
+            AbaRouteValidator.validate( "10311?744" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -3969,9 +3615,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17689_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -3996,9 +3639,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17690_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10311184" );
@@ -4025,9 +3666,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17691_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -4052,12 +3690,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17692_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�3111964" );
+            AbaRouteValidator.validate( "1?3111964" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -4081,9 +3717,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17693_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -4108,12 +3741,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17694_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10311197�" );
+            AbaRouteValidator.validate( "10311197?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -4137,9 +3768,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17695_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -4164,9 +3792,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17696_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10311201?" );
@@ -4193,9 +3819,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17697_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -4220,9 +3843,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17698_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10311203?" );
@@ -4249,9 +3870,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17699_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -4276,12 +3894,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17700_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10311207�" );
+            AbaRouteValidator.validate( "10311207?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -4305,9 +3921,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17701_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -4332,12 +3945,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17702_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1031121�2" );
+            AbaRouteValidator.validate( "1031121?2" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -4361,9 +3972,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17703_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -4388,9 +3996,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17704_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1031121?5" );
@@ -4417,9 +4023,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17705_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -4444,9 +4047,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17706_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10311|248" );
@@ -4473,9 +4074,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17707_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -4500,12 +4098,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17708_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "103�12329" );
+            AbaRouteValidator.validate( "103?12329" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -4529,9 +4125,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17709_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -4556,9 +4149,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17710_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1031123i5" );
@@ -4585,9 +4176,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17711_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -4612,9 +4200,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17712_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10H112358" );
@@ -4641,9 +4227,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17713_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -4668,12 +4251,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17714_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10311238�" );
+            AbaRouteValidator.validate( "10311238?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -4697,9 +4278,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17715_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -4724,12 +4302,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17716_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "103�12426" );
+            AbaRouteValidator.validate( "103?12426" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -4753,9 +4329,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17717_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -4780,9 +4353,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17718_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10Q112439" );
@@ -4809,9 +4380,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17719_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -4836,12 +4404,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17720_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "103112�55" );
+            AbaRouteValidator.validate( "103112?55" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -4865,9 +4431,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17721_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -4892,9 +4455,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17722_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10312507" );
@@ -4921,9 +4482,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17723_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -4948,9 +4506,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17724_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10u112510" );
@@ -4977,9 +4533,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17725_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -5004,12 +4557,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17726_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�112523" );
+            AbaRouteValidator.validate( "10?112523" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -5033,9 +4584,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17727_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -5060,9 +4608,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17728_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -5090,9 +4635,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17729_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -5117,9 +4659,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17730_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10311594" );
@@ -5146,9 +4686,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17731_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -5173,9 +4710,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17732_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "103112y17" );
@@ -5202,9 +4737,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17733_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -5229,12 +4761,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17734_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "103112�20" );
+            AbaRouteValidator.validate( "103112?20" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -5258,9 +4788,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17735_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -5285,9 +4812,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17736_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "103H12659" );
@@ -5314,9 +4839,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17737_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -5341,12 +4863,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17738_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "103112�75" );
+            AbaRouteValidator.validate( "103112?75" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -5370,9 +4890,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17739_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -5397,9 +4914,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17740_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1031127_0" );
@@ -5426,9 +4941,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17741_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -5453,9 +4965,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17742_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1031?2743" );
@@ -5482,9 +4992,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17743_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -5509,12 +5016,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17744_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�3112853" );
+            AbaRouteValidator.validate( "1?3112853" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -5538,9 +5043,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17745_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -5565,9 +5067,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17746_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10311M947" );
@@ -5594,9 +5094,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17747_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -5621,9 +5118,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17748_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10311b976" );
@@ -5650,9 +5145,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17749_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -5677,12 +5169,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17750_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10311�992" );
+            AbaRouteValidator.validate( "10311?992" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -5706,9 +5196,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17751_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -5733,12 +5220,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17752_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�3113001" );
+            AbaRouteValidator.validate( "1?3113001" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -5762,9 +5247,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17753_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -5789,9 +5271,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17754_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -5819,9 +5298,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17755_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -5846,9 +5322,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17756_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10Y113085" );
@@ -5875,9 +5349,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17757_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -5902,9 +5373,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17758_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "103113*11" );
@@ -5931,9 +5400,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17759_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -5958,9 +5424,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17760_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10311312L" );
@@ -5987,9 +5451,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17761_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -6014,9 +5475,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17762_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1031$3153" );
@@ -6043,9 +5502,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17763_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -6070,9 +5526,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17764_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "103113N66" );
@@ -6099,9 +5553,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17765_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -6126,9 +5577,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17766_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10311317?" );
@@ -6155,9 +5604,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17767_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -6182,9 +5628,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17768_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10311318g" );
@@ -6211,9 +5655,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17769_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -6238,9 +5679,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17770_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10311319." );
@@ -6267,9 +5706,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17771_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -6294,9 +5730,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17772_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10113276" );
@@ -6323,9 +5757,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17773_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -6350,9 +5781,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17774_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "103p13302" );
@@ -6379,9 +5808,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17775_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -6406,9 +5832,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17776_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10311331J" );
@@ -6435,9 +5859,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17777_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -6462,9 +5883,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17778_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "143113328" );
@@ -6491,9 +5910,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17779_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -6518,9 +5934,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17780_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1Q3189103" );
@@ -6547,9 +5961,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17781_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -6574,9 +5985,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17782_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10W189307" );
@@ -6603,9 +6012,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17783_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -6630,9 +6036,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17784_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10318k378" );
@@ -6659,9 +6063,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17785_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -6686,9 +6087,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17786_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10318939I" );
@@ -6715,9 +6114,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17787_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -6742,12 +6138,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17788_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1031�9682" );
+            AbaRouteValidator.validate( "1031?9682" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -6771,9 +6165,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17789_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -6798,9 +6189,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17790_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -6828,9 +6216,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17791_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -6855,9 +6240,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17792_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10-901491" );
@@ -6884,9 +6267,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17793_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -6911,9 +6291,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17794_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "103901?69" );
@@ -6940,9 +6318,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17795_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -6967,9 +6342,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17796_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1039027(7" );
@@ -6996,9 +6369,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17797_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -7023,9 +6393,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17798_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "103}03046" );
@@ -7052,9 +6420,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17799_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -7079,9 +6444,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17800_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -7109,9 +6471,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17801_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -7136,9 +6495,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17802_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -7166,9 +6522,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17803_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -7193,9 +6546,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17804_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "103908V69" );
@@ -7222,9 +6573,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17805_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -7249,9 +6597,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17806_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10391248%" );
@@ -7278,9 +6624,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17807_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -7305,9 +6648,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17808_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1039126(8" );
@@ -7334,9 +6675,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17809_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -7361,9 +6699,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17810_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10391272m" );
@@ -7390,9 +6726,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17811_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -7417,9 +6750,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17812_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -7447,9 +6777,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17813_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -7474,9 +6801,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17814_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10391N888" );
@@ -7503,9 +6828,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17815_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -7530,9 +6852,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17816_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10391o914" );
@@ -7559,9 +6879,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17817_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -7586,9 +6903,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17818_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -7616,9 +6930,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17819_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -7643,9 +6954,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17820_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "103912a85" );
@@ -7672,9 +6981,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17821_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -7699,9 +7005,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17822_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "13913227" );
@@ -7728,9 +7032,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17823_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -7755,9 +7056,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17824_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1039133c7" );
@@ -7784,9 +7083,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17825_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -7811,9 +7107,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17826_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1%4000016" );
@@ -7840,9 +7134,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17827_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -7867,9 +7158,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17828_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10?000029" );
@@ -7896,9 +7185,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17829_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -7923,9 +7209,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17830_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10400]058" );
@@ -7952,9 +7236,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17831_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -7979,12 +7260,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17832_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1040�0469" );
+            AbaRouteValidator.validate( "1040?0469" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -8008,9 +7287,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17833_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -8035,9 +7311,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17834_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -8065,9 +7338,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17835_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -8092,9 +7362,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17836_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1_4000841" );
@@ -8121,9 +7389,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17837_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -8148,9 +7413,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17838_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10O000854" );
@@ -8177,9 +7440,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17839_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -8204,12 +7464,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17840_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1040�0870" );
+            AbaRouteValidator.validate( "1040?0870" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -8233,9 +7491,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17841_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -8260,9 +7515,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17842_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1040011r8" );
@@ -8289,9 +7542,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17843_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -8316,9 +7566,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17844_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10400147" );
@@ -8345,9 +7593,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17845_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -8372,9 +7617,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17846_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104y01808" );
@@ -8401,9 +7644,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17847_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -8428,9 +7668,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17848_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1040028l4" );
@@ -8457,9 +7695,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17849_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -8484,9 +7719,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17850_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10u013809" );
@@ -8513,9 +7746,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17851_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -8540,9 +7770,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17852_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104014}09" );
@@ -8569,9 +7797,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17853_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -8596,9 +7821,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17854_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -8626,9 +7848,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17855_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -8653,9 +7872,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17856_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -8683,9 +7899,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17857_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -8710,9 +7923,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17858_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104022g51" );
@@ -8739,9 +7950,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17859_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -8766,9 +7974,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17860_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10408949" );
@@ -8795,9 +8001,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17861_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -8822,9 +8025,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17862_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104089]74" );
@@ -8851,9 +8052,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17863_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -8878,9 +8076,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17864_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104100?83" );
@@ -8907,9 +8103,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17865_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -8934,9 +8127,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17866_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10410945" );
@@ -8963,9 +8154,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17867_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -8990,9 +8178,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17868_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1~4101258" );
@@ -9019,9 +8205,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17869_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -9046,12 +8229,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17870_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "104101�97" );
+            AbaRouteValidator.validate( "104101?97" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -9075,9 +8256,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17871_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -9102,9 +8280,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17872_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10410f465" );
@@ -9131,9 +8307,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17873_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -9158,9 +8331,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17874_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104101?78" );
@@ -9187,9 +8358,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17875_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -9214,9 +8382,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17876_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10410559" );
@@ -9243,9 +8409,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17877_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -9270,12 +8433,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17878_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1041015�5" );
+            AbaRouteValidator.validate( "1041015?5" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -9299,9 +8460,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17879_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -9326,9 +8484,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17880_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1041016#7" );
@@ -9355,9 +8511,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17881_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -9382,9 +8535,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17882_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10410163?" );
@@ -9411,9 +8562,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17883_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -9438,12 +8586,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17884_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�101698" );
+            AbaRouteValidator.validate( "10?101698" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -9467,9 +8613,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17885_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -9494,9 +8637,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17886_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1041}1876" );
@@ -9523,9 +8664,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17887_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -9550,9 +8688,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17888_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1041020E5" );
@@ -9579,9 +8715,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17889_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -9606,12 +8739,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17890_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1041021�5" );
+            AbaRouteValidator.validate( "1041021?5" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -9635,9 +8766,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17891_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -9662,9 +8790,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17892_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10410Y192" );
@@ -9691,9 +8817,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17893_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -9718,9 +8841,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17894_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?4102202" );
@@ -9747,9 +8868,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17895_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -9774,12 +8892,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17896_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1041022�7" );
+            AbaRouteValidator.validate( "1041022?7" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -9803,9 +8919,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17897_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -9830,9 +8943,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17898_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10410230" );
@@ -9859,9 +8970,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17899_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -9886,12 +8994,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17900_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10410235�" );
+            AbaRouteValidator.validate( "10410235?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -9915,9 +9021,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17901_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -9942,9 +9045,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17902_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10_102558" );
@@ -9971,9 +9072,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17903_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -9998,9 +9096,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17904_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10410257:" );
@@ -10027,9 +9123,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17905_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -10054,9 +9147,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17906_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1041E2587" );
@@ -10083,9 +9174,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17907_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -10110,9 +9198,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17908_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10-102613" );
@@ -10139,9 +9225,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17909_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -10166,9 +9249,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17910_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10410262" );
@@ -10195,9 +9276,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17911_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -10222,12 +9300,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17912_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�4102655" );
+            AbaRouteValidator.validate( "1?4102655" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -10251,9 +9327,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17913_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -10278,9 +9351,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17914_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104x02707" );
@@ -10307,9 +9378,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17915_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -10334,9 +9402,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17916_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10410271" );
@@ -10363,9 +9429,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17917_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -10390,12 +9453,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17918_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1041028�5" );
+            AbaRouteValidator.validate( "1041028?5" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -10419,9 +9480,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17919_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -10446,9 +9504,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17920_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1%4102985" );
@@ -10475,9 +9531,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17921_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -10502,9 +9555,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17922_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1041!3081" );
@@ -10531,9 +9582,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17923_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -10558,12 +9606,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17924_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�4103421" );
+            AbaRouteValidator.validate( "1?4103421" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -10587,9 +9633,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17925_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -10614,9 +9657,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17926_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10#103683" );
@@ -10643,9 +9684,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17927_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -10670,9 +9708,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17928_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1041038#9" );
@@ -10699,9 +9735,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17929_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -10726,12 +9759,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17930_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "104�03900" );
+            AbaRouteValidator.validate( "104?03900" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -10755,9 +9786,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17931_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -10782,12 +9810,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17932_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10410475�" );
+            AbaRouteValidator.validate( "10410475?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -10811,9 +9837,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17933_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -10838,9 +9861,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17934_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -10868,9 +9888,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17935_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -10895,9 +9912,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17936_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1041049?3" );
@@ -10924,9 +9939,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17937_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -10951,9 +9963,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17938_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104(05283" );
@@ -10980,9 +9990,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17939_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -11007,12 +10014,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17940_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�4105733" );
+            AbaRouteValidator.validate( "1?4105733" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -11036,9 +10041,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17941_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -11063,9 +10065,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17942_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10106088" );
@@ -11092,9 +10092,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17943_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -11119,9 +10116,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17944_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10410318" );
@@ -11148,9 +10143,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17945_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -11175,9 +10167,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17946_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10~106473" );
@@ -11204,9 +10194,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17947_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -11231,9 +10218,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17948_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10410\509" );
@@ -11260,9 +10245,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17949_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -11287,12 +10269,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17950_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "104�06583" );
+            AbaRouteValidator.validate( "104?06583" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -11316,9 +10296,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17951_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -11343,9 +10320,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17952_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10410$693" );
@@ -11372,9 +10347,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17953_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -11399,9 +10371,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17954_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1041067u6" );
@@ -11428,9 +10398,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17955_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -11455,9 +10422,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17956_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1M4106761" );
@@ -11484,9 +10449,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17957_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -11511,9 +10473,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17958_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10410+800" );
@@ -11540,9 +10500,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17959_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -11567,9 +10524,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17960_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1!4106965" );
@@ -11596,9 +10551,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17961_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -11623,12 +10575,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17962_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�107456" );
+            AbaRouteValidator.validate( "10?107456" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -11652,9 +10602,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17963_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -11679,12 +10626,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17964_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "104�07731" );
+            AbaRouteValidator.validate( "104?07731" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -11708,9 +10653,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17965_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -11735,9 +10677,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17966_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1041 7786" );
@@ -11764,9 +10704,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17967_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -11791,9 +10728,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17968_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?4107825" );
@@ -11820,9 +10755,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17969_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -11847,9 +10779,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17970_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104c08316" );
@@ -11876,9 +10806,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17971_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -11903,9 +10830,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17972_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -11933,9 +10857,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17973_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -11960,9 +10881,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17974_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1041085-7" );
@@ -11989,9 +10908,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17975_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -12016,9 +10932,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17976_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "14108691" );
@@ -12045,9 +10959,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17977_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -12072,9 +10983,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17978_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10410!739" );
@@ -12101,9 +11010,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17979_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -12128,12 +11034,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17980_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "104109�75" );
+            AbaRouteValidator.validate( "104109?75" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -12157,9 +11061,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17981_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -12184,9 +11085,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17982_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10411011d" );
@@ -12213,9 +11112,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17983_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -12240,9 +11136,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17984_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10411*919" );
@@ -12269,9 +11163,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17985_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -12296,12 +11187,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17986_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1041109�2" );
+            AbaRouteValidator.validate( "1041109?2" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -12325,9 +11214,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17987_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -12352,9 +11238,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17988_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10D110977" );
@@ -12381,9 +11265,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17989_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -12408,9 +11289,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17990_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10411565" );
@@ -12437,9 +11316,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17991_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -12464,9 +11340,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17992_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1041117?9" );
@@ -12493,9 +11367,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17993_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -12520,9 +11391,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17994_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10411205?" );
@@ -12549,9 +11418,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17995_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -12576,12 +11442,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17996_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "104112�09" );
+            AbaRouteValidator.validate( "104112?09" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -12605,9 +11469,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17997_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -12632,9 +11493,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17998_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10411277z" );
@@ -12661,9 +11520,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_17999_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -12688,9 +11544,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18000_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10411284P" );
@@ -12717,9 +11571,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18001_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -12744,9 +11595,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18002_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1041129?7" );
@@ -12773,9 +11622,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18003_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -12800,9 +11646,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18004_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104u12988" );
@@ -12829,9 +11673,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18005_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -12856,9 +11697,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18006_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10411303?" );
@@ -12885,9 +11724,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18007_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -12912,9 +11748,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18008_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1M4113097" );
@@ -12941,9 +11775,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18009_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -12968,9 +11799,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18010_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -12998,9 +11826,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18011_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -13025,9 +11850,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18012_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10?113262" );
@@ -13054,9 +11877,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18013_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -13081,9 +11901,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18014_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10411332^" );
@@ -13110,9 +11928,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18015_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -13137,12 +11952,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18016_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�113343" );
+            AbaRouteValidator.validate( "10?113343" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -13166,9 +11979,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18017_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -13193,9 +12003,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18018_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1D4113372" );
@@ -13222,9 +12030,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18019_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -13249,12 +12054,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18020_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10411340�" );
+            AbaRouteValidator.validate( "10411340?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -13278,9 +12081,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18021_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -13305,9 +12105,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18022_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -13335,9 +12132,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18023_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -13362,12 +12156,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18024_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10411�550" );
+            AbaRouteValidator.validate( "10411?550" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -13391,9 +12183,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18025_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -13418,9 +12207,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18026_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1`4113628" );
@@ -13447,9 +12234,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18027_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -13474,9 +12258,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18028_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -13504,9 +12285,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18029_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -13531,12 +12309,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18030_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�4113709" );
+            AbaRouteValidator.validate( "1?4113709" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -13560,9 +12336,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18031_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -13587,9 +12360,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18032_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10413712" );
@@ -13616,9 +12387,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18033_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -13643,12 +12411,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18034_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10411373�" );
+            AbaRouteValidator.validate( "10411373?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -13672,9 +12438,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18035_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -13699,9 +12462,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18036_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1041137?1" );
@@ -13728,9 +12489,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18037_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -13755,12 +12513,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18038_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10411�767" );
+            AbaRouteValidator.validate( "10411?767" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -13784,9 +12540,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18039_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -13811,9 +12564,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18040_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1^4113819" );
@@ -13840,9 +12591,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18041_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -13867,9 +12615,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18042_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104113?35" );
@@ -13896,9 +12642,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18043_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -13923,9 +12666,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18044_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1>4113880" );
@@ -13952,9 +12693,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18045_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -13979,9 +12717,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18046_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -14009,9 +12744,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18047_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -14036,12 +12768,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18048_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�113958" );
+            AbaRouteValidator.validate( "10?113958" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -14065,9 +12795,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18049_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -14092,12 +12819,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18050_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "104�13990" );
+            AbaRouteValidator.validate( "104?13990" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -14121,9 +12846,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18051_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -14148,9 +12870,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18052_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10418q461" );
@@ -14177,9 +12897,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18053_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -14204,9 +12921,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18054_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10y189526" );
@@ -14233,9 +12948,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18055_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -14260,12 +12972,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18056_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�4189568" );
+            AbaRouteValidator.validate( "1?4189568" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -14289,9 +12999,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18057_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -14316,9 +13023,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18058_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10418607" );
@@ -14345,9 +13050,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18059_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -14372,9 +13074,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18060_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1049000)8" );
@@ -14401,9 +13101,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18061_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -14428,12 +13125,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18062_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1049�0116" );
+            AbaRouteValidator.validate( "1049?0116" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -14457,9 +13152,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18063_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -14484,9 +13176,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18064_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -14514,9 +13203,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18065_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -14541,9 +13227,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18066_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1049003b3" );
@@ -14570,9 +13254,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18067_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -14597,9 +13278,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18068_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1049?0349" );
@@ -14626,9 +13305,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18069_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -14653,9 +13329,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18070_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10z900459" );
@@ -14682,9 +13356,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18071_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -14709,9 +13380,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18072_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490052<" );
@@ -14738,9 +13407,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18073_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -14765,12 +13431,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18074_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10490054�" );
+            AbaRouteValidator.validate( "10490054?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -14794,9 +13458,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18075_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -14821,9 +13482,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18076_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490058-" );
@@ -14850,9 +13509,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18077_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -14877,12 +13533,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18078_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1049006�9" );
+            AbaRouteValidator.validate( "1049006?9" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -14906,9 +13560,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18079_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -14933,12 +13584,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18080_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�900721" );
+            AbaRouteValidator.validate( "10?900721" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -14962,9 +13611,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18081_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -14989,9 +13635,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18082_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104900'50" );
@@ -15018,9 +13662,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18083_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -15045,12 +13686,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18084_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1049007�2" );
+            AbaRouteValidator.validate( "1049007?2" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -15074,9 +13713,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18085_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -15101,9 +13737,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18086_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104x00802" );
@@ -15130,9 +13764,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18087_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -15157,9 +13788,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18088_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104900+86" );
@@ -15186,9 +13815,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18089_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -15213,9 +13839,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18090_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490912" );
@@ -15242,9 +13866,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18091_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -15269,12 +13890,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18092_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�4900938" );
+            AbaRouteValidator.validate( "1?4900938" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -15298,9 +13917,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18093_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -15325,9 +13941,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18094_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10491034" );
@@ -15354,9 +13968,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18095_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -15381,9 +13992,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18096_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "154901063" );
@@ -15410,9 +14019,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18097_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -15437,12 +14043,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18098_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�901115" );
+            AbaRouteValidator.validate( "10?901115" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -15466,9 +14070,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18099_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -15493,9 +14094,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18100_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490144" );
@@ -15522,9 +14121,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18101_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -15549,12 +14145,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18102_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1049011�0" );
+            AbaRouteValidator.validate( "1049011?0" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -15578,9 +14172,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18103_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -15605,9 +14196,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18104_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490123Q" );
@@ -15634,9 +14223,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18105_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -15661,12 +14247,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18106_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1049012�1" );
+            AbaRouteValidator.validate( "1049012?1" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -15690,9 +14274,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18107_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -15717,12 +14298,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18108_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�901270" );
+            AbaRouteValidator.validate( "10?901270" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -15746,9 +14325,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18109_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -15773,12 +14349,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18110_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10490131�" );
+            AbaRouteValidator.validate( "10490131?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -15802,9 +14376,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18111_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -15829,12 +14400,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18112_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10490133�" );
+            AbaRouteValidator.validate( "10490133?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -15858,9 +14427,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18113_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -15885,9 +14451,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18114_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104901k48" );
@@ -15914,9 +14478,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18115_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -15941,9 +14502,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18116_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104901?64" );
@@ -15970,9 +14529,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18117_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -15997,12 +14553,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18118_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�4901458" );
+            AbaRouteValidator.validate( "1?4901458" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -16026,9 +14580,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18119_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -16053,9 +14604,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18120_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1Q4901487" );
@@ -16082,9 +14631,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18121_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -16109,9 +14655,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18122_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1049A1513" );
@@ -16138,9 +14682,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18123_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -16165,12 +14706,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18124_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1049�1568" );
+            AbaRouteValidator.validate( "1049?1568" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -16194,9 +14733,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18125_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -16221,9 +14757,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18126_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10401584" );
@@ -16250,9 +14784,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18127_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -16277,9 +14808,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18128_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1G4901597" );
@@ -16306,9 +14835,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18129_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -16333,9 +14859,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18130_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10%901607" );
@@ -16362,9 +14886,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18131_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -16389,9 +14910,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18132_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -16419,9 +14937,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18133_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -16446,12 +14961,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18134_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1049016�2" );
+            AbaRouteValidator.validate( "1049016?2" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -16475,9 +14988,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18135_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -16502,9 +15012,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18136_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104901|65" );
@@ -16531,9 +15039,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18137_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -16558,12 +15063,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18138_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1049016�8" );
+            AbaRouteValidator.validate( "1049016?8" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -16587,9 +15090,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18139_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -16614,9 +15114,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18140_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104901(17" );
@@ -16643,9 +15141,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18141_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -16670,9 +15165,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18142_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104S01720" );
@@ -16699,9 +15192,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18143_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -16726,9 +15216,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18144_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490814" );
@@ -16755,9 +15243,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18145_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -16782,9 +15267,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18146_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490182" );
@@ -16811,9 +15294,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18147_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -16838,9 +15318,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18148_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1049>1911" );
@@ -16867,9 +15345,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18149_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -16894,9 +15369,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18150_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10g901937" );
@@ -16923,9 +15396,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18151_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -16950,12 +15420,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18152_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "104901�40" );
+            AbaRouteValidator.validate( "104901?40" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -16979,9 +15447,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18153_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -17006,9 +15471,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18154_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104901-95" );
@@ -17035,9 +15498,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18155_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -17062,9 +15522,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18156_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490\033" );
@@ -17091,9 +15549,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18157_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -17118,9 +15573,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18158_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490u062" );
@@ -17147,9 +15600,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18159_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -17174,9 +15624,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18160_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490211" );
@@ -17203,9 +15651,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18161_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -17230,12 +15675,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18162_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10490212�" );
+            AbaRouteValidator.validate( "10490212?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -17259,9 +15702,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18163_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -17286,9 +15726,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18164_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104?02172" );
@@ -17315,9 +15753,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18165_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -17342,9 +15777,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18166_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490I295" );
@@ -17371,9 +15804,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18167_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -17398,9 +15828,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18168_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490237" );
@@ -17427,9 +15855,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18169_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -17454,12 +15879,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18170_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "104902�63" );
+            AbaRouteValidator.validate( "104902?63" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -17483,9 +15906,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18171_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -17510,9 +15930,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18172_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104 02376" );
@@ -17539,9 +15957,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18173_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -17566,9 +15981,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18174_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1-4902392" );
@@ -17595,9 +16008,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18175_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -17622,12 +16032,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18176_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "104�02761" );
+            AbaRouteValidator.validate( "104?02761" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -17651,9 +16059,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18177_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -17678,12 +16083,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18178_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�4902800" );
+            AbaRouteValidator.validate( "1?4902800" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -17707,9 +16110,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18179_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -17734,9 +16134,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18180_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10402949" );
@@ -17763,9 +16161,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18181_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -17790,9 +16185,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18182_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490f032" );
@@ -17819,9 +16212,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18183_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -17846,12 +16236,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18184_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "104�03139" );
+            AbaRouteValidator.validate( "104?03139" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -17875,9 +16263,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18185_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -17902,9 +16287,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18186_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1049%3294" );
@@ -17931,9 +16314,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18187_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -17958,9 +16338,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18188_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490333" );
@@ -17987,9 +16365,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18189_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -18014,9 +16389,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18190_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1049033?2" );
@@ -18043,9 +16416,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18191_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -18070,12 +16440,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18192_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10490338�" );
+            AbaRouteValidator.validate( "10490338?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -18099,9 +16467,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18193_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -18126,9 +16491,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18194_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490(391" );
@@ -18155,9 +16518,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18195_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -18182,9 +16542,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18196_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -18212,9 +16569,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18197_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -18239,9 +16593,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18198_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490357" );
@@ -18268,9 +16620,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18199_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -18295,9 +16644,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18200_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104903q95" );
@@ -18324,9 +16671,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18201_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -18351,12 +16695,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18202_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10490369�" );
+            AbaRouteValidator.validate( "10490369?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -18380,9 +16722,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18203_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -18407,9 +16746,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18204_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -18437,9 +16773,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18205_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -18464,9 +16797,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18206_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104(04277" );
@@ -18493,9 +16824,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18207_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -18520,9 +16848,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18208_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10`904442" );
@@ -18549,9 +16875,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18209_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -18576,9 +16899,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18210_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10494646" );
@@ -18605,9 +16926,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18211_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -18632,9 +16950,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18212_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104>04882" );
@@ -18661,9 +16977,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18213_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -18688,9 +17001,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18214_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10904905" );
@@ -18717,9 +17028,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18215_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -18744,12 +17052,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18216_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "104�05140" );
+            AbaRouteValidator.validate( "104?05140" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -18773,9 +17079,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18217_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -18800,12 +17103,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18218_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "104905�66" );
+            AbaRouteValidator.validate( "104905?66" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -18829,9 +17130,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18219_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -18856,9 +17154,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18220_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490520" );
@@ -18885,9 +17181,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18221_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -18912,9 +17205,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18222_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490s616" );
@@ -18941,9 +17232,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18223_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -18968,12 +17256,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18224_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "104�05742" );
+            AbaRouteValidator.validate( "104?05742" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -18997,9 +17283,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18225_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -19024,9 +17307,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18226_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10_905784" );
@@ -19053,9 +17334,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18227_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -19080,9 +17358,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18228_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104905?07" );
@@ -19109,9 +17385,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18229_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -19136,12 +17409,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18230_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10490�836" );
+            AbaRouteValidator.validate( "10490?836" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -19165,9 +17436,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18231_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -19192,9 +17460,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18232_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490m881" );
@@ -19221,9 +17487,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18233_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -19248,9 +17511,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18234_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490]000" );
@@ -19277,9 +17538,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18235_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -19304,12 +17562,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18236_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "104�06233" );
+            AbaRouteValidator.validate( "104?06233" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -19333,9 +17589,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18237_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -19360,12 +17613,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18238_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1049�6602" );
+            AbaRouteValidator.validate( "1049?6602" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -19389,9 +17640,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18239_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -19416,9 +17664,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18240_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490672" );
@@ -19445,9 +17691,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18241_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -19472,9 +17715,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18242_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104:06880" );
@@ -19501,9 +17742,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18243_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -19528,9 +17766,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18244_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -19558,9 +17793,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18245_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -19585,9 +17817,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18246_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490701" );
@@ -19614,9 +17844,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18247_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -19641,9 +17868,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18248_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -19671,9 +17895,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18249_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -19698,9 +17919,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18250_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?4907708" );
@@ -19727,9 +17946,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18251_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -19754,9 +17970,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18252_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104907*79" );
@@ -19783,9 +17997,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18253_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -19810,9 +18021,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18254_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1049?7818" );
@@ -19839,9 +18048,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18255_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -19866,9 +18072,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18256_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10497931" );
@@ -19895,9 +18099,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18257_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -19922,9 +18123,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18258_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1049079r0" );
@@ -19951,9 +18150,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18259_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -19978,12 +18174,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18260_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�4908040" );
+            AbaRouteValidator.validate( "1?4908040" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -20007,9 +18201,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18261_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -20034,9 +18225,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18262_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10408082" );
@@ -20063,9 +18252,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18263_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -20090,9 +18276,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18264_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104908R34" );
@@ -20119,9 +18303,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18265_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -20146,9 +18327,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18266_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490816U" );
@@ -20175,9 +18354,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18267_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -20202,9 +18378,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18268_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490C189" );
@@ -20231,9 +18405,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18269_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -20258,9 +18429,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18270_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10498257" );
@@ -20287,9 +18456,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18271_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -20314,12 +18480,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18272_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1049083�3" );
+            AbaRouteValidator.validate( "1049083?3" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -20343,9 +18507,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18273_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -20370,9 +18531,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18274_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10498422" );
@@ -20399,9 +18558,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18275_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -20426,12 +18582,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18276_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�908532" );
+            AbaRouteValidator.validate( "10?908532" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -20455,9 +18609,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18277_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -20482,9 +18633,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18278_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1]4908723" );
@@ -20511,9 +18660,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18279_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -20538,9 +18684,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18280_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1G4908817" );
@@ -20567,9 +18711,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18281_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -20594,9 +18735,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18282_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10?908846" );
@@ -20623,9 +18762,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18283_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -20650,9 +18786,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18284_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1049t8859" );
@@ -20679,9 +18813,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18285_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -20706,9 +18837,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18286_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -20736,9 +18864,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18287_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -20763,12 +18888,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18288_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1049�8956" );
+            AbaRouteValidator.validate( "1049?8956" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -20792,9 +18915,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18289_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -20819,12 +18939,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18290_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "104909�01" );
+            AbaRouteValidator.validate( "104909?01" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -20848,9 +18966,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18291_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -20875,9 +18990,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18292_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1t4909531" );
@@ -20904,9 +19017,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18293_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -20931,9 +19041,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18294_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1n4909764" );
@@ -20960,9 +19068,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18295_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -20987,9 +19092,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18296_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490979$" );
@@ -21016,9 +19119,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18297_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -21043,9 +19143,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18298_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10490s942" );
@@ -21072,9 +19170,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18299_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -21099,9 +19194,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18300_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10491013?" );
@@ -21128,9 +19221,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18301_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -21155,9 +19245,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18302_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104910P32" );
@@ -21184,9 +19272,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18303_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -21211,9 +19296,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18304_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104910?58" );
@@ -21240,9 +19323,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18305_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -21267,9 +19347,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18306_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10491027?" );
@@ -21296,9 +19374,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18307_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -21323,9 +19398,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18308_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1\4910339" );
@@ -21352,9 +19425,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18309_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -21379,12 +19449,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18310_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10491034�" );
+            AbaRouteValidator.validate( "10491034?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -21408,9 +19476,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18311_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -21435,9 +19500,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18312_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "14910795" );
@@ -21464,9 +19527,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18313_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -21491,9 +19551,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18314_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104911)22" );
@@ -21520,9 +19578,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18315_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -21547,9 +19602,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18316_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10911671" );
@@ -21576,9 +19629,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18317_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -21603,9 +19653,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18318_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104T12670" );
@@ -21632,9 +19680,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18319_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -21659,9 +19704,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18320_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10491319" );
@@ -21688,9 +19731,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18321_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -21715,9 +19755,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18322_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1-4913048" );
@@ -21744,9 +19782,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18323_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -21771,9 +19806,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18324_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1<4913064" );
@@ -21800,9 +19833,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18325_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -21827,9 +19857,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18326_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1049-3161" );
@@ -21856,9 +19884,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18327_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -21883,12 +19908,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18328_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�913190" );
+            AbaRouteValidator.validate( "10?913190" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -21912,9 +19935,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18329_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -21939,9 +19959,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18330_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10491325" );
@@ -21968,9 +19986,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18331_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -21995,9 +20010,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18332_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1049Q3284" );
@@ -22024,9 +20037,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18333_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -22051,9 +20061,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18334_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10491i310" );
@@ -22080,9 +20088,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18335_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -22107,9 +20112,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18336_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1049I3336" );
@@ -22136,9 +20139,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18337_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -22163,9 +20163,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18338_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1K4913365" );
@@ -22192,9 +20190,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18339_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -22219,9 +20214,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18340_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1049?3381" );
@@ -22248,9 +20241,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18341_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -22275,9 +20265,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18342_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104$13491" );
@@ -22304,9 +20292,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18343_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -22331,9 +20316,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18344_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1049135?0" );
@@ -22360,9 +20343,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18345_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -22387,9 +20367,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18346_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1^4913682" );
@@ -22416,9 +20394,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18347_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -22443,12 +20418,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18348_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10491�750" );
+            AbaRouteValidator.validate( "10491?750" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -22472,9 +20445,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18349_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -22499,12 +20469,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18350_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�913912" );
+            AbaRouteValidator.validate( "10?913912" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -22528,9 +20496,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18351_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -22555,12 +20520,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18352_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "104�13970" );
+            AbaRouteValidator.validate( "104?13970" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -22584,9 +20547,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18353_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -22611,9 +20571,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18354_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10)914050" );
@@ -22640,9 +20598,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18355_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -22667,9 +20622,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18356_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10?914076" );
@@ -22696,9 +20649,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18357_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -22723,9 +20673,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18358_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1049_4089" );
@@ -22752,9 +20700,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18359_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -22779,9 +20724,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18360_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1049?4157" );
@@ -22808,9 +20751,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18361_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -22835,9 +20775,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18362_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1049192(5" );
@@ -22864,9 +20802,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18363_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -22891,9 +20826,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18364_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "104920?42" );
@@ -22920,9 +20853,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18365_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -22947,12 +20877,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18366_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10492�204" );
+            AbaRouteValidator.validate( "10492?204" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -22976,9 +20904,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18367_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -23003,12 +20928,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18368_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�4922217" );
+            AbaRouteValidator.validate( "1?4922217" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -23032,9 +20955,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18369_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -23059,9 +20979,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18370_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10492298)" );
@@ -23088,9 +21006,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18371_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -23115,12 +21030,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18372_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1049�9852" );
+            AbaRouteValidator.validate( "1049?9852" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -23144,9 +21057,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18373_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -23171,9 +21081,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18374_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700006o" );
@@ -23200,9 +21108,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18375_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -23227,9 +21132,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18376_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107_00071" );
@@ -23256,9 +21159,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18377_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -23283,9 +21183,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18378_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -23313,9 +21210,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18379_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -23340,12 +21234,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18380_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10700015�" );
+            AbaRouteValidator.validate( "10700015?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -23369,9 +21261,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18381_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -23396,12 +21285,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18382_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10700�233" );
+            AbaRouteValidator.validate( "10700?233" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -23425,9 +21312,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18383_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -23452,9 +21336,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18384_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700026x" );
@@ -23481,9 +21363,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18385_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -23508,12 +21387,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18386_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "107�00275" );
+            AbaRouteValidator.validate( "107?00275" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -23537,9 +21414,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18387_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -23564,9 +21438,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18388_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700037" );
@@ -23593,9 +21465,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18389_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -23620,9 +21489,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18390_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107v00372" );
@@ -23649,9 +21516,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18391_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -23676,12 +21540,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18392_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "107000�40" );
+            AbaRouteValidator.validate( "107000?40" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -23705,9 +21567,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18393_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -23732,9 +21591,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18394_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700466" );
@@ -23761,9 +21618,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18395_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -23788,12 +21642,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18396_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�000521" );
+            AbaRouteValidator.validate( "10?000521" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -23817,9 +21669,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18397_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -23844,9 +21693,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18398_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1070006D8" );
@@ -23873,9 +21720,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18399_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -23900,12 +21744,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18400_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "107�00783" );
+            AbaRouteValidator.validate( "107?00783" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -23929,9 +21771,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18401_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -23956,9 +21795,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18402_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700079?" );
@@ -23985,9 +21822,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18403_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -24012,9 +21846,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18404_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700093" );
@@ -24041,9 +21873,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18405_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -24068,9 +21897,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18406_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1a7000929" );
@@ -24097,9 +21924,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18407_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -24124,9 +21948,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18408_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1n7001012" );
@@ -24153,9 +21975,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18409_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -24180,12 +21999,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18410_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�001054" );
+            AbaRouteValidator.validate( "10?001054" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -24209,9 +22026,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18411_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -24236,9 +22050,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18412_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700   067" );
@@ -24265,9 +22077,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18413_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -24292,9 +22101,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18414_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700$070" );
@@ -24321,9 +22128,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18415_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -24348,9 +22152,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18416_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700113E" );
@@ -24377,9 +22179,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18417_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -24404,9 +22203,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18418_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700D232" );
@@ -24433,9 +22230,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18419_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -24460,9 +22254,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18420_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107001,58" );
@@ -24489,9 +22281,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18421_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -24516,9 +22305,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18422_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107X01261" );
@@ -24545,9 +22332,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18423_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -24572,12 +22356,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18424_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�001326" );
+            AbaRouteValidator.validate( "10?001326" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -24601,9 +22383,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18425_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -24628,12 +22407,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18426_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "107�01452" );
+            AbaRouteValidator.validate( "107?01452" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -24657,9 +22434,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18427_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -24684,9 +22458,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18428_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1070014?1" );
@@ -24713,9 +22485,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18429_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -24740,9 +22509,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18430_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1070015[0" );
@@ -24769,9 +22536,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18431_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -24796,9 +22560,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18432_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107001f01" );
@@ -24825,9 +22587,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18433_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -24852,9 +22611,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18434_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1D7001672" );
@@ -24881,9 +22638,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18435_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -24908,9 +22662,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18436_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10$001724" );
@@ -24937,9 +22689,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18437_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -24964,12 +22713,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18438_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "107�01737" );
+            AbaRouteValidator.validate( "107?01737" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -24993,9 +22740,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18439_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -25020,9 +22764,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18440_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107001)05" );
@@ -25049,9 +22791,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18441_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -25076,9 +22815,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18442_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700188" );
@@ -25105,9 +22842,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18443_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -25132,9 +22866,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18444_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10[001960" );
@@ -25161,9 +22893,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18445_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -25188,9 +22917,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18446_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107002?08" );
@@ -25217,9 +22944,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18447_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -25244,12 +22968,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18448_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10700�118" );
+            AbaRouteValidator.validate( "10700?118" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -25273,9 +22995,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18449_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -25300,9 +23019,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18450_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107002*47" );
@@ -25329,9 +23046,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18451_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -25356,9 +23070,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18452_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10?002163" );
@@ -25385,9 +23097,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18453_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -25412,9 +23121,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18454_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -25442,9 +23148,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18455_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -25469,9 +23172,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18456_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -25499,9 +23199,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18457_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -25526,9 +23223,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18458_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700o406" );
@@ -25555,9 +23250,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18459_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -25582,9 +23274,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18460_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107002)48" );
@@ -25611,9 +23301,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18461_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -25638,12 +23325,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18462_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10700�503" );
+            AbaRouteValidator.validate( "10700?503" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -25667,9 +23352,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18463_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -25694,12 +23376,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18464_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1070�2516" );
+            AbaRouteValidator.validate( "1070?2516" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -25723,9 +23403,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18465_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -25750,9 +23427,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18466_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?7002532" );
@@ -25779,9 +23454,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18467_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -25806,9 +23478,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18468_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1070{2600" );
@@ -25835,9 +23505,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18469_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -25862,12 +23529,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18470_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "107�02723" );
+            AbaRouteValidator.validate( "107?02723" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -25891,9 +23556,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18471_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -25918,12 +23580,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18472_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10700�794" );
+            AbaRouteValidator.validate( "10700?794" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -25947,9 +23607,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18473_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -25974,12 +23631,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18474_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "107002�46" );
+            AbaRouteValidator.validate( "107002?46" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -26003,9 +23658,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18475_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -26030,9 +23682,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18476_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1k7002969" );
@@ -26059,9 +23709,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18477_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -26086,9 +23733,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18478_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1070030n0" );
@@ -26115,9 +23760,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18479_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -26142,12 +23784,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18480_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10700302�" );
+            AbaRouteValidator.validate( "10700302?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -26171,9 +23811,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18481_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -26198,9 +23835,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18482_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107}03298" );
@@ -26227,9 +23862,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18483_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -26254,9 +23886,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18484_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10?003353" );
@@ -26283,9 +23913,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18485_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -26310,9 +23937,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18486_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1Z7003418" );
@@ -26339,9 +23964,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18487_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -26366,9 +23988,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18488_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10B003463" );
@@ -26395,9 +24015,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18489_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -26422,12 +24039,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18490_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�7003609" );
+            AbaRouteValidator.validate( "1?7003609" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -26451,9 +24066,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18491_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -26478,12 +24090,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18492_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�7003612" );
+            AbaRouteValidator.validate( "1?7003612" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -26507,9 +24117,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18493_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -26534,12 +24141,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18494_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�003641" );
+            AbaRouteValidator.validate( "10?003641" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -26563,9 +24168,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18495_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -26590,12 +24192,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18496_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1070�3667" );
+            AbaRouteValidator.validate( "1070?3667" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -26619,9 +24219,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18497_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -26646,9 +24243,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18498_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1G7003829" );
@@ -26675,9 +24270,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18499_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -26702,9 +24294,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18500_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -26732,9 +24321,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18501_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -26759,12 +24345,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18502_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�003942" );
+            AbaRouteValidator.validate( "10?003942" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -26788,9 +24372,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18503_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -26815,9 +24396,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18504_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700P352" );
@@ -26844,9 +24423,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18505_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -26871,9 +24447,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18506_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1070{4381" );
@@ -26900,9 +24474,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18507_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -26927,9 +24498,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18508_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700445    " );
@@ -26956,9 +24525,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18509_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -26983,9 +24549,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18510_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "177004491" );
@@ -27012,9 +24576,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18511_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -27039,9 +24600,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18512_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107004>11" );
@@ -27068,9 +24627,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18513_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -27095,9 +24651,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18514_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1070046#7" );
@@ -27124,9 +24678,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18515_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -27151,12 +24702,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18516_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "107004�79" );
+            AbaRouteValidator.validate( "107004?79" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -27180,9 +24729,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18517_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -27207,9 +24753,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18518_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1070046R5" );
@@ -27236,9 +24780,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18519_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -27263,9 +24804,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18520_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10,004776" );
@@ -27292,9 +24831,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18521_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -27319,9 +24855,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18522_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700504<" );
@@ -27348,9 +24882,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18523_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -27375,12 +24906,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18524_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�005076" );
+            AbaRouteValidator.validate( "10?005076" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -27404,9 +24933,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18525_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -27431,9 +24957,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18526_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700?102" );
@@ -27460,9 +24984,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18527_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -27487,9 +25008,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18528_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -27517,9 +25035,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18529_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -27544,12 +25059,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18530_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "107005�96" );
+            AbaRouteValidator.validate( "107005?96" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -27573,9 +25086,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18531_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -27600,9 +25110,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18532_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1070053^9" );
@@ -27629,9 +25137,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18533_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -27656,9 +25161,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18534_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1070054-2" );
@@ -27685,9 +25188,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18535_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -27712,12 +25212,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18536_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "107�05445" );
+            AbaRouteValidator.validate( "107?05445" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -27741,9 +25239,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18537_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -27768,12 +25263,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18538_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1070054�0" );
+            AbaRouteValidator.validate( "1070054?0" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -27797,9 +25290,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18539_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -27824,9 +25314,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18540_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "17005526" );
@@ -27853,9 +25341,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18541_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -27880,12 +25365,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18542_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1070056�7" );
+            AbaRouteValidator.validate( "1070056?7" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -27909,9 +25392,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18543_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -27936,9 +25416,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18544_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1070056f4" );
@@ -27965,9 +25443,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18545_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -27992,9 +25467,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18546_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10005801" );
@@ -28021,9 +25494,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18547_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -28048,9 +25518,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18548_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1070^5898" );
@@ -28077,9 +25545,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18549_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -28104,9 +25569,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18550_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1`7005924" );
@@ -28133,9 +25596,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18551_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -28160,12 +25620,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18552_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10700595�" );
+            AbaRouteValidator.validate( "10700595?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -28189,9 +25647,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18553_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -28216,9 +25671,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18554_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1k7005979" );
@@ -28245,9 +25698,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18555_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -28272,9 +25722,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18556_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107005@82" );
@@ -28301,9 +25749,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18557_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -28328,9 +25773,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18558_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700600^" );
@@ -28357,9 +25800,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18559_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -28384,9 +25824,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18560_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700046" );
@@ -28413,9 +25851,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18561_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -28440,9 +25875,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18562_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1070060T9" );
@@ -28469,9 +25902,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18563_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -28496,9 +25926,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18564_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -28526,9 +25953,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18565_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -28553,9 +25977,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18566_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1#7006088" );
@@ -28582,9 +26004,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18567_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -28609,12 +26028,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18568_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "107�06091" );
+            AbaRouteValidator.validate( "107?06091" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -28638,9 +26055,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18569_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -28665,9 +26079,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18570_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1070061Y1" );
@@ -28694,9 +26106,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18571_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -28721,9 +26130,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18572_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107006?27" );
@@ -28750,9 +26157,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18573_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -28777,12 +26181,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18574_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1070061�3" );
+            AbaRouteValidator.validate( "1070061?3" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -28806,9 +26208,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18575_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -28833,9 +26232,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18576_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700156" );
@@ -28862,9 +26259,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18577_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -28889,12 +26283,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18578_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1070�6253" );
+            AbaRouteValidator.validate( "1070?6253" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -28918,9 +26310,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18579_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -28945,12 +26334,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18580_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "107�06305" );
+            AbaRouteValidator.validate( "107?06305" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -28974,9 +26361,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18581_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -29001,12 +26385,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18582_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1070063�7" );
+            AbaRouteValidator.validate( "1070063?7" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -29030,9 +26412,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18583_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -29057,9 +26436,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18584_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107<06363" );
@@ -29086,9 +26463,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18585_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -29113,12 +26487,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18586_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10700�389" );
+            AbaRouteValidator.validate( "10700?389" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -29142,9 +26514,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18587_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -29169,9 +26538,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18588_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1070063d2" );
@@ -29198,9 +26565,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18589_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -29225,9 +26589,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18590_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107@06428" );
@@ -29254,9 +26616,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18591_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -29281,12 +26640,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18592_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�006431" );
+            AbaRouteValidator.validate( "10?006431" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -29310,9 +26667,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18593_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -29337,9 +26691,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18594_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10?006444" );
@@ -29366,9 +26718,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18595_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -29393,12 +26742,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18596_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1070�6460" );
+            AbaRouteValidator.validate( "1070?6460" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -29422,9 +26769,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18597_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -29449,12 +26793,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18598_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "107006�86" );
+            AbaRouteValidator.validate( "107006?86" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -29478,9 +26820,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18599_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -29505,9 +26844,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18600_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107006}12" );
@@ -29534,9 +26871,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18601_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -29561,9 +26895,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18602_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1070065y1" );
@@ -29590,9 +26922,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18603_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -29617,12 +26946,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18604_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1070�6554" );
+            AbaRouteValidator.validate( "1070?6554" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -29646,9 +26973,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18605_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -29673,9 +26997,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18606_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?7006606" );
@@ -29702,9 +27024,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18607_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -29729,9 +27048,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18608_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1070H6651" );
@@ -29758,9 +27075,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18609_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -29785,12 +27099,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18610_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�7006664" );
+            AbaRouteValidator.validate( "1?7006664" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -29814,9 +27126,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18611_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -29841,9 +27150,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18612_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107G06677" );
@@ -29870,9 +27177,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18613_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -29897,9 +27201,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18614_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10]006732" );
@@ -29926,9 +27228,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18615_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -29953,12 +27252,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18616_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "107006�87" );
+            AbaRouteValidator.validate( "107006?87" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -29982,9 +27279,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18617_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -30009,12 +27303,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18618_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1070068�3" );
+            AbaRouteValidator.validate( "1070068?3" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -30038,9 +27330,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18619_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -30065,12 +27354,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18620_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10700683�" );
+            AbaRouteValidator.validate( "10700683?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -30094,9 +27381,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18621_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -30121,9 +27405,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18622_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10J006871" );
@@ -30150,9 +27432,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18623_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -30177,9 +27456,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18624_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107006C84" );
@@ -30206,9 +27483,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18625_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -30233,12 +27507,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18626_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "107006�97" );
+            AbaRouteValidator.validate( "107006?97" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -30262,9 +27534,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18627_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -30289,9 +27558,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18628_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -30319,9 +27585,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18629_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -30346,12 +27609,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18630_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1070069�6" );
+            AbaRouteValidator.validate( "1070069?6" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -30375,9 +27636,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18631_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -30402,12 +27660,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18632_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "107�06949" );
+            AbaRouteValidator.validate( "107?06949" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -30431,9 +27687,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18633_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -30458,12 +27711,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18634_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1070069�2" );
+            AbaRouteValidator.validate( "1070069?2" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -30487,9 +27738,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18635_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -30514,9 +27762,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18636_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700665" );
@@ -30543,9 +27789,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18637_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -30570,9 +27813,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18638_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700?978" );
@@ -30599,9 +27840,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18639_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -30626,9 +27864,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18640_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700?981" );
@@ -30655,9 +27891,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18641_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -30682,9 +27915,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18642_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10J006994" );
@@ -30711,9 +27942,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18643_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -30738,9 +27966,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18644_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700705u" );
@@ -30767,9 +27993,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18645_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -30794,9 +28017,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18646_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700074" );
@@ -30823,9 +28044,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18647_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -30850,9 +28068,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18648_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107007L87" );
@@ -30879,9 +28095,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18649_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -30906,9 +28119,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18650_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -30936,9 +28146,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18651_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -30963,9 +28170,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18652_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107/07197" );
@@ -30992,9 +28197,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18653_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -31019,9 +28221,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18654_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107i07210" );
@@ -31048,9 +28248,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18655_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -31075,9 +28272,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18656_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107007J23" );
@@ -31104,9 +28299,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18657_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -31131,9 +28323,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18658_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700749" );
@@ -31160,9 +28350,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18659_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -31187,12 +28374,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18660_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�7007281" );
+            AbaRouteValidator.validate( "1?7007281" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -31216,9 +28401,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18661_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -31243,9 +28425,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18662_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107v07317" );
@@ -31272,9 +28452,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18663_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -31299,9 +28476,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18664_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1070L7320" );
@@ -31328,9 +28503,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18665_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -31355,12 +28527,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18666_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1070�7346" );
+            AbaRouteValidator.validate( "1070?7346" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -31384,9 +28554,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18667_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -31411,9 +28578,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18668_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -31441,9 +28605,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18669_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -31468,9 +28629,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18670_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1070073v5" );
@@ -31497,9 +28656,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18671_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -31524,9 +28680,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18672_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "17007391" );
@@ -31553,9 +28707,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18673_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -31580,12 +28731,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18674_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�007443" );
+            AbaRouteValidator.validate( "10?007443" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -31609,9 +28758,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18675_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -31636,9 +28782,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18676_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10700746%" );
@@ -31665,9 +28809,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18677_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -31692,9 +28833,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18678_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107E07498" );
@@ -31721,9 +28860,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18679_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -31748,12 +28884,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18680_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10�089199" );
+            AbaRouteValidator.validate( "10?089199" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -31777,9 +28911,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18681_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -31804,9 +28935,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18682_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -31834,9 +28962,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18683_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -31861,9 +28986,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18684_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10089555" );
@@ -31890,9 +29013,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18685_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -31917,12 +29037,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18686_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "107089�84" );
+            AbaRouteValidator.validate( "107089?84" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -31946,9 +29064,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18687_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -31973,12 +29088,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18688_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10708�652" );
+            AbaRouteValidator.validate( "10708?652" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -32002,9 +29115,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18689_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -32029,9 +29139,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18690_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?7089717" );
@@ -32058,9 +29166,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18691_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -32085,12 +29190,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18692_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "10708�720" );
+            AbaRouteValidator.validate( "10708?720" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -32114,9 +29217,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18693_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -32141,9 +29241,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18694_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "10V089843" );
@@ -32170,9 +29268,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18695_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -32197,9 +29292,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18696_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "107089S85" );
@@ -32226,9 +29319,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18697_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -32253,12 +29343,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18698_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11100�012" );
+            AbaRouteValidator.validate( "11100?012" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -32282,9 +29370,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18699_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -32309,9 +29394,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18700_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11100025" );
@@ -32338,9 +29421,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18701_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -32365,9 +29445,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18702_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11100003b" );
@@ -32394,9 +29472,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18703_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -32421,12 +29496,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18704_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1110�0258" );
+            AbaRouteValidator.validate( "1110?0258" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -32450,9 +29523,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18705_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -32477,9 +29547,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18706_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11100061$" );
@@ -32506,9 +29574,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18707_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -32533,9 +29598,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18708_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11100071" );
@@ -32562,9 +29625,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18709_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -32589,9 +29649,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18710_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -32619,9 +29676,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18711_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -32646,12 +29700,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18712_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1110008�5" );
+            AbaRouteValidator.validate( "1110008?5" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -32675,9 +29727,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18713_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -32702,9 +29751,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18714_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11100R960" );
@@ -32731,9 +29778,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18715_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -32758,12 +29802,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18716_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11100104�" );
+            AbaRouteValidator.validate( "11100104?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -32787,9 +29829,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18717_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -32814,12 +29853,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18718_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�01053" );
+            AbaRouteValidator.validate( "111?01053" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -32843,9 +29880,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18719_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -32870,9 +29904,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18720_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11100:105" );
@@ -32899,9 +29931,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18721_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -32926,9 +29955,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18722_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "171001150" );
@@ -32955,9 +29982,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18723_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -32982,9 +30006,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18724_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11100s189" );
@@ -33011,9 +30033,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18725_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -33038,9 +30057,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18726_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -33068,9 +30084,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18727_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -33095,12 +30108,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18728_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�1005774" );
+            AbaRouteValidator.validate( "1?1005774" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -33124,9 +30135,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18729_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -33151,12 +30159,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18730_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111006�07" );
+            AbaRouteValidator.validate( "111006?07" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -33180,9 +30186,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18731_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -33207,9 +30210,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18732_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11?006841" );
@@ -33236,9 +30237,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18733_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -33263,9 +30261,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18734_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111?07073" );
@@ -33292,9 +30288,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18735_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -33319,12 +30312,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18736_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111010�60" );
+            AbaRouteValidator.validate( "111010?60" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -33348,9 +30339,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18737_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -33375,9 +30363,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18738_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111010&70" );
@@ -33404,9 +30390,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18739_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -33431,9 +30414,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18740_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11101087" );
@@ -33460,9 +30441,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18741_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -33487,12 +30465,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18742_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�11878" );
+            AbaRouteValidator.validate( "111?11878" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -33516,9 +30492,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18743_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -33543,9 +30516,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18744_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11101)673" );
@@ -33572,9 +30543,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18745_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -33599,12 +30567,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18746_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�1012783" );
+            AbaRouteValidator.validate( "1?1012783" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -33628,9 +30594,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18747_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -33655,9 +30618,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18748_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -33685,9 +30645,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18749_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -33712,9 +30669,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18750_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1110P4325" );
@@ -33741,9 +30696,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18751_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -33768,12 +30720,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18752_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1110�4383" );
+            AbaRouteValidator.validate( "1110?4383" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -33797,9 +30747,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18753_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -33824,9 +30771,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18754_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11J015159" );
@@ -33853,9 +30798,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18755_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -33880,9 +30822,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18756_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111015?44" );
@@ -33909,9 +30849,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18757_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -33936,9 +30873,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18758_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -33966,9 +30900,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18759_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -33993,9 +30924,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18760_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11m016064" );
@@ -34022,9 +30951,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18761_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -34049,9 +30975,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18762_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1110U6501" );
@@ -34078,9 +31002,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18763_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -34105,9 +31026,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18764_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -34135,9 +31053,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18765_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -34162,9 +31077,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18766_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1110176.4" );
@@ -34191,9 +31104,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18767_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -34218,9 +31128,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18768_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11R017791" );
@@ -34247,9 +31155,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18769_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -34274,9 +31179,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18770_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11017827" );
@@ -34303,9 +31206,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18771_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -34330,12 +31230,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18772_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11�017911" );
+            AbaRouteValidator.validate( "11?017911" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -34359,9 +31257,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18773_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -34386,9 +31281,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18774_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111017?79" );
@@ -34415,9 +31308,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18775_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -34442,9 +31332,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18776_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1110243Y1" );
@@ -34471,9 +31359,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18777_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -34498,9 +31383,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18778_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -34528,9 +31410,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18779_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -34555,9 +31434,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18780_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1110-4467" );
@@ -34584,9 +31461,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18781_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -34611,9 +31485,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18782_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1|1024483" );
@@ -34640,9 +31512,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18783_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -34667,9 +31536,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18784_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1110245>8" );
@@ -34696,9 +31563,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18785_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -34723,12 +31587,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18786_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111024�45" );
+            AbaRouteValidator.validate( "111024?45" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -34752,9 +31614,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18787_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -34779,9 +31638,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18788_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1110?4849" );
@@ -34808,9 +31665,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18789_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -34835,9 +31689,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18790_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11024852" );
@@ -34864,9 +31716,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18791_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -34891,12 +31740,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18792_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1110248�5" );
+            AbaRouteValidator.validate( "1110248?5" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -34920,9 +31767,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18793_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -34947,12 +31791,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18794_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�24975" );
+            AbaRouteValidator.validate( "111?24975" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -34976,9 +31818,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18795_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -35003,9 +31842,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18796_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111Z25013" );
@@ -35032,9 +31869,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18797_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -35059,9 +31893,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18798_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11125084" );
@@ -35088,9 +31920,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18799_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -35115,9 +31944,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18800_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11102512" );
@@ -35144,9 +31971,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18801_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -35171,9 +31995,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18802_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111025x53" );
@@ -35200,9 +32022,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18803_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -35227,9 +32046,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18804_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "131025466" );
@@ -35256,9 +32073,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18805_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -35283,12 +32097,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18806_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11102551�" );
+            AbaRouteValidator.validate( "11102551?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -35312,9 +32124,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18807_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -35339,9 +32148,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18808_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11102w521" );
@@ -35368,9 +32175,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18809_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -35395,12 +32199,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18810_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1110�5534" );
+            AbaRouteValidator.validate( "1110?5534" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -35424,9 +32226,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18811_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -35451,9 +32250,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18812_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11125877" );
@@ -35480,9 +32277,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18813_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -35507,9 +32301,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18814_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11102593" );
@@ -35536,9 +32328,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18815_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -35563,9 +32352,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18816_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11026038" );
@@ -35592,9 +32379,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18817_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -35619,12 +32403,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18818_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�26041" );
+            AbaRouteValidator.validate( "111?26041" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -35648,9 +32430,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18819_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -35675,9 +32454,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18820_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1110Z0195" );
@@ -35704,9 +32481,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18821_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -35731,12 +32505,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18822_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�1050156" );
+            AbaRouteValidator.validate( "1?1050156" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -35760,9 +32532,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18823_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -35787,12 +32556,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18824_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�50295" );
+            AbaRouteValidator.validate( "111?50295" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -35816,9 +32583,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18825_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -35843,9 +32607,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18826_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1110936?0" );
@@ -35872,9 +32634,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18827_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -35899,9 +32658,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18828_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11I093715" );
@@ -35928,9 +32685,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18829_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -35955,9 +32709,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18830_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -35985,9 +32736,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18831_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -36012,12 +32760,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18832_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1110�4235" );
+            AbaRouteValidator.validate( "1110?4235" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -36041,9 +32787,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18833_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -36068,9 +32811,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18834_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111100{92" );
@@ -36097,9 +32838,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18835_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -36124,9 +32862,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18836_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -36154,9 +32889,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18837_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -36181,12 +32913,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18838_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11110090�" );
+            AbaRouteValidator.validate( "11110090?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -36210,9 +32940,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18839_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -36237,9 +32964,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18840_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1111011?8" );
@@ -36266,9 +32991,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18841_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -36293,9 +33015,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18842_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?1101144" );
@@ -36322,9 +33042,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18843_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -36349,9 +33066,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18844_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?1101157" );
@@ -36378,9 +33093,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18845_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -36405,9 +33117,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18846_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1111@1173" );
@@ -36434,9 +33144,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18847_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -36461,12 +33168,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18848_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1111�1209" );
+            AbaRouteValidator.validate( "1111?1209" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -36490,9 +33195,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18849_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -36517,12 +33219,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18850_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11110122�" );
+            AbaRouteValidator.validate( "11110122?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -36546,9 +33246,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18851_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -36573,12 +33270,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18852_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1111013�6" );
+            AbaRouteValidator.validate( "1111013?6" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -36602,9 +33297,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18853_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -36629,9 +33321,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18854_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1111p1319" );
@@ -36658,9 +33348,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18855_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -36685,12 +33372,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18856_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111101�77" );
+            AbaRouteValidator.validate( "111101?77" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -36714,9 +33399,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18857_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -36741,12 +33423,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18858_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�1101458" );
+            AbaRouteValidator.validate( "1?1101458" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -36770,9 +33450,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18859_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -36797,12 +33474,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18860_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�01461" );
+            AbaRouteValidator.validate( "111?01461" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -36826,9 +33501,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18861_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -36853,9 +33525,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18862_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11110597" );
@@ -36882,9 +33552,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18863_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -36909,12 +33576,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18864_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11110163�" );
+            AbaRouteValidator.validate( "11110163?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -36938,9 +33603,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18865_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -36965,12 +33627,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18866_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1111�1652" );
+            AbaRouteValidator.validate( "1111?1652" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -36994,9 +33654,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18867_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -37021,9 +33678,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18868_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11?101681" );
@@ -37050,9 +33705,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18869_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -37077,12 +33729,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18870_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11110�694" );
+            AbaRouteValidator.validate( "11110?694" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -37106,9 +33756,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18871_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -37133,9 +33780,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18872_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1111017u5" );
@@ -37162,9 +33807,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18873_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -37189,9 +33831,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18874_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111101?98" );
@@ -37218,9 +33858,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18875_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -37245,9 +33882,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18876_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111*01908" );
@@ -37274,9 +33909,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18877_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -37301,9 +33933,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18878_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -37331,9 +33960,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18879_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -37358,9 +33984,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18880_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1111?1982" );
@@ -37387,9 +34011,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18881_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -37414,9 +34035,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18882_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11111995" );
@@ -37443,9 +34062,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18883_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -37470,9 +34086,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18884_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11110204$" );
@@ -37499,9 +34113,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18885_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -37526,9 +34137,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18886_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11e102059" );
@@ -37555,9 +34164,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18887_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -37582,9 +34188,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18888_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111?02075" );
@@ -37611,9 +34215,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18889_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -37638,9 +34239,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18890_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1111t2091" );
@@ -37667,9 +34266,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18891_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -37694,9 +34290,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18892_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111e02114" );
@@ -37723,9 +34317,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18893_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -37750,9 +34341,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18894_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1111022A8" );
@@ -37779,9 +34368,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18895_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -37806,9 +34392,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18896_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11110:240" );
@@ -37835,9 +34419,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18897_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -37862,9 +34443,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18898_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11110232f" );
@@ -37891,9 +34470,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18899_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -37918,12 +34494,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18900_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111102�89" );
+            AbaRouteValidator.validate( "111102?89" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -37947,9 +34521,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18901_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -37974,12 +34545,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18902_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1111024�2" );
+            AbaRouteValidator.validate( "1111024?2" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -38003,9 +34572,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18903_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -38030,9 +34596,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18904_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11112431" );
@@ -38059,9 +34623,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18905_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -38086,9 +34647,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18906_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1111025?6" );
@@ -38115,9 +34674,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18907_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -38142,12 +34698,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18908_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11110�732" );
+            AbaRouteValidator.validate( "11110?732" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -38171,9 +34725,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18909_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -38198,9 +34749,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18910_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111V02758" );
@@ -38227,9 +34776,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18911_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -38254,12 +34800,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18912_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11�102813" );
+            AbaRouteValidator.validate( "11?102813" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -38283,9 +34827,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18913_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -38310,9 +34851,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18914_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111102i42" );
@@ -38339,9 +34878,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18915_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -38366,9 +34902,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18916_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1111029?9" );
@@ -38395,9 +34929,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18917_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -38422,12 +34953,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18918_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11110305�" );
+            AbaRouteValidator.validate( "11110305?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -38451,9 +34980,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18919_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -38478,9 +35004,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18920_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1111l3168" );
@@ -38507,9 +35031,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18921_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -38534,12 +35055,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18922_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111103�97" );
+            AbaRouteValidator.validate( "111103?97" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -38563,9 +35082,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18923_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -38590,9 +35106,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18924_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1_1103210" );
@@ -38619,9 +35133,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18925_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -38646,9 +35157,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18926_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11;103281" );
@@ -38675,9 +35184,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18927_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -38702,9 +35208,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18928_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1111033$7" );
@@ -38731,9 +35235,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18929_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -38758,12 +35259,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18930_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11�103333" );
+            AbaRouteValidator.validate( "11?103333" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -38787,9 +35286,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18931_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -38814,12 +35310,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18932_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�03362" );
+            AbaRouteValidator.validate( "111?03362" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -38843,9 +35337,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18933_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -38870,9 +35361,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18934_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111103X24" );
@@ -38899,9 +35388,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18935_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -38926,12 +35412,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18936_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1111036�4" );
+            AbaRouteValidator.validate( "1111036?4" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -38955,9 +35439,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18937_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -38982,9 +35463,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18938_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11^103650" );
@@ -39011,9 +35490,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18939_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -39038,12 +35514,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18940_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11110�948" );
+            AbaRouteValidator.validate( "11110?948" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -39067,9 +35541,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18941_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -39094,12 +35565,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18942_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111104�07" );
+            AbaRouteValidator.validate( "111104?07" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -39123,9 +35592,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18943_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -39150,9 +35616,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18944_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111104&81" );
@@ -39179,9 +35643,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18945_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -39206,9 +35667,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18946_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11?104617" );
@@ -39235,9 +35694,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18947_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -39262,9 +35718,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18948_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11110474" );
@@ -39291,9 +35745,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18949_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -39318,12 +35769,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18950_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11�104785" );
+            AbaRouteValidator.validate( "11?104785" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -39347,9 +35796,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18951_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -39374,9 +35820,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18952_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11114798" );
@@ -39403,9 +35847,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18953_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -39430,12 +35871,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18954_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�04853" );
+            AbaRouteValidator.validate( "111?04853" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -39459,9 +35898,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18955_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -39486,9 +35922,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18956_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1111#4879" );
@@ -39515,9 +35949,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18957_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -39542,9 +35973,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18958_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1111049.1" );
@@ -39571,9 +36000,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18959_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -39598,9 +36024,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18960_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1111049n7" );
@@ -39627,9 +36051,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18961_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -39654,12 +36075,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18962_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11�105234" );
+            AbaRouteValidator.validate( "11?105234" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -39683,9 +36102,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18963_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -39710,9 +36126,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18964_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11110530?" );
@@ -39739,9 +36153,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18965_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -39766,9 +36177,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18966_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11110531(" );
@@ -39795,9 +36204,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18967_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -39822,9 +36228,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18968_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1111?5331" );
@@ -39851,9 +36255,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18969_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -39878,9 +36279,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18970_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1111?5441" );
@@ -39907,9 +36306,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18971_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -39934,12 +36330,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18972_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11119355�" );
+            AbaRouteValidator.validate( "11119355?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -39963,9 +36357,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18973_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -39990,12 +36381,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18974_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11119367�" );
+            AbaRouteValidator.validate( "11119367?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -40019,9 +36408,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18975_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -40046,9 +36432,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18976_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11119392" );
@@ -40075,9 +36459,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18977_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -40102,9 +36483,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18978_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111300q80" );
@@ -40131,9 +36510,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18979_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -40158,9 +36534,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18980_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111300G32" );
@@ -40187,9 +36561,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18981_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -40214,12 +36585,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18982_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1113009�5" );
+            AbaRouteValidator.validate( "1113009?5" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -40243,9 +36612,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18983_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -40270,12 +36636,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18984_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�1300958" );
+            AbaRouteValidator.validate( "1?1300958" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -40299,9 +36663,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18985_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -40326,12 +36687,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18986_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111301�22" );
+            AbaRouteValidator.validate( "111301?22" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -40355,9 +36714,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18987_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -40382,9 +36738,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18988_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11Q301436" );
@@ -40411,9 +36765,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18989_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -40438,9 +36789,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18990_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113016!4" );
@@ -40467,9 +36816,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18991_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -40494,9 +36840,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18992_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111301!37" );
@@ -40523,9 +36867,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18993_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -40550,9 +36891,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18994_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1=1302095" );
@@ -40579,9 +36918,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18995_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -40606,9 +36942,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18996_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111C02370" );
@@ -40635,9 +36969,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18997_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -40662,9 +36993,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18998_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11130253" );
@@ -40691,9 +37020,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_18999_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -40718,9 +37044,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19000_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11130254" );
@@ -40747,9 +37071,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19001_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -40774,12 +37095,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19002_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11130�587" );
+            AbaRouteValidator.validate( "11130?587" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -40803,9 +37122,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19003_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -40830,9 +37146,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19004_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113026-0" );
@@ -40859,9 +37173,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19005_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -40886,9 +37197,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19006_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113|2833" );
@@ -40915,9 +37224,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19007_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -40942,9 +37248,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19008_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11130N846" );
@@ -40971,9 +37275,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19009_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -40998,12 +37299,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19010_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11130�007" );
+            AbaRouteValidator.validate( "11130?007" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -41027,9 +37326,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19011_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -41054,9 +37350,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19012_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11303010" );
@@ -41083,9 +37377,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19013_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -41110,9 +37401,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19014_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1)1303117" );
@@ -41139,9 +37428,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19015_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -41166,9 +37452,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19016_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113h3489" );
@@ -41195,9 +37479,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19017_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -41222,9 +37503,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19018_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11103492" );
@@ -41251,9 +37530,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19019_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -41278,9 +37554,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19020_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11130K667" );
@@ -41307,9 +37581,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19021_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -41334,9 +37605,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19022_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1>1303748" );
@@ -41363,9 +37632,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19023_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -41390,9 +37656,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19024_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113?4051" );
@@ -41419,9 +37683,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19025_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -41446,9 +37707,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19026_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11130404" );
@@ -41475,9 +37734,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19027_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -41502,9 +37758,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19028_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11104093" );
@@ -41531,9 +37785,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19029_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -41558,12 +37809,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19030_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1113�4307" );
+            AbaRouteValidator.validate( "1113?4307" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -41587,9 +37836,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19031_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -41614,9 +37860,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19032_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11{304349" );
@@ -41643,9 +37887,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19033_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -41670,9 +37911,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19034_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113043A1" );
@@ -41699,9 +37938,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19035_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -41726,9 +37962,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19036_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11~304404" );
@@ -41755,9 +37989,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19037_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -41782,12 +38013,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19038_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1113�4608" );
+            AbaRouteValidator.validate( "1113?4608" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -41811,9 +38040,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19039_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -41838,9 +38064,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19040_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111&04637" );
@@ -41867,9 +38091,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19041_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -41894,9 +38115,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19042_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11130?912" );
@@ -41923,9 +38142,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19043_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -41950,9 +38166,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19044_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11130C115" );
@@ -41979,9 +38193,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19045_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -42006,12 +38217,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19046_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�05571" );
+            AbaRouteValidator.validate( "111?05571" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -42035,9 +38244,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19047_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -42062,9 +38268,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19048_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11130574?" );
@@ -42091,9 +38295,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19049_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -42118,12 +38319,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19050_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1113�5856" );
+            AbaRouteValidator.validate( "1113?5856" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -42147,9 +38346,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19051_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -42174,12 +38370,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19052_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�06059" );
+            AbaRouteValidator.validate( "111?06059" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -42203,9 +38397,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19053_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -42230,9 +38421,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19054_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113060V8" );
@@ -42259,9 +38448,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19055_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -42286,9 +38472,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19056_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113k6198" );
@@ -42315,9 +38499,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19057_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -42342,9 +38523,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19058_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -42372,9 +38550,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19059_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -42399,12 +38574,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19060_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1113067�8" );
+            AbaRouteValidator.validate( "1113067?8" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -42428,9 +38601,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19061_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -42455,9 +38625,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19062_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111306G71" );
@@ -42484,9 +38652,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19063_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -42511,12 +38676,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19064_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1113072�2" );
+            AbaRouteValidator.validate( "1113072?2" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -42540,9 +38703,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19065_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -42567,12 +38727,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19066_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1113�7265" );
+            AbaRouteValidator.validate( "1113?7265" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -42596,9 +38754,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19067_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -42623,12 +38778,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19068_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11130731�" );
+            AbaRouteValidator.validate( "11130731?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -42652,9 +38805,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19069_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -42679,9 +38829,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19070_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113k7430" );
@@ -42708,9 +38856,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19071_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -42735,9 +38880,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19072_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11307469" );
@@ -42764,9 +38907,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19073_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -42791,12 +38931,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19074_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11�307485" );
+            AbaRouteValidator.validate( "11?307485" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -42820,9 +38958,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19075_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -42847,9 +38982,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19076_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11130758B" );
@@ -42876,9 +39009,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19077_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -42903,12 +39033,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19078_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1113�7663" );
+            AbaRouteValidator.validate( "1113?7663" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -42932,9 +39060,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19079_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -42959,9 +39084,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19080_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111307H41" );
@@ -42988,9 +39111,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19081_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -43015,9 +39135,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19082_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -43045,9 +39162,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19083_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -43072,9 +39186,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19084_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11130?057" );
@@ -43101,9 +39213,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19085_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -43128,9 +39237,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19086_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113#8277" );
@@ -43157,9 +39264,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19087_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -43184,12 +39288,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19088_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11130835�" );
+            AbaRouteValidator.validate( "11130835?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -43213,9 +39315,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19089_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -43240,9 +39339,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19090_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11130T442" );
@@ -43269,9 +39366,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19091_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -43296,9 +39390,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19092_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111308/52" );
@@ -43325,9 +39417,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19093_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -43352,9 +39441,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19094_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1W1308578" );
@@ -43381,9 +39468,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19095_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -43408,9 +39492,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19096_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11?308633" );
@@ -43437,9 +39519,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19097_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -43464,12 +39543,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19098_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111308�27" );
+            AbaRouteValidator.validate( "111308?27" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -43493,9 +39570,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19099_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -43520,12 +39594,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19100_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1113087�0" );
+            AbaRouteValidator.validate( "1113087?0" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -43549,9 +39621,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19101_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -43576,9 +39645,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19102_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111309G30" );
@@ -43605,9 +39672,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19103_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -43632,9 +39696,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19104_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113090>3" );
@@ -43661,9 +39723,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19105_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -43688,9 +39747,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19106_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113092?4" );
@@ -43717,9 +39774,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19107_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -43744,9 +39798,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19108_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11130974" );
@@ -43773,9 +39825,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19109_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -43800,9 +39849,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19110_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111310H94" );
@@ -43829,9 +39876,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19111_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -43856,9 +39900,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19112_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -43886,9 +39927,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19113_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -43913,9 +39951,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19114_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11110809" );
@@ -43942,9 +39978,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19115_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -43969,12 +40002,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19116_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11131�841" );
+            AbaRouteValidator.validate( "11131?841" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -43998,9 +40029,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19117_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -44025,9 +40053,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19118_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1n1310870" );
@@ -44054,9 +40080,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19119_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -44081,9 +40104,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19120_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111s11413" );
@@ -44110,9 +40131,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19121_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -44137,9 +40155,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19122_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11131k620" );
@@ -44166,9 +40182,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19123_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -44193,9 +40206,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19124_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11131;743" );
@@ -44222,9 +40233,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19125_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -44249,9 +40257,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19126_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11111785" );
@@ -44278,9 +40284,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19127_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -44305,12 +40308,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19128_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1113117�8" );
+            AbaRouteValidator.validate( "1113117?8" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -44334,9 +40335,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19129_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -44361,12 +40359,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19130_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11�311840" );
+            AbaRouteValidator.validate( "11?311840" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -44390,9 +40386,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19131_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -44417,9 +40410,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19132_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111312?82" );
@@ -44446,9 +40437,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19133_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -44473,12 +40461,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19134_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11131220�" );
+            AbaRouteValidator.validate( "11131220?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -44502,9 +40488,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19135_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -44529,9 +40512,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19136_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11131253" );
@@ -44558,9 +40539,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19137_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -44585,9 +40563,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19138_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113}2551" );
@@ -44614,9 +40590,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19139_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -44641,12 +40614,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19140_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11131�739" );
+            AbaRouteValidator.validate( "11131?739" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -44670,9 +40641,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19141_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -44697,9 +40665,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19142_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113128b4" );
@@ -44726,9 +40692,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19143_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -44753,12 +40716,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19144_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1113130�0" );
+            AbaRouteValidator.validate( "1113130?0" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -44782,9 +40743,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19145_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -44809,9 +40767,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19146_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113132|4" );
@@ -44838,9 +40794,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19147_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -44865,12 +40818,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19148_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11�313356" );
+            AbaRouteValidator.validate( "11?313356" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -44894,9 +40845,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19149_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -44921,9 +40869,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19150_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111?13479" );
@@ -44950,9 +40896,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19151_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -44977,12 +40920,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19152_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111313�31" );
+            AbaRouteValidator.validate( "111313?31" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -45006,9 +40947,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19153_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -45033,9 +40971,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19154_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11131450?" );
@@ -45062,9 +40998,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19155_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -45089,12 +41022,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19156_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11�314575" );
+            AbaRouteValidator.validate( "11?314575" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -45118,9 +41049,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19157_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -45145,9 +41073,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19158_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111F14931" );
@@ -45174,9 +41100,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19159_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -45201,12 +41124,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19160_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111315�11" );
+            AbaRouteValidator.validate( "111315?11" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -45230,9 +41151,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19161_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -45257,9 +41175,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19162_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11135794" );
@@ -45286,9 +41202,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19163_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -45313,9 +41226,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19164_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113O6612" );
@@ -45342,9 +41253,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19165_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -45369,9 +41277,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19166_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113T6793" );
@@ -45398,9 +41304,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19167_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -45425,9 +41328,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19168_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11N316829" );
@@ -45454,9 +41355,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19169_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -45481,9 +41379,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19170_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111]16887" );
@@ -45510,9 +41406,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19171_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -45537,9 +41430,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19172_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11317527" );
@@ -45566,9 +41457,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19173_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -45593,9 +41481,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19174_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113175:9" );
@@ -45622,9 +41508,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19175_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -45649,9 +41532,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19176_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11131755" );
@@ -45678,9 +41559,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19177_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -45705,12 +41583,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19178_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111317�37" );
+            AbaRouteValidator.validate( "111317?37" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -45734,9 +41610,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19179_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -45761,12 +41634,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19180_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1113177�9" );
+            AbaRouteValidator.validate( "1113177?9" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -45790,9 +41661,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19181_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -45817,9 +41685,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19182_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111}17844" );
@@ -45846,9 +41712,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19183_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -45873,12 +41736,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19184_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1113�7857" );
+            AbaRouteValidator.validate( "1113?7857" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -45902,9 +41763,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19185_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -45929,9 +41787,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19186_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1)1317860" );
@@ -45958,9 +41814,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19187_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -45985,12 +41838,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19188_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�1318063" );
+            AbaRouteValidator.validate( "1?1318063" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -46014,9 +41865,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19189_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -46041,9 +41889,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19190_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111 18267" );
@@ -46070,9 +41916,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19191_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -46097,9 +41940,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19192_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11131858" );
@@ -46126,9 +41967,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19193_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -46153,9 +41991,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19194_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11131860" );
@@ -46182,9 +42018,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19195_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -46209,9 +42042,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19196_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11118704" );
@@ -46238,9 +42069,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19197_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -46265,9 +42093,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19198_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11131W004" );
@@ -46294,9 +42120,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19199_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -46321,12 +42144,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19200_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1113193�7" );
+            AbaRouteValidator.validate( "1113193?7" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -46350,9 +42171,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19201_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -46377,9 +42195,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19202_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11131y538" );
@@ -46406,9 +42222,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19203_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -46433,9 +42246,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19204_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111{20006" );
@@ -46462,9 +42273,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19205_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -46489,9 +42297,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19206_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1o1320349" );
@@ -46518,9 +42324,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19207_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -46545,9 +42348,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19208_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11130679" );
@@ -46574,9 +42375,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19209_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -46601,12 +42399,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19210_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11132089�" );
+            AbaRouteValidator.validate( "11132089?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -46630,9 +42426,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19211_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -46657,9 +42450,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19212_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11320925" );
@@ -46686,9 +42477,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19213_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -46713,9 +42501,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19214_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11132063" );
@@ -46742,9 +42528,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19215_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -46769,12 +42552,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19216_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11132114�" );
+            AbaRouteValidator.validate( "11132114?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -46798,9 +42579,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19217_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -46825,12 +42603,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19218_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11132�270" );
+            AbaRouteValidator.validate( "11132?270" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -46854,9 +42630,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19219_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -46881,9 +42654,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19220_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11121649" );
@@ -46910,9 +42681,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19221_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -46937,9 +42705,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19222_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111-21717" );
@@ -46966,9 +42732,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19223_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -46993,9 +42756,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19224_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11132172j" );
@@ -47022,9 +42783,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19225_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -47049,9 +42807,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19226_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11?321814" );
@@ -47078,9 +42834,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19227_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -47105,9 +42858,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19228_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111321?27" );
@@ -47134,9 +42885,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19229_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -47161,9 +42909,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19230_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11?321856" );
@@ -47190,9 +42936,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19231_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -47217,12 +42960,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19232_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1113�1898" );
+            AbaRouteValidator.validate( "1113?1898" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -47246,9 +42987,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19233_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -47273,9 +43011,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19234_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11132231?" );
@@ -47302,9 +43038,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19235_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -47329,9 +43062,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19236_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111>22402" );
@@ -47358,9 +43089,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19237_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -47385,9 +43113,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19238_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -47415,9 +43140,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19239_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -47442,9 +43164,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19240_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -47472,9 +43191,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19241_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -47499,12 +43215,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19242_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�22570" );
+            AbaRouteValidator.validate( "111?22570" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -47528,9 +43242,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19243_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -47555,9 +43266,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19244_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11132583" );
@@ -47584,9 +43293,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19245_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -47611,12 +43317,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19246_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11�322664" );
+            AbaRouteValidator.validate( "11?322664" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -47640,9 +43344,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19247_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -47667,12 +43368,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19248_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1113�2729" );
+            AbaRouteValidator.validate( "1113?2729" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -47696,9 +43395,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19249_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -47723,9 +43419,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19250_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111322?45" );
@@ -47752,9 +43446,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19251_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -47779,12 +43470,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19252_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111322�13" );
+            AbaRouteValidator.validate( "111322?13" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -47808,9 +43497,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19253_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -47835,9 +43521,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19254_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113229]0" );
@@ -47864,9 +43548,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19255_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -47891,9 +43572,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19256_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11132296." );
@@ -47920,9 +43599,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19257_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -47947,9 +43623,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19258_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1|1322994" );
@@ -47976,9 +43650,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19259_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -48003,12 +43674,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19260_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�23016" );
+            AbaRouteValidator.validate( "111?23016" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -48032,9 +43701,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19261_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -48059,9 +43725,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19262_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11E323032" );
@@ -48088,9 +43752,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19263_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -48115,9 +43776,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19264_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?1323207" );
@@ -48144,9 +43803,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19265_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -48171,9 +43827,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19266_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11132363." );
@@ -48200,9 +43854,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19267_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -48227,9 +43878,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19268_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11323689" );
@@ -48256,9 +43905,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19269_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -48283,9 +43929,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19270_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113237%1" );
@@ -48312,9 +43956,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19271_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -48339,9 +43980,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19272_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11132p809" );
@@ -48368,9 +44007,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19273_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -48395,9 +44031,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19274_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11132390L" );
@@ -48424,9 +44058,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19275_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -48451,9 +44082,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19276_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11132K922" );
@@ -48480,9 +44109,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19277_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -48507,12 +44133,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19278_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1113239�1" );
+            AbaRouteValidator.validate( "1113239?1" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -48536,9 +44160,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19279_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -48563,12 +44184,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19280_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11132419�" );
+            AbaRouteValidator.validate( "11132419?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -48592,9 +44211,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19281_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -48619,9 +44235,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19282_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113/4219" );
@@ -48648,9 +44262,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19283_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -48675,9 +44286,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19284_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11134293" );
@@ -48704,9 +44313,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19285_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -48731,9 +44337,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19286_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111324b95" );
@@ -48760,9 +44364,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19287_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -48787,9 +44388,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19288_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11132[921" );
@@ -48816,9 +44415,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19289_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -48843,9 +44439,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19290_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11?325412" );
@@ -48872,9 +44466,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19291_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -48899,9 +44490,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19292_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113257B3" );
@@ -48928,9 +44517,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19293_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -48955,12 +44541,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19294_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11132579�" );
+            AbaRouteValidator.validate( "11132579?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -48984,9 +44568,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19295_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -49011,9 +44592,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19296_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11132582C" );
@@ -49040,9 +44619,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19297_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -49067,9 +44643,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19298_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11132585^" );
@@ -49096,9 +44670,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19299_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -49123,9 +44694,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19300_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1113'6068" );
@@ -49152,9 +44721,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19301_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -49179,12 +44745,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19302_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11132�071" );
+            AbaRouteValidator.validate( "11132?071" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -49208,9 +44772,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19303_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -49235,9 +44796,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19304_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1117367?3" );
@@ -49264,9 +44823,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19305_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -49291,9 +44847,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19306_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11`736726" );
@@ -49320,9 +44874,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19307_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -49347,12 +44898,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19308_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11�736739" );
+            AbaRouteValidator.validate( "11?736739" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -49376,9 +44925,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19309_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -49403,9 +44949,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19310_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?1736742" );
@@ -49432,9 +44976,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19311_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -49459,9 +45000,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19312_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11O736975" );
@@ -49488,9 +45027,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19313_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -49515,9 +45051,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19314_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11173|991" );
@@ -49544,9 +45078,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19315_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -49571,12 +45102,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19316_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�00251" );
+            AbaRouteValidator.validate( "111?00251" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -49600,9 +45129,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19317_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -49627,9 +45153,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19318_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119?0455" );
@@ -49656,9 +45180,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19319_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -49683,9 +45204,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19320_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111I00510" );
@@ -49712,9 +45231,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19321_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -49739,9 +45255,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19322_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111900w49" );
@@ -49768,9 +45282,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19323_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -49795,9 +45306,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19324_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111K00578" );
@@ -49824,9 +45333,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19325_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -49851,9 +45357,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19326_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190581" );
@@ -49880,9 +45384,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19327_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -49907,9 +45408,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19328_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111900]94" );
@@ -49936,9 +45435,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19329_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -49963,12 +45459,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19330_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119�0604" );
+            AbaRouteValidator.validate( "1119?0604" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -49992,9 +45486,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19331_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -50019,12 +45510,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19332_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11190�659" );
+            AbaRouteValidator.validate( "11190?659" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -50048,9 +45537,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19333_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -50075,9 +45561,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19334_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -50105,9 +45588,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19335_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -50132,9 +45612,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19336_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11!900785" );
@@ -50161,9 +45639,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19337_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -50188,12 +45663,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19338_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�1901014" );
+            AbaRouteValidator.validate( "1?1901014" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -50217,9 +45690,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19339_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -50244,9 +45714,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19340_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119?1056" );
@@ -50273,9 +45741,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19341_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -50300,9 +45765,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19342_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111901?34" );
@@ -50329,9 +45792,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19343_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -50356,9 +45816,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19344_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1W1901302" );
@@ -50385,9 +45843,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19345_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -50412,9 +45867,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19346_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -50442,9 +45894,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19347_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -50469,9 +45918,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19348_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111901?67" );
@@ -50498,9 +45945,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19349_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -50525,9 +45969,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19350_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119^1519" );
@@ -50554,9 +45996,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19351_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -50581,9 +46020,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19352_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11901564" );
@@ -50610,9 +46047,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19353_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -50637,12 +46071,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19354_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11�901580" );
+            AbaRouteValidator.validate( "11?901580" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -50666,9 +46098,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19355_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -50693,9 +46122,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19356_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11191629" );
@@ -50722,9 +46149,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19357_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -50749,12 +46173,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19358_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111901�32" );
+            AbaRouteValidator.validate( "111901?32" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -50778,9 +46200,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19359_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -50805,9 +46224,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19360_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190164}" );
@@ -50834,9 +46251,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19361_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -50861,9 +46275,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19362_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111>01690" );
@@ -50890,9 +46302,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19363_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -50917,9 +46326,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19364_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111D01946" );
@@ -50946,9 +46353,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19365_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -50973,12 +46377,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19366_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11�901959" );
+            AbaRouteValidator.validate( "11?901959" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -51002,9 +46404,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19367_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -51029,9 +46428,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19368_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?1901962" );
@@ -51058,9 +46455,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19369_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -51085,9 +46479,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19370_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11901975" );
@@ -51114,9 +46506,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19371_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -51141,9 +46530,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19372_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11901988" );
@@ -51170,9 +46557,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19373_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -51197,9 +46581,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19374_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11V901991" );
@@ -51226,9 +46608,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19375_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -51253,9 +46632,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19376_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190N000" );
@@ -51282,9 +46659,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19377_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -51309,9 +46683,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19378_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119w2055" );
@@ -51338,9 +46710,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19379_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -51365,9 +46734,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19380_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11?902275" );
@@ -51394,9 +46761,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19381_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -51421,9 +46785,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19382_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190m385" );
@@ -51450,9 +46812,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19383_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -51477,9 +46836,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19384_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -51507,9 +46863,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19385_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -51534,9 +46887,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19386_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190244" );
@@ -51563,9 +46914,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19387_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -51590,12 +46938,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19388_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�02806" );
+            AbaRouteValidator.validate( "111?02806" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -51619,9 +46965,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19389_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -51646,12 +46989,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19390_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11190281�" );
+            AbaRouteValidator.validate( "11190281?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -51675,9 +47016,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19391_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -51702,12 +47040,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19392_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�1903151" );
+            AbaRouteValidator.validate( "1?1903151" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -51731,9 +47067,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19393_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -51758,12 +47091,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19394_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11190�232" );
+            AbaRouteValidator.validate( "11190?232" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -51787,9 +47118,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19395_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -51814,9 +47142,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19396_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190324 " );
@@ -51843,9 +47169,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19397_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -51870,9 +47193,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19398_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119032;8" );
@@ -51899,9 +47220,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19399_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -51926,12 +47244,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19400_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11190�290" );
+            AbaRouteValidator.validate( "11190?290" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -51955,9 +47271,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19401_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -51982,9 +47295,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19402_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190?407" );
@@ -52011,9 +47322,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19403_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -52038,9 +47346,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19404_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190346I" );
@@ -52067,9 +47373,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19405_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -52094,9 +47397,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19406_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111903K17" );
@@ -52123,9 +47424,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19407_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -52150,9 +47448,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19408_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119035y6" );
@@ -52179,9 +47475,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19409_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -52206,12 +47499,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19410_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�03559" );
+            AbaRouteValidator.validate( "111?03559" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -52235,9 +47526,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19411_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -52262,12 +47550,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19412_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11190�575" );
+            AbaRouteValidator.validate( "11190?575" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -52291,9 +47577,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19413_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -52318,9 +47601,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19414_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119?3591" );
@@ -52347,9 +47628,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19415_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -52374,9 +47652,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19416_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190W627" );
@@ -52403,9 +47679,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19417_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -52430,9 +47703,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19418_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11{903821" );
@@ -52459,9 +47730,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19419_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -52486,12 +47754,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19420_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119038�0" );
+            AbaRouteValidator.validate( "1119038?0" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -52515,9 +47781,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19421_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -52542,12 +47805,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19422_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�03931" );
+            AbaRouteValidator.validate( "111?03931" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -52571,9 +47832,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19423_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -52598,9 +47856,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19424_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1N1903999" );
@@ -52627,9 +47883,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19425_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -52654,12 +47907,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19426_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111904�40" );
+            AbaRouteValidator.validate( "111904?40" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -52683,9 +47934,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19427_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -52710,12 +47958,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19428_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�04121" );
+            AbaRouteValidator.validate( "111?04121" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -52739,9 +47985,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19429_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -52766,9 +48009,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19430_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119041&0" );
@@ -52795,9 +48036,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19431_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -52822,9 +48060,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19432_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111i04192" );
@@ -52851,9 +48087,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19433_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -52878,9 +48111,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19434_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119042-5" );
@@ -52907,9 +48138,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19435_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -52934,9 +48162,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19436_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190421" );
@@ -52963,9 +48189,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19437_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -52990,9 +48213,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19438_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111m04338" );
@@ -53019,9 +48240,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19439_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -53046,9 +48264,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19440_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190441K" );
@@ -53075,9 +48291,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19441_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -53102,9 +48315,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19442_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190\451" );
@@ -53131,9 +48342,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19443_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -53158,9 +48366,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19444_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190448o" );
@@ -53187,9 +48393,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19445_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -53214,12 +48417,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19446_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111904�03" );
+            AbaRouteValidator.validate( "111904?03" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -53243,9 +48444,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19447_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -53270,12 +48468,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19448_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119�4817" );
+            AbaRouteValidator.validate( "1119?4817" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -53299,9 +48495,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19449_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -53326,9 +48519,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19450_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190485|" );
@@ -53355,9 +48546,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19451_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -53382,9 +48570,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19452_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190493" );
@@ -53411,9 +48597,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19453_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -53438,9 +48621,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19454_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111904?98" );
@@ -53467,9 +48648,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19455_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -53494,9 +48672,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19456_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119051)3" );
@@ -53523,9 +48699,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19457_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -53550,9 +48723,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19458_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190559" );
@@ -53579,9 +48750,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19459_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -53606,9 +48774,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19460_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11x905188" );
@@ -53635,9 +48801,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19461_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -53662,12 +48825,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19462_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11190�227" );
+            AbaRouteValidator.validate( "11190?227" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -53691,9 +48852,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19463_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -53718,12 +48876,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19464_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11190523�" );
+            AbaRouteValidator.validate( "11190523?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -53747,9 +48903,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19465_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -53774,9 +48927,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19466_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190534" );
@@ -53803,9 +48954,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19467_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -53830,9 +48978,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19468_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119053m7" );
@@ -53859,9 +49005,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19469_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -53886,9 +49029,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19470_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1b1905340" );
@@ -53915,9 +49056,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19471_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -53942,12 +49080,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19472_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11�905395" );
+            AbaRouteValidator.validate( "11?905395" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -53971,9 +49107,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19473_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -53998,9 +49131,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19474_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111905?34" );
@@ -54027,9 +49158,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19475_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -54054,9 +49182,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19476_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111905d09" );
@@ -54083,9 +49209,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19477_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -54110,9 +49233,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19478_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190?612" );
@@ -54139,9 +49260,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19479_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -54166,12 +49284,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19480_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119�5638" );
+            AbaRouteValidator.validate( "1119?5638" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -54195,9 +49311,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19481_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -54222,12 +49335,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19482_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11190�641" );
+            AbaRouteValidator.validate( "11190?641" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -54251,9 +49362,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19483_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -54278,9 +49386,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19484_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119`5719" );
@@ -54307,9 +49413,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19485_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -54334,9 +49437,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19486_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119|5764" );
@@ -54363,9 +49464,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19487_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -54390,12 +49488,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19488_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119057�0" );
+            AbaRouteValidator.validate( "1119057?0" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -54419,9 +49515,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19489_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -54446,9 +49539,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19490_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11105968" );
@@ -54475,9 +49566,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19491_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -54502,9 +49590,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19492_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -54532,9 +49617,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19493_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -54559,9 +49641,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19494_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190603:" );
@@ -54588,9 +49668,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19495_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -54615,12 +49692,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19496_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119�6048" );
+            AbaRouteValidator.validate( "1119?6048" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -54644,9 +49719,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19497_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -54671,12 +49743,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19498_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111906�61" );
+            AbaRouteValidator.validate( "111906?61" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -54700,9 +49770,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19499_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -54727,9 +49794,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19500_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11906242" );
@@ -54756,9 +49821,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19501_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -54783,9 +49845,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19502_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119062V1" );
@@ -54812,9 +49872,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19503_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -54839,12 +49896,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19504_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11190632�" );
+            AbaRouteValidator.validate( "11190632?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -54868,9 +49923,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19505_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -54895,9 +49947,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19506_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -54925,9 +49974,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19507_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -54952,9 +49998,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19508_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1^1906394" );
@@ -54981,9 +50025,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19509_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -55008,9 +50049,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19510_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111906R62" );
@@ -55037,9 +50076,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19511_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -55064,9 +50100,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19512_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11M906501" );
@@ -55093,9 +50127,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19513_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -55120,9 +50151,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19514_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1L1906611" );
@@ -55149,9 +50178,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19515_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -55176,9 +50202,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19516_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190?624" );
@@ -55205,9 +50229,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19517_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -55232,9 +50253,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19518_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190647" );
@@ -55261,9 +50280,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19519_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -55288,9 +50304,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19520_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190685m" );
@@ -55317,9 +50331,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19521_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -55344,9 +50355,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19522_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119?6860" );
@@ -55373,9 +50382,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19523_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -55400,12 +50406,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19524_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119�6996" );
+            AbaRouteValidator.validate( "1119?6996" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -55429,9 +50433,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19525_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -55456,9 +50457,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19526_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190k021" );
@@ -55485,9 +50484,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19527_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -55512,9 +50508,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19528_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190705" );
@@ -55541,9 +50535,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19529_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -55568,12 +50559,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19530_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�1907089" );
+            AbaRouteValidator.validate( "1?1907089" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -55597,9 +50586,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19531_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -55624,9 +50610,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19532_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1;1907102" );
@@ -55653,9 +50637,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19533_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -55680,12 +50661,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19534_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119�7144" );
+            AbaRouteValidator.validate( "1119?7144" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -55709,9 +50688,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19535_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -55736,12 +50712,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19536_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111907�99" );
+            AbaRouteValidator.validate( "111907?99" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -55765,9 +50739,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19537_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -55792,9 +50763,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19538_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190G348" );
@@ -55821,9 +50790,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19539_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -55848,9 +50814,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19540_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1-1907364" );
@@ -55877,9 +50841,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19541_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -55904,9 +50865,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19542_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11w907429" );
@@ -55933,9 +50892,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19543_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -55960,12 +50916,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19544_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�07445" );
+            AbaRouteValidator.validate( "111?07445" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -55989,9 +50943,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19545_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -56016,9 +50967,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19546_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119074?0" );
@@ -56045,9 +50994,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19547_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -56072,9 +51018,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19548_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119075?0" );
@@ -56101,9 +51045,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19549_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -56128,12 +51069,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19550_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119075�5" );
+            AbaRouteValidator.validate( "1119075?5" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -56157,9 +51096,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19551_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -56184,12 +51120,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19552_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119075�8" );
+            AbaRouteValidator.validate( "1119075?8" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -56213,9 +51147,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19553_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -56240,12 +51171,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19554_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11�907607" );
+            AbaRouteValidator.validate( "11?907607" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -56269,9 +51198,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19555_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -56296,12 +51222,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19556_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119�7652" );
+            AbaRouteValidator.validate( "1119?7652" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -56325,9 +51249,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19557_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -56352,9 +51273,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19558_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119076X4" );
@@ -56381,9 +51300,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19559_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -56408,12 +51324,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19560_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11190�717" );
+            AbaRouteValidator.validate( "11190?717" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -56437,9 +51351,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19561_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -56464,9 +51375,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19562_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190775" );
@@ -56493,9 +51402,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19563_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -56520,9 +51426,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19564_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190788" );
@@ -56549,9 +51453,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19565_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -56576,12 +51477,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19566_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111907�27" );
+            AbaRouteValidator.validate( "111907?27" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -56605,9 +51504,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19567_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -56632,9 +51528,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19568_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -56662,9 +51555,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19569_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -56689,9 +51579,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19570_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11I907924" );
@@ -56718,9 +51606,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19571_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -56745,9 +51630,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19572_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -56775,9 +51657,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19573_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -56802,12 +51681,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19574_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119�7979" );
+            AbaRouteValidator.validate( "1119?7979" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -56831,9 +51708,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19575_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -56858,9 +51732,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19576_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1S1908004" );
@@ -56887,9 +51759,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19577_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -56914,9 +51783,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19578_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119080:1" );
@@ -56943,9 +51810,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19579_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -56970,9 +51834,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19580_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111908W27" );
@@ -56999,9 +51861,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19581_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -57026,12 +51885,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19582_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11190814�" );
+            AbaRouteValidator.validate( "11190814?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -57055,9 +51912,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19583_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -57082,12 +51936,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19584_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11�908172" );
+            AbaRouteValidator.validate( "11?908172" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -57111,9 +51963,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19585_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -57138,9 +51987,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19586_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190828" );
@@ -57167,9 +52014,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19587_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -57194,12 +52038,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19588_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�1908237" );
+            AbaRouteValidator.validate( "1?1908237" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -57223,9 +52065,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19589_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -57250,9 +52089,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19590_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111~08402" );
@@ -57279,9 +52116,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19591_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -57306,9 +52140,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19592_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190849U" );
@@ -57335,9 +52167,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19593_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -57362,9 +52191,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19594_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111908>09" );
@@ -57391,9 +52218,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19595_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -57418,9 +52242,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19596_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1M1908512" );
@@ -57447,9 +52269,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19597_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -57474,9 +52293,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19598_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119085?7" );
@@ -57503,9 +52320,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19599_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -57530,9 +52344,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19600_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -57560,9 +52371,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19601_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -57587,9 +52395,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19602_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11v908758" );
@@ -57616,9 +52422,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19603_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -57643,12 +52446,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19604_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11190878�" );
+            AbaRouteValidator.validate( "11190878?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -57672,9 +52473,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19605_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -57699,9 +52497,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19606_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119088W8" );
@@ -57728,9 +52524,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19607_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -57755,9 +52548,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19608_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11q908949" );
@@ -57784,9 +52575,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19609_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -57811,12 +52599,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19610_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�08952" );
+            AbaRouteValidator.validate( "111?08952" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -57840,9 +52626,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19611_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -57867,9 +52650,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19612_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?1908965" );
@@ -57896,9 +52677,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19613_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -57923,9 +52701,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19614_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11109029" );
@@ -57952,9 +52728,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19615_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -57979,9 +52752,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19616_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190921>" );
@@ -58008,9 +52779,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19617_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -58035,12 +52803,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19618_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111909�65" );
+            AbaRouteValidator.validate( "111909?65" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -58064,9 +52830,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19619_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -58091,9 +52854,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19620_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111^09281" );
@@ -58120,9 +52881,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19621_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -58147,9 +52905,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19622_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11%909362" );
@@ -58176,9 +52932,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19623_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -58203,9 +52956,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19624_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1j1909391" );
@@ -58232,9 +52983,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19625_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -58259,9 +53007,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19626_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119094!3" );
@@ -58288,9 +53034,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19627_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -58315,9 +53058,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19628_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119095Y1" );
@@ -58344,9 +53085,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19629_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -58371,9 +53109,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19630_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119095!4" );
@@ -58400,9 +53136,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19631_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -58427,9 +53160,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19632_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190957(" );
@@ -58456,9 +53187,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19633_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -58483,9 +53211,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19634_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190965" );
@@ -58512,9 +53238,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19635_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -58539,9 +53262,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19636_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11190963P" );
@@ -58568,9 +53289,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19637_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -58595,12 +53313,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19638_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�1909663" );
+            AbaRouteValidator.validate( "1?1909663" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -58624,9 +53340,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19639_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -58651,9 +53364,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19640_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111T09676" );
@@ -58680,9 +53391,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19641_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -58707,9 +53415,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19642_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?1909760" );
@@ -58736,9 +53442,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19643_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -58763,12 +53466,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19644_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11190�773" );
+            AbaRouteValidator.validate( "11190?773" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -58792,9 +53493,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19645_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -58819,12 +53517,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19646_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11190982�" );
+            AbaRouteValidator.validate( "11190982?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -58848,9 +53544,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19647_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -58875,9 +53568,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19648_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11?909841" );
@@ -58904,9 +53595,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19649_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -58931,12 +53619,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19650_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11190�867" );
+            AbaRouteValidator.validate( "11190?867" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -58960,9 +53646,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19651_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -58987,12 +53670,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19652_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11190987�" );
+            AbaRouteValidator.validate( "11190987?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -59016,9 +53697,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19653_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -59043,9 +53721,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19654_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1A1909993" );
@@ -59072,9 +53748,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19655_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -59099,12 +53772,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19656_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111910�05" );
+            AbaRouteValidator.validate( "111910?05" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -59128,9 +53799,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19657_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -59155,9 +53823,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19658_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119100?2" );
@@ -59184,9 +53850,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19659_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -59211,9 +53874,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19660_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -59241,9 +53901,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19661_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -59268,9 +53925,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19662_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11h910160" );
@@ -59297,9 +53952,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19663_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -59324,12 +53976,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19664_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11191026�" );
+            AbaRouteValidator.validate( "11191026?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -59353,9 +54003,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19665_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -59380,9 +54027,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19666_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11910380" );
@@ -59409,9 +54054,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19667_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -59436,9 +54078,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19668_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?1910445" );
@@ -59465,9 +54105,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19669_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -59492,9 +54129,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19670_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11191060)" );
@@ -59521,9 +54156,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19671_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -59548,9 +54180,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19672_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119106l1" );
@@ -59577,9 +54207,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19673_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -59604,9 +54231,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19674_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?1910762" );
@@ -59633,9 +54258,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19675_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -59660,9 +54282,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19676_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11110830" );
@@ -59689,9 +54309,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19677_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -59716,12 +54333,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19678_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11191�856" );
+            AbaRouteValidator.validate( "11191?856" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -59745,9 +54360,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19679_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -59772,12 +54384,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19680_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119110�3" );
+            AbaRouteValidator.validate( "1119110?3" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -59801,9 +54411,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19681_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -59828,9 +54435,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19682_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11j911091" );
@@ -59857,9 +54462,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19683_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -59884,9 +54486,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19684_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111w11101" );
@@ -59913,9 +54513,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19685_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -59940,9 +54537,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19686_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119A1156" );
@@ -59969,9 +54564,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19687_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -59996,9 +54588,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19688_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -60026,9 +54615,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19689_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -60053,12 +54639,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19690_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119113�1" );
+            AbaRouteValidator.validate( "1119113?1" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -60082,9 +54666,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19691_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -60109,9 +54690,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19692_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11191182{" );
@@ -60138,9 +54717,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19693_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -60165,12 +54741,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19694_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11191188�" );
+            AbaRouteValidator.validate( "11191188?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -60194,9 +54768,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19695_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -60221,9 +54792,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19696_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -60251,9 +54819,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19697_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -60278,9 +54843,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19698_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11-912090" );
@@ -60307,9 +54870,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19699_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -60334,9 +54894,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19700_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111-12126" );
@@ -60363,9 +54921,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19701_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -60390,9 +54945,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19702_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119+2197" );
@@ -60419,9 +54972,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19703_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -60446,12 +54996,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19704_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119�2252" );
+            AbaRouteValidator.validate( "1119?2252" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -60475,9 +55023,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19705_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -60502,9 +55047,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19706_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11191388" );
@@ -60531,9 +55074,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19707_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -60558,9 +55098,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19708_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119124=1" );
@@ -60587,9 +55125,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19709_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -60614,9 +55149,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19710_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11191?427" );
@@ -60643,9 +55176,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19711_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -60670,9 +55200,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19712_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1/1912498" );
@@ -60699,9 +55227,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19713_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -60726,9 +55251,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19714_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11191z605" );
@@ -60755,9 +55278,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19715_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -60782,9 +55302,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19716_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11l912744" );
@@ -60811,9 +55329,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19717_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -60838,9 +55353,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19718_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11112854" );
@@ -60867,9 +55380,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19719_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -60894,9 +55404,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19720_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119E3060" );
@@ -60923,9 +55431,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19721_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -60950,9 +55455,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19722_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11(913073" );
@@ -60979,9 +55482,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19723_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -61006,9 +55506,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19724_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -61036,9 +55533,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19725_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -61063,9 +55557,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19726_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11913248" );
@@ -61092,9 +55584,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19727_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -61119,9 +55608,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19728_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11?913329" );
@@ -61148,9 +55635,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19729_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -61175,9 +55659,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19730_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111~13426" );
@@ -61204,9 +55686,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19731_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -61231,12 +55710,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19732_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119�3510" );
+            AbaRouteValidator.validate( "1119?3510" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -61260,9 +55737,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19733_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -61287,12 +55761,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19734_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111913�88" );
+            AbaRouteValidator.validate( "111913?88" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -61316,9 +55788,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19735_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -61343,12 +55812,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19736_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11�913756" );
+            AbaRouteValidator.validate( "11?913756" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -61372,9 +55839,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19737_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -61399,9 +55863,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19738_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "141913798" );
@@ -61428,9 +55890,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19739_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -61455,12 +55914,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19740_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�1913879" );
+            AbaRouteValidator.validate( "1?1913879" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -61484,9 +55941,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19741_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -61511,9 +55965,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19742_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111h14027" );
@@ -61540,9 +55992,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19743_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -61567,9 +56016,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19744_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11u914218" );
@@ -61596,9 +56043,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19745_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -61623,9 +56067,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19746_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11191428I" );
@@ -61652,9 +56094,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19747_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -61679,9 +56118,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19748_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11914302" );
@@ -61708,9 +56145,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19749_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -61735,9 +56169,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19750_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119:4344" );
@@ -61764,9 +56196,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19751_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -61791,9 +56220,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19752_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11914687" );
@@ -61820,9 +56247,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19753_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -61847,9 +56271,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19754_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11191Q849" );
@@ -61876,9 +56298,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19755_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -61903,12 +56322,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19756_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11191�852" );
+            AbaRouteValidator.validate( "11191?852" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -61932,9 +56349,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19757_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -61959,9 +56373,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19758_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11C914865" );
@@ -61988,9 +56400,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19759_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -62015,9 +56424,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19760_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11?914878" );
@@ -62044,9 +56451,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19761_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -62071,9 +56475,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19762_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11191O881" );
@@ -62100,9 +56502,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19763_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -62127,9 +56526,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19764_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11191417" );
@@ -62156,9 +56553,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19765_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -62183,9 +56577,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19766_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -62213,9 +56604,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19767_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -62240,9 +56628,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19768_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11191504?" );
@@ -62269,9 +56655,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19769_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -62296,9 +56679,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19770_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119l5149" );
@@ -62325,9 +56706,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19771_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -62352,12 +56730,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19772_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11191525�" );
+            AbaRouteValidator.validate( "11191525?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -62381,9 +56757,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19773_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -62408,9 +56781,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19774_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119153k7" );
@@ -62437,9 +56808,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19775_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -62464,9 +56832,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19776_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119W5398" );
@@ -62493,9 +56859,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19777_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -62520,9 +56883,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19778_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111>15563" );
@@ -62549,9 +56910,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19779_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -62576,9 +56934,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19780_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -62606,9 +56961,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19781_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -62633,9 +56985,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19782_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11191?686" );
@@ -62662,9 +57012,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19783_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -62689,9 +57036,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19784_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11191?709" );
@@ -62718,9 +57063,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19785_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -62745,12 +57087,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19786_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�1915770" );
+            AbaRouteValidator.validate( "1?1915770" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -62774,9 +57114,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19787_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -62801,12 +57138,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19788_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119161�0" );
+            AbaRouteValidator.validate( "1119161?0" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -62830,9 +57165,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19789_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -62857,9 +57189,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19790_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11191619N" );
@@ -62886,9 +57216,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19791_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -62913,9 +57240,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19792_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1\1916287" );
@@ -62942,9 +57267,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19793_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -62969,9 +57291,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19794_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111916k00" );
@@ -62998,9 +57318,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19795_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -63025,9 +57342,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19796_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11p916326" );
@@ -63054,9 +57369,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19797_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -63081,12 +57393,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19798_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�1916410" );
+            AbaRouteValidator.validate( "1?1916410" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -63110,9 +57420,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19799_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -63137,12 +57444,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19800_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11191642�" );
+            AbaRouteValidator.validate( "11191642?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -63166,9 +57471,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19801_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -63193,9 +57495,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19802_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11191643?" );
@@ -63222,9 +57522,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19803_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -63249,9 +57546,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19804_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?1916452" );
@@ -63278,9 +57573,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19805_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -63305,9 +57597,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19806_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11191658" );
@@ -63334,9 +57624,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19807_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -63361,9 +57648,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19808_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11(916591" );
@@ -63390,9 +57675,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19809_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -63417,9 +57699,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19810_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11j916627" );
@@ -63446,9 +57726,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19811_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -63473,9 +57750,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19812_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119166R6" );
@@ -63502,9 +57777,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19813_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -63529,12 +57801,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19814_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11�916698" );
+            AbaRouteValidator.validate( "11?916698" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -63558,9 +57828,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19815_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -63585,9 +57852,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19816_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11196724" );
@@ -63614,9 +57879,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19817_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -63641,12 +57903,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19818_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119169�5" );
+            AbaRouteValidator.validate( "1119169?5" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -63670,9 +57930,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19819_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -63697,9 +57954,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19820_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -63727,9 +57981,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19821_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -63754,9 +58005,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19822_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119172?5" );
@@ -63783,9 +58032,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19823_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -63810,9 +58056,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19824_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119173t9" );
@@ -63839,9 +58083,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19825_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -63866,12 +58107,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19826_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11191�325" );
+            AbaRouteValidator.validate( "11191?325" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -63895,9 +58134,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19827_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -63922,9 +58158,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19828_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -63952,9 +58185,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19829_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -63979,9 +58209,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19830_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11191]383" );
@@ -64008,9 +58236,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19831_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -64035,9 +58260,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19832_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119174M5" );
@@ -64064,9 +58287,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19833_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -64091,12 +58311,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19834_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11191757�" );
+            AbaRouteValidator.validate( "11191757?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -64120,9 +58338,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19835_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -64147,12 +58362,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19836_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11�917590" );
+            AbaRouteValidator.validate( "11?917590" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -64176,9 +58389,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19837_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -64203,9 +58413,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19838_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11>917943" );
@@ -64232,9 +58440,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19839_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -64259,12 +58464,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19840_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119�8230" );
+            AbaRouteValidator.validate( "1119?8230" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -64288,9 +58491,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19841_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -64315,9 +58515,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19842_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111918I45" );
@@ -64344,9 +58542,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19843_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -64371,12 +58566,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19844_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11191943�" );
+            AbaRouteValidator.validate( "11191943?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -64400,9 +58593,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19845_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -64427,9 +58617,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19846_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11192V312" );
@@ -64456,9 +58644,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19847_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -64483,9 +58668,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19848_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11120325" );
@@ -64512,9 +58695,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19849_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -64539,9 +58719,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19850_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -64569,9 +58746,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19851_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -64596,9 +58770,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19852_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111d20684" );
@@ -64625,9 +58797,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19853_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -64652,9 +58821,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19854_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11192o765" );
@@ -64681,9 +58848,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19855_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -64708,9 +58872,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19856_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11192@230" );
@@ -64737,9 +58899,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19857_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -64764,9 +58923,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19858_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11192129z" );
@@ -64793,9 +58950,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19859_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -64820,12 +58974,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19860_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11192175�" );
+            AbaRouteValidator.validate( "11192175?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -64849,9 +59001,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19861_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -64876,9 +59025,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19862_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11192177_" );
@@ -64905,9 +59052,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19863_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -64932,9 +59076,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19864_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119?2132" );
@@ -64961,9 +59103,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19865_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -64988,9 +59127,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19866_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11192221?" );
@@ -65017,9 +59154,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19867_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -65044,9 +59178,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19868_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11192x488" );
@@ -65073,9 +59205,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19869_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -65100,9 +59229,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19870_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11192252" );
@@ -65129,9 +59256,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19871_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -65156,9 +59280,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19872_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119p2611" );
@@ -65185,9 +59307,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19873_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -65212,9 +59331,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19874_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?1922624" );
@@ -65241,9 +59358,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19875_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -65268,12 +59382,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19876_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�1922776" );
+            AbaRouteValidator.validate( "1?1922776" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -65297,9 +59409,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19877_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -65324,9 +59433,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19878_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11192323A" );
@@ -65353,9 +59460,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19879_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -65380,12 +59484,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19880_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119�3490" );
+            AbaRouteValidator.validate( "1119?3490" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -65409,9 +59511,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19881_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -65436,9 +59535,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19882_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119236G7" );
@@ -65465,9 +59562,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19883_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -65492,12 +59586,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19884_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111923�98" );
+            AbaRouteValidator.validate( "111923?98" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -65521,9 +59613,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19885_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -65548,9 +59637,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19886_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?1923937" );
@@ -65577,9 +59664,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19887_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -65604,9 +59688,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19888_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1p1924075" );
@@ -65633,9 +59715,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19889_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -65660,12 +59739,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19890_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11192�127" );
+            AbaRouteValidator.validate( "11192?127" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -65689,9 +59766,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19891_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -65716,9 +59790,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19892_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111924v43" );
@@ -65745,9 +59817,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19893_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -65772,12 +59841,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19894_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119�4237" );
+            AbaRouteValidator.validate( "1119?4237" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -65801,9 +59868,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19895_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -65828,9 +59892,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19896_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11192430(" );
@@ -65857,9 +59919,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19897_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -65884,12 +59943,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19898_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11192431�" );
+            AbaRouteValidator.validate( "11192431?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -65913,9 +59970,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19899_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -65940,9 +59994,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19900_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11192?347" );
@@ -65969,9 +60021,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19901_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -65996,9 +60045,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19902_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11Y924350" );
@@ -66025,9 +60072,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19903_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -66052,12 +60096,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19904_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1119243�3" );
+            AbaRouteValidator.validate( "1119243?3" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -66081,9 +60123,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19905_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -66108,9 +60147,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19906_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1~1924392" );
@@ -66137,9 +60174,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19907_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -66164,9 +60198,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19908_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11i924428" );
@@ -66193,9 +60225,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19909_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -66220,9 +60249,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19910_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111y24473" );
@@ -66249,9 +60276,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19911_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -66276,9 +60300,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19912_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11192k538" );
@@ -66305,9 +60327,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19913_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -66332,9 +60351,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19914_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11192d554" );
@@ -66361,9 +60378,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19915_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -66388,9 +60402,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19916_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111924;06" );
@@ -66417,9 +60429,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19917_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -66444,9 +60453,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19918_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11194619" );
@@ -66473,9 +60480,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19919_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -66500,12 +60504,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19920_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111924�22" );
+            AbaRouteValidator.validate( "111924?22" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -66529,9 +60531,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19921_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -66556,9 +60555,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19922_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11192   651" );
@@ -66585,9 +60582,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19923_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -66612,12 +60606,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19924_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�24680" );
+            AbaRouteValidator.validate( "111?24680" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -66641,9 +60633,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19925_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -66668,12 +60657,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19926_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11192471�" );
+            AbaRouteValidator.validate( "11192471?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -66697,9 +60684,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19927_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -66724,9 +60708,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19928_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11124787" );
@@ -66753,9 +60735,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19929_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -66780,9 +60759,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19930_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -66810,9 +60786,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19931_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -66837,9 +60810,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19932_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11192494" );
@@ -66866,9 +60837,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19933_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -66893,9 +60861,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19934_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11192?032" );
@@ -66922,9 +60888,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19935_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -66949,9 +60912,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19936_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11192504a" );
@@ -66978,9 +60939,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19937_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -67005,9 +60963,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19938_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?1925061" );
@@ -67034,9 +60990,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19939_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -67061,9 +61014,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19940_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111925W74" );
@@ -67090,9 +61041,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19941_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -67117,9 +61065,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19942_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1q1925113" );
@@ -67146,9 +61092,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19943_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -67173,9 +61116,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19944_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119`5168" );
@@ -67202,9 +61143,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19945_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -67229,12 +61167,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19946_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�1925210" );
+            AbaRouteValidator.validate( "1?1925210" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -67258,9 +61194,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19947_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -67285,9 +61218,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19948_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11192i223" );
@@ -67314,9 +61245,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19949_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -67341,9 +61269,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19950_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119252n1" );
@@ -67370,9 +61296,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19951_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -67397,9 +61320,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19952_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11192304" );
@@ -67426,9 +61347,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19953_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -67453,9 +61371,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19954_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119?5317" );
@@ -67482,9 +61398,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19955_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -67509,9 +61422,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19956_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119d5320" );
@@ -67538,9 +61449,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19957_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -67565,9 +61473,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19958_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11125359" );
@@ -67594,9 +61500,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19959_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -67621,9 +61524,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19960_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111925E30" );
@@ -67650,9 +61551,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19961_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -67677,9 +61575,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19962_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1#1925472" );
@@ -67706,9 +61602,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19963_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -67733,9 +61626,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19964_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -67763,9 +61653,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19965_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -67790,9 +61677,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19966_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool;
 
         // Validate
@@ -67820,9 +61704,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19967_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -67847,9 +61728,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19968_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111?25582" );
@@ -67876,9 +61755,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19969_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -67903,12 +61779,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19970_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111�25605" );
+            AbaRouteValidator.validate( "111?25605" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -67932,9 +61806,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19971_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -67959,12 +61830,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19972_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "111925�21" );
+            AbaRouteValidator.validate( "111925?21" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -67988,9 +61857,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19973_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -68015,9 +61881,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19974_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "171925634" );
@@ -68044,9 +61908,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19975_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -68071,9 +61932,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19976_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111925B76" );
@@ -68100,9 +61959,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19977_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -68127,9 +61983,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19978_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11192574H" );
@@ -68156,9 +62010,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19979_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -68183,9 +62034,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19980_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1?1925757" );
@@ -68212,9 +62061,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19981_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -68239,9 +62085,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19982_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111?25773" );
@@ -68268,9 +62112,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19983_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -68295,9 +62136,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19984_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "111925?12" );
@@ -68324,9 +62163,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19985_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -68351,12 +62187,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19986_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "11192592�" );
+            AbaRouteValidator.validate( "11192592?" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -68380,9 +62214,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19987_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -68407,12 +62238,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19988_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�1925935" );
+            AbaRouteValidator.validate( "1?1925935" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -68436,9 +62265,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19989_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -68463,9 +62289,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19990_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119'6057" );
@@ -68492,9 +62316,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19991_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -68519,12 +62340,10 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19992_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
-            AbaRouteValidator.validate( "1�1993572" );
+            AbaRouteValidator.validate( "1?1993572" );
         }
         catch( AbaRouteValidationException e ) {
 
@@ -68548,9 +62367,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19993_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -68575,9 +62391,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19994_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "11199i695" );
@@ -68604,9 +62418,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19995_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -68631,9 +62442,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19996_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119+3747" );
@@ -68660,9 +62469,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19997_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -68687,9 +62493,7 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19998_bad( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
 
-        // --------------------------------------------------------------------
         // Validate
         try {
             AbaRouteValidator.validate( "1119937A3" );
@@ -68716,9 +62520,6 @@ public class Test_AbaRouteValidator_09 {
      */
     @Test
     public void testAbaNumberCheck_19999_good( TestInfo testInfo ) {
-        System.out.println( "    Test: " + testInfo.getDisplayName() );
-
-        // --------------------------------------------------------------------
         boolean returnBool = false;
 
         // Validate
@@ -68737,24 +62538,7 @@ public class Test_AbaRouteValidator_09 {
 }
 
 /* ---------------------------------------------------------------------------------------
- *  License: Apache 2.0
- *
- *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use
- *  this file except in compliance with the License.
- *
- *  You may obtain a copy of the License at
- *
- *    http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software distributed under
- *  the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
- *  OF ANY KIND, either express or implied including the implied warranties of
- *  merchantability and fitness for a particular purpose.
- *
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
- *
- * ---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.Test_AbaRouteValidator_09.java
  * Date:   2024/02/11
  * --------------------------------------------------------------------------------------- */
+

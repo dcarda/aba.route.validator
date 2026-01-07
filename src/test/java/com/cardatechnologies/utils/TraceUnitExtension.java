@@ -11,15 +11,11 @@ package com.cardatechnologies.utils;
 
 //~--- non-JDK imports --------------------------------------------------------
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.extension.AfterAllCallback;
 import org.junit.jupiter.api.extension.AfterEachCallback;
 import org.junit.jupiter.api.extension.BeforeAllCallback;
 import org.junit.jupiter.api.extension.BeforeEachCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
-
-import com.cardatechnologies.utils.validators.abaroutevalidator.TestAbaRouteValidator_01;
 
 /**
  * Package:    com.cardatechnologies.utils.validators.abaroutevalidator
@@ -47,52 +43,34 @@ public class TraceUnitExtension
                    AfterAllCallback {
 
     @Override
-    public void afterAll( ExtensionContext extensionContext )
-            throws Exception {
-        String className = TestAbaRouteValidator_01.class.getName();
-
-        System.out.println( "\nFinished Test Class: " + className );
-        System.out.println( "------------------------------------------------------------" );
-    }
-
-    /**
-     * Method: afterClass
-     */
-    @AfterAll
-    public static void afterClass() {
-        String className = TestAbaRouteValidator_01.class.getName();
-
-        System.out.println( "\nFinished: " + className );
-        System.out.println( "x-----------------------------------------------------------" );
-    }
-
-    @Override
-    public void afterEach( ExtensionContext extensionContext )
-            throws Exception {}
-
-    @Override
     public void beforeAll( ExtensionContext extensionContext )
             throws Exception {
-        String className = TestAbaRouteValidator_01.class.getName();
-
         System.out.println( "------------------------------------------------------------" );
-        System.out.println( "Running Test Class: " + className + "\n" );
+        System.out.println( "Running Test Class: " + extensionContext.getDisplayName() + "\n" );
     }
 
-    /**
-     * Method: beforeClass
-     */
-    @BeforeAll
-    public static void beforeClass() {
-        String className = TestAbaRouteValidator_01.class.getName();
-
-        System.out.println( "y-----------------------------------------------------------" );
-        System.out.println( "Running Test Class: " + className + "\n" );
+    @Override
+    public void afterAll( ExtensionContext extensionContext )
+            throws Exception {
+        System.out.println( "\nFinished Test Class: " + extensionContext.getDisplayName() );
+        System.out.println( "------------------------------------------------------------" );
     }
 
     @Override
     public void beforeEach( ExtensionContext extensionContext )
-            throws Exception {}
+            throws Exception {
+        //        System.out.println( "------------------------------------------------------------");
+        System.out.println(String.format("     Test:  %s", extensionContext.getDisplayName()));
+    }
+
+    @Override
+    public void afterEach( ExtensionContext extensionContext )
+            throws Exception {
+        //        System.out.println(String.format("test finished: %s", extensionContext.getDisplayName()));
+        //        System.out.println( "------------------------------------------------------------");
+    }
+
+
 }
 
 /* ---------------------------------------------------------------------------------------

@@ -141,13 +141,13 @@
         <version.surefire.plugin>2.22.2</version.surefire.plugin>
 
         <!-- Testing Plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-<!--        <version.junit.jupiter>5.10.2</version.junit.jupiter>-->
-        <version.junit.jupiter>5.11.0-M1</version.junit.jupiter>
+        <version.junit.jupiter>5.10.2</version.junit.jupiter>
+<!--        <version.junit.jupiter>5.11.0-M1</version.junit.jupiter>-->
 
 
 
-<!--        <version.junit.platform>1.10.2</version.junit.platform>-->
-        <version.junit.platform>1.11.0-M1</version.junit.platform>
+        <version.junit.platform>1.10.2</version.junit.platform>
+<!--        <version.junit.platform>1.11.0-M1</version.junit.platform>-->
 
     </properties>
 
