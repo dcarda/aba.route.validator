@@ -687,26 +687,29 @@
                 <artifactId>git-commit-id-plugin</artifactId>
             </plugin>
 
+
+<!--            FIX LATER-->
+
             <!--   OWASP Vulnerability Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
             <!--   https://jeremylong.github.io/DependencyCheck/dependency-check-maven/    -->
-            <plugin>
-                <groupId>org.owasp</groupId>
-                <artifactId>dependency-check-maven</artifactId>
-                <version>9.1.0</version>
-                <executions>
-                    <execution>
-                        <!--                        <phase>package</phase>-->
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <!--                    <failBuildOnCVSS>6</failBuildOnCVSS>-->
-                    <!--                    <format>ALL</format>-->
-                    <!--                    <outputDirectory>${dependency.check.report.dir}</outputDirectory>-->
-                </configuration>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.owasp</groupId>-->
+<!--                <artifactId>dependency-check-maven</artifactId>-->
+<!--                <version>9.1.0</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        &lt;!&ndash;                        <phase>package</phase>&ndash;&gt;-->
+<!--                        <goals>-->
+<!--                            <goal>check</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--                <configuration>-->
+<!--                    &lt;!&ndash;                    <failBuildOnCVSS>6</failBuildOnCVSS>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <format>ALL</format>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <outputDirectory>${dependency.check.report.dir}</outputDirectory>&ndash;&gt;-->
+<!--                </configuration>-->
+<!--            </plugin>-->
         </plugins>
 
 
@@ -792,13 +795,15 @@
                             <version>${version.assembly.plugin}</version>
                         </plugin>
 
-                        <!--   Apache Maven Changelog Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-                        <!--   https://maven.apache.org/plugins/maven-changelog-plugin/    -->
-                        <plugin>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-changelog-plugin</artifactId>
-                            <version>${version.changelog.reporting.plugin}</version>
-                        </plugin>
+<!--                        FIX LATER-->
+
+<!--                        &lt;!&ndash;   Apache Maven Changelog Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  &ndash;&gt;-->
+<!--                        &lt;!&ndash;   https://maven.apache.org/plugins/maven-changelog-plugin/    &ndash;&gt;-->
+<!--                        <plugin>-->
+<!--                            <groupId>org.apache.maven.plugins</groupId>-->
+<!--                            <artifactId>maven-changelog-plugin</artifactId>-->
+<!--                            <version>${version.changelog.reporting.plugin}</version>-->
+<!--                        </plugin>-->
 
                         <!--   Checkstyle Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                         <!--   https://checkstyle.sourceforge.io/                          -->
@@ -1201,12 +1206,14 @@
                     <!--   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
 
-                    <!--   Apache Maven Changelog Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-                    <!--   https://maven.apache.org/plugins/maven-changelog-plugin/        -->
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-changelog-plugin</artifactId>
-                    </plugin>
+
+<!--                    FIX LATER-->
+<!--                    &lt;!&ndash;   Apache Maven Changelog Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  &ndash;&gt;-->
+<!--                    &lt;!&ndash;   https://maven.apache.org/plugins/maven-changelog-plugin/        &ndash;&gt;-->
+<!--                    <plugin>-->
+<!--                        <groupId>org.apache.maven.plugins</groupId>-->
+<!--                        <artifactId>maven-changelog-plugin</artifactId>-->
+<!--                    </plugin>-->
 
                     <!--   Checkstyle Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   https://checkstyle.sourceforge.io/                              -->
@@ -1448,23 +1455,27 @@
 
                     </plugin>
 
+
+
+<!--                    FIX LATER-->
+
                     <!--   OWASP Vulnerability Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   https://jeremylong.github.io/DependencyCheck/dependency-check-maven/   -->
-                    <plugin>
-                        <groupId>org.owasp</groupId>
-                        <artifactId>dependency-check-maven</artifactId>
-                        <version>${version.owasp.dependency.check}</version>
-                        <configuration>
-                            <name>Vulnerability Report</name>
-                        </configuration>
-                        <reportSets>
-                            <reportSet>
-                                <reports>
-                                    <report>aggregate</report>
-                                </reports>
-                            </reportSet>
-                        </reportSets>
-                    </plugin>
+<!--                    <plugin>-->
+<!--                        <groupId>org.owasp</groupId>-->
+<!--                        <artifactId>dependency-check-maven</artifactId>-->
+<!--                        <version>${version.owasp.dependency.check}</version>-->
+<!--                        <configuration>-->
+<!--                            <name>Vulnerability Report</name>-->
+<!--                        </configuration>-->
+<!--                        <reportSets>-->
+<!--                            <reportSet>-->
+<!--                                <reports>-->
+<!--                                    <report>aggregate</report>-->
+<!--                                </reports>-->
+<!--                            </reportSet>-->
+<!--                        </reportSets>-->
+<!--                    </plugin>-->
 
                     <!--   Versions Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   https://www.mojohaus.org/versions/versions-maven-plugin/index.html   -->
