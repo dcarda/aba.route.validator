@@ -739,7 +739,7 @@
                 <version.jdepend.reporting.plugin>2.0</version.jdepend.reporting.plugin>
                 <version.jxr.reporting.plugin>3.3.2</version.jxr.reporting.plugin>
                 <version.license.reporting.plugin>2.4.0</version.license.reporting.plugin>
-                <version.maven.site.plugin>4.0.0-M9</version.maven.site.plugin>
+                <version.maven.site.plugin>4.0.0-M16</version.maven.site.plugin>
                 <version.pmd.reporting.plugin>3.21.2</version.pmd.reporting.plugin>
                 <version.project.info.reports.plugin>3.5.0</version.project.info.reports.plugin>
                 <version.sourceforge.pmd.core>6.55.0</version.sourceforge.pmd.core>
@@ -779,7 +779,8 @@
                                 <dependency>
                                     <groupId>io.github.devacfr.maven.skins</groupId>
                                     <artifactId>reflow-velocity-tools</artifactId>
-                                    <version>2.3.4</version>
+<!--                                    FIX THIS-->
+                                    <version>2.3.5</version>
                                 </dependency>
                             </dependencies>
                         </plugin>
