@@ -134,8 +134,12 @@
         <!-- Reporting Plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙······∙∙∙∙∙∙∙  -->
         <version.enforcer.extra.rules>1.8.0</version.enforcer.extra.rules>
         <version.enforcer.plugin>3.4.1</version.enforcer.plugin>
-        <version.jacoco.reporting.plugin>0.8.12</version.jacoco.reporting.plugin>
-        <version.maven.versions.plugin>2.16.2</version.maven.versions.plugin>
+        <version.jacoco.reporting.plugin>0.8.14</version.jacoco.reporting.plugin>
+
+<!--        <version.maven.versions.plugin>2.16.2</version.maven.versions.plugin>-->
+        <version.maven.versions.plugin>2.21.0</version.maven.versions.plugin>
+
+
         <version.owasp.dependency.check>9.1.0</version.owasp.dependency.check>
         <!--   WARMNING: DON'T UPDATE THIS.  WON'T WORK WITH JACOCO  -->
         <version.surefire.plugin>2.22.2</version.surefire.plugin>
@@ -746,7 +750,7 @@
                 <version.sourceforge.pmd.java>6.55.0</version.sourceforge.pmd.java>
                 <version.sourceforge.pmd.javascript>6.55.0</version.sourceforge.pmd.javascript>
                 <version.sourceforge.pmd.jsp>6.55.0</version.sourceforge.pmd.jsp>
-                <version.spotbugs.reporting.plugin>4.8.5.0</version.spotbugs.reporting.plugin>
+                <version.spotbugs.reporting.plugin>4.9.8.2</version.spotbugs.reporting.plugin>
                 <version.surefire.reports.plugin>3.2.5</version.surefire.reports.plugin>
                 <version.taglist.report.plugin>3.0.0</version.taglist.report.plugin>
             </properties>
