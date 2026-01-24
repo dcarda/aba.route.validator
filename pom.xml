@@ -120,38 +120,89 @@
         <surefire.argLine>-Xmx1024m -Xms512m -ea -Dfile.encoding=UTF-8</surefire.argLine>
 
         <!--  Plugins                                                             -->
-        <version.compiler.plugin>3.13.0</version.compiler.plugin>
+        <version.compiler.plugin>3.14.1</version.compiler.plugin>
+
         <version.git.commit.id.plugin>4.9.10</version.git.commit.id.plugin>
-        <version.jar.plugin>3.4.1</version.jar.plugin>
-        <version.maven.antrun.plugin>3.1.0</version.maven.antrun.plugin>
-        <version.maven.clean.plugin>3.3.2</version.maven.clean.plugin>
-        <version.maven.deploy.plugin>3.1.2</version.maven.deploy.plugin>
-        <version.maven.install.plugin>3.1.2</version.maven.install.plugin>
-        <version.maven.invoker.plugin>3.6.1</version.maven.invoker.plugin>
-        <version.maven.plugin.plugin>3.13.0</version.maven.plugin.plugin>
-        <version.maven.resources.plugin>3.3.1</version.maven.resources.plugin>
+
+
+
+        <version.jar.plugin>3.5.0</version.jar.plugin>
+
+
+
+
+
+<!--        <version.maven.antrun.plugin>3.1.0</version.maven.antrun.plugin>-->
+        <version.maven.antrun.plugin>3.2.0</version.maven.antrun.plugin>
+
+
+
+<!--        <version.maven.clean.plugin>3.3.2</version.maven.clean.plugin>-->
+        <version.maven.clean.plugin>3.5.0</version.maven.clean.plugin>
+
+
+<!--        <version.maven.deploy.plugin>3.1.2</version.maven.deploy.plugin>-->
+        <version.maven.deploy.plugin>3.1.4</version.maven.deploy.plugin>
+
+
+
+
+<!--        <version.maven.install.plugin>3.1.2</version.maven.install.plugin>-->
+        <version.maven.install.plugin>3.1.4</version.maven.install.plugin>
+
+
+
+
+<!--        <version.maven.invoker.plugin>3.6.1</version.maven.invoker.plugin>-->
+        <version.maven.invoker.plugin>3.9.1</version.maven.invoker.plugin>
+
+
+        <version.maven.dependency.plugin>3.9.0</version.maven.dependency.plugin>
+
+
+<!--        <version.maven.plugin.plugin>3.13.0</version.maven.plugin.plugin>-->
+        <version.maven.plugin.plugin>3.15.2</version.maven.plugin.plugin>
+
+
+
+
+
+<!--        <version.maven.resources.plugin>3.3.1</version.maven.resources.plugin>-->
+        <version.maven.resources.plugin>3.4.0</version.maven.resources.plugin>
 
         <!-- Reporting Plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙······∙∙∙∙∙∙∙  -->
-        <version.enforcer.extra.rules>1.8.0</version.enforcer.extra.rules>
-        <version.enforcer.plugin>3.4.1</version.enforcer.plugin>
+<!--        <version.enforcer.extra.rules>1.8.0</version.enforcer.extra.rules>-->
+<!--        <version.enforcer.plugin>3.4.1</version.enforcer.plugin>-->
+
+        <version.enforcer.extra.rules>1.11.0</version.enforcer.extra.rules>
+        <version.enforcer.plugin>3.6.2</version.enforcer.plugin>
+
+
+
+
+
         <version.jacoco.reporting.plugin>0.8.14</version.jacoco.reporting.plugin>
 
-<!--        <version.maven.versions.plugin>2.16.2</version.maven.versions.plugin>-->
-        <version.maven.versions.plugin>2.21.0</version.maven.versions.plugin>
+
+<!--        CAN'T UPGRADE!!!-->
+        <version.maven.versions.plugin>2.16.2</version.maven.versions.plugin>
+
+
+
 
 
         <version.owasp.dependency.check>9.1.0</version.owasp.dependency.check>
         <!--   WARMNING: DON'T UPDATE THIS.  WON'T WORK WITH JACOCO  -->
         <version.surefire.plugin>2.22.2</version.surefire.plugin>
+<!--        <version.surefire.plugin>3.5.4</version.surefire.plugin>-->
+
+
+
+
 
         <!-- Testing Plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-        <version.junit.jupiter>5.10.2</version.junit.jupiter>
-<!--        <version.junit.jupiter>5.11.0-M1</version.junit.jupiter>-->
-
-
-
-        <version.junit.platform>1.10.2</version.junit.platform>
-<!--        <version.junit.platform>1.11.0-M1</version.junit.platform>-->
+        <version.junit.jupiter>5.14.2</version.junit.jupiter>
+        <version.junit.platform>1.14.2</version.junit.platform>
 
     </properties>
 
@@ -243,6 +294,17 @@
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>${version.maven.resources.plugin}</version>
                 </plugin>
+
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>3.3.1</version>
+                </plugin>
+
+
+
+
                 <!--  <plugin>-->
                 <!--     <groupId>org.apache.maven.plugins</groupId>-->
                 <!--     <artifactId>maven-compiler-plugin</artifactId>-->
@@ -279,6 +341,13 @@
                     <artifactId>maven-invoker-plugin</artifactId>
                     <version>${version.maven.invoker.plugin}</version>
                 </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>${version.maven.dependency.plugin}</version>
+                </plugin>
+
 
                 <!--   Enforcer Resource Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                 <!--   https://maven.apache.org/enforcer/maven-enforcer-plugin/usage.html    -->
@@ -346,7 +415,7 @@
                                     </enforceBytecodeVersion>
                                 </rules>
                                 <fail>true</fail>
-                                 </configuration>
+                            </configuration>
                         </execution>
                     </executions>
                 </plugin>
@@ -691,9 +760,6 @@
                 <artifactId>git-commit-id-plugin</artifactId>
             </plugin>
 
-
-<!--            FIX LATER-->
-
             <!--   OWASP Vulnerability Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
             <!--   https://jeremylong.github.io/DependencyCheck/dependency-check-maven/    -->
 <!--            <plugin>-->
@@ -732,27 +798,87 @@
             <!--  ───────────────────────────────────────────────────────────────  -->
             <!--   genReports: Properties   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
             <properties>
-                <version.assembly.plugin>3.7.1</version.assembly.plugin>
+<!--                <version.assembly.plugin>3.7.1</version.assembly.plugin>-->
+                <version.assembly.plugin>3.8.0</version.assembly.plugin>
+
+
+
+
                 <version.changelog.reporting.plugin>2.3</version.changelog.reporting.plugin>
-                <version.changelog.reporting.plugin>2.3</version.changelog.reporting.plugin>
+<!--                <version.changelog.reporting.plugin>2.3</version.changelog.reporting.plugin>-->
+
+
                 <version.checkstyle.github.sevntu-checks>1.44.1</version.checkstyle.github.sevntu-checks>
-                <version.checkstyle.puppycrawl.tools>10.9.3</version.checkstyle.puppycrawl.tools>
-                <version.checkstyle.report.plugin>3.3.1</version.checkstyle.report.plugin>
-                <version.javadoc.reporting.plugin>3.6.3</version.javadoc.reporting.plugin>
+
+
+
+<!--                <version.checkstyle.puppycrawl.tools>10.9.3</version.checkstyle.puppycrawl.tools>-->
+                <version.checkstyle.puppycrawl.tools>10.26.1</version.checkstyle.puppycrawl.tools>
+
+
+
+
+<!--                <version.checkstyle.report.plugin>3.3.1</version.checkstyle.report.plugin>-->
+                <version.checkstyle.report.plugin>3.6.0</version.checkstyle.report.plugin>
+
+
+
+
+<!--                <version.javadoc.reporting.plugin>3.6.3</version.javadoc.reporting.plugin>-->
+                <version.javadoc.reporting.plugin>3.12.0</version.javadoc.reporting.plugin>
+
+
+
+
+
+
                 <version.javancss.reporting.plugin>2.1</version.javancss.reporting.plugin>
                 <version.jdepend.reporting.plugin>2.0</version.jdepend.reporting.plugin>
-                <version.jxr.reporting.plugin>3.3.2</version.jxr.reporting.plugin>
+                <version.jxr.reporting.plugin>3.6.0</version.jxr.reporting.plugin>
+
+
+
+<!--                CAN'T UPGRADE!!!-->
                 <version.license.reporting.plugin>2.4.0</version.license.reporting.plugin>
-                <version.maven.site.plugin>4.0.0-M16</version.maven.site.plugin>
+
+
+
+
+
+
+                <version.maven.site.plugin>4.0.0-M9</version.maven.site.plugin>
+
+<!--                CAN'T UPGRADE!!!-->
                 <version.pmd.reporting.plugin>3.21.2</version.pmd.reporting.plugin>
+
+
+
+
                 <version.project.info.reports.plugin>3.5.0</version.project.info.reports.plugin>
                 <version.sourceforge.pmd.core>6.55.0</version.sourceforge.pmd.core>
                 <version.sourceforge.pmd.java>6.55.0</version.sourceforge.pmd.java>
                 <version.sourceforge.pmd.javascript>6.55.0</version.sourceforge.pmd.javascript>
                 <version.sourceforge.pmd.jsp>6.55.0</version.sourceforge.pmd.jsp>
+
+
+
+<!--                <version.spotbugs.reporting.plugin>4.8.5.0</version.spotbugs.reporting.plugin>-->
                 <version.spotbugs.reporting.plugin>4.9.8.2</version.spotbugs.reporting.plugin>
+
+
+
+<!--                197-->
                 <version.surefire.reports.plugin>3.2.5</version.surefire.reports.plugin>
-                <version.taglist.report.plugin>3.0.0</version.taglist.report.plugin>
+<!--                <version.surefire.reports.plugin>3.5.4</version.surefire.reports.plugin>-->
+
+
+
+<!--                <version.taglist.report.plugin>3.0.0</version.taglist.report.plugin>-->
+                <version.taglist.report.plugin>3.2.2</version.taglist.report.plugin>
+
+
+
+
             </properties>
             <!--  End:  genReports : pluginManagement  -->
 
@@ -783,8 +909,7 @@
                                 <dependency>
                                     <groupId>io.github.devacfr.maven.skins</groupId>
                                     <artifactId>reflow-velocity-tools</artifactId>
-<!--                                    FIX THIS-->
-                                    <version>2.3.5</version>
+                                    <version>2.3.4</version>
                                 </dependency>
                             </dependencies>
                         </plugin>
@@ -800,10 +925,8 @@
                             <version>${version.assembly.plugin}</version>
                         </plugin>
 
-<!--                        FIX LATER-->
-
-<!--                        &lt;!&ndash;   Apache Maven Changelog Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  &ndash;&gt;-->
-<!--                        &lt;!&ndash;   https://maven.apache.org/plugins/maven-changelog-plugin/    &ndash;&gt;-->
+                        <!--   Apache Maven Changelog Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   https://maven.apache.org/plugins/maven-changelog-plugin/    -->
 <!--                        <plugin>-->
 <!--                            <groupId>org.apache.maven.plugins</groupId>-->
 <!--                            <artifactId>maven-changelog-plugin</artifactId>-->
@@ -915,16 +1038,16 @@
                             </configuration>
                         </plugin>
 
-<!--                        &lt;!&ndash;   JDepend Dependency Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  &ndash;&gt;-->
-<!--                        &lt;!&ndash;   https://www.mojohaus.org/jdepend-maven-plugin/              &ndash;&gt;-->
-<!--                        &lt;!&ndash;   We are just going to wait until the 2.1 version of this     &ndash;&gt;-->
-<!--                        &lt;!&ndash;   plugin comes out.  There is an incompatibility with         &ndash;&gt;-->
-<!--                        &lt;!&ndash;   Java 11.                                                    &ndash;&gt;-->
-<!--                        <plugin>-->
-<!--                            <groupId>org.codehaus.mojo</groupId>-->
-<!--                            <artifactId>jdepend-maven-plugin</artifactId>-->
-<!--                            <version>${version.jdepend.reporting.plugin}</version>-->
-<!--                        </plugin>-->
+                        <!--                        &lt;!&ndash;   JDepend Dependency Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  &ndash;&gt;-->
+                        <!--                        &lt;!&ndash;   https://www.mojohaus.org/jdepend-maven-plugin/              &ndash;&gt;-->
+                        <!--                        &lt;!&ndash;   We are just going to wait until the 2.1 version of this     &ndash;&gt;-->
+                        <!--                        &lt;!&ndash;   plugin comes out.  There is an incompatibility with         &ndash;&gt;-->
+                        <!--                        &lt;!&ndash;   Java 11.                                                    &ndash;&gt;-->
+                        <!--                        <plugin>-->
+                        <!--                            <groupId>org.codehaus.mojo</groupId>-->
+                        <!--                            <artifactId>jdepend-maven-plugin</artifactId>-->
+                        <!--                            <version>${version.jdepend.reporting.plugin}</version>-->
+                        <!--                        </plugin>-->
 
                         <!--   JXR Cross Reference Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                         <!--   https://maven.apache.org/jxr/maven-jxr-plugin/              -->
@@ -1211,10 +1334,8 @@
                     <!--   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
 
-
-<!--                    FIX LATER-->
-<!--                    &lt;!&ndash;   Apache Maven Changelog Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  &ndash;&gt;-->
-<!--                    &lt;!&ndash;   https://maven.apache.org/plugins/maven-changelog-plugin/        &ndash;&gt;-->
+                    <!--   Apache Maven Changelog Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   https://maven.apache.org/plugins/maven-changelog-plugin/        -->
 <!--                    <plugin>-->
 <!--                        <groupId>org.apache.maven.plugins</groupId>-->
 <!--                        <artifactId>maven-changelog-plugin</artifactId>-->
@@ -1300,25 +1421,25 @@
                         <artifactId>javancss-maven-plugin</artifactId>
                     </plugin>
 
-<!--                    &lt;!&ndash;   JDepend Dependancy Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙   &ndash;&gt;-->
-<!--                    &lt;!&ndash;   https://www.mojohaus.org/jdepend-maven-plugin/                  &ndash;&gt;-->
-<!--                    &lt;!&ndash;   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙   &ndash;&gt;-->
-<!--                    &lt;!&ndash;   We are just going to wait until the 2.1 version of this         &ndash;&gt;-->
-<!--                    &lt;!&ndash;   plugin comes out.  There is an incompatibility with             &ndash;&gt;-->
-<!--                    &lt;!&ndash;   Java 11.                                                        &ndash;&gt;-->
-<!--                    <plugin>-->
-<!--                        <groupId>org.codehaus.mojo</groupId>-->
-<!--                        <artifactId>jdepend-maven-plugin</artifactId>-->
-<!--                        <reportSets>-->
-<!--                            <reportSet>-->
-<!--                                <id>jdepend-report</id>-->
-<!--                                <reports>-->
-<!--                                    <report>generate-no-fork</report>-->
-<!--                                </reports>-->
-<!--                                <inherited>true</inherited>-->
-<!--                            </reportSet>-->
-<!--                        </reportSets>-->
-<!--                    </plugin>-->
+                    <!--                    &lt;!&ndash;   JDepend Dependancy Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙   &ndash;&gt;-->
+                    <!--                    &lt;!&ndash;   https://www.mojohaus.org/jdepend-maven-plugin/                  &ndash;&gt;-->
+                    <!--                    &lt;!&ndash;   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙   &ndash;&gt;-->
+                    <!--                    &lt;!&ndash;   We are just going to wait until the 2.1 version of this         &ndash;&gt;-->
+                    <!--                    &lt;!&ndash;   plugin comes out.  There is an incompatibility with             &ndash;&gt;-->
+                    <!--                    &lt;!&ndash;   Java 11.                                                        &ndash;&gt;-->
+                    <!--                    <plugin>-->
+                    <!--                        <groupId>org.codehaus.mojo</groupId>-->
+                    <!--                        <artifactId>jdepend-maven-plugin</artifactId>-->
+                    <!--                        <reportSets>-->
+                    <!--                            <reportSet>-->
+                    <!--                                <id>jdepend-report</id>-->
+                    <!--                                <reports>-->
+                    <!--                                    <report>generate-no-fork</report>-->
+                    <!--                                </reports>-->
+                    <!--                                <inherited>true</inherited>-->
+                    <!--                            </reportSet>-->
+                    <!--                        </reportSets>-->
+                    <!--                    </plugin>-->
 
                     <!--   JXR Cross Reference Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   https://maven.apache.org/jxr/maven-jxr-plugin/                 -->
@@ -1459,10 +1580,6 @@
                         </reportSets>
 
                     </plugin>
-
-
-
-<!--                    FIX LATER-->
 
                     <!--   OWASP Vulnerability Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   https://jeremylong.github.io/DependencyCheck/dependency-check-maven/   -->
