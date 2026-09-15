@@ -768,29 +768,6 @@
 
 
 
-
-
-
-            <!--   OWASP Vulnerability Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-            <!--   https://jeremylong.github.io/DependencyCheck/dependency-check-maven/    -->
-<!--            <plugin>-->
-<!--                <groupId>org.owasp</groupId>-->
-<!--                <artifactId>dependency-check-maven</artifactId>-->
-<!--                <version>9.1.0</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        &lt;!&ndash;                        <phase>package</phase>&ndash;&gt;-->
-<!--                        <goals>-->
-<!--                            <goal>check</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--                <configuration>-->
-<!--                    &lt;!&ndash;                    <failBuildOnCVSS>6</failBuildOnCVSS>&ndash;&gt;-->
-<!--                    &lt;!&ndash;                    <format>ALL</format>&ndash;&gt;-->
-<!--                    &lt;!&ndash;                    <outputDirectory>${dependency.check.report.dir}</outputDirectory>&ndash;&gt;-->
-<!--                </configuration>-->
-<!--            </plugin>-->
         </plugins>
 
 
@@ -1568,27 +1545,6 @@
                         </reportSets>
 
                     </plugin>
-
-
-
-
-                    <!--   OWASP Vulnerability Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-                    <!--   https://jeremylong.github.io/DependencyCheck/dependency-check-maven/   -->
-<!--                    <plugin>-->
-<!--                        <groupId>org.owasp</groupId>-->
-<!--                        <artifactId>dependency-check-maven</artifactId>-->
-<!--                        <version>${version.owasp.dependency.check}</version>-->
-<!--                        <configuration>-->
-<!--                            <name>Vulnerability Report</name>-->
-<!--                        </configuration>-->
-<!--                        <reportSets>-->
-<!--                            <reportSet>-->
-<!--                                <reports>-->
-<!--                                    <report>aggregate</report>-->
-<!--                                </reports>-->
-<!--                            </reportSet>-->
-<!--                        </reportSets>-->
-<!--                    </plugin>-->
 
                     <!--   Versions Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   https://www.mojohaus.org/versions/versions-maven-plugin/index.html   -->

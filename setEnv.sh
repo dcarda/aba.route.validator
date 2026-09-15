@@ -1,18 +1,25 @@
 #!/bin/bash
+# ==============================================================================
+# Script Name:   setEnv.sh
+# Description:   This scrip configures a terminal environment.
+#                I have found that when working on multiple projects it's
+#                easier to configure a terminal environment and compile there.
+#
+# Author:        Daniel Carda
+# Usage:         source ./setEnv.sh
+# ==============================================================================
 
 clear
 
-export JAVA_HOME="/c/Program Files/Amazon Corretto/jdk17.0.14_7"
+export JAVA_HOME=/opt/zulu17.68.203-ca-jdk17.0.20.1-linux_x64
 
-export ANT_HOME=/d/Tools/Java/Apache/apache-ant-1.10.11
-export MAVEN_HOME=/d/Tools/Java/Apache/apache-maven-3.9.6
+export ANT_HOME=/opt/apache/apache-ant-1.10.18
+export MAVEN_HOME=/opt/apache/apache-maven-3.9.16
 
 export PATH=$JAVA_HOME/bin:$ANT_HOME/bin:$MAVEN_HOME/bin:$PATH
 
 # Update the Path
 export PATH=$JAVA_HOME/bin:$PATH
-
-java -version
 
 #  --------------------------------------------------------------------
 # Record our starting directory
@@ -24,7 +31,7 @@ cd /c/Users/$myvariable/.m2/repository/
 
 echo
 echo Repository Root:
-echo /c/Users/$myvariable/.m2/repository/
+echo ~/.m2/repository/
 #
 #  Delete all the *.lastUpdated and resolver files.
 echo
