@@ -125,13 +125,31 @@
 
 
         <version.git.commit.id.plugin>4.9.10</version.git.commit.id.plugin>
-        <version.jar.plugin>3.5.0</version.jar.plugin>
+
+
+<!--        <version.jar.plugin>3.5.0</version.jar.plugin>-->
+        <version.jar.plugin>3.5.1</version.jar.plugin>
+
+
         <version.maven.antrun.plugin>3.2.0</version.maven.antrun.plugin>
         <version.maven.clean.plugin>3.5.0</version.maven.clean.plugin>
-        <version.maven.deploy.plugin>3.1.4</version.maven.deploy.plugin>
-        <version.maven.install.plugin>3.1.4</version.maven.install.plugin>
+
+
+<!--        <version.maven.deploy.plugin>3.1.4</version.maven.deploy.plugin>-->
+        <version.maven.deploy.plugin>3.2.0</version.maven.deploy.plugin>
+
+
+<!--        <version.maven.install.plugin>3.1.4</version.maven.install.plugin>-->
+        <version.maven.install.plugin>3.2.0</version.maven.install.plugin>
+
+
         <version.maven.invoker.plugin>3.9.1</version.maven.invoker.plugin>
-        <version.maven.dependency.plugin>3.9.0</version.maven.dependency.plugin>
+
+
+<!--        <version.maven.dependency.plugin>3.9.0</version.maven.dependency.plugin>-->
+        <version.maven.dependency.plugin>3.11.0</version.maven.dependency.plugin>
+
+
         <version.maven.plugin.plugin>3.15.2</version.maven.plugin.plugin>
         <version.maven.release.plugin>3.3.1</version.maven.release.plugin>
         <version.maven.resources.plugin>3.4.0</version.maven.resources.plugin>
@@ -148,7 +166,8 @@
 
 
 
-        <version.io.github.git.commit.id>9.0.2</version.io.github.git.commit.id> <!-- Use the latest version -->
+<!--        <version.io.github.git.commit.id>9.0.2</version.io.github.git.commit.id> &lt;!&ndash; Use the latest version &ndash;&gt;-->
+        <version.io.github.git.commit.id>9.2.0</version.io.github.git.commit.id> <!-- Use the latest version -->
 
 
 
@@ -827,10 +846,15 @@
                 <version.javadoc.reporting.plugin>3.12.0</version.javadoc.reporting.plugin>
                 <version.javancss.reporting.plugin>2.1</version.javancss.reporting.plugin>
                 <version.jdepend.reporting.plugin>2.0</version.jdepend.reporting.plugin>
+
+
                 <version.jxr.reporting.plugin>3.6.0</version.jxr.reporting.plugin>
 
                 <!--  CAN'T UPGRADE!!!   -->
                 <version.license.reporting.plugin>2.4.0</version.license.reporting.plugin>
+
+
+
                 <version.maven.site.plugin>4.0.0-M9</version.maven.site.plugin>
 
                 <!--  CAN'T UPGRADE!!!   -->
@@ -854,7 +878,14 @@
 
 
                 <version.surefire.reports.plugin>3.2.5</version.surefire.reports.plugin>
-                <version.taglist.report.plugin>3.2.2</version.taglist.report.plugin>
+
+
+
+<!--                <version.taglist.report.plugin>3.2.2</version.taglist.report.plugin>-->
+                <version.taglist.report.plugin>3.2.3</version.taglist.report.plugin>
+
+
+
             </properties>
             <!--  End:  genReports : pluginManagement  -->
 
