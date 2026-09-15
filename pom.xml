@@ -9,7 +9,7 @@
     <!--   Artifact Information                                                        -->
     <groupId>com.cardatechnologies</groupId>
     <artifactId>aba.routing.transit.validator</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.2-SNAPSHOT</version>
 
     <!--  ───────────────────────────────────────────────────────────────────────────  -->
     <!--   Miscellaneous Information                                                   -->
