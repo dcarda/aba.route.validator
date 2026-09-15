@@ -120,7 +120,10 @@
         <surefire.argLine>-Xmx1024m -Xms512m -ea -Dfile.encoding=UTF-8</surefire.argLine>
 
         <!--  Plugins                                                             -->
-        <version.compiler.plugin>3.14.1</version.compiler.plugin>
+<!--        <version.compiler.plugin>3.14.1</version.compiler.plugin>-->
+        <version.compiler.plugin>3.16.0</version.compiler.plugin>
+
+
         <version.git.commit.id.plugin>4.9.10</version.git.commit.id.plugin>
         <version.jar.plugin>3.5.0</version.jar.plugin>
         <version.maven.antrun.plugin>3.2.0</version.maven.antrun.plugin>
@@ -134,10 +137,13 @@
         <version.maven.resources.plugin>3.4.0</version.maven.resources.plugin>
 
         <!-- Reporting Plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙······∙∙∙∙∙∙∙  -->
-        <version.enforcer.extra.rules>1.11.0</version.enforcer.extra.rules>
-        <version.enforcer.plugin>3.6.2</version.enforcer.plugin>
+<!--        <version.enforcer.extra.rules>1.11.0</version.enforcer.extra.rules>-->
+<!--        <version.enforcer.plugin>3.6.2</version.enforcer.plugin>-->
+        <version.enforcer.extra.rules>1.12.1</version.enforcer.extra.rules>
+        <version.enforcer.plugin>3.6.3</version.enforcer.plugin>
 
-        <version.jacoco.reporting.plugin>0.8.14</version.jacoco.reporting.plugin>
+<!--        <version.jacoco.reporting.plugin>0.8.14</version.jacoco.reporting.plugin>-->
+        <version.jacoco.reporting.plugin>0.8.15</version.jacoco.reporting.plugin>
 
 
 
