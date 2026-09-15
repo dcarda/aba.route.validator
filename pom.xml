@@ -176,7 +176,8 @@
 
 
 <!--        <version.io.github.git.commit.id>9.0.2</version.io.github.git.commit.id> &lt;!&ndash; Use the latest version &ndash;&gt;-->
-        <version.io.github.git.commit.id>9.2.0</version.io.github.git.commit.id> <!-- Use the latest version -->
+<!--        <version.io.github.git.commit.id>9.2.0</version.io.github.git.commit.id> &lt;!&ndash; Use the latest version &ndash;&gt;-->
+        <version.io.github.git.commit.id>10.0.1</version.io.github.git.commit.id> <!-- Use the latest version -->
 
 
 
@@ -869,7 +870,6 @@
 
                 <!--  CAN'T UPGRADE!!!   -->
                 <version.pmd.reporting.plugin>3.21.2</version.pmd.reporting.plugin>
-<!--                <version.pmd.reporting.plugin>3.22.0</version.pmd.reporting.plugin>-->
 
 
 
