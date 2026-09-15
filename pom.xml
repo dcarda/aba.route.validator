@@ -882,6 +882,21 @@
 <!--                            <version>${version.changelog.reporting.plugin}</version>-->
 <!--                        </plugin>-->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         <!--   Checkstyle Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                         <!--   https://checkstyle.sourceforge.io/                          -->
                         <plugin>
@@ -1564,6 +1579,13 @@
                     </plugin>
 
 
+                    <!--   Apache Maven Changelog Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   https://maven.apache.org/plugins/maven-changelog-plugin/    -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-changelog-plugin</artifactId>
+                        <version>${version.changelog.reporting.plugin}</version>
+                    </plugin>
 
 
 
