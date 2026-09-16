@@ -160,7 +160,7 @@
             <item name="JaCoCo Coverage" href="jacoco/index.html" />
             <item name="JavaDocs Report" href="apidocs/index.html" />
             <item name="JavaNCSS Report" href="javancss.html" />
-<!--            <item name="JDepend Metrics" href="jdepend-report.html" />-->
+            <item name="JDepend Metrics" href="jdepend-report.html" />
 
             <item name="JXR XRef Report" href="xref/index.html" />
 

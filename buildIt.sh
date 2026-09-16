@@ -240,7 +240,7 @@ function display_ArtifactInformation() {
 #    gunzip -p aba.routing.transit.validator-*.jar META-INF/MANIFEST.MF >file.txt
     jar xf aba.routing.transit.validator-*.jar META-INF/MANIFEST.MF
 
-    tail -37 META-INF/MANIFEST.MF
+    tail -67 META-INF/MANIFEST.MF
 }  # ---  End Function display_ArtifactInformation()
 
 #===  FUNCTION   ================================================

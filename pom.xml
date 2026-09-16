@@ -115,88 +115,44 @@
         <javacOptimize>false</javacOptimize>
         <javacVerbose>true</javacVerbose>
 
+        <!--  This is for the Manifest.mf files                                    -->
+        <!--  Timestamp Information                                                -->
+        <timestamp>${maven.build.timestamp}</timestamp>
+        <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss</maven.build.timestamp.format>
+
         <!--  Miscellaneous                                                        -->
         <failsafe.argLine>-DdummyProperty=notUsed</failsafe.argLine>
         <surefire.argLine>-Xmx1024m -Xms512m -ea -Dfile.encoding=UTF-8</surefire.argLine>
 
         <!--  Plugins                                                             -->
-<!--        <version.compiler.plugin>3.14.1</version.compiler.plugin>-->
         <version.compiler.plugin>3.16.0</version.compiler.plugin>
-
-
         <version.git.commit.id.plugin>4.9.10</version.git.commit.id.plugin>
-
-
-<!--        <version.jar.plugin>3.5.0</version.jar.plugin>-->
         <version.jar.plugin>3.5.1</version.jar.plugin>
-
-
         <version.maven.antrun.plugin>3.2.0</version.maven.antrun.plugin>
         <version.maven.clean.plugin>3.5.0</version.maven.clean.plugin>
-
-
-<!--        <version.maven.deploy.plugin>3.1.4</version.maven.deploy.plugin>-->
-        <version.maven.deploy.plugin>3.2.0</version.maven.deploy.plugin>
-
-
-<!--        <version.maven.install.plugin>3.1.4</version.maven.install.plugin>-->
-        <version.maven.install.plugin>3.2.0</version.maven.install.plugin>
-
-
-<!--        <version.maven.invoker.plugin>3.9.1</version.maven.invoker.plugin>-->
-        <version.maven.invoker.plugin>3.10.1</version.maven.invoker.plugin>
-
-
-<!--        <version.maven.dependency.plugin>3.9.0</version.maven.dependency.plugin>-->
         <version.maven.dependency.plugin>3.11.0</version.maven.dependency.plugin>
-
-
-<!--        <version.maven.plugin.plugin>3.15.2</version.maven.plugin.plugin>-->
+        <version.maven.deploy.plugin>3.2.0</version.maven.deploy.plugin>
+        <version.maven.install.plugin>3.2.0</version.maven.install.plugin>
+        <version.maven.invoker.plugin>3.10.1</version.maven.invoker.plugin>
         <version.maven.plugin.plugin>3.16.0</version.maven.plugin.plugin>
-
-
-
         <version.maven.release.plugin>3.3.1</version.maven.release.plugin>
-
-
-
-<!--        <version.maven.resources.plugin>3.4.0</version.maven.resources.plugin>-->
         <version.maven.resources.plugin>3.5.0</version.maven.resources.plugin>
+        <version.maven.scm.plugin>2.2.1</version.maven.scm.plugin>
 
         <!-- Reporting Plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙······∙∙∙∙∙∙∙  -->
-<!--        <version.enforcer.extra.rules>1.11.0</version.enforcer.extra.rules>-->
-<!--        <version.enforcer.plugin>3.6.2</version.enforcer.plugin>-->
         <version.enforcer.extra.rules>1.12.1</version.enforcer.extra.rules>
         <version.enforcer.plugin>3.6.3</version.enforcer.plugin>
-
-<!--        <version.jacoco.reporting.plugin>0.8.14</version.jacoco.reporting.plugin>-->
         <version.jacoco.reporting.plugin>0.8.15</version.jacoco.reporting.plugin>
-
-
-
-
-<!--        <version.io.github.git.commit.id>9.0.2</version.io.github.git.commit.id> &lt;!&ndash; Use the latest version &ndash;&gt;-->
-<!--        <version.io.github.git.commit.id>9.2.0</version.io.github.git.commit.id> &lt;!&ndash; Use the latest version &ndash;&gt;-->
         <version.io.github.git.commit.id>10.0.1</version.io.github.git.commit.id> <!-- Use the latest version -->
-
-
-
-
-
-
 
         <!--  CAN'T UPGRADE!!!   -->
         <version.maven.versions.plugin>2.16.2</version.maven.versions.plugin>
         <version.owasp.dependency.check>9.1.0</version.owasp.dependency.check>
 
         <!--   WARMNING: DON'T UPDATE THIS.  WON'T WORK WITH JACOCO  -->
-<!--        <version.surefire.plugin>2.22.2</version.surefire.plugin>-->
-<!--        <version.surefire.plugin>3.2.5</version.surefire.plugin>-->
         <version.surefire.plugin>3.6.0</version.surefire.plugin>
 
         <!-- Testing Plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-<!--        <version.junit.jupiter>5.14.4</version.junit.jupiter>-->
-<!--        <version.junit.platform>1.14.4</version.junit.platform>-->
         <version.junit.jupiter>6.1.3</version.junit.jupiter>
         <version.junit.platform>6.1.3</version.junit.platform>
 
@@ -290,37 +246,16 @@
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>${version.maven.resources.plugin}</version>
                 </plugin>
-
-
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
                     <version>${version.maven.release.plugin}</version>
                 </plugin>
-
-
-
-
-                <!--  <plugin>-->
-                <!--     <groupId>org.apache.maven.plugins</groupId>-->
-                <!--     <artifactId>maven-compiler-plugin</artifactId>-->
-                <!--     <version>${version.maven.compiler.plugin}</version>-->
-                <!--  </plugin>-->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-plugin-plugin</artifactId>
                     <version>${version.maven.plugin.plugin}</version>
                 </plugin>
-                <!--  <plugin>-->
-                <!--     <groupId>org.apache.maven.plugins</groupId>-->
-                <!--     <artifactId>maven-surefire-plugin</artifactId>-->
-                <!--     <version>${version.surefire.plugin}</version>-->
-                <!--  </plugin>-->
-                <!--  <plugin>-->
-                <!--     <groupId>org.apache.maven.plugins</groupId>-->
-                <!--     <artifactId>maven-jar-plugin</artifactId>-->
-                <!--     <version>${version.maven.jar.plugin}</version>-->
-                <!--  </plugin>-->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-install-plugin</artifactId>
@@ -331,19 +266,16 @@
                     <artifactId>maven-deploy-plugin</artifactId>
                     <version>${version.maven.deploy.plugin}</version>
                 </plugin>
-
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-invoker-plugin</artifactId>
                     <version>${version.maven.invoker.plugin}</version>
                 </plugin>
-
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
                     <version>${version.maven.dependency.plugin}</version>
                 </plugin>
-
 
                 <!--   Enforcer Resource Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                 <!--   https://maven.apache.org/enforcer/maven-enforcer-plugin/usage.html    -->
@@ -356,7 +288,7 @@
                             <requireJavaVersion>
                                 <!--  https://en.wikipedia.org/wiki/Java_class_file#General_layout-->
                                 <!--  https://stackoverflow.com/questions/9170832/list-of-java-class-file-format-major-version-numbers                                        -->
-                                <version>17</version>
+                                <version>${java.target.level}</version>
                             </requireJavaVersion>
                             <requireMavenVersion>
                                 <version>[3.9.6,)</version>
@@ -439,61 +371,6 @@
                     </configuration>
                 </plugin>
 
-<!--                <plugin>-->
-<!--                    <groupId>pl.project13.maven</groupId>-->
-<!--                    <artifactId>git-commit-id-plugin</artifactId>-->
-<!--                    <version>${version.git.commit.id.plugin}</version>-->
-<!--                    <configuration>-->
-<!--                        <dotGitDirectory>${project.basedir}/.git</dotGitDirectory>-->
-<!--                        <prefix>git</prefix>-->
-<!--                        <verbose>false</verbose>-->
-<!--                        <generateGitPropertiesFile>false</generateGitPropertiesFile>-->
-<!--                        &lt;!&ndash;-->
-<!--                             <generateGitPropertiesFilename>${project.build.outputDirectory}/git.properties</generateGitPropertiesFilename>-->
-<!--                        &ndash;&gt;-->
-<!--                        <format>json</format>-->
-<!--                        <gitDescribe>-->
-<!--                            <skip>false</skip>-->
-<!--                            <always>true</always>-->
-<!--                            <dirty>-dirty</dirty>-->
-<!--                        </gitDescribe>-->
-<!--                    </configuration>-->
-<!--                    <executions>-->
-<!--                        <execution>-->
-<!--                            <id>get-the-git-infos</id>-->
-<!--                            <goals>-->
-<!--                                <goal>revision</goal>-->
-<!--                            </goals>-->
-<!--                        </execution>-->
-<!--                    </executions>-->
-<!--                </plugin>-->
-
-<!--                <plugin>-->
-<!--                    <groupId>io.github.git-commit-id</groupId>-->
-<!--                    <artifactId>git-commit-id-maven-plugin</artifactId>-->
-<!--                    <version>9.0.2</version> &lt;!&ndash; Use the latest version &ndash;&gt;-->
-<!--                    <executions>-->
-<!--                        <execution>-->
-<!--                            <id>get-git-properties</id>-->
-<!--                            <goals>-->
-<!--                                <goal>revision</goal>-->
-<!--                            </goals>-->
-<!--                            <phase>initialize</phase>-->
-<!--                        </execution>-->
-<!--                    </executions>-->
-<!--                    <configuration>-->
-<!--                        &lt;!&ndash; Optional: set to true to create the git.properties file &ndash;&gt;-->
-<!--                        <generateGitPropertiesFile>true</generateGitPropertiesFile>-->
-<!--                        &lt;!&ndash; Optional: configure dateFormat, dotGitDirectory, etc. &ndash;&gt;-->
-<!--                    </configuration>-->
-<!--                </plugin>-->
-
-
-
-
-
-
-
                 <!--   Jacoco Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                 <!--   https://www.eclemma.org/jacoco/trunk/doc/maven.html         -->
                 <plugin>
@@ -558,98 +435,145 @@
                     </executions>
                 </plugin>
 
-                <!--   Jar Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-                <!--   https://maven.apache.org/plugins/maven-jar-plugin/                      -->
+                <!--   Maven Jar Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                <!--   https://maven.apache.org/plugins/maven-jar-plugin/          -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>${version.jar.plugin}</version>
+
                     <configuration>
                         <archive>
+
                             <index>true</index>
                             <compress>true</compress>
                             <addMavenDescriptor>false</addMavenDescriptor>
+
+                            <!-- ==================================================== -->
+                            <!--  Standard Manifest                                   -->
+                            <!-- ==================================================== -->
+
                             <manifest>
-                                <!-- ====================================================  -->
-                                <!--  Manifest Information   ============================  -->
                                 <addClasspath>true</addClasspath>
-                                <!--  <classpathLayoutType>custom</classpathLayoutType>-->
-                                <!--  <customClasspathLayout>${line.separator}./lib/$${artifact.artifactId}-$${artifact.version}$${dashClassifier?}.$${artifact.extension}</customClasspathLayout>-->
+
                                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                                 <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
                             </manifest>
+
+                            <!-- ==================================================== -->
+                            <!--  Manifest Sections                                    -->
+                            <!-- ==================================================== -->
+
                             <manifestSections>
-                                <!-- ====================================================  -->
-                                <!--  Ownership Information   ===========================  -->
+
+                                <!-- ================================================== -->
+                                <!--  Ownership Information                            -->
+                                <!-- ================================================== -->
+
                                 <manifestSection>
                                     <name>OWNERSHIP INFORMATION</name>
+
                                     <manifestEntries>
                                         <Copyright>(c) Carda Technologies, LLC</Copyright>
-                                        <Rights>All Right Reserved</Rights>
+                                        <Rights>All Rights Reserved</Rights>
                                         <Organization-Name>${project.organization.name}</Organization-Name>
                                         <Country>United States of America</Country>
                                     </manifestEntries>
                                 </manifestSection>
-                                <!-- ===================================================  -->
-                                <!--  Build Intelligence   =============================  -->
+
+
+                                <!-- ================================================== -->
+                                <!--  Build Intelligence                                -->
+                                <!-- ================================================== -->
+
                                 <manifestSection>
                                     <name>BUILD INTELLIGENCE</name>
+
                                     <manifestEntries>
                                         <Project-Name>${project.name}</Project-Name>
-                                        <Machine-OS>${os.name} ${os.arch} ${os.version}</Machine-OS>
-                                        <Built-By>${user.name}</Built-By>
                                         <Build-Time>${timestamp}</Build-Time>
+                                        <Built-By>${user.name}</Built-By>
+                                        <Build-Host>${build.hostname}</Build-Host>
+                                        <Machine-OS>${os.name} ${os.arch} ${os.version}</Machine-OS>
                                     </manifestEntries>
                                 </manifestSection>
-                                <!-- ====================================================  -->
-                                <!--  Java Information   ================================  -->
+
+
+                                <!-- ================================================== -->
+                                <!--  Host Information                                  -->
+                                <!-- ================================================== -->
+
+                                <manifestSection>
+                                    <name>HOST INFORMATION</name>
+
+                                    <manifestEntries>
+                                        <Hostname>${build.hostname}</Hostname>
+                                        <OS-Name>${os.name}</OS-Name>
+                                        <OS-Version>${os.version}</OS-Version>
+                                        <OS-Architecture>${os.arch}</OS-Architecture>
+                                        <User-Name>${user.name}</User-Name>
+                                    </manifestEntries>
+                                </manifestSection>
+
+
+                                <!-- ================================================== -->
+                                <!--  Java Information                                  -->
+                                <!-- ================================================== -->
+
                                 <manifestSection>
                                     <name>JAVA INFORMATION</name>
+
                                     <manifestEntries>
-                                        <Build-JDK>${java.source.level} (${java.vendor} ${java.vm.version})</Build-JDK>
+                                        <Build-JDK>${java.source.level}</Build-JDK>
+                                        <Java-Vendor>${java.vendor}</Java-Vendor>
+                                        <Java-Version>${java.version}</Java-Version>
+                                        <Java-VM-Version>${java.vm.version}</Java-VM-Version>
                                         <Java-Home>${java.home}</Java-Home>
-                                        <Source_Level>${java.source.level}</Source_Level>
-                                        <Output_Level>${java.jdk.version}</Output_Level>
+                                        <Source-Level>${java.source.level}</Source-Level>
+                                        <Output-Level>${java.jdk.version}</Output-Level>
                                         <Optimized>false</Optimized>
-                                        <encoding>${project.build.sourceEncoding}</encoding>
+                                        <Encoding>${project.build.sourceEncoding}</Encoding>
                                     </manifestEntries>
                                 </manifestSection>
-                                <!-- ====================================================  -->
-                                <!--  Maven Information   ===============================  -->
+
+
+                                <!-- ================================================== -->
+                                <!--  Maven Information                                 -->
+                                <!-- ================================================== -->
+
                                 <manifestSection>
                                     <name>MAVEN INFORMATION</name>
+
                                     <manifestEntries>
                                         <Maven-Version>${maven.version}</Maven-Version>
-                                        <Artifact-Id>${project.artifactId}</Artifact-Id>
                                         <Group-Id>${project.groupId}</Group-Id>
+                                        <Artifact-Id>${project.artifactId}</Artifact-Id>
                                         <Version>${project.version}</Version>
                                         <Packaging>${project.packaging}</Packaging>
-                                        <Maven-Version>${maven.version}</Maven-Version>
                                     </manifestEntries>
                                 </manifestSection>
-                                <!-- ====================================================  -->
-                                <!--  SCM Information   =================================  -->
+
+
+                                <!-- ================================================== -->
+                                <!--  SCM Information                                   -->
+                                <!-- ================================================== -->
+
                                 <manifestSection>
                                     <name>SCM INFORMATION</name>
+
                                     <manifestEntries>
                                         <SCM-Branch>${git.branch}</SCM-Branch>
-                                        <SCM-Commit-id>${git.commit.id}</SCM-Commit-id>
-                                        <SCM-Commit-id-Abbr>${git.commit.id.abbrev}</SCM-Commit-id-Abbr>
+                                        <SCM-Commit-Id>${git.commit.id}</SCM-Commit-Id>
+                                        <SCM-Commit-Id-Abbr>${git.commit.id.abbrev}</SCM-Commit-Id-Abbr>
                                         <SCM-Last-Commit-Time>${git.commit.time}</SCM-Last-Commit-Time>
                                         <SCM-Last-Checkin-User>${git.commit.user.name}</SCM-Last-Checkin-User>
                                     </manifestEntries>
                                 </manifestSection>
-                                <!-- ====================================================  -->
-                                <!--  Host Information   ================================  -->
-                                <manifestSection>
-                                    <name>HOST INFORMATION</name>
-                                    <manifestEntries>
-                                        <hostname>${env.HOSTNAME}</hostname>
-                                    </manifestEntries>
-                                </manifestSection>
-                                <!-- ====================================================  -->
+
                             </manifestSections>
+
                             <manifestEntries/>
+
                         </archive>
                     </configuration>
                 </plugin>
@@ -667,7 +591,6 @@
                         <fork>${javacFork}</fork>
 
                         <verbose>${javacVerbose}</verbose>
-                        <compilerVersion>${java.jdk.version}</compilerVersion>
                         <source>${java.source.level}</source>
                         <target>${java.target.level}</target>
 
@@ -734,16 +657,44 @@
         <!--  Plugins                                                                      -->
         <plugins>
 
+            <!--   Maven AntRun Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+            <!--   https://maven.apache.org/plugins/maven-antrun-plugin/           -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>${version.maven.antrun.plugin}</version>
+                <executions>
+                    <execution>
+                        <id>build-host-information</id>
+                        <phase>initialize</phase>
 
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+
+                        <configuration>
+                            <exportAntProperties>true</exportAntProperties>
+
+                            <target>
+                                <exec executable="hostname"
+                                      outputproperty="build.hostname"
+                                      failifexecutionfails="true"/>
+                            </target>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!--   Maven SCM Plugin    ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+            <!--   https://maven.apache.org/scm/maven-scm-plugin/                      -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-scm-plugin</artifactId>
-                <version>2.2.1</version>
+                <version>${version.maven.scm.plugin}</version>
                 <configuration>
                     <connectionType>connection</connectionType>
                 </configuration>
             </plugin>
-
 
             <!--   Java Compiler    ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
             <!--   https://maven.apache.org/plugins/maven-compiler-plugin/index.html   -->
@@ -752,7 +703,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
             </plugin>
 
-            <!--   Enforcer Resource Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+            <!--   Enforcer Resource Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
             <!--   https://maven.apache.org/enforcer/maven-enforcer-plugin/usage.html    -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -815,10 +766,7 @@
                 <artifactId>git-commit-id-maven-plugin</artifactId>
             </plugin>
 
-
-
         </plugins>
-
 
     </build>
     <!--  End:  build  -->
@@ -837,65 +785,32 @@
             <properties>
                 <version.assembly.plugin>3.8.0</version.assembly.plugin>
                 <version.changelog.reporting.plugin>2.3</version.changelog.reporting.plugin>
-<!--                <version.changelog.reporting.plugin>3.0.0-M1</version.changelog.reporting.plugin>-->
-
-
-
-
-
                 <version.checkstyle.github.sevntu-checks>1.44.1</version.checkstyle.github.sevntu-checks>
-
-
-<!--                <version.checkstyle.puppycrawl.tools>10.26.1</version.checkstyle.puppycrawl.tools>-->
                 <version.checkstyle.puppycrawl.tools>10.26.1</version.checkstyle.puppycrawl.tools>
-
-
-
-
                 <version.checkstyle.report.plugin>3.6.0</version.checkstyle.report.plugin>
-
+                <version.gitlog.maven.plugin>1.14.0</version.gitlog.maven.plugin> <!-- Use the latest version -->
                 <version.javadoc.reporting.plugin>3.12.0</version.javadoc.reporting.plugin>
                 <version.javancss.reporting.plugin>2.1</version.javancss.reporting.plugin>
-                <version.jdepend.reporting.plugin>2.0</version.jdepend.reporting.plugin>
-
-
+                <version.jdepend.reporting.plugin>2.2.1</version.jdepend.reporting.plugin>
                 <version.jxr.reporting.plugin>3.6.0</version.jxr.reporting.plugin>
+                <version.maven.license.plugin>1.10.b1</version.maven.license.plugin>
+                <version.project.info.reports.plugin>3.5.0</version.project.info.reports.plugin>
+                <version.reflow.velocity.tools>2.3.4</version.reflow.velocity.tools>
+                <version.spotbugs.reporting.plugin>4.10.4.1</version.spotbugs.reporting.plugin>
+                <version.surefire.reports.plugin>3.2.5</version.surefire.reports.plugin>
+                <version.taglist.report.plugin>3.2.3</version.taglist.report.plugin>
 
                 <!--  CAN'T UPGRADE!!!   -->
                 <version.license.reporting.plugin>2.4.0</version.license.reporting.plugin>
-
-
-
                 <version.maven.site.plugin>4.0.0-M9</version.maven.site.plugin>
-
-                <!--  CAN'T UPGRADE!!!   -->
+                <!--  ───────────────────────────────────────────────────────────────  -->
                 <version.pmd.reporting.plugin>3.21.2</version.pmd.reporting.plugin>
-
-
-
                 <version.pmd.sourceforge.visualforce>6.55.0</version.pmd.sourceforge.visualforce>
                 <version.pmd.sourceforge.apex>6.55.0</version.pmd.sourceforge.apex>
                 <version.pmd.sourceforge.core>6.55.0</version.pmd.sourceforge.core>
                 <version.pmd.sourceforge.java>6.55.0</version.pmd.sourceforge.java>
                 <version.pmd.sourceforge.javascript>6.55.0</version.pmd.sourceforge.javascript>
                 <version.pmd.sourceforge.jsp>6.55.0</version.pmd.sourceforge.jsp>
-
-                <version.project.info.reports.plugin>3.5.0</version.project.info.reports.plugin>
-
-<!--                <version.spotbugs.reporting.plugin>4.9.8.2</version.spotbugs.reporting.plugin>-->
-                <version.spotbugs.reporting.plugin>4.10.4.1</version.spotbugs.reporting.plugin>
-
-
-
-                <version.surefire.reports.plugin>3.2.5</version.surefire.reports.plugin>
-
-
-
-<!--                <version.taglist.report.plugin>3.2.2</version.taglist.report.plugin>-->
-                <version.taglist.report.plugin>3.2.3</version.taglist.report.plugin>
-
-
-
             </properties>
             <!--  End:  genReports : pluginManagement  -->
 
@@ -909,13 +824,13 @@
 
                     <plugins>
 
-
+                        <!--   GitLog Maven Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   https://github.com/danielflower/maven-gitlog-plugin/        -->
                         <plugin>
                             <groupId>com.github.danielflower.mavenplugins</groupId>
                             <artifactId>gitlog-maven-plugin</artifactId>
-                            <version>1.14.0</version> <!-- Use the latest version -->
+                            <version>${version.gitlog.maven.plugin}</version> <!-- Use the latest version -->
                         </plugin>
-
 
                         <!--   Maven Site Report Report   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                         <!--   https://maven.apache.org/plugins/maven-site-plugin/         -->
@@ -934,7 +849,7 @@
                                 <dependency>
                                     <groupId>io.github.devacfr.maven.skins</groupId>
                                     <artifactId>reflow-velocity-tools</artifactId>
-                                    <version>2.3.4</version>
+                                    <version>${version.reflow.velocity.tools}</version>
                                 </dependency>
                             </dependencies>
                         </plugin>
@@ -949,29 +864,6 @@
                             <artifactId>maven-assembly-plugin</artifactId>
                             <version>${version.assembly.plugin}</version>
                         </plugin>
-
-                        <!--   Apache Maven Changelog Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-                        <!--   https://maven.apache.org/plugins/maven-changelog-plugin/    -->
-<!--                        <plugin>-->
-<!--                            <groupId>org.apache.maven.plugins</groupId>-->
-<!--                            <artifactId>maven-changelog-plugin</artifactId>-->
-<!--                            <version>${version.changelog.reporting.plugin}</version>-->
-<!--                        </plugin>-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                         <!--   Checkstyle Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                         <!--   https://checkstyle.sourceforge.io/                          -->
@@ -1078,17 +970,6 @@
                             </configuration>
                         </plugin>
 
-                        <!--                        &lt;!&ndash;   JDepend Dependency Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  &ndash;&gt;-->
-                        <!--                        &lt;!&ndash;   https://www.mojohaus.org/jdepend-maven-plugin/              &ndash;&gt;-->
-                        <!--                        &lt;!&ndash;   We are just going to wait until the 2.1 version of this     &ndash;&gt;-->
-                        <!--                        &lt;!&ndash;   plugin comes out.  There is an incompatibility with         &ndash;&gt;-->
-                        <!--                        &lt;!&ndash;   Java 11.                                                    &ndash;&gt;-->
-                        <!--                        <plugin>-->
-                        <!--                            <groupId>org.codehaus.mojo</groupId>-->
-                        <!--                            <artifactId>jdepend-maven-plugin</artifactId>-->
-                        <!--                            <version>${version.jdepend.reporting.plugin}</version>-->
-                        <!--                        </plugin>-->
-
                         <!--   JXR Cross Reference Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                         <!--   https://maven.apache.org/jxr/maven-jxr-plugin/              -->
                         <plugin>
@@ -1179,9 +1060,6 @@
                                     <artifactId>pmd-visualforce</artifactId>
                                     <version>${version.pmd.sourceforge.visualforce}</version>
                                 </dependency>
-
-
-
                             </dependencies>
                         </plugin>
 
@@ -1246,7 +1124,7 @@
                         <plugin>
                             <groupId>com.mycila.maven-license-plugin</groupId>
                             <artifactId>maven-license-plugin</artifactId>
-                            <version>1.10.b1</version>
+                            <version>${version.maven.license.plugin}</version>
                             <configuration>
 
                                 <licenseName>apache_2_0</licenseName>
@@ -1310,13 +1188,6 @@
                 <!--   genReports: build : plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                 <plugins>
 
-
-<!--                    <plugin>-->
-<!--                        <groupId>org.apache.maven.plugins</groupId>-->
-<!--                        <artifactId>maven-changelog-plugin</artifactId>-->
-<!--                    </plugin>-->
-
-
                     <!--   License Information Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   mojohaus.org/license-maven-plugin/                              -->
                     <plugin>
@@ -1340,11 +1211,7 @@
             <!--   genReports: Reporting   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
             <reporting>
 
-
                 <plugins>
-
-
-
                     <!--  NOTE:  The order of this section is reflected on the             -->
                     <!--         Maven Site Reports layout                                 -->
 
@@ -1353,6 +1220,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-project-info-reports-plugin</artifactId>
+                        <version>${version.project.info.reports.plugin}</version>
                         <reportSets>
                             <reportSet>
                                 <reports>
@@ -1387,15 +1255,6 @@
 
                     <!--   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-
-                    <!--   Apache Maven Changelog Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-                    <!--   https://maven.apache.org/plugins/maven-changelog-plugin/        -->
-<!--                    <plugin>-->
-<!--                        <groupId>org.apache.maven.plugins</groupId>-->
-<!--                        <artifactId>maven-changelog-plugin</artifactId>-->
-<!--                    </plugin>-->
-
-
 
                     <!--   Checkstyle Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   https://checkstyle.sourceforge.io/                              -->
@@ -1477,25 +1336,26 @@
                         <artifactId>javancss-maven-plugin</artifactId>
                     </plugin>
 
-                    <!--                    &lt;!&ndash;   JDepend Dependancy Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙   &ndash;&gt;-->
-                    <!--                    &lt;!&ndash;   https://www.mojohaus.org/jdepend-maven-plugin/                  &ndash;&gt;-->
-                    <!--                    &lt;!&ndash;   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙   &ndash;&gt;-->
-                    <!--                    &lt;!&ndash;   We are just going to wait until the 2.1 version of this         &ndash;&gt;-->
-                    <!--                    &lt;!&ndash;   plugin comes out.  There is an incompatibility with             &ndash;&gt;-->
-                    <!--                    &lt;!&ndash;   Java 11.                                                        &ndash;&gt;-->
-                    <!--                    <plugin>-->
-                    <!--                        <groupId>org.codehaus.mojo</groupId>-->
-                    <!--                        <artifactId>jdepend-maven-plugin</artifactId>-->
-                    <!--                        <reportSets>-->
-                    <!--                            <reportSet>-->
-                    <!--                                <id>jdepend-report</id>-->
-                    <!--                                <reports>-->
-                    <!--                                    <report>generate-no-fork</report>-->
-                    <!--                                </reports>-->
-                    <!--                                <inherited>true</inherited>-->
-                    <!--                            </reportSet>-->
-                    <!--                        </reportSets>-->
-                    <!--                    </plugin>-->
+                    <!--   JDepend Dependancy Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙   -->
+                    <!--   https://www.mojohaus.org/jdepend-maven-plugin/                  -->
+                    <!--   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙   -->
+                    <!--   We are just going to wait until the 2.1 version of this         -->
+                    <!--   plugin comes out.  There is an incompatibility with             -->
+                    <!--   Java 11.                                                        -->
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>jdepend-maven-plugin</artifactId>
+                        <version>${version.jdepend.reporting.plugin}</version>
+                        <reportSets>
+                            <reportSet>
+                                <id>jdepend-report</id>
+                                <reports>
+                                    <report>generate-no-fork</report>
+                                </reports>
+                                <inherited>true</inherited>
+                            </reportSet>
+                        </reportSets>
+                    </plugin>
 
                     <!--   JXR Cross Reference Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   https://maven.apache.org/jxr/maven-jxr-plugin/                 -->
@@ -1654,7 +1514,6 @@
                         </reportSets>
                     </plugin>
 
-
                     <!--   Apache Maven Changelog Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   https://maven.apache.org/plugins/maven-changelog-plugin/    -->
                     <plugin>
@@ -1662,13 +1521,6 @@
                         <artifactId>maven-changelog-plugin</artifactId>
                         <version>${version.changelog.reporting.plugin}</version>
                     </plugin>
-
-
-
-
-
-
-
 
                 </plugins>
                 <!--  End:  genReports : profile : reporting : plugins  -->
