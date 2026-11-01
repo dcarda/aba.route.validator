@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset xmlns="http://pmd.sourceforge.net/ruleset/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="ruleset"
+  xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+  <description>Lava PMD for non-testing classes</description>
+
+  <exclude-pattern>.*/.*Test.java</exclude-pattern>
+
+  <!--
+    =======================================================================
+    Controversial
+    =======================================================================
+  -->
+  <rule ref="rulesets/java/controversial.xml/OneDeclarationPerLine" />
+  <rule ref="rulesets/java/controversial.xml/AvoidFinalLocalVariable" />
+
+  <!--
+    =======================================================================
+    Design
+    =======================================================================
+  -->
+  <rule ref="rulesets/java/design.xml/CompareObjectsWithEquals" />
+  <rule ref="rulesets/java/design.xml/SingularField" />
+
+  <!--
+    =======================================================================
+    String and StringBuffer
+    =======================================================================
+  -->
+  <rule ref="rulesets/java/strings.xml/AvoidDuplicateLiterals">
+    <properties>
+      <property name="exceptionList" value="rawtypes,unchecked" />
+    </properties>
+  </rule>
+  <rule ref="rulesets/java/strings.xml/ConsecutiveLiteralAppends" />
+
+</ruleset>

@@ -4,6 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                              https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <!-- pom order:  https://ucsb-cs156.github.io/topics/maven_pom_xml_order/  -->
+    <!-- pom order:  https://ucsb-cs48.github.io/javatopics/maven_pom_xml_order/#:~:text=Maven%3A%20Pom.xml%20Order%201%20A%20minimal%20pom.xml%20A,%288%29%20url%20%28Not%20used%20in%20CMPSC%2056%29%20  -->
+    <!--   clear ; mvn -PgenReports clean package site  -->
 
     <!--  ───────────────────────────────────────────────────────────────────────────  -->
     <!--   Artifact Information                                                        -->
@@ -37,7 +39,6 @@
             <name>Apache-2.0</name>
             <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
             <distribution>repo</distribution>
-            <comments>A business-friendly OSS license</comments>
         </license>
     </licenses>
     <!--  End:  licenses  -->
@@ -103,9 +104,9 @@
         <enforce.java.major.version>61</enforce.java.major.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <!--  Compiler Settings  ================================================  -->
+        <!--  ───────────────────────────────────────────────────────────────────  -->
+        <!--  Compiler Settings                                                    -->
         <java.source.level>17</java.source.level>
         <java.target.level>17</java.target.level>
         <java.jdk.version>17</java.jdk.version>
@@ -115,6 +116,12 @@
         <javacOptimize>false</javacOptimize>
         <javacVerbose>true</javacVerbose>
 
+        <!--  ───────────────────────────────────────────────────────────────────  -->
+        <!--  Set Default Project File Encoding                                    -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!--  ───────────────────────────────────────────────────────────────────  -->
         <!--  This is for the Manifest.mf files                                    -->
         <!--  Timestamp Information                                                -->
         <timestamp>${maven.build.timestamp}</timestamp>
@@ -144,13 +151,11 @@
         <version.enforcer.plugin>3.6.3</version.enforcer.plugin>
         <version.jacoco.reporting.plugin>0.8.15</version.jacoco.reporting.plugin>
         <version.io.github.git.commit.id>10.0.1</version.io.github.git.commit.id> <!-- Use the latest version -->
-
-        <!--  CAN'T UPGRADE!!!   -->
-        <version.maven.versions.plugin>2.16.2</version.maven.versions.plugin>
-        <version.owasp.dependency.check>9.1.0</version.owasp.dependency.check>
+        <version.maven.versions.plugin>2.23.0</version.maven.versions.plugin>
 
         <!--   WARMNING: DON'T UPDATE THIS.  WON'T WORK WITH JACOCO  -->
-        <version.surefire.plugin>3.6.0</version.surefire.plugin>
+<!--        <version.surefire.plugin>3.6.0</version.surefire.plugin>-->
+        <version.surefire.plugin>3.6.1</version.surefire.plugin>
 
         <!-- Testing Plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
         <version.junit.jupiter>6.1.3</version.junit.jupiter>
@@ -218,7 +223,7 @@
         </dependency>
 
     </dependencies>
-    <!--  End:  dependancies  -->
+    <!--  End:  dependencies  -->
 
     <!--  ───────────────────────────────────────────────────────────────────────────  -->
     <!--  Build                                                                        -->
@@ -231,11 +236,44 @@
 
                 <!-- lock down plugins versions to avoid using Maven defaults (can be moved to parent pom) -->
                 <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_maven-plugin_packaging -->
+<!--                <plugin>-->
+<!--                    <groupId>org.apache.maven.plugins</groupId>-->
+<!--                    <artifactId>maven-antrun-plugin</artifactId>-->
+<!--                    <version>${version.maven.antrun.plugin}</version>-->
+<!--                </plugin>-->
+
+                <!--   Maven AntRun Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                <!--   https://maven.apache.org/plugins/maven-antrun-plugin/           -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-antrun-plugin</artifactId>
                     <version>${version.maven.antrun.plugin}</version>
+                    <executions>
+                        <execution>
+                            <id>build-host-information</id>
+                            <phase>initialize</phase>
+
+                            <goals>
+                                <goal>run</goal>
+                            </goals>
+
+                            <configuration>
+                                <exportAntProperties>true</exportAntProperties>
+
+                                <target>
+                                    <exec executable="hostname"
+                                          outputproperty="build.hostname"
+                                          failifexecutionfails="true"/>
+                                </target>
+                            </configuration>
+                        </execution>
+                    </executions>
                 </plugin>
+
+
+
+
+
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-clean-plugin</artifactId>
@@ -662,27 +700,27 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-antrun-plugin</artifactId>
-                <version>${version.maven.antrun.plugin}</version>
-                <executions>
-                    <execution>
-                        <id>build-host-information</id>
-                        <phase>initialize</phase>
+<!--                <version>${version.maven.antrun.plugin}</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>build-host-information</id>-->
+<!--                        <phase>initialize</phase>-->
 
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
+<!--                        <goals>-->
+<!--                            <goal>run</goal>-->
+<!--                        </goals>-->
 
-                        <configuration>
-                            <exportAntProperties>true</exportAntProperties>
+<!--                        <configuration>-->
+<!--                            <exportAntProperties>true</exportAntProperties>-->
 
-                            <target>
-                                <exec executable="hostname"
-                                      outputproperty="build.hostname"
-                                      failifexecutionfails="true"/>
-                            </target>
-                        </configuration>
-                    </execution>
-                </executions>
+<!--                            <target>-->
+<!--                                <exec executable="hostname"-->
+<!--                                      outputproperty="build.hostname"-->
+<!--                                      failifexecutionfails="true"/>-->
+<!--                            </target>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
             </plugin>
 
             <!--   Maven SCM Plugin    ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
@@ -775,8 +813,185 @@
     <!--   Profiles                                                                    -->
     <profiles>
 
+        <!--
+            jar - just to build the jar
+            test - runs the unit tests
+            reports - builds the report suite
+            release - production release
+        -->
+
+
+
         <!--  ───────────────────────────────────────────────────────────────────  -->
-        <!--   Profile: Generate Reports   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+        <!--   Profile: Production   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+        <profile>
+            <id>Production</id>
+        </profile>
+        <!--  End:  profile : production  -->
+        <!--  ───────────────────────────────────────────────────────────────────────────  -->
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--  ───────────────────────────────────────────────────────────────────────────  -->
+        <!--   Profile: test   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+        <profile>
+            <id>test</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+
+            <!--  ───────────────────────────────────────────────────────────────────────  -->
+            <!--   profile: test : properties   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+            <properties>
+                <version.spotbugs.reporting.plugin>4.10.5.0</version.spotbugs.reporting.plugin>
+            </properties>
+
+            <build>
+                <!--  ───────────────────────────────────────────────────────────────────  -->
+                <!--   profile: test : pluginManagement   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                <pluginManagement>
+                    <plugins>
+                        <!--   Jacoco Code Coverage Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   https://www.jacoco.org/jacoco/trunk/index.html              -->
+                        <plugin>
+                            <groupId>org.jacoco</groupId>
+                            <artifactId>jacoco-maven-plugin</artifactId>
+                            <version>${version.jacoco.reporting.plugin}</version> <!-- Use the latest stable version -->
+                            <executions>
+                                <!-- 1. Prepares the JaCoCo runtime agent to track coverage during test execution -->
+                                <execution>
+                                    <id>prepare-agent</id>
+                                    <goals>
+                                        <goal>prepare-agent</goal>
+                                    </goals>
+                                </execution>
+                                <!-- 2. Creates the readable HTML/XML reports after tests finish -->
+                                <execution>
+                                    <id>report</id>
+                                    <phase>test</phase>
+                                    <goals>
+                                        <goal>report</goal>
+                                    </goals>
+                                </execution>
+                            </executions>
+                        </plugin>
+                        <!--   Spot Bugs Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   https://spotbugs.github.io/spotbugs-maven-plugin            -->
+                        <plugin>
+                            <groupId>com.github.spotbugs</groupId>
+                            <artifactId>spotbugs-maven-plugin</artifactId>
+                            <version>4.10.5.0</version>
+                            <configuration>
+                                <includeTests>true</includeTests>
+                                <effort>Max</effort>
+                                <threshold>Low</threshold>
+                                <failOnError>false</failOnError>
+                                <maxHeap>2048</maxHeap>
+                                <htmlOutput>true</htmlOutput>
+                            </configuration>
+                            <executions>
+                                <execution>
+                                    <id>scan</id>
+                                    <phase>verify</phase>
+                                    <goals>
+                                        <goal>check</goal>
+                                    </goals>
+                                </execution>
+                            </executions>
+                            <dependencies>
+                                <!-- The FindSecBugs plugin extension -->
+                                <dependency>
+                                    <groupId>com.h3xstream.findsecbugs</groupId>
+                                    <artifactId>findsecbugs-plugin</artifactId>
+                                    <version>1.14.0</version> <!-- Use the latest version -->
+                                </dependency>
+                            </dependencies>
+                        </plugin>
+                        <!--   Surefire Reports Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   https://maven.apache.org/surefire/maven-surefire-plugin/    -->
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-surefire-plugin</artifactId>
+                            <version>${version.surefire.plugin}</version>
+                            <configuration>
+                                <argLine>@{surefire.argLine}</argLine>
+                                <redirectTestOutputToFile>true</redirectTestOutputToFile>
+                                <testFailureIgnore>true</testFailureIgnore>
+                            </configuration>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+                <!--  End:  profile : test : pluginManagement -->
+
+                <!--  ───────────────────────────────────────────────────────────────────  -->
+                <!--   profile: test : plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                <plugins>
+                    <!--   Jacoco Code Coverage Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   https://www.jacoco.org/jacoco/trunk/index.html                  -->
+                    <plugin>
+                        <groupId>org.jacoco</groupId>
+                        <artifactId>jacoco-maven-plugin</artifactId>
+                    </plugin>
+                    <!--   Surefire Reports Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   https://maven.apache.org/surefire/maven-surefire-plugin/        -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                    </plugin>
+                    <!--   Spot Bugs Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   https://spotbugs.github.io/spotbugs-maven-plugin                -->
+                    <plugin>
+                        <groupId>com.github.spotbugs</groupId>
+                        <artifactId>spotbugs-maven-plugin</artifactId>
+                    </plugin>
+                </plugins>
+            </build>
+            <!--  End:  profile : test : build -->
+            <!--  ───────────────────────────────────────────────────────────────────────  -->
+
+            <!--  ───────────────────────────────────────────────────────────────────────  -->
+            <!--   genReports: test : reporting   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+            <reporting>
+                <plugins>
+                    <!--   Spot Bugs Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                    <!--   https://spotbugs.github.io/spotbugs-maven-plugin                -->
+                    <plugin>
+                        <groupId>com.github.spotbugs</groupId>
+                        <artifactId>spotbugs-maven-plugin</artifactId>
+                        <version>4.10.5.0</version>
+                        <configuration>
+                            <xmlOutput>true</xmlOutput>
+                            <htmlOutput>true</htmlOutput>
+                            <!-- Optional directory to put spotbugs xdoc xml report -->
+                            <xmlOutputDirectory>target/site</xmlOutputDirectory>
+                        </configuration>
+                        <reportSets>
+                            <reportSet>
+                                <reports>
+                                    <!-- This binds the bug detector report to the site -->
+                                    <report>spotbugs</report>
+                                </reports>
+                            </reportSet>
+                        </reportSets>
+                    </plugin>
+                    <!--  End:  profile : test : reporting : spotbugs-->
+                </plugins>
+            </reporting>
+            <!--  End:  profile : test : reporting -->
+        </profile>
+        <!--  End:  profile : test  -->
+
+        <!--  ───────────────────────────────────────────────────────────────────────────  -->
+        <!--   Profile: Generate Reports   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
         <profile>
             <id>genReports</id>
 
@@ -794,23 +1009,20 @@
                 <version.jdepend.reporting.plugin>2.2.1</version.jdepend.reporting.plugin>
                 <version.jxr.reporting.plugin>3.6.0</version.jxr.reporting.plugin>
                 <version.maven.license.plugin>1.10.b1</version.maven.license.plugin>
-                <version.project.info.reports.plugin>3.5.0</version.project.info.reports.plugin>
-                <version.reflow.velocity.tools>2.3.4</version.reflow.velocity.tools>
-                <version.spotbugs.reporting.plugin>4.10.4.1</version.spotbugs.reporting.plugin>
-                <version.surefire.reports.plugin>3.2.5</version.surefire.reports.plugin>
+                <version.project.info.reports.plugin>3.9.0</version.project.info.reports.plugin>
+                <version.spotbugs.reporting.plugin>4.10.5.0</version.spotbugs.reporting.plugin>
+                <version.surefire.reports.plugin>3.6.1</version.surefire.reports.plugin>
                 <version.taglist.report.plugin>3.2.3</version.taglist.report.plugin>
-
-                <!--  CAN'T UPGRADE!!!   -->
-                <version.license.reporting.plugin>2.4.0</version.license.reporting.plugin>
-                <version.maven.site.plugin>4.0.0-M9</version.maven.site.plugin>
+                <version.license.reporting.plugin>2.7.1</version.license.reporting.plugin>
+                <version.maven.site.plugin>3.22.0</version.maven.site.plugin>
                 <!--  ───────────────────────────────────────────────────────────────  -->
-                <version.pmd.reporting.plugin>3.21.2</version.pmd.reporting.plugin>
-                <version.pmd.sourceforge.visualforce>6.55.0</version.pmd.sourceforge.visualforce>
-                <version.pmd.sourceforge.apex>6.55.0</version.pmd.sourceforge.apex>
-                <version.pmd.sourceforge.core>6.55.0</version.pmd.sourceforge.core>
-                <version.pmd.sourceforge.java>6.55.0</version.pmd.sourceforge.java>
-                <version.pmd.sourceforge.javascript>6.55.0</version.pmd.sourceforge.javascript>
-                <version.pmd.sourceforge.jsp>6.55.0</version.pmd.sourceforge.jsp>
+                <version.pmd.reporting.plugin>3.28.0</version.pmd.reporting.plugin>
+                <version.pmd.sourceforge.visualforce>7.28.0</version.pmd.sourceforge.visualforce>
+                <version.pmd.sourceforge.apex>7.28.0</version.pmd.sourceforge.apex>
+                <version.pmd.sourceforge.core>7.28.0</version.pmd.sourceforge.core>
+                <version.pmd.sourceforge.java>7.28.0</version.pmd.sourceforge.java>
+                <version.pmd.sourceforge.javascript>7.28.0</version.pmd.sourceforge.javascript>
+                <version.pmd.sourceforge.jsp>7.28.0</version.pmd.sourceforge.jsp>
             </properties>
             <!--  End:  genReports : pluginManagement  -->
 
@@ -821,9 +1033,7 @@
                 <!--  ───────────────────────────────────────────────────────────  -->
                 <!--   genReports: build : pluginManagement   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                 <pluginManagement>
-
                     <plugins>
-
                         <!--   GitLog Maven Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                         <!--   https://github.com/danielflower/maven-gitlog-plugin/        -->
                         <plugin>
@@ -831,7 +1041,6 @@
                             <artifactId>gitlog-maven-plugin</artifactId>
                             <version>${version.gitlog.maven.plugin}</version> <!-- Use the latest version -->
                         </plugin>
-
                         <!--   Maven Site Report Report   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                         <!--   https://maven.apache.org/plugins/maven-site-plugin/         -->
                         <plugin>
@@ -845,15 +1054,7 @@
                                 <!-- Site deployment done using GitHub site plugin         -->
                                 <skipDeploy>true</skipDeploy>
                             </configuration>
-                            <dependencies>
-                                <dependency>
-                                    <groupId>io.github.devacfr.maven.skins</groupId>
-                                    <artifactId>reflow-velocity-tools</artifactId>
-                                    <version>${version.reflow.velocity.tools}</version>
-                                </dependency>
-                            </dependencies>
                         </plugin>
-
                         <!--   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                         <!--   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
 
@@ -864,7 +1065,6 @@
                             <artifactId>maven-assembly-plugin</artifactId>
                             <version>${version.assembly.plugin}</version>
                         </plugin>
-
                         <!--   Checkstyle Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                         <!--   https://checkstyle.sourceforge.io/                          -->
                         <plugin>
@@ -899,7 +1099,7 @@
                                     </goals>
                                     <phase>validate</phase>
                                     <configuration>
-                                        <cacheFile>${project.basedir}/checkstyle-cachefile</cacheFile>
+                                        <cacheFile>${project.build.testOutputDirectory}/checkstyle//checkstyle-cachefile</cacheFile>
                                         <configLocation>checkstyle/java-checkstyle.xml</configLocation>
                                         <includeResources>false</includeResources>
                                         <includeTestSourceDirectory>true</includeTestSourceDirectory>
@@ -914,7 +1114,7 @@
                                     </goals>
                                     <phase>validate</phase>
                                     <configuration>
-                                        <cacheFile>${project.basedir}/checkstyle-cachefile-non-java</cacheFile>
+                                        <cacheFile>${project.build.testOutputDirectory}/checkstyle//checkstyle-cachefile-non-java</cacheFile>
                                         <configLocation>checkstyle/non-java-checkstyle.xml</configLocation>
                                         <includeResources>false</includeResources>
                                         <includeTestSourceDirectory>false</includeTestSourceDirectory>
@@ -937,7 +1137,7 @@
                                     </goals>
                                     <phase>none</phase>
                                     <configuration>
-                                        <cacheFile>${project.basedir}/checkstyle-cachefile-import-control-only</cacheFile>
+                                        <cacheFile>${project.build.testOutputDirectory}/checkstyle/checkstyle-cachefile-import-control-only</cacheFile>
                                         <configLocation>checkstyle/java-checkstyle-import-control-only.xml</configLocation>
                                         <includeResources>false</includeResources>
                                         <includeTestSourceDirectory>true</includeTestSourceDirectory>
@@ -1001,22 +1201,27 @@
                             <artifactId>maven-pmd-plugin</artifactId>
                             <version>${version.pmd.reporting.plugin}</version>
                             <configuration>
-                                <linkXRef>true</linkXRef>
-                                <sourceEncoding>UTF-8</sourceEncoding>
-                                <minimumTokens>100</minimumTokens>
-                                <!--                                <targetJdk>22</targetJdk>-->
-                                <targetJdk>17</targetJdk>
+                              <linkXRef>true</linkXRef>
+                                  <outputEncoding>UTF-8</outputEncoding>
+                                  <minimumTokens>100</minimumTokens>
+                                  <targetJdk>${maven.compiler.source}</targetJdk>
+                                  <analysisCache>true</analysisCache>
+                                  <skipEmptyReport>false</skipEmptyReport>
+                                  <failOnViolation>false</failOnViolation>
+                                  <printFailingErrors>true</printFailingErrors>
+                                  <includeTests>false</includeTests>
+                                  <verbose>true</verbose>
 
-                                <analysisCache>true</analysisCache>
-                                <!--  <analysisCacheLocation>${env.HOME}/code-analysis/pmd-analysis-cache/${project.name}</analysisCacheLocation>-->
-                                <skipEmptyReport>false</skipEmptyReport>
-                                <failOnViolation>false</failOnViolation>
+                                <!-- Target the correct ruleset using modern category paths -->
+                                <rulesets>
+                                    <!-- Ruleset Types  -->
+                                    <!--     https://raw.githubusercontent.com/apache/maven-pmd-plugin/HEAD/src/main/resources/rulesets/java/maven-pmd-plugin-default.xml-->
+                                    <!-- A rule set, that comes bundled with PMD -->
+                                     <ruleset>category/java/bestpractices.xml</ruleset>
+                                     <ruleset>category/java/errorprone.xml</ruleset>
+                                </rulesets>
                                 <printFailingErrors>true</printFailingErrors>
-                                <includeTests>false</includeTests>
-                                <verbose>true</verbose>
-                                <!--  <rulesets>-->
-                                <!--     <ruleset>/pmd.xml</ruleset>-->
-                                <!--  </rulesets>-->
+
                                 <excludes>
                                     <exclude>**/*Bean.java</exclude>
                                     <exclude>**/generated/*.java</exclude>
@@ -1027,7 +1232,21 @@
                                     <excludeRoot>target/generated-sources/stubs</excludeRoot>
                                 </excludeRoots>
                             </configuration>
+                            <executions>
+                                <execution>
+                                    <phase>verify</phase>
+                                    <goals>
+                                        <goal>check</goal>
+                                    </goals>
+                                </execution>
+                            </executions>
                             <dependencies>
+                                <!-- https://mvnrepository.com/artifact/net.sourceforge.pmd/pmd-java -->
+                                <dependency>
+                                    <groupId>net.sourceforge.pmd</groupId>
+                                    <artifactId>pmd-java</artifactId>
+                                    <version>${version.pmd.sourceforge.java}</version>
+                                </dependency>
                                 <dependency>
                                     <groupId>net.sourceforge.pmd</groupId>
                                     <artifactId>pmd-javascript</artifactId>
@@ -1037,12 +1256,6 @@
                                     <groupId>net.sourceforge.pmd</groupId>
                                     <artifactId>pmd-jsp</artifactId>
                                     <version>${version.pmd.sourceforge.jsp}</version>
-                                </dependency>
-                                <!-- https://mvnrepository.com/artifact/net.sourceforge.pmd/pmd-java -->
-                                <dependency>
-                                    <groupId>net.sourceforge.pmd</groupId>
-                                    <artifactId>pmd-java</artifactId>
-                                    <version>${version.pmd.sourceforge.java}</version>
                                 </dependency>
                                 <!-- https://mvnrepository.com/artifact/net.sourceforge.pmd/pmd-core -->
                                 <dependency>
@@ -1065,10 +1278,44 @@
 
                         <!--   Spot Bugs Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                         <!--   https://spotbugs.github.io/spotbugs-maven-plugin            -->
+<!--                        <plugin>-->
+<!--                            <groupId>com.github.spotbugs</groupId>-->
+<!--                            <artifactId>spotbugs-maven-plugin</artifactId>-->
+<!--                            <version>${version.spotbugs.reporting.plugin}</version>-->
+<!--                        </plugin>-->
+
+
+                        <!--   Spot Bugs Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   https://spotbugs.github.io/spotbugs-maven-plugin            -->
                         <plugin>
                             <groupId>com.github.spotbugs</groupId>
                             <artifactId>spotbugs-maven-plugin</artifactId>
-                            <version>${version.spotbugs.reporting.plugin}</version>
+                            <version>4.10.5.0</version>
+                            <configuration>
+                                <includeTests>true</includeTests>
+                                <effort>Max</effort>
+                                <threshold>Low</threshold>
+                                <failOnError>false</failOnError>
+                                <maxHeap>2048</maxHeap>
+                                <htmlOutput>true</htmlOutput>
+                            </configuration>
+                            <executions>
+                                <execution>
+                                    <id>scan</id>
+                                    <phase>verify</phase>
+                                    <goals>
+                                        <goal>check</goal>
+                                    </goals>
+                                </execution>
+                            </executions>
+                            <dependencies>
+                                <!-- The FindSecBugs plugin extension -->
+                                <dependency>
+                                    <groupId>com.h3xstream.findsecbugs</groupId>
+                                    <artifactId>findsecbugs-plugin</artifactId>
+                                    <version>1.14.0</version> <!-- Use the latest version -->
+                                </dependency>
+                            </dependencies>
                         </plugin>
 
                         <!--   Surefire Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
@@ -1263,7 +1510,7 @@
                         <artifactId>maven-checkstyle-plugin</artifactId>
                         <configuration>
                             <!--                     <configLocation>checkstyle/java-checkstyle.xml</configLocation>-->
-                            <suppressionsLocation>checkstyle/java-suppressions.xml</suppressionsLocation>
+                            <suppressionsLocation>${project.build.testOutputDirectory}/checkstyle/java-suppressions.xml</suppressionsLocation>
                             <propertyExpansion>basedir=${basedir}</propertyExpansion>
                             <propertyExpansion>samedir=${project.basedir}/src/test/resources/checkstyle</propertyExpansion>
                             <consoleOutput>true</consoleOutput>
@@ -1450,9 +1697,19 @@
                         <artifactId>spotbugs-maven-plugin</artifactId>
                         <configuration>
                             <xmlOutput>true</xmlOutput>
+                            <htmlOutput>true</htmlOutput>
                             <!-- Optional directory to put spotbugs xdoc xml report -->
                             <xmlOutputDirectory>target/site</xmlOutputDirectory>
                         </configuration>
+                        <reportSets>
+                            <reportSet>
+                                <reports>
+                                    <!-- This binds the bug detector report to the site -->
+                                    <report>spotbugs</report>
+                                </reports>
+                            </reportSet>
+                        </reportSets>
+
                     </plugin>
 
                     <!--   Surefire Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->

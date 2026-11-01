@@ -10,7 +10,7 @@ clear
 #
 #         USAGE:  ./buildIt.sh
 #
-#   DESCRIPTION:  This is used to build the Carda Cryptography (CCogs) application.
+#   DESCRIPTION:  This is used to build the ABA Routing Number validator.
 #                 Be sure to source the setEnv.sh file.
 #
 #       OPTIONS:  ---
