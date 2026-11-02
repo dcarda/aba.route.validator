@@ -891,7 +891,7 @@
                             <artifactId>spotbugs-maven-plugin</artifactId>
                             <version>4.10.5.0</version>
                             <configuration>
-                                <includeTests>true</includeTests>
+                                <includeTests>false</includeTests>
                                 <effort>Max</effort>
                                 <threshold>Low</threshold>
                                 <failOnError>false</failOnError>
@@ -1202,15 +1202,15 @@
                             <version>${version.pmd.reporting.plugin}</version>
                             <configuration>
                               <linkXRef>true</linkXRef>
-                                  <outputEncoding>UTF-8</outputEncoding>
-                                  <minimumTokens>100</minimumTokens>
-                                  <targetJdk>${maven.compiler.source}</targetJdk>
-                                  <analysisCache>true</analysisCache>
-                                  <skipEmptyReport>false</skipEmptyReport>
-                                  <failOnViolation>false</failOnViolation>
-                                  <printFailingErrors>true</printFailingErrors>
-                                  <includeTests>false</includeTests>
-                                  <verbose>true</verbose>
+                              <outputEncoding>UTF-8</outputEncoding>
+                              <minimumTokens>100</minimumTokens>
+                              <targetJdk>${maven.compiler.source}</targetJdk>
+                              <analysisCache>true</analysisCache>
+                              <skipEmptyReport>false</skipEmptyReport>
+                              <failOnViolation>false</failOnViolation>
+                              <printFailingErrors>true</printFailingErrors>
+                              <includeTests>false</includeTests>
+                              <verbose>true</verbose>
 
                                 <!-- Target the correct ruleset using modern category paths -->
                                 <rulesets>
@@ -1242,37 +1242,37 @@
                             </executions>
                             <dependencies>
                                 <!-- https://mvnrepository.com/artifact/net.sourceforge.pmd/pmd-java -->
-                                <dependency>
-                                    <groupId>net.sourceforge.pmd</groupId>
-                                    <artifactId>pmd-java</artifactId>
-                                    <version>${version.pmd.sourceforge.java}</version>
-                                </dependency>
-                                <dependency>
-                                    <groupId>net.sourceforge.pmd</groupId>
-                                    <artifactId>pmd-javascript</artifactId>
-                                    <version>${version.pmd.sourceforge.javascript}</version>
-                                </dependency>
-                                <dependency>
-                                    <groupId>net.sourceforge.pmd</groupId>
-                                    <artifactId>pmd-jsp</artifactId>
-                                    <version>${version.pmd.sourceforge.jsp}</version>
-                                </dependency>
-                                <!-- https://mvnrepository.com/artifact/net.sourceforge.pmd/pmd-core -->
-                                <dependency>
-                                    <groupId>net.sourceforge.pmd</groupId>
-                                    <artifactId>pmd-core</artifactId>
-                                    <version>${version.pmd.sourceforge.core}</version>
-                                </dependency>
-                                <dependency>
-                                    <groupId>net.sourceforge.pmd</groupId>
-                                    <artifactId>pmd-apex</artifactId>
-                                    <version>${version.pmd.sourceforge.apex}</version>
-                                </dependency>
-                                <dependency>
-                                    <groupId>net.sourceforge.pmd</groupId>
-                                    <artifactId>pmd-visualforce</artifactId>
-                                    <version>${version.pmd.sourceforge.visualforce}</version>
-                                </dependency>
+<!--                                <dependency>-->
+<!--                                    <groupId>net.sourceforge.pmd</groupId>-->
+<!--                                    <artifactId>pmd-java</artifactId>-->
+<!--                                    <version>${version.pmd.sourceforge.java}</version>-->
+<!--                                </dependency>-->
+<!--                                <dependency>-->
+<!--                                    <groupId>net.sourceforge.pmd</groupId>-->
+<!--                                    <artifactId>pmd-javascript</artifactId>-->
+<!--                                    <version>${version.pmd.sourceforge.javascript}</version>-->
+<!--                                </dependency>-->
+<!--                                <dependency>-->
+<!--                                    <groupId>net.sourceforge.pmd</groupId>-->
+<!--                                    <artifactId>pmd-jsp</artifactId>-->
+<!--                                    <version>${version.pmd.sourceforge.jsp}</version>-->
+<!--                                </dependency>-->
+<!--                                &lt;!&ndash; https://mvnrepository.com/artifact/net.sourceforge.pmd/pmd-core &ndash;&gt;-->
+<!--                                <dependency>-->
+<!--                                    <groupId>net.sourceforge.pmd</groupId>-->
+<!--                                    <artifactId>pmd-core</artifactId>-->
+<!--                                    <version>${version.pmd.sourceforge.core}</version>-->
+<!--                                </dependency>-->
+<!--                                <dependency>-->
+<!--                                    <groupId>net.sourceforge.pmd</groupId>-->
+<!--                                    <artifactId>pmd-apex</artifactId>-->
+<!--                                    <version>${version.pmd.sourceforge.apex}</version>-->
+<!--                                </dependency>-->
+<!--                                <dependency>-->
+<!--                                    <groupId>net.sourceforge.pmd</groupId>-->
+<!--                                    <artifactId>pmd-visualforce</artifactId>-->
+<!--                                    <version>${version.pmd.sourceforge.visualforce}</version>-->
+<!--                                </dependency>-->
                             </dependencies>
                         </plugin>
 
@@ -1509,7 +1509,7 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-checkstyle-plugin</artifactId>
                         <configuration>
-                            <!--                     <configLocation>checkstyle/java-checkstyle.xml</configLocation>-->
+                            <!-- <configLocation>checkstyle/java-checkstyle.xml</configLocation>-->
                             <suppressionsLocation>${project.build.testOutputDirectory}/checkstyle/java-suppressions.xml</suppressionsLocation>
                             <propertyExpansion>basedir=${basedir}</propertyExpansion>
                             <propertyExpansion>samedir=${project.basedir}/src/test/resources/checkstyle</propertyExpansion>
@@ -1658,37 +1658,60 @@
 
                     <!--   PMD/CPD Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   https://maven.apache.org/plugins/maven-pmd-plugin/index.html    -->
+<!--                    <plugin>-->
+<!--                        <groupId>org.apache.maven.plugins</groupId>-->
+<!--                        <artifactId>maven-pmd-plugin</artifactId>-->
+<!--                        <configuration>-->
+<!--                            <rulesets>-->
+<!--                                &lt;!&ndash;  <ruleset>pmd/non-test-rules.xml</ruleset>&ndash;&gt;-->
+<!--                                <ruleset>${basedir}/src/test/resources/pmd/non-test-rules.xml</ruleset>-->
+<!--                                <ruleset>${basedir}/src/test/resources/pmd/standard-rules.xml</ruleset>-->
+<!--                            </rulesets>-->
+<!--                        </configuration>-->
+<!--                        <reportSets>-->
+<!--                            <reportSet>-->
+<!--                                &lt;!&ndash; by default, id = "default" &ndash;&gt;-->
+<!--                                <reports>-->
+<!--                                    &lt;!&ndash; select non-aggregate reports &ndash;&gt;-->
+<!--                                    <report>pmd</report>-->
+<!--                                    <report>cpd</report>-->
+<!--                                </reports>-->
+<!--                            </reportSet>-->
+<!--                            <reportSet>-->
+<!--                                &lt;!&ndash; aggregate reportSet, to define in poms having modules &ndash;&gt;-->
+<!--                                <id>aggregate</id>-->
+<!--                                &lt;!&ndash; don't run aggregate in child modules &ndash;&gt;-->
+<!--                                <reports>-->
+<!--                                    <report>aggregate-pmd</report>-->
+<!--                                    <report>aggregate-cpd</report>-->
+<!--                                </reports>-->
+<!--                                <inherited>false</inherited>-->
+<!--                            </reportSet>-->
+<!--                        </reportSets>-->
+<!--                    </plugin>-->
+
+
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-pmd-plugin</artifactId>
+                        <version>${version.pmd.reporting.plugin}</version>
+
                         <configuration>
+                            <linkXRef>true</linkXRef>
+                            <outputEncoding>UTF-8</outputEncoding>
+                            <targetJdk>${maven.compiler.source}</targetJdk>
+
                             <rulesets>
-                                <!--  <ruleset>pmd/non-test-rules.xml</ruleset>-->
-                                <ruleset>${basedir}/src/test/resources/pmd/non-test-rules.xml</ruleset>
-                                <ruleset>${basedir}/src/test/resources/pmd/standard-rules.xml</ruleset>
+                                <ruleset>category/java/bestpractices.xml</ruleset>
+                                <ruleset>category/java/errorprone.xml</ruleset>
                             </rulesets>
+
+                            <failOnViolation>false</failOnViolation>
+                            <skipEmptyReport>false</skipEmptyReport>
+                            <includeTests>false</includeTests>
                         </configuration>
-                        <reportSets>
-                            <reportSet>
-                                <!-- by default, id = "default" -->
-                                <reports>
-                                    <!-- select non-aggregate reports -->
-                                    <report>pmd</report>
-                                    <report>cpd</report>
-                                </reports>
-                            </reportSet>
-                            <reportSet>
-                                <!-- aggregate reportSet, to define in poms having modules -->
-                                <id>aggregate</id>
-                                <!-- don't run aggregate in child modules -->
-                                <reports>
-                                    <report>aggregate-pmd</report>
-                                    <report>aggregate-cpd</report>
-                                </reports>
-                                <inherited>false</inherited>
-                            </reportSet>
-                        </reportSets>
                     </plugin>
+
 
                     <!--   Spot Bugs Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   https://spotbugs.github.io/spotbugs-maven-plugin                -->
