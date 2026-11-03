@@ -148,7 +148,12 @@
 
         <!-- Reporting Plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙······∙∙∙∙∙∙∙  -->
         <version.enforcer.extra.rules>1.12.1</version.enforcer.extra.rules>
-        <version.enforcer.plugin>3.6.3</version.enforcer.plugin>
+
+<!--        <version.enforcer.plugin>3.6.3</version.enforcer.plugin>-->
+        <version.enforcer.plugin>3.7.0</version.enforcer.plugin>
+
+
+
         <version.jacoco.reporting.plugin>0.8.15</version.jacoco.reporting.plugin>
         <version.io.github.git.commit.id>10.0.1</version.io.github.git.commit.id> <!-- Use the latest version -->
         <version.maven.versions.plugin>2.23.0</version.maven.versions.plugin>
@@ -1049,7 +1054,7 @@
                             <version>${version.maven.site.plugin}</version>
                             <configuration>
                                 <inputEncoding>UTF-8</inputEncoding>
-                                <outputEncoding>UTF-8</outputEncoding>
+<!--                                <outputEncoding>UTF-8</outputEncoding>-->
                                 <generateReports>true</generateReports>
                                 <!-- Site deployment done using GitHub site plugin         -->
                                 <skipDeploy>true</skipDeploy>
@@ -1065,6 +1070,10 @@
                             <artifactId>maven-assembly-plugin</artifactId>
                             <version>${version.assembly.plugin}</version>
                         </plugin>
+
+
+
+
                         <!--   Checkstyle Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                         <!--   https://checkstyle.sourceforge.io/                          -->
                         <plugin>
@@ -1078,6 +1087,29 @@
                                 <logViolationsToConsole>true</logViolationsToConsole>
                                 <outputFileFormat>xml</outputFileFormat>
                                 <propertyExpansion>basedir=${project.basedir}</propertyExpansion>
+
+
+
+<!--                                <configLocation>-->
+<!--                                    file://${project.basedir}/src/test/resources/checkstyle/checkstyle.xml-->
+<!--                                </configLocation>-->
+
+
+                                <configLocation>
+                                    ${project.basedir}/src/test/resources/checkstyle/checkstyle.xml
+                                </configLocation>
+                                <includeResources>false</includeResources>
+
+
+
+
+
+
+
+
+
+
+
                             </configuration>
                             <dependencies>
                                 <dependency>
@@ -1100,7 +1132,14 @@
                                     <phase>validate</phase>
                                     <configuration>
                                         <cacheFile>${project.build.testOutputDirectory}/checkstyle//checkstyle-cachefile</cacheFile>
-                                        <configLocation>checkstyle/java-checkstyle.xml</configLocation>
+<!--                                        <configLocation>${project.basedir}/src/test/resources/checkstyle/checkstyle.xml</configLocation>-->
+
+                                        <configLocation>
+                                            ${project.basedir}/src/test/resources/checkstyle/checkstyle.xml
+                                        </configLocation>
+
+
+
                                         <includeResources>false</includeResources>
                                         <includeTestSourceDirectory>true</includeTestSourceDirectory>
                                         <includes>**/*.java</includes>
@@ -1115,10 +1154,17 @@
                                     <phase>validate</phase>
                                     <configuration>
                                         <cacheFile>${project.build.testOutputDirectory}/checkstyle//checkstyle-cachefile-non-java</cacheFile>
-                                        <configLocation>checkstyle/non-java-checkstyle.xml</configLocation>
+<!--                                        <configLocation>${project.basedir}/src/test/resources/checkstyle/non-java-checkstyle.xml</configLocation>-->
+
+                                        <configLocation>
+                                            ${project.basedir}/src/test/resources/checkstyle/non-java-checkstyle.xml
+                                        </configLocation>
+
+
+
                                         <includeResources>false</includeResources>
                                         <includeTestSourceDirectory>false</includeTestSourceDirectory>
-                                        <outputFile>${project.build.directory}/checkstyle-report-non-java.xml</outputFile>
+                                        <outputFile>${project.basedir}/src/test/resources/checkstyle/checkstyle-report-non-java.xml</outputFile>
                                         <sourceDirectories>${project.basedir}/src</sourceDirectories>
                                         <includes>**/*.ftl,
                                             **/spring-*.xml,
@@ -1138,7 +1184,16 @@
                                     <phase>none</phase>
                                     <configuration>
                                         <cacheFile>${project.build.testOutputDirectory}/checkstyle/checkstyle-cachefile-import-control-only</cacheFile>
-                                        <configLocation>checkstyle/java-checkstyle-import-control-only.xml</configLocation>
+
+<!--                                        <configLocation>${project.basedir}/src/test/resources/checkstyle/java-checkstyle-import-control-only.xml</configLocation>-->
+
+                                        <configLocation>
+                                            ${project.basedir}/src/test/resources/checkstyle/java-checkstyle-import-control-only.xml
+                                        </configLocation>
+
+
+
+
                                         <includeResources>false</includeResources>
                                         <includeTestSourceDirectory>true</includeTestSourceDirectory>
                                         <includes>**/*.java</includes>
@@ -1202,7 +1257,7 @@
                             <version>${version.pmd.reporting.plugin}</version>
                             <configuration>
                               <linkXRef>true</linkXRef>
-                              <outputEncoding>UTF-8</outputEncoding>
+<!--                              <outputEncoding>UTF-8</outputEncoding>-->
                               <minimumTokens>100</minimumTokens>
                               <targetJdk>${maven.compiler.source}</targetJdk>
                               <analysisCache>true</analysisCache>
@@ -1434,6 +1489,13 @@
                 <!--  ───────────────────────────────────────────────────────────  -->
                 <!--   genReports: build : plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                 <plugins>
+
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-checkstyle-plugin</artifactId>
+                    </plugin>
+
 
                     <!--   License Information Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   mojohaus.org/license-maven-plugin/                              -->
@@ -1698,7 +1760,7 @@
 
                         <configuration>
                             <linkXRef>true</linkXRef>
-                            <outputEncoding>UTF-8</outputEncoding>
+<!--                            <outputEncoding>UTF-8</outputEncoding>-->
                             <targetJdk>${maven.compiler.source}</targetJdk>
 
                             <rulesets>

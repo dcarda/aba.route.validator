@@ -7,4 +7,8 @@
             <property name="severity" value="warning" />
         </module>
     </module>
+    <module name="LineLength">
+        <!-- Change the maximum line length here -->
+        <property name="max" value="120"/>
+    </module>
 </module>
