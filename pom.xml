@@ -154,7 +154,7 @@
 
 
 
-        <version.jacoco.reporting.plugin>0.8.15</version.jacoco.reporting.plugin>
+        <version.jacoco.reporting.plugin>0.8.16</version.jacoco.reporting.plugin>
         <version.io.github.git.commit.id>10.0.1</version.io.github.git.commit.id> <!-- Use the latest version -->
         <version.maven.versions.plugin>2.23.0</version.maven.versions.plugin>
 
@@ -1082,7 +1082,11 @@
                             <version>${version.checkstyle.report.plugin}</version>
                             <configuration>
                                 <consoleOutput>true</consoleOutput>
-                                <encoding>UTF-8</encoding>
+
+<!--                                <encoding>UTF-8</encoding>-->
+                                <inputEncoding>UTF-8</inputEncoding>
+
+
                                 <failOnViolation>false</failOnViolation>
                                 <logViolationsToConsole>true</logViolationsToConsole>
                                 <outputFileFormat>xml</outputFileFormat>
