@@ -38,7 +38,9 @@ package com.cardatechnologies.utils.validators.abaroutevalidator.exceptions;
 public class AbaRouteValidationException
         extends Exception {
 
+    /** A message describing the error. */
     private String errorMessage;
+    /** The numeric code related to the error.  */
     private int    errorCode;
 
     /**

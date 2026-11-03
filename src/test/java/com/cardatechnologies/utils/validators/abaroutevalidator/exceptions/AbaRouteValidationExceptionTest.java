@@ -15,7 +15,7 @@ import com.cardatechnologies.utils.TestWatcherExtension;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.cardatechnologies.utils.TraceUnitExtension;
 

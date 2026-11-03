@@ -41,7 +41,7 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
 </pre>
  * <hr>
  */
-public class AbaRouteValidator {
+final public class AbaRouteValidator {
 
     private static final int ABA_LENGTH = 9;
 

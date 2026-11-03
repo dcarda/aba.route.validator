@@ -1,23 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="https://maven.apache.org/DECORATION/1.3.0"
-         xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-         name="ABA Transit Routing Validator"
-         xsi:schemaLocation="https://maven.apache.org/DECORATION/1.3.0
-                             https://maven.apache.org/xsd/decoration-1.3.0.xsd">
+      xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+      name="ABA Transit Routing Validator"
+      xsi:schemaLocation="https://maven.apache.org/DECORATION/1.3.0
+                          https://maven.apache.org/xsd/decoration-1.3.0.xsd">
 
     <!-- ───────────────────────────────────────────────────────────────────── -->
     <bannerLeft>
-        <name><![CDATA[<span class="color-highlight">ABA Routhing Validator</span>]]></name>
+<!--        <name><![CDATA[<span class="color-highlight">ABA Routhing Validator</span>]]></name>-->
         <href>http://dcarda.github.io/aba.route.validator/</href>
     </bannerLeft>
     <publishDate position="bottom" format="yyyy-MM-dd" />
     <version position="bottom" />
     <!-- ───────────────────────────────────────────────────────────────────── -->
+
     <skin>
-        <groupId>io.github.devacfr.maven.skins</groupId>
-        <artifactId>reflow-maven-skin</artifactId>
-        <version>2.3.4</version>
+        <groupId>org.apache.maven.skins</groupId>
+        <artifactId>maven-fluido-skin</artifactId>
+        <version>2.1.0</version>
     </skin>
+
+<!--LOOK INTO THIS-->
+<!--    https://sentrysoftware.org/sentry-maven-skin/styles.html-->
+<!--    <skin>-->
+<!--        <groupId>org.sentrysoftware</groupId>-->
+<!--        <artifactId>sentry-maven-skin</artifactId>-->
+<!--        <version>1.0.0</version> &lt;!&ndash; Check for latest version &ndash;&gt;-->
+<!--    </skin>-->
+
+<!--    <skin>-->
+<!--        <groupId>io.github.devacfr.maven.skins</groupId>-->
+<!--        <artifactId>reflow-maven-skin</artifactId>-->
+<!--        <version>2.3.4</version>-->
+<!--    </skin>-->
     <!-- ───────────────────────────────────────────────────────────────────── -->
     <custom>
         <reflowSkin>

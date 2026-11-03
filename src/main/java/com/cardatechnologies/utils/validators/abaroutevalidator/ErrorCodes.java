@@ -36,11 +36,17 @@ package com.cardatechnologies.utils.validators.abaroutevalidator;
  * <hr>
  */
 public enum ErrorCodes {
+    /** Error code indicating ABA number is null.  */
     ABA_1000(-1000, "com.cardatechnologies.aba.number.null"),
+    /** Error code indicating ABA number is empty.  */
     ABA_1001(-1001, "com.cardatechnologies.aba.number.blank"),
+    /** Error code indicating ABA number is too short.  */
     ABA_1002(-1002, "com.cardatechnologies.aba.number.too.short"),
+    /** Error code indicating ABA number is too long.  */
     ABA_1003(-1003, "com.cardatechnologies.aba.number.too.long"),
+    /** Error code indicating ABA number is not all numbers.  */
     ABA_1004(-1004, "com.cardatechnologies.aba.number.not.numeric"),
+    /** Error code indicating that the ABA routing number failed the federal check digit calculation. */
     ABA_1005(-1005, "com.cardatechnologies.aba.number.failed.federalcheck");
 
     private final int    errorCode;
