@@ -257,14 +257,11 @@
                         <execution>
                             <id>build-host-information</id>
                             <phase>initialize</phase>
-
                             <goals>
                                 <goal>run</goal>
                             </goals>
-
                             <configuration>
                                 <exportAntProperties>false</exportAntProperties>
-
                                 <target>
                                     <exec executable="hostname"
                                           outputproperty="build.hostname"
@@ -274,10 +271,6 @@
                         </execution>
                     </executions>
                 </plugin>
-
-
-
-
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -1053,12 +1046,19 @@
                             <artifactId>maven-site-plugin</artifactId>
                             <version>${version.maven.site.plugin}</version>
                             <configuration>
-                                <inputEncoding>UTF-8</inputEncoding>
+<!--                                <inputEncoding>UTF-8</inputEncoding>-->
 <!--                                <outputEncoding>UTF-8</outputEncoding>-->
                                 <generateReports>true</generateReports>
                                 <!-- Site deployment done using GitHub site plugin         -->
                                 <skipDeploy>true</skipDeploy>
                             </configuration>
+                            <dependencies>
+                                <dependency>
+                                    <groupId>org.sentrysoftware.maven</groupId>
+                                    <artifactId>maven-skin-tools</artifactId>
+                                    <version>1.8.01</version>
+                                </dependency>
+                            </dependencies>
                         </plugin>
                         <!--   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                         <!--   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
@@ -1082,38 +1082,14 @@
                             <version>${version.checkstyle.report.plugin}</version>
                             <configuration>
                                 <consoleOutput>true</consoleOutput>
-
-<!--                                <encoding>UTF-8</encoding>-->
-                                <inputEncoding>UTF-8</inputEncoding>
-
-
                                 <failOnViolation>false</failOnViolation>
                                 <logViolationsToConsole>true</logViolationsToConsole>
                                 <outputFileFormat>xml</outputFileFormat>
                                 <propertyExpansion>basedir=${project.basedir}</propertyExpansion>
-
-
-
-<!--                                <configLocation>-->
-<!--                                    file://${project.basedir}/src/test/resources/checkstyle/checkstyle.xml-->
-<!--                                </configLocation>-->
-
-
                                 <configLocation>
                                     ${project.basedir}/src/test/resources/checkstyle/checkstyle.xml
                                 </configLocation>
                                 <includeResources>false</includeResources>
-
-
-
-
-
-
-
-
-
-
-
                             </configuration>
                             <dependencies>
                                 <dependency>
@@ -1136,14 +1112,9 @@
                                     <phase>validate</phase>
                                     <configuration>
                                         <cacheFile>${project.build.testOutputDirectory}/checkstyle//checkstyle-cachefile</cacheFile>
-<!--                                        <configLocation>${project.basedir}/src/test/resources/checkstyle/checkstyle.xml</configLocation>-->
-
                                         <configLocation>
                                             ${project.basedir}/src/test/resources/checkstyle/checkstyle.xml
                                         </configLocation>
-
-
-
                                         <includeResources>false</includeResources>
                                         <includeTestSourceDirectory>true</includeTestSourceDirectory>
                                         <includes>**/*.java</includes>
@@ -1158,14 +1129,9 @@
                                     <phase>validate</phase>
                                     <configuration>
                                         <cacheFile>${project.build.testOutputDirectory}/checkstyle//checkstyle-cachefile-non-java</cacheFile>
-<!--                                        <configLocation>${project.basedir}/src/test/resources/checkstyle/non-java-checkstyle.xml</configLocation>-->
-
                                         <configLocation>
                                             ${project.basedir}/src/test/resources/checkstyle/non-java-checkstyle.xml
                                         </configLocation>
-
-
-
                                         <includeResources>false</includeResources>
                                         <includeTestSourceDirectory>false</includeTestSourceDirectory>
                                         <outputFile>${project.basedir}/src/test/resources/checkstyle/checkstyle-report-non-java.xml</outputFile>
@@ -1188,16 +1154,9 @@
                                     <phase>none</phase>
                                     <configuration>
                                         <cacheFile>${project.build.testOutputDirectory}/checkstyle/checkstyle-cachefile-import-control-only</cacheFile>
-
-<!--                                        <configLocation>${project.basedir}/src/test/resources/checkstyle/java-checkstyle-import-control-only.xml</configLocation>-->
-
                                         <configLocation>
                                             ${project.basedir}/src/test/resources/checkstyle/java-checkstyle-import-control-only.xml
                                         </configLocation>
-
-
-
-
                                         <includeResources>false</includeResources>
                                         <includeTestSourceDirectory>true</includeTestSourceDirectory>
                                         <includes>**/*.java</includes>
@@ -1261,7 +1220,6 @@
                             <version>${version.pmd.reporting.plugin}</version>
                             <configuration>
                               <linkXRef>true</linkXRef>
-<!--                              <outputEncoding>UTF-8</outputEncoding>-->
                               <minimumTokens>100</minimumTokens>
                               <targetJdk>${maven.compiler.source}</targetJdk>
                               <analysisCache>true</analysisCache>
