@@ -32,22 +32,23 @@ import org.junit.jupiter.api.extension.TestWatcher;
     yyyy mm dd  Who                       Description
     ----------  ------------------------  ----------------------------------------------------
     2021/05/14  Daniel Carda              Initial Module Creation...
-    2020/12/20  JavaDan                   Updated TestWatcher code.
+    2020/12/20  Daniel Carda              Updated TestWatcher code.
     2024/02/11  Daniel Carda              Updated to run with JUnit 5.
+    2026/11/03  Daniel Carda              Removed unused internal fields.
 </pre>
  * <hr>
  */
 public class TestWatcherExtension
         implements TestWatcher {
 
-    public static String testStatus;
-    public static String testCaseName;
+//    private String testStatus;
+//    private String testCaseName;
 
     @Override
     public void testAborted( ExtensionContext Context,
                              Throwable        throwable ) {
-        testStatus   = "Aborted";
-        testCaseName = Context.getDisplayName();
+//        testStatus   = "Aborted";
+//        testCaseName = Context.getDisplayName();
         System.out.println( "     ***" );
         System.out.println( "     ***  Test Aborted: " + Context.getDisplayName() );
         System.out.println( "     ***" );
@@ -57,8 +58,8 @@ public class TestWatcherExtension
     @Override
     public void testDisabled( ExtensionContext Context,
                               Optional<String> optional ) {
-        testStatus   = "Skipped";
-        testCaseName = Context.getDisplayName();
+//        testStatus   = "Skipped";
+//        testCaseName = Context.getDisplayName();
         System.out.println( "     ***" );
         System.out.println( "     ***  Test Skipped: " + Context.getDisplayName() );
         System.out.println( "     ***" );
@@ -68,8 +69,8 @@ public class TestWatcherExtension
     @Override
     public void testFailed( ExtensionContext Context,
                             Throwable        throwable ) {
-        testStatus   = "Failed";
-        testCaseName = Context.getDisplayName();
+//        testStatus   = "Failed";
+//        testCaseName = Context.getDisplayName();
         System.out.println( "     ***" );
         System.out.println( "     ***  Test Failed: " + Context.getDisplayName() );
         System.out.println( "     ***" );
@@ -78,8 +79,8 @@ public class TestWatcherExtension
 
     @Override
     public void testSuccessful( ExtensionContext Context ) {
-        testStatus   = "Passed";
-        testCaseName = Context.getDisplayName();
+//        testStatus   = "Passed";
+//        testCaseName = Context.getDisplayName();
 
         // System.out.println("          Test Successful: " + Context.getDisplayName());
         // System.out.println( "----------------------------------------------------------------------\n" );

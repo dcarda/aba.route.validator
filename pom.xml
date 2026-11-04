@@ -263,7 +263,7 @@
                             </goals>
 
                             <configuration>
-                                <exportAntProperties>true</exportAntProperties>
+                                <exportAntProperties>false</exportAntProperties>
 
                                 <target>
                                     <exec executable="hostname"
@@ -1008,7 +1008,7 @@
                 <version.checkstyle.github.sevntu-checks>1.44.1</version.checkstyle.github.sevntu-checks>
                 <version.checkstyle.puppycrawl.tools>10.26.1</version.checkstyle.puppycrawl.tools>
                 <version.checkstyle.report.plugin>3.6.0</version.checkstyle.report.plugin>
-                <version.gitlog.maven.plugin>1.14.0</version.gitlog.maven.plugin> <!-- Use the latest version -->
+                <version.gitlog.maven.plugin>1.14.0</version.gitlog.maven.plugin>
                 <version.javadoc.reporting.plugin>3.12.0</version.javadoc.reporting.plugin>
                 <version.javancss.reporting.plugin>2.1</version.javancss.reporting.plugin>
                 <version.jdepend.reporting.plugin>2.2.1</version.jdepend.reporting.plugin>

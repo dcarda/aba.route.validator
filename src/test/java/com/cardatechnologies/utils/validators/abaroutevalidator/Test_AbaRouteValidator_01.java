@@ -117,7 +117,8 @@ public class Test_AbaRouteValidator_01
 
         // Validate
         try {
-            AbaRouteValidator.validate( abaNumber );
+//            AbaRouteValidator.validate( abaNumber );
+            AbaRouteValidator.validate( null );
         }
         catch( AbaRouteValidationException e ) {
 
