@@ -181,30 +181,39 @@
         <menu name="Developer Reports" inherit="bottom">
             <item name="Checkstyle Report" href="checkstyle.html" />
             <item name="CPD Report" href="cpd.html" />
-            <item name="JaCoCo Coverage" href="jacoco/index.html" />
-            <item name="JavaDocs Report" href="apidocs/index.html" />
-            <item name="JavaNCSS Report" href="javancss.html" />
-            <item name="JDepend Metrics" href="jdepend-report.html" />
+<!--            <item name="JaCoCo Coverage" href="jacoco/index.html" />-->
+            <item name="JaCoCo Coverage"
+                  href="jacoco-report.html" />
+            <item name="JavaDocs Report"
+                  href="javadoc-report.html"  />
+            <item name="JavaNCSS Report"
+                  href="javancss.html" />
+            <item name="JDepend Metrics"
+                  href="jdepend-report.html" />
+            <item name="JXR XRef Report"
+                  href="xref-report.html" />
+            <item name="PMD Report"
+                  href="pmd.html" />
+            <item name="Spotbugs Report"
+                  href="spotbugs.html" />
+            <item name="Surefire Report"
+                  href="surefire.html" />
+            <item name="Tag List Report"
+                  href="taglist.html" />
 
-            <item name="JXR XRef Report" href="xref/index.html" />
-
-            <item name="PMD Report" href="pmd.html" />
-            <item name="Spotbugs Report" href="spotbugs.html" />
-            <item name="Surefire Report" href="surefire-report.html" />
-            <item name="Tag List Report" href="taglist.html" />
-
-            <!--  <item name="SCM Activity" href="" collapse="false"  >-->
-                <item name="-----------------------------" />
-                <item name="Change Log Report" href="changelog.html" />
-                <item name="File Activity Report" href="file-activity.html" />
-                <item name="Developer Report" href="dev-activity.html" />
+<!--              <item name="SCM Activity" href="" collapse="false"  >-->
+            <item name="----------------------------------------" />
+            <item name="Change Log Report" href="changelog.html" />
+            <item name="File Activity Report" href="file-activity.html" />
+            <item name="Developer Report" href="dev-activity.html" />
             <!--  </item>-->
 
             <!--  <item name="Versions Report"  collapse="false" >  -->
-                <item name="-----------------------------" />
-                <item name="Dependency Updates Report" href="dependency-updates-report.html" />
-                <item name="Plugin Updates Report" href="plugin-updates-report.html" />
-                <item name="Property Updates Report" href="property-updates-report.html" />
+            <item name="----------------------------------------" />
+            <item name="Dependency Updates Report" href="dependency-updates-report.html" />
+            <item name="Plugin Updates Report" href="plugin-updates-report.html" />
+            <item name="Property Updates Report" href="property-updates-report.html" />
+            <item name="----------------------------------------" />
             <!--  </item>  -->
         </menu>
 
