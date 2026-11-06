@@ -271,42 +271,42 @@
                                 </target>
 
 
-                                <target>
-                                    <!-- Make sure the destination folder exists -->
-                                    <mkdir dir="${project.build.directory}/site"/>
+<!--                                <target>-->
+<!--                                    &lt;!&ndash; Make sure the destination folder exists &ndash;&gt;-->
+<!--                                    <mkdir dir="${project.build.directory}/site"/>-->
 
-                                    <!-- Write your custom HTML report directly into the site directory -->
-                                    <echo file="${project.build.directory}/site/minimal-report.html" append="false">
-                                        <![CDATA[
-                        <!DOCTYPE html>
-                        <html>
-                        <head>
-                            <title>Minimal Report</title>
-                            <!-- Uses default Maven Site styling to blend in -->
-                            <link rel="stylesheet" href="css/maven-theme.css" type="text/css" />
-                            <link rel="stylesheet" href="css/site.css" type="text/css" />
-                        </head>
-                        <body class="composite">
-                            <div id="bodyColumn">
-                                <div class="section">
-                                    <h2>Minimal Custom Report</h2>
-                                    <p>This report was generated dynamically by the <strong>maven-antrun-plugin</strong> during the site phase.</p>
-                                    <table class="bodyTable" border="0">
-                                        <thead>
-                                            <tr class="a"><th>Metric</th><th>Value</th></tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="b"><td>Status</td><td><span style="color: green;">✔ Active</span></td></tr>
-                                            <tr class="a"><td>Project</td><td>${project.name}</td></tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </body>
-                        </html>
-                        ]]>
-                                    </echo>
-                                </target>
+<!--                                    &lt;!&ndash; Write your custom HTML report directly into the site directory &ndash;&gt;-->
+<!--                                    <echo file="${project.build.directory}/site/minimal-report.html" append="false">-->
+<!--                                        <![CDATA[-->
+<!--                        <!DOCTYPE html>-->
+<!--                        <html>-->
+<!--                        <head>-->
+<!--                            <title>Minimal Report</title>-->
+<!--                            &lt;!&ndash; Uses default Maven Site styling to blend in &ndash;&gt;-->
+<!--                            <link rel="stylesheet" href="css/maven-theme.css" type="text/css" />-->
+<!--                            <link rel="stylesheet" href="css/site.css" type="text/css" />-->
+<!--                        </head>-->
+<!--                        <body class="composite">-->
+<!--                            <div id="bodyColumn">-->
+<!--                                <div class="section">-->
+<!--                                    <h2>Minimal Custom Report</h2>-->
+<!--                                    <p>This report was generated dynamically by the <strong>maven-antrun-plugin</strong> during the site phase.</p>-->
+<!--                                    <table class="bodyTable" border="0">-->
+<!--                                        <thead>-->
+<!--                                            <tr class="a"><th>Metric</th><th>Value</th></tr>-->
+<!--                                        </thead>-->
+<!--                                        <tbody>-->
+<!--                                            <tr class="b"><td>Status</td><td><span style="color: green;">✔ Active</span></td></tr>-->
+<!--                                            <tr class="a"><td>Project</td><td>${project.name}</td></tr>-->
+<!--                                        </tbody>-->
+<!--                                    </table>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </body>-->
+<!--                        </html>-->
+<!--                        ]]>-->
+<!--                                    </echo>-->
+<!--                                </target>-->
 
 
 

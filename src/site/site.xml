@@ -179,9 +179,10 @@
         <!--    <menu name="Maven documentation" ref="reports" inherit="bottom"   />-->
         <!--  Generated Developer Reports   ================================== -->
         <menu name="Developer Reports" inherit="bottom">
-            <item name="Checkstyle Report" href="checkstyle.html" />
-            <item name="CPD Report" href="cpd.html" />
-<!--            <item name="JaCoCo Coverage" href="jacoco/index.html" />-->
+            <item name="Checkstyle Report"
+                  href="checkstyle.html" />
+            <item name="CPD Report"
+                  href="cpd.html" />
             <item name="JaCoCo Coverage"
                   href="jacoco-report.html" />
             <item name="JavaDocs Report"
@@ -202,18 +203,18 @@
                   href="taglist.html" />
 
 <!--              <item name="SCM Activity" href="" collapse="false"  >-->
-            <item name="----------------------------------------" />
+            <item name="────────────────────────────────────────" />
             <item name="Change Log Report" href="changelog.html" />
             <item name="File Activity Report" href="file-activity.html" />
             <item name="Developer Report" href="dev-activity.html" />
             <!--  </item>-->
 
             <!--  <item name="Versions Report"  collapse="false" >  -->
-            <item name="----------------------------------------" />
+            <item name="────────────────────────────────────────" />
             <item name="Dependency Updates Report" href="dependency-updates-report.html" />
             <item name="Plugin Updates Report" href="plugin-updates-report.html" />
             <item name="Property Updates Report" href="property-updates-report.html" />
-            <item name="----------------------------------------" />
+            <item name="────────────────────────────────────────" />
             <!--  </item>  -->
         </menu>
 
