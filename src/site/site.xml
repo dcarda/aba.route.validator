@@ -12,145 +12,36 @@
     </bannerLeft>
     <publishDate position="bottom" format="yyyy-MM-dd" />
     <version position="bottom" />
+
     <!-- ───────────────────────────────────────────────────────────────────── -->
 
-<!--    <skin>-->
-<!--        <groupId>org.apache.maven.skins</groupId>-->
-<!--        <artifactId>maven-fluido-skin</artifactId>-->
-<!--        <version>2.1.0</version>-->
-<!--    </skin>-->
-
-<!--LOOK INTO THIS-->
-<!--    https://sentrysoftware.org/sentry-maven-skin/styles.html-->
-<!--    <skin>-->
-<!--        <groupId>org.sentrysoftware</groupId>-->
-<!--        <artifactId>sentry-maven-skin</artifactId>-->
-<!--        <version>1.0.0</version> &lt;!&ndash; Check for latest version &ndash;&gt;-->
-<!--    </skin>-->
-
-
+    <!--   Sentry Maven Skin   ──────────────────────────────────────  -->
+    <!--   https://sentrysoftware.org/sentry-maven-skin/index.html     -->
     <skin>
         <groupId>org.sentrysoftware.maven</groupId>
         <artifactId>sentry-maven-skin</artifactId>
         <version>8.0.01</version>
     </skin>
 
-
-
-    <!--    <skin>-->
-<!--        <groupId>io.github.devacfr.maven.skins</groupId>-->
-<!--        <artifactId>reflow-maven-skin</artifactId>-->
-<!--        <version>2.3.4</version>-->
-<!--    </skin>-->
     <!-- ───────────────────────────────────────────────────────────────────── -->
     <custom>
-        <reflowSkin>
-            <theme>bootswatch-superhero</theme>
+        <bodyClass>sentry-purple</bodyClass>
+        <buildIndex>true</buildIndex>
+        <convertImagesToWebp>true</convertImagesToWebp>
 
-            <!-- Make this to 'false' for local development, i.e. file:// URLs -->
-            <protocolRelativeURLs>false</protocolRelativeURLs>
-            <smoothScroll>true</smoothScroll>
-            <highlightJs>true</highlightJs>
-            <highlightJsTheme>github</highlightJsTheme>
-            <!--      <absoluteResourceURL>http://dcarda.github.io/aba.route.validator/</absoluteResourceURL>-->
-            <!--            <brand>-->
-            <!--                &lt;!&ndash; Brand text in top-left part of the site &ndash;&gt;-->
-            <!--                <name><![CDATA[<span class="color-highlight">ABA Transit Routing Validator</span>]]></name>-->
-            <!--                <href>http://dcarda.github.io/aba.route.validator/</href>-->
-            <!--            </brand>-->
-            <slogan>Example application with great reporting!</slogan>
-            <titleTemplate>%2$s | %1$s</titleTemplate>
-            <header>data-bs-theme="dark"</header>
-            <!-- Use Table of Contents at the top of the page (max 6 elements) -->
-            <toc theme="light">top</toc>
-            <tocTopMax>6</tocTopMax>
-            <!-- Include the documentation and tools in the top navigation (in addition to links) -->
-            <topNav>Documentation|Tools|Contribute</topNav>
-            <!-- ───────────────────────────────────────────────────────────────── -->
-            <!-- Split menus in the bottom navigation -->
-            <bottomNav maxSpan="9">
-                <column>Project Links|Tools|Contribute|Documentation</column>
-                <column>Developer Reports</column>
-                <column>Project Information</column>
-                <column>Reports</column>
-            </bottomNav>
-            <bottomDescription quote="false"><![CDATA[<div>
-            <span class="color-highlight">ABA Validator</span>
-                <br>
-                <br>
-                This is an example project showing how to construct Maven sites using themes, skins, and various reporting libraries.
-                <br>
-                <br>
-                This project was meant to be used as a starting template for other projects.
-                <br>
-                <br>
-                <a href="https://github.com/dcarda/"
-                    class="p-1 text-secondary"
-                        target="_blank">
-                    <i class="fab fa-github"></i></a>
-                <a href="mailto:Hire_Dan@CardaTechnologies.com"
-                    class="p-1
-                        text-secondary">
-                    <i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/danielcarda"
-                    class="p-1
-                    text-secondary"
-                    target="_blank">
-                    <i class="fab fa-linkedin"></i></a>
-            </div>
-          </div>]]></bottomDescription>
-            <pages>
-                <index project="reflow-parent">
-                    <!-- Override the title -->
-                    <titleTemplate>ABA Validator Project</titleTemplate>
-                    <!-- no breadcrumbs on the main index page -->
-                    <breadcrumbs>false</breadcrumbs>
-                    <!-- no ToC on the main index page -->
-                    <toc>false</toc>
-                    <markPageHeader>false</markPageHeader>
-                    <sections>
-                        <carousel />
-                        <columns>2</columns>
-                        <body />
-                        <sidebar />
-                    </sections>
-                </index>
-                <contribute>
-                    <breadcrumbs>false</breadcrumbs>
-                </contribute>
-                <!-- Disable source highlighting for Maven reports -->
-                <source-repository>
-                    <highlightJs>false</highlightJs>
-                </source-repository>
-                <issue-tracking>
-                    <highlightJs>false</highlightJs>
-                    <toc>false</toc>
-                </issue-tracking>
-                <license>
-                    <highlightJs>false</highlightJs>
-                    <toc>false</toc>
-                </license>
-                <!-- Disable ToC for some Maven reports -->
-                <project-info>
-                    <toc>false</toc>
-                </project-info>
-                <github-report>
-                    <toc>false</toc>
-                </github-report>
-                <dependencies>
-                    <tocTopMax>4</tocTopMax>
-                </dependencies>
-            </pages>
-            <googleAnalytics>
-                <useGtag>true</useGtag>
-            </googleAnalytics>
+        <reflowSkin>
+            <theme>bootswatch-cerulean</theme> <!-- Or your preferred theme -->
+            <showDate>true</showDate>
+            <showVersion>true</showVersion>
+            <!-- Explicitly control the SCM / branch label details -->
+            <scmLabel>Git</scmLabel>
+            <!-- Force layout elements to avoid missing data references -->
+            <bottomNav max="4" />
         </reflowSkin>
-        <gitHub combine.children="append">
-            <projectId>olamy/reflow-maven-skin</projectId>
-            <ribbonOrientation>right</ribbonOrientation>
-            <ribbonColor>gray</ribbonColor>
-        </gitHub>
+
+
     </custom>
+
     <!--  <googleAnalyticsAccountId>G-7V4CRXTEYB</googleAnalyticsAccountId>-->
     <!-- ───────────────────────────────────────────────────────────────────── -->
     <body>
@@ -164,7 +55,8 @@
             <item name="Daniel Carda" href="/" />
         </breadcrumbs>
         <menu name="Project Links" inherit="top">
-            <item name="About" href="https://dcarda.github.io/aba.route.validator/" />
+<!--            <item name="About" href="https://dcarda.github.io/aba.route.validator/" />-->
+            <item name="About" href="index.html" />
             <item name="GitHub project" href="https://github.com/dcarda/aba.route.validator/" />
             <item name="Release notes" href="https://github.com/dcarda/aba.route.validator/releases" />
             <item name="Copyright/License" href="copyright.html" />
