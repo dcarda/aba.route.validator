@@ -41,10 +41,9 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
 </pre>
  * <hr>
  */
-final public class AbaRouteValidator {
+public final class AbaRouteValidator {
 
     private static final int ABA_LENGTH = 9;
-
     private static final int[] CHECKSUM_WEIGHTS = { 3, 7, 1 };
 
     private AbaRouteValidator() {
@@ -53,51 +52,43 @@ final public class AbaRouteValidator {
 
     /**
      * Method: validate
+     * <p>
+     * <b>Description:</b><br>
+     * Validates an ABA Routing Transit Number.
      *
-     * This method is the starting point to validate whether an incoming string is
-     * a valid ABA Routing Transit Number.
+     * @param routingNumber
+     *        The ABA Routing Transit Number to validate.
      *
-     * @param  routingNumber The ABA number to be tested.
-     *
-     * @return boolean
-     *         True if all the characters were digits.
-     *         False if there was a problem.
+     * @return true if the routing number passes all validation checks;
+     *         false if the checksum is invalid.
      *
      * @throws AbaRouteValidationException
-     *         An error occurred when parsing the suspect
-     *         ABA Routing Transit Number.
+     *         If the routing number is null, blank, has an invalid length,
+     *         contains non-ASCII digits, or has an invalid Federal Reserve prefix.
      */
+
     public static boolean validate(final String routingNumber)
             throws AbaRouteValidationException {
 
         if (routingNumber == null) {
             throw new AbaRouteValidationException(
-                    ErrorCodes.ABA_1000.getErrorCode(),
-                    ErrorCodes.ABA_1000.getErrorMnemonic());
+                    ErrorCodes.ABA_1000);
         }
 
         if (routingNumber.isBlank()) {
-            throw new AbaRouteValidationException(
-                    ErrorCodes.ABA_1001.getErrorCode(),
-                    ErrorCodes.ABA_1001.getErrorMnemonic());
+            throw new AbaRouteValidationException(ErrorCodes.ABA_1001);
         }
 
         if (routingNumber.length() != ABA_LENGTH) {
             if (routingNumber.length() < ABA_LENGTH) {
-                throw new AbaRouteValidationException(
-                        ErrorCodes.ABA_1002.getErrorCode(),
-                        ErrorCodes.ABA_1002.getErrorMnemonic());
+                throw new AbaRouteValidationException(ErrorCodes.ABA_1002);
             }
 
-            throw new AbaRouteValidationException(
-                    ErrorCodes.ABA_1003.getErrorCode(),
-                    ErrorCodes.ABA_1003.getErrorMnemonic());
+            throw new AbaRouteValidationException(ErrorCodes.ABA_1003);
         }
 
         if (!isAsciiDigits(routingNumber)) {
-            throw new AbaRouteValidationException(
-                    ErrorCodes.ABA_1004.getErrorCode(),
-                    ErrorCodes.ABA_1004.getErrorMnemonic());
+            throw new AbaRouteValidationException(ErrorCodes.ABA_1004);
         }
 
         validateFedNumber(routingNumber);
@@ -107,22 +98,18 @@ final public class AbaRouteValidator {
 
     /**
      * Method: validateAbaNumberChecksum
+     * <p>
+     * <b>Description:</b><br>
+     * Validates the ABA routing number checksum.
      *
-     * @param  routingNumber
-     *         Checks the checksum of the entire number
+     * @param routingNumber
+     *        The nine-digit ABA Routing Transit Number to check.
      *
-     * @return true
-     *              if the ABA routing number passes the checksum validation;
-     *         false
-     *              otherwise.
+     * @return true if the checksum is valid; false otherwise.
      */
     private static boolean validateAbaNumberChecksum(
             final String routingNumber) {
-
-        //        final int[] weights = { 3, 7, 1 };
-
         int checksum = 0;
-
         for (int i = 0; i < ABA_LENGTH; i++) {
             checksum +=
                     (routingNumber.charAt(i) - '0')
@@ -134,10 +121,15 @@ final public class AbaRouteValidator {
 
     /**
      * Method: isAsciiDigits
+     * <p>
+     * <b>Description:</b><br>
+     * Determines whether every character in the supplied string
+     * is an ASCII digit.
      *
-     * This checks to make sure the individual "characters" are actually numbers.
+     * @param value
+     *        The string to examine.
      *
-     * @param  value The target string to test.
+     * @return true if every character is an ASCII digit; false otherwise.
      */
     private static boolean isAsciiDigits(final String value) {
 
@@ -154,14 +146,16 @@ final public class AbaRouteValidator {
 
     /**
      * Method: validateFedNumber
+     * <p>
+     * <b>Description:</b><br>
+     * Validates the Federal Reserve routing prefix represented
+     * by the first two digits of the routing number.
      *
-     * This method will test to see if the first two characters, when combined to create a
-     * number, are within an acceptable range.
-     *
-     * @param  routingNumber The target string to test.
+     * @param routingNumber
+     *        The nine-digit ABA Routing Transit Number.
      *
      * @throws AbaRouteValidationException
-     *         There was a problem in converting the ABA number.
+     *         If the Federal Reserve prefix is invalid.
      */
     private static void validateFedNumber(final String routingNumber)
             throws AbaRouteValidationException {
@@ -175,9 +169,7 @@ final public class AbaRouteValidator {
                 || (fedNumber >= 61 && fedNumber <= 72)
                 || fedNumber == 80)) {
 
-            throw new AbaRouteValidationException(
-                    ErrorCodes.ABA_1005.getErrorCode(),
-                    ErrorCodes.ABA_1005.getErrorMnemonic());
+            throw new AbaRouteValidationException(ErrorCodes.ABA_1005);
         }
     }
 }

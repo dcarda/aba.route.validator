@@ -12,6 +12,7 @@ package com.cardatechnologies.utils.validators.abaroutevalidator.exceptions;
 //~--- non-JDK imports --------------------------------------------------------
 
 import com.cardatechnologies.utils.TestWatcherExtension;
+import com.cardatechnologies.utils.validators.abaroutevalidator.ErrorCodes;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
@@ -38,47 +39,32 @@ import com.cardatechnologies.utils.TraceUnitExtension;
 @ExtendWith({ TraceUnitExtension.class, TestWatcherExtension.class })
 class AbaRouteValidationExceptionTest {
 
-    @Test
-    void testConstructor() {
-
-        Throwable throwable = new Throwable();
-
-        AbaRouteValidationException abaRouteValidationException = new AbaRouteValidationException( throwable );
-
-        abaRouteValidationException.setErrorCode( 5151 );
-
-        // Run the asserts   --------------------------------------------------
-        assertEquals( 5151, abaRouteValidationException.getErrorCode() );
-    }
-
-
-
-
-    /**
-     * Method: testErrorCode
-     */
-    @Test
-    void testErrorCode() {
-        AbaRouteValidationException abaRouteValidationException = new AbaRouteValidationException( 1001, "TestError" );
-
-        abaRouteValidationException.setErrorCode( 5151 );
-
-        // Run the asserts   --------------------------------------------------
-        assertEquals( 5151, abaRouteValidationException.getErrorCode() );
-    }
-
-    /**
-     * Method: testErrorMessage
-     */
-    @Test
-    void testErrorMessage() {
-        AbaRouteValidationException abaRouteValidationException = new AbaRouteValidationException( 1001, "TestError" );
-
-        abaRouteValidationException.setErrorMessage( "crazy MeSSage!!!" );
-
-        // Run the asserts   --------------------------------------------------
-        assertEquals( "crazy MeSSage!!!", abaRouteValidationException.getErrorMessage() );
-    }
+//    @Test
+//    void testConstructor() {
+//
+//        Throwable throwable = new Throwable();
+//
+//        AbaRouteValidationException abaRouteValidationException = new AbaRouteValidationException( throwable );
+//
+//        abaRouteValidationException.setErrorCode( 5151 );
+//
+//        // Run the asserts   --------------------------------------------------
+//        assertEquals( 5151, abaRouteValidationException.getErrorCode() );
+//    }
+//
+//    /**
+//     * Method: testErrorCode
+//     */
+//    @Test
+//    void testErrorCode() {
+//        AbaRouteValidationException abaRouteValidationException =
+//              new AbaRouteValidationException( ErrorCodes.ABA_1000 );
+//
+//        abaRouteValidationException.setErrorCode( 5151 );
+//
+//        // Run the asserts   --------------------------------------------------
+//        assertEquals( 5151, abaRouteValidationException.getErrorCode() );
+//    }
 }
 
 /* ---------------------------------------------------------------------------------------

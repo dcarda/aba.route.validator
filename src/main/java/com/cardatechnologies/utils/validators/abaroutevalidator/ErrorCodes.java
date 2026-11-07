@@ -6,7 +6,7 @@
  *             All Rights Reserved
  * ---------------------------------------------------------------------------------------
  *
- *  License: MIT license
+ *  License: Apache 2.0 License
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
  * INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANT ABILITY, FITNESS FOR A
@@ -20,7 +20,8 @@ package com.cardatechnologies.utils.validators.abaroutevalidator;
 
 /**
  * <b>Description:</b><br>
- *     This class is used to run unit tests against the main code.
+ *     This enumeration defines the error codes and associated message
+ *     identifiers used by the ABA Routing Transit Number validator.
  *
  * @author     Daniel Carda
  * <br>
@@ -29,9 +30,10 @@ package com.cardatechnologies.utils.validators.abaroutevalidator;
 <pre>
     yyyy mm dd  Who                       Description
     ----------  ------------------------  ----------------------------------------------------
-    2015/12/22  JavaDan                   Initial Module Creation...
-    2020/12/20  JavaDan                   Updated formatting.
+    2015/12/22  Daniel Carda              Initial Module Creation...
+    2020/12/20  Daniel Carda              Updated formatting.
     2021/08/01  Daniel Carda              Improved Class Javadocs
+    2026/08/01  Daniel Carda              Improved Mnemonic Text
 </pre>
  * <hr>
  */
@@ -68,7 +70,9 @@ public enum ErrorCodes {
      * Constructs ...
      *
      * @param errorCode
+     *        Integer value for the error code
      * @param errorMnemonic
+     *        Text mnemonic describing the error code.
      */
     ErrorCodes( int    errorCode,
                 String errorMnemonic ) {
@@ -78,6 +82,9 @@ public enum ErrorCodes {
 
     /**
      * Method: getErrorCode
+     * <p>
+     * <b>Description:</b><br>
+     * This will return the integer for the error code.
      *
      * @return int
      */
@@ -87,6 +94,9 @@ public enum ErrorCodes {
 
     /**
      * Method: getErrorMnemonic
+     * <p>
+     * <b>Description:</b><br>
+     * This will return the text of the error code.
      *
      * @return String
      */
@@ -94,7 +104,22 @@ public enum ErrorCodes {
         return errorMnemonic;
     }
 
-
+    /**
+     * Method: fromErrorCode
+     *
+     * <p>
+     * <b>Description:</b><br>
+     * Returns the ErrorCodes enumeration associated with the
+     * specified numeric error code.
+     *
+     * @param errorCode
+     *        The numeric error code to locate.
+     *
+     * @return The corresponding ErrorCodes enumeration.
+     *
+     * @throws IllegalArgumentException
+     *         If the specified error code does not exist.
+     */
     public static ErrorCodes fromErrorCode(final int errorCode) {
 
         for (final ErrorCodes error : values()) {
@@ -106,7 +131,6 @@ public enum ErrorCodes {
         throw new IllegalArgumentException(
                 "Unknown ABA routing validation error code: " + errorCode);
     }
-
 }
 
 /* ---------------------------------------------------------------------------------------

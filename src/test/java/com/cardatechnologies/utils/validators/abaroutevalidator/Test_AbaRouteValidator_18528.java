@@ -126,7 +126,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -177,7 +177,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -228,7 +228,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -279,7 +279,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -330,7 +330,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -381,7 +381,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -432,7 +432,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -483,7 +483,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -534,7 +534,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -585,7 +585,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -636,7 +636,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -687,7 +687,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -738,7 +738,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -789,7 +789,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -840,7 +840,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -891,7 +891,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -942,7 +942,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -1044,7 +1044,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -1095,7 +1095,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -1146,7 +1146,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -1197,7 +1197,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -1248,7 +1248,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -1299,7 +1299,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -1350,7 +1350,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -1401,7 +1401,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -1452,7 +1452,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -1503,7 +1503,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -1554,7 +1554,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -1605,7 +1605,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -1656,7 +1656,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -1707,7 +1707,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -1758,7 +1758,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -1809,7 +1809,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -1860,7 +1860,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -1911,7 +1911,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -1962,7 +1962,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -2013,7 +2013,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -2064,7 +2064,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -2115,7 +2115,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -2166,7 +2166,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -2217,7 +2217,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -2268,7 +2268,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -2319,7 +2319,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -2370,7 +2370,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -2421,7 +2421,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -2472,7 +2472,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -2523,7 +2523,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -2574,7 +2574,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -2676,7 +2676,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -2727,7 +2727,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -2778,7 +2778,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -2829,7 +2829,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -2880,7 +2880,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -2931,7 +2931,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -2982,7 +2982,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -3033,7 +3033,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -3084,7 +3084,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -3135,7 +3135,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -3237,7 +3237,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -3288,7 +3288,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -3339,7 +3339,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -3390,7 +3390,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -3441,7 +3441,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -3492,7 +3492,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -3543,7 +3543,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -3594,7 +3594,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -3696,7 +3696,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -3747,7 +3747,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -3798,7 +3798,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -3849,7 +3849,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -3900,7 +3900,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -3951,7 +3951,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -4053,7 +4053,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -4104,7 +4104,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -4155,7 +4155,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -4206,7 +4206,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -4257,7 +4257,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -4308,7 +4308,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -4359,7 +4359,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -4410,7 +4410,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -4461,7 +4461,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -4512,7 +4512,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -4563,7 +4563,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -4614,7 +4614,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -4665,7 +4665,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -4767,7 +4767,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -4818,7 +4818,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -4869,7 +4869,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -4920,7 +4920,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -4971,7 +4971,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -5022,7 +5022,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1005, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.invalid.federal.reserve.prefix", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.invalid.federal.reserve.prefix", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -5073,7 +5073,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -5175,7 +5175,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -5226,7 +5226,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -5277,7 +5277,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -5328,7 +5328,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -5379,7 +5379,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -5430,7 +5430,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -5481,7 +5481,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -5532,7 +5532,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -5583,7 +5583,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -5634,7 +5634,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -5736,7 +5736,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -5787,7 +5787,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -5838,7 +5838,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -5889,7 +5889,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -5991,7 +5991,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -6042,7 +6042,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -6144,7 +6144,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -6195,7 +6195,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -6246,7 +6246,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -6297,7 +6297,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -6348,7 +6348,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -6399,7 +6399,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -6501,7 +6501,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -6552,7 +6552,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -6603,7 +6603,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -6654,7 +6654,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -6705,7 +6705,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -6756,7 +6756,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -6807,7 +6807,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -6858,7 +6858,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -6909,7 +6909,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -6960,7 +6960,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -7011,7 +7011,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -7062,7 +7062,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -7113,7 +7113,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1005, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.invalid.federal.reserve.prefix", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.invalid.federal.reserve.prefix", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -7164,7 +7164,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -7215,7 +7215,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -7266,7 +7266,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -7317,7 +7317,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -7368,7 +7368,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -7419,7 +7419,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -7470,7 +7470,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -7521,7 +7521,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -7572,7 +7572,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -7623,7 +7623,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -7674,7 +7674,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -7725,7 +7725,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -7827,7 +7827,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -7878,7 +7878,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -7980,7 +7980,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -8031,7 +8031,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -8082,7 +8082,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -8133,7 +8133,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -8184,7 +8184,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -8235,7 +8235,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -8286,7 +8286,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -8337,7 +8337,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -8388,7 +8388,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -8439,7 +8439,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -8490,7 +8490,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -8541,7 +8541,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -8592,7 +8592,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -8643,7 +8643,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -8694,7 +8694,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -8745,7 +8745,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -8796,7 +8796,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -8847,7 +8847,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -8898,7 +8898,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -8949,7 +8949,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -9051,7 +9051,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -9102,7 +9102,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -9153,7 +9153,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -9204,7 +9204,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -9255,7 +9255,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -9306,7 +9306,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -9357,7 +9357,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -9408,7 +9408,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -9459,7 +9459,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -9510,7 +9510,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -9561,7 +9561,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -9612,7 +9612,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -9663,7 +9663,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -9714,7 +9714,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -9765,7 +9765,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -9816,7 +9816,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -9867,7 +9867,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -9918,7 +9918,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -9969,7 +9969,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -10020,7 +10020,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -10071,7 +10071,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -10122,7 +10122,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -10173,7 +10173,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -10224,7 +10224,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -10275,7 +10275,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -10326,7 +10326,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -10377,7 +10377,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -10428,7 +10428,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -10479,7 +10479,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -10530,7 +10530,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -10581,7 +10581,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -10632,7 +10632,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -10683,7 +10683,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -10734,7 +10734,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -10785,7 +10785,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -10836,7 +10836,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -10887,7 +10887,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -10938,7 +10938,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -10989,7 +10989,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -11040,7 +11040,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -11091,7 +11091,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -11142,7 +11142,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -11193,7 +11193,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -11244,7 +11244,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -11295,7 +11295,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -11346,7 +11346,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -11397,7 +11397,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -11448,7 +11448,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -11499,7 +11499,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -11550,7 +11550,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -11601,7 +11601,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -11652,7 +11652,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -11703,7 +11703,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -11754,7 +11754,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -11805,7 +11805,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -11856,7 +11856,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -11907,7 +11907,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -11958,7 +11958,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -12009,7 +12009,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -12060,7 +12060,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -12111,7 +12111,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -12162,7 +12162,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -12213,7 +12213,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -12264,7 +12264,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -12315,7 +12315,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -12366,7 +12366,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -12417,7 +12417,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -12468,7 +12468,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -12519,7 +12519,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -12570,7 +12570,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -12621,7 +12621,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -12672,7 +12672,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -12723,7 +12723,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -12774,7 +12774,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -12825,7 +12825,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -12876,7 +12876,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -12927,7 +12927,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -12978,7 +12978,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -13029,7 +13029,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -13080,7 +13080,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -13131,7 +13131,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -13182,7 +13182,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -13233,7 +13233,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -13284,7 +13284,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -13335,7 +13335,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -13386,7 +13386,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -13437,7 +13437,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -13488,7 +13488,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -13539,7 +13539,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -13641,7 +13641,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -13692,7 +13692,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -13743,7 +13743,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -13794,7 +13794,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -13845,7 +13845,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -13896,7 +13896,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -13947,7 +13947,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -13998,7 +13998,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -14049,7 +14049,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -14100,7 +14100,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -14151,7 +14151,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -14253,7 +14253,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -14304,7 +14304,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -14355,7 +14355,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -14406,7 +14406,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -14457,7 +14457,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -14508,7 +14508,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -14559,7 +14559,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -14610,7 +14610,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -14661,7 +14661,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -14712,7 +14712,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -14763,7 +14763,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -14814,7 +14814,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -14865,7 +14865,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -14916,7 +14916,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -15018,7 +15018,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -15069,7 +15069,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -15120,7 +15120,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -15171,7 +15171,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -15222,7 +15222,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -15273,7 +15273,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -15324,7 +15324,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -15375,7 +15375,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -15426,7 +15426,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -15477,7 +15477,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -15528,7 +15528,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -15579,7 +15579,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -15630,7 +15630,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -15681,7 +15681,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -15732,7 +15732,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -15783,7 +15783,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -15834,7 +15834,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -15885,7 +15885,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -15936,7 +15936,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -15987,7 +15987,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -16038,7 +16038,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -16089,7 +16089,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -16140,7 +16140,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -16191,7 +16191,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -16242,7 +16242,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -16293,7 +16293,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -16344,7 +16344,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -16395,7 +16395,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -16446,7 +16446,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -16497,7 +16497,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -16548,7 +16548,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -16599,7 +16599,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -16650,7 +16650,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -16701,7 +16701,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -16752,7 +16752,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -16803,7 +16803,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -16854,7 +16854,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -16905,7 +16905,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -16956,7 +16956,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -17007,7 +17007,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -17058,7 +17058,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -17109,7 +17109,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -17160,7 +17160,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -17211,7 +17211,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -17262,7 +17262,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -17313,7 +17313,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -17364,7 +17364,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -17415,7 +17415,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -17466,7 +17466,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -17517,7 +17517,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -17568,7 +17568,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -17619,7 +17619,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -17670,7 +17670,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -17721,7 +17721,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -17772,7 +17772,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -17823,7 +17823,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -17874,7 +17874,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -17925,7 +17925,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -17976,7 +17976,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -18027,7 +18027,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -18078,7 +18078,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -18129,7 +18129,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -18282,7 +18282,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -18333,7 +18333,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -18384,7 +18384,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -18435,7 +18435,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -18486,7 +18486,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -18537,7 +18537,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -18588,7 +18588,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -18639,7 +18639,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -18690,7 +18690,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -18741,7 +18741,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -18792,7 +18792,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -18843,7 +18843,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -18894,7 +18894,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -18945,7 +18945,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -18996,7 +18996,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -19047,7 +19047,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -19098,7 +19098,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -19149,7 +19149,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -19200,7 +19200,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -19251,7 +19251,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -19302,7 +19302,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -19353,7 +19353,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -19404,7 +19404,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -19455,7 +19455,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -19506,7 +19506,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -19557,7 +19557,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -19608,7 +19608,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -19659,7 +19659,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -19710,7 +19710,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -19761,7 +19761,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -19812,7 +19812,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -19863,7 +19863,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -19914,7 +19914,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -19965,7 +19965,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -20016,7 +20016,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -20067,7 +20067,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -20118,7 +20118,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -20169,7 +20169,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -20220,7 +20220,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -20271,7 +20271,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -20322,7 +20322,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -20373,7 +20373,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -20424,7 +20424,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -20475,7 +20475,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -20526,7 +20526,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -20577,7 +20577,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -20679,7 +20679,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -20730,7 +20730,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -20781,7 +20781,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -20832,7 +20832,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -20883,7 +20883,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -20985,7 +20985,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -21036,7 +21036,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -21087,7 +21087,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -21138,7 +21138,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -21189,7 +21189,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -21240,7 +21240,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -21291,7 +21291,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -21342,7 +21342,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -21393,7 +21393,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -21444,7 +21444,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -21495,7 +21495,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -21546,7 +21546,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -21597,7 +21597,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -21648,7 +21648,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -21699,7 +21699,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -21750,7 +21750,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -21801,7 +21801,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -21852,7 +21852,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -21954,7 +21954,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -22005,7 +22005,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -22056,7 +22056,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -22107,7 +22107,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -22158,7 +22158,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -22209,7 +22209,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -22260,7 +22260,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -22311,7 +22311,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -22362,7 +22362,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -22413,7 +22413,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -22464,7 +22464,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -22515,7 +22515,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -22566,7 +22566,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -22617,7 +22617,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -22668,7 +22668,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -22719,7 +22719,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -22770,7 +22770,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -22821,7 +22821,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -22872,7 +22872,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -22923,7 +22923,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -22974,7 +22974,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -23025,7 +23025,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -23076,7 +23076,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -23127,7 +23127,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -23178,7 +23178,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -23229,7 +23229,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -23280,7 +23280,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -23331,7 +23331,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -23382,7 +23382,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1002, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.length.too.short", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.length.too.short", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -23433,7 +23433,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -23484,7 +23484,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -23535,7 +23535,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -23586,7 +23586,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -23637,7 +23637,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -23688,7 +23688,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -23739,7 +23739,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -23790,7 +23790,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -23841,7 +23841,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -23892,7 +23892,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -23943,7 +23943,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -23994,7 +23994,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -24045,7 +24045,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -24096,7 +24096,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -24147,7 +24147,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -24198,7 +24198,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -24249,7 +24249,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -24300,7 +24300,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -24351,7 +24351,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -24402,7 +24402,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -24453,7 +24453,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -24504,7 +24504,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -24555,7 +24555,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -24606,7 +24606,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -24708,7 +24708,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -24759,7 +24759,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -24810,7 +24810,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -24861,7 +24861,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -24912,7 +24912,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;
@@ -24963,7 +24963,7 @@ public class Test_AbaRouteValidator_18528 {
 
             // This is good.  We were expecting an exception.
             assertEquals( -1004, e.getErrorCode() );
-            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getErrorMessage() );
+            assertEquals( "com.cardatechnologies.aba.number.contains.non.ascii.digits", e.getMessage() );
 
             // We're done, just return.
             return;

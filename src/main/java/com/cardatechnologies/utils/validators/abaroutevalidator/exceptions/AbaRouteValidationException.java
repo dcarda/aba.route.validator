@@ -18,96 +18,68 @@
 
 package com.cardatechnologies.utils.validators.abaroutevalidator.exceptions;
 
+import com.cardatechnologies.utils.validators.abaroutevalidator.ErrorCodes;
+
+import java.io.Serial;
+import java.util.Objects;
+
 /**
  * <b>Description:</b><br>
- *     This class is used throwing error messages relating to the ABA Routing code.
+ *     This exception represents an error encountered while validating
+ *     an ABA Routing Transit Number.
  *
- * @author     Daniel Carda
- * <br>
- * <br><b>Maintenance History:</b>
- * <br>
-<pre>
-    yyyy mm dd  Who                       Description
-    ----------  ------------------------  ----------------------------------------------------
-    2015/04/15  Daniel Carda              Initial Module Creation...
-    2020/12/22  Daniel Carda              Improved internal error handling.
-    2021/08/01  Daniel Carda              Improved Class Javadocs
-</pre>
- * <hr>
+ * @author Daniel Carda
  */
-public class AbaRouteValidationException
-        extends Exception {
+public class AbaRouteValidationException extends Exception {
 
-    /** A message describing the error. */
-    private String errorMessage;
-    /** The numeric code related to the error.  */
-    private int    errorCode;
+    @Serial
+    private static final long serialVersionUID = -4672062603974602512L;
 
-    /**
-     * Constructs ...
-     *
-     * @param cause
-     *        Throwable reason.
-     */
-    public AbaRouteValidationException( Throwable cause ) {
-        super( cause );
-    }
+    /** The numeric code related to the error. */
+    private final int errorCode;
 
     /**
-     * Constructs ...
+     * Constructs an ABA routing validation exception.
      *
      * @param errorCode
-     *        The integer code associated with this error.
-     * @param errorMessage
-     *        A textual message about the error.
+     *        The enumeration identifying the validation error.
      */
-    public AbaRouteValidationException( final int    errorCode,
-                                        final String errorMessage ) {
-        super( errorMessage );
+    public AbaRouteValidationException(final ErrorCodes errorCode) {
 
-        //
-        this.errorCode    = errorCode;
-        this.errorMessage = errorMessage;
+        super(Objects.requireNonNull(errorCode,
+                "errorCode cannot be null").getErrorMnemonic());
+
+        this.errorCode = errorCode.getErrorCode();
     }
 
     /**
-     * Method: getErrorCode
+     * Constructs an ABA routing validation exception with an underlying cause.
      *
-     * @return int
-     *         The integer code associated with this error.
+     * @param errorCode
+     *        The enumeration identifying the validation error.
+     * @param cause
+     *        The underlying cause of the exception.
+     */
+    public AbaRouteValidationException(
+            final ErrorCodes errorCode,
+            final Throwable cause) {
+
+        super(
+                Objects.requireNonNull(errorCode,
+                        "errorCode cannot be null").getErrorMnemonic(),
+                cause
+        );
+
+        this.errorCode = errorCode.getErrorCode();
+    }
+
+    /**
+     * Returns the numeric error code.
+     *
+     * @return The numeric error code.
      */
     public int getErrorCode() {
         return errorCode;
-    }
-
-    /**
-     * Method: setErrorCode
-     *
-     * @param errorCode
-     *        The integer code associated with this error.
-     */
-    public void setErrorCode( int errorCode ) {
-        this.errorCode = errorCode;
-    }
-
-    /**
-     * Method: getErrorMessage
-     *
-     * @return String
-     *         A text description of the error.
-     */
-    public String getErrorMessage() {
-        return errorMessage;
-    }
-
-    /**
-     * Method: setErrorMessage
-     *
-     * @param errorMessage
-     *        A textual message about the error.
-     */
-    public void setErrorMessage( String errorMessage ) {
-        this.errorMessage = errorMessage;
     }
 }
 
