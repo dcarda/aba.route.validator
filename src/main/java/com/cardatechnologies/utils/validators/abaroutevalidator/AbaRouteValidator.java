@@ -45,6 +45,8 @@ final public class AbaRouteValidator {
 
     private static final int ABA_LENGTH = 9;
 
+    private static final int[] CHECKSUM_WEIGHTS = { 3, 7, 1 };
+
     private AbaRouteValidator() {
         // Utility class.
     }
@@ -109,21 +111,22 @@ final public class AbaRouteValidator {
      * @param  routingNumber
      *         Checks the checksum of the entire number
      *
-     * @return boolean
-     *         True if all the characters were digits.
-     *         False if there was a problem.
+     * @return true
+     *              if the ABA routing number passes the checksum validation;
+     *         false
+     *              otherwise.
      */
     private static boolean validateAbaNumberChecksum(
             final String routingNumber) {
 
-        final int[] weights = { 3, 7, 1 };
+        //        final int[] weights = { 3, 7, 1 };
 
         int checksum = 0;
 
         for (int i = 0; i < ABA_LENGTH; i++) {
             checksum +=
                     (routingNumber.charAt(i) - '0')
-                            * weights[i % 3];
+                            * CHECKSUM_WEIGHTS[i % CHECKSUM_WEIGHTS.length];
         }
 
         return checksum % 10 == 0;
@@ -132,12 +135,9 @@ final public class AbaRouteValidator {
     /**
      * Method: isAsciiDigits
      *
-     * This checkes to make sure the individual "characters" are actually numbers.
+     * This checks to make sure the individual "characters" are actually numbers.
      *
      * @param  value The target string to test.
-     *
-     * @throws AbaRouteValidationException
-     *         There was a problem in converting the ABA number.
      */
     private static boolean isAsciiDigits(final String value) {
 
