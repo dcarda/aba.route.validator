@@ -11,7 +11,7 @@
     <!--   Artifact Information                                                        -->
     <groupId>com.cardatechnologies</groupId>
     <artifactId>aba.routing.transit.validator</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.2-SNAPSHOT</version>
 
     <!--  ───────────────────────────────────────────────────────────────────────────  -->
     <!--   Miscellaneous Information                                                   -->
@@ -872,14 +872,6 @@
 
 
 
-        <!--  ───────────────────────────────────────────────────────────────────  -->
-        <!--   Profile: Production   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
-        <profile>
-            <id>Production</id>
-        </profile>
-        <!--  End:  profile : production  -->
-        <!--  ───────────────────────────────────────────────────────────────────────────  -->
-
 
 
 
@@ -1587,6 +1579,7 @@
                         <artifactId>maven-checkstyle-plugin</artifactId>
                         <configuration>
                             <!-- <configLocation>checkstyle/java-checkstyle.xml</configLocation>-->
+                            <cacheFile>${project.build.testOutputDirectory}/checkstyle//checkstyle-cachefile-non-java</cacheFile>
                             <suppressionsLocation>${project.build.testOutputDirectory}/checkstyle/java-suppressions.xml</suppressionsLocation>
                             <propertyExpansion>basedir=${basedir}</propertyExpansion>
                             <propertyExpansion>samedir=${project.basedir}/src/test/resources/checkstyle</propertyExpansion>
@@ -1900,6 +1893,61 @@
 
         </profile>
         <!--  End:  genReports : profile  -->
+
+
+        <!--  ───────────────────────────────────────────────────────────────────────────  -->
+        <!--   Profile: release   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+        <profile>
+            <id>release</id>
+
+            <!--  ───────────────────────────────────────────────────────────────────────  -->
+            <!--   distributionManagement   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+            <distributionManagement>
+                <repository>
+                    <id>github</id>
+                    <name>GitHub Packages</name>
+                    <url>https://maven.pkg.github.com/dcarda/aba.route.validator</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </distributionManagement>
+
+            <!--  ───────────────────────────────────────────────────────────────────────  -->
+            <!--  Build                                                                    -->
+            <build>
+                <plugins>
+                    <!-- 2. Configure the Maven Release Plugin -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-release-plugin</artifactId>
+                        <version>3.1.1</version>
+                        <configuration>
+                            <!-- Ensures all submodules inherit the same version if applicable -->
+                            <autoVersionSubmodules>true</autoVersionSubmodules>
+                            <!-- Formats the Git tag generated during the release -->
+                            <tagNameFormat>v@{project.version}</tagNameFormat>
+                            <useReleaseProfile>false</useReleaseProfile>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+
+        </profile>
+        <!--  End:  profile : release                                                      -->
+        <!--  ───────────────────────────────────────────────────────────────────────────  -->
+
+
+
+
+
+
+
+
+
 
     </profiles>
     <!--  End:  profiles  -->
