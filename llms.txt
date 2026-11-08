@@ -1,0 +1,49 @@
+# ABA Transit Routing Validator
+
+> This validator will confirm if an ABA Routing Transit Number Validator
+> is formatted correctly.  This does not guarantee if it's valid, only that
+> it has passed a small series of edits.
+
+## Contribute
+
+- [Contribute](http://cardatechnologies.com/contribute.html.md)
+
+## Project Links
+
+- [Copyright and License](http://cardatechnologies.com/copyright.html.md)
+- [Important Documentation](http://cardatechnologies.com/index.html.md)
+
+## Developer Reports
+
+- [Checkstyle Results](http://cardatechnologies.com/checkstyle.html.md)
+- [JavaNCSS Metric Results](http://cardatechnologies.com/javancss.html.md)
+- [JDepend Report Metrics](http://cardatechnologies.com/jdepend-report.html.md)
+- [CPD Results](http://cardatechnologies.com/cpd.html.md)
+- [PMD Results](http://cardatechnologies.com/pmd.html.md)
+- [SpotBugs Bug Detector Report](http://cardatechnologies.com/spotbugs.html.md)
+- [Surefire Report](http://cardatechnologies.com/surefire.html.md)
+- [Tag List report](http://cardatechnologies.com/taglist.html.md)
+- [Dependency Updates Report](http://cardatechnologies.com/dependency-updates-report.html.md)
+- [Plugin Updates Report](http://cardatechnologies.com/plugin-updates-report.html.md)
+- [Property Updates Report](http://cardatechnologies.com/property-updates-report.html.md)
+- [Change Log Report](http://cardatechnologies.com/changelog.html.md)
+- [File Activity Report](http://cardatechnologies.com/file-activity.html.md)
+- [Developer Activity Report](http://cardatechnologies.com/dev-activity.html.md)
+
+## Project Information
+
+- [Project Summary](http://cardatechnologies.com/summary.html.md)
+- [Project Dependencies](http://cardatechnologies.com/dependencies.html.md)
+- [Maven Coordinates](http://cardatechnologies.com/dependency-info.html.md)
+- [Project Dependency Management](http://cardatechnologies.com/dependency-management.html.md)
+- [Dependency Convergence](http://cardatechnologies.com/dependency-convergence.html.md)
+- [Project Licenses](http://cardatechnologies.com/licenses.html.md)
+- [Project Plugins](http://cardatechnologies.com/plugins.html.md)
+- [Project Plugin Management](http://cardatechnologies.com/plugin-management.html.md)
+- [Project Team](http://cardatechnologies.com/team.html.md)
+- [Third Parties](http://cardatechnologies.com/third-party-report.html.md)
+
+## Other
+
+- [Project Information](http://cardatechnologies.com/project-info.html.md)
+- [Generated Reports](http://cardatechnologies.com/project-reports.html.md)

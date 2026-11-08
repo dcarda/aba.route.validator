@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ErrorCodes.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ABA Validator</a> &gt; <a href="index.source.html" class="el_package">com.cardatechnologies.utils.validators.abaroutevalidator</a> &gt; <span class="el_source">ErrorCodes.java</span></div><h1>ErrorCodes.java</h1><pre class="source lang-java linenums">/*---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.ErrorCodes.java
- * Date:   2020/12/22
+ * Date:   2026/11/07
  * ---------------------------------------------------------------------------------------
- * Copyright:  Daniel Carda
- *             All Rights Reserved
+ * Copyright (c) 2026 Carda Technologies, LLC.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  * ---------------------------------------------------------------------------------------
  *
- *  License: MIT license
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at:
  *
- * THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
- * INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANT ABILITY, FITNESS FOR A
- * PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
- * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
- * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
- * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * ---------------------------------------------------------------------------------------
  */
-
 package com.cardatechnologies.utils.validators.abaroutevalidator;
 
 /**
  * &lt;b&gt;Description:&lt;/b&gt;&lt;br&gt;
- *     This class is used to run unit tests against the main code.
+ *     This enumeration defines the error codes and associated message
+ *     identifiers used by the ABA Routing Transit Number validator.
  *
  * @author     Daniel Carda
  * &lt;br&gt;
@@ -29,19 +34,38 @@ package com.cardatechnologies.utils.validators.abaroutevalidator;
 &lt;pre&gt;
     yyyy mm dd  Who                       Description
     ----------  ------------------------  ----------------------------------------------------
-    2015/12/22  JavaDan                   Initial Module Creation...
-    2020/12/20  JavaDan                   Updated formatting.
+    2015/12/22  Daniel Carda              Initial Module Creation...
+    2020/12/20  Daniel Carda              Updated formatting.
     2021/08/01  Daniel Carda              Improved Class Javadocs
+    2026/08/01  Daniel Carda              Improved Mnemonic Text.  New Class Header.
 &lt;/pre&gt;
  * &lt;hr&gt;
  */
-<span class="fc" id="L38">public enum ErrorCodes {</span>
-<span class="fc" id="L39">    ABA_1000(-1000, &quot;com.cardatechnologies.aba.number.null&quot;),</span>
-<span class="fc" id="L40">    ABA_1001(-1001, &quot;com.cardatechnologies.aba.number.blank&quot;),</span>
-<span class="fc" id="L41">    ABA_1002(-1002, &quot;com.cardatechnologies.aba.number.too.short&quot;),</span>
-<span class="fc" id="L42">    ABA_1003(-1003, &quot;com.cardatechnologies.aba.number.too.long&quot;),</span>
-<span class="fc" id="L43">    ABA_1004(-1004, &quot;com.cardatechnologies.aba.number.not.numeric&quot;),</span>
-<span class="fc" id="L44">    ABA_1005(-1005, &quot;com.cardatechnologies.aba.number.failed.federalcheck&quot;);</span>
+<span class="fc" id="L44">public enum ErrorCodes {</span>
+
+    /** Error code indicating ABA number is null. */
+<span class="fc" id="L47">    ABA_1000(-1000,</span>
+            &quot;com.cardatechnologies.aba.number.null&quot;),
+
+    /** Error code indicating ABA number is blank. */
+<span class="fc" id="L51">    ABA_1001(-1001,</span>
+            &quot;com.cardatechnologies.aba.number.blank&quot;),
+
+    /** Error code indicating ABA number is too short. */
+<span class="fc" id="L55">    ABA_1002(-1002,</span>
+            &quot;com.cardatechnologies.aba.number.length.too.short&quot;),
+
+    /** Error code indicating ABA number is too long. */
+<span class="fc" id="L59">    ABA_1003(-1003,</span>
+            &quot;com.cardatechnologies.aba.number.length.too.long&quot;),
+
+    /** Error code indicating ABA number contains non-ASCII digits. */
+<span class="fc" id="L63">    ABA_1004(-1004,</span>
+            &quot;com.cardatechnologies.aba.number.contains.non.ascii.digits&quot;),
+
+    /** Error code indicating an invalid Federal Reserve prefix. */
+<span class="fc" id="L67">    ABA_1005(-1005,</span>
+            &quot;com.cardatechnologies.aba.number.invalid.federal.reserve.prefix&quot;);
 
     private final int    errorCode;
     private final String errorMnemonic;
@@ -50,35 +74,71 @@ package com.cardatechnologies.utils.validators.abaroutevalidator;
      * Constructs ...
      *
      * @param errorCode
+     *        Integer value for the error code
      * @param errorMnemonic
+     *        Text mnemonic describing the error code.
      */
     ErrorCodes( int    errorCode,
-<span class="fc" id="L56">                String errorMnemonic ) {</span>
-<span class="fc" id="L57">        this.errorCode     = errorCode;</span>
-<span class="fc" id="L58">        this.errorMnemonic = errorMnemonic;</span>
-<span class="fc" id="L59">    }</span>
+<span class="fc" id="L82">                String errorMnemonic ) {</span>
+<span class="fc" id="L83">        this.errorCode     = errorCode;</span>
+<span class="fc" id="L84">        this.errorMnemonic = errorMnemonic;</span>
+<span class="fc" id="L85">    }</span>
 
     /**
      * Method: getErrorCode
+     * &lt;p&gt;
+     * &lt;b&gt;Description:&lt;/b&gt;&lt;br&gt;
+     * This will return the integer for the error code.
      *
      * @return int
      */
     public int getErrorCode() {
-<span class="fc" id="L67">        return errorCode;</span>
+<span class="fc" id="L96">        return errorCode;</span>
     }
 
     /**
      * Method: getErrorMnemonic
+     * &lt;p&gt;
+     * &lt;b&gt;Description:&lt;/b&gt;&lt;br&gt;
+     * This will return the text of the error code.
      *
      * @return String
      */
     public String getErrorMnemonic() {
-<span class="fc" id="L76">        return errorMnemonic;</span>
+<span class="fc" id="L108">        return errorMnemonic;</span>
+    }
+
+    /**
+     * Method: fromErrorCode
+     *
+     * &lt;p&gt;
+     * &lt;b&gt;Description:&lt;/b&gt;&lt;br&gt;
+     * Returns the ErrorCodes enumeration associated with the
+     * specified numeric error code.
+     *
+     * @param errorCode
+     *        The numeric error code to locate.
+     *
+     * @return The corresponding ErrorCodes enumeration.
+     *
+     * @throws IllegalArgumentException
+     *         If the specified error code does not exist.
+     */
+    public static ErrorCodes fromErrorCode(final int errorCode) {
+
+<span class="nc bnc" id="L129" title="All 2 branches missed.">        for (final ErrorCodes error : values()) {</span>
+<span class="nc bnc" id="L130" title="All 2 branches missed.">            if (error.getErrorCode() == errorCode) {</span>
+<span class="nc" id="L131">                return error;</span>
+            }
+        }
+
+<span class="nc" id="L135">        throw new IllegalArgumentException(</span>
+                &quot;Unknown ABA routing validation error code: &quot; + errorCode);
     }
 }
 
 /* ---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.ErrorCodes.java
- * Date:   2020/12/22
+ * Date:   2026/11/07
  * --------------------------------------------------------------------------------------- */
-</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.16.202610240946</span></div></body></html>
