@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                              https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <!-- pom order:  https://ucsb-cs156.github.io/topics/maven_pom_xml_order/  -->
     <!-- pom order:  https://ucsb-cs48.github.io/javatopics/maven_pom_xml_order/#:~:text=Maven%3A%20Pom.xml%20Order%201%20A%20minimal%20pom.xml%20A,%288%29%20url%20%28Not%20used%20in%20CMPSC%2056%29%20  -->
     <!--   clear ; mvn -PgenReports clean package site  -->
@@ -11,7 +8,7 @@
     <!--   Artifact Information                                                        -->
     <groupId>com.cardatechnologies</groupId>
     <artifactId>aba.routing.transit.validator</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.2</version>
 
     <!--  ───────────────────────────────────────────────────────────────────────────  -->
     <!--   Miscellaneous Information                                                   -->
@@ -85,7 +82,7 @@
         <connection>scm:git:git@github.com:dcarda/aba.route.validator.git</connection>
         <developerConnection>scm:git:git@github.com:dcarda/aba.route.validator.git</developerConnection>
         <url>https://github.com/dcarda/aba.route.validator/tree/master</url>
-        <tag>aba.routing.transit.validator-1.0.0-FINAL</tag>
+        <tag>aba.routing.transit.validator-1.0.2</tag>
     </scm>
     <!--  End:  scm  -->
 
@@ -265,9 +262,7 @@
                             <configuration>
                                 <exportAntProperties>false</exportAntProperties>
                                 <target>
-                                    <exec executable="hostname"
-                                          outputproperty="build.hostname"
-                                          failifexecutionfails="true"/>
+                                    <exec executable="hostname" outputproperty="build.hostname" failifexecutionfails="true" />
                                 </target>
 
 
@@ -381,9 +376,9 @@
                             <requireMavenVersion>
                                 <version>[3.9.6,)</version>
                             </requireMavenVersion>
-                            <dependencyConvergence/>
-                            <requireUpperBoundDeps/>
-                            <banCircularDependencies/>
+                            <dependencyConvergence />
+                            <requireUpperBoundDeps />
+                            <banCircularDependencies />
                         </rules>
                     </configuration>
                     <dependencies>
@@ -660,7 +655,7 @@
 
                             </manifestSections>
 
-                            <manifestEntries/>
+                            <manifestEntries />
 
                         </archive>
                     </configuration>
