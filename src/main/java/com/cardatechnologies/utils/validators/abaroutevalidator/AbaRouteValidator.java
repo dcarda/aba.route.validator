@@ -1,21 +1,25 @@
 /* ---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.java
- * Date:   2026/09/17
+ * Date:   2026/11/07
  * ---------------------------------------------------------------------------------------
- * Copyright:  Daniel Carda
- *             All Rights Reserved
+ * Copyright (c) 2026 Carda Technologies, LLC.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  * ---------------------------------------------------------------------------------------
  *
- *  License: MIT license
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at:
  *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
- * INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANT ABILITY, FITNESS FOR A
- * PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
- * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
- * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
- * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * ---------------------------------------------------------------------------------------
  */
-
 package com.cardatechnologies.utils.validators.abaroutevalidator;
 
 //~--- non-JDK imports --------------------------------------------------------
@@ -37,11 +41,19 @@ import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRo
     2020/12/23  Daniel Carda              Started using and ENum for error content.
     2020/12/24  Daniel Carda              Optimized algorithms.
     2021/08/01  Daniel Carda              Improved Class Javadocs
-    2026/09/17  Daniel Carda              Updated code.
+    2026/09/17  Daniel Carda              Updated code.  New Class Header.
 </pre>
  * <hr>
  */
 public final class AbaRouteValidator {
+
+    private static final int FED_NUMBER_GOV_0        =  0;
+    private static final int FED_NUMBER_GOV_12       = 12;
+    private static final int FED_NUMBER_THRIFT_21    = 21;
+    private static final int FED_NUMBER_THRIFT_32    = 32;
+    private static final int FED_NUMBER_CLEARING_61  = 61;
+    private static final int FED_NUMBER_CLEARNING_72 = 72;
+    private static final int FED_NUMBER_TRAVELERS_80 = 80;
 
     private static final int ABA_LENGTH = 9;
     private static final int[] CHECKSUM_WEIGHTS = { 3, 7, 1 };
@@ -164,16 +176,21 @@ public final class AbaRouteValidator {
                 (routingNumber.charAt(0) - '0') * 10
                         + (routingNumber.charAt(1) - '0');
 
-        if (!((fedNumber >= 0 && fedNumber <= 12)
-                || (fedNumber >= 21 && fedNumber <= 32)
-                || (fedNumber >= 61 && fedNumber <= 72)
-                || fedNumber == 80)) {
-
+        // https://en.wikipedia.org/wiki/Routing_transit_number
+        // The first two digits of the nine digit RTN must be in the ranges
+        // 00 through 12,  00=Gobermint, and 12 Federal Reserve Banks
+        // 21 through 32,  Thrift Institutions
+        // 61 through 72,  Payment Processors and Clearing Houses
+        // 80.             Traveler's checks
+        if (!((fedNumber >= FED_NUMBER_GOV_0 && fedNumber <= FED_NUMBER_GOV_12)
+                || (fedNumber >= FED_NUMBER_THRIFT_21 && fedNumber <= FED_NUMBER_THRIFT_32)
+                || (fedNumber >= FED_NUMBER_CLEARING_61 && fedNumber <= FED_NUMBER_CLEARNING_72)
+                || fedNumber == FED_NUMBER_TRAVELERS_80)) {
             throw new AbaRouteValidationException(ErrorCodes.ABA_1005);
         }
     }
 }
 /* ---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.java
- * Date:   2026/09/17
+ * Date:   2026/11/07
  * --------------------------------------------------------------------------------------- */

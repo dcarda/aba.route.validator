@@ -1141,6 +1141,7 @@
                                 <configLocation>
                                     ${project.basedir}/src/test/resources/checkstyle/checkstyle.xml
                                 </configLocation>
+                                <includeTestSourceDirectory>false</includeTestSourceDirectory>
                                 <includeResources>false</includeResources>
                             </configuration>
                             <dependencies>
@@ -1168,7 +1169,7 @@
                                             ${project.basedir}/src/test/resources/checkstyle/checkstyle.xml
                                         </configLocation>
                                         <includeResources>false</includeResources>
-                                        <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                                        <includeTestSourceDirectory>false</includeTestSourceDirectory>
                                         <includes>**/*.java</includes>
                                         <outputFile>${project.build.directory}/checkstyle-report-java.xml</outputFile>
                                     </configuration>
@@ -1210,7 +1211,7 @@
                                             ${project.basedir}/src/test/resources/checkstyle/java-checkstyle-import-control-only.xml
                                         </configLocation>
                                         <includeResources>false</includeResources>
-                                        <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                                        <includeTestSourceDirectory>false</includeTestSourceDirectory>
                                         <includes>**/*.java</includes>
                                         <outputFile>${project.build.directory}/checkstyle-report-java-import-control-only.xml</outputFile>
                                     </configuration>

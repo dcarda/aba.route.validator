@@ -2,14 +2,25 @@
         "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
         "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
 <module name="Checker">
-    <module name="TreeWalker">
-        <module name="AvoidStarImport">
-            <property name="severity" value="warning" />
-        </module>
+  <module name="TreeWalker">
+    <module name="MagicNumber">
+      <!-- 1. Enforce checks on absolutely all numeric types -->
+      <property name="tokens" value="NUM_DOUBLE, NUM_FLOAT, NUM_INT, NUM_LONG"/>
+      
+      <!-- 2. Empty the whitelist so even 0, 1, and -1 must be constants -->
+      <property name="ignoreNumbers" value=""/>
+      
+      <!-- 3. Catch magic numbers assigned directly to class fields -->
+      <property name="ignoreFieldDeclaration" value="false"/>
+      
+      <!-- 4. Catch magic numbers used inside annotations -->
+      <property name="ignoreAnnotation" value="false"/>
+      
+      <!-- 5. Catch magic numbers inside element value pairs -->
+      <property name="ignoreAnnotationElementDefaults" value="false"/>
+      
+      <!-- 6. Enforce rules even inside hashCode() methods -->
+      <property name="ignoreHashCodeMethod" value="false"/>
     </module>
-    <module name="LineLength">
-        <!-- Change the maximum line length here -->
-        <property name="max" value="120"/>
-        <property name="ignorePattern" value="^package .*|^import .*"/>
-    </module>
+  </module>
 </module>

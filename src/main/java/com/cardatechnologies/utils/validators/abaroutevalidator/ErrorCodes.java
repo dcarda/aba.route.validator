@@ -1,21 +1,25 @@
 /*---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.ErrorCodes.java
- * Date:   2020/12/22
+ * Date:   2026/11/07
  * ---------------------------------------------------------------------------------------
- * Copyright:  Daniel Carda
- *             All Rights Reserved
+ * Copyright (c) 2026 Carda Technologies, LLC.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  * ---------------------------------------------------------------------------------------
  *
- *  License: Apache 2.0 License
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at:
  *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
- * INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANT ABILITY, FITNESS FOR A
- * PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
- * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
- * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
- * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * ---------------------------------------------------------------------------------------
  */
-
 package com.cardatechnologies.utils.validators.abaroutevalidator;
 
 /**
@@ -33,7 +37,7 @@ package com.cardatechnologies.utils.validators.abaroutevalidator;
     2015/12/22  Daniel Carda              Initial Module Creation...
     2020/12/20  Daniel Carda              Updated formatting.
     2021/08/01  Daniel Carda              Improved Class Javadocs
-    2026/08/01  Daniel Carda              Improved Mnemonic Text
+    2026/08/01  Daniel Carda              Improved Mnemonic Text.  New Class Header.
 </pre>
  * <hr>
  */
@@ -135,5 +139,5 @@ public enum ErrorCodes {
 
 /* ---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.ErrorCodes.java
- * Date:   2020/12/22
+ * Date:   2026/11/07
  * --------------------------------------------------------------------------------------- */
