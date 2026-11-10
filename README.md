@@ -13,15 +13,15 @@ ABA Routing Validator is a lightweight Java library developed by Carda Technolog
 
 The library performs structural, Federal Reserve prefix, and checksum validation to help Java applications identify invalid routing numbers.
 
----
-## Technology Stack <a name="TechStack"></a>
+The ABA RTN number can usually (but not always) be found on the bottom left-hand
+corner of your personal check.  The last digit of the ABA number is actually
+called a "checksum digit".  It's a crude hash of the first eight digits and provides
+an initial check for the numbers authenticity.
 
-The following software is required to build this project:
+![Check Image](images/img.png)
 
-| Software | Version | Download                                                                        |
-|:--------:|---------|:--------------------------------------------------------------------------------|
-|  ![JAVA](https://img.shields.io/badge/_-JAVA-B07219.svg?style=for-the-badge) | 17.0.9  | https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html  |
-| ![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)  | 3.9.6   | https://maven.apache.org/download.cgi                                           |
+More information about the ABA routing transit number can be found in the Book of Knowledge:
+http://en.wikipedia.org/wiki/Routing_transit_number
 
 ---
 ## Features
@@ -37,15 +37,24 @@ The following software is required to build this project:
 - Supports exception handling with numeric error code retrieval.
 - Lightweight implementation using a static utility class.
 
----
-## Requirements
+----------------------------------------------------------------------------
+##  Technology Stack
 
-- Java 17 or later.
+The following software is required to build this project:
+
+| Software |  Version | Download                                                                       |
+|:--------:|---------:|--------------------------------------------------------------------------------|
+| ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)   |   17.0.9 | https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html |
+|  ![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)   |    3.9.16 | https://maven.apache.org/download.cgi                                          |
+
+
+
+
 
 ---
 ## Installation
 
-### Maven
+### <span style="color: #33ccff;"> Maven
 
 Add the following dependency to your project's `pom.xml`:
 
@@ -58,6 +67,54 @@ Add the following dependency to your project's `pom.xml`:
 ```
 
 Replace `VERSION` with the desired release version.
+
+---
+## Build Instructions
+
+The POM actually has several build targets.  
+
+
+### <span style="color: #33ccff;"> Build With Tests
+This is the default and the one you will probably run the most.  
+
+This will compile the Jar artifact, and run the JaCoCo and Spotbugs reports.
+```bash
+    mvn clean install
+```
+
+### <span style="color: #33ccff;"> Build With Metrics Reports
+This will generate the complete suite of metrics reports.
+```bash
+    mvn -P genReports clean install site
+```
+
+### <span style="color: #33ccff;"> Build Only The Jar Artifact
+This will generate the final build artifact and nothing else.
+```bash
+   mvn -P jar-only clean install-DskipTests
+```
+
+---
+## Code Metrics Reports
+Maven site reports are human-readable documentation and analysis pages generated
+automatically during the project's site lifecycle (triggered by the mvn site command)
+using the Apache Maven Site Plugin and configured reporting plugins.
+
+The current list of reports includes:
+
+* [Checkstyle Report](https://dcarda.github.io/aba.route.validator/checkstyle.html)
+* [CPD (Copy/Paste) Report](https://dcarda.github.io/aba.route.validator/cpd.html)
+* [JaCoCo (Code Coverage) Report](https://dcarda.github.io/aba.route.validator/jacoco-report.html)
+* [JavaDocs Report](https://dcarda.github.io/aba.route.validator/javadoc-report.html)
+* [JavaNCSS Report](https://dcarda.github.io/aba.route.validator/javancss.html)
+* [JDepend Report](https://dcarda.github.io/aba.route.validator/jdepend-report.html)
+* [XRef Report](https://dcarda.github.io/aba.route.validator/xref-report.html)
+* [PMD Report](https://dcarda.github.io/aba.route.validator/pmd.html)
+* [SpotBugs Report](https://dcarda.github.io/aba.route.validator/spotbugs.html)
+* [Surefire Report](https://dcarda.github.io/aba.route.validator/surefire.html)
+* [Tag List (Todo List) Report](https://dcarda.github.io/aba.route.validator/taglist.html)
+
+The reporting site be located [here](https://dcarda.github.io/aba.route.validator/).
 
 ---
 ## Usage
@@ -142,7 +199,7 @@ The library defines the following validation error codes:
 | -1005 | `aba.number.invalid.federal.reserve.prefix` | Invalid Federal Reserve prefix. |
 
 ---
-### Exception Handling
+### <span style="color: #33ccff;"> Exception Handling
 
 Validation errors are represented by `AbaRouteValidationException`, a checked exception.
 
@@ -165,7 +222,7 @@ try {
 ```
 
 ---
-### Error Code Lookup
+### <span style="color: #33ccff;"> Error Code Lookup
 
 The `ErrorCodes` enumeration provides a lookup method for retrieving an error enumeration by its numeric code.
 
@@ -205,7 +262,7 @@ https://www.apache.org/licenses/LICENSE-2.0
 ---
 ## Copyright
 
-Copyright © 2026 Carda Technologies, LLC.
+Copyright © 2026 Daniel Carda.
 
 **Developed and maintained by Carda Technologies, LLC.**
 <!-- End:  Copyright -->
@@ -223,7 +280,12 @@ Have a bug or a feature request? Please create an issue and I'll see what I can 
 ## About the Developer  👋
 
 Follow this link to learn more about me:
-+ http://www.danielcarda.net/
+
+|                                                            Media                                                            | Address                                  |
+|:---------------------------------------------------------------------------------------------------------------------------:|------------------------------------------|
+|             ![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)             | https://www.linkedin.com/in/danielcarda/ |
+|        ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)         | https://github.com/dcarda                |
+|        ![](https://img.shields.io/badge/Personal-Website-555555?style=for-the-badge&logo=googlechrome&logoColor=white)      | https://danielcarda.net/                 |
 <!-- End:  Developer  -->
 <!--  ───────────────────────────────────────────────────────────────────────────  -->
 

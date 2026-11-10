@@ -18,8 +18,8 @@ clear
 #          BUGS:  ---
 #         NOTES:  ---
 #        AUTHOR:  Daniel Carda,
-#                 CodeWarrior@CardaTechnologies.com
-#       COMPANY:  Carda Technologies, LLC
+#                 GitHub@DanielCarda.net
+#       COMPANY:
 #       VERSION:  1.0
 #       CREATED:  02/22/2022
 #      REVISION:  ---
@@ -50,9 +50,8 @@ function build_JarArtifact() {
     # =======================================================================
     #  Build everything
     mvn       \
-      -P test \
       clean   \
-      package
+      install
 
     # Check results.
     if [ $? -ne 0 ]; then

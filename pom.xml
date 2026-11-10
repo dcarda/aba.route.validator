@@ -1006,8 +1006,9 @@
     <profiles>
 
         <!--
+            test - runs the unit tests  (default)
+
             jar - just to build the jar
-            test - runs the unit tests
             reports - builds the report suite
             release - production release
         -->
@@ -1015,6 +1016,10 @@
         <!--   Profile: test   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
         <profile>
             <id>test</id>
+
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
 
             <!--  ───────────────────────────────────────────────────────────────────────  -->
             <!--   profile: test : properties   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
@@ -2116,9 +2121,6 @@
         <profile>
             <id>jar-only</id>
 
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
 
             <properties>
                 <!-- Skip all test compilation and execution -->
