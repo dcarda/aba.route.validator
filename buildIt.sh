@@ -65,14 +65,14 @@ function build_JarArtifact() {
 } # ---  End Function build_JarArtifact()
 
 #===  FUNCTION   ================================================
-#         Name:  build_JarArtifact_noTests()
+#         Name:  build_JarArtifactOnly()
 #  --------------------------------------------------------------
 #  Description:  This will build the main EAR artifact but will
 #                not run the JUnit tests.
 #   Parameters:  None
 #      Returns:  None
 #================================================================
-function build_JarArtifact_noTests() {
+function build_JarArtifactOnly() {
 
     echo
     echo
@@ -80,9 +80,10 @@ function build_JarArtifact_noTests() {
 
     # =======================================================================
     #  Build everything
-    mvn          \
-      clean      \
-      package    \
+    mvn            \
+      -P jar-only  \
+      clean        \
+      package      \
       -DskipTests
 
     # Check results.
@@ -95,7 +96,7 @@ function build_JarArtifact_noTests() {
     # Display information about the artifact.
     display_ArtifactInformation
 
-} # ---  End Function build_JarArtifact_noTests()
+} # ---  End Function build_JarArtifactOnly()
 
 #===  FUNCTION   ================================================
 #         Name:  build_SiteReports()
@@ -273,20 +274,26 @@ function display_MainHeader() {
 #================================================================
 function display_TaskChoices() {
 
-    echo "-----------------------------------------------------------------------"
     echo " Task Selection"
     echo
     if [ $1 == "help" ]; then
+
+        echo "  Main Build Targets   ─────────────────────────────────────────────────────"
         echo "     ${0##*/}                <-- Build And Run Tests <default>"
         echo "     ${0##*/}  clean         <-- Deep Clean All Artifacts"
         echo "     ${0##*/}  site          <-- Build Maven Site Reports"
+        echo "     ${0##*/}  jar           <-- Build Only The Jar File"
+        echo "     ${0##*/}  release       <-- Attempt To Build and Release to GitHub"
 
+        echo
+        echo "  Miscellaneous Utilities   ────────────────────────────────────────────────"
         echo "     ${0##*/}  resolve       <-- Will try and resolve Maven dependencies"
         echo "     ${0##*/}  tree          <-- Displays a Maven dependency tree"
         echo "     ${0##*/}  info          <-- Show information about the artifact"
         echo "     ${0##*/}  versions      <-- Display library version update information"
         echo "     ${0##*/}  verify        <-- Run verify against the project"
-        echo "     ${0##*/}  noTests       <-- Build, but don't run JUnit tests"
+        echo
+        echo
     fi
 } # ---  End Function display_TaskChoices()
 
@@ -315,6 +322,46 @@ function display_VerifyInformation() {
 
     mvn verify
 }  # ---  End Function display_VerifyInformation()
+
+
+
+
+#===  FUNCTION   ================================================
+#         Name:  build_JarArtifactOnly()
+#  --------------------------------------------------------------
+#  Description:  This will build the main EAR artifact but will
+#                not run the JUnit tests.
+#   Parameters:  None
+#      Returns:  None
+#================================================================
+function release_JarArtifact() {
+
+    echo
+    echo
+    echo
+
+    # =======================================================================
+    #  Build everything
+    mvn               \
+      -P release      \
+      clean           \
+      package
+#      release:prepare
+
+    # Check results.
+    if [ $? -ne 0 ]; then
+        echo
+        echo "Build Failure: The application build has failed for some reason."
+        terminationAbnormal
+    fi
+
+    # Display information about the artifact.
+    display_ArtifactInformation
+
+} # ---  End Function build_JarArtifactOnly()
+
+
+
 
 #===  FUNCTION   ================================================
 #         Name:  terminationNormal()
@@ -487,17 +534,27 @@ else
         # End the program
         terminationNormal
 
-
-
+    # ─────────────────────────────────────────────────────────────────────────
     # Build but do not run Junit tests.
-    elif [ $1 == "noTests" ]; then
+    elif [ $1 == "jar" ]; then
         # Delete all the artifacts
         delete_Artifacts
         # Build Main EAR Artifact
-        build_JarArtifact_noTests
+        build_JarArtifactOnly
         # End the program
         terminationNormal
 
+    # ─────────────────────────────────────────────────────────────────────────
+    # Build but do not run Junit tests.
+    elif [ $1 == "release" ]; then
+        # Delete all the artifacts
+        delete_Artifacts
+        # Build Main EAR Artifact
+        release_JarArtifact
+        # End the program
+        terminationNormal
+
+    # ─────────────────────────────────────────────────────────────────────────
     elif [ $1 == "site" ]; then
         build_SiteReports
         # End the program

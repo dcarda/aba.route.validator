@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <!-- pom order:  https://ucsb-cs156.github.io/topics/maven_pom_xml_order/  -->
     <!-- pom order:  https://ucsb-cs48.github.io/javatopics/maven_pom_xml_order/#:~:text=Maven%3A%20Pom.xml%20Order%201%20A%20minimal%20pom.xml%20A,%288%29%20url%20%28Not%20used%20in%20CMPSC%2056%29%20  -->
     <!--   clear ; mvn -PgenReports clean package site  -->
@@ -156,7 +159,6 @@
         <version.maven.versions.plugin>2.23.0</version.maven.versions.plugin>
 
         <!--   WARMNING: DON'T UPDATE THIS.  WON'T WORK WITH JACOCO  -->
-<!--        <version.surefire.plugin>3.6.0</version.surefire.plugin>-->
         <version.surefire.plugin>3.6.1</version.surefire.plugin>
 
         <!-- Testing Plugins   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
@@ -230,6 +232,23 @@
     <!--  ───────────────────────────────────────────────────────────────────────────  -->
     <!--  Build                                                                        -->
     <build>
+
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+            <!-- Generated third-party dependency report -->
+            <resource>
+                <directory>
+                    ${project.build.directory}/generated-sources/license
+                </directory>
+                <targetPath>META-INF</targetPath>
+                <includes>
+                    <include>DEPENDENCIES</include>
+                </includes>
+            </resource>
+        </resources>
 
         <!--  ───────────────────────────────────────────────────────────────────────  -->
         <!--   pluginManagement   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
@@ -526,6 +545,12 @@
                     <version>${version.jar.plugin}</version>
 
                     <configuration>
+
+                        <excludes>
+                            <exclude>git.properties</exclude>
+                            <exclude>pmd/</exclude>
+                        </excludes>
+
                         <archive>
 
                             <index>true</index>
@@ -740,6 +765,96 @@
         <!--  Plugins                                                                      -->
         <plugins>
 
+
+
+<!--            <plugin>-->
+<!--                <groupId>org.codehaus.mojo</groupId>-->
+<!--                <artifactId>license-maven-plugin</artifactId>-->
+<!--                <version>2.7.1</version>-->
+
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>generate-third-party-licenses</id>-->
+<!--                        <phase>generate-resources</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>add-third-party</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            <outputDirectory>-->
+<!--                                ${project.build.directory}/generated-sources/license-->
+<!--                            </outputDirectory>-->
+<!--                            <thirdPartyFilename>${project.build.directory}/generated-sources/license/DEPENDENCIES</thirdPartyFilename>-->
+<!--                            <outputDirectory>${project.basedir}</outputDirectory>-->
+
+<!--                            <addOutputDirectoryAsResourceDir>true</addOutputDirectoryAsResourceDir>-->
+<!--                            <generateBundle>true</generateBundle>-->
+
+<!--&lt;!&ndash;                            <bundleThirdPartyPath>&ndash;&gt;-->
+<!--&lt;!&ndash;                                ${project.build.directory}/META-INF/DEPENDENCIES&ndash;&gt;-->
+<!--&lt;!&ndash;                            </bundleThirdPartyPath>&ndash;&gt;-->
+
+<!--                            <includeTransitiveDependencies>true</includeTransitiveDependencies>-->
+<!--                            <failOnMissing>true</failOnMissing>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+
+
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <version>2.7.1</version>
+
+                <executions>
+                    <execution>
+                        <id>generate-third-party-licenses</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>add-third-party</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>
+                                ${project.build.directory}/generated-sources/license
+                            </outputDirectory>
+
+                            <thirdPartyFilename>
+                                DEPENDENCIES
+                            </thirdPartyFilename>
+
+                            <addOutputDirectoryAsResourceDir>true</addOutputDirectoryAsResourceDir>
+
+                            <includeTransitiveDependencies>true</includeTransitiveDependencies>
+
+                            <failOnMissing>true</failOnMissing>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <!--   Maven AntRun Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
             <!--   https://maven.apache.org/plugins/maven-antrun-plugin/           -->
             <plugin>
@@ -882,9 +997,6 @@
         <!--   Profile: test   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
         <profile>
             <id>test</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
 
             <!--  ───────────────────────────────────────────────────────────────────────  -->
             <!--   profile: test : properties   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
@@ -1238,18 +1350,69 @@
 
                         <!--   License Information Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                         <!--   mojohaus.org/license-maven-plugin/                          -->
-                        <plugin>
-                            <groupId>org.codehaus.mojo</groupId>
-                            <artifactId>license-maven-plugin</artifactId>
-                            <version>${version.license.reporting.plugin}</version>
-                            <executions>
-                                <execution>
-                                    <goals>
-                                        <goal>add-third-party</goal>
-                                    </goals>
-                                </execution>
-                            </executions>
-                        </plugin>
+<!--                        <plugin>-->
+<!--                            <groupId>org.codehaus.mojo</groupId>-->
+<!--                            <artifactId>license-maven-plugin</artifactId>-->
+<!--                            <version>${version.license.reporting.plugin}</version>-->
+<!--                            <executions>-->
+<!--                                <execution>-->
+<!--                                    <goals>-->
+<!--                                        <goal>add-third-party</goal>-->
+<!--                                    </goals>-->
+<!--                                </execution>-->
+<!--                            </executions>-->
+<!--                        </plugin>-->
+
+
+
+<!--                        <plugin>-->
+<!--                            <groupId>org.codehaus.mojo</groupId>-->
+<!--                            <artifactId>license-maven-plugin</artifactId>-->
+<!--                            <version>${version.license.reporting.plugin}</version>-->
+
+<!--                            <executions>-->
+<!--                                <execution>-->
+<!--                                    <id>generate-third-party-licenses</id>-->
+<!--                                    <phase>generate-resources</phase>-->
+<!--                                    <goals>-->
+<!--                                        <goal>add-third-party</goal>-->
+<!--                                    </goals>-->
+<!--                                    <configuration>-->
+<!--                                        <outputDirectory>-->
+<!--                                            ${project.build.directory}/generated-sources/license-->
+<!--                                        </outputDirectory>-->
+
+<!--                                        <thirdPartyFilename>-->
+<!--                                            DEPENDENCIES-->
+<!--                                        </thirdPartyFilename>-->
+
+<!--                                        <addOutputDirectoryAsResourceDir>true</addOutputDirectoryAsResourceDir>-->
+
+<!--                                        <includeTransitiveDependencies>true</includeTransitiveDependencies>-->
+
+<!--                                        <failOnMissing>true</failOnMissing>-->
+<!--                                    </configuration>-->
+<!--                                </execution>-->
+<!--                            </executions>-->
+<!--                        </plugin>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                         <!--   PMD/CPD Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                         <!--   https://maven.apache.org/plugins/maven-pmd-plugin/index.html  -->
@@ -1888,6 +2051,7 @@
 
         </profile>
         <!--  End:  genReports : profile  -->
+        <!--  ───────────────────────────────────────────────────────────────────────────  -->
 
 
         <!--  ───────────────────────────────────────────────────────────────────────────  -->
@@ -1902,12 +2066,6 @@
                     <id>github</id>
                     <name>GitHub Packages</name>
                     <url>https://maven.pkg.github.com/dcarda/aba.route.validator</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
                 </repository>
             </distributionManagement>
 
@@ -1916,18 +2074,18 @@
             <build>
                 <plugins>
                     <!-- 2. Configure the Maven Release Plugin -->
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-release-plugin</artifactId>
-                        <version>3.1.1</version>
-                        <configuration>
-                            <!-- Ensures all submodules inherit the same version if applicable -->
-                            <autoVersionSubmodules>true</autoVersionSubmodules>
-                            <!-- Formats the Git tag generated during the release -->
-                            <tagNameFormat>v@{project.version}</tagNameFormat>
-                            <useReleaseProfile>false</useReleaseProfile>
-                        </configuration>
-                    </plugin>
+<!--                    <plugin>-->
+<!--                        <groupId>org.apache.maven.plugins</groupId>-->
+<!--                        <artifactId>maven-release-plugin</artifactId>-->
+<!--                        <version>3.1.1</version>-->
+<!--                        <configuration>-->
+<!--                            &lt;!&ndash; Ensures all submodules inherit the same version if applicable &ndash;&gt;-->
+<!--                            <autoVersionSubmodules>true</autoVersionSubmodules>-->
+<!--                            &lt;!&ndash; Formats the Git tag generated during the release &ndash;&gt;-->
+<!--                            <tagNameFormat>v@{project.version}</tagNameFormat>-->
+<!--                            <useReleaseProfile>false</useReleaseProfile>-->
+<!--                        </configuration>-->
+<!--                    </plugin>-->
                 </plugins>
             </build>
 
@@ -1935,7 +2093,43 @@
         <!--  End:  profile : release                                                      -->
         <!--  ───────────────────────────────────────────────────────────────────────────  -->
 
+        <!--  ───────────────────────────────────────────────────────────────────────────  -->
+        <!--   Profile: jar-only   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+        <profile>
+            <id>jar-only</id>
 
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+
+            <properties>
+                <!-- Skip all test compilation and execution -->
+                <maven.test.skip>true</maven.test.skip>
+                <skipTests>true</skipTests>
+
+                <!-- Skip common static analysis and documentation plugins (if used) -->
+                <checkstyle.skip>true</checkstyle.skip>
+                <spotbugs.skip>true</spotbugs.skip>
+                <pmd.skip>true</pmd.skip>
+                <enforcer.skip>true</enforcer.skip>
+                <maven.javadoc.skip>true</maven.javadoc.skip>
+                <maven.source.skip>true</maven.source.skip>
+
+                <!-- Skip Spring Boot repackaging if you only want the original thin JAR -->
+                <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
+            </properties>
+
+            <build>
+                <plugins>
+
+                </plugins>
+
+            </build>
+
+
+        </profile>
+        <!--  End:  profile : jar-only                                                     -->
+        <!--  ───────────────────────────────────────────────────────────────────────────  -->
 
 
 

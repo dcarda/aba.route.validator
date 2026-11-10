@@ -27,11 +27,11 @@ startDir=$(pwd)
 
 # Change to the base repository directory.
 myvariable=$(whoami)
-cd /c/Users/$myvariable/.m2/repository/
+cd ~/.m2/repository/
 
 echo
 echo Repository Root:
-echo ~/.m2/repository/
+echo $PWD
 #
 #  Delete all the *.lastUpdated and resolver files.
 echo
