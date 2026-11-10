@@ -49,8 +49,9 @@ function build_JarArtifact() {
 
     # =======================================================================
     #  Build everything
-    mvn     \
-      clean \
+    mvn       \
+      -P test \
+      clean   \
       package
 
     # Check results.
@@ -359,9 +360,6 @@ function release_JarArtifact() {
     display_ArtifactInformation
 
 } # ---  End Function build_JarArtifactOnly()
-
-
-
 
 #===  FUNCTION   ================================================
 #         Name:  terminationNormal()
