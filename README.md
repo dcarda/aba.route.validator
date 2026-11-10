@@ -1,35 +1,19 @@
+# ABA Routing Validator
 
+**A lightweight Java library for validating ABA Routing Transit Numbers (RTNs).**
 
+Copyright © 2026 Carda Technologies, LLC.
 
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
+---
+## Overview
 
+ABA Routing Validator is a lightweight Java library developed by Carda Technologies, LLC, for validating American Bankers Association (ABA) Routing Transit Numbers.
 
-#  ABA Routhing Transit Number
+The library performs structural, Federal Reserve prefix, and checksum validation to help Java applications identify invalid routing numbers.
 
-This module provides a validator which will run a few checks on an ABA
-routing transit number (ABA RTN) just to make sure it *might* be authentic.
-
-----------------------------------------------------------------------------
-# Table of contents
-1. [Basic Overview](#overview)
-2. [Technolog Stack](#TechStack)
-3. [Another paragraph](#paragraph2)
-
-
-----------------------------------------------------------------------------
-## Basic Overview: <a name="overview"></a>
-
-
-The ABA routing transit number (ABA RTN) is a nine digit code used in the United States to identify a financial institution. All financial institutions in the United States will have at least one ABA RTN number. The ABA routing transit number was created in 1910 by the American Bankers Association. The number is used by the Federal Reserve Banks to process Fedwire fund transfers. It is also used by the Automated Clearing House to process automated transfers, bill payments, and deposits.
-
-The ABA RTN number can usually (but not always) be found on the bottom left-hand corner of your personal check.
-
-The last digit of the ABA number is actually called a “check digit”. It’s a crude hash of the first eight digits and provides an initial check for the numbers authenticity.
-
-More information about the ABA routing transit number can be found in the Book of Knowledge:
-<p>http://en.wikipedia.org/wiki/Routing_transit_number</p>
-
-
+---
 ## Technology Stack <a name="TechStack"></a>
 
 The following software is required to build this project:
@@ -39,126 +23,233 @@ The following software is required to build this project:
 |  ![JAVA](https://img.shields.io/badge/_-JAVA-B07219.svg?style=for-the-badge) | 17.0.9  | https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html  |
 | ![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)  | 3.9.6   | https://maven.apache.org/download.cgi                                           |
 
+---
+## Features
 
-### How To Include This Module In Your Project
-This link should have all the information you need!
+- Validates nine-digit ABA Routing Transit Numbers.
+- Rejects null and blank input.
+- Validates routing number length.
+- Requires ASCII numeric digits (`0–9`).
+- Validates Federal Reserve routing prefixes.
+- Performs the ABA checksum calculation using repeating weights of `3, 7, 1`.
+- Provides consistent validation error codes.
+- Provides descriptive error mnemonics.
+- Supports exception handling with numeric error code retrieval.
+- Lightweight implementation using a static utility class.
 
-http://dcarda.github.io/aba.route.validator/dependency-info.html
+---
+## Requirements
 
-### Example
+- Java 17 or later.
 
-Here's an example of the validator in action!
+---
+## Installation
 
-```java
+### Maven
 
-    /**
-     * Rigorous Test :-)
-     */
-    public void testAbaValidation() {
+Add the following dependency to your project's `pom.xml`:
 
-        // This is the ABA RTN for Wells Fargo.
-        String _abaString = "121000248";
-
-        // Try and validate the number.
-        try {
-
-            // Run the validation.
-            boolean _isValid;
-            _isValid = validateNumber( _abaString );
-
-            if ( _isValid == false)
-            {
-                ; // Throw error here
-            }
-        } catch( AbaRouteValidationException e ) {
-            ;    // Do something interesting here...
-        }
-    }
-
-    /**
-     * This method will validate an incoming ABA Routing Transit Number.
-     *
-     * @param paramAbaNumber The ABA number to be validated.
-     *
-     * @return True if valid.  False if not valid.
-     *
-     * @throws AbaRouteValidationException Something went *really* wrong.
-     */
-    public boolean validateNumber( final String paramAbaNumber )
-            throws AbaRouteValidationException {
-        boolean _isValid;
-
-        // Static call to validate.
-        _isValid = AbaRouteValidator.validate( paramAbaNumber );
-
-        // Return the result
-        return ( _isValid );
-    }
+```xml
+<dependency>
+    <groupId>com.cardatechnologies</groupId>
+    <artifactId>aba-route-validator</artifactId>
+    <version>VERSION</version>
+</dependency>
 ```
 
-## Bug tracker
+Replace `VERSION` with the desired release version.
 
-Have a bug or a feature request? Please create an issue and I'll see what I can do!
+---
+## Usage
 
-+ https://github.com/dcarda/aba.route.validator/issues
+The validator provides a static validation method.
 
-<!--  ───────────────────────────────────────────────────────────────────────────  -->
+```java
+import com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator;
+import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException;
 
-## Author
+public class Example {
 
-**Daniel Carda - CardaTechnologies, LLC**
+    public static void main(String[] args) {
 
-+ http://www.danielcarda.net/
-+ https://github.com/dcarda/aba.route.validator
+        String routingNumber = "021000021";
 
-## About the Developer  👋
+        try {
+            boolean valid = AbaRouteValidator.validate(routingNumber);
 
-Follow this link to learn more about me:  [Daniel Carda](https://github.com/dcarda)
+            if (valid) {
+                System.out.println("Valid ABA routing number.");
+            } else {
+                System.out.println("Invalid ABA checksum.");
+            }
 
-<!-- End:  Developer  -->
-<!--  ───────────────────────────────────────────────────────────────────────────  -->
+        } catch (AbaRouteValidationException e) {
 
+            System.out.println("Validation Error: " + e.getMessage());
+            System.out.println("Error Code: " + e.getErrorCode());
+        }
+    }
+}
+```
 
+---
+## Validation Results
 
-##  Copyright
+The `validate()` method returns a boolean when structural and Federal Reserve prefix validation succeeds.
 
-(c) 2015-2024  Daniel Carda <GoneBy2025@CardaTechnologies.com>\
-All rights reserved.
+| Result | Meaning |
+|---|---|
+| `true` | The routing number passes all validation checks. |
+| `false` | The routing number has an invalid checksum. |
+| Exception | The input is null, blank, incorrectly sized, contains non-ASCII digits, or has an invalid Federal Reserve prefix. |
 
+---
+## Validation Checks
+
+The validator performs the following checks:
+
+1. Input must not be null.
+2. Input must not be blank.
+3. Input must contain exactly nine characters.
+4. All characters must be ASCII digits (`0–9`).
+5. The first two digits must represent an accepted Federal Reserve routing prefix.
+6. The ABA checksum must be valid.
+
+---
+## Federal Reserve Routing Prefixes
+
+The validator recognizes the following routing prefix ranges:
+
+| Prefix Range | Classification |
+|---|---|
+| `00–12` | Government and Federal Reserve |
+| `21–32` | Thrift institutions |
+| `61–72` | Payment processors and clearing houses |
+| `80` | Traveler's checks |
+
+---
+## Error Codes
+
+The library defines the following validation error codes:
+
+| Error Code | Error Mnemonic | Description |
+|---|---|---|
+| -1000 | `aba.number.null` | Routing number is null. |
+| -1001 | `aba.number.blank` | Routing number is blank. |
+| -1002 | `aba.number.length.too.short` | Routing number is too short. |
+| -1003 | `aba.number.length.too.long` | Routing number is too long. |
+| -1004 | `aba.number.contains.non.ascii.digits` | Routing number contains non-ASCII digits. |
+| -1005 | `aba.number.invalid.federal.reserve.prefix` | Invalid Federal Reserve prefix. |
+
+---
+### Exception Handling
+
+Validation errors are represented by `AbaRouteValidationException`, a checked exception.
+
+The exception provides:
+
+- `getErrorCode()` – Returns the numeric validation error code.
+- `getMessage()` – Returns the associated error mnemonic.
+
+Example:
+
+```java
+try {
+    AbaRouteValidator.validate(routingNumber);
+
+} catch (AbaRouteValidationException e) {
+
+    int errorCode = e.getErrorCode();
+    String message = e.getMessage();
+}
+```
+
+---
+### Error Code Lookup
+
+The `ErrorCodes` enumeration provides a lookup method for retrieving an error enumeration by its numeric code.
+
+```java
+ErrorCodes error = ErrorCodes.fromErrorCode(-1002);
+```
+
+An `IllegalArgumentException` is thrown if the supplied numeric error code is not recognized.
+
+---
+## Limitations
+
+Passing validation does not establish that:
+
+- A financial institution is currently operating.
+- A routing number is currently active or accepted.
+- A bank account exists.
+- A particular bank account belongs to a particular individual or organization.
+- A financial transaction can be successfully processed.
+
+Additional verification may be required depending on the intended application.
+
+---
+## API Documentation
+
+See the project Javadocs for complete API documentation.
+
+---
+## License
+
+This project is licensed under the Apache License, Version 2.0.
+
+See the [LICENSE](LICENSE) file or visit:
+
+https://www.apache.org/licenses/LICENSE-2.0
+
+---
+## Copyright
+
+Copyright © 2026 Carda Technologies, LLC.
+
+**Developed and maintained by Carda Technologies, LLC.**
 <!-- End:  Copyright -->
 <!--  ───────────────────────────────────────────────────────────────────────────  -->
 
-##  License
+---
+## Bug tracker
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-
-[dcarda/aba.route.validator](https://github.com/dcarda/aba.route.validator)** is licensed under the terms of the [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) license and is available for free.  
-
- 
- <sup align="right">For information, see <a href="[[https://tldrlegal.com/license/mit-license](https://choosealicense.com/licenses/apache-2.0/)]([https://www.apache.org/licenses/LICENSE-2.0](https://choosealicense.com/licenses/apache-2.0/))">Apache 2.0</a></sup>
-
-
-
-<!-- End:  License -->
+Have a bug or a feature request? Please create an issue and I'll see what I can do!
++ https://github.com/dcarda/aba.route.validator/issues
+<!-- End:  Bug Tracking -->
 <!--  ───────────────────────────────────────────────────────────────────────────  -->
 
+---
+## About the Developer  👋
+
+Follow this link to learn more about me:
++ http://www.danielcarda.net/
+<!-- End:  Developer  -->
+<!--  ───────────────────────────────────────────────────────────────────────────  -->
+
+---
+##  Copyright
+(c) 2015-2024  Daniel Carda <GoneBy2025@CardaTechnologies.com>\
+All rights reserved.
+<!-- End:  Copyright  -->
+<!--  ───────────────────────────────────────────────────────────────────────────  -->
+
+---
 ##  Donate
 Donations are always welcome!  Help me out this this and other projects!
 
 [Show your support!](.github/donate.md)
 
 <!-- End:  Donate -->
-
 <!--  ───────────────────────────────────────────────────────────────────────────  -->
-----------------------------------------------------------------------------
+
+---
 <p  align="center">
   <i>© <a href="https://danielcarda.net/">Daniel Carda</a> 2015-2027</i><br>
   <i>Licensed under <a href="https://choosealicense.com/licenses/apache-2.0/">Apache 2.0</a></i><br>
-  <a href="https://github.com/lissy93">
-  <img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" /></a><br>
+  <a href="https://github.com/dcarda">
+  <img src="https://avatars.githubusercontent.com/u/10403599?v=4" width="50" height="50"/></a><br>
   <sup>Thanks for visiting :thumbsup: </sup>
 </p>
-
 <!-- End:  Thanks for visiting -->
 <!--  ───────────────────────────────────────────────────────────────────────────  -->
-

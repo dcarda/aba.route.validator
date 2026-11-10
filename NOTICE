@@ -1,7 +1,16 @@
-ABA Routing Transmt Number Validator
-Copyright 2015 CardaTechnologies, LLC
+Project: ABA Routing Validator
 
-Reflow Maven Skin and Velocity Tools - licensed under the Apache License v2.0.
+Copyright 2026 Carda Technologies, LLC.
+All Rights Reserved.
+
 This product includes software developed by
-Andrius Velykis (http://andriusvelykis.github.io/reflow-maven-skin/).
+Carda Technologies, LLC.
 
+This software is licensed under the Apache License,
+Version 2.0.
+
+A copy of the license is included in this distribution
+in the META-INF/LICENSE file.
+
+See:
+https://www.apache.org/licenses/LICENSE-2.0

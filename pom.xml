@@ -248,6 +248,38 @@
                     <include>DEPENDENCIES</include>
                 </includes>
             </resource>
+            <!-- Include the project NOTICE file -->
+            <resource>
+                <directory>${project.basedir}</directory>
+                <targetPath>META-INF</targetPath>
+                <includes>
+                    <include>NOTICE</include>
+                </includes>
+            </resource>
+            <!-- Include the Apache 2.0 LICENSE file -->
+            <resource>
+                <directory>${project.basedir}</directory>
+                <targetPath>META-INF</targetPath>
+                <includes>
+                    <include>LICENSE</include>
+                </includes>
+            </resource>
+            <!-- Include the Carda Technologies, LLC Copyright -->
+            <resource>
+                <directory>${project.basedir}</directory>
+                <targetPath>META-INF</targetPath>
+                <includes>
+                    <include>COPYRIGHT</include>
+                </includes>
+            </resource>
+            <!-- Include the README File -->
+            <resource>
+                <directory>${project.basedir}</directory>
+                <targetPath>META-INF</targetPath>
+                <includes>
+                    <include>README.md</include>
+                </includes>
+            </resource>
         </resources>
 
         <!--  ───────────────────────────────────────────────────────────────────────  -->
