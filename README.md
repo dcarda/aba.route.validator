@@ -268,13 +268,14 @@ Copyright © 2026 Daniel Carda.
 <!-- End:  Copyright -->
 <!--  ───────────────────────────────────────────────────────────────────────────  -->
 
----
-## Bug tracker
 
-Have a bug or a feature request? Please create an issue and I'll see what I can do!
-+ https://github.com/dcarda/aba.route.validator/issues
-<!-- End:  Bug Tracking -->
+---
+##  Copyright
+(c) 2015-2024  Daniel Carda <GoneBy2025@CardaTechnologies.com>\
+All rights reserved.
+<!-- End:  Copyright  -->
 <!--  ───────────────────────────────────────────────────────────────────────────  -->
+
 
 ---
 ## About the Developer  👋
@@ -287,13 +288,6 @@ Follow this link to learn more about me:
 |        ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)    | https://github.com/dcarda                |
 |        ![](https://img.shields.io/badge/Independent-Developer-34495E?style=for-the-badge)                              | https://danielcarda.net/                 |
 <!-- End:  Developer  -->
-<!--  ───────────────────────────────────────────────────────────────────────────  -->
-
----
-##  Copyright
-(c) 2015-2024  Daniel Carda <GoneBy2025@CardaTechnologies.com>\
-All rights reserved.
-<!-- End:  Copyright  -->
 <!--  ───────────────────────────────────────────────────────────────────────────  -->
 
 ---
