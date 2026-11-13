@@ -9,7 +9,7 @@
 
     <!--  ───────────────────────────────────────────────────────────────────────────  -->
     <!--   Artifact Information                                                        -->
-    <groupId>com.cardatechnologies</groupId>
+    <groupId>net.danielcarda</groupId>
     <artifactId>aba.routing.transit.validator</artifactId>
     <version>1.0.3-SNAPSHOT</version>
 
@@ -22,7 +22,7 @@
         is formatted correctly.  This does not guarantee if it's valid, only that
         it has passed a small series of edits.</description>
     <inceptionYear>2015</inceptionYear>
-    <url>http://cardatechnologies.com</url>
+    <url>http://danielcarda.net</url>
 
     <!--  ───────────────────────────────────────────────────────────────────────────  -->
     <!--   Organization                                                                -->
@@ -49,7 +49,7 @@
         <!--  Daniel Carda   ····················································  -->
         <developer>
             <name>Daniel Carda</name>
-            <email>GoneBy2025@CardaTechnologies.com</email>
+            <email>Projects@DanielCarda.net</email>
             <url>http://danielcarda.net/</url>
             <timezone>America/Denver</timezone>
             <roles>
@@ -67,7 +67,7 @@
         <!--  Daniel Carda   ····················································  -->
         <contributor>
             <name>Daniel Carda</name>
-            <email>GoneBy2025@CardaTechnologies.com</email>
+            <email>Projects@DanielCarda.net</email>
             <url>http://danielcarda.net/</url>
             <timezone>America/Denver</timezone>
             <roles>
@@ -303,43 +303,49 @@
                     <version>${version.maven.antrun.plugin}</version>
                     <executions>
                         <execution>
+                            <!--
+                                This execution initializes an internal variable (build.hostname)
+                                which will be used to enhance the Jar's Manifest.mf file.
+                            -->
                             <id>build-host-information</id>
                             <phase>initialize</phase>
                             <goals>
                                 <goal>run</goal>
                             </goals>
-
-
                             <configuration>
-                                <exportAntProperties>false</exportAntProperties>
+                                <exportAntProperties>true</exportAntProperties>
                                 <target>
                                     <exec executable="hostname" outputproperty="build.hostname" failifexecutionfails="true" />
                                 </target>
-
-
-
                             </configuration>
                         </execution>
-
                         <execution>
+                        <!--
+                            The purpose of this Execution is to copy the README.md from the root directory, to the
+                            ./target/generated-site/markdown.
+
+                            The README.md is the Markdown which users see when they visit my GitHub site.
+                            the index.md is what is included with the Maven Site reports.
+
+                            Same file, I just didn't want to maintain two identical files.
+                        -->
                             <id>copy-readme-for-site</id>
                             <phase>pre-site</phase>
                             <goals>
                                 <goal>run</goal>
                             </goals>
-
                             <configuration>
                                 <target>
-                                    <mkdir dir="${project.build.directory}/generated-site/markdown"/>
-
+                                    <!-- Source   -->
                                     <copy
                                             file="${project.basedir}/README.md"
                                             tofile="${project.build.directory}/generated-site/markdown/index.md"
                                             overwrite="true"/>
+                                    <!-- Target   -->
+                                    <mkdir dir="${project.build.directory}/generated-site/markdown"/>
                                 </target>
                             </configuration>
                         </execution>
-
                     </executions>
                 </plugin>
 
@@ -398,7 +404,7 @@
                                 <version>${java.target.level}</version>
                             </requireJavaVersion>
                             <requireMavenVersion>
-                                <version>[3.9.6,)</version>
+                                <version>[3.9+,)</version>
                             </requireMavenVersion>
                             <dependencyConvergence />
                             <requireUpperBoundDeps />

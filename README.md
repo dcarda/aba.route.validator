@@ -122,8 +122,8 @@ The reporting site be located [here](https://dcarda.github.io/aba.route.validato
 The validator provides a static validation method.
 
 ```java
-import com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator;
-import com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException;
+import net.danielcarda.utils.validators.abaroutevalidator.AbaRouteValidator;
+import exceptions.net.danielcarda.utils.validators.abaroutevalidator.AbaRouteValidationException;
 
 public class Example {
 
