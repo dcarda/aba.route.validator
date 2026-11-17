@@ -22,7 +22,7 @@
         is formatted correctly.  This does not guarantee if it's valid, only that
         it has passed a small series of edits.</description>
     <inceptionYear>2015</inceptionYear>
-    <url>http://danielcarda.net</url>
+    <url>https://danielcarda.net</url>
 
     <!--  ───────────────────────────────────────────────────────────────────────────  -->
     <!--   Organization                                                                -->
@@ -85,7 +85,7 @@
         <connection>scm:git:git@github.com:dcarda/aba.route.validator.git</connection>
         <developerConnection>scm:git:git@github.com:dcarda/aba.route.validator.git</developerConnection>
         <url>https://github.com/dcarda/aba.route.validator/tree/master</url>
-        <tag>aba.routing.transit.validator-1.0.0-FINAL</tag>
+        <tag>HEAD</tag>
     </scm>
     <!--  End:  scm  -->
 
@@ -107,14 +107,14 @@
 
         <!--  ───────────────────────────────────────────────────────────────────────  -->
         <!--  Compiler Settings                                                        -->
-        <java.source.level>17</java.source.level>
-        <java.target.level>17</java.target.level>
-        <java.jdk.version>17</java.jdk.version>
-        <javacDebug>true</javacDebug>
         <javacDebugLevel>lines,vars,source</javacDebugLevel>
+        <javacDebug>true</javacDebug>
         <javacFork>false</javacFork>
         <javacOptimize>false</javacOptimize>
         <javacVerbose>true</javacVerbose>
+        <java.jdk.version>17</java.jdk.version>
+        <java.source.level>17</java.source.level>
+        <java.target.level>17</java.target.level>
 
         <!--  ───────────────────────────────────────────────────────────────────────  -->
         <!--  Set Default Project File Encoding                                        -->
@@ -151,8 +151,8 @@
         <version.com.h3xstream.findsecbugs>1.14.0</version.com.h3xstream.findsecbugs>
         <version.enforcer.extra.rules>1.12.1</version.enforcer.extra.rules>
         <version.enforcer.plugin>3.7.0</version.enforcer.plugin>
-        <version.jacoco.reporting.plugin>0.8.16</version.jacoco.reporting.plugin>
         <version.io.github.git.commit.id>10.0.1</version.io.github.git.commit.id> <!-- Use the latest version -->
+        <version.jacoco.reporting.plugin>0.8.16</version.jacoco.reporting.plugin>
         <version.maven.versions.plugin>2.23.0</version.maven.versions.plugin>
         <version.org.codehaus.mojo.license>2.7.1</version.org.codehaus.mojo.license>
 
@@ -420,7 +420,7 @@
                                 <version>${java.target.level},</version>
                             </requireJavaVersion>
                             <requireMavenVersion>
-                                <version>[3.9+,)</version>
+                                <version>[3.9,)</version>
                             </requireMavenVersion>
                             <dependencyConvergence />
                             <requireUpperBoundDeps />
@@ -544,7 +544,6 @@
                             <configuration>
                                 <skip>${skip.tests.unit}</skip>
                                 <destFile>${project.build.directory}/jacoco.exec</destFile>
-                                <propertyName>jacocoSurefireArgLine</propertyName>
                             </configuration>
                         </execution>
                         <!-- Ensures that the code coverage report for unit tests is created after unit tests have been run. -->
@@ -774,7 +773,6 @@
         <!--  Plugins                                                                  -->
         <plugins>
 
-
             <!--   Codehaus License Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
             <!--   https://www.mojohaus.org/license-maven-plugin/                          -->
             <plugin>
@@ -901,9 +899,9 @@
     <!--   Profiles                                                                    -->
     <profiles>
 
+        <!--  ───────────────────────────────────────────────────────────────────────────  -->
         <!--
-            test - runs the unit tests  (default)
-
+            test    - runs the unit tests  (default)
             jar     - just to build the jar
             site    - builds the report suite
             release - production release
@@ -1079,23 +1077,23 @@
                 <version.javancss.reporting.plugin>2.1</version.javancss.reporting.plugin>
                 <version.jdepend.reporting.plugin>2.2.1</version.jdepend.reporting.plugin>
                 <version.jxr.reporting.plugin>3.6.0</version.jxr.reporting.plugin>
+                <version.license.reporting.plugin>2.7.1</version.license.reporting.plugin>
                 <version.maven.license.plugin>1.10.b1</version.maven.license.plugin>
+                <version.maven.site.plugin>3.22.0</version.maven.site.plugin>
+                <version.org.sentrysoftware.maven>1.8.01</version.org.sentrysoftware.maven>
                 <version.project.info.reports.plugin>3.9.0</version.project.info.reports.plugin>
                 <version.spotbugs.reporting.plugin>4.10.5.0</version.spotbugs.reporting.plugin>
                 <version.surefire.reports.plugin>3.6.1</version.surefire.reports.plugin>
                 <version.taglist.report.plugin>3.2.3</version.taglist.report.plugin>
-                <version.license.reporting.plugin>2.7.1</version.license.reporting.plugin>
-                <version.maven.site.plugin>3.22.0</version.maven.site.plugin>
-                <version.org.sentrysoftware.maven>1.8.01</version.org.sentrysoftware.maven>
 
                 <!--  ───────────────────────────────────────────────────────────────  -->
                 <version.pmd.reporting.plugin>3.28.0</version.pmd.reporting.plugin>
-                <version.pmd.sourceforge.visualforce>7.28.0</version.pmd.sourceforge.visualforce>
                 <version.pmd.sourceforge.apex>7.28.0</version.pmd.sourceforge.apex>
                 <version.pmd.sourceforge.core>7.28.0</version.pmd.sourceforge.core>
                 <version.pmd.sourceforge.java>7.28.0</version.pmd.sourceforge.java>
                 <version.pmd.sourceforge.javascript>7.28.0</version.pmd.sourceforge.javascript>
                 <version.pmd.sourceforge.jsp>7.28.0</version.pmd.sourceforge.jsp>
+                <version.pmd.sourceforge.visualforce>7.28.0</version.pmd.sourceforge.visualforce>
             </properties>
             <!--  End:  genReports : pluginManagement  -->
 
@@ -1152,16 +1150,17 @@
                             <artifactId>maven-checkstyle-plugin</artifactId>
                             <version>${version.checkstyle.report.plugin}</version>
                             <configuration>
+                                <cacheFile>
+                                    ${project.build.directory}/checkstyle-cachefile
+                                </cacheFile>
+                                <configLocation>${project.basedir}/src/test/resources/checkstyle/checkstyle.xml</configLocation>
                                 <consoleOutput>true</consoleOutput>
                                 <failOnViolation>false</failOnViolation>
+                                <includeResources>false</includeResources>
+                                <includeTestSourceDirectory>false</includeTestSourceDirectory>
                                 <logViolationsToConsole>true</logViolationsToConsole>
                                 <outputFileFormat>xml</outputFileFormat>
                                 <propertyExpansion>basedir=${project.basedir}</propertyExpansion>
-                                <configLocation>
-                                    ${project.basedir}/src/test/resources/checkstyle/checkstyle.xml
-                                </configLocation>
-                                <includeTestSourceDirectory>false</includeTestSourceDirectory>
-                                <includeResources>false</includeResources>
                             </configuration>
                             <dependencies>
                                 <dependency>
@@ -1183,7 +1182,13 @@
                                     </goals>
                                     <phase>validate</phase>
                                     <configuration>
-                                        <cacheFile>${project.build.testOutputDirectory}/checkstyle//checkstyle-cachefile</cacheFile>
+<!--                                        <cacheFile>${project.build.testOutputDirectory}/checkstyle//checkstyle-cachefile</cacheFile>-->
+
+                                        <cacheFile>
+                                            ${project.build.directory}/checkstyle-cachefile
+                                        </cacheFile>
+
+
                                         <configLocation>
                                             ${project.basedir}/src/test/resources/checkstyle/checkstyle.xml
                                         </configLocation>
@@ -1200,7 +1205,13 @@
                                     </goals>
                                     <phase>validate</phase>
                                     <configuration>
-                                        <cacheFile>${project.build.testOutputDirectory}/checkstyle//checkstyle-cachefile-non-java</cacheFile>
+<!--                                        <cacheFile>${project.build.testOutputDirectory}/checkstyle//checkstyle-cachefile-non-java</cacheFile>-->
+
+                                        <cacheFile>
+                                            ${project.build.directory}/checkstyle-cachefile
+                                        </cacheFile>
+
+
                                         <configLocation>
                                             ${project.basedir}/src/test/resources/checkstyle/non-java-checkstyle.xml
                                         </configLocation>
@@ -1225,7 +1236,13 @@
                                     </goals>
                                     <phase>none</phase>
                                     <configuration>
-                                        <cacheFile>${project.build.testOutputDirectory}/checkstyle/checkstyle-cachefile-import-control-only</cacheFile>
+<!--                                        <cacheFile>${project.build.testOutputDirectory}/checkstyle/checkstyle-cachefile-import-control-only</cacheFile>-->
+
+                                        <cacheFile>
+                                            ${project.build.directory}/checkstyle-cachefile
+                                        </cacheFile>
+
+
                                         <configLocation>
                                             ${project.basedir}/src/test/resources/checkstyle/java-checkstyle-import-control-only.xml
                                         </configLocation>
@@ -1276,15 +1293,20 @@
                             <artifactId>maven-pmd-plugin</artifactId>
                             <version>${version.pmd.reporting.plugin}</version>
                             <configuration>
-                              <linkXRef>true</linkXRef>
-                              <minimumTokens>100</minimumTokens>
-                              <targetJdk>${maven.compiler.source}</targetJdk>
-                              <analysisCache>true</analysisCache>
-                              <skipEmptyReport>false</skipEmptyReport>
-                              <failOnViolation>false</failOnViolation>
-                              <printFailingErrors>true</printFailingErrors>
-                              <includeTests>false</includeTests>
-                              <verbose>true</verbose>
+                                <analysisCache>true</analysisCache>
+
+                                <cacheFile>
+                                    ${project.build.directory}/checkstyle-cachefile
+                                </cacheFile>
+
+                                <failOnViolation>false</failOnViolation>
+                                <includeTests>false</includeTests>
+                                <linkXRef>true</linkXRef>
+                                <minimumTokens>100</minimumTokens>
+                                <printFailingErrors>true</printFailingErrors>
+                                <skipEmptyReport>false</skipEmptyReport>
+                                <targetJdk>${maven.compiler.source}</targetJdk>
+                                <verbose>true</verbose>
 
                                 <!-- Target the correct ruleset using modern category paths -->
                                 <rulesets>
@@ -1386,6 +1408,7 @@
                         </plugin>
 
                         <!--   Surefire Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
+                        <!--   https://maven.apache.org/surefire/maven-surefire-report-plugin/   -->
                         <plugin>
                             <groupId>org.apache.maven.plugins</groupId>
                             <artifactId>maven-surefire-report-plugin</artifactId>
@@ -1585,21 +1608,23 @@
                         <artifactId>maven-checkstyle-plugin</artifactId>
                         <configuration>
                             <!-- <configLocation>checkstyle/java-checkstyle.xml</configLocation>-->
-                            <cacheFile>${project.build.testOutputDirectory}/checkstyle//checkstyle-cachefile-non-java</cacheFile>
-                            <suppressionsLocation>${project.build.testOutputDirectory}/checkstyle/java-suppressions.xml</suppressionsLocation>
-                            <propertyExpansion>basedir=${basedir}</propertyExpansion>
-                            <propertyExpansion>samedir=${project.basedir}/src/test/resources/checkstyle</propertyExpansion>
+<!--                            <cacheFile>${project.build.testOutputDirectory}/checkstyle//checkstyle-cachefile-non-java</cacheFile>-->
+                            <cacheFile>
+                                ${project.build.directory}/checkstyle-cachefile
+                            </cacheFile>
                             <consoleOutput>true</consoleOutput>
-                            <logViolationsToConsole>true</logViolationsToConsole>
-                            <failOnViolation>true</failOnViolation>
-                            <linkXRef>false</linkXRef>
                             <enableFilesSummary>true</enableFilesSummary>
-                            <includes>**/*.java</includes>
+                            <failOnViolation>true</failOnViolation>
                             <includeResources>false</includeResources>
+                            <includes>**/*.java</includes>
                             <includeTestSourceDirectory>false</includeTestSourceDirectory>
+                            <linkXRef>false</linkXRef>
+                            <logViolationsToConsole>true</logViolationsToConsole>
                             <outputFile>${project.build.directory}/checkstyle-report-java.xml</outputFile>
                             <outputFileFormat>xml</outputFileFormat>
-                        </configuration>
+                            <propertyExpansion>basedir=${basedir}</propertyExpansion>
+                            <propertyExpansion>samedir=${project.basedir}/src/test/resources/checkstyle</propertyExpansion>
+                            <suppressionsLocation>${project.build.testOutputDirectory}/checkstyle/java-suppressions.xml</suppressionsLocation>                        </configuration>
                         <reportSets>
                             <reportSet>
                                 <reports>
@@ -1719,7 +1744,7 @@
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>license-maven-plugin</artifactId>
                         <configuration>
-                            <licenseName>3-bsd-mb</licenseName>
+                            <licenseName>apache_v2</licenseName>
                             <licenseResolver>classpath://license</licenseResolver>
                             <descriptionTemplate>${basedir}/src/license/licenseDescription.ftl</descriptionTemplate>
                             <canUpdateCopyright>true</canUpdateCopyright>
@@ -1750,6 +1775,13 @@
                         <version>${version.pmd.reporting.plugin}</version>
 
                         <configuration>
+
+                            <cacheFile>
+                                ${project.build.directory}/checkstyle-cachefile
+                            </cacheFile>
+
+
+
                             <linkXRef>true</linkXRef>
                             <targetJdk>${maven.compiler.source}</targetJdk>
 
@@ -1912,11 +1944,11 @@
 
                 <!-- Skip common static analysis and documentation plugins (if used) -->
                 <checkstyle.skip>true</checkstyle.skip>
-                <spotbugs.skip>true</spotbugs.skip>
-                <pmd.skip>true</pmd.skip>
                 <enforcer.skip>true</enforcer.skip>
                 <maven.javadoc.skip>true</maven.javadoc.skip>
                 <maven.source.skip>true</maven.source.skip>
+                <pmd.skip>true</pmd.skip>
+                <spotbugs.skip>true</spotbugs.skip>
 
                 <!-- Skip Spring Boot repackaging if you only want the original thin JAR -->
                 <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
