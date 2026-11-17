@@ -20,7 +20,7 @@ Copyright © 2026 Daniel Carda
 
 - [⚡️Overview](#overview)
 - [🚀 Features](#-features)
-- [👨 Technology Stack](#a-technology-stack)
+- 👨 [Technology Stack](#-technology-stack)
 - [⚙️ Installation](#-installation) 
   
     - [Maven](#maven)
