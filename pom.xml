@@ -417,7 +417,7 @@
                             <requireJavaVersion>
                                 <!--  https://en.wikipedia.org/wiki/Java_class_file#General_layout-->
                                 <!--  https://stackoverflow.com/questions/9170832/list-of-java-class-file-format-major-version-numbers                                        -->
-                                <version>${java.target.level}</version>
+                                <version>${java.target.level},</version>
                             </requireJavaVersion>
                             <requireMavenVersion>
                                 <version>[3.9+,)</version>
@@ -461,7 +461,7 @@
                                     <!-- 52 is the major version numbering for 1.8; Using 1.8 caused
                                          this to fail if there was any minor version -->
                                     <requireJavaVersion>
-                                        <version>(,${enforce.java.major.version}]</version>
+                                        <version>(${maven.compiler.target},]</version>
                                     </requireJavaVersion>
                                     <enforceBytecodeVersion>
                                         <maxJdkVersion>${maven.compiler.source}</maxJdkVersion>

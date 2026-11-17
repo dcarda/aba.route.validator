@@ -4,10 +4,37 @@
 
 Copyright © 2026 Carda Technologies, LLC.
 
+
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
----
-## Overview
+## <hr>🚩 Table of Contents
+
+[//]: # (use this to generate the table of contents.)
+[//]: # (https://www.markdowntools.com/tools/markdown-toc#copyright-1)
+- [⚡️Overview](#overview)
+- [🚀 Features](#features)
+- [👨 Technology Stack](#technology-stack)
+- [⚙️ Installation](#installation)
+  - [Maven](#maven)
+- [🏗️ Build Instructions](#build-instructions)
+  - [Build With Tests](#build-with-tests)
+  - [Build With Metrics Reports](#build-with-metrics-reports)
+  - [Build Only The Jar Artifact](#build-only-the-jar-artifact)
+- [✅ Code Metrics Reports](#code-metrics-reports)
+- [🎨 Usage](#usage)
+- [🔧  Validation Results](#validation-results)
+- [🔧  Validation Checks](#validation-checks)
+- [🧐 Federal Reserve Routing Prefixes](#federal-reserve-routing-prefixes)
+- [🧩  Error Codes](#error-codes)
+  - [Exception Handling](#exception-handling)
+  - [Error Code Lookup](#error-code-lookup)
+- [🚧  Limitations](#limitations)
+- [📝 API Documentation](#api-documentation)
+- [⚠️  Copyright and License](#copyright-and-license)
+- [👋 About the Developer](#about-the-developer)
+- [🤝 Contributing](#contributing)
+
+## <hr>⚡️Overview
 
 ABA Routing Validator is a lightweight Java library developed by Carda Technologies, LLC, for validating American Bankers Association (ABA) Routing Transit Numbers.
 
@@ -23,8 +50,7 @@ an initial check for the numbers authenticity.
 More information about the ABA routing transit number can be found in the Book of Knowledge:
 http://en.wikipedia.org/wiki/Routing_transit_number
 
----
-## Features
+## <hr>🚀 Features
 
 - Validates nine-digit ABA Routing Transit Numbers.
 - Rejects null and blank input.
@@ -37,8 +63,7 @@ http://en.wikipedia.org/wiki/Routing_transit_number
 - Supports exception handling with numeric error code retrieval.
 - Lightweight implementation using a static utility class.
 
-----------------------------------------------------------------------------
-##  Technology Stack
+## <hr>👨 Technology Stack
 
 The following software is required to build this project:
 
@@ -48,13 +73,11 @@ The following software is required to build this project:
 |  ![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)   |    3.9.16 | https://maven.apache.org/download.cgi                                          |
 
 
+## <hr>⚙️ Installation
+
+### <span style="color: #33ccff;">    Maven
 
 
-
----
-## Installation
-
-### <span style="color: #33ccff;"> Maven
 
 Add the following dependency to your project's `pom.xml`:
 
@@ -68,8 +91,7 @@ Add the following dependency to your project's `pom.xml`:
 
 Replace `VERSION` with the desired release version.
 
----
-## Build Instructions
+## <hr>🏗️ Build Instructions
 
 The POM actually has several build targets.  
 
@@ -95,7 +117,7 @@ This will generate the final build artifact and nothing else.
 ```
 
 ---
-## Code Metrics Reports
+## ✅ Code Metrics Reports
 Maven site reports are human-readable documentation and analysis pages generated
 automatically during the project's site lifecycle (triggered by the mvn site command)
 using the Apache Maven Site Plugin and configured reporting plugins.
@@ -116,8 +138,7 @@ The current list of reports includes:
 
 The reporting site be located [here](https://dcarda.github.io/aba.route.validator/).
 
----
-## Usage
+## <hr>🎨 Usage
 
 The validator provides a static validation method.
 
@@ -149,8 +170,7 @@ public class Example {
 }
 ```
 
----
-## Validation Results
+## <hr>🔧  Validation Results
 
 The `validate()` method returns a boolean when structural and Federal Reserve prefix validation succeeds.
 
@@ -160,8 +180,7 @@ The `validate()` method returns a boolean when structural and Federal Reserve pr
 | `false` | The routing number has an invalid checksum. |
 | Exception | The input is null, blank, incorrectly sized, contains non-ASCII digits, or has an invalid Federal Reserve prefix. |
 
----
-## Validation Checks
+## <hr>🔧  Validation Checks
 
 The validator performs the following checks:
 
@@ -172,8 +191,7 @@ The validator performs the following checks:
 5. The first two digits must represent an accepted Federal Reserve routing prefix.
 6. The ABA checksum must be valid.
 
----
-## Federal Reserve Routing Prefixes
+## <hr>🧐 Federal Reserve Routing Prefixes
 
 The validator recognizes the following routing prefix ranges:
 
@@ -184,8 +202,7 @@ The validator recognizes the following routing prefix ranges:
 | `61–72` | Payment processors and clearing houses |
 | `80` | Traveler's checks |
 
----
-## Error Codes
+## <hr>🧩  Error Codes
 
 The library defines the following validation error codes:
 
@@ -232,8 +249,7 @@ ErrorCodes error = ErrorCodes.fromErrorCode(-1002);
 
 An `IllegalArgumentException` is thrown if the supplied numeric error code is not recognized.
 
----
-## Limitations
+## <hr>🚧  Limitations
 
 Passing validation does not establish that:
 
@@ -245,40 +261,28 @@ Passing validation does not establish that:
 
 Additional verification may be required depending on the intended application.
 
----
-## API Documentation
+## <hr>📝 API Documentation
 
 See the project Javadocs for complete API documentation.
 
----
-## License
+## <hr>⚠️  Copyright and License
 
-This project is licensed under the Apache License, Version 2.0.
+This software is free to use for personal, academic, commercial, or corporate projects.
 
-See the [LICENSE](LICENSE) file or visit:
+Copyright &copy; 2015 Daniel Carda. <br>
+All Rights Reserved.<br><br>
+This project is licensed under the [Apache License, Version 2.0](LICENSE) — see the [LICENSE](LICENSE) for the specific language governing permissions and
+limitations under the License.
 
-https://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
----
-## Copyright
+By submitting a pull request to this project, you aggree
+to license your contribution under the Apache license
+version 2.0 to this project.
 
-Copyright © 2026 Daniel Carda.
-
-**Developed and maintained by Carda Technologies, LLC.**
-<!-- End:  Copyright -->
-<!--  ───────────────────────────────────────────────────────────────────────────  -->
-
-
----
-##  Copyright
-(c) 2015-2024  Daniel Carda <GoneBy2025@CardaTechnologies.com>\
-All rights reserved.
-<!-- End:  Copyright  -->
-<!--  ───────────────────────────────────────────────────────────────────────────  -->
-
-
----
-## About the Developer  👋
+## <hr>👋 About the Developer  
 
 Follow this link to learn more about me:
 
@@ -290,16 +294,14 @@ Follow this link to learn more about me:
 <!-- End:  Developer  -->
 <!--  ───────────────────────────────────────────────────────────────────────────  -->
 
----
-##  Donate
+## <hr>🙏 Contributing
 Donations are always welcome!  Help me out this this and other projects!
 
 [Show your support!](.github/donate.md)
 
 <!-- End:  Donate -->
 <!--  ───────────────────────────────────────────────────────────────────────────  -->
-
----
+<hr>
 <p  align="center">
   <i>© <a href="https://danielcarda.net/">Daniel Carda</a> 2015-2027</i><br>
   <i>Licensed under <a href="https://choosealicense.com/licenses/apache-2.0/">Apache 2.0</a></i><br>
