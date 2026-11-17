@@ -2,7 +2,7 @@
 
 **A lightweight Java library for validating ABA Routing Transit Numbers (RTNs).**
 
-Copyright © 2026 Carda Technologies, LLC.
+Copyright © 2026 Daniel Carda
 
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
@@ -13,7 +13,7 @@ Copyright © 2026 Carda Technologies, LLC.
 [//]: # (https://www.markdowntools.com/tools/markdown-toc#copyright-1)
 - [⚡️Overview](#overview)
 - [🚀 Features](#features)
-- [👨 Technology Stack](#technology-stack)
+- [👨 Technology Stack](#-technology-stack)
 - [⚙️ Installation](#installation)
   - [Maven](#maven)
 - [🏗️ Build Instructions](#build-instructions)
