@@ -1,18 +1,14 @@
 ---
-date_published: 2026-11-16
-date_modified: 2026-11-16
+date_published: 2026-11-17
+date_modified: 2026-11-17
 canonical_url: http://danielcarda.net/index.html
 ---
 
-# 
-
----
-
-ABA Routing Validator
+# ABA Routing Validator
 
 **A lightweight Java library for validating ABA Routing Transit Numbers (RTNs).**
 
-Copyright © 2026 Carda Technologies, LLC.
+Copyright © 2026 Daniel Carda
 
 [License: Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
@@ -24,7 +20,7 @@ Copyright © 2026 Carda Technologies, LLC.
 
 - [⚡️Overview](#overview)
 - [🚀 Features](#-features)
-- [👨 Technology Stack](#-technology-stack)
+- [👨 Technology Stack](#a-technology-stack)
 - [⚙️ Installation](#-installation) 
   
     - [Maven](#maven)
@@ -362,7 +358,7 @@ Follow this link to learn more about me:
 
 ---
 
-🤝 Contributing
+🙏 Contributing
 
 Donations are always welcome! Help me out this this and other projects!
 

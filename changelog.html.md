@@ -1,6 +1,6 @@
 ---
-date_published: 2026-11-16
-date_modified: 2026-11-16
+date_published: 2026-11-17
+date_modified: 2026-11-17
 canonical_url: http://danielcarda.net/changelog.html
 ---
 
@@ -8,12 +8,19 @@ canonical_url: http://danielcarda.net/changelog.html
 
 Total number of changed sets: 1
 
-## Changes between 2026-10-17 and 2026-11-17
+## Changes between 2026-10-18 and 2026-11-18
 
-Total commits: 29  
-Total number of files changed: 222
+Total commits: 31  
+Total number of files changed: 223
 
-Timestamp Author Details 2026-11-14 14:48:40 Daniel Carda <GoneBy2025@CardaTechnologies.com> [pom.xml](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml) [v f7f1e3ea2255a371f86aa62b5346399700373d52](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml?rev=f7f1e3ea2255a371f86aa62b5346399700373d52&content-type=text/vnd.viewcvs-markup)  
+Timestamp Author Details 2026-11-17 11:14:25 Daniel Carda <GoneBy2025@CardaTechnologies.com> [README.md](https://github.com/dcarda/aba.route.validator/tree/master/README.md) [v ac5ddc519c3aeda4f26cae24bf7e64b86ec82554](https://github.com/dcarda/aba.route.validator/tree/master/README.md?rev=ac5ddc519c3aeda4f26cae24bf7e64b86ec82554&content-type=text/vnd.viewcvs-markup)  
+  
+Interim Check-In... 2026-11-16 23:07:24 Daniel Carda <GoneBy2025@CardaTechnologies.com> [README.md](https://github.com/dcarda/aba.route.validator/tree/master/README.md) [v 427bff7a62dbebdaf2dec63eb22249184a3f3d5d](https://github.com/dcarda/aba.route.validator/tree/master/README.md?rev=427bff7a62dbebdaf2dec63eb22249184a3f3d5d&content-type=text/vnd.viewcvs-markup)  
+[pom.xml](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml) [v 427bff7a62dbebdaf2dec63eb22249184a3f3d5d](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml?rev=427bff7a62dbebdaf2dec63eb22249184a3f3d5d&content-type=text/vnd.viewcvs-markup)  
+[src/site/markdown/copyright.md](https://github.com/dcarda/aba.route.validator/tree/master/src/site/markdown/copyright.md) [v 427bff7a62dbebdaf2dec63eb22249184a3f3d5d](https://github.com/dcarda/aba.route.validator/tree/master/src/site/markdown/copyright.md?rev=427bff7a62dbebdaf2dec63eb22249184a3f3d5d&content-type=text/vnd.viewcvs-markup)  
+[src/test/java/net/danielcarda/utils/validators/abaroutevalidator/Test_AbaRouteValidator_01.java](https://github.com/dcarda/aba.route.validator/tree/master/src/test/java/net/danielcarda/utils/validators/abaroutevalidator/Test_AbaRouteValidator_01.java) [v 427bff7a62dbebdaf2dec63eb22249184a3f3d5d](https://github.com/dcarda/aba.route.validator/tree/master/src/test/java/net/danielcarda/utils/validators/abaroutevalidator/Test_AbaRouteValidator_01.java?rev=427bff7a62dbebdaf2dec63eb22249184a3f3d5d&content-type=text/vnd.viewcvs-markup)  
+  
+Interim Check-In... 2026-11-14 14:48:40 Daniel Carda <GoneBy2025@CardaTechnologies.com> [pom.xml](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml) [v f7f1e3ea2255a371f86aa62b5346399700373d52](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml?rev=f7f1e3ea2255a371f86aa62b5346399700373d52&content-type=text/vnd.viewcvs-markup)  
   
 Interim-Check-in... 2026-11-14 13:48:52 Daniel Carda <GoneBy2025@CardaTechnologies.com> [pom.xml](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml) [v 05e0761a6896bd5f05bb3cca8b6459404c55807c](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml?rev=05e0761a6896bd5f05bb3cca8b6459404c55807c&content-type=text/vnd.viewcvs-markup)  
   
