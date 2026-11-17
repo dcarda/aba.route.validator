@@ -1,7 +1,7 @@
 ---
-date_published: 2026-11-08
-date_modified: 2026-11-08
-canonical_url: http://cardatechnologies.com/property-updates-report.html
+date_published: 2026-11-16
+date_modified: 2026-11-16
+canonical_url: http://danielcarda.net/property-updates-report.html
 ---
 
 # Overview
@@ -9,10 +9,10 @@ canonical_url: http://cardatechnologies.com/property-updates-report.html
 This report summarizes newer versions that may be available for your project's various properties associated with artifacts.
 
 |
-|  | # of properties using the latest version available | 24 |
+|  | # of properties using the latest version available | 23 |
 |  | # of properties where the next version available is smaller than an incremental version update | 0 |
 |  | # of properties where the next version available is an incremental version update | 0 |
-|  | # of properties where the next version available is a minor version update | 3 |
+|  | # of properties where the next version available is a minor version update | 11 |
 |  | # of properties where the next version available is a major version update | 10 |
 
 ## Summary of properties associated with artifact versions
@@ -34,10 +34,9 @@ This report summarizes newer versions that may be available for your project's v
 |  | 3.12.0 | 3.12.0 |  |  |  |  |
 |  | 2.1 | 2.1 |  |  |  |  |
 |  | 2.2.1 | 2.2.1 |  |  |  |  |
-|  | 6.1.3 | 6.1.3 |  |  |  |  |
-|  | 6.1.3 | 6.1.3 |  |  |  |  |
+|  | 6.1.3 | 6.1.3 |  |  | **6.2.0-M1** |  |
+|  | 6.1.3 | 6.1.3 |  |  | **6.2.0-M1** |  |
 |  | 3.6.0 | 3.6.0 |  |  |  |  |
-|  | 2.7.1 | 2.7.1 |  |  | **2.8.0** |  |
 |  | 3.2.0 | 3.2.0 |  |  |  |  |
 |  | 3.5.0 | 3.5.0 |  |  |  | **4.0.0-beta-3** |
 |  | 3.11.0 | 3.11.0 |  |  |  |  |
@@ -50,8 +49,16 @@ This report summarizes newer versions that may be available for your project's v
 |  | 3.5.0 | 3.5.0 |  |  |  | **4.0.0-beta-2** |
 |  | 2.2.1 | 2.2.1 |  |  |  |  |
 |  | 3.22.0 | 3.22.0 |  |  |  | **4.0.0-M16** |
-|  | 2.23.0 | 2.23.0 |  |  | **2.24.0** |  |
+|  | 2.23.0 | 2.23.0 |  |  | **2.25.2** |  |
+|  | 2.7.1 | 2.7.1 |  |  | **2.9.0** |  |
+|  | 1.8.01 | 1.8.01 |  |  |  |  |
 |  | 3.28.0 | 3.28.0 |  |  |  |  |
+|  | 7.28.0 | 7.28.0 |  |  | **7.29.0** |  |
+|  | 7.28.0 | 7.28.0 |  |  | **7.29.0** |  |
+|  | 7.28.0 | 7.28.0 |  |  | **7.29.0** |  |
+|  | 7.28.0 | 7.28.0 |  |  | **7.29.0** |  |
+|  | 7.28.0 | 7.28.0 |  |  | **7.29.0** |  |
+|  | 7.28.0 | 7.28.0 |  |  | **7.29.0** |  |
 |  | 3.9.0 | 3.9.0 |  |  |  |  |
 |  | 3.6.1 | 3.6.1 |  |  |  |  |
 |  | 3.6.1 | 3.6.1 |  |  |  |  |
@@ -151,11 +158,6 @@ This report summarizes newer versions that may be available for your project's v
 | Always use reactor projects (even if older or -SNAPSHOT) | Yes |
 | --- | --- |
 
-## 2.7.1
-
-| Always use reactor projects (even if older or -SNAPSHOT) | Yes |
-| --- | --- |
-
 ## 3.2.0
 
 | Always use reactor projects (even if older or -SNAPSHOT) | Yes |
@@ -221,7 +223,47 @@ This report summarizes newer versions that may be available for your project's v
 | Always use reactor projects (even if older or -SNAPSHOT) | Yes |
 | --- | --- |
 
+## 2.7.1
+
+| Always use reactor projects (even if older or -SNAPSHOT) | Yes |
+| --- | --- |
+
+## 1.8.01
+
+| Always use reactor projects (even if older or -SNAPSHOT) | Yes |
+| --- | --- |
+
 ## 3.28.0
+
+| Always use reactor projects (even if older or -SNAPSHOT) | Yes |
+| --- | --- |
+
+## 7.28.0
+
+| Always use reactor projects (even if older or -SNAPSHOT) | Yes |
+| --- | --- |
+
+## 7.28.0
+
+| Always use reactor projects (even if older or -SNAPSHOT) | Yes |
+| --- | --- |
+
+## 7.28.0
+
+| Always use reactor projects (even if older or -SNAPSHOT) | Yes |
+| --- | --- |
+
+## 7.28.0
+
+| Always use reactor projects (even if older or -SNAPSHOT) | Yes |
+| --- | --- |
+
+## 7.28.0
+
+| Always use reactor projects (even if older or -SNAPSHOT) | Yes |
+| --- | --- |
+
+## 7.28.0
 
 | Always use reactor projects (even if older or -SNAPSHOT) | Yes |
 | --- | --- |

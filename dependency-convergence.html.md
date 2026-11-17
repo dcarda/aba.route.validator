@@ -1,7 +1,7 @@
 ---
-date_published: 2026-11-08
-date_modified: 2026-11-08
-canonical_url: http://cardatechnologies.com/dependency-convergence.html
+date_published: 2026-11-16
+date_modified: 2026-11-16
+canonical_url: http://danielcarda.net/dependency-convergence.html
 ---
 
 # Dependency Convergence

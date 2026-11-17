@@ -1,7 +1,7 @@
 ---
-date_published: 2026-11-08
-date_modified: 2026-11-08
-canonical_url: http://cardatechnologies.com/dependencies.html
+date_published: 2026-11-16
+date_modified: 2026-11-16
+canonical_url: http://danielcarda.net/dependencies.html
 ---
 
 # Project Dependencies
@@ -40,11 +40,11 @@ The following is a list of test dependencies for this project. These dependencie
 
 ## Dependency Tree
 
-- com.cardatechnologies:aba.routing.transit.validator:jar:1.0.2 
+- net.danielcarda:aba.routing.transit.validator:jar:1.0.3-SNAPSHOT 
   
   | ABA Validator |
   | --- |
-  | **Description: **This validator will confirm if an ABA Routing Transit Number Validator is formatted correctly. This does not guarantee if it's valid, only that it has passed a small series of edits. **URL: **[http://cardatechnologies.com](http://cardatechnologies.com) **Project Licenses: **[Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0.txt) |
+  | **Description: **This validator will confirm if an ABA Routing Transit Number Validator is formatted correctly. This does not guarantee if it's valid, only that it has passed a small series of edits. **URL: **[http://danielcarda.net](http://danielcarda.net) **Project Licenses: **[Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0.txt) |
   
     - org.junit.jupiter:junit-jupiter-engine:jar:6.1.3 (test) 
       

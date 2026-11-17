@@ -1,7 +1,7 @@
 ---
-date_published: 2026-11-08
-date_modified: 2026-11-08
-canonical_url: http://cardatechnologies.com/javancss.html
+date_published: 2026-11-16
+date_modified: 2026-11-16
+canonical_url: http://danielcarda.net/javancss.html
 ---
 
 # JavaNCSS Metric Results
@@ -19,7 +19,7 @@ Packages
 
 **Packages sorted by NCSS.**
 
-Package Classes Methods NCSS Javadocs Javadoc lines Single lines comment Multi lines comment com.cardatechnologies.utils.validators.abaroutevalidator 2 9 55 6 79 8 109 com.cardatechnologies.utils.validators.abaroutevalidator.exceptions 1 3 15 4 35 0 27 Classes total Methods total NCSS total Javadocs Javadoc lines Single lines comment Multi lines comment 3 12 70 10 114 8 136 
+Package Classes Methods NCSS Javadocs Javadoc lines Single lines comment Multi lines comment net.danielcarda.utils.validators.abaroutevalidator 2 9 55 6 79 8 109 net.danielcarda.utils.validators.abaroutevalidator.exceptions 1 3 15 4 35 0 27 Classes total Methods total NCSS total Javadocs Javadoc lines Single lines comment Multi lines comment 3 12 70 10 114 8 136 
 
 # Objects
 
@@ -29,11 +29,11 @@ Objects
 
 **TOP 30 classes containing the most NCSS.**
 
-Object NCSS Methods Classes Javadocs [com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator](./xref/com/cardatechnologies/utils/validators/abaroutevalidator/AbaRouteValidator.html) 39 5 0 5 [com.cardatechnologies.utils.validators.abaroutevalidator.ErrorCodes](./xref/com/cardatechnologies/utils/validators/abaroutevalidator/ErrorCodes.html) 13 4 0 1 [com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException](./xref/com/cardatechnologies/utils/validators/abaroutevalidator/exceptions/AbaRouteValidationException.html) 11 3 0 4 
+Object NCSS Methods Classes Javadocs [net.danielcarda.utils.validators.abaroutevalidator.AbaRouteValidator](./xref/net/danielcarda/utils/validators/abaroutevalidator/AbaRouteValidator.html) 39 5 0 5 [net.danielcarda.utils.validators.abaroutevalidator.ErrorCodes](./xref/net/danielcarda/utils/validators/abaroutevalidator/ErrorCodes.html) 13 4 0 1 [net.danielcarda.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException](./xref/net/danielcarda/utils/validators/abaroutevalidator/exceptions/AbaRouteValidationException.html) 11 3 0 4 
 
 **TOP 30 classes containing the most methods.**
 
-Object NCSS Methods Classes Javadocs [com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator](./xref/com/cardatechnologies/utils/validators/abaroutevalidator/AbaRouteValidator.html) 39 5 0 5 [com.cardatechnologies.utils.validators.abaroutevalidator.ErrorCodes](./xref/com/cardatechnologies/utils/validators/abaroutevalidator/ErrorCodes.html) 13 4 0 1 [com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException](./xref/com/cardatechnologies/utils/validators/abaroutevalidator/exceptions/AbaRouteValidationException.html) 11 3 0 4 
+Object NCSS Methods Classes Javadocs [net.danielcarda.utils.validators.abaroutevalidator.AbaRouteValidator](./xref/net/danielcarda/utils/validators/abaroutevalidator/AbaRouteValidator.html) 39 5 0 5 [net.danielcarda.utils.validators.abaroutevalidator.ErrorCodes](./xref/net/danielcarda/utils/validators/abaroutevalidator/ErrorCodes.html) 13 4 0 1 [net.danielcarda.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException](./xref/net/danielcarda/utils/validators/abaroutevalidator/exceptions/AbaRouteValidationException.html) 11 3 0 4 
 
 **Averages.**
 
@@ -47,7 +47,7 @@ Methods
 
 **TOP 30 Methods containing the most NCSS.**
 
-Methods NCSS CCN Javadocs [com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.validate(String)](./xref/com/cardatechnologies/utils/validators/abaroutevalidator/AbaRouteValidator.html) 13 11 1 [com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.isAsciiDigits(String)](./xref/com/cardatechnologies/utils/validators/abaroutevalidator/AbaRouteValidator.html) 6 5 1 [com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.validateAbaNumberChecksum(String)](./xref/com/cardatechnologies/utils/validators/abaroutevalidator/AbaRouteValidator.html) 5 2 1 [com.cardatechnologies.utils.validators.abaroutevalidator.ErrorCodes.fromErrorCode(int)](./xref/com/cardatechnologies/utils/validators/abaroutevalidator/ErrorCodes.html) 5 5 0 [com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.validateFedNumber(String)](./xref/com/cardatechnologies/utils/validators/abaroutevalidator/AbaRouteValidator.html) 4 9 1 [com.cardatechnologies.utils.validators.abaroutevalidator.ErrorCodes.ErrorCodes(int,String)](./xref/com/cardatechnologies/utils/validators/abaroutevalidator/ErrorCodes.html) 3 1 1 [com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException.AbaRouteValidationException(ErrorCodes)](./xref/com/cardatechnologies/utils/validators/abaroutevalidator/exceptions/AbaRouteValidationException.html) 3 1 1 [com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException.AbaRouteValidationException(ErrorCodes,Throwable)](./xref/com/cardatechnologies/utils/validators/abaroutevalidator/exceptions/AbaRouteValidationException.html) 3 1 1 [com.cardatechnologies.utils.validators.abaroutevalidator.ErrorCodes.getErrorCode()](./xref/com/cardatechnologies/utils/validators/abaroutevalidator/ErrorCodes.html) 2 1 0 [com.cardatechnologies.utils.validators.abaroutevalidator.ErrorCodes.getErrorMnemonic()](./xref/com/cardatechnologies/utils/validators/abaroutevalidator/ErrorCodes.html) 2 1 0 [com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException.getErrorCode()](./xref/com/cardatechnologies/utils/validators/abaroutevalidator/exceptions/AbaRouteValidationException.html) 2 1 1 [com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.AbaRouteValidator()](./xref/com/cardatechnologies/utils/validators/abaroutevalidator/AbaRouteValidator.html) 1 1 0 
+Methods NCSS CCN Javadocs [net.danielcarda.utils.validators.abaroutevalidator.AbaRouteValidator.validate(String)](./xref/net/danielcarda/utils/validators/abaroutevalidator/AbaRouteValidator.html) 13 11 1 [net.danielcarda.utils.validators.abaroutevalidator.AbaRouteValidator.isAsciiDigits(String)](./xref/net/danielcarda/utils/validators/abaroutevalidator/AbaRouteValidator.html) 6 5 1 [net.danielcarda.utils.validators.abaroutevalidator.AbaRouteValidator.validateAbaNumberChecksum(String)](./xref/net/danielcarda/utils/validators/abaroutevalidator/AbaRouteValidator.html) 5 2 1 [net.danielcarda.utils.validators.abaroutevalidator.ErrorCodes.fromErrorCode(int)](./xref/net/danielcarda/utils/validators/abaroutevalidator/ErrorCodes.html) 5 5 0 [net.danielcarda.utils.validators.abaroutevalidator.AbaRouteValidator.validateFedNumber(String)](./xref/net/danielcarda/utils/validators/abaroutevalidator/AbaRouteValidator.html) 4 9 1 [net.danielcarda.utils.validators.abaroutevalidator.ErrorCodes.ErrorCodes(int,String)](./xref/net/danielcarda/utils/validators/abaroutevalidator/ErrorCodes.html) 3 1 1 [net.danielcarda.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException.AbaRouteValidationException(ErrorCodes)](./xref/net/danielcarda/utils/validators/abaroutevalidator/exceptions/AbaRouteValidationException.html) 3 1 1 [net.danielcarda.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException.AbaRouteValidationException(ErrorCodes,Throwable)](./xref/net/danielcarda/utils/validators/abaroutevalidator/exceptions/AbaRouteValidationException.html) 3 1 1 [net.danielcarda.utils.validators.abaroutevalidator.ErrorCodes.getErrorCode()](./xref/net/danielcarda/utils/validators/abaroutevalidator/ErrorCodes.html) 2 1 0 [net.danielcarda.utils.validators.abaroutevalidator.ErrorCodes.getErrorMnemonic()](./xref/net/danielcarda/utils/validators/abaroutevalidator/ErrorCodes.html) 2 1 0 [net.danielcarda.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException.getErrorCode()](./xref/net/danielcarda/utils/validators/abaroutevalidator/exceptions/AbaRouteValidationException.html) 2 1 1 [net.danielcarda.utils.validators.abaroutevalidator.AbaRouteValidator.AbaRouteValidator()](./xref/net/danielcarda/utils/validators/abaroutevalidator/AbaRouteValidator.html) 1 1 0 
 
 **Averages.**
 

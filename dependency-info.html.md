@@ -1,7 +1,7 @@
 ---
-date_published: 2026-11-08
-date_modified: 2026-11-08
-canonical_url: http://cardatechnologies.com/dependency-info.html
+date_published: 2026-11-16
+date_modified: 2026-11-16
+canonical_url: http://danielcarda.net/dependency-info.html
 ---
 
 # Maven Coordinates
@@ -10,16 +10,16 @@ canonical_url: http://cardatechnologies.com/dependency-info.html
 
 ```
 <dependency>
-  <groupId>com.cardatechnologies</groupId>
+  <groupId>net.danielcarda</groupId>
   <artifactId>aba.routing.transit.validator</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3-SNAPSHOT</version>
 </dependency>
 ```
 
 ## Apache Ivy
 
 ```
-<dependency org="com.cardatechnologies" name="aba.routing.transit.validator" rev="1.0.2">
+<dependency org="net.danielcarda" name="aba.routing.transit.validator" rev="1.0.3-SNAPSHOT">
   <artifact name="aba.routing.transit.validator" type="jar" />
 </dependency>
 ```
@@ -28,24 +28,24 @@ canonical_url: http://cardatechnologies.com/dependency-info.html
 
 ```
 @Grapes(
-@Grab(group='com.cardatechnologies', module='aba.routing.transit.validator', version='1.0.2')
+@Grab(group='net.danielcarda', module='aba.routing.transit.validator', version='1.0.3-SNAPSHOT')
 )
 ```
 
 ## Gradle/Grails
 
 ```
-implementation 'com.cardatechnologies:aba.routing.transit.validator:1.0.2'
+implementation 'net.danielcarda:aba.routing.transit.validator:1.0.3-SNAPSHOT'
 ```
 
 ## Scala SBT
 
 ```
-libraryDependencies += "com.cardatechnologies" % "aba.routing.transit.validator" % "1.0.2"
+libraryDependencies += "net.danielcarda" % "aba.routing.transit.validator" % "1.0.3-SNAPSHOT"
 ```
 
 ## Leiningen
 
 ```
-[com.cardatechnologies/aba.routing.transit.validator "1.0.2"]
+[net.danielcarda/aba.routing.transit.validator "1.0.3-SNAPSHOT"]
 ```

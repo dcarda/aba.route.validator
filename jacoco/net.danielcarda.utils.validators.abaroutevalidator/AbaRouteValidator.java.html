@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AbaRouteValidator.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ABA Validator</a> &gt; <a href="index.source.html" class="el_package">net.danielcarda.utils.validators.abaroutevalidator</a> &gt; <span class="el_source">AbaRouteValidator.java</span></div><h1>AbaRouteValidator.java</h1><pre class="source lang-java linenums">/* ---------------------------------------------------------------------------------------
+ * Class:  net.danielcarda.utils.validators.abaroutevalidator.AbaRouteValidator.java
+ * Date:   2026/11/07
+ * ---------------------------------------------------------------------------------------
+ * Copyright (c) 2026 Daniel Carda
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ * ---------------------------------------------------------------------------------------
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at:
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * ---------------------------------------------------------------------------------------
+ */
+package net.danielcarda.utils.validators.abaroutevalidator;
+
+//~--- non-JDK imports --------------------------------------------------------
+
+import net.danielcarda.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException;
+
+/**
+ * &lt;b&gt;Description:&lt;/b&gt;&lt;br&gt;
+ *     This class is used to validate a ABA Routing Transit Number.
+ *
+ * @author     Daniel Carda
+ * &lt;br&gt;
+ * &lt;br&gt;&lt;b&gt;Maintenance History:&lt;/b&gt;
+ * &lt;br&gt;
+&lt;pre&gt;
+    yyyy mm dd  Who                       Description
+    ----------  ------------------------  ----------------------------------------------------
+    2015/02/11  Daniel Carda              Initial Module Creation...
+    2020/12/23  Daniel Carda              Started using and ENum for error content.
+    2020/12/24  Daniel Carda              Optimized algorithms.
+    2021/08/01  Daniel Carda              Improved Class Javadocs
+    2026/09/17  Daniel Carda              Updated code.  New Class Header.
+&lt;/pre&gt;
+ * &lt;hr&gt;
+ */
+public final class AbaRouteValidator {
+
+    private static final int FED_NUMBER_GOV_0        =  0;
+    private static final int FED_NUMBER_GOV_12       = 12;
+    private static final int FED_NUMBER_THRIFT_21    = 21;
+    private static final int FED_NUMBER_THRIFT_32    = 32;
+    private static final int FED_NUMBER_CLEARING_61  = 61;
+    private static final int FED_NUMBER_CLEARNING_72 = 72;
+    private static final int FED_NUMBER_TRAVELERS_80 = 80;
+
+    private static final int ABA_LENGTH = 9;
+<span class="fc" id="L59">    private static final int[] CHECKSUM_WEIGHTS = { 3, 7, 1 };</span>
+
+    private AbaRouteValidator() {
+        // Utility class.
+    }
+
+    /**
+     * Method: validate
+     * &lt;p&gt;
+     * &lt;b&gt;Description:&lt;/b&gt;&lt;br&gt;
+     * Validates an ABA Routing Transit Number.
+     *
+     * @param routingNumber
+     *        The ABA Routing Transit Number to validate.
+     *
+     * @return true if the routing number passes all validation checks;
+     *         false if the checksum is invalid.
+     *
+     * @throws AbaRouteValidationException
+     *         If the routing number is null, blank, has an invalid length,
+     *         contains non-ASCII digits, or has an invalid Federal Reserve prefix.
+     */
+
+    public static boolean validate(final String routingNumber)
+            throws AbaRouteValidationException {
+
+<span class="fc bfc" id="L85" title="All 2 branches covered.">        if (routingNumber == null) {</span>
+<span class="fc" id="L86">            throw new AbaRouteValidationException(</span>
+                    ErrorCodes.ABA_1000);
+        }
+
+<span class="fc bfc" id="L90" title="All 2 branches covered.">        if (routingNumber.isBlank()) {</span>
+<span class="fc" id="L91">            throw new AbaRouteValidationException(ErrorCodes.ABA_1001);</span>
+        }
+
+<span class="fc bfc" id="L94" title="All 2 branches covered.">        if (routingNumber.length() != ABA_LENGTH) {</span>
+<span class="fc bfc" id="L95" title="All 2 branches covered.">            if (routingNumber.length() &lt; ABA_LENGTH) {</span>
+<span class="fc" id="L96">                throw new AbaRouteValidationException(ErrorCodes.ABA_1002);</span>
+            }
+
+<span class="fc" id="L99">            throw new AbaRouteValidationException(ErrorCodes.ABA_1003);</span>
+        }
+
+<span class="fc bfc" id="L102" title="All 2 branches covered.">        if (!isAsciiDigits(routingNumber)) {</span>
+<span class="fc" id="L103">            throw new AbaRouteValidationException(ErrorCodes.ABA_1004);</span>
+        }
+
+<span class="fc" id="L106">        validateFedNumber(routingNumber);</span>
+
+<span class="fc" id="L108">        return validateAbaNumberChecksum(routingNumber);</span>
+    }
+
+    /**
+     * Method: validateAbaNumberChecksum
+     * &lt;p&gt;
+     * &lt;b&gt;Description:&lt;/b&gt;&lt;br&gt;
+     * Validates the ABA routing number checksum.
+     *
+     * @param routingNumber
+     *        The nine-digit ABA Routing Transit Number to check.
+     *
+     * @return true if the checksum is valid; false otherwise.
+     */
+    private static boolean validateAbaNumberChecksum(
+            final String routingNumber) {
+<span class="fc" id="L124">        int checksum = 0;</span>
+<span class="fc bfc" id="L125" title="All 2 branches covered.">        for (int i = 0; i &lt; ABA_LENGTH; i++) {</span>
+<span class="fc" id="L126">            checksum +=</span>
+<span class="fc" id="L127">                    (routingNumber.charAt(i) - '0')</span>
+                            * CHECKSUM_WEIGHTS[i % CHECKSUM_WEIGHTS.length];
+        }
+
+<span class="fc bfc" id="L131" title="All 2 branches covered.">        return checksum % 10 == 0;</span>
+    }
+
+    /**
+     * Method: isAsciiDigits
+     * &lt;p&gt;
+     * &lt;b&gt;Description:&lt;/b&gt;&lt;br&gt;
+     * Determines whether every character in the supplied string
+     * is an ASCII digit.
+     *
+     * @param value
+     *        The string to examine.
+     *
+     * @return true if every character is an ASCII digit; false otherwise.
+     */
+    private static boolean isAsciiDigits(final String value) {
+
+<span class="fc bfc" id="L148" title="All 2 branches covered.">        for (int i = 0; i &lt; value.length(); i++) {</span>
+<span class="fc" id="L149">            final char c = value.charAt(i);</span>
+
+<span class="fc bfc" id="L151" title="All 4 branches covered.">            if (c &lt; '0' || c &gt; '9') {</span>
+<span class="fc" id="L152">                return false;</span>
+            }
+        }
+
+<span class="fc" id="L156">        return true;</span>
+    }
+
+    /**
+     * Method: validateFedNumber
+     * &lt;p&gt;
+     * &lt;b&gt;Description:&lt;/b&gt;&lt;br&gt;
+     * Validates the Federal Reserve routing prefix represented
+     * by the first two digits of the routing number.
+     *
+     * @param routingNumber
+     *        The nine-digit ABA Routing Transit Number.
+     *
+     * @throws AbaRouteValidationException
+     *         If the Federal Reserve prefix is invalid.
+     */
+    private static void validateFedNumber(final String routingNumber)
+            throws AbaRouteValidationException {
+
+<span class="fc" id="L175">        final int fedNumber =</span>
+<span class="fc" id="L176">                (routingNumber.charAt(0) - '0') * 10</span>
+<span class="fc" id="L177">                        + (routingNumber.charAt(1) - '0');</span>
+
+        // https://en.wikipedia.org/wiki/Routing_transit_number
+        // The first two digits of the nine digit RTN must be in the ranges
+        // 00 through 12,  00=Gobermint, and 12 Federal Reserve Banks
+        // 21 through 32,  Thrift Institutions
+        // 61 through 72,  Payment Processors and Clearing Houses
+        // 80.             Traveler's checks
+<span class="pc bpc" id="L185" title="5 of 14 branches missed.">        if (!((fedNumber &gt;= FED_NUMBER_GOV_0 &amp;&amp; fedNumber &lt;= FED_NUMBER_GOV_12)</span>
+                || (fedNumber &gt;= FED_NUMBER_THRIFT_21 &amp;&amp; fedNumber &lt;= FED_NUMBER_THRIFT_32)
+                || (fedNumber &gt;= FED_NUMBER_CLEARING_61 &amp;&amp; fedNumber &lt;= FED_NUMBER_CLEARNING_72)
+                || fedNumber == FED_NUMBER_TRAVELERS_80)) {
+<span class="fc" id="L189">            throw new AbaRouteValidationException(ErrorCodes.ABA_1005);</span>
+        }
+<span class="fc" id="L191">    }</span>
+}
+/* ---------------------------------------------------------------------------------------
+ * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.java
+ * Date:   2026/11/07
+ * --------------------------------------------------------------------------------------- */
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.16.202610240946</span></div></body></html>

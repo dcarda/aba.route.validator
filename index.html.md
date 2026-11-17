@@ -1,30 +1,62 @@
 ---
-date_published: 2026-11-08
-date_modified: 2026-11-08
-canonical_url: http://cardatechnologies.com/index.html
+date_published: 2026-11-16
+date_modified: 2026-11-16
+canonical_url: http://danielcarda.net/index.html
 ---
 
-## ABA Routing Number Validator
-
-This module provides a validator which will run a few checks on an ABA routing transit number (ABA RTN) just to make sure it *might* be authentic.
-
----
-
-# Table of contents
-
-1. [Basic Overview](#overview)
-2. [Technolog Stack](#techstack)
-3. [Another paragraph](#paragraph2)
+# 
 
 ---
 
-This module provides a validator which will run a few checks on an ABA routing transit number (ABA RTN) just to make sure it *might* be authentic.
+ABA Routing Validator
 
-Basically, there are a few rules in constructing a ABA number and this module will try and check to see if those rules have been applied correctly.
+**A lightweight Java library for validating ABA Routing Transit Numbers (RTNs).**
 
-The ABA routing transit number (ABA RTN) is a nine-digit code used in the United States to identify a financial institution. All financial institutions in the United States will have at least one ABA RTN number. The ABA routing transit number was created in 1910 by the American Bankers Association.
+Copyright © 2026 Carda Technologies, LLC.
 
-The number is used by the Federal Reserve Banks to process Fedwire fund transfers. It is also used by the Automated Clearing Houses to process automated transfers, bill payments, and deposits.
+[License: Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+
+## 
+
+---
+
+🚩 Table of Contents
+
+- [⚡️Overview](#overview)
+- [🚀 Features](#-features)
+- [👨 Technology Stack](#-technology-stack)
+- [⚙️ Installation](#-installation) 
+  
+    - [Maven](#maven)
+- [🏗️ Build Instructions](#-build-instructions) 
+  
+    - [Build With Tests](#build-with-tests)
+    - [Build With Metrics Reports](#build-with-metrics-reports)
+    - [Build Only The Jar Artifact](#build-only-the-jar-artifact)
+- [✅ Code Metrics Reports](#-code-metrics-reports)
+- [🎨 Usage](#-usage)
+- [🔧 Validation Results](#-validation-results)
+- [🔧 Validation Checks](#-validation-checks)
+- [🧐 Federal Reserve Routing Prefixes](#-federal-reserve-routing-prefixes)
+- [🧩 Error Codes](#-error-codes) 
+  
+    - [Exception Handling](#exception-handling)
+    - [Error Code Lookup](#error-code-lookup)
+- [🚧 Limitations](#-limitations)
+- [📝 API Documentation](#-api-documentation)
+- [⚠️ Copyright and License](#-copyright-and-license)
+- [👋 About the Developer](#-about-the-developer)
+- [🤝 Contributing](#-contributing)
+
+## 
+
+---
+
+⚡️Overview
+
+ABA Routing Validator is a lightweight Java library developed by Carda Technologies, LLC, for validating American Bankers Association (ABA) Routing Transit Numbers.
+
+The library performs structural, Federal Reserve prefix, and checksum validation to help Java applications identify invalid routing numbers.
 
 The ABA RTN number can usually (but not always) be found on the bottom left-hand corner of your personal check. The last digit of the ABA number is actually called a “checksum digit”. It's a crude hash of the first eight digits and provides an initial check for the numbers authenticity.
 
@@ -32,91 +64,305 @@ The ABA RTN number can usually (but not always) be found on the bottom left-hand
 
 More information about the ABA routing transit number can be found in the Book of Knowledge: [http://en.wikipedia.org/wiki/Routing_transit_number](http://en.wikipedia.org/wiki/Routing_transit_number)
 
+## 
+
 ---
 
-## [Technology Stack](#technology-stack)
+🚀 Features
+
+- Validates nine-digit ABA Routing Transit Numbers.
+- Rejects null and blank input.
+- Validates routing number length.
+- Requires ASCII numeric digits (`0–9`).
+- Validates Federal Reserve routing prefixes.
+- Performs the ABA checksum calculation using repeating weights of `3, 7, 1`.
+- Provides consistent validation error codes.
+- Provides descriptive error mnemonics.
+- Supports exception handling with numeric error code retrieval.
+- Lightweight implementation using a static utility class.
+
+## 
+
+---
+
+👨 Technology Stack
 
 The following software is required to build this project:
 
 | Software | Version | Download |
 | --- | --- | --- |
 | ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) | 17.0.9 | [https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html) |
-| ![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white) | 3.9.6 | [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi) |
+| ![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white) | 3.9.16 | [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi) |
+
+## 
 
 ---
 
-## Social Media
+⚙️ Installation
 
-| Media | Address |
+### Maven
+
+Add the following dependency to your project's `pom.xml`:
+
+```xml
+<dependency>
+    <groupId>com.cardatechnologies</groupId>
+    <artifactId>aba-route-validator</artifactId>
+    <version>VERSION</version>
+</dependency>
+```
+
+Replace `VERSION` with the desired release version.
+
+## 
+
+---
+
+🏗️ Build Instructions
+
+The POM actually has several build targets.
+
+### Build With Tests
+
+This is the default and the one you will probably run the most.
+
+This will compile the Jar artifact, and run the JaCoCo and Spotbugs reports.
+
+```bash
+    mvn clean install
+```
+
+### Build With Metrics Reports
+
+This will generate the complete suite of metrics reports.
+
+```bash
+    mvn -P genReports clean install site
+```
+
+### Build Only The Jar Artifact
+
+This will generate the final build artifact and nothing else.
+
+```bash
+   mvn -P jar-only clean install-DskipTests
+```
+
+---
+
+## ✅ Code Metrics Reports
+
+Maven site reports are human-readable documentation and analysis pages generated automatically during the project's site lifecycle (triggered by the mvn site command) using the Apache Maven Site Plugin and configured reporting plugins.
+
+The current list of reports includes:
+
+- [Checkstyle Report](https://dcarda.github.io/aba.route.validator/checkstyle.html)
+- [CPD (Copy/Paste) Report](https://dcarda.github.io/aba.route.validator/cpd.html)
+- [JaCoCo (Code Coverage) Report](https://dcarda.github.io/aba.route.validator/jacoco-report.html)
+- [JavaDocs Report](https://dcarda.github.io/aba.route.validator/javadoc-report.html)
+- [JavaNCSS Report](https://dcarda.github.io/aba.route.validator/javancss.html)
+- [JDepend Report](https://dcarda.github.io/aba.route.validator/jdepend-report.html)
+- [XRef Report](https://dcarda.github.io/aba.route.validator/xref-report.html)
+- [PMD Report](https://dcarda.github.io/aba.route.validator/pmd.html)
+- [SpotBugs Report](https://dcarda.github.io/aba.route.validator/spotbugs.html)
+- [Surefire Report](https://dcarda.github.io/aba.route.validator/surefire.html)
+- [Tag List (Todo List) Report](https://dcarda.github.io/aba.route.validator/taglist.html)
+
+The reporting site be located [here](https://dcarda.github.io/aba.route.validator/).
+
+## 
+
+---
+
+🎨 Usage
+
+The validator provides a static validation method.
+
+```java
+import net.danielcarda.utils.validators.abaroutevalidator.AbaRouteValidator;
+import exceptions.net.danielcarda.utils.validators.abaroutevalidator.AbaRouteValidationException;
+
+public class Example {
+
+    public static void main(String[] args) {
+
+        String routingNumber = "021000021";
+
+        try {
+            boolean valid = AbaRouteValidator.validate(routingNumber);
+
+            if (valid) {
+                System.out.println("Valid ABA routing number.");
+            } else {
+                System.out.println("Invalid ABA checksum.");
+            }
+
+        } catch (AbaRouteValidationException e) {
+
+            System.out.println("Validation Error: " + e.getMessage());
+            System.out.println("Error Code: " + e.getErrorCode());
+        }
+    }
+}
+```
+
+## 
+
+---
+
+🔧 Validation Results
+
+The `validate()` method returns a boolean when structural and Federal Reserve prefix validation succeeds.
+
+| Result | Meaning |
 | --- | --- |
-| ![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white) | [https://www.linkedin.com/in/danielcarda/](https://www.linkedin.com/in/danielcarda/) |
-| ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) | [https://github.com/dcarda](https://github.com/dcarda) |
-| ![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white) | [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi) |
+| `true` | The routing number passes all validation checks. |
+| `false` | The routing number has an invalid checksum. |
+| Exception | The input is null, blank, incorrectly sized, contains non-ASCII digits, or has an invalid Federal Reserve prefix. |
 
-## Examples
+## 
 
---- 
+---
 
-The following is a rigious test and will validate an incoming ABA routing number.
+🔧 Validation Checks
 
-```nocode
-/**
- * This method will validate an incoming ABA Routing Transit Number.
- *
- * @param paramAbaNumber The ABA number to be validated.
- *
- * @return True if valid.  False if not valid.
- *
- * @throws AbaRouteValidationException Something went *really* wrong.
- */
-public boolean validateNumber( final String paramAbaNumber )
-        throws AbaRouteValidationException {
-    boolean _isValid;
+The validator performs the following checks:
 
-    // Static call to validate.
-    _isValid = AbaRouteValidator.validate( paramAbaNumber );
+1. Input must not be null.
+2. Input must not be blank.
+3. Input must contain exactly nine characters.
+4. All characters must be ASCII digits (`0–9`).
+5. The first two digits must represent an accepted Federal Reserve routing prefix.
+6. The ABA checksum must be valid.
 
-    // Return the result
-    return ( _isValid );
+## 
+
+---
+
+🧐 Federal Reserve Routing Prefixes
+
+The validator recognizes the following routing prefix ranges:
+
+| Prefix Range | Classification |
+| --- | --- |
+| `00–12` | Government and Federal Reserve |
+| `21–32` | Thrift institutions |
+| `61–72` | Payment processors and clearing houses |
+| `80` | Traveler's checks |
+
+## 
+
+---
+
+🧩 Error Codes
+
+The library defines the following validation error codes:
+
+| Error Code | Error Mnemonic | Description |
+| --- | --- | --- |
+| -1000 | `aba.number.null` | Routing number is null. |
+| -1001 | `aba.number.blank` | Routing number is blank. |
+| -1002 | `aba.number.length.too.short` | Routing number is too short. |
+| -1003 | `aba.number.length.too.long` | Routing number is too long. |
+| -1004 | `aba.number.contains.non.ascii.digits` | Routing number contains non-ASCII digits. |
+| -1005 | `aba.number.invalid.federal.reserve.prefix` | Invalid Federal Reserve prefix. |
+
+---
+
+### Exception Handling
+
+Validation errors are represented by `AbaRouteValidationException`, a checked exception.
+
+The exception provides:
+
+- `getErrorCode()` – Returns the numeric validation error code.
+- `getMessage()` – Returns the associated error mnemonic.
+
+Example:
+
+```java
+try {
+    AbaRouteValidator.validate(routingNumber);
+
+} catch (AbaRouteValidationException e) {
+
+    int errorCode = e.getErrorCode();
+    String message = e.getMessage();
 }
 ```
 
 ---
 
-## Copyright
+### Error Code Lookup
 
-(c) 2015-2024 Daniel Carda [CodeWarrior@CardaTechnologies.com](mailto:CodeWarrior@CardaTechnologies.com)  
-All rights reserved.
+The `ErrorCodes` enumeration provides a lookup method for retrieving an error enumeration by its numeric code.
 
----
-
-## License
-
-> ***[dcarda/aba.route.validator](https://github.com/dcarda/aba.route.validator)** is licensed under [MIT](https://choosealicense.com/licenses/mit/) © [Daniel Carda](https://danielcarda.net/) 2015-2024.*  
-> For information, see [TLDR Legal > MIT](https://tldrlegal.com/license/mit-license)
-
-This project is licensed under terms of the MIT license. 
-
-```nocode
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sub-license, and/or sell
-copies of the Software, and to permit persons to whom the Software is furnished
-to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included install
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
-INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANT ABILITY, FITNESS FOR A
-PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.This is how you dropdown.
+```java
+ErrorCodes error = ErrorCodes.fromErrorCode(-1002);
 ```
 
+An `IllegalArgumentException` is thrown if the supplied numeric error code is not recognized.
+
+## 
+
 ---
+
+🚧 Limitations
+
+Passing validation does not establish that:
+
+- A financial institution is currently operating.
+- A routing number is currently active or accepted.
+- A bank account exists.
+- A particular bank account belongs to a particular individual or organization.
+- A financial transaction can be successfully processed.
+
+Additional verification may be required depending on the intended application.
+
+## 
+
+---
+
+📝 API Documentation
+
+See the project Javadocs for complete API documentation.
+
+## 
+
+---
+
+⚠️ Copyright and License
+
+This software is free to use for personal, academic, commercial, or corporate projects.
+
+Copyright © 2015 Daniel Carda.   
+All Rights Reserved.  
+  
+This project is licensed under the [Apache License, Version 2.0](LICENSE) — see the [LICENSE](LICENSE) for the specific language governing permissions and limitations under the License.
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+By submitting a pull request to this project, you aggree to license your contribution under the Apache license version 2.0 to this project.
+
+## 
+
+---
+
+👋 About the Developer
+
+Follow this link to learn more about me:
+
+| Media | Address |
+| --- | --- |
+| ![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white) | [https://www.linkedin.com/in/danielcarda/](https://www.linkedin.com/in/danielcarda/) |
+| ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) | [https://github.com/dcarda](https://github.com/dcarda) |
+| ![](https://img.shields.io/badge/Independent-Developer-34495E?style=for-the-badge) | [https://danielcarda.net/](https://danielcarda.net/) |
+
+## 
+
+---
+
+🤝 Contributing
 
 Donations are always welcome! Help me out this this and other projects!
 
@@ -124,10 +370,7 @@ Donations are always welcome! Help me out this this and other projects!
 
 ---
 
-## About the Developer 👋
-
-Follow this link to learn more about me: [Daniel Carda](https://github.com/dcarda)
-
----
-
-*© [Daniel Carda](https://aliciasykes.com)20156-2024*\ *Licensed under [MIT](https://gist.github.com/Lissy93/143d2ee01ccc5c052a17)*
+*© [Daniel Carda](https://danielcarda.net/) 2015-2027*  
+*Licensed under [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/)*  
+[https://github.com/dcarda](https://github.com/dcarda)  
+Thanks for visiting :thumbsup:

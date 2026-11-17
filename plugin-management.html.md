@@ -1,7 +1,7 @@
 ---
-date_published: 2026-11-08
-date_modified: 2026-11-08
-canonical_url: http://cardatechnologies.com/plugin-management.html
+date_published: 2026-11-16
+date_modified: 2026-11-16
+canonical_url: http://danielcarda.net/plugin-management.html
 ---
 
 # Project Plugin Management
@@ -33,7 +33,6 @@ canonical_url: http://cardatechnologies.com/plugin-management.html
 | org.apache.maven.plugins | [maven-surefire-plugin](https://maven.apache.org/surefire/maven-surefire-plugin/) | 3.6.1 |
 | org.apache.maven.plugins | [maven-surefire-report-plugin](https://maven.apache.org/surefire/maven-surefire-report-plugin/) | 3.6.1 |
 | org.codehaus.mojo | [javancss-maven-plugin](http://mojo.codehaus.org/javancss-maven-plugin) | 2.1 |
-| org.codehaus.mojo | [license-maven-plugin](https://www.mojohaus.org/license-maven-plugin) | 2.7.1 |
 | org.codehaus.mojo | [taglist-maven-plugin](https://www.mojohaus.org/taglist-maven-plugin/) | 3.2.3 |
 | org.codehaus.mojo | [versions-maven-plugin](https://www.mojohaus.org/versions/versions-maven-plugin/) | 2.23.0 |
 | org.jacoco | [jacoco-maven-plugin](https://www.jacoco.org/jacoco/trunk/doc/maven.html) | 0.8.16 |

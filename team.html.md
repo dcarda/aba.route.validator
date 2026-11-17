@@ -1,7 +1,7 @@
 ---
-date_published: 2026-11-08
-date_modified: 2026-11-08
-canonical_url: http://cardatechnologies.com/team.html
+date_published: 2026-11-16
+date_modified: 2026-11-16
+canonical_url: http://danielcarda.net/team.html
 ---
 
 # Project Team
@@ -16,7 +16,7 @@ The following is a list of developers with commit privileges that have directly 
 
 | Image | Name | Email | URL | Roles | Time Zone |
 | --- | --- | --- | --- | --- | --- |
-| ![](https://www.gravatar.com/avatar/33261666300c9b012a659c36e0a2024c.jpg?d=blank&s=60) | Daniel Carda | [GoneBy2025@CardaTechnologies.com](mailto:GoneBy2025@CardaTechnologies.com) | [http://danielcarda.net/](http://danielcarda.net/) | Architect, Developer, Tester | America/Denver |
+| ![](https://www.gravatar.com/avatar/290da01a7b2b8f072b27b64929035a95.jpg?d=blank&s=60) | Daniel Carda | [Projects@DanielCarda.net](mailto:Projects@DanielCarda.net) | [http://danielcarda.net/](http://danielcarda.net/) | Architect, Developer, Tester | America/Denver |
 
 ## Contributors
 
@@ -24,4 +24,4 @@ The following additional people have contributed to this project through the way
 
 | Image | Name | Email | URL | Roles | Time Zone |
 | --- | --- | --- | --- | --- | --- |
-| ![](https://www.gravatar.com/avatar/33261666300c9b012a659c36e0a2024c.jpg?d=blank&s=60) | Daniel Carda | [GoneBy2025@CardaTechnologies.com](mailto:GoneBy2025@CardaTechnologies.com) | [http://danielcarda.net/](http://danielcarda.net/) | Architect, Developer, Tester | America/Denver |
+| ![](https://www.gravatar.com/avatar/290da01a7b2b8f072b27b64929035a95.jpg?d=blank&s=60) | Daniel Carda | [Projects@DanielCarda.net](mailto:Projects@DanielCarda.net) | [http://danielcarda.net/](http://danielcarda.net/) | Architect, Developer, Tester | America/Denver |

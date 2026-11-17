@@ -1,15 +1,18 @@
 ---
-date_published: 2026-11-08
-date_modified: 2026-11-08
-canonical_url: http://cardatechnologies.com/copyright.html
+date_published: 2026-11-16
+date_modified: 2026-11-16
+canonical_url: http://danielcarda.net/copyright.html
 ---
 
 ## Copyright and License
 
-Copyright 2015 Daniel Carda
+This software is free to use for personal, academic, commercial, or corporate projects.
 
-Licensed under the Apache License, Version 2.0 (the “License”); you may not use this work except in compliance with the License. You may obtain a copy of the License in the LICENSE file, or at:
+Copyright © 2015 Daniel Carda.   
+All Rights Reserved.  
+  
+This project is licensed under the [Apache License, Version 2.0](LICENSE) — see the [LICENSE](LICENSE) for the specific language governing permissions and limitations under the License.
 
-[https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0)
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+By submitting a pull request to this project, you aggree to license your contribution under the Apache license version 2.0 to this project.

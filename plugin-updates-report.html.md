@@ -1,7 +1,7 @@
 ---
-date_published: 2026-11-08
-date_modified: 2026-11-08
-canonical_url: http://cardatechnologies.com/plugin-updates-report.html
+date_published: 2026-11-16
+date_modified: 2026-11-16
+canonical_url: http://danielcarda.net/plugin-updates-report.html
 ---
 
 # Overview
@@ -14,7 +14,7 @@ This report summarizes newer versions that may be available for your project's v
 |  | # of plugins where the next version available is an incremental version update | 0 |
 |  | # of plugins where the next version available is a minor version update | 3 |
 |  | # of plugins where the next version available is a major version update | 9 |
-|  | # of plugins where a dependencies section containes a dependency with an updated version | 1 |
+|  | # of plugins where a dependencies section containes a dependency with an updated version | 2 |
 
 ## Plugin Management
 
@@ -38,16 +38,15 @@ This report summarizes newer versions that may be available for your project's v
 |  | org.apache.maven.plugins | maven-javadoc-plugin | **3.12.0** |  |  |  |  |  |
 |  | org.apache.maven.plugins | maven-jxr-plugin | **3.6.0** |  |  |  |  |  |
 |  | org.apache.maven.plugins | maven-plugin-plugin | 3.16.0 |  |  |  | **4.0.0-beta-2** |  |
-|  | org.apache.maven.plugins | maven-pmd-plugin | **3.28.0** |  |  |  |  |  |
+|  | org.apache.maven.plugins | maven-pmd-plugin | 3.28.0 |  |  |  |  |  |
 |  | org.apache.maven.plugins | maven-release-plugin | **3.3.1** |  |  |  |  |  |
 |  | org.apache.maven.plugins | maven-resources-plugin | 3.5.0 |  |  |  | **4.0.0-beta-2** |  |
 |  | org.apache.maven.plugins | maven-site-plugin | 3.22.0 |  |  |  | **4.0.0-M16** |  |
 |  | org.apache.maven.plugins | maven-surefire-plugin | **3.6.1** |  |  |  |  |  |
 |  | org.apache.maven.plugins | maven-surefire-report-plugin | **3.6.1** |  |  |  |  |  |
 |  | org.codehaus.mojo | javancss-maven-plugin | **2.1** |  |  |  |  |  |
-|  | org.codehaus.mojo | license-maven-plugin | 2.7.1 |  |  | **2.8.0** |  |  |
 |  | org.codehaus.mojo | taglist-maven-plugin | 3.2.3 |  |  | **3.3.0** |  |  |
-|  | org.codehaus.mojo | versions-maven-plugin | 2.23.0 |  |  | **2.24.0** |  |  |
+|  | org.codehaus.mojo | versions-maven-plugin | 2.23.0 |  |  | **2.25.2** |  |  |
 |  | org.jacoco | jacoco-maven-plugin | **0.8.16** |  |  |  |  |  |
 
 ## Plugins
@@ -58,6 +57,7 @@ This report summarizes newer versions that may be available for your project's v
 |  | org.apache.maven.plugins | maven-project-info-reports-plugin | **3.9.0** |  |  |  |  |  |
 |  | org.apache.maven.plugins | maven-scm-plugin | **2.2.1** |  |  |  |  |  |
 |  | org.codehaus.mojo | jdepend-maven-plugin | **2.2.1** |  |  |  |  |  |
+|  | org.codehaus.mojo | license-maven-plugin | 2.7.1 |  |  | **2.9.0** |  |  |
 
 # Plugin Updates
 
@@ -213,6 +213,47 @@ This report summarizes newer versions that may be available for your project's v
 | Current Version | 3.28.0 |
 | --- | --- |
 
+### Dependencies of org.apache.maven.plugins:maven-pmd-plugin
+
+| Status | Group Id | Artifact Id | Current Version | Classifier | Type | Latest Subincremental | Latest Incremental | Latest Minor | Latest Major | Dependency status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | net.sourceforge.pmd | pmd-apex | 7.28.0 |  | jar |  |  | **7.29.0** |  |
+|  | net.sourceforge.pmd | pmd-core | 7.28.0 |  | jar |  |  | **7.29.0** |  |
+|  | net.sourceforge.pmd | pmd-java | 7.28.0 |  | jar |  |  | **7.29.0** |  |
+|  | net.sourceforge.pmd | pmd-javascript | 7.28.0 |  | jar |  |  | **7.29.0** |  |
+|  | net.sourceforge.pmd | pmd-jsp | 7.28.0 |  | jar |  |  | **7.29.0** |  |
+|  | net.sourceforge.pmd | pmd-visualforce | 7.28.0 |  | jar |  |  | **7.29.0** |  |
+
+### Dependency net.sourceforge.pmd:pmd-apex
+
+| Newer versions | **7.29.0** *Latest Minor* |
+| --- | --- |
+
+### Dependency net.sourceforge.pmd:pmd-core
+
+| Newer versions | **7.29.0** *Latest Minor* |
+| --- | --- |
+
+### Dependency net.sourceforge.pmd:pmd-java
+
+| Newer versions | **7.29.0** *Latest Minor* |
+| --- | --- |
+
+### Dependency net.sourceforge.pmd:pmd-javascript
+
+| Newer versions | **7.29.0** *Latest Minor* |
+| --- | --- |
+
+### Dependency net.sourceforge.pmd:pmd-jsp
+
+| Newer versions | **7.29.0** *Latest Minor* |
+| --- | --- |
+
+### Dependency net.sourceforge.pmd:pmd-visualforce
+
+| Newer versions | **7.29.0** *Latest Minor* |
+| --- | --- |
+
 ## Plugin org.apache.maven.plugins:maven-project-info-reports-plugin
 
 | Current Version | 3.9.0 |
@@ -271,7 +312,7 @@ This report summarizes newer versions that may be available for your project's v
 
 ## Plugin org.codehaus.mojo:license-maven-plugin
 
-| Newer versions | **2.8.0** *Latest Minor* |
+| Newer versions | 2.8.0 **2.9.0** *Latest Minor* |
 | --- | --- |
 
 ## Plugin org.codehaus.mojo:taglist-maven-plugin
@@ -281,7 +322,7 @@ This report summarizes newer versions that may be available for your project's v
 
 ## Plugin org.codehaus.mojo:versions-maven-plugin
 
-| Newer versions | **2.24.0** *Latest Minor* |
+| Newer versions | 2.24.0 2.25.0 2.25.1 **2.25.2** *Latest Minor* |
 | --- | --- |
 
 ## Plugin org.jacoco:jacoco-maven-plugin
