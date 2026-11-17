@@ -1612,6 +1612,14 @@
                                 ${project.build.directory}/checkstyle-cachefile
                             </cacheFile>
                         </configuration>
+                        <reportSets>
+                            <reportSet>
+                                <reports>
+                                    <report>checkstyle</report>
+                                </reports>
+                            </reportSet>
+                        </reportSets>
+
                     </plugin>
 
 <!--                    <plugin>-->
