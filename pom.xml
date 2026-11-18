@@ -1611,6 +1611,11 @@
                             <cacheFile>
                                 ${project.build.directory}/checkstyle-cachefile
                             </cacheFile>
+
+                            <configLocation>${project.build.testOutputDirectory}/checkstyle/java-checkstyle.xml</configLocation>
+                            <propertyExpansion>basedir=${project.build.directory}</propertyExpansion>
+
+
                         </configuration>
                         <reportSets>
                             <reportSet>
@@ -1627,9 +1632,6 @@
 <!--                        <artifactId>maven-checkstyle-plugin</artifactId>-->
 <!--                        <configuration>-->
 
-<!--&lt;!&ndash;                            <cacheFile>&ndash;&gt;-->
-<!--&lt;!&ndash;                                ${project.build.directory}/checkstyle-cachefile&ndash;&gt;-->
-<!--&lt;!&ndash;                            </cacheFile>&ndash;&gt;-->
 
 <!--                             <configLocation>${project.build.testOutputDirectory}/checkstyle/java-checkstyle.xml</configLocation>-->
 <!--&lt;!&ndash;                            <consoleOutput>true</consoleOutput>&ndash;&gt;-->
