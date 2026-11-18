@@ -1154,30 +1154,28 @@
                                     ${project.build.directory}/checkstyle-cachefile
                                 </cacheFile>
 
-<!--                                <cacheFile>-->
-<!--                                    ${project.build.directory}/checkstyle-cachefile-->
-<!--                                </cacheFile>-->
-<!--                                <configLocation>${project.basedir}/src/test/resources/checkstyle/checkstyle.xml</configLocation>-->
-<!--                                <consoleOutput>true</consoleOutput>-->
-<!--                                <failOnViolation>false</failOnViolation>-->
-<!--                                <includeResources>false</includeResources>-->
-<!--                                <includeTestSourceDirectory>false</includeTestSourceDirectory>-->
-<!--                                <logViolationsToConsole>true</logViolationsToConsole>-->
-<!--                                <outputFileFormat>xml</outputFileFormat>-->
-<!--                                <propertyExpansion>basedir=${project.basedir}</propertyExpansion>-->
+
+                                <configLocation>${project.basedir}/src/test/resources/checkstyle/checkstyle.xml</configLocation>
+                                <consoleOutput>true</consoleOutput>
+                                <failOnViolation>false</failOnViolation>
+                                <includeResources>false</includeResources>
+                                <includeTestSourceDirectory>false</includeTestSourceDirectory>
+                                <logViolationsToConsole>true</logViolationsToConsole>
+                                <outputFileFormat>xml</outputFileFormat>
+                                <propertyExpansion>basedir=${project.basedir}</propertyExpansion>
                             </configuration>
-<!--                            <dependencies>-->
-<!--                                <dependency>-->
-<!--                                    <groupId>com.puppycrawl.tools</groupId>-->
-<!--                                    <artifactId>checkstyle</artifactId>-->
-<!--                                    <version>${version.checkstyle.puppycrawl.tools}</version>-->
-<!--                                </dependency>-->
-<!--                                <dependency>-->
-<!--                                    <groupId>com.github.sevntu-checkstyle</groupId>-->
-<!--                                    <artifactId>sevntu-checks</artifactId>-->
-<!--                                    <version>${version.checkstyle.github.sevntu-checks}</version>-->
-<!--                                </dependency>-->
-<!--                            </dependencies>-->
+                            <dependencies>
+                                <dependency>
+                                    <groupId>com.puppycrawl.tools</groupId>
+                                    <artifactId>checkstyle</artifactId>
+                                    <version>${version.checkstyle.puppycrawl.tools}</version>
+                                </dependency>
+                                <dependency>
+                                    <groupId>com.github.sevntu-checkstyle</groupId>
+                                    <artifactId>sevntu-checks</artifactId>
+                                    <version>${version.checkstyle.github.sevntu-checks}</version>
+                                </dependency>
+                            </dependencies>
 <!--                            <executions>-->
 <!--                                <execution>-->
 <!--                                    <id>validate-java</id>-->
@@ -1615,6 +1613,21 @@
                             <configLocation>${project.build.testOutputDirectory}/checkstyle/java-checkstyle.xml</configLocation>
                             <propertyExpansion>basedir=${project.build.directory}</propertyExpansion>
 
+                            <consoleOutput>true</consoleOutput>
+                            <enableFilesSummary>true</enableFilesSummary>
+                            <failOnViolation>false</failOnViolation>
+                            <includeResources>false</includeResources>
+
+
+                            <includes>**/*.java</includes>
+                            <includeTestSourceDirectory>false</includeTestSourceDirectory>
+                            <linkXRef>true</linkXRef>
+
+
+                            <logViolationsToConsole>true</logViolationsToConsole>
+                            <outputFile>${project.build.directory}/checkstyle-report-java.xml</outputFile>
+                            <outputFileFormat>xml</outputFileFormat>
+
 
                         </configuration>
                         <reportSets>
@@ -1633,33 +1646,12 @@
 <!--                        <configuration>-->
 
 
-<!--                             <configLocation>${project.build.testOutputDirectory}/checkstyle/java-checkstyle.xml</configLocation>-->
-<!--&lt;!&ndash;                            <consoleOutput>true</consoleOutput>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <enableFilesSummary>true</enableFilesSummary>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <failOnViolation>true</failOnViolation>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <includeResources>false</includeResources>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <includes>**/*.java</includes>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <includeTestSourceDirectory>false</includeTestSourceDirectory>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <linkXRef>false</linkXRef>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <logViolationsToConsole>true</logViolationsToConsole>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <outputFile>${project.build.directory}/checkstyle-report-java.xml</outputFile>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <outputFileFormat>xml</outputFileFormat>&ndash;&gt;-->
-
-<!--&lt;!&ndash;                            <propertyExpansion>basedir=${basedir}</propertyExpansion>&ndash;&gt;-->
-<!--                            <propertyExpansion>basedir=${project.basedir}</propertyExpansion>-->
-
 <!--&lt;!&ndash;                            <propertyExpansion>samedir=${project.basedir}/src/test/resources/checkstyle</propertyExpansion>&ndash;&gt;-->
 <!--&lt;!&ndash;                            <suppressionsLocation>${project.build.testOutputDirectory}/checkstyle/java-suppressions.xml</suppressionsLocation> &ndash;&gt;-->
 <!--                        </configuration>-->
 
 
-<!--&lt;!&ndash;                        <reportSets>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <reportSet>&ndash;&gt;-->
-<!--&lt;!&ndash;                                <reports>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <report>checkstyle</report>&ndash;&gt;-->
-<!--&lt;!&ndash;                                </reports>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </reportSet>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </reportSets>&ndash;&gt;-->
+
 <!--                    </plugin>-->
 
                     <!--   Maven JavaDoc Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
