@@ -1613,6 +1613,32 @@
                         <artifactId>spotbugs-maven-plugin</artifactId>
                     </plugin>
 
+
+                    <!--   Apply the custom dark stylesheet to the JaCoCo HTML report.   -->
+                    <!--   This runs only when the genReports profile is active.          -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>apply-jacoco-dark-theme</id>
+                                <phase>pre-site</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <target>
+                                        <copy
+                                                file="${project.basedir}/src/site/resources/jacoco/report.css"
+                                                tofile="${project.reporting.outputDirectory}/jacoco/jacoco-resources/report.css"
+                                                overwrite="true"/>
+                                    </target>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+
                 </plugins>
                 <!--  End:  genReports : build : plugins  -->
             </build>
