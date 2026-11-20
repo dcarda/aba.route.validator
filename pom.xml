@@ -1731,33 +1731,33 @@
 
                     <!--   Maven JavaDoc Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   https://maven.apache.org/plugins/maven-javadoc-plugin/          -->
+
+
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>${version.javadoc.reporting.plugin}</version>
 
                         <configuration>
-<!--                            <stylesheetfile>${basedir}/src/test/resources/javadoc/oracle_stylesheet.css</stylesheetfile>-->
-<!--                            <addStylesheet>${basedir}/src/site/resources/css/dracula-javadoc8.css</addStylesheet>-->
-<!--                            <addStylesheets>-->
-<!--                                &lt;!&ndash; This appends your variables onto the native JDK 17 layout &ndash;&gt;-->
-<!--                                &lt;!&ndash;                                <addStylesheet>dracula-javadoc8.css</addStylesheet>&ndash;&gt;-->
-<!--                                <addStylesheet>dark-theme.css</addStylesheet>-->
-<!--                            </addStylesheets>-->
+
+                            <!-- Custom dark theme -->
+                            <addStylesheets>
+                                <addStylesheet>dark-theme-jdk17.css</addStylesheet>
+                            </addStylesheets>
 
                             <nohelp>true</nohelp>
                             <show>protected</show>
-
                             <failOnError>false</failOnError>
+
                             <excludes>
                                 <exclude>**/*Test.java</exclude>
                                 <exclude>**/Test_*.java</exclude>
                             </excludes>
-                            <!-- Default configuration for all reports -->
-                            <stylesheet>maven</stylesheet>
 
-                            <!--    <additionalparam>-Xdoclint:none</additionalparam>-->
-                            <!-- needed for Java 8u121 -->
-                            <additionalJOption>--allow-script-in-comments</additionalJOption>
+                            <additionalJOption>
+                                --allow-script-in-comments
+                            </additionalJOption>
+
                         </configuration>
 
                         <reportSets>
@@ -1766,21 +1766,75 @@
                                 <reports>
                                     <report>javadoc</report>
                                 </reports>
-                                <configuration>
-                                    <!-- Specific configuration for the given reports      -->
-                                </configuration>
                             </reportSet>
+
                             <reportSet>
                                 <id>aggregate</id>
                                 <reports>
                                     <report>aggregate</report>
                                 </reports>
-                                <configuration>
-                                    <!-- Specific configuration for the given reports      -->
-                                </configuration>
                             </reportSet>
                         </reportSets>
                     </plugin>
+
+
+
+<!--                    <plugin>-->
+<!--                        <groupId>org.apache.maven.plugins</groupId>-->
+<!--                        <artifactId>maven-javadoc-plugin</artifactId>-->
+
+<!--                        <configuration>-->
+<!--&lt;!&ndash;                            <stylesheetfile>${basedir}/src/test/resources/javadoc/oracle_stylesheet.css</stylesheetfile>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <addStylesheet>${basedir}/src/site/resources/css/dracula-javadoc8.css</addStylesheet>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <addStylesheets>&ndash;&gt;-->
+<!--&lt;!&ndash;                                &lt;!&ndash; This appends your variables onto the native JDK 17 layout &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                                &lt;!&ndash;                                <addStylesheet>dracula-javadoc8.css</addStylesheet>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                                <addStylesheet>dark-theme.css</addStylesheet>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </addStylesheets>&ndash;&gt;-->
+
+<!--                            <addStylesheets>-->
+<!--&lt;!&ndash;                                <addStylesheet>${project.basedir}/src/main/javadoc/dark-theme.css</addStylesheet>&ndash;&gt;-->
+<!--                                <addStylesheet>dark-theme.css</addStylesheet>-->
+<!--                            </addStylesheets>-->
+
+
+<!--                            <nohelp>true</nohelp>-->
+<!--                            <show>protected</show>-->
+
+<!--                            <failOnError>false</failOnError>-->
+<!--                            <excludes>-->
+<!--                                <exclude>**/*Test.java</exclude>-->
+<!--                                <exclude>**/Test_*.java</exclude>-->
+<!--                            </excludes>-->
+<!--                            &lt;!&ndash; Default configuration for all reports &ndash;&gt;-->
+<!--&lt;!&ndash;                            <stylesheet>maven</stylesheet>&ndash;&gt;-->
+
+<!--                            &lt;!&ndash;    <additionalparam>-Xdoclint:none</additionalparam>&ndash;&gt;-->
+<!--                            &lt;!&ndash; needed for Java 8u121 &ndash;&gt;-->
+<!--                            <additionalJOption>&#45;&#45;allow-script-in-comments</additionalJOption>-->
+<!--                        </configuration>-->
+
+<!--                        <reportSets>-->
+<!--                            <reportSet>-->
+<!--                                <id>default</id>-->
+<!--                                <reports>-->
+<!--                                    <report>javadoc</report>-->
+<!--                                </reports>-->
+<!--                                <configuration>-->
+<!--                                    &lt;!&ndash; Specific configuration for the given reports      &ndash;&gt;-->
+<!--                                </configuration>-->
+<!--                            </reportSet>-->
+<!--                            <reportSet>-->
+<!--                                <id>aggregate</id>-->
+<!--                                <reports>-->
+<!--                                    <report>aggregate</report>-->
+<!--                                </reports>-->
+<!--                                <configuration>-->
+<!--                                    &lt;!&ndash; Specific configuration for the given reports      &ndash;&gt;-->
+<!--                                </configuration>-->
+<!--                            </reportSet>-->
+<!--                        </reportSets>-->
+<!--                    </plugin>-->
 
                     <!--   JavaNCSS Report   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   https://javancss.github.io/                                     -->

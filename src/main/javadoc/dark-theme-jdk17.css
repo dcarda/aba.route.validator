@@ -1,0 +1,516 @@
+/*
+ * Dark Theme for JDK 17 Javadoc
+ *
+ * This file is loaded after Javadoc's generated stylesheet.css.
+ * It intentionally overrides the hard-coded colors used by the
+ * JDK 17 standard doclet. It does not replace stylesheet.css.
+ *
+ * Palette:
+ *   Page background:       #303030
+ *   Raised surfaces:      #383838 / #404040
+ *   Navigation:           #303050
+ *   Primary text:         #e0e0e3
+ *   Links:                #a0c0f8
+ *   Accent:               #f8981d
+ */
+
+/* -------------------------------------------------------------------------
+ * Theme variables (for use by any additional custom documentation CSS)
+ * ------------------------------------------------------------------------- */
+
+:root {
+    --dark-body-background: #303030;
+    --dark-surface-background: #383838;
+    --dark-raised-background: #404040;
+    --dark-navigation-background: #303050;
+    --dark-subnavigation-background: #383838;
+    --dark-border: #505050;
+    --dark-text: #e0e0e3;
+    --dark-muted-text: #b8b8c0;
+    --dark-title: #ffffff;
+    --dark-link: #a0c0f8;
+    --dark-link-hover: #ffb863;
+    --dark-accent: #f8981d;
+    --dark-accent-text: #253441;
+    --dark-code-background: #282828;
+}
+
+/* -------------------------------------------------------------------------
+ * Base document and links
+ * ------------------------------------------------------------------------- */
+
+html,
+body {
+    background-color: var(--dark-body-background);
+    color: var(--dark-text);
+}
+
+body {
+    color-scheme: dark;
+}
+
+a:link,
+a:visited,
+a[name] {
+    color: var(--dark-link);
+}
+
+a[href]:hover,
+a[href]:focus,
+a:active {
+    color: var(--dark-link-hover);
+}
+
+/* Keep external-link indicators visible against the dark background. */
+main a[href*="://"]::after {
+    filter: brightness(1.8);
+}
+
+main a[href*="://"]:hover::after,
+main a[href*="://"]:focus::after {
+    filter: brightness(1.8);
+}
+
+/* -------------------------------------------------------------------------
+ * Header, title, navigation, and footer
+ * ------------------------------------------------------------------------- */
+
+header,
+footer,
+main {
+    color: var(--dark-text);
+}
+
+.title,
+.sub-title,
+.header,
+.footer {
+    color: var(--dark-title);
+}
+
+.legal-copy,
+.about-language,
+.watermark {
+    color: var(--dark-muted-text);
+}
+
+.top-nav {
+    background-color: var(--dark-navigation-background);
+    color: #ffffff;
+}
+
+.top-nav a:link,
+.top-nav a:active,
+.top-nav a:visited {
+    color: #ffffff;
+}
+
+.top-nav a:hover,
+.top-nav a:focus {
+    color: var(--dark-link-hover);
+}
+
+.sub-nav {
+    background-color: var(--dark-subnavigation-background);
+    color: var(--dark-text);
+}
+
+.sub-nav a:link,
+.sub-nav a:visited {
+    color: var(--dark-link);
+}
+
+.sub-nav a:hover,
+.sub-nav a:focus {
+    color: var(--dark-link-hover);
+}
+
+.nav-bar-cell1-rev {
+    background-color: var(--dark-accent);
+    color: var(--dark-accent-text);
+}
+
+.tab {
+    background-color: var(--dark-navigation-background);
+    color: #ffffff;
+}
+
+/* -------------------------------------------------------------------------
+ * Headings, labels, and general documentation content
+ * ------------------------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.caption,
+.caption span {
+    color: var(--dark-title);
+}
+
+.caption {
+    background-color: transparent;
+}
+
+.caption span {
+    background-color: #505076;
+    border-color: var(--dark-border);
+}
+
+.caption a:link,
+.caption a:visited {
+    color: var(--dark-link);
+}
+
+.caption a:hover,
+.caption a:active {
+    color: var(--dark-link-hover);
+}
+
+.block,
+div.block,
+.deprecation-comment,
+.preview-comment,
+dl.notes > dd {
+    color: var(--dark-text);
+}
+
+dl.notes > dt {
+    color: var(--dark-muted-text);
+}
+
+.deprecated-label,
+.descfrm-type-label,
+.implementation-label,
+.member-name-label,
+.member-name-link,
+.module-label-in-package,
+.module-label-in-type,
+.override-specify-label,
+.package-label-in-type,
+.package-hierarchy-label,
+.type-name-label,
+.type-name-link,
+.search-tag-link,
+.preview-label {
+    color: var(--dark-text);
+}
+
+/* -------------------------------------------------------------------------
+ * Tables: package, class, method, constructor, and member summaries
+ * ------------------------------------------------------------------------- */
+
+.summary-table,
+.details-table {
+    border-color: var(--dark-border);
+}
+
+.summary-table > div,
+.details-table > div {
+    color: var(--dark-text);
+    border-color: var(--dark-border);
+}
+
+.table-header,
+.col-first.table-header,
+.col-second.table-header,
+.col-last.table-header {
+    background-color: #505050;
+    color: #ffffff;
+}
+
+.even-row-color,
+.even-row-color .table-header {
+    background-color: #383838;
+    color: var(--dark-text);
+}
+
+.odd-row-color,
+.odd-row-color .table-header {
+    background-color: #303030;
+    color: var(--dark-text);
+}
+
+.table-sub-heading-color {
+    background-color: #454545;
+    color: var(--dark-text);
+}
+
+.col-first,
+.col-second,
+.col-last,
+.col-constructor-name,
+.col-summary-item-name {
+    color: var(--dark-text);
+}
+
+.col-first a:link,
+.col-first a:visited,
+.col-second a:link,
+.col-second a:visited,
+.col-last a:link,
+.col-last a:visited,
+.col-constructor-name a:link,
+.col-constructor-name a:visited,
+.col-summary-item-name a:link,
+.col-summary-item-name a:visited,
+.constant-values-container a:link,
+.constant-values-container a:visited,
+.all-classes-container a:link,
+.all-classes-container a:visited,
+.all-packages-container a:link,
+.all-packages-container a:visited {
+    color: var(--dark-link);
+}
+
+/* -------------------------------------------------------------------------
+ * Class and member detail sections
+ * ------------------------------------------------------------------------- */
+
+.summary section[class$="-summary"],
+.details section[class$="-details"],
+.class-uses .detail,
+.serialized-class-details {
+    background-color: var(--dark-surface-background);
+    border-color: var(--dark-border);
+    color: var(--dark-text);
+}
+
+.inherited-list,
+section[class$="-details"] .detail {
+    background-color: var(--dark-body-background);
+    border-color: var(--dark-border);
+    color: var(--dark-text);
+}
+
+body.class-declaration-page .summary h3,
+body.class-declaration-page .details h3,
+body.class-declaration-page .summary .inherited-list h2 {
+    background-color: #484848;
+    border-color: var(--dark-border);
+    color: var(--dark-title);
+}
+
+body.class-declaration-page .summary h2,
+body.class-declaration-page .details h2,
+body.class-use-page h2,
+body.module-declaration-page .block-list h2 {
+    color: var(--dark-title);
+}
+
+/* -------------------------------------------------------------------------
+ * Code, signatures, preformatted text, and source listings
+ * ------------------------------------------------------------------------- */
+
+pre,
+code,
+tt,
+.module-signature,
+.package-signature,
+.type-signature,
+.member-signature {
+    color: #e6e7ef;
+}
+
+pre,
+pre code,
+pre tt {
+    background-color: var(--dark-code-background);
+}
+
+.source-line-no {
+    color: #9ccc65;
+}
+
+/* -------------------------------------------------------------------------
+ * Notices, deprecation blocks, preview blocks, and tags
+ * ------------------------------------------------------------------------- */
+
+.deprecation-block,
+.preview-block {
+    background-color: #454038;
+    border-color: #78633f;
+    color: var(--dark-text);
+}
+
+.deprecation-comment,
+.preview-comment {
+    color: var(--dark-text);
+}
+
+.help-footnote,
+.help-note {
+    color: var(--dark-muted-text);
+}
+
+/* -------------------------------------------------------------------------
+ * Search box and autocomplete results
+ * ------------------------------------------------------------------------- */
+
+#search-input {
+    background-color: #202020;
+    color: #ffffff;
+    border: 1px solid #606060;
+}
+
+#search-input::placeholder {
+    color: #a0a0a0;
+}
+
+#reset-button {
+    background-color: #303030;
+}
+
+.ui-autocomplete {
+    background-color: #383838;
+    border-color: var(--dark-border);
+    color: var(--dark-text);
+}
+
+ul.ui-autocomplete {
+    background-color: #383838;
+}
+
+ul.ui-autocomplete li {
+    color: var(--dark-text);
+}
+
+.ui-autocomplete-category {
+    background-color: #505076;
+    color: #ffffff;
+}
+
+.result-item,
+.result-highlight,
+.search-tag-desc-result,
+.search-tag-holder-result {
+    color: var(--dark-text);
+}
+
+.search-tag-result:target {
+    background-color: #66551f;
+    color: #ffffff;
+}
+
+.search-tag-link {
+    color: var(--dark-link);
+}
+
+/* -------------------------------------------------------------------------
+ * Buttons and tab controls
+ * ------------------------------------------------------------------------- */
+
+button {
+    background-color: #484848;
+    border: 1px solid #606060;
+    color: var(--dark-text);
+}
+
+button:hover,
+button:focus {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+div.table-tabs > button.active-table-tab {
+    background-color: var(--dark-accent);
+    color: var(--dark-accent-text);
+}
+
+div.table-tabs > button.table-tab {
+    background-color: var(--dark-navigation-background);
+    color: #ffffff;
+}
+
+/* -------------------------------------------------------------------------
+ * User-provided tables
+ * ------------------------------------------------------------------------- */
+
+table.borderless,
+table.plain,
+table.striped {
+    color: var(--dark-text);
+}
+
+table.plain,
+table.striped {
+    border-color: #606060;
+}
+
+table.plain th,
+table.plain td,
+table.striped th,
+table.striped td {
+    border-color: #606060;
+}
+
+table.plain > thead > tr,
+table.plain > tbody tr,
+table.plain > tr {
+    background-color: transparent;
+}
+
+table.striped > thead {
+    background-color: #505050;
+    color: #ffffff;
+}
+
+table.striped > tbody > tr:nth-child(even) {
+    background-color: #383838;
+}
+
+table.striped > tbody > tr:nth-child(odd) {
+    background-color: #303030;
+}
+
+/* -------------------------------------------------------------------------
+ * Miscellaneous generated elements
+ * ------------------------------------------------------------------------- */
+
+.inheritance,
+.inheritance div,
+.vertical-separator,
+ul.help-section-list,
+ul.help-subtoc {
+    color: var(--dark-text);
+}
+
+.module-graph span {
+    background-color: #383838;
+    border: 1px solid var(--dark-border);
+    color: var(--dark-text);
+}
+
+/* -------------------------------------------------------------------------
+ * Print: use a readable light page rather than printing dark backgrounds
+ * ------------------------------------------------------------------------- */
+
+@media print {
+    html,
+    body,
+    main,
+    header,
+    footer {
+        background: #ffffff !important;
+        color: #000000 !important;
+    }
+
+    a:link,
+    a:visited {
+        color: #000000 !important;
+    }
+
+    .top-nav,
+    .sub-nav,
+    .summary section[class$="-summary"],
+    .details section[class$="-details"],
+    .class-uses .detail,
+    .serialized-class-details,
+    .inherited-list,
+    section[class$="-details"] .detail {
+        background: #ffffff !important;
+        color: #000000 !important;
+    }
+}
