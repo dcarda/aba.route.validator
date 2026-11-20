@@ -1153,16 +1153,31 @@
                                 <cacheFile>
                                     ${project.build.directory}/checkstyle-cachefile
                                 </cacheFile>
+                                <configLocation>
+                                    ${project.basedir}/src/test/resources/checkstyle/checkstyle.xml
+                                </configLocation>
+                                <consoleOutput>
+                                    true
+                                </consoleOutput>
+                                <failOnViolation>
+                                    false
+                                </failOnViolation>
+                                <includeResources>
+                                    false
+                                </includeResources>
+                                <includeTestSourceDirectory>
+                                    false
+                                </includeTestSourceDirectory>
+                                <logViolationsToConsole>
+                                    true
+                                </logViolationsToConsole>
+                                <outputFileFormat>
+                                    xml
+                                </outputFileFormat>
+                                <propertyExpansion>
+                                    basedir=${project.basedir}
+                                </propertyExpansion>
 
-
-                                <configLocation>${project.basedir}/src/test/resources/checkstyle/checkstyle.xml</configLocation>
-                                <consoleOutput>true</consoleOutput>
-                                <failOnViolation>false</failOnViolation>
-                                <includeResources>false</includeResources>
-                                <includeTestSourceDirectory>false</includeTestSourceDirectory>
-                                <logViolationsToConsole>true</logViolationsToConsole>
-                                <outputFileFormat>xml</outputFileFormat>
-                                <propertyExpansion>basedir=${project.basedir}</propertyExpansion>
                             </configuration>
                             <dependencies>
                                 <dependency>
@@ -1176,85 +1191,236 @@
                                     <version>${version.checkstyle.github.sevntu-checks}</version>
                                 </dependency>
                             </dependencies>
-<!--                            <executions>-->
-<!--                                <execution>-->
-<!--                                    <id>validate-java</id>-->
-<!--                                    <goals>-->
-<!--                                        <goal>check</goal>-->
-<!--                                    </goals>-->
-<!--                                    <phase>validate</phase>-->
-<!--                                    <configuration>-->
-<!--&lt;!&ndash;                                        <cacheFile>${project.build.testOutputDirectory}/checkstyle//checkstyle-cachefile</cacheFile>&ndash;&gt;-->
+                            <executions>
 
-<!--                                        <cacheFile>-->
-<!--                                            ${project.build.directory}/checkstyle-cachefile-->
-<!--                                        </cacheFile>-->
+                                <!-- Standard Java validation -->
+                                <execution>
+                                    <id>validate-java</id>
+                                    <goals>
+                                        <goal>check</goal>
+                                    </goals>
+                                    <phase>
+                                        validate
+                                    </phase>
+                                    <configuration>
+                                        <cacheFile>
+                                            ${project.build.directory}/checkstyle-cachefile
+                                        </cacheFile>
+                                        <configLocation>
+                                            ${project.basedir}/src/test/resources/checkstyle/checkstyle.xml
+                                        </configLocation>
+                                        <includeResources>
+                                            false
+                                        </includeResources>
+                                        <includeTestSourceDirectory>
+                                            false
+                                        </includeTestSourceDirectory>
+                                        <includes>
+                                            **/*.java
+                                        </includes>
+                                        <sourceDirectories>
+                                            ${project.basedir}/src
+                                        </sourceDirectories>
+                                        <outputFile>
+                                            ${project.build.directory}/checkstyle-report-java.xml
+                                        </outputFile>
+                                        <excludes>
+                                            **/*Test.java,
+                                            **/*Tests.java,
+                                            **/*TestCase.java,
+                                            **/Test*.java
+                                        </excludes>
+                                    </configuration>
+                                </execution>
 
 
-<!--                                        <configLocation>-->
-<!--                                            ${project.basedir}/src/test/resources/checkstyle/checkstyle.xml-->
-<!--                                        </configLocation>-->
-<!--                                        <includeResources>false</includeResources>-->
-<!--                                        <includeTestSourceDirectory>false</includeTestSourceDirectory>-->
-<!--                                        <includes>**/*.java</includes>-->
-<!--                                        <outputFile>${project.build.directory}/checkstyle-report-java.xml</outputFile>-->
-<!--                                    </configuration>-->
-<!--                                </execution>-->
+                                <!-- Non-Java validation -->
+                                <execution>
+                                    <id>validate-non-java</id>
+                                    <phase>validate</phase>
+                                    <goals>
+                                        <goal>check</goal>
+                                    </goals>
+                                    <configuration>
+                                        <configLocation>
+                                            ${project.basedir}/src/test/resources/checkstyle/checkstyle-non-java.xml
+                                        </configLocation>
+
+                                        <cacheFile>
+                                            ${project.build.directory}/checkstyle-cachefile-non-java
+                                        </cacheFile>
+
+                                        <includeResources>false</includeResources>
+                                        <includeTestResources>false</includeTestResources>
+                                        <includeTestSourceDirectory>false</includeTestSourceDirectory>
+
+
+                                        <!-- Scan only the production resources directory. -->
+                                        <sourceDirectories>
+                                            <sourceDirectory>
+                                                ${project.basedir}/src/main/resources
+                                            </sourceDirectory>
+                                        </sourceDirectories>
+
+                                        <!-- Select the non-Java file types to check. -->
+                                        <includes>
+                                            **/*.xml,
+                                            **/*.yml,
+                                            **/*.yaml,
+                                            **/*.md,
+                                            **/*.ftl
+                                        </includes>
+
+                                        <!-- Files in Maven resource directories. -->
+<!--                                        <resourceIncludes>-->
+<!--                                            **/*.xml,-->
+<!--                                            **/*.yml,-->
+<!--                                            **/*.yaml,-->
+<!--                                            **/*.md,-->
+<!--                                            **/*.ftl,-->
+<!--                                            **/spring-*.xml,-->
+<!--                                            **/conf/*/resources/*.xml,-->
+<!--                                            **/web*.xml-->
+<!--                                        </resourceIncludes>-->
+
+<!--                                        <resourceExcludes>-->
+<!--                                            **/.idea/**,-->
+<!--                                            **/target/**,-->
+<!--                                            **/thirdparty/**,-->
+<!--                                            **/release.properties,-->
+<!--                                            NOTICE,-->
+<!--                                            LICENSE,-->
+<!--                                            COPYRIGHT,-->
+<!--                                            README.md-->
+<!--                                        </resourceExcludes>-->
+
+                                        <consoleOutput>true</consoleOutput>
+                                        <failsOnError>false</failsOnError>
+
+                                        <outputFile>
+                                            ${project.build.directory}/checkstyle-report-non-java.xml
+                                        </outputFile>
+                                        <outputFileFormat>xml</outputFileFormat>
+                                    </configuration>
+                                </execution>
+
 <!--                                <execution>-->
 <!--                                    <id>validate-non-java</id>-->
-<!--                                    <goals>-->
-<!--                                        <goal>check</goal>-->
-<!--                                    </goals>-->
 <!--                                    <phase>validate</phase>-->
+<!--                                    <goals><goal>check</goal></goals>-->
 <!--                                    <configuration>-->
-<!--&lt;!&ndash;                                        <cacheFile>${project.build.testOutputDirectory}/checkstyle//checkstyle-cachefile-non-java</cacheFile>&ndash;&gt;-->
-
-<!--                                        <cacheFile>-->
-<!--                                            ${project.build.directory}/checkstyle-cachefile-->
-<!--                                        </cacheFile>-->
-
-
 <!--                                        <configLocation>-->
-<!--                                            ${project.basedir}/src/test/resources/checkstyle/non-java-checkstyle.xml-->
+<!--                                            ${project.basedir}/src/test/resources/checkstyle/checkstyle-non-java.xml-->
 <!--                                        </configLocation>-->
-<!--                                        <includeResources>false</includeResources>-->
-<!--                                        <includeTestSourceDirectory>false</includeTestSourceDirectory>-->
-<!--                                        <outputFile>${project.basedir}/src/test/resources/checkstyle/checkstyle-report-non-java.xml</outputFile>-->
-<!--                                        <sourceDirectories>${project.basedir}/src</sourceDirectories>-->
+<!--                                        <cacheFile>-->
+<!--                                            ${project.build.directory}/checkstyle-cachefile-non-java-->
+<!--                                        </cacheFile>-->
+<!--                                        <includeResources>-->
+<!--                                            true-->
+<!--                                        </includeResources>-->
+<!--                                        <includeTestResources>-->
+<!--                                            false-->
+<!--                                        </includeTestResources>-->
+<!--                                        <includeTestSourceDirectory>-->
+<!--                                            false-->
+<!--                                        </includeTestSourceDirectory>-->
+
+<!--                                        <resourceIncludes>-->
+<!--                                            **/*.xml,-->
+<!--                                            **/*.yml,-->
+<!--                                            **/*.yaml,-->
+<!--                                            **/*.properties,-->
+<!--                                            **/*.md-->
+<!--                                        </resourceIncludes>-->
+
+<!--                                        <resourceExcludes>-->
+<!--                                            **/.idea/**,-->
+<!--                                            **/target/**,-->
+<!--                                            **/release.properties-->
+<!--                                        </resourceExcludes>-->
+
+
+
+
+<!--                                        <consoleOutput>-->
+<!--                                            true-->
+<!--                                        </consoleOutput>-->
+<!--                                        <failsOnError>-->
+<!--                                            false-->
+<!--                                        </failsOnError>-->
+<!--                                        <outputFile>-->
+<!--                                            ${project.basedir}/src/test/resources/checkstyle/checkstyle-report-non-java.xml-->
+<!--                                        </outputFile>-->
+<!--                                        <sourceDirectories>-->
+<!--                                            ${project.basedir}/src-->
+<!--                                        </sourceDirectories>-->
 <!--                                        <includes>**/*.ftl,-->
 <!--                                            **/spring-*.xml,-->
 <!--                                            **/conf/*/resources/*.xml,-->
-<!--                                            **/web*.xml</includes>-->
-<!--                                        <excludes>**/target/**,-->
+<!--                                            **/web*.xml-->
+<!--                                        </includes>-->
+<!--                                        <excludes>-->
+<!--                                            **/target/**,-->
 <!--                                            **/thirdparty/**,-->
 <!--                                            **/*.properties,-->
-<!--                                            log4j.jsp</excludes>-->
+<!--                                            log4j.jsp,-->
+<!--                                            **/*Test.java,-->
+<!--                                            **/*Tests.java,-->
+<!--                                            **/*TestCase.java,-->
+<!--                                            **/Test*.java-->
+<!--                                        </excludes>-->
 <!--                                    </configuration>-->
 <!--                                </execution>-->
-<!--                                <execution>-->
-<!--                                    <id>validate-java-import-control</id>-->
-<!--                                    <goals>-->
-<!--                                        <goal>check</goal>-->
-<!--                                    </goals>-->
-<!--                                    <phase>none</phase>-->
-<!--                                    <configuration>-->
-<!--&lt;!&ndash;                                        <cacheFile>${project.build.testOutputDirectory}/checkstyle/checkstyle-cachefile-import-control-only</cacheFile>&ndash;&gt;-->
-
-<!--                                        <cacheFile>-->
-<!--                                            ${project.build.directory}/checkstyle-cachefile-->
-<!--                                        </cacheFile>-->
 
 
-<!--                                        <configLocation>-->
-<!--                                            ${project.basedir}/src/test/resources/checkstyle/java-checkstyle-import-control-only.xml-->
-<!--                                        </configLocation>-->
-<!--                                        <includeResources>false</includeResources>-->
-<!--                                        <includeTestSourceDirectory>false</includeTestSourceDirectory>-->
-<!--                                        <includes>**/*.java</includes>-->
-<!--                                        <outputFile>${project.build.directory}/checkstyle-report-java-import-control-only.xml</outputFile>-->
-<!--                                    </configuration>-->
-<!--                                </execution>-->
-<!--                            </executions>-->
+
+
+
+
+
+<!--                                    java-checkstyle-import-control-only.xml-->
+<!--                                            checkstyle-cachefile-import-control-only-->
+<!--                                            java-suppressions.xml-->
+<!--                                            import-control.xml-->
+                                -->
+                                <execution>
+                                    <id>validate-java-import-control</id>
+                                    <goals>
+                                        <goal>verify</goal>
+                                    </goals>
+                                    <phase>none</phase>
+                                    <configuration>
+                                        <cacheFile>
+                                            ${project.build.directory}/checkstyle-cachefile-import-control
+                                        </cacheFile>
+
+                                        <configLocation>
+                                            ${project.basedir}/src/test/resources/checkstyle/java-checkstyle-import-control-only.xml
+                                        </configLocation>
+
+                                        <includeResources>false</includeResources>
+                                        <includeTestResources>false</includeTestResources>
+                                        <includeTestSourceDirectory>false</includeTestSourceDirectory>
+
+                                        <sourceDirectories>
+                                            <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+                                        </sourceDirectories>
+
+                                        <includes>**/*.java</includes>
+
+                                        <outputFile>
+                                            ${project.build.directory}/checkstyle-report-java-import-control-only.xml
+                                        </outputFile>
+
+
+
+
+
+
+
+                                    </configuration>
+                                </execution>
+                            </executions>
                         </plugin>
 
                         <!--   JavaDoc Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
@@ -1601,57 +1767,116 @@
                     <!--   Checkstyle Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   https://checkstyle.sourceforge.io/                              -->
 
+
+                    <!--   Checkstyle Report Plugin   -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-checkstyle-plugin</artifactId>
                         <version>${version.checkstyle.report.plugin}</version>
+
                         <configuration>
                             <cacheFile>
                                 ${project.build.directory}/checkstyle-cachefile
                             </cacheFile>
+                            <configLocation>
+                                ${project.basedir}/src/test/resources/checkstyle/checkstyle-combined.xml
+                            </configLocation>
 
-                            <configLocation>${project.build.testOutputDirectory}/checkstyle/java-checkstyle.xml</configLocation>
-                            <propertyExpansion>basedir=${project.build.directory}</propertyExpansion>
+                            <propertyExpansion>
+                                basedir=${project.basedir}
+                            </propertyExpansion>
 
                             <consoleOutput>true</consoleOutput>
                             <enableFilesSummary>true</enableFilesSummary>
+                            <enableRulesSummary>true</enableRulesSummary>
                             <failOnViolation>false</failOnViolation>
-                            <includeResources>false</includeResources>
 
-
-                            <includes>**/*.java</includes>
+                            <!-- Java source files only -->
+                            <includeResources>true</includeResources>
+                            <includeTestResources>false</includeTestResources>
                             <includeTestSourceDirectory>false</includeTestSourceDirectory>
+
+                            <includes>
+                                **/*.java
+                            </includes>
+
+                            <excludes>
+                                **/*Test.java,
+                                **/*Tests.java,
+                                **/*TestCase.java,
+                                **/Test*.java
+                            </excludes>
+
                             <linkXRef>true</linkXRef>
-
-
-                            <logViolationsToConsole>true</logViolationsToConsole>
-                            <outputFile>${project.build.directory}/checkstyle-report-java.xml</outputFile>
-                            <outputFileFormat>xml</outputFileFormat>
-
-
                         </configuration>
+
                         <reportSets>
                             <reportSet>
+                                <id>java-checkstyle</id>
                                 <reports>
                                     <report>checkstyle</report>
                                 </reports>
                             </reportSet>
                         </reportSets>
-
                     </plugin>
+
+
 
 <!--                    <plugin>-->
 <!--                        <groupId>org.apache.maven.plugins</groupId>-->
 <!--                        <artifactId>maven-checkstyle-plugin</artifactId>-->
+<!--                        <version>${version.checkstyle.report.plugin}</version>-->
 <!--                        <configuration>-->
-
-
-<!--&lt;!&ndash;                            <propertyExpansion>samedir=${project.basedir}/src/test/resources/checkstyle</propertyExpansion>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <suppressionsLocation>${project.build.testOutputDirectory}/checkstyle/java-suppressions.xml</suppressionsLocation> &ndash;&gt;-->
+<!--                            <cacheFile>-->
+<!--                                ${project.build.directory}/checkstyle-cachefile-->
+<!--                            </cacheFile>-->
+<!--                            <configLocation>-->
+<!--                                ${project.basedir}/src/test/resources/checkstyle/checkstyle.xml-->
+<!--                            </configLocation>-->
+<!--                            <propertyExpansion>-->
+<!--                                basedir=${project.basedir}-->
+<!--                            </propertyExpansion>-->
+<!--                            <consoleOutput>-->
+<!--                                true-->
+<!--                            </consoleOutput>-->
+<!--                            <enableFilesSummary>-->
+<!--                                true-->
+<!--                            </enableFilesSummary>-->
+<!--                            <enableRulesSummary>-->
+<!--                                true-->
+<!--                            </enableRulesSummary>-->
+<!--                            <failOnViolation>-->
+<!--                                false-->
+<!--                            </failOnViolation>-->
+<!--                            <includeResources>-->
+<!--                                false-->
+<!--                            </includeResources>-->
+<!--                            <includeTestSourceDirectory>-->
+<!--                                false-->
+<!--                            </includeTestSourceDirectory>-->
+<!--                            <includes>-->
+<!--                                **/*.java-->
+<!--                            </includes>-->
+<!--                            <linkXRef>-->
+<!--                                true-->
+<!--                            </linkXRef>-->
+<!--                            <logViolationsToConsole>-->
+<!--                                true-->
+<!--                            </logViolationsToConsole>-->
+<!--                            <outputFile>-->
+<!--                                ${project.build.directory}/checkstyle-report-java.xml-->
+<!--                            </outputFile>-->
+<!--                            <outputFileFormat>-->
+<!--                                xml-->
+<!--                            </outputFileFormat>-->
 <!--                        </configuration>-->
-
-
-
+<!--                        <reportSets>-->
+<!--                            <reportSet>-->
+<!--                                <reports>-->
+<!--                                    <report>checkstyle</report>-->
+<!--                                </reports>-->
+<!--                            </reportSet>-->
+<!--                        </reportSets>-->
 <!--                    </plugin>-->
 
                     <!--   Maven JavaDoc Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
