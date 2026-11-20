@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE import-control PUBLIC
+          "-//Checkstyle//DTD ImportControl Configuration 1.5//EN"
+          "https://checkstyle.org">
+
+<!-- Default policy: disallow unlisted imports unless explicitly allowed -->
+<import-control pkg="net.danielcarda.utils.validators" strategyOnMismatch="disallowed">
+
+  <!-- Global rules inherited by all subpackages -->
+  <allow pkg="java.util"/>
+  <allow pkg="java.time"/>
+  <disallow class="java.util.Date"/>
+
+  <!-- Domain layer: strictly isolated from service and web layers -->
+  <subpackage name="domain">
+    <allow pkg="net.danielcarda.utils.validators.domain"/>
+  </subpackage>
+
+  <!-- Service layer: can import domain and its own package -->
+  <subpackage name="service">
+    <allow pkg="net.danielcarda.utils.validators.domain"/>
+    <allow pkg="net.danielcarda.utils.validators.service"/>
+  </subpackage>
+
+  <!-- Web layer: can import service and domain, plus web framework classes -->
+  <subpackage name="web">
+    <allow pkg="net.danielcarda.utils.validators.domain"/>
+    <allow pkg="net.danielcarda.utils.validators.service"/>
+    <allow pkg="net.danielcarda.utils.validators.web"/>
+    <allow pkg="org.springframework.web"/>
+  </subpackage>
+
+</import-control>
