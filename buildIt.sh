@@ -370,17 +370,24 @@ function release_JarArtifact() {
         terminationAbnormal
     fi
 
-
-#DONE   mvn release:clean
-#DONE   mvn release:prepare -DdryRun=true
-#mvn release:prepare
-#mvn release:perform
-
     #  Let's do the real prepare!
     mvn                  \
         -P release       \
         --batch-mode     \
         release:prepare
+
+    # Check results.
+    if [ $? -ne 0 ]; then
+        echo
+        echo "Build Failure: The application build has failed for some reason."
+        terminationAbnormal
+    fi
+
+    #  Let's do the real prepare!
+    mvn                  \
+        -P release       \
+        --batch-mode     \
+        release:perform
 
     # Check results.
     if [ $? -ne 0 ]; then
