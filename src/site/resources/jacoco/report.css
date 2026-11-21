@@ -173,13 +173,13 @@ pre.source a:focus {
 
 /* Coverage states: retain JaCoCo's green / red / yellow semantics. */
 pre.source span.fc {
-    background-color: #176b3a;
-    color: #ffffff;
+    background-color: #a9e3a9;
+    color: #183018;
 }
 
 pre.source span.nc {
-    background-color: #a32132;
-    color: #ffffff;
+    background-color: #ffa9a9;
+    color: #401010;
 }
 
 pre.source span.pc {
