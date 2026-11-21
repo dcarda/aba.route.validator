@@ -362,9 +362,6 @@ function release_JarArtifact() {
         -P release                     \
         --batch-mode                   \
         release:prepare -DdryRun=true
-#         \
-#        clean                          \
-#        install
 
     # Check results.
     if [ $? -ne 0 ]; then
@@ -379,21 +376,18 @@ function release_JarArtifact() {
 #mvn release:prepare
 #mvn release:perform
 
-#    #  Do a dry-run of the build
-#    mvn                  \
-#        -P release       \
-#        --batch-mode     \
-#        release:prepare
-#        \
-#        clean            \
-#        install
-#
-#    # Check results.
-#    if [ $? -ne 0 ]; then
-#        echo
-#        echo "Build Failure: The application build has failed for some reason."
-#        terminationAbnormal
-#    fi
+    #  Let's do the real prepare!
+    mvn                  \
+        -P release       \
+        --batch-mode     \
+        release:prepare
+
+    # Check results.
+    if [ $? -ne 0 ]; then
+        echo
+        echo "Build Failure: The application build has failed for some reason."
+        terminationAbnormal
+    fi
 
 
 
