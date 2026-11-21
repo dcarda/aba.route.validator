@@ -116,11 +116,11 @@ function build_SiteReports() {
     # =======================================================================
     #  Build everything
     mvn                \
+      -D PMD_JAVA_DISABLE_AUX_CLASSPATH_WARNINGS=true \
       -P genReports    \
       clean            \
       install          \
       site
-#      site site:stage
 
     # Check results.
     if [ $? -ne 0 ]; then
