@@ -287,11 +287,11 @@ version 2.0 to this project.
 
 Follow this link to learn more about me:
 
-|                                                            Media                                                       | Address                                  |
-|:----------------------------------------------------------------------------------------------------------------------:|------------------------------------------|
-|             ![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)        | https://www.linkedin.com/in/danielcarda/ |
-|        ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)    | https://github.com/dcarda                |
-|        ![](https://img.shields.io/badge/Independent-Developer-34495E?style=for-the-badge)                              | https://danielcarda.net/                 |
+|                                                            Media                                                                                               | Address                                  |
+|:----------------------------------------------------------------------------------------------------------------------:|----------------------------------------------------------------------------------|
+|       [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielcarda/)  | https://www.linkedin.com/in/danielcarda/ |
+|       [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dcarda)                | https://github.com/dcarda                |
+|       [![](https://img.shields.io/badge/Independent-Developer-34495E?style=for-the-badge)](https://danielcarda.net/)                                           | https://danielcarda.net/                 |
 <!-- End:  Developer  -->
 <!--  ───────────────────────────────────────────────────────────────────────────  -->
 
