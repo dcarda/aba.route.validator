@@ -342,10 +342,6 @@ function release_JarArtifact() {
 
 
 
-#mvn release:prepare -DdryRun=true
-#mvn release:clean
-#mvn release:prepare
-#mvn release:perform
 
 
   #  Clean up the artifacts from the perious build.
@@ -365,9 +361,10 @@ function release_JarArtifact() {
     mvn                                \
         -P release                     \
         --batch-mode                   \
-        release:prepare -DdryRun=true  \
-        clean                          \
-        install
+        release:prepare -DdryRun=true
+#         \
+#        clean                          \
+#        install
 
     # Check results.
     if [ $? -ne 0 ]; then
@@ -377,6 +374,26 @@ function release_JarArtifact() {
     fi
 
 
+#DONE   mvn release:clean
+#DONE   mvn release:prepare -DdryRun=true
+#mvn release:prepare
+#mvn release:perform
+
+#    #  Do a dry-run of the build
+#    mvn                  \
+#        -P release       \
+#        --batch-mode     \
+#        release:prepare
+#        \
+#        clean            \
+#        install
+#
+#    # Check results.
+#    if [ $? -ne 0 ]; then
+#        echo
+#        echo "Build Failure: The application build has failed for some reason."
+#        terminationAbnormal
+#    fi
 
 
 
