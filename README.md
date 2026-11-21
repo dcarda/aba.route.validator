@@ -68,10 +68,10 @@ http://en.wikipedia.org/wiki/Routing_transit_number
 
 The following software is required to build this project:
 
-| Software |  Version | Download                                                                       |
-|:--------:|---------:|--------------------------------------------------------------------------------|
-| ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)   |   17.0.9 | https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html |
-|  ![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)   |    3.9.16 | https://maven.apache.org/download.cgi                                          |
+| Software                                                                                                                                                                                       |  Version  | Download                                                                       |
+|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|----------:|--------------------------------------------------------------------------------|
+|  [![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html)   |  17.0.9   | https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html |
+|  [![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)](https://maven.apache.org/download.cgi)                          |   3.9.16  | https://maven.apache.org/download.cgi                                          |
 
 
 ## <hr>⚙️ Installation
