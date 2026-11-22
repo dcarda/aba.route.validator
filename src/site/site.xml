@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <site xmlns="http://apache.org"
       xmlns:xsi="http://w3.org"
@@ -31,6 +30,9 @@
     <!-- ================================================================ -->
 
     <custom>
+
+        <keywords>ABA, transit routing, validator, software</keywords>
+        <author>Daniel Carda</author>
         <bodyClass>sentry-orange</bodyClass>
         <buildIndex>true</buildIndex>
         <convertImagesToWebp>true</convertImagesToWebp>
