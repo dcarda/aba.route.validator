@@ -1640,9 +1640,53 @@
                                                 file="${project.basedir}/src/site/resources/jacoco/prettify.js"
                                                 tofile="${project.reporting.outputDirectory}/jacoco/jacoco-resources/prettify.js"
                                                 overwrite="true"/>
+
+<!--                                        <copy-->
+<!--                                                file="${project.basedir}/src/site/resources/xref/stylesheet-dark.css"-->
+<!--                                                tofile="${project.reporting.outputDirectory}/xref/stylesheet2.css"-->
+<!--                                                overwrite="true"/>-->
+<!--                                        <copy-->
+<!--                                                file="${project.basedir}/src/site/resources/xref/stylesheet-dark.css"-->
+<!--                                                tofile="${project.reporting.outputDirectory}/xref/stylesheet.css"-->
+<!--                                                overwrite="true"/>-->
+<!--                                        <copy-->
+<!--                                                file="${project.basedir}/src/site/resources/xref/stylesheet-dark.css"-->
+<!--                                                tofile="${project.reporting.outputDirectory}/xref/stylesheet-dark.css"-->
+<!--                                                overwrite="true"/>-->
                                     </target>
                                 </configuration>
                             </execution>
+
+<!--                            <execution>-->
+<!--                                <id>apply-xref-dark-theme</id>-->
+<!--                                <phase>post-site</phase>-->
+<!--                                <goals>-->
+<!--                                    <goal>run</goal>-->
+<!--                                </goals>-->
+<!--                                <configuration>-->
+<!--                                    <target>-->
+<!--                                        <copy-->
+<!--                                                file="${project.basedir}/src/site/resources/xref/stylesheet-dark.css"-->
+<!--                                                tofile="${project.reporting.outputDirectory}/xref/stylesheet2.css"-->
+<!--                                                overwrite="true"/>-->
+<!--                                        <copy-->
+<!--                                                file="${project.basedir}/src/site/resources/xref/stylesheet-dark.css"-->
+<!--                                                tofile="${project.reporting.outputDirectory}/xref/stylesheet.css"-->
+<!--                                                overwrite="true"/>-->
+<!--                                        <copy-->
+<!--                                                file="${project.basedir}/src/site/resources/xref/stylesheet-dark.css"-->
+<!--                                                tofile="${project.reporting.outputDirectory}/xref/stylesheet-dark.css"-->
+<!--                                                overwrite="true"/>-->
+<!--                                    </target>-->
+<!--                                </configuration>-->
+<!--                            </execution>-->
+
+
+
+
+
+
+
                         </executions>
 
                     </plugin>
@@ -1904,6 +1948,15 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-jxr-plugin</artifactId>
+                        <configuration>
+                            <!-- Must be an absolute path -->
+                            <stylesheet>${project.basedir}/src/site/resources/xref/stylesheet-dark.css</stylesheet>
+
+                        </configuration>
+
+
+
+
                         <reportSets>
                             <reportSet>
                                 <id>jxr-report</id>
