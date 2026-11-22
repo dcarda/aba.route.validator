@@ -1632,10 +1632,19 @@
                                                 file="${project.basedir}/src/site/resources/jacoco/report.css"
                                                 tofile="${project.reporting.outputDirectory}/jacoco/jacoco-resources/report.css"
                                                 overwrite="true"/>
+                                        <copy
+                                                file="${project.basedir}/src/site/resources/jacoco/prettify-dark.css"
+                                                tofile="${project.reporting.outputDirectory}/jacoco/jacoco-resources/prettify.css"
+                                                overwrite="true"/>
+                                        <copy
+                                                file="${project.basedir}/src/site/resources/jacoco/prettify.js"
+                                                tofile="${project.reporting.outputDirectory}/jacoco/jacoco-resources/prettify.js"
+                                                overwrite="true"/>
                                     </target>
                                 </configuration>
                             </execution>
                         </executions>
+
                     </plugin>
 
 
