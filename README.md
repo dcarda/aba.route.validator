@@ -24,6 +24,7 @@ Copyright © 2026 Daniel Carda
 - [👨 Technology Stack](#technology-stack)
 - [⚙️ Installation](#installation)
   - [Maven](#maven)
+  - [Maven settings.xml](#maven-settings)
 - [🏗️ Build Instructions](#build-instructions)
   - [Build With Tests](#build-with-tests)
   - [Build With Metrics Reports](#build-with-metrics-reports)
@@ -86,6 +87,7 @@ The following software is required to build this project:
 <a id="installation"></a>
 ## ⚙️ Installation
 
+<a id="maven"></a>
 ### <span style="color: #33ccff;">    Maven
 
 Add the following dependency to your project's `pom.xml`:
@@ -101,6 +103,7 @@ Add the following dependency to your project's `pom.xml`:
 Replace `VERSION` with the desired release version.
 
 
+<a id="maven-settings"></a>
 ### <span style="color: #33ccff;">    Maven settings.xml
 
 In order to get to my GitHub repository, you'll need to add the following to your
