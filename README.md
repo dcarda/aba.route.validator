@@ -220,6 +220,8 @@ The `validate()` method returns a boolean when structural and Federal Reserve pr
 | `false` | The routing number has an invalid checksum. |
 | Exception | The input is null, blank, incorrectly sized, contains non-ASCII digits, or has an invalid Federal Reserve prefix. |
 
+
+<a id="validation-checks"></a>
 ## 🔧  Validation Checks
 
 The validator performs the following checks:
