@@ -352,10 +352,12 @@ function display_VerifyInformation() {
 #================================================================
 function release_JarArtifact() {
 
-    echo
-    echo
-    echo
-
+echo
+echo
+echo
+echo
+echo
+    echo "running the clean"
   #  Clean up the artifacts from the previous build.
     mvn               \
         -P release    \
@@ -368,6 +370,16 @@ function release_JarArtifact() {
         echo "Build Failure: The application build has failed for some reason."
         terminationAbnormal
     fi
+
+read -p "Press Enter to continue..."
+
+
+echo
+echo
+echo
+echo
+echo
+    echo "running the dry-run"
 
     #  Do a dry-run of the build
     mvn                                \
@@ -382,6 +394,16 @@ function release_JarArtifact() {
         terminationAbnormal
     fi
 
+
+read -p "Press Enter to continue..."
+
+
+echo
+echo
+echo
+echo
+echo
+echo "running the prepare"
     #  Let's do the real prepare!
     mvn                  \
         -P release       \
@@ -394,6 +416,16 @@ function release_JarArtifact() {
         echo "Build Failure: The application build has failed for some reason."
         terminationAbnormal
     fi
+
+
+read -p "Press Enter to continue..."
+
+echo
+echo
+echo
+echo
+echo
+echo "running the release"
 
     #  Let's do the real prepare!
     mvn                  \
