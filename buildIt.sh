@@ -369,27 +369,27 @@ function release_JarArtifact() {
     #  Clean up the artifacts from the previous build.
     delete_Artifacts
 
-#    #  ────────────────────────────────────────────────────────────────────────
-#    echo
-#    echo
-#    echo
-#    echo
-#    echo
-#    echo "───────────────────────────────────────────────────────────────────────"
-#    echo "   Running the RELEASE : PREPARE  DRY-RUN"
-#    echo "───────────────────────────────────────────────────────────────────────"
-#    #  Do a dry-run of the build
-#    mvn                                \
-#        -P release                     \
-#        --batch-mode                   \
-#        release:prepare -DdryRun=true
-#
-#    # Check results.
-#    if [ $? -ne 0 ]; then
-#        echo
-#        echo "Build Failure: The application build has failed for some reason."
-#        terminationAbnormal
-#    fi
+    #  ────────────────────────────────────────────────────────────────────────
+    echo
+    echo
+    echo
+    echo
+    echo
+    echo "───────────────────────────────────────────────────────────────────────"
+    echo "   Running the RELEASE : PREPARE  DRY-RUN"
+    echo "───────────────────────────────────────────────────────────────────────"
+    #  Do a dry-run of the build
+    mvn                                \
+        -P release                     \
+        --batch-mode                   \
+        release:prepare -DdryRun=true
+
+    # Check results.
+    if [ $? -ne 0 ]; then
+        echo
+        echo "Build Failure: The application build has failed for some reason."
+        terminationAbnormal
+    fi
 
     #  ────────────────────────────────────────────────────────────────────────
     echo
