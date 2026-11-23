@@ -1,8 +1,8 @@
 /* ---------------------------------------------------------------------------------------
  * Class:  net.danielcarda.utils.validators.abaroutevalidator.AbaRouteValidator.java
- * Date:   2026/11/07
+ * Create Date:   2015/15/01
  * ---------------------------------------------------------------------------------------
- * Copyright (c) 2026 Daniel Carda
+ * Copyright (c) 2015-2026 Daniel Carda
  *
  * SPDX-License-Identifier: Apache-2.0
  * ---------------------------------------------------------------------------------------
@@ -42,6 +42,7 @@ import net.danielcarda.utils.validators.abaroutevalidator.exceptions.AbaRouteVal
     2020/12/24  Daniel Carda              Optimized algorithms.
     2021/08/01  Daniel Carda              Improved Class Javadocs
     2026/09/17  Daniel Carda              Updated code.  New Class Header.
+    2027/11/07  Daniel Carda              Improved code and JavaDocs.
 </pre>
  * <hr>
  */
@@ -192,5 +193,5 @@ public final class AbaRouteValidator {
 }
 /* ---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.AbaRouteValidator.java
- * Date:   2026/11/07
+ * Create Date:   2015/15/01
  * --------------------------------------------------------------------------------------- */

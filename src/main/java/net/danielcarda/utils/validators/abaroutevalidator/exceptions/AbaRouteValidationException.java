@@ -1,8 +1,8 @@
 /* ---------------------------------------------------------------------------------------
  * Class:  net.danielcarda.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException.java
- * Date:   2026/11/07
+ * Create Date:  2015/05/01
  * ---------------------------------------------------------------------------------------
- * Copyright (c) 2026 Daniel Carda
+ * Copyright (c) 2015-2026 Daniel Carda
  *
  * SPDX-License-Identifier: Apache-2.0
  * ---------------------------------------------------------------------------------------
@@ -40,6 +40,8 @@ import java.util.Objects;
     yyyy mm dd  Who                       Description
     ----------  ------------------------  ----------------------------------------------------
     2026/09/17  Daniel Carda              Updated code.  New Class Header.
+    2026/09/17  Daniel Carda              Updated code.  New Class Header.
+    2027/11/07  Daniel Carda              Improved code and JavaDocs.
 </pre>
  * <hr>
  */
@@ -98,5 +100,5 @@ public class AbaRouteValidationException extends Exception {
 
 /* ---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.exceptions.AbaRouteValidationException.java
- * Date:   2026/11/07
+ * Create Date:  2015/05/01
  * --------------------------------------------------------------------------------------- */

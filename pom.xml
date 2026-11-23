@@ -2014,18 +2014,18 @@
             <build>
                 <plugins>
                     <!-- 2. Configure the Maven Release Plugin -->
-<!--                    <plugin>-->
-<!--                        <groupId>org.apache.maven.plugins</groupId>-->
-<!--                        <artifactId>maven-release-plugin</artifactId>-->
-<!--                        <version>3.1.1</version>-->
-<!--                        <configuration>-->
-<!--                            &lt;!&ndash; Ensures all submodules inherit the same version if applicable &ndash;&gt;-->
-<!--                            <autoVersionSubmodules>true</autoVersionSubmodules>-->
-<!--                            &lt;!&ndash; Formats the Git tag generated during the release &ndash;&gt;-->
-<!--                            <tagNameFormat>v@{project.version}</tagNameFormat>-->
-<!--                            <useReleaseProfile>false</useReleaseProfile>-->
-<!--                        </configuration>-->
-<!--                    </plugin>-->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-release-plugin</artifactId>
+                        <version>3.1.1</version>
+                        <configuration>
+                            <!-- Ensures all submodules inherit the same version if applicable -->
+                            <autoVersionSubmodules>true</autoVersionSubmodules>
+                            <!-- Formats the Git tag generated during the release -->
+                            <tagNameFormat>v@{project.version}</tagNameFormat>
+                            <useReleaseProfile>false</useReleaseProfile>
+                        </configuration>
+                    </plugin>
                 </plugins>
             </build>
 

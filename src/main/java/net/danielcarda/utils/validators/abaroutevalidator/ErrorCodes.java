@@ -1,8 +1,8 @@
 /*---------------------------------------------------------------------------------------
  * Class:  net.danielcarda.utils.validators.abaroutevalidator.ErrorCodes.java
- * Date:   2026/11/07
+ * Create Date:   2020/12/22
  * ---------------------------------------------------------------------------------------
- * Copyright (c) 2026 Daniel Carda
+ * Copyright (c) 2020-2026 Daniel Carda
  *
  * SPDX-License-Identifier: Apache-2.0
  * ---------------------------------------------------------------------------------------
@@ -38,6 +38,7 @@ package net.danielcarda.utils.validators.abaroutevalidator;
     2020/12/20  Daniel Carda              Updated formatting.
     2021/08/01  Daniel Carda              Improved Class Javadocs
     2026/08/01  Daniel Carda              Improved Mnemonic Text.  New Class Header.
+    2027/11/12  Daniel Carda              Improved code and JavaDocs.
 </pre>
  * <hr>
  */
@@ -139,5 +140,5 @@ public enum ErrorCodes {
 
 /* ---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.ErrorCodes.java
- * Date:   2026/11/07
+ * Create Date:   2020/12/22
  * --------------------------------------------------------------------------------------- */

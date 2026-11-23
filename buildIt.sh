@@ -339,25 +339,33 @@ function display_VerifyInformation() {
     mvn verify
 }  # ---  End Function display_VerifyInformation()
 
-
-
-
 #===  FUNCTION   ================================================
-#         Name:  build_JarArtifactOnly()
+#         Name:  release_JarArtifact()
 #  --------------------------------------------------------------
-#  Description:  This will build the main EAR artifact but will
-#                not run the JUnit tests.
+#  Description:  This will build the artifact and try and
+#                upload it to GitHub.
 #   Parameters:  None
 #      Returns:  None
 #================================================================
 function release_JarArtifact() {
 
-echo
-echo
-echo
-echo
-echo
-    echo "running the clean"
+    #  NOTE
+    #  When running the prepare/release for the first time you have to do
+    #  it manually.  You need to answer a few questions.
+    #  mvn -P release:clean
+    #  mvn -P release:prepare
+    #  mvn -P release:perform
+    #
+
+    #  ────────────────────────────────────────────────────────────────────────
+    echo
+    echo
+    echo
+    echo
+    echo
+    echo "───────────────────────────────────────────────────────────────────────"
+    echo "   Running the RELEASE : CLEAN"
+    echo "───────────────────────────────────────────────────────────────────────"
   #  Clean up the artifacts from the previous build.
     mvn               \
         -P release    \
@@ -371,16 +379,15 @@ echo
         terminationAbnormal
     fi
 
-read -p "Press Enter to continue..."
-
-
-echo
-echo
-echo
-echo
-echo
-    echo "running the dry-run"
-
+    #  ────────────────────────────────────────────────────────────────────────
+    echo
+    echo
+    echo
+    echo
+    echo
+    echo "───────────────────────────────────────────────────────────────────────"
+    echo "   Running the RELEASE : PREPARE  DRY-RUN"
+    echo "───────────────────────────────────────────────────────────────────────"
     #  Do a dry-run of the build
     mvn                                \
         -P release                     \
@@ -394,16 +401,15 @@ echo
         terminationAbnormal
     fi
 
-
-read -p "Press Enter to continue..."
-
-
-echo
-echo
-echo
-echo
-echo
-echo "running the prepare"
+    #  ────────────────────────────────────────────────────────────────────────
+    echo
+    echo
+    echo
+    echo
+    echo
+    echo "───────────────────────────────────────────────────────────────────────"
+    echo "   Running the RELEASE : PREPARE"
+    echo "───────────────────────────────────────────────────────────────────────"
     #  Let's do the real prepare!
     mvn                  \
         -P release       \
@@ -417,16 +423,15 @@ echo "running the prepare"
         terminationAbnormal
     fi
 
-
-read -p "Press Enter to continue..."
-
-echo
-echo
-echo
-echo
-echo
-echo "running the release"
-
+    #  ────────────────────────────────────────────────────────────────────────
+    echo
+    echo
+    echo
+    echo
+    echo
+    echo "───────────────────────────────────────────────────────────────────────"
+    echo "   Running the RELEASE : PERFORM"
+    echo "───────────────────────────────────────────────────────────────────────"
     #  Let's do the real prepare!
     mvn                  \
         -P release       \
@@ -440,34 +445,7 @@ echo "running the release"
         terminationAbnormal
     fi
 
-
-
-
-
-
-
-
-
-
-#    # =======================================================================
-#    #  Build everything
-#    mvn               \
-#      -P release      \
-#      clean           \
-#      package
-##      release:prepare
-#
-#    # Check results.
-#    if [ $? -ne 0 ]; then
-#        echo
-#        echo "Build Failure: The application build has failed for some reason."
-#        terminationAbnormal
-#    fi
-
-    # Display information about the artifact.
-    display_ArtifactInformation
-
-} # ---  End Function build_JarArtifactOnly()
+} # ---  End Function release_JarArtifact()
 
 #===  FUNCTION   ================================================
 #         Name:  terminationNormal()
