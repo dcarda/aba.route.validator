@@ -208,6 +208,21 @@ function delete_Artifacts() {
 #    echo -ne "."
 #    echo
 
+
+    #  Clean up the release artifacts from the previous build.
+    mvn               \
+        -P release    \
+        --batch-mode  \
+        release:clean
+
+    # Check results.
+    if [ $? -ne 0 ]; then
+        echo
+        echo "Build Failure: The previous release artifacts could not be removed."
+        terminationAbnormal
+    fi
+
+
     # Maven Clean
     mvn clean
 } # ---  End Function delete_Artifacts()
@@ -341,7 +356,7 @@ function release_JarArtifact() {
     echo
     echo
 
-  #  Clean up the artifacts from the perious build.
+  #  Clean up the artifacts from the previous build.
     mvn               \
         -P release    \
         --batch-mode  \
