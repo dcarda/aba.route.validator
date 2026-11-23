@@ -21,27 +21,28 @@ Copyright © 2026 Daniel Carda
 [//]: # (Be sure to put the emoji in front of the bracket.)
 - [⚡️Overview](#overview)
 - [🚀 Features](#features)
-- 👨 [Technology Stack](#technology-stack)
-- ⚙️ [Installation](#installation)
+- [👨 Technology Stack](#technology-stack)
+- [⚙️ Installation](#installation)
   - [Maven](#maven)
-- 🏗️ [Build Instructions](#build-instructions)
+- [🏗️ Build Instructions](#build-instructions)
   - [Build With Tests](#build-with-tests)
   - [Build With Metrics Reports](#build-with-metrics-reports)
   - [Build Only The Jar Artifact](#build-only-the-jar-artifact)
-- ✅ [Code Metrics Reports](#code-metrics-reports)
-- 🎨 [Usage](#usage)
-- 🔧 [Validation Results](#validation-results)
-- 🔧 [Validation Checks](#validation-checks)
-- 🧐 [Federal Reserve Routing Prefixes](#federal-reserve-routing-prefixes)
-- 🧩 [Error Codes](#error-codes)
+- [✅ Code Metrics Reports](#code-metrics-reports)
+- [🎨 Usage](#usage)
+- [🔧 Validation Results](#validation-results)
+- [🔧 Validation Checks](#validation-checks)
+- [🧐 Federal Reserve Routing Prefixes](#federal-reserve-routing-prefixes)
+- [🧩 Error Codes](#error-codes)
   - [Exception Handling](#exception-handling)
   - [Error Code Lookup](#error-code-lookup)
-- 🚧 [ Limitations](#limitations)
-- 📝 [API Documentation](#api-documentation)
-- ⚠️[ Copyright and License](#copyright-and-license)
-- 👋 [About the Developer](#about-the-developer)
-- 🤝[Contributing](#contributing)
+- [🚧 Limitations](#limitations)
+- [📝 API Documentation](#api-documentation)
+- [⚠️Copyright and License](#copyright-and-license)
+- [👋 About the Developer](#about-the-developer)
+- [🤝 Contributing](#contributing)
 
+<a id="overview"></a>
 ## <hr>⚡️Overview
 
 ABA Routing Validator is a lightweight Java library developed by Carda Technologies, LLC, for validating American Bankers Association (ABA) Routing Transit Numbers.
@@ -72,6 +73,7 @@ http://en.wikipedia.org/wiki/Routing_transit_number
 - Supports exception handling with numeric error code retrieval.
 - Lightweight implementation using a static utility class.
 
+<a id="technology-stack"></a>
 ## <hr>👨 Technology Stack
 
 The following software is required to build this project:
@@ -81,7 +83,7 @@ The following software is required to build this project:
 |  [![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html)   |  17.0.9   | https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html |
 |  [![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)](https://maven.apache.org/download.cgi)                          |   3.9.16  | https://maven.apache.org/download.cgi                                          |
 
-
+<a id="installation"></a>
 ## <hr>⚙️ Installation
 
 ### <span style="color: #33ccff;">    Maven
@@ -123,6 +125,7 @@ You can find this under: ~/.m2/settings.xml
 
 You can download artifacts, but only authorized users can publish.
 
+<a id="build-instructions"></a>
 ## <hr>🏗️ Build Instructions
 
 The POM actually has several build targets.  
@@ -148,7 +151,7 @@ This will generate the final build artifact and nothing else.
    mvn -P jar-only clean install-DskipTests
 ```
 
----
+<a id="code-metrics-reports"></a>
 ## ✅ Code Metrics Reports
 Maven site reports are human-readable documentation and analysis pages generated
 automatically during the project's site lifecycle (triggered by the mvn site command)
@@ -170,6 +173,7 @@ The current list of reports includes:
 
 The reporting site be located [here](https://dcarda.github.io/aba.route.validator/).
 
+<a id="usage"></a>
 ## <hr>🎨 Usage
 
 The validator provides a static validation method.
@@ -202,7 +206,8 @@ public class Example {
 }
 ```
 
-## <hr>🔧  Validation Results
+<a id="validation-results"></a>
+## 🔧  Validation Results
 
 The `validate()` method returns a boolean when structural and Federal Reserve prefix validation succeeds.
 
@@ -212,7 +217,7 @@ The `validate()` method returns a boolean when structural and Federal Reserve pr
 | `false` | The routing number has an invalid checksum. |
 | Exception | The input is null, blank, incorrectly sized, contains non-ASCII digits, or has an invalid Federal Reserve prefix. |
 
-## <hr>🔧  Validation Checks
+## 🔧  Validation Checks
 
 The validator performs the following checks:
 
@@ -223,7 +228,8 @@ The validator performs the following checks:
 5. The first two digits must represent an accepted Federal Reserve routing prefix.
 6. The ABA checksum must be valid.
 
-## <hr>🧐 Federal Reserve Routing Prefixes
+<a id="federal-reserve-routing-prefixes"></a>
+## 🧐 Federal Reserve Routing Prefixes
 
 The validator recognizes the following routing prefix ranges:
 
@@ -234,7 +240,8 @@ The validator recognizes the following routing prefix ranges:
 | `61–72` | Payment processors and clearing houses |
 | `80` | Traveler's checks |
 
-## <hr>🧩  Error Codes
+<a id="error-codes"></a>
+## 🧩  Error Codes
 
 The library defines the following validation error codes:
 
@@ -281,7 +288,8 @@ ErrorCodes error = ErrorCodes.fromErrorCode(-1002);
 
 An `IllegalArgumentException` is thrown if the supplied numeric error code is not recognized.
 
-## <hr>🚧  Limitations
+<a id="limitations"></a>
+## 🚧  Limitations
 
 Passing validation does not establish that:
 
@@ -293,10 +301,12 @@ Passing validation does not establish that:
 
 Additional verification may be required depending on the intended application.
 
+<a id="api-documentation"></a>
 ## <hr>📝 API Documentation
 
 See the project Javadocs for complete API documentation.
 
+<a id="copyright-and-license"></a>
 ## <hr>⚠️  Copyright and License
 
 This software is free to use for personal, academic, commercial, or corporate projects.
@@ -314,6 +324,7 @@ By submitting a pull request to this project, you aggree
 to license your contribution under the Apache license
 version 2.0 to this project.
 
+<a id="about-the-developer"></a>
 ## <hr>👋 About the Developer  
 
 Follow this link to learn more about me:
@@ -326,6 +337,7 @@ Follow this link to learn more about me:
 <!-- End:  Developer  -->
 <!--  ───────────────────────────────────────────────────────────────────────────  -->
 
+<a id="contributing"></a>
 ## <hr>🙏 Contributing
 Donations are always welcome!  Help me out this this and other projects!
 
