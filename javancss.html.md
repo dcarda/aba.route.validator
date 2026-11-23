@@ -19,7 +19,7 @@ Packages
 
 **Packages sorted by NCSS.**
 
-Package Classes Methods NCSS Javadocs Javadoc lines Single lines comment Multi lines comment net.danielcarda.utils.validators.abaroutevalidator 2 9 55 6 79 8 109 net.danielcarda.utils.validators.abaroutevalidator.exceptions 1 3 15 4 35 0 27 Classes total Methods total NCSS total Javadocs Javadoc lines Single lines comment Multi lines comment 3 12 70 10 114 8 136 
+Package Classes Methods NCSS Javadocs Javadoc lines Single lines comment Multi lines comment net.danielcarda.utils.validators.abaroutevalidator 2 9 55 6 80 8 110 net.danielcarda.utils.validators.abaroutevalidator.exceptions 1 3 15 4 37 0 27 Classes total Methods total NCSS total Javadocs Javadoc lines Single lines comment Multi lines comment 3 12 70 10 117 8 137 
 
 # Objects
 

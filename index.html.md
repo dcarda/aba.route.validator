@@ -103,13 +103,34 @@ Add the following dependency to your project's `pom.xml`:
 
 ```xml
 <dependency>
-    <groupId>com.cardatechnologies</groupId>
+    <groupId>net.danielcarda</groupId>
     <artifactId>aba-route-validator</artifactId>
     <version>VERSION</version>
 </dependency>
 ```
 
 Replace `VERSION` with the desired release version.
+
+### Maven settings.xml
+
+In order to get to my GitHub repository, you'll need to add the following to your Maven settings.xml.
+
+You can find this under: ~/.m2/settings.xml
+
+```xml
+<repository>
+    <id>github</id>
+    <url>https://maven.pkg.github.com/dcarda/aba.route.validator</url>
+    <snapshots>
+        <enabled>true</enabled>
+    </snapshots>
+    <releases>
+        <enabled>true</enabled>
+    </releases>
+</repository>
+```
+
+You can download artifacts, but only authorized users can publish.
 
 ## 
 

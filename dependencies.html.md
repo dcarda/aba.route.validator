@@ -40,7 +40,7 @@ The following is a list of test dependencies for this project. These dependencie
 
 ## Dependency Tree
 
-- net.danielcarda:aba.routing.transit.validator:jar:1.0.3-SNAPSHOT 
+- net.danielcarda:aba.routing.transit.validator:jar:1.0.1-SNAPSHOT 
   
   | ABA Validator |
   | --- |

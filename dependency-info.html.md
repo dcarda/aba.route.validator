@@ -12,14 +12,14 @@ canonical_url: https://danielcarda.net/dependency-info.html
 <dependency>
   <groupId>net.danielcarda</groupId>
   <artifactId>aba.routing.transit.validator</artifactId>
-  <version>1.0.3-SNAPSHOT</version>
+  <version>1.0.1-SNAPSHOT</version>
 </dependency>
 ```
 
 ## Apache Ivy
 
 ```
-<dependency org="net.danielcarda" name="aba.routing.transit.validator" rev="1.0.3-SNAPSHOT">
+<dependency org="net.danielcarda" name="aba.routing.transit.validator" rev="1.0.1-SNAPSHOT">
   <artifact name="aba.routing.transit.validator" type="jar" />
 </dependency>
 ```
@@ -28,24 +28,24 @@ canonical_url: https://danielcarda.net/dependency-info.html
 
 ```
 @Grapes(
-@Grab(group='net.danielcarda', module='aba.routing.transit.validator', version='1.0.3-SNAPSHOT')
+@Grab(group='net.danielcarda', module='aba.routing.transit.validator', version='1.0.1-SNAPSHOT')
 )
 ```
 
 ## Gradle/Grails
 
 ```
-implementation 'net.danielcarda:aba.routing.transit.validator:1.0.3-SNAPSHOT'
+implementation 'net.danielcarda:aba.routing.transit.validator:1.0.1-SNAPSHOT'
 ```
 
 ## Scala SBT
 
 ```
-libraryDependencies += "net.danielcarda" % "aba.routing.transit.validator" % "1.0.3-SNAPSHOT"
+libraryDependencies += "net.danielcarda" % "aba.routing.transit.validator" % "1.0.1-SNAPSHOT"
 ```
 
 ## Leiningen
 
 ```
-[net.danielcarda/aba.routing.transit.validator "1.0.3-SNAPSHOT"]
+[net.danielcarda/aba.routing.transit.validator "1.0.1-SNAPSHOT"]
 ```

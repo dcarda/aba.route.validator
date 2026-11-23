@@ -27,6 +27,6 @@ canonical_url: https://danielcarda.net/summary.html
 | --- | --- |
 | GroupId | net.danielcarda |
 | ArtifactId | aba.routing.transit.validator |
-| Version | 1.0.3-SNAPSHOT |
+| Version | 1.0.1-SNAPSHOT |
 | Type | jar |
 | Java Version | 17 |

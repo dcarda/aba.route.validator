@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ErrorCodes.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ABA Validator</a> &gt; <a href="index.source.html" class="el_package">net.danielcarda.utils.validators.abaroutevalidator</a> &gt; <span class="el_source">ErrorCodes.java</span></div><h1>ErrorCodes.java</h1><pre class="source lang-java linenums">/*---------------------------------------------------------------------------------------
  * Class:  net.danielcarda.utils.validators.abaroutevalidator.ErrorCodes.java
- * Date:   2026/11/07
+ * Create Date:   2020/12/22
  * ---------------------------------------------------------------------------------------
- * Copyright (c) 2026 Daniel Carda
+ * Copyright (c) 2020-2026 Daniel Carda
  *
  * SPDX-License-Identifier: Apache-2.0
  * ---------------------------------------------------------------------------------------
@@ -38,33 +38,34 @@ package net.danielcarda.utils.validators.abaroutevalidator;
     2020/12/20  Daniel Carda              Updated formatting.
     2021/08/01  Daniel Carda              Improved Class Javadocs
     2026/08/01  Daniel Carda              Improved Mnemonic Text.  New Class Header.
+    2027/11/12  Daniel Carda              Improved code and JavaDocs.
 &lt;/pre&gt;
  * &lt;hr&gt;
  */
-<span class="fc" id="L44">public enum ErrorCodes {</span>
+<span class="fc" id="L45">public enum ErrorCodes {</span>
 
     /** Error code indicating ABA number is null. */
-<span class="fc" id="L47">    ABA_1000(-1000,</span>
+<span class="fc" id="L48">    ABA_1000(-1000,</span>
             &quot;com.cardatechnologies.aba.number.null&quot;),
 
     /** Error code indicating ABA number is blank. */
-<span class="fc" id="L51">    ABA_1001(-1001,</span>
+<span class="fc" id="L52">    ABA_1001(-1001,</span>
             &quot;net.danielcarda.aba.number.blank&quot;),
 
     /** Error code indicating ABA number is too short. */
-<span class="fc" id="L55">    ABA_1002(-1002,</span>
+<span class="fc" id="L56">    ABA_1002(-1002,</span>
             &quot;net.danielcarda.aba.number.length.too.short&quot;),
 
     /** Error code indicating ABA number is too long. */
-<span class="fc" id="L59">    ABA_1003(-1003,</span>
+<span class="fc" id="L60">    ABA_1003(-1003,</span>
             &quot;net.danielcarda.aba.number.length.too.long&quot;),
 
     /** Error code indicating ABA number contains non-ASCII digits. */
-<span class="fc" id="L63">    ABA_1004(-1004,</span>
+<span class="fc" id="L64">    ABA_1004(-1004,</span>
             &quot;net.danielcarda.aba.number.contains.non.ascii.digits&quot;),
 
     /** Error code indicating an invalid Federal Reserve prefix. */
-<span class="fc" id="L67">    ABA_1005(-1005,</span>
+<span class="fc" id="L68">    ABA_1005(-1005,</span>
             &quot;net.danielcarda.aba.number.invalid.federal.reserve.prefix&quot;);
 
     private final int    errorCode;
@@ -79,10 +80,10 @@ package net.danielcarda.utils.validators.abaroutevalidator;
      *        Text mnemonic describing the error code.
      */
     ErrorCodes( int    errorCode,
-<span class="fc" id="L82">                String errorMnemonic ) {</span>
-<span class="fc" id="L83">        this.errorCode     = errorCode;</span>
-<span class="fc" id="L84">        this.errorMnemonic = errorMnemonic;</span>
-<span class="fc" id="L85">    }</span>
+<span class="fc" id="L83">                String errorMnemonic ) {</span>
+<span class="fc" id="L84">        this.errorCode     = errorCode;</span>
+<span class="fc" id="L85">        this.errorMnemonic = errorMnemonic;</span>
+<span class="fc" id="L86">    }</span>
 
     /**
      * Method: getErrorCode
@@ -93,7 +94,7 @@ package net.danielcarda.utils.validators.abaroutevalidator;
      * @return int
      */
     public int getErrorCode() {
-<span class="fc" id="L96">        return errorCode;</span>
+<span class="fc" id="L97">        return errorCode;</span>
     }
 
     /**
@@ -105,7 +106,7 @@ package net.danielcarda.utils.validators.abaroutevalidator;
      * @return String
      */
     public String getErrorMnemonic() {
-<span class="fc" id="L108">        return errorMnemonic;</span>
+<span class="fc" id="L109">        return errorMnemonic;</span>
     }
 
     /**
@@ -126,19 +127,19 @@ package net.danielcarda.utils.validators.abaroutevalidator;
      */
     public static ErrorCodes fromErrorCode(final int errorCode) {
 
-<span class="nc bnc" id="L129" title="All 2 branches missed.">        for (final ErrorCodes error : values()) {</span>
-<span class="nc bnc" id="L130" title="All 2 branches missed.">            if (error.getErrorCode() == errorCode) {</span>
-<span class="nc" id="L131">                return error;</span>
+<span class="nc bnc" id="L130" title="All 2 branches missed.">        for (final ErrorCodes error : values()) {</span>
+<span class="nc bnc" id="L131" title="All 2 branches missed.">            if (error.getErrorCode() == errorCode) {</span>
+<span class="nc" id="L132">                return error;</span>
             }
         }
 
-<span class="nc" id="L135">        throw new IllegalArgumentException(</span>
+<span class="nc" id="L136">        throw new IllegalArgumentException(</span>
                 &quot;Unknown ABA routing validation error code: &quot; + errorCode);
     }
 }
 
 /* ---------------------------------------------------------------------------------------
  * Class:  com.cardatechnologies.utils.validators.abaroutevalidator.ErrorCodes.java
- * Date:   2026/11/07
+ * Create Date:   2020/12/22
  * --------------------------------------------------------------------------------------- */
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.16.202610240946</span></div></body></html>
