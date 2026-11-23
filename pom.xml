@@ -8,7 +8,7 @@
     <!--   Artifact Information                                                        -->
     <groupId>net.danielcarda</groupId>
     <artifactId>aba.routing.transit.validator</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.5-SNAPSHOT</version>
 
     <!--  ───────────────────────────────────────────────────────────────────────────  -->
     <!--   Miscellaneous Information                                                   -->
@@ -82,7 +82,7 @@
         <connection>scm:git:git@github.com:dcarda/aba.route.validator.git</connection>
         <developerConnection>scm:git:git@github.com:dcarda/aba.route.validator.git</developerConnection>
         <url>https://github.com/dcarda/aba.route.validator/tree/master</url>
-        <tag>v1.0.4</tag>
+        <tag>HEAD</tag>
     </scm>
     <!--  End:  scm  -->
 
