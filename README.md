@@ -20,7 +20,7 @@ Copyright © 2026 Daniel Carda
 [//]: # (https://www.markdowntools.com/tools/markdown-toc#copyright-1)
 [//]: # (Be sure to put the emoji in front of the bracket.)
 - [⚡️Overview](#overview)
-- 🚀 [Features](#features)
+- [🚀 Features](#features)
 - 👨 [Technology Stack](#technology-stack)
 - ⚙️ [Installation](#installation)
   - [Maven](#maven)
