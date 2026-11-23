@@ -37,7 +37,7 @@ startingTime=$(date +"%D %T.%3N")
 #===  FUNCTION   ================================================
 #         Name:  build_JarArtifact()
 #  --------------------------------------------------------------
-#  Description:  This will build the main EAR artifact.
+#  Description:  This will build the main Jar artifact.
 #   Parameters:  None
 #      Returns:  None
 #================================================================
@@ -67,7 +67,7 @@ function build_JarArtifact() {
 #===  FUNCTION   ================================================
 #         Name:  build_JarArtifactOnly()
 #  --------------------------------------------------------------
-#  Description:  This will build the main EAR artifact but will
+#  Description:  This will build the main Jar artifact but will
 #                not run the JUnit tests.
 #   Parameters:  None
 #      Returns:  None
@@ -101,7 +101,7 @@ function build_JarArtifactOnly() {
 #===  FUNCTION   ================================================
 #         Name:  build_SiteReports()
 #  --------------------------------------------------------------
-#  Description:  This will build the main EAR artifact.
+#  Description:  This will build the main Jar artifact.
 #   Parameters:  None
 #      Returns:  None
 #================================================================
@@ -120,7 +120,7 @@ function build_SiteReports() {
       clean            \
       install          \
       site
-    #  The environment variable on the first line just suppresses a
+    #  The environment variable on the first line just suppresses
     #  some warning messages from the PMD plugin.
 
     # Check results.
@@ -254,7 +254,6 @@ function display_ArtifactInformation() {
     echo
 
     cd target/
-#    gunzip -p aba.routing.transit.validator-*.jar META-INF/MANIFEST.MF >file.txt
     jar xf aba.routing.transit.validator-*.jar META-INF/MANIFEST.MF
 
     tail -67 META-INF/MANIFEST.MF
@@ -542,7 +541,7 @@ if [ $# -eq 0 ]; then
     # Delete all the artifacts
     delete_Artifacts
 
-    # Build Main EAR Artifact
+    # Build Main Jar Artifact
     build_JarArtifact
 
     # End the program
@@ -590,7 +589,7 @@ else
     elif [ $1 == "jar" ]; then
         # Delete all the artifacts
         delete_Artifacts
-        # Build Main EAR Artifact
+        # Build Main Jar Artifact
         build_JarArtifactOnly
         # End the program
         terminationNormal
@@ -600,7 +599,7 @@ else
     elif [ $1 == "release" ]; then
         # Delete all the artifacts
         delete_Artifacts
-        # Build Main EAR Artifact
+        # Build Main Jar Artifact
         release_JarArtifact
         # End the program
         terminationNormal
