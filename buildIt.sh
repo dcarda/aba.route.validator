@@ -366,21 +366,8 @@ function release_JarArtifact() {
     echo "───────────────────────────────────────────────────────────────────────"
     echo "   Running the RELEASE : CLEAN"
     echo "───────────────────────────────────────────────────────────────────────"
-  #  Clean up the artifacts from the previous build.
-#    mvn               \
-#        -P release    \
-#        --batch-mode  \
-#        release:clean
-#
-#    # Check results.
-#    if [ $? -ne 0 ]; then
-#        echo
-#        echo "Build Failure: The application build has failed for some reason."
-#        terminationAbnormal
-#    fi
-
-        # Delete all the artifacts
-        delete_Artifacts
+    #  Clean up the artifacts from the previous build.
+    delete_Artifacts
 
     #  ────────────────────────────────────────────────────────────────────────
     echo
@@ -404,49 +391,49 @@ function release_JarArtifact() {
         terminationAbnormal
     fi
 
-    #  ────────────────────────────────────────────────────────────────────────
-    echo
-    echo
-    echo
-    echo
-    echo
-    echo "───────────────────────────────────────────────────────────────────────"
-    echo "   Running the RELEASE : PREPARE"
-    echo "───────────────────────────────────────────────────────────────────────"
-    #  Let's do the real prepare!
-    mvn                  \
-        -P release       \
-        --batch-mode     \
-        release:prepare
-
-    # Check results.
-    if [ $? -ne 0 ]; then
-        echo
-        echo "Build Failure: The application build has failed for some reason."
-        terminationAbnormal
-    fi
-
-    #  ────────────────────────────────────────────────────────────────────────
-    echo
-    echo
-    echo
-    echo
-    echo
-    echo "───────────────────────────────────────────────────────────────────────"
-    echo "   Running the RELEASE : PERFORM"
-    echo "───────────────────────────────────────────────────────────────────────"
-    #  Let's do the real prepare!
-    mvn                  \
-        -P release       \
-        --batch-mode     \
-        release:perform
-
-    # Check results.
-    if [ $? -ne 0 ]; then
-        echo
-        echo "Build Failure: The application build has failed for some reason."
-        terminationAbnormal
-    fi
+#    #  ────────────────────────────────────────────────────────────────────────
+#    echo
+#    echo
+#    echo
+#    echo
+#    echo
+#    echo "───────────────────────────────────────────────────────────────────────"
+#    echo "   Running the RELEASE : PREPARE"
+#    echo "───────────────────────────────────────────────────────────────────────"
+#    #  Let's do the real prepare!
+#    mvn                  \
+#        -P release       \
+#        --batch-mode     \
+#        release:prepare
+#
+#    # Check results.
+#    if [ $? -ne 0 ]; then
+#        echo
+#        echo "Build Failure: The application build has failed for some reason."
+#        terminationAbnormal
+#    fi
+#
+#    #  ────────────────────────────────────────────────────────────────────────
+#    echo
+#    echo
+#    echo
+#    echo
+#    echo
+#    echo "───────────────────────────────────────────────────────────────────────"
+#    echo "   Running the RELEASE : PERFORM"
+#    echo "───────────────────────────────────────────────────────────────────────"
+#    #  Let's do the real prepare!
+#    mvn                  \
+#        -P release       \
+#        --batch-mode     \
+#        release:perform
+#
+#    # Check results.
+#    if [ $? -ne 0 ]; then
+#        echo
+#        echo "Build Failure: The application build has failed for some reason."
+#        terminationAbnormal
+#    fi
 
 } # ---  End Function release_JarArtifact()
 
