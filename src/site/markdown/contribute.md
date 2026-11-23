@@ -1,3 +1,10 @@
+---
+title: Contributing
+author: Daniel Carda
+description: Learn how to contribute to the ABA Routing Validator Java library.
+keywords: Java Open Source, Java Development, ABA Routing Validator, Contributions
+---
+
 # Contribute
 If you'd like to show your support for this project and enable me to create other projects like this you are 
 encouraged to donate using the links below.

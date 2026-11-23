@@ -30,12 +30,21 @@
     <!-- ================================================================ -->
 
     <custom>
-
-        <keywords>ABA, transit routing, validator, software</keywords>
         <author>Daniel Carda</author>
-        <bodyClass>sentry-orange</bodyClass>
         <buildIndex>true</buildIndex>
+        <buildAiIndex>true</buildAiIndex>
+        <bodyClass>sentry-orange</bodyClass>
         <convertImagesToWebp>true</convertImagesToWebp>
+        <keywords>
+            ABA Routing Number,
+            ABA Routing Validator,
+            Routing Transit Number,
+            Routing Number Validator,
+            ABA RTN,
+            ABA Checksum Validation,
+            Federal Reserve Routing Prefix,
+            Java Validation Library
+        </keywords>
 
         <reflowSkin>
             <theme>bootswatch-cerulean</theme>

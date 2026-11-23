@@ -1598,7 +1598,6 @@
                         <artifactId>maven-checkstyle-plugin</artifactId>
                     </plugin>
 
-
                     <!--   License Information Report Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   mojohaus.org/license-maven-plugin/                              -->
                     <plugin>
@@ -1612,7 +1611,6 @@
                         <groupId>com.github.spotbugs</groupId>
                         <artifactId>spotbugs-maven-plugin</artifactId>
                     </plugin>
-
 
                     <!--   Apply the custom dark stylesheet to the JaCoCo HTML report.   -->
                     <!--   This runs only when the genReports profile is active.          -->
@@ -1628,6 +1626,7 @@
                                 </goals>
                                 <configuration>
                                     <target>
+                                        <!--  These are used to install the "dark" .css files.  -->
                                         <copy
                                                 file="${project.basedir}/src/site/resources/jacoco/report.css"
                                                 tofile="${project.reporting.outputDirectory}/jacoco/jacoco-resources/report.css"
@@ -1640,58 +1639,11 @@
                                                 file="${project.basedir}/src/site/resources/jacoco/prettify.js"
                                                 tofile="${project.reporting.outputDirectory}/jacoco/jacoco-resources/prettify.js"
                                                 overwrite="true"/>
-
-<!--                                        <copy-->
-<!--                                                file="${project.basedir}/src/site/resources/xref/stylesheet-dark.css"-->
-<!--                                                tofile="${project.reporting.outputDirectory}/xref/stylesheet2.css"-->
-<!--                                                overwrite="true"/>-->
-<!--                                        <copy-->
-<!--                                                file="${project.basedir}/src/site/resources/xref/stylesheet-dark.css"-->
-<!--                                                tofile="${project.reporting.outputDirectory}/xref/stylesheet.css"-->
-<!--                                                overwrite="true"/>-->
-<!--                                        <copy-->
-<!--                                                file="${project.basedir}/src/site/resources/xref/stylesheet-dark.css"-->
-<!--                                                tofile="${project.reporting.outputDirectory}/xref/stylesheet-dark.css"-->
-<!--                                                overwrite="true"/>-->
                                     </target>
                                 </configuration>
                             </execution>
-
-<!--                            <execution>-->
-<!--                                <id>apply-xref-dark-theme</id>-->
-<!--                                <phase>post-site</phase>-->
-<!--                                <goals>-->
-<!--                                    <goal>run</goal>-->
-<!--                                </goals>-->
-<!--                                <configuration>-->
-<!--                                    <target>-->
-<!--                                        <copy-->
-<!--                                                file="${project.basedir}/src/site/resources/xref/stylesheet-dark.css"-->
-<!--                                                tofile="${project.reporting.outputDirectory}/xref/stylesheet2.css"-->
-<!--                                                overwrite="true"/>-->
-<!--                                        <copy-->
-<!--                                                file="${project.basedir}/src/site/resources/xref/stylesheet-dark.css"-->
-<!--                                                tofile="${project.reporting.outputDirectory}/xref/stylesheet.css"-->
-<!--                                                overwrite="true"/>-->
-<!--                                        <copy-->
-<!--                                                file="${project.basedir}/src/site/resources/xref/stylesheet-dark.css"-->
-<!--                                                tofile="${project.reporting.outputDirectory}/xref/stylesheet-dark.css"-->
-<!--                                                overwrite="true"/>-->
-<!--                                    </target>-->
-<!--                                </configuration>-->
-<!--                            </execution>-->
-
-
-
-
-
-
-
                         </executions>
-
                     </plugin>
-
-
                 </plugins>
                 <!--  End:  genReports : build : plugins  -->
             </build>
@@ -1810,8 +1762,6 @@
 
                     <!--   Maven JavaDoc Plugin   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   https://maven.apache.org/plugins/maven-javadoc-plugin/          -->
-
-
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
@@ -1856,65 +1806,6 @@
                         </reportSets>
                     </plugin>
 
-
-
-<!--                    <plugin>-->
-<!--                        <groupId>org.apache.maven.plugins</groupId>-->
-<!--                        <artifactId>maven-javadoc-plugin</artifactId>-->
-
-<!--                        <configuration>-->
-<!--&lt;!&ndash;                            <stylesheetfile>${basedir}/src/test/resources/javadoc/oracle_stylesheet.css</stylesheetfile>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <addStylesheet>${basedir}/src/site/resources/css/dracula-javadoc8.css</addStylesheet>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <addStylesheets>&ndash;&gt;-->
-<!--&lt;!&ndash;                                &lt;!&ndash; This appends your variables onto the native JDK 17 layout &ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;                                &lt;!&ndash;                                <addStylesheet>dracula-javadoc8.css</addStylesheet>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;                                <addStylesheet>dark-theme.css</addStylesheet>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </addStylesheets>&ndash;&gt;-->
-
-<!--                            <addStylesheets>-->
-<!--&lt;!&ndash;                                <addStylesheet>${project.basedir}/src/main/javadoc/dark-theme.css</addStylesheet>&ndash;&gt;-->
-<!--                                <addStylesheet>dark-theme.css</addStylesheet>-->
-<!--                            </addStylesheets>-->
-
-
-<!--                            <nohelp>true</nohelp>-->
-<!--                            <show>protected</show>-->
-
-<!--                            <failOnError>false</failOnError>-->
-<!--                            <excludes>-->
-<!--                                <exclude>**/*Test.java</exclude>-->
-<!--                                <exclude>**/Test_*.java</exclude>-->
-<!--                            </excludes>-->
-<!--                            &lt;!&ndash; Default configuration for all reports &ndash;&gt;-->
-<!--&lt;!&ndash;                            <stylesheet>maven</stylesheet>&ndash;&gt;-->
-
-<!--                            &lt;!&ndash;    <additionalparam>-Xdoclint:none</additionalparam>&ndash;&gt;-->
-<!--                            &lt;!&ndash; needed for Java 8u121 &ndash;&gt;-->
-<!--                            <additionalJOption>&#45;&#45;allow-script-in-comments</additionalJOption>-->
-<!--                        </configuration>-->
-
-<!--                        <reportSets>-->
-<!--                            <reportSet>-->
-<!--                                <id>default</id>-->
-<!--                                <reports>-->
-<!--                                    <report>javadoc</report>-->
-<!--                                </reports>-->
-<!--                                <configuration>-->
-<!--                                    &lt;!&ndash; Specific configuration for the given reports      &ndash;&gt;-->
-<!--                                </configuration>-->
-<!--                            </reportSet>-->
-<!--                            <reportSet>-->
-<!--                                <id>aggregate</id>-->
-<!--                                <reports>-->
-<!--                                    <report>aggregate</report>-->
-<!--                                </reports>-->
-<!--                                <configuration>-->
-<!--                                    &lt;!&ndash; Specific configuration for the given reports      &ndash;&gt;-->
-<!--                                </configuration>-->
-<!--                            </reportSet>-->
-<!--                        </reportSets>-->
-<!--                    </plugin>-->
-
                     <!--   JavaNCSS Report   ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  -->
                     <!--   https://javancss.github.io/                                     -->
                     <plugin>
@@ -1951,12 +1842,7 @@
                         <configuration>
                             <!-- Must be an absolute path -->
                             <stylesheet>${project.basedir}/src/site/resources/xref/stylesheet-dark.css</stylesheet>
-
                         </configuration>
-
-
-
-
                         <reportSets>
                             <reportSet>
                                 <id>jxr-report</id>

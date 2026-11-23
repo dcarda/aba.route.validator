@@ -1,3 +1,9 @@
+---
+title: Copyright
+author: Daniel Carda
+description: Licencing information.
+keywords: Java Open Source, Java Development, ABA Routing Validator, Contributions
+---
 ## Copyright and License
 
 This software is free to use for personal, academic, commercial, or corporate projects.

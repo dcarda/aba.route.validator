@@ -115,12 +115,13 @@ function build_SiteReports() {
 
     # =======================================================================
     #  Build everything
-    mvn                \
-      -D PMD_JAVA_DISABLE_AUX_CLASSPATH_WARNINGS=true \
+    PMD_JAVA_DISABLE_AUX_CLASSPATH_WARNINGS=true mvn  \
       -P genReports    \
       clean            \
       install          \
       site
+    #  The environment variable on the first line just suppresses a
+    #  some warning messages from the PMD plugin.
 
     # Check results.
     if [ $? -ne 0 ]; then
@@ -281,7 +282,7 @@ function display_TaskChoices() {
         echo "  Main Build Targets   ─────────────────────────────────────────────────────"
         echo "     ${0##*/}                <-- Build And Run Tests <default>"
         echo "     ${0##*/}  clean         <-- Deep Clean All Artifacts"
-        echo "     ${0##*/}  site          <-- Build Maven Site Reports"
+        echo "     ${0##*/}  reports       <-- Build Maven Site Reports"
         echo "     ${0##*/}  jar           <-- Build Only The Jar File"
         echo "     ${0##*/}  release       <-- Attempt To Build and Release to GitHub"
 
@@ -339,10 +340,6 @@ function release_JarArtifact() {
     echo
     echo
     echo
-
-
-
-
 
   #  Clean up the artifacts from the perious build.
     mvn               \
@@ -617,7 +614,7 @@ else
         terminationNormal
 
     # ─────────────────────────────────────────────────────────────────────────
-    elif [ $1 == "site" ]; then
+    elif [ $1 == "reports" ]; then
         build_SiteReports
         # End the program
         terminationNormal
