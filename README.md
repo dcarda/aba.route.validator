@@ -74,7 +74,7 @@ http://en.wikipedia.org/wiki/Routing_transit_number
 - Lightweight implementation using a static utility class.
 
 <a id="technology-stack"></a>
-## <hr>👨 Technology Stack
+## 👨 Technology Stack
 
 The following software is required to build this project:
 
