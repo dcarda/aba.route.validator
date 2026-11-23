@@ -134,6 +134,8 @@ You can download artifacts, but only authorized users can publish.
 The POM actually has several build targets.  
 
 
+
+<a id="build-with-tests"></a>
 ### <span style="color: #33ccff;"> Build With Tests
 This is the default and the one you will probably run the most.  
 
@@ -142,12 +144,14 @@ This will compile the Jar artifact, and run the JaCoCo and Spotbugs reports.
     mvn clean install
 ```
 
+<a id="build-with-metrics-reports"></a>
 ### <span style="color: #33ccff;"> Build With Metrics Reports
 This will generate the complete suite of metrics reports.
 ```bash
     mvn -P genReports clean install site
 ```
 
+<a id="build-only-the-jar-artifact"></a>
 ### <span style="color: #33ccff;"> Build Only The Jar Artifact
 This will generate the final build artifact and nothing else.
 ```bash
@@ -259,7 +263,7 @@ The library defines the following validation error codes:
 | -1004 | `aba.number.contains.non.ascii.digits` | Routing number contains non-ASCII digits. |
 | -1005 | `aba.number.invalid.federal.reserve.prefix` | Invalid Federal Reserve prefix. |
 
----
+<a id="exception-handling"></a>
 ### <span style="color: #33ccff;"> Exception Handling
 
 Validation errors are represented by `AbaRouteValidationException`, a checked exception.
@@ -282,7 +286,7 @@ try {
 }
 ```
 
----
+<a id="error-code-lookup"></a>
 ### <span style="color: #33ccff;"> Error Code Lookup
 
 The `ErrorCodes` enumeration provides a lookup method for retrieving an error enumeration by its numeric code.
