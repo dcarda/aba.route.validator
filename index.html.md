@@ -1,7 +1,8 @@
 ---
-date_published: 2026-11-17
-date_modified: 2026-11-17
-canonical_url: http://danielcarda.net/index.html
+description: A lightweight Java 17 library for validating ABA Routing Transit Numbers using structural, Federal Reserve prefix, and checksum validation.
+date_published: 2026-11-23
+date_modified: 2026-11-23
+canonical_url: https://danielcarda.net/index.html
 ---
 
 # ABA Routing Validator
@@ -19,30 +20,30 @@ Copyright © 2026 Daniel Carda
 🚩 Table of Contents
 
 - [⚡️Overview](#overview)
-- [🚀 Features](#-features)
+- 🚀 [Features](#-features)
 - 👨 [Technology Stack](#-technology-stack)
-- [⚙️ Installation](#-installation) 
+- ⚙️ [Installation](#-installation) 
   
     - [Maven](#maven)
-- [🏗️ Build Instructions](#-build-instructions) 
+- 🏗️ [Build Instructions](#-build-instructions) 
   
     - [Build With Tests](#build-with-tests)
     - [Build With Metrics Reports](#build-with-metrics-reports)
     - [Build Only The Jar Artifact](#build-only-the-jar-artifact)
-- [✅ Code Metrics Reports](#-code-metrics-reports)
-- [🎨 Usage](#-usage)
-- [🔧 Validation Results](#-validation-results)
-- [🔧 Validation Checks](#-validation-checks)
-- [🧐 Federal Reserve Routing Prefixes](#-federal-reserve-routing-prefixes)
-- [🧩 Error Codes](#-error-codes) 
+- ✅ [Code Metrics Reports](#-code-metrics-reports)
+- 🎨 [Usage](#-usage)
+- 🔧 [Validation Results](#-validation-results)
+- 🔧 [Validation Checks](#-validation-checks)
+- 🧐 [Federal Reserve Routing Prefixes](#-federal-reserve-routing-prefixes)
+- 🧩 [Error Codes](#-error-codes) 
   
     - [Exception Handling](#exception-handling)
     - [Error Code Lookup](#error-code-lookup)
-- [🚧 Limitations](#-limitations)
-- [📝 API Documentation](#-api-documentation)
-- [⚠️ Copyright and License](#-copyright-and-license)
-- [👋 About the Developer](#-about-the-developer)
-- [🤝 Contributing](#-contributing)
+- 🚧 [Limitations](#-limitations)
+- 📝 [API Documentation](#-api-documentation)
+- ⚠️[Copyright and License](#-copyright-and-license)
+- 👋 [About the Developer](#-about-the-developer)
+- 🤝[Contributing](#-contributing)
 
 ## 
 
@@ -87,8 +88,8 @@ The following software is required to build this project:
 
 | Software | Version | Download |
 | --- | --- | --- |
-| ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) | 17.0.9 | [https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html) |
-| ![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white) | 3.9.16 | [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi) |
+| [Java](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html) | 17.0.9 | [https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html) |
+| [Apache Maven](https://maven.apache.org/download.cgi) | 3.9.16 | [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi) |
 
 ## 
 
@@ -350,9 +351,9 @@ Follow this link to learn more about me:
 
 | Media | Address |
 | --- | --- |
-| ![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white) | [https://www.linkedin.com/in/danielcarda/](https://www.linkedin.com/in/danielcarda/) |
-| ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) | [https://github.com/dcarda](https://github.com/dcarda) |
-| ![](https://img.shields.io/badge/Independent-Developer-34495E?style=for-the-badge) | [https://danielcarda.net/](https://danielcarda.net/) |
+| [LinkedIn](https://www.linkedin.com/in/danielcarda/) | [https://www.linkedin.com/in/danielcarda/](https://www.linkedin.com/in/danielcarda/) |
+| [GitHub](https://github.com/dcarda) | [https://github.com/dcarda](https://github.com/dcarda) |
+| [https://danielcarda.net/](https://danielcarda.net/) | [https://danielcarda.net/](https://danielcarda.net/) |
 
 ## 
 

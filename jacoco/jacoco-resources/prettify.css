@@ -1,13 +1,16 @@
 /* Pretty printing styles. Used with prettify.js. */
+/* Customized for the ABA Routing Transit Validator dark theme. */
 
-.str { color: #2A00FF; }
-.kwd { color: #7F0055; font-weight:bold; }
-.com { color: #3F5FBF; }
-.typ { color: #606; }
-.lit { color: #066; }
-.pun { color: #660; }
-.pln { color: #000; }
-.tag { color: #008; }
-.atn { color: #606; }
-.atv { color: #080; }
-.dec { color: #606; }
+.str { color: #A8D98D; }                    /* Strings */
+.kwd { color: #FF36B5; font-weight: bold; } /* Keywords */
+.com { color: #B0B0B0; }                    /* Regular Java comments */
+.doc { color: #A3BE8C; }                    /* Javadoc comments */
+.typ { color: #D65CFF; }                    /* Types and class names */
+.lit { color: #7DD3E8; }                    /* Numeric literals */
+.pun { color: #E6D85A; }                    /* Punctuation */
+.pln { color: #F2F2F2; }                    /* Ordinary identifiers */
+
+.tag { color: #D65CFF; }
+.atn { color: #E6D85A; }
+.atv { color: #A8D98D; }
+.dec { color: #D65CFF; }

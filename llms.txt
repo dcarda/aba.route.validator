@@ -6,44 +6,56 @@
 
 ## Contribute
 
-- [Contribute](http://danielcarda.net/contribute.html.md)
+- [Contributing](https://danielcarda.net/contribute.html.md)
 
 ## Project Links
 
-- [Copyright and License](http://danielcarda.net/copyright.html.md)
-- [ABA Routing Validator](http://danielcarda.net/index.html.md)
+- [Copyright](https://danielcarda.net/copyright.html.md)
+- [ABA Routing Validator](https://danielcarda.net/index.html.md)
 
-## Developer Reports
+## Coverage & Testing
 
-- [Checkstyle Results](http://danielcarda.net/checkstyle.html.md)
-- [JavaNCSS Metric Results](http://danielcarda.net/javancss.html.md)
-- [JDepend Report Metrics](http://danielcarda.net/jdepend-report.html.md)
-- [CPD Results](http://danielcarda.net/cpd.html.md)
-- [PMD Results](http://danielcarda.net/pmd.html.md)
-- [SpotBugs Bug Detector Report](http://danielcarda.net/spotbugs.html.md)
-- [Surefire Report](http://danielcarda.net/surefire.html.md)
-- [Tag List report](http://danielcarda.net/taglist.html.md)
-- [Dependency Updates Report](http://danielcarda.net/dependency-updates-report.html.md)
-- [Plugin Updates Report](http://danielcarda.net/plugin-updates-report.html.md)
-- [Property Updates Report](http://danielcarda.net/property-updates-report.html.md)
-- [Change Log Report](http://danielcarda.net/changelog.html.md)
-- [File Activity Report](http://danielcarda.net/file-activity.html.md)
-- [Developer Activity Report](http://danielcarda.net/dev-activity.html.md)
+- [Surefire Report](https://danielcarda.net/surefire.html.md)
+
+## Documentation
+
+- [JavaNCSS Metric Results](https://danielcarda.net/javancss.html.md)
+- [Tag List report](https://danielcarda.net/taglist.html.md)
 
 ## Project Information
 
-- [Project Summary](http://danielcarda.net/summary.html.md)
-- [Project Dependencies](http://danielcarda.net/dependencies.html.md)
-- [Maven Coordinates](http://danielcarda.net/dependency-info.html.md)
-- [Project Dependency Management](http://danielcarda.net/dependency-management.html.md)
-- [Dependency Convergence](http://danielcarda.net/dependency-convergence.html.md)
-- [Project Licenses](http://danielcarda.net/licenses.html.md)
-- [Project Plugins](http://danielcarda.net/plugins.html.md)
-- [Project Plugin Management](http://danielcarda.net/plugin-management.html.md)
-- [Project Team](http://danielcarda.net/team.html.md)
-- [Third Parties](http://danielcarda.net/third-party-report.html.md)
+- [Project Summary](https://danielcarda.net/summary.html.md)
+- [Project Dependencies](https://danielcarda.net/dependencies.html.md)
+- [Maven Coordinates](https://danielcarda.net/dependency-info.html.md)
+- [Project Dependency Management](https://danielcarda.net/dependency-management.html.md)
+- [Dependency Convergence](https://danielcarda.net/dependency-convergence.html.md)
+- [Project Licenses](https://danielcarda.net/licenses.html.md)
+- [Project Plugins](https://danielcarda.net/plugins.html.md)
+- [Project Plugin Management](https://danielcarda.net/plugin-management.html.md)
+- [Project Team](https://danielcarda.net/team.html.md)
+- [Third Parties](https://danielcarda.net/third-party-report.html.md)
+
+## Code Quality
+
+- [Checkstyle Results](https://danielcarda.net/checkstyle.html.md)
+- [CPD Results](https://danielcarda.net/cpd.html.md)
+- [PMD Results](https://danielcarda.net/pmd.html.md)
+- [SpotBugs Bug Detector Report](https://danielcarda.net/spotbugs.html.md)
+
+## Project Metrics
+
+- [JDepend Report Metrics](https://danielcarda.net/jdepend-report.html.md)
+- [Change Log Report](https://danielcarda.net/changelog.html.md)
+- [File Activity Report](https://danielcarda.net/file-activity.html.md)
+- [Developer Activity Report](https://danielcarda.net/dev-activity.html.md)
+
+## Dependency & Plugin Updates
+
+- [Dependency Updates Report](https://danielcarda.net/dependency-updates-report.html.md)
+- [Plugin Updates Report](https://danielcarda.net/plugin-updates-report.html.md)
+- [Property Updates Report](https://danielcarda.net/property-updates-report.html.md)
 
 ## Other
 
-- [Project Information](http://danielcarda.net/project-info.html.md)
-- [Generated Reports](http://danielcarda.net/project-reports.html.md)
+- [Project Information](https://danielcarda.net/project-info.html.md)
+- [Generated Reports](https://danielcarda.net/project-reports.html.md)

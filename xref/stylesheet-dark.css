@@ -1,0 +1,1071 @@
+/* Javadoc style sheet */
+/*
+Overall document style
+*/
+
+@import url('resources/fonts/dejavu.css');
+
+body {
+    background-color:#ffffff;
+    color:#353833;
+    font-family:'DejaVu Sans', Arial, Helvetica, sans-serif;
+    font-size:14px;
+    margin:0;
+}
+a:link, a:visited {
+    text-decoration:none;
+    color:#4A6782;
+}
+a:hover, a:focus {
+    text-decoration:none;
+    color:#bb7a2a;
+}
+a:active {
+    text-decoration:none;
+    color:#4A6782;
+}
+a[name] {
+    color:#353833;
+}
+a[name]:hover {
+    text-decoration:none;
+    color:#353833;
+}
+pre {
+    font-family:'DejaVu Sans Mono', monospace;
+    font-size:14px;
+}
+h1 {
+    font-size:20px;
+}
+h2 {
+    font-size:18px;
+}
+h3 {
+    font-size:16px;
+    font-style:italic;
+}
+h4 {
+    font-size:13px;
+}
+h5 {
+    font-size:12px;
+}
+h6 {
+    font-size:11px;
+}
+ul {
+    list-style-type:disc;
+}
+code, tt {
+    font-family:'DejaVu Sans Mono', monospace;
+    font-size:14px;
+    padding-top:4px;
+    margin-top:8px;
+    line-height:1.4em;
+}
+dt code {
+    font-family:'DejaVu Sans Mono', monospace;
+    font-size:14px;
+    padding-top:4px;
+}
+table tr td dt code {
+    font-family:'DejaVu Sans Mono', monospace;
+    font-size:14px;
+    vertical-align:top;
+    padding-top:4px;
+}
+sup {
+    font-size:8px;
+}
+/*
+Document title and Copyright styles
+*/
+.clear {
+    clear:both;
+    height:0px;
+    overflow:hidden;
+}
+.aboutLanguage {
+    float:right;
+    padding:0px 21px;
+    font-size:11px;
+    z-index:200;
+    margin-top:-9px;
+}
+.legalCopy {
+    margin-left:.5em;
+}
+.bar a, .bar a:link, .bar a:visited, .bar a:active {
+    color:#FFFFFF;
+    text-decoration:none;
+}
+.bar a:hover, .bar a:focus {
+    color:#bb7a2a;
+}
+.tab {
+    background-color:#0066FF;
+    color:#ffffff;
+    padding:8px;
+    width:5em;
+    font-weight:bold;
+}
+/*
+Navigation bar styles
+*/
+.bar {
+    background-color:#4D7A97;
+    color:#FFFFFF;
+    padding:.8em .5em .4em .8em;
+    height:auto;/*height:1.8em;*/
+    font-size:11px;
+    margin:0;
+}
+.topNav {
+    background-color:#4D7A97;
+    color:#FFFFFF;
+    float:left;
+    padding:0;
+    width:100%;
+    clear:right;
+    height:2.8em;
+    padding-top:10px;
+    overflow:hidden;
+    font-size:12px; 
+}
+.bottomNav {
+    margin-top:10px;
+    background-color:#4D7A97;
+    color:#FFFFFF;
+    float:left;
+    padding:0;
+    width:100%;
+    clear:right;
+    height:2.8em;
+    padding-top:10px;
+    overflow:hidden;
+    font-size:12px;
+}
+.subNav {
+    background-color:#dee3e9;
+    float:left;
+    width:100%;
+    overflow:hidden;
+    font-size:12px;
+}
+.subNav div {
+    clear:left;
+    float:left;
+    padding:0 0 5px 6px;
+    text-transform:uppercase;
+}
+ul.navList, ul.subNavList {
+    float:left;
+    margin:0 25px 0 0;
+    padding:0;
+}
+ul.navList li{
+    list-style:none;
+    float:left;
+    padding: 5px 6px;
+    text-transform:uppercase;
+}
+ul.subNavList li{
+    list-style:none;
+    float:left;
+}
+.topNav a:link, .topNav a:active, .topNav a:visited, .bottomNav a:link, .bottomNav a:active, .bottomNav a:visited {
+    color:#FFFFFF;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+.topNav a:hover, .bottomNav a:hover {
+    text-decoration:none;
+    color:#bb7a2a;
+    text-transform:uppercase;
+}
+.navBarCell1Rev {
+    background-color:#F8981D;
+    color:#253441;
+    margin: auto 5px;
+}
+.skipNav {
+    position:absolute;
+    top:auto;
+    left:-9999px;
+    overflow:hidden;
+}
+/*
+Page header and footer styles
+*/
+.header, .footer {
+    clear:both;
+    margin:0 20px;
+    padding:5px 0 0 0;
+}
+.indexHeader {
+    margin:10px;
+    position:relative;
+}
+.indexHeader span{
+    margin-right:15px;
+}
+.indexHeader h1 {
+    font-size:13px;
+}
+.title {
+    color:#2c4557;
+    margin:10px 0;
+}
+.subTitle {
+    margin:5px 0 0 0;
+}
+.header ul {
+    margin:0 0 15px 0;
+    padding:0;
+}
+.footer ul {
+    margin:20px 0 5px 0;
+}
+.header ul li, .footer ul li {
+    list-style:none;
+    font-size:13px;
+}
+/*
+Heading styles
+*/
+div.details ul.blockList ul.blockList ul.blockList li.blockList h4, div.details ul.blockList ul.blockList ul.blockListLast li.blockList h4 {
+    background-color:#dee3e9;
+    border:1px solid #d0d9e0;
+    margin:0 0 6px -8px;
+    padding:7px 5px;
+}
+ul.blockList ul.blockList ul.blockList li.blockList h3 {
+    background-color:#dee3e9;
+    border:1px solid #d0d9e0;
+    margin:0 0 6px -8px;
+    padding:7px 5px;
+}
+ul.blockList ul.blockList li.blockList h3 {
+    padding:0;
+    margin:15px 0;
+}
+ul.blockList li.blockList h2 {
+    padding:0px 0 20px 0;
+}
+/*
+Page layout container styles
+*/
+.contentContainer, .sourceContainer, .classUseContainer, .serializedFormContainer, .constantValuesContainer {
+    clear:both;
+    padding:10px 20px;
+    position:relative;
+}
+.indexContainer {
+    margin:10px;
+    position:relative;
+    font-size:12px;
+}
+.indexContainer h2 {
+    font-size:13px;
+    padding:0 0 3px 0;
+}
+.indexContainer ul {
+    margin:0;
+    padding:0;
+}
+.indexContainer ul li {
+    list-style:none;
+    padding-top:2px;
+}
+.contentContainer .description dl dt, .contentContainer .details dl dt, .serializedFormContainer dl dt {
+    font-size:12px;
+    font-weight:bold;
+    margin:10px 0 0 0;
+    color:#4E4E4E;
+}
+.contentContainer .description dl dd, .contentContainer .details dl dd, .serializedFormContainer dl dd {
+    margin:5px 0 10px 0px;
+    font-size:14px;
+    font-family:'DejaVu Sans Mono',monospace;
+}
+.serializedFormContainer dl.nameValue dt {
+    margin-left:1px;
+    font-size:1.1em;
+    display:inline;
+    font-weight:bold;
+}
+.serializedFormContainer dl.nameValue dd {
+    margin:0 0 0 1px;
+    font-size:1.1em;
+    display:inline;
+}
+/*
+List styles
+*/
+ul.horizontal li {
+    display:inline;
+    font-size:0.9em;
+}
+ul.inheritance {
+    margin:0;
+    padding:0;
+}
+ul.inheritance li {
+    display:inline;
+    list-style:none;
+}
+ul.inheritance li ul.inheritance {
+    margin-left:15px;
+    padding-left:15px;
+    padding-top:1px;
+}
+ul.blockList, ul.blockListLast {
+    margin:10px 0 10px 0;
+    padding:0;
+}
+ul.blockList li.blockList, ul.blockListLast li.blockList {
+    list-style:none;
+    margin-bottom:15px;
+    line-height:1.4;
+}
+ul.blockList ul.blockList li.blockList, ul.blockList ul.blockListLast li.blockList {
+    padding:0px 20px 5px 10px;
+    border:1px solid #ededed; 
+    background-color:#f8f8f8;
+}
+ul.blockList ul.blockList ul.blockList li.blockList, ul.blockList ul.blockList ul.blockListLast li.blockList {
+    padding:0 0 5px 8px;
+    background-color:#ffffff;
+    border:none;
+}
+ul.blockList ul.blockList ul.blockList ul.blockList li.blockList {
+    margin-left:0;
+    padding-left:0;
+    padding-bottom:15px;
+    border:none;
+}
+ul.blockList ul.blockList ul.blockList ul.blockList li.blockListLast {
+    list-style:none;
+    border-bottom:none;
+    padding-bottom:0;
+}
+table tr td dl, table tr td dl dt, table tr td dl dd {
+    margin-top:0;
+    margin-bottom:1px;
+}
+/*
+Table styles
+*/
+.overviewSummary, .memberSummary, .typeSummary, .useSummary, .constantsSummary, .deprecatedSummary {
+    width:100%;
+    border-left:1px solid #EEE; 
+    border-right:1px solid #EEE; 
+    border-bottom:1px solid #EEE; 
+}
+.overviewSummary, .memberSummary  {
+    padding:0px;
+}
+.overviewSummary caption, .memberSummary caption, .typeSummary caption,
+.useSummary caption, .constantsSummary caption, .deprecatedSummary caption {
+    position:relative;
+    text-align:left;
+    background-repeat:no-repeat;
+    color:#253441;
+    font-weight:bold;
+    clear:none;
+    overflow:hidden;
+    padding:0px;
+    padding-top:10px;
+    padding-left:1px;
+    margin:0px;
+    white-space:pre;
+}
+.overviewSummary caption a:link, .memberSummary caption a:link, .typeSummary caption a:link,
+.useSummary caption a:link, .constantsSummary caption a:link, .deprecatedSummary caption a:link,
+.overviewSummary caption a:hover, .memberSummary caption a:hover, .typeSummary caption a:hover,
+.useSummary caption a:hover, .constantsSummary caption a:hover, .deprecatedSummary caption a:hover,
+.overviewSummary caption a:active, .memberSummary caption a:active, .typeSummary caption a:active,
+.useSummary caption a:active, .constantsSummary caption a:active, .deprecatedSummary caption a:active,
+.overviewSummary caption a:visited, .memberSummary caption a:visited, .typeSummary caption a:visited,
+.useSummary caption a:visited, .constantsSummary caption a:visited, .deprecatedSummary caption a:visited {
+    color:#FFFFFF;
+}
+.overviewSummary caption span, .memberSummary caption span, .typeSummary caption span,
+.useSummary caption span, .constantsSummary caption span, .deprecatedSummary caption span {
+    white-space:nowrap;
+    padding-top:5px;
+    padding-left:12px;
+    padding-right:12px;
+    padding-bottom:7px;
+    display:inline-block;
+    float:left;
+    background-color:#F8981D;
+    border: none;
+    height:16px;
+}
+.memberSummary caption span.activeTableTab span {
+    white-space:nowrap;
+    padding-top:5px;
+    padding-left:12px;
+    padding-right:12px;
+    margin-right:3px;
+    display:inline-block;
+    float:left;
+    background-color:#F8981D;
+    height:16px;
+}
+.memberSummary caption span.tableTab span {
+    white-space:nowrap;
+    padding-top:5px;
+    padding-left:12px;
+    padding-right:12px;
+    margin-right:3px;
+    display:inline-block;
+    float:left;
+    background-color:#4D7A97;
+    height:16px;
+}
+.memberSummary caption span.tableTab, .memberSummary caption span.activeTableTab {
+    padding-top:0px;
+    padding-left:0px;
+    padding-right:0px;
+    background-image:none;
+    float:none;
+    display:inline;
+}
+.overviewSummary .tabEnd, .memberSummary .tabEnd, .typeSummary .tabEnd,
+.useSummary .tabEnd, .constantsSummary .tabEnd, .deprecatedSummary .tabEnd {
+    display:none;
+    width:5px;
+    position:relative;
+    float:left;
+    background-color:#F8981D;
+}
+.memberSummary .activeTableTab .tabEnd {
+    display:none;
+    width:5px;
+    margin-right:3px;
+    position:relative; 
+    float:left;
+    background-color:#F8981D;
+}
+.memberSummary .tableTab .tabEnd {
+    display:none;
+    width:5px;
+    margin-right:3px;
+    position:relative;
+    background-color:#4D7A97;
+    float:left;
+
+}
+.overviewSummary td, .memberSummary td, .typeSummary td,
+.useSummary td, .constantsSummary td, .deprecatedSummary td {
+    text-align:left;
+    padding:0px 0px 12px 10px;
+}
+th.colOne, th.colFirst, th.colLast, .useSummary th, .constantsSummary th,
+td.colOne, td.colFirst, td.colLast, .useSummary td, .constantsSummary td{
+    vertical-align:top;
+    padding-right:0px;
+    padding-top:8px;
+    padding-bottom:3px;
+}
+th.colFirst, th.colLast, th.colOne, .constantsSummary th {
+    background:#dee3e9;
+    text-align:left;
+    padding:8px 3px 3px 7px;
+}
+td.colFirst, th.colFirst {
+    white-space:nowrap;
+    font-size:13px;
+}
+td.colLast, th.colLast {
+    font-size:13px;
+}
+td.colOne, th.colOne {
+    font-size:13px;
+}
+.overviewSummary td.colFirst, .overviewSummary th.colFirst,
+.useSummary td.colFirst, .useSummary th.colFirst,
+.overviewSummary td.colOne, .overviewSummary th.colOne,
+.memberSummary td.colFirst, .memberSummary th.colFirst,
+.memberSummary td.colOne, .memberSummary th.colOne,
+.typeSummary td.colFirst{
+    width:25%;
+    vertical-align:top;
+}
+td.colOne a:link, td.colOne a:active, td.colOne a:visited, td.colOne a:hover, td.colFirst a:link, td.colFirst a:active, td.colFirst a:visited, td.colFirst a:hover, td.colLast a:link, td.colLast a:active, td.colLast a:visited, td.colLast a:hover, .constantValuesContainer td a:link, .constantValuesContainer td a:active, .constantValuesContainer td a:visited, .constantValuesContainer td a:hover {
+    font-weight:bold;
+}
+.tableSubHeadingColor {
+    background-color:#EEEEFF;
+}
+.altColor {
+    background-color:#FFFFFF;
+}
+.rowColor {
+    background-color:#EEEEEF;
+}
+/*
+Content styles
+*/
+.description pre {
+    margin-top:0;
+}
+.deprecatedContent {
+    margin:0;
+    padding:10px 0;
+}
+.docSummary {
+    padding:0;
+}
+
+ul.blockList ul.blockList ul.blockList li.blockList h3 {
+    font-style:normal;
+}
+
+div.block {
+    font-size:14px;
+    font-family:'DejaVu Serif', Georgia, "Times New Roman", Times, serif;
+}
+
+td.colLast div {
+    padding-top:0px;
+}
+
+
+td.colLast a {
+    padding-bottom:3px;
+}
+/*
+Formatting effect styles
+*/
+.sourceLineNo {
+    color:green;
+    padding:0 30px 0 0;
+}
+h1.hidden {
+    visibility:hidden;
+    overflow:hidden;
+    font-size:10px;
+}
+.block {
+    display:block;
+    margin:3px 10px 2px 0px;
+    color:#474747;
+}
+.deprecatedLabel, .descfrmTypeLabel, .memberNameLabel, .memberNameLink,
+.overrideSpecifyLabel, .packageHierarchyLabel, .paramLabel, .returnLabel,
+.seeLabel, .simpleTagLabel, .throwsLabel, .typeNameLabel, .typeNameLink {
+    font-weight:bold;
+}
+.deprecationComment, .emphasizedPhrase, .interfaceName {
+    font-style:italic;
+}
+
+div.block div.block span.deprecationComment, div.block div.block span.emphasizedPhrase,
+div.block div.block span.interfaceName {
+    font-style:normal;
+}
+
+div.contentContainer ul.blockList li.blockList h2{
+    padding-bottom:0px;
+}
+
+/* JXR style sheet */
+a.jxr_linenumber:link {
+    color: #00f;
+}
+
+a.jxr_linenumber:visited {
+    color: #00a;
+}
+
+a.jxr_linenumber:active, a.jxr_linenumber:hover {
+    color: #f30 !important;
+}
+
+em.comment {
+    color: #390;
+}
+
+.string {
+    color: #009;
+}
+
+#overview {
+    padding: 2px;
+    font-size: 90%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+hr {
+    color: #000;
+}
+
+.jxr_comment
+{
+    color: #390;
+}
+
+.jxr_javadoccomment
+{
+    color: #A00;
+}
+
+.jxr_string
+{
+    color: #009;
+}
+
+.jxr_keyword
+{
+    color: #000;
+}
+
+/* ==========================================================================
+   ABA Routing Validator - JXR dark theme
+   Designed to complement the custom Javadoc theme.
+   ========================================================================== */
+
+html,
+body {
+    background-color: #303030;
+    color: #F2F2F2;
+    font-family: "DejaVu Sans", Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a:link,
+a:visited {
+    color: #D65CFF;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #FF36B5;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #D65CFF;
+}
+
+/* JXR source listing */
+pre {
+    background-color: #282828;
+    color: #F2F2F2;
+    font-family: "DejaVu Sans Mono", Consolas, monospace;
+    font-size: 14px;
+    line-height: 1.55;
+    margin: 0;
+    padding: 12px 16px;
+    tab-size: 4;
+}
+
+/* Keep source-line links subdued until hovered. */
+a.jxr_linenumber:link,
+a.jxr_linenumber:visited {
+    color: #858585;
+    display: inline-block;
+    min-width: 3.5em;
+    padding-right: 1.25em;
+    text-align: right;
+    text-decoration: none;
+    user-select: none;
+}
+
+a.jxr_linenumber:hover,
+a.jxr_linenumber:focus {
+    color: #E6D85A !important;
+    text-decoration: none;
+}
+
+a.jxr_linenumber:active {
+    color: #E6D85A !important;
+}
+
+/* JXR syntax highlighting - coordinated with the Javadoc palette. */
+.jxr_keyword {
+    color: #FF36B5;
+    font-weight: 600;
+}
+
+.jxr_comment,
+em.comment {
+    color: #B0B0B0;
+    font-style: italic;
+}
+
+.jxr_javadoccomment {
+    color: #A3BE8C;
+    font-style: italic;
+}
+
+.jxr_string,
+.string {
+    color: #A8D98D;
+}
+
+.jxr_type {
+    color: #D65CFF;
+}
+
+.jxr_field,
+.jxr_method,
+.jxr_variable {
+    color: #F2F2F2;
+}
+
+/* The small JXR navigation/header area. */
+#overview {
+    background-color: #303030;
+    border-bottom: 1px solid #505050;
+    color: #F2F2F2;
+    font-family: "DejaVu Sans", Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    padding: 8px 12px;
+}
+
+#overview a:link,
+#overview a:visited {
+    color: #D65CFF;
+}
+
+#overview a:hover,
+#overview a:focus {
+    color: #FF36B5;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #505050;
+    color: #505050;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #F2F2F2;
+}
+
+table {
+    border-color: #505050;
+}
+
+th {
+    background-color: #383838;
+    color: #F2F2F2;
+}
+
+td {
+    color: #E0E0E0;
+}
+
+#footer {
+    background-color: #303030;
+    border-top: 1px solid #505050;
+    color: #A0A0A0;
+    padding: 8px 12px;
+}
+
+/* Linked type names: purple at rest, pink on hover, yellow on focus. */
+a[name],
+a[name]:link,
+a[name]:visited {
+    color: #D65CFF;
+    text-decoration: none;
+}
+
+a[name]:hover,
+a[name]:active {
+    color: #FF36B5;
+    text-decoration: underline;
+}
+
+a[name]:focus,
+a[name]:focus-visible {
+    color: #D65CFF;
+    outline: 1px solid #E6D85A;
+    outline-offset: 2px;
+    text-decoration: none;
+}
+
+/* Keep keyboard focus visible on other source links as well. */
+a:focus-visible {
+    outline: 1px solid #E6D85A;
+    outline-offset: 2px;
+}
+
+/* ==========================================================================
+   JXR landing / overview pages
+   Bring the overview, package and navigation pages into the same dark theme.
+   ========================================================================== */
+
+/* Main navigation bars */
+.bar,
+.topNav,
+.bottomNav {
+    background-color: #282828;
+    color: #F2F2F2;
+    border-bottom: 1px solid #505050;
+}
+
+.topNav a:link,
+.topNav a:active,
+.topNav a:visited,
+.bottomNav a:link,
+.bottomNav a:active,
+.bottomNav a:visited,
+.bar a:link,
+.bar a:visited,
+.bar a:active {
+    color: #D65CFF;
+}
+
+.topNav a:hover,
+.bottomNav a:hover,
+.bar a:hover,
+.bar a:focus {
+    color: #FF36B5;
+}
+
+/* Secondary navigation strip */
+.subNav {
+    background-color: #383838;
+    color: #D0D0D0;
+    border-bottom: 1px solid #505050;
+}
+
+.subNav a:link,
+.subNav a:visited {
+    color: #D65CFF;
+}
+
+.subNav a:hover,
+.subNav a:focus {
+    color: #FF36B5;
+}
+
+/* Active navigation item and section tabs */
+.navBarCell1Rev,
+.tab,
+.overviewSummary caption span,
+.memberSummary caption span.activeTableTab span,
+.typeSummary caption span,
+.useSummary caption span,
+.constantsSummary caption span,
+.deprecatedSummary caption span {
+    background-color: #D65CFF;
+    color: #282828;
+}
+
+.navBarCell1Rev {
+    border: 0;
+}
+
+.memberSummary caption span.tableTab span {
+    background-color: #505050;
+    color: #F2F2F2;
+}
+
+/* Page headings */
+.title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #F2F2F2;
+}
+
+.subTitle {
+    color: #D0D0D0;
+}
+
+/* Overview and package summary tables */
+.overviewSummary,
+.memberSummary,
+.typeSummary,
+.useSummary,
+.constantsSummary,
+.deprecatedSummary {
+    background-color: #303030;
+    border: 1px solid #505050;
+}
+
+.overviewSummary caption,
+.memberSummary caption,
+.typeSummary caption,
+.useSummary caption,
+.constantsSummary caption,
+.deprecatedSummary caption {
+    background-color: #303030;
+    color: #F2F2F2;
+}
+
+.overviewSummary caption span,
+.memberSummary caption span.activeTableTab span,
+.typeSummary caption span,
+.useSummary caption span,
+.constantsSummary caption span,
+.deprecatedSummary caption span {
+    background-color: #D65CFF;
+    color: #282828;
+}
+
+.memberSummary caption span.tableTab span {
+    background-color: #505050;
+    color: #F2F2F2;
+}
+
+th.colOne,
+th.colFirst,
+th.colLast,
+.useSummary th,
+.constantsSummary th {
+    background: #383838;
+    color: #F2F2F2;
+}
+
+td.colOne,
+td.colFirst,
+td.colLast,
+.useSummary td,
+.constantsSummary td {
+    background-color: #303030;
+    color: #E0E0E0;
+}
+
+.altColor {
+    background-color: #303030;
+}
+
+.rowColor {
+    background-color: #383838;
+}
+
+td.colOne a:link,
+td.colOne a:visited,
+td.colFirst a:link,
+td.colFirst a:visited,
+td.colLast a:link,
+td.colLast a:visited,
+.constantValuesContainer td a:link,
+.constantValuesContainer td a:visited {
+    color: #D65CFF;
+}
+
+td.colOne a:hover,
+td.colFirst a:hover,
+td.colLast a:hover,
+.constantValuesContainer td a:hover {
+    color: #FF36B5;
+}
+
+/* General text and separators */
+body,
+.contentContainer,
+.indexContainer,
+.header,
+.footer {
+    background-color: #303030;
+    color: #F2F2F2;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #505050;
+}
+
+a:focus-visible {
+    outline: 1px solid #E6D85A;
+    outline-offset: 2px;
+}
+
+/* Use the Javadoc light-blue link color throughout JXR.
+   Purple remains reserved for active navigation/section accents. */
+a:link,
+a:visited,
+a:active,
+a[name],
+a[name]:link,
+a[name]:visited {
+    color: #7DD3FC;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a[name]:hover,
+a[name]:active {
+    color: #FF36B5;
+    text-decoration: underline;
+}
+
+/* Navigation links use the same light-blue treatment. */
+.topNav a:link,
+.topNav a:visited,
+.topNav a:active,
+.bottomNav a:link,
+.bottomNav a:visited,
+.bottomNav a:active,
+.bar a:link,
+.bar a:visited,
+.bar a:active,
+.subNav a:link,
+.subNav a:visited {
+    color: #7DD3FC;
+}
+
+.topNav a:hover,
+.bottomNav a:hover,
+.bar a:hover,
+.bar a:focus,
+.subNav a:hover,
+.subNav a:focus {
+    color: #FF36B5;
+}
+
+/* Source line numbers retain their quieter neutral appearance. */
+a.jxr_linenumber:link,
+a.jxr_linenumber:visited {
+    color: #858585;
+}
+
+a.jxr_linenumber:hover,
+a.jxr_linenumber:focus {
+    color: #E6D85A !important;
+}
+
+/* Overview page package links.
+   These selectors are intentionally more specific than the JXR/Javadoc
+   table-link rules so the right-hand overview pane uses the light-blue link
+   color, while the purple active tabs remain unchanged. */
+html body .overviewSummary a:link,
+html body .overviewSummary a:visited,
+html body .overviewSummary a:active,
+html body .typeSummary a:link,
+html body .typeSummary a:visited,
+html body .useSummary a:link,
+html body .useSummary a:visited,
+html body .deprecatedSummary a:link,
+html body .deprecatedSummary a:visited,
+html body .constantsSummary a:link,
+html body .constantsSummary a:visited {
+    color: #7DD3FC !important;
+    text-decoration: none;
+}
+
+html body .overviewSummary a:hover,
+html body .typeSummary a:hover,
+html body .useSummary a:hover,
+html body .deprecatedSummary a:hover,
+html body .constantsSummary a:hover {
+    color: #FF36B5 !important;
+    text-decoration: underline;
+}

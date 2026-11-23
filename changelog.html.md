@@ -1,19 +1,88 @@
 ---
-date_published: 2026-11-17
-date_modified: 2026-11-17
-canonical_url: http://danielcarda.net/changelog.html
+date_published: 2026-11-23
+date_modified: 2026-11-23
+canonical_url: https://danielcarda.net/changelog.html
 ---
 
 # Change Log Report
 
 Total number of changed sets: 1
 
-## Changes between 2026-10-18 and 2026-11-18
+## Changes between 2026-10-24 and 2026-11-24
 
-Total commits: 31  
-Total number of files changed: 223
+Total commits: 56  
+Total number of files changed: 236
 
-Timestamp Author Details 2026-11-17 11:14:25 Daniel Carda <GoneBy2025@CardaTechnologies.com> [README.md](https://github.com/dcarda/aba.route.validator/tree/master/README.md) [v ac5ddc519c3aeda4f26cae24bf7e64b86ec82554](https://github.com/dcarda/aba.route.validator/tree/master/README.md?rev=ac5ddc519c3aeda4f26cae24bf7e64b86ec82554&content-type=text/vnd.viewcvs-markup)  
+Timestamp Author Details 2026-11-22 16:58:00 Daniel Carda <GoneBy2025@CardaTechnologies.com> [src/site/site.xml](https://github.com/dcarda/aba.route.validator/tree/master/src/site/site.xml) [v 3e162b1c3086644bfd4fe1bdab79370c6fe35a45](https://github.com/dcarda/aba.route.validator/tree/master/src/site/site.xml?rev=3e162b1c3086644bfd4fe1bdab79370c6fe35a45&content-type=text/vnd.viewcvs-markup)  
+  
+Fixing keywords at bottom of pages. 2026-11-22 16:16:10 Daniel Carda <GoneBy2025@CardaTechnologies.com> [pom.xml](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml) [v e76c9f97016087a821744d6ee22294c9b84fd012](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml?rev=e76c9f97016087a821744d6ee22294c9b84fd012&content-type=text/vnd.viewcvs-markup)  
+[src/site/resources/xref/stylesheet-dark.css](https://github.com/dcarda/aba.route.validator/tree/master/src/site/resources/xref/stylesheet-dark.css) [v e76c9f97016087a821744d6ee22294c9b84fd012](https://github.com/dcarda/aba.route.validator/tree/master/src/site/resources/xref/stylesheet-dark.css?rev=e76c9f97016087a821744d6ee22294c9b84fd012&content-type=text/vnd.viewcvs-markup)  
+  
+Fixed colors for XRef report. 2026-11-22 11:08:59 Daniel Carda <GoneBy2025@CardaTechnologies.com> [pom.xml](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml) [v 7e0500ede875056f51169eb6b7c85009098e3353](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml?rev=7e0500ede875056f51169eb6b7c85009098e3353&content-type=text/vnd.viewcvs-markup)  
+[src/site/resources/jacoco/prettify-dark.css](https://github.com/dcarda/aba.route.validator/tree/master/src/site/resources/jacoco/prettify-dark.css) [v 7e0500ede875056f51169eb6b7c85009098e3353](https://github.com/dcarda/aba.route.validator/tree/master/src/site/resources/jacoco/prettify-dark.css?rev=7e0500ede875056f51169eb6b7c85009098e3353&content-type=text/vnd.viewcvs-markup)  
+[src/site/resources/jacoco/prettify.js](https://github.com/dcarda/aba.route.validator/tree/master/src/site/resources/jacoco/prettify.js) [v 7e0500ede875056f51169eb6b7c85009098e3353](https://github.com/dcarda/aba.route.validator/tree/master/src/site/resources/jacoco/prettify.js?rev=7e0500ede875056f51169eb6b7c85009098e3353&content-type=text/vnd.viewcvs-markup)  
+  
+Improving JaCoCo colors. 2026-11-21 13:51:34 Daniel Carda <GoneBy2025@CardaTechnologies.com> [pom.xml](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml) [v c58e03e3191c77b366c08bd503113b4258db53e6](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml?rev=c58e03e3191c77b366c08bd503113b4258db53e6&content-type=text/vnd.viewcvs-markup)  
+  
+Test 2026-11-21 13:47:03 Daniel Carda <GoneBy2025@CardaTechnologies.com> [pom.xml](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml) [v 5b3622bbc71bd1eee4591ea7c21bbab3611cffcb](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml?rev=5b3622bbc71bd1eee4591ea7c21bbab3611cffcb&content-type=text/vnd.viewcvs-markup)  
+  
+Test 2026-11-21 13:31:38 Daniel Carda <GoneBy2025@CardaTechnologies.com> [buildIt.sh](https://github.com/dcarda/aba.route.validator/tree/master/buildIt.sh) [v 7e582f5ee94f1dc5694aedb55c90c4c910258bbb](https://github.com/dcarda/aba.route.validator/tree/master/buildIt.sh?rev=7e582f5ee94f1dc5694aedb55c90c4c910258bbb&content-type=text/vnd.viewcvs-markup)  
+  
+Interim Check-In... 2026-11-21 13:29:59 Daniel Carda <GoneBy2025@CardaTechnologies.com> [buildIt.sh](https://github.com/dcarda/aba.route.validator/tree/master/buildIt.sh) [v 8abe55de3371b5eb3ec6a5855c3ea9f2194dae03](https://github.com/dcarda/aba.route.validator/tree/master/buildIt.sh?rev=8abe55de3371b5eb3ec6a5855c3ea9f2194dae03&content-type=text/vnd.viewcvs-markup)  
+  
+Interim Check-In... 2026-11-21 13:27:30 Daniel Carda <GoneBy2025@CardaTechnologies.com> [buildIt.sh](https://github.com/dcarda/aba.route.validator/tree/master/buildIt.sh) [v 4ec40ff6def7634769b0206940af1b2bcbda274d](https://github.com/dcarda/aba.route.validator/tree/master/buildIt.sh?rev=4ec40ff6def7634769b0206940af1b2bcbda274d&content-type=text/vnd.viewcvs-markup)  
+  
+Interim Check-In... 2026-11-21 13:22:11 Daniel Carda <GoneBy2025@CardaTechnologies.com> [buildIt.sh](https://github.com/dcarda/aba.route.validator/tree/master/buildIt.sh) [v 6290468fabec27fad324198c68f4e6c4907d2455](https://github.com/dcarda/aba.route.validator/tree/master/buildIt.sh?rev=6290468fabec27fad324198c68f4e6c4907d2455&content-type=text/vnd.viewcvs-markup)  
+  
+Interim Check-In... 2026-11-21 12:55:01 Daniel Carda <GoneBy2025@CardaTechnologies.com> [README.md](https://github.com/dcarda/aba.route.validator/tree/master/README.md) [v 22735e839190a2dc7127fc6b6615eac6afd7a40f](https://github.com/dcarda/aba.route.validator/tree/master/README.md?rev=22735e839190a2dc7127fc6b6615eac6afd7a40f&content-type=text/vnd.viewcvs-markup)  
+  
+Updating hyperlinks. 2026-11-21 12:41:55 Daniel Carda <GoneBy2025@CardaTechnologies.com> [README.md](https://github.com/dcarda/aba.route.validator/tree/master/README.md) [v b1f6d1fedcf6917b0f81ae132105c8caf118e965](https://github.com/dcarda/aba.route.validator/tree/master/README.md?rev=b1f6d1fedcf6917b0f81ae132105c8caf118e965&content-type=text/vnd.viewcvs-markup)  
+  
+Updating hyperlinks. 2026-11-21 12:09:21 Daniel Carda <GoneBy2025@CardaTechnologies.com> [buildIt.sh](https://github.com/dcarda/aba.route.validator/tree/master/buildIt.sh) [v 20f2aebea4bb55056ee996d2dc2287e30ce5d0cd](https://github.com/dcarda/aba.route.validator/tree/master/buildIt.sh?rev=20f2aebea4bb55056ee996d2dc2287e30ce5d0cd&content-type=text/vnd.viewcvs-markup)  
+[src/site/site.xml](https://github.com/dcarda/aba.route.validator/tree/master/src/site/site.xml) [v 20f2aebea4bb55056ee996d2dc2287e30ce5d0cd](https://github.com/dcarda/aba.route.validator/tree/master/src/site/site.xml?rev=20f2aebea4bb55056ee996d2dc2287e30ce5d0cd&content-type=text/vnd.viewcvs-markup)  
+  
+Improving the left menu. 2026-11-20 17:12:50 Daniel Carda <GoneBy2025@CardaTechnologies.com> [src/site/resources/jacoco/report.css](https://github.com/dcarda/aba.route.validator/tree/master/src/site/resources/jacoco/report.css) [v 684db258aff70abcf1e4a5c30809ada087f5ab87](https://github.com/dcarda/aba.route.validator/tree/master/src/site/resources/jacoco/report.css?rev=684db258aff70abcf1e4a5c30809ada087f5ab87&content-type=text/vnd.viewcvs-markup)  
+  
+Working on the JaCoCo colors. 2026-11-20 16:59:56 Daniel Carda <GoneBy2025@CardaTechnologies.com> [src/site/resources/jacoco/report.css](https://github.com/dcarda/aba.route.validator/tree/master/src/site/resources/jacoco/report.css) [v 9d599200f68adb2977647657b01987cb02aa3790](https://github.com/dcarda/aba.route.validator/tree/master/src/site/resources/jacoco/report.css?rev=9d599200f68adb2977647657b01987cb02aa3790&content-type=text/vnd.viewcvs-markup)  
+  
+Working on the JaCoCo colors. 2026-11-20 16:53:34 Daniel Carda <GoneBy2025@CardaTechnologies.com> [src/site/resources/jacoco/report.css](https://github.com/dcarda/aba.route.validator/tree/master/src/site/resources/jacoco/report.css) [v 768771a99ff58d5faa16e1a966346410ec82ea1a](https://github.com/dcarda/aba.route.validator/tree/master/src/site/resources/jacoco/report.css?rev=768771a99ff58d5faa16e1a966346410ec82ea1a&content-type=text/vnd.viewcvs-markup)  
+  
+Working on the JaCoCo colors. 2026-11-20 16:46:38 Daniel Carda <GoneBy2025@CardaTechnologies.com> [pom.xml](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml) [v 9946afa47d8ca0be706bd5ca2f325aac136a3e95](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml?rev=9946afa47d8ca0be706bd5ca2f325aac136a3e95&content-type=text/vnd.viewcvs-markup)  
+[src/site/resources/jacoco/report.css](https://github.com/dcarda/aba.route.validator/tree/master/src/site/resources/jacoco/report.css) [v 9946afa47d8ca0be706bd5ca2f325aac136a3e95](https://github.com/dcarda/aba.route.validator/tree/master/src/site/resources/jacoco/report.css?rev=9946afa47d8ca0be706bd5ca2f325aac136a3e95&content-type=text/vnd.viewcvs-markup)  
+  
+Working on the JaCoCo colors. 2026-11-20 16:19:44 Daniel Carda <GoneBy2025@CardaTechnologies.com> [pom.xml](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml) [v a3d6e47fa6cc73c842687d0b808954531f17025c](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml?rev=a3d6e47fa6cc73c842687d0b808954531f17025c&content-type=text/vnd.viewcvs-markup)  
+[src/main/javadoc/dark-theme-jdk17.css](https://github.com/dcarda/aba.route.validator/tree/master/src/main/javadoc/dark-theme-jdk17.css) [v a3d6e47fa6cc73c842687d0b808954531f17025c](https://github.com/dcarda/aba.route.validator/tree/master/src/main/javadoc/dark-theme-jdk17.css?rev=a3d6e47fa6cc73c842687d0b808954531f17025c&content-type=text/vnd.viewcvs-markup)  
+[src/main/javadoc/dark-theme.css](https://github.com/dcarda/aba.route.validator/tree/master/src/main/javadoc/dark-theme.css) [v a3d6e47fa6cc73c842687d0b808954531f17025c](https://github.com/dcarda/aba.route.validator/tree/master/src/main/javadoc/dark-theme.css?rev=a3d6e47fa6cc73c842687d0b808954531f17025c&content-type=text/vnd.viewcvs-markup)  
+  
+New JavaDoc .css 2026-11-19 21:18:55 Daniel Carda <GoneBy2025@CardaTechnologies.com> [checkstyle/checkstyle-cachefile](https://github.com/dcarda/aba.route.validator/tree/master/checkstyle/checkstyle-cachefile) [v f9b16c393a8b35102ff6bde3a3755c1ca8c8161e](https://github.com/dcarda/aba.route.validator/tree/master/checkstyle/checkstyle-cachefile?rev=f9b16c393a8b35102ff6bde3a3755c1ca8c8161e&content-type=text/vnd.viewcvs-markup)  
+[checkstyle/checkstyle-cachefile-import-control-only](https://github.com/dcarda/aba.route.validator/tree/master/checkstyle/checkstyle-cachefile-import-control-only) [v f9b16c393a8b35102ff6bde3a3755c1ca8c8161e](https://github.com/dcarda/aba.route.validator/tree/master/checkstyle/checkstyle-cachefile-import-control-only?rev=f9b16c393a8b35102ff6bde3a3755c1ca8c8161e&content-type=text/vnd.viewcvs-markup)  
+[checkstyle/checkstyle-cachefile-non-java](https://github.com/dcarda/aba.route.validator/tree/master/checkstyle/checkstyle-cachefile-non-java) [v f9b16c393a8b35102ff6bde3a3755c1ca8c8161e](https://github.com/dcarda/aba.route.validator/tree/master/checkstyle/checkstyle-cachefile-non-java?rev=f9b16c393a8b35102ff6bde3a3755c1ca8c8161e&content-type=text/vnd.viewcvs-markup)  
+[checkstyle/import-control.xml](https://github.com/dcarda/aba.route.validator/tree/master/checkstyle/import-control.xml) [v f9b16c393a8b35102ff6bde3a3755c1ca8c8161e](https://github.com/dcarda/aba.route.validator/tree/master/checkstyle/import-control.xml?rev=f9b16c393a8b35102ff6bde3a3755c1ca8c8161e&content-type=text/vnd.viewcvs-markup)  
+[checkstyle/java-suppressions.xml](https://github.com/dcarda/aba.route.validator/tree/master/checkstyle/java-suppressions.xml) [v f9b16c393a8b35102ff6bde3a3755c1ca8c8161e](https://github.com/dcarda/aba.route.validator/tree/master/checkstyle/java-suppressions.xml?rev=f9b16c393a8b35102ff6bde3a3755c1ca8c8161e&content-type=text/vnd.viewcvs-markup)  
+[src/main/resources/pmd/non-test-rules.xml](https://github.com/dcarda/aba.route.validator/tree/master/src/main/resources/pmd/non-test-rules.xml) [v f9b16c393a8b35102ff6bde3a3755c1ca8c8161e](https://github.com/dcarda/aba.route.validator/tree/master/src/main/resources/pmd/non-test-rules.xml?rev=f9b16c393a8b35102ff6bde3a3755c1ca8c8161e&content-type=text/vnd.viewcvs-markup)  
+[src/main/resources/pmd/standard-rules.xml](https://github.com/dcarda/aba.route.validator/tree/master/src/main/resources/pmd/standard-rules.xml) [v f9b16c393a8b35102ff6bde3a3755c1ca8c8161e](https://github.com/dcarda/aba.route.validator/tree/master/src/main/resources/pmd/standard-rules.xml?rev=f9b16c393a8b35102ff6bde3a3755c1ca8c8161e&content-type=text/vnd.viewcvs-markup)  
+[src/site/site.xml](https://github.com/dcarda/aba.route.validator/tree/master/src/site/site.xml) [v f9b16c393a8b35102ff6bde3a3755c1ca8c8161e](https://github.com/dcarda/aba.route.validator/tree/master/src/site/site.xml?rev=f9b16c393a8b35102ff6bde3a3755c1ca8c8161e&content-type=text/vnd.viewcvs-markup)  
+[src/test/resources/checkstyle/checkstyle-combined.xml](https://github.com/dcarda/aba.route.validator/tree/master/src/test/resources/checkstyle/checkstyle-combined.xml) [v f9b16c393a8b35102ff6bde3a3755c1ca8c8161e](https://github.com/dcarda/aba.route.validator/tree/master/src/test/resources/checkstyle/checkstyle-combined.xml?rev=f9b16c393a8b35102ff6bde3a3755c1ca8c8161e&content-type=text/vnd.viewcvs-markup)  
+[src/test/resources/checkstyle/checkstyle-non-java.xml](https://github.com/dcarda/aba.route.validator/tree/master/src/test/resources/checkstyle/checkstyle-non-java.xml) [v f9b16c393a8b35102ff6bde3a3755c1ca8c8161e](https://github.com/dcarda/aba.route.validator/tree/master/src/test/resources/checkstyle/checkstyle-non-java.xml?rev=f9b16c393a8b35102ff6bde3a3755c1ca8c8161e&content-type=text/vnd.viewcvs-markup)  
+[src/test/resources/checkstyle/checkstyle-report-non-java.xml](https://github.com/dcarda/aba.route.validator/tree/master/src/test/resources/checkstyle/checkstyle-report-non-java.xml) [v f9b16c393a8b35102ff6bde3a3755c1ca8c8161e](https://github.com/dcarda/aba.route.validator/tree/master/src/test/resources/checkstyle/checkstyle-report-non-java.xml?rev=f9b16c393a8b35102ff6bde3a3755c1ca8c8161e&content-type=text/vnd.viewcvs-markup)  
+[src/test/resources/checkstyle/import-control.xml](https://github.com/dcarda/aba.route.validator/tree/master/src/test/resources/checkstyle/import-control.xml) [v f9b16c393a8b35102ff6bde3a3755c1ca8c8161e](https://github.com/dcarda/aba.route.validator/tree/master/src/test/resources/checkstyle/import-control.xml?rev=f9b16c393a8b35102ff6bde3a3755c1ca8c8161e&content-type=text/vnd.viewcvs-markup)  
+  
+Interim Check-In... 2026-11-19 21:18:35 Daniel Carda <GoneBy2025@CardaTechnologies.com> [pom.xml](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml) [v 42989c98b31377833c5aa0b8f3858a4ae8283935](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml?rev=42989c98b31377833c5aa0b8f3858a4ae8283935&content-type=text/vnd.viewcvs-markup)  
+  
+Interim Check-In... 2026-11-19 20:48:14 Daniel Carda <GoneBy2025@CardaTechnologies.com> [pom.xml](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml) [v dd6cd434b6acd9ce4f80cef11ab0e8092e4f212b](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml?rev=dd6cd434b6acd9ce4f80cef11ab0e8092e4f212b&content-type=text/vnd.viewcvs-markup)  
+  
+Interim Check-In... 2026-11-17 22:25:19 Daniel Carda <GoneBy2025@CardaTechnologies.com> [pom.xml](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml) [v 1016d010a2dae684fb62c4a64894677a56f7fbd1](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml?rev=1016d010a2dae684fb62c4a64894677a56f7fbd1&content-type=text/vnd.viewcvs-markup)  
+  
+Getting closer 2026-11-17 18:51:50 Daniel Carda <GoneBy2025@CardaTechnologies.com> [pom.xml](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml) [v 0593bc4ffbd71269e40d805d373beb2f68989a40](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml?rev=0593bc4ffbd71269e40d805d373beb2f68989a40&content-type=text/vnd.viewcvs-markup)  
+  
+Getting closer. 2026-11-17 15:16:38 Daniel Carda <GoneBy2025@CardaTechnologies.com> [pom.xml](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml) [v 65e52c218d0c3d69f799a99d015a272a5bd101c6](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml?rev=65e52c218d0c3d69f799a99d015a272a5bd101c6&content-type=text/vnd.viewcvs-markup)  
+  
+Interim Check-In... 2026-11-17 15:09:22 Daniel Carda <GoneBy2025@CardaTechnologies.com> [pom.xml](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml) [v 81ac2e7e320d3e4953408cb82986edc1fa79129e](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml?rev=81ac2e7e320d3e4953408cb82986edc1fa79129e&content-type=text/vnd.viewcvs-markup)  
+  
+Interim Check-In... 2026-11-17 13:45:11 Daniel Carda <GoneBy2025@CardaTechnologies.com> [README.md](https://github.com/dcarda/aba.route.validator/tree/master/README.md) [v 24665b2be1d01333b8abf44d20017c1d732a09a9](https://github.com/dcarda/aba.route.validator/tree/master/README.md?rev=24665b2be1d01333b8abf44d20017c1d732a09a9&content-type=text/vnd.viewcvs-markup)  
+[pom.xml](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml) [v 24665b2be1d01333b8abf44d20017c1d732a09a9](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml?rev=24665b2be1d01333b8abf44d20017c1d732a09a9&content-type=text/vnd.viewcvs-markup)  
+  
+Interim Check-In... 2026-11-17 11:14:25 Daniel Carda <GoneBy2025@CardaTechnologies.com> [README.md](https://github.com/dcarda/aba.route.validator/tree/master/README.md) [v ac5ddc519c3aeda4f26cae24bf7e64b86ec82554](https://github.com/dcarda/aba.route.validator/tree/master/README.md?rev=ac5ddc519c3aeda4f26cae24bf7e64b86ec82554&content-type=text/vnd.viewcvs-markup)  
   
 Interim Check-In... 2026-11-16 23:07:24 Daniel Carda <GoneBy2025@CardaTechnologies.com> [README.md](https://github.com/dcarda/aba.route.validator/tree/master/README.md) [v 427bff7a62dbebdaf2dec63eb22249184a3f3d5d](https://github.com/dcarda/aba.route.validator/tree/master/README.md?rev=427bff7a62dbebdaf2dec63eb22249184a3f3d5d&content-type=text/vnd.viewcvs-markup)  
 [pom.xml](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml) [v 427bff7a62dbebdaf2dec63eb22249184a3f3d5d](https://github.com/dcarda/aba.route.validator/tree/master/pom.xml?rev=427bff7a62dbebdaf2dec63eb22249184a3f3d5d&content-type=text/vnd.viewcvs-markup)  

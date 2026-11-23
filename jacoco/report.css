@@ -1,0 +1,390 @@
+/*
+ * JaCoCo dark theme coordinated with dark-theme-jdk17.css
+ * Palette coordinated with the JavaDoc dark theme:
+ * Page background #303030; surfaces #383838 / #404040; navigation #303050;
+ * text #e0e0e3; links #a0c0f8; hover accent #ffb863.
+ *
+ * JaCoCo 0.8.x report.css override.
+ */
+
+/* -------------------------------------------------------------------------
+   Base typography and page
+   ------------------------------------------------------------------------- */
+
+html,
+body {
+    background-color: #303030;
+    color: #e0e0e3;
+}
+
+body,
+td {
+    font-family: sans-serif;
+    font-size: 10pt;
+}
+
+body {
+    margin: 8px;
+}
+
+h1 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    color: #e0e0e3;
+}
+
+a {
+    color: #a0c0f8;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #a0c0f8;
+}
+
+a:hover,
+a:focus {
+    color: #ffb863;
+    text-decoration: underline;
+}
+
+/* -------------------------------------------------------------------------
+   Breadcrumb and report navigation
+   ------------------------------------------------------------------------- */
+
+.breadcrumb {
+    background-color: #303050;
+    border: #505050 1px solid;
+    color: #e7e0f0;
+    padding: 2px 4px 2px 4px;
+}
+
+.breadcrumb a {
+    color: #a0c0f8;
+}
+
+.breadcrumb a:hover,
+.breadcrumb a:focus {
+    color: #ffb863;
+}
+
+.breadcrumb .info {
+    float: right;
+}
+
+.breadcrumb .info a {
+    margin-left: 8px;
+}
+
+/* Report element icons are supplied by JaCoCo as GIF resources. */
+.el_report {
+    padding-left: 18px;
+    background-image: url(report.gif);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.el_group {
+    padding-left: 18px;
+    background-image: url(group.gif);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.el_bundle {
+    padding-left: 18px;
+    background-image: url(bundle.gif);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.el_package {
+    padding-left: 18px;
+    background-image: url(package.gif);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.el_class {
+    padding-left: 18px;
+    background-image: url(class.gif);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.el_source {
+    padding-left: 18px;
+    background-image: url(source.gif);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.el_method {
+    padding-left: 18px;
+    background-image: url(method.gif);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.el_session {
+    padding-left: 18px;
+    background-image: url(session.gif);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+/* -------------------------------------------------------------------------
+   Source-code view
+   ------------------------------------------------------------------------- */
+
+pre.source {
+    background-color: #383838;
+    border: #505050 1px solid;
+    color: #e0e0e3;
+    font-family: monospace;
+}
+
+pre.source ol {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+pre.source li {
+    border-left: 1px solid #505050;
+    color: #b8b8c0;
+    padding-left: 0;
+}
+
+pre.source a {
+    color: #a0c0f8;
+}
+
+pre.source a:hover,
+pre.source a:focus {
+    color: #ffb863;
+}
+
+/* Coverage states: retain JaCoCo's green / red / yellow semantics. */
+pre.source span.fc {
+    background-color: #a9e3a9;
+    color: #183018;
+}
+
+pre.source span.nc {
+    background-color: #ffa9a9;
+    color: #401010;
+}
+
+pre.source span.pc {
+    background-color: #756022;
+    color: #fff8df;
+}
+
+pre.source span.bfc {
+    background-image: url(branchfc.gif);
+    background-repeat: no-repeat;
+    background-position: 2px center;
+}
+
+pre.source span.bfc:hover {
+    background-color: #249653;
+}
+
+pre.source span.bnc {
+    background-image: url(branchnc.gif);
+    background-repeat: no-repeat;
+    background-position: 2px center;
+}
+
+pre.source span.bnc:hover {
+    background-color: #d13b4d;
+}
+
+pre.source span.bpc {
+    background-image: url(branchpc.gif);
+    background-repeat: no-repeat;
+    background-position: 2px center;
+}
+
+pre.source span.bpc:hover {
+    background-color: #987c32;
+}
+
+/* -------------------------------------------------------------------------
+   Coverage tables
+   ------------------------------------------------------------------------- */
+
+table.coverage {
+    background-color: #383838;
+    color: #e0e0e3;
+    empty-cells: show;
+    border-collapse: collapse;
+}
+
+table.coverage a {
+    color: #a0c0f8;
+}
+
+table.coverage a:hover,
+table.coverage a:focus {
+    color: #ffb863;
+}
+
+table.coverage thead {
+    background-color: #505050;
+    color: #ffffff;
+}
+
+table.coverage thead td {
+    white-space: nowrap;
+    padding: 2px 14px 0 6px;
+    border-bottom: #505050 1px solid;
+}
+
+table.coverage thead td.bar {
+    border-left: #505050 1px solid;
+}
+
+table.coverage thead td.ctr1 {
+    text-align: right;
+    border-left: #505050 1px solid;
+}
+
+table.coverage thead td.ctr2 {
+    text-align: right;
+    padding-left: 2px;
+}
+
+table.coverage thead td.sortable {
+    cursor: pointer;
+    background-image: url(sort.gif);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+table.coverage thead td.up {
+    background-image: url(up.gif);
+}
+
+table.coverage thead td.down {
+    background-image: url(down.gif);
+}
+
+table.coverage tbody tr {
+    background-color: #383838;
+}
+
+table.coverage tbody tr:nth-child(even) {
+    background-color: #303030;
+}
+
+table.coverage tbody td {
+    white-space: nowrap;
+    padding: 2px 6px;
+    border-bottom: #505050 1px solid;
+}
+
+table.coverage tbody tr:hover {
+    background: #484848 !important;
+    color: #ffffff;
+}
+
+table.coverage tbody td.bar {
+    border-left: #505050 1px solid;
+}
+
+table.coverage tbody td.ctr1 {
+    text-align: right;
+    padding-right: 14px;
+    border-left: #505050 1px solid;
+}
+
+table.coverage tbody td.ctr2 {
+    text-align: right;
+    padding-right: 14px;
+    padding-left: 2px;
+}
+
+table.coverage tfoot td {
+    background-color: #303050;
+    color: #ffffff;
+    white-space: nowrap;
+    padding: 2px 6px;
+    border-top: #505050 1px solid;
+}
+
+table.coverage tfoot td.bar {
+    border-left: #505050 1px solid;
+}
+
+table.coverage tfoot td.ctr1 {
+    text-align: right;
+    padding-right: 14px;
+    border-left: #505050 1px solid;
+}
+
+table.coverage tfoot td.ctr2 {
+    text-align: right;
+    padding-right: 14px;
+    padding-left: 2px;
+}
+
+/* -------------------------------------------------------------------------
+   Footer
+   ------------------------------------------------------------------------- */
+
+.footer {
+    margin-top: 20px;
+    border-top: #505050 1px solid;
+    padding-top: 2px;
+    font-size: 8pt;
+    color: #b8b8c0;
+}
+
+.footer a {
+    color: #a0c0f8;
+}
+
+.footer a:hover,
+.footer a:focus {
+    color: #ffb863;
+}
+
+.right {
+    float: right;
+}
+
+/* -------------------------------------------------------------------------
+   Print
+   ------------------------------------------------------------------------- */
+
+@media print {
+    html,
+    body,
+    table.coverage,
+    table.coverage tbody tr,
+    pre.source {
+        background: #fff !important;
+        color: #000 !important;
+    }
+
+    a,
+    a:visited {
+        color: #000 !important;
+        text-decoration: underline;
+    }
+
+    .breadcrumb,
+    table.coverage thead,
+    table.coverage tfoot {
+        background: #eee !important;
+        color: #000 !important;
+    }
+}

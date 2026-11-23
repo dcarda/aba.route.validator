@@ -624,3 +624,448 @@ hr {
     color: #000;
 }
 
+/* ==========================================================================
+   ABA Routing Validator - JXR dark theme
+   Designed to complement the custom Javadoc theme.
+   ========================================================================== */
+
+html,
+body {
+    background-color: #303030;
+    color: #F2F2F2;
+    font-family: "DejaVu Sans", Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a:link,
+a:visited {
+    color: #D65CFF;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #FF36B5;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #D65CFF;
+}
+
+/* JXR source listing */
+pre {
+    background-color: #282828;
+    color: #F2F2F2;
+    font-family: "DejaVu Sans Mono", Consolas, monospace;
+    font-size: 14px;
+    line-height: 1.55;
+    margin: 0;
+    padding: 12px 16px;
+    tab-size: 4;
+}
+
+/* Keep source-line links subdued until hovered. */
+a.jxr_linenumber:link,
+a.jxr_linenumber:visited {
+    color: #858585;
+    display: inline-block;
+    min-width: 3.5em;
+    padding-right: 1.25em;
+    text-align: right;
+    text-decoration: none;
+    user-select: none;
+}
+
+a.jxr_linenumber:hover,
+a.jxr_linenumber:focus {
+    color: #E6D85A !important;
+    text-decoration: none;
+}
+
+a.jxr_linenumber:active {
+    color: #E6D85A !important;
+}
+
+/* JXR syntax highlighting - coordinated with the Javadoc palette. */
+.jxr_keyword {
+    color: #FF36B5;
+    font-weight: 600;
+}
+
+.jxr_comment,
+em.comment {
+    color: #B0B0B0;
+    font-style: italic;
+}
+
+.jxr_javadoccomment {
+    color: #A3BE8C;
+    font-style: italic;
+}
+
+.jxr_string,
+.string {
+    color: #A8D98D;
+}
+
+.jxr_type {
+    color: #D65CFF;
+}
+
+.jxr_field,
+.jxr_method,
+.jxr_variable {
+    color: #F2F2F2;
+}
+
+/* The small JXR navigation/header area. */
+#overview {
+    background-color: #303030;
+    border-bottom: 1px solid #505050;
+    color: #F2F2F2;
+    font-family: "DejaVu Sans", Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    padding: 8px 12px;
+}
+
+#overview a:link,
+#overview a:visited {
+    color: #D65CFF;
+}
+
+#overview a:hover,
+#overview a:focus {
+    color: #FF36B5;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #505050;
+    color: #505050;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #F2F2F2;
+}
+
+table {
+    border-color: #505050;
+}
+
+th {
+    background-color: #383838;
+    color: #F2F2F2;
+}
+
+td {
+    color: #E0E0E0;
+}
+
+#footer {
+    background-color: #303030;
+    border-top: 1px solid #505050;
+    color: #A0A0A0;
+    padding: 8px 12px;
+}
+
+/* Linked type names: purple at rest, pink on hover, yellow on focus. */
+a[name],
+a[name]:link,
+a[name]:visited {
+    color: #D65CFF;
+    text-decoration: none;
+}
+
+a[name]:hover,
+a[name]:active {
+    color: #FF36B5;
+    text-decoration: underline;
+}
+
+a[name]:focus,
+a[name]:focus-visible {
+    color: #D65CFF;
+    outline: 1px solid #E6D85A;
+    outline-offset: 2px;
+    text-decoration: none;
+}
+
+/* Keep keyboard focus visible on other source links as well. */
+a:focus-visible {
+    outline: 1px solid #E6D85A;
+    outline-offset: 2px;
+}
+
+/* ==========================================================================
+   JXR landing / overview pages
+   Bring the overview, package and navigation pages into the same dark theme.
+   ========================================================================== */
+
+/* Main navigation bars */
+.bar,
+.topNav,
+.bottomNav {
+    background-color: #282828;
+    color: #F2F2F2;
+    border-bottom: 1px solid #505050;
+}
+
+.topNav a:link,
+.topNav a:active,
+.topNav a:visited,
+.bottomNav a:link,
+.bottomNav a:active,
+.bottomNav a:visited,
+.bar a:link,
+.bar a:visited,
+.bar a:active {
+    color: #D65CFF;
+}
+
+.topNav a:hover,
+.bottomNav a:hover,
+.bar a:hover,
+.bar a:focus {
+    color: #FF36B5;
+}
+
+/* Secondary navigation strip */
+.subNav {
+    background-color: #383838;
+    color: #D0D0D0;
+    border-bottom: 1px solid #505050;
+}
+
+.subNav a:link,
+.subNav a:visited {
+    color: #D65CFF;
+}
+
+.subNav a:hover,
+.subNav a:focus {
+    color: #FF36B5;
+}
+
+/* Active navigation item and section tabs */
+.navBarCell1Rev,
+.tab,
+.overviewSummary caption span,
+.memberSummary caption span.activeTableTab span,
+.typeSummary caption span,
+.useSummary caption span,
+.constantsSummary caption span,
+.deprecatedSummary caption span {
+    background-color: #D65CFF;
+    color: #282828;
+}
+
+.navBarCell1Rev {
+    border: 0;
+}
+
+.memberSummary caption span.tableTab span {
+    background-color: #505050;
+    color: #F2F2F2;
+}
+
+/* Page headings */
+.title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #F2F2F2;
+}
+
+.subTitle {
+    color: #D0D0D0;
+}
+
+/* Overview and package summary tables */
+.overviewSummary,
+.memberSummary,
+.typeSummary,
+.useSummary,
+.constantsSummary,
+.deprecatedSummary {
+    background-color: #303030;
+    border: 1px solid #505050;
+}
+
+.overviewSummary caption,
+.memberSummary caption,
+.typeSummary caption,
+.useSummary caption,
+.constantsSummary caption,
+.deprecatedSummary caption {
+    background-color: #303030;
+    color: #F2F2F2;
+}
+
+.overviewSummary caption span,
+.memberSummary caption span.activeTableTab span,
+.typeSummary caption span,
+.useSummary caption span,
+.constantsSummary caption span,
+.deprecatedSummary caption span {
+    background-color: #D65CFF;
+    color: #282828;
+}
+
+.memberSummary caption span.tableTab span {
+    background-color: #505050;
+    color: #F2F2F2;
+}
+
+th.colOne,
+th.colFirst,
+th.colLast,
+.useSummary th,
+.constantsSummary th {
+    background: #383838;
+    color: #F2F2F2;
+}
+
+td.colOne,
+td.colFirst,
+td.colLast,
+.useSummary td,
+.constantsSummary td {
+    background-color: #303030;
+    color: #E0E0E0;
+}
+
+.altColor {
+    background-color: #303030;
+}
+
+.rowColor {
+    background-color: #383838;
+}
+
+td.colOne a:link,
+td.colOne a:visited,
+td.colFirst a:link,
+td.colFirst a:visited,
+td.colLast a:link,
+td.colLast a:visited,
+.constantValuesContainer td a:link,
+.constantValuesContainer td a:visited {
+    color: #D65CFF;
+}
+
+td.colOne a:hover,
+td.colFirst a:hover,
+td.colLast a:hover,
+.constantValuesContainer td a:hover {
+    color: #FF36B5;
+}
+
+/* General text and separators */
+body,
+.contentContainer,
+.indexContainer,
+.header,
+.footer {
+    background-color: #303030;
+    color: #F2F2F2;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #505050;
+}
+
+a:focus-visible {
+    outline: 1px solid #E6D85A;
+    outline-offset: 2px;
+}
+
+/* Use the Javadoc light-blue link color throughout JXR.
+   Purple remains reserved for active navigation/section accents. */
+a:link,
+a:visited,
+a:active,
+a[name],
+a[name]:link,
+a[name]:visited {
+    color: #7DD3FC;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a[name]:hover,
+a[name]:active {
+    color: #FF36B5;
+    text-decoration: underline;
+}
+
+/* Navigation links use the same light-blue treatment. */
+.topNav a:link,
+.topNav a:visited,
+.topNav a:active,
+.bottomNav a:link,
+.bottomNav a:visited,
+.bottomNav a:active,
+.bar a:link,
+.bar a:visited,
+.bar a:active,
+.subNav a:link,
+.subNav a:visited {
+    color: #7DD3FC;
+}
+
+.topNav a:hover,
+.bottomNav a:hover,
+.bar a:hover,
+.bar a:focus,
+.subNav a:hover,
+.subNav a:focus {
+    color: #FF36B5;
+}
+
+/* Source line numbers retain their quieter neutral appearance. */
+a.jxr_linenumber:link,
+a.jxr_linenumber:visited {
+    color: #858585;
+}
+
+a.jxr_linenumber:hover,
+a.jxr_linenumber:focus {
+    color: #E6D85A !important;
+}
+
+/* Overview page package links.
+   These selectors are intentionally more specific than the JXR/Javadoc
+   table-link rules so the right-hand overview pane uses the light-blue link
+   color, while the purple active tabs remain unchanged. */
+html body .overviewSummary a:link,
+html body .overviewSummary a:visited,
+html body .overviewSummary a:active,
+html body .typeSummary a:link,
+html body .typeSummary a:visited,
+html body .useSummary a:link,
+html body .useSummary a:visited,
+html body .deprecatedSummary a:link,
+html body .deprecatedSummary a:visited,
+html body .constantsSummary a:link,
+html body .constantsSummary a:visited {
+    color: #7DD3FC !important;
+    text-decoration: none;
+}
+
+html body .overviewSummary a:hover,
+html body .typeSummary a:hover,
+html body .useSummary a:hover,
+html body .deprecatedSummary a:hover,
+html body .constantsSummary a:hover {
+    color: #FF36B5 !important;
+    text-decoration: underline;
+}

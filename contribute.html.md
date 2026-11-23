@@ -1,7 +1,8 @@
 ---
-date_published: 2026-11-17
-date_modified: 2026-11-17
-canonical_url: http://danielcarda.net/contribute.html
+description: Learn how to contribute to the ABA Routing Validator Java library.
+date_published: 2026-11-23
+date_modified: 2026-11-23
+canonical_url: https://danielcarda.net/contribute.html
 ---
 
 # Contribute

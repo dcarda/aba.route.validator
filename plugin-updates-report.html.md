@@ -1,7 +1,7 @@
 ---
-date_published: 2026-11-17
-date_modified: 2026-11-17
-canonical_url: http://danielcarda.net/plugin-updates-report.html
+date_published: 2026-11-23
+date_modified: 2026-11-23
+canonical_url: https://danielcarda.net/plugin-updates-report.html
 ---
 
 # Overview
@@ -14,7 +14,7 @@ This report summarizes newer versions that may be available for your project's v
 |  | # of plugins where the next version available is an incremental version update | 0 |
 |  | # of plugins where the next version available is a minor version update | 3 |
 |  | # of plugins where the next version available is a major version update | 9 |
-|  | # of plugins where a dependencies section containes a dependency with an updated version | 2 |
+|  | # of plugins where a dependencies section containes a dependency with an updated version | 3 |
 
 ## Plugin Management
 
@@ -31,7 +31,7 @@ This report summarizes newer versions that may be available for your project's v
 |  | org.apache.maven.plugins | maven-compiler-plugin | 3.16.0 |  |  |  | **4.0.0-beta-5** |  |
 |  | org.apache.maven.plugins | maven-dependency-plugin | **3.11.0** |  |  |  |  |  |
 |  | org.apache.maven.plugins | maven-deploy-plugin | 3.2.0 |  |  |  | **4.0.0-beta-3** |  |
-|  | org.apache.maven.plugins | maven-enforcer-plugin | **3.7.0** |  |  |  |  |  |
+|  | org.apache.maven.plugins | maven-enforcer-plugin | 3.7.0 |  |  |  |  |  |
 |  | org.apache.maven.plugins | maven-install-plugin | 3.2.0 |  |  |  | **4.0.0-beta-3** |  |
 |  | org.apache.maven.plugins | maven-invoker-plugin | **3.10.1** |  |  |  |  |  |
 |  | org.apache.maven.plugins | maven-jar-plugin | 3.5.1 |  |  |  | **4.0.0-beta-2** |  |
@@ -46,7 +46,7 @@ This report summarizes newer versions that may be available for your project's v
 |  | org.apache.maven.plugins | maven-surefire-report-plugin | **3.6.1** |  |  |  |  |  |
 |  | org.codehaus.mojo | javancss-maven-plugin | **2.1** |  |  |  |  |  |
 |  | org.codehaus.mojo | taglist-maven-plugin | 3.2.3 |  |  | **3.3.0** |  |  |
-|  | org.codehaus.mojo | versions-maven-plugin | 2.23.0 |  |  | **2.25.2** |  |  |
+|  | org.codehaus.mojo | versions-maven-plugin | 2.23.0 |  |  | **2.25.3** |  |  |
 |  | org.jacoco | jacoco-maven-plugin | **0.8.16** |  |  |  |  |  |
 
 ## Plugins
@@ -57,7 +57,7 @@ This report summarizes newer versions that may be available for your project's v
 |  | org.apache.maven.plugins | maven-project-info-reports-plugin | **3.9.0** |  |  |  |  |  |
 |  | org.apache.maven.plugins | maven-scm-plugin | **2.2.1** |  |  |  |  |  |
 |  | org.codehaus.mojo | jdepend-maven-plugin | **2.2.1** |  |  |  |  |  |
-|  | org.codehaus.mojo | license-maven-plugin | 2.7.1 |  |  | **2.9.0** |  |  |
+|  | org.codehaus.mojo | license-maven-plugin | 2.7.1 |  |  | **2.10.0** |  |  |
 
 # Plugin Updates
 
@@ -171,11 +171,11 @@ This report summarizes newer versions that may be available for your project's v
 
 | Status | Group Id | Artifact Id | Current Version | Classifier | Type | Latest Subincremental | Latest Incremental | Latest Minor | Latest Major | Dependency status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  | org.codehaus.mojo | extra-enforcer-rules | 1.12.1 |  | jar |  |  |  |  |
+|  | org.codehaus.mojo | extra-enforcer-rules | 1.12.1 |  | jar |  |  | **1.13.0** |  |
 
 ### Dependency org.codehaus.mojo:extra-enforcer-rules
 
-| Type | jar |
+| Newer versions | **1.13.0** *Latest Minor* |
 | --- | --- |
 
 ## Plugin org.apache.maven.plugins:maven-install-plugin
@@ -312,7 +312,7 @@ This report summarizes newer versions that may be available for your project's v
 
 ## Plugin org.codehaus.mojo:license-maven-plugin
 
-| Newer versions | 2.8.0 **2.9.0** *Latest Minor* |
+| Newer versions | 2.8.0 2.9.0 **2.10.0** *Latest Minor* |
 | --- | --- |
 
 ## Plugin org.codehaus.mojo:taglist-maven-plugin
@@ -322,7 +322,7 @@ This report summarizes newer versions that may be available for your project's v
 
 ## Plugin org.codehaus.mojo:versions-maven-plugin
 
-| Newer versions | 2.24.0 2.25.0 2.25.1 **2.25.2** *Latest Minor* |
+| Newer versions | 2.24.0 2.25.0 2.25.1 2.25.2 **2.25.3** *Latest Minor* |
 | --- | --- |
 
 ## Plugin org.jacoco:jacoco-maven-plugin

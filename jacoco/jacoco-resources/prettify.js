@@ -148,6 +148,8 @@ window['_pr_isIE6'] = function () {
   var PR_KEYWORD = 'kwd';
   /** token style for a comment */
   var PR_COMMENT = 'com';
+  /** token style for a Javadoc comment */
+  var PR_DOC_COMMENT = 'doc';
   /** token style for a type */
   var PR_TYPE = 'typ';
   /** token style for a literal value.  e.g. 1, null, true. */
@@ -990,6 +992,9 @@ window['_pr_isIE6'] = function () {
     }
     if (options['cStyleComments']) {
       fallthroughStylePatterns.push([PR_COMMENT, /^\/\/[^\r\n]*/, null]);
+      // Match Javadoc comments before the general block-comment pattern.
+      fallthroughStylePatterns.push(
+          [PR_DOC_COMMENT, /^\/\*\*[\s\S]*?(?:\*\/|$)/, null]);
       fallthroughStylePatterns.push(
           [PR_COMMENT, /^\/\*[\s\S]*?(?:\*\/|$)/, null]);
     }
