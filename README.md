@@ -58,7 +58,7 @@ an initial check for the numbers authenticity.
 More information about the ABA routing transit number can be found in the Book of Knowledge:
 http://en.wikipedia.org/wiki/Routing_transit_number
 
-## <hr>🚀 Features
+## 🚀 Features
 
 - Validates nine-digit ABA Routing Transit Numbers.
 - Rejects null and blank input.
