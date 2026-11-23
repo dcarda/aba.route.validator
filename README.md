@@ -1,9 +1,9 @@
----
+<!--
 title: ABA Routing Validator
 author: Daniel Carda
 description: A lightweight Java 17 library for validating ABA Routing Transit Numbers using structural, Federal Reserve prefix, and checksum validation.
 keywords: ABA Routing Number, Routing Transit Number, Java Validator, ABA Checksum, Banking Software
----
+-->
 
 # ABA Routing Validator
 
