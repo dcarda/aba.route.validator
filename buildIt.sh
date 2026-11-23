@@ -352,9 +352,9 @@ function release_JarArtifact() {
     #  NOTE
     #  When running the prepare/release for the first time you have to do
     #  it manually.  You need to answer a few questions.
-    #  mvn -P release:clean
-    #  mvn -P release:prepare
-    #  mvn -P release:perform
+    #  mvn -P release release:clean
+    #  mvn -P release release:prepare
+    #  mvn -P release release:perform
     #
 
     #  ────────────────────────────────────────────────────────────────────────
@@ -367,17 +367,20 @@ function release_JarArtifact() {
     echo "   Running the RELEASE : CLEAN"
     echo "───────────────────────────────────────────────────────────────────────"
   #  Clean up the artifacts from the previous build.
-    mvn               \
-        -P release    \
-        --batch-mode  \
-        release:clean
+#    mvn               \
+#        -P release    \
+#        --batch-mode  \
+#        release:clean
+#
+#    # Check results.
+#    if [ $? -ne 0 ]; then
+#        echo
+#        echo "Build Failure: The application build has failed for some reason."
+#        terminationAbnormal
+#    fi
 
-    # Check results.
-    if [ $? -ne 0 ]; then
-        echo
-        echo "Build Failure: The application build has failed for some reason."
-        terminationAbnormal
-    fi
+        # Delete all the artifacts
+        delete_Artifacts
 
     #  ────────────────────────────────────────────────────────────────────────
     echo
