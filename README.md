@@ -43,7 +43,7 @@ Copyright © 2026 Daniel Carda
 - [🤝 Contributing](#contributing)
 
 <a id="overview"></a>
-## <hr>⚡️Overview
+## ⚡️Overview
 
 ABA Routing Validator is a lightweight Java library developed by Carda Technologies, LLC, for validating American Bankers Association (ABA) Routing Transit Numbers.
 
@@ -74,7 +74,7 @@ http://en.wikipedia.org/wiki/Routing_transit_number
 - Lightweight implementation using a static utility class.
 
 <a id="technology-stack"></a>
-## <hr>👨 Technology Stack
+## 👨 Technology Stack
 
 The following software is required to build this project:
 
@@ -84,7 +84,7 @@ The following software is required to build this project:
 |  [![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)](https://maven.apache.org/download.cgi)                          |   3.9.16  | https://maven.apache.org/download.cgi                                          |
 
 <a id="installation"></a>
-## <hr>⚙️ Installation
+## ⚙️ Installation
 
 ### <span style="color: #33ccff;">    Maven
 
@@ -126,7 +126,7 @@ You can find this under: ~/.m2/settings.xml
 You can download artifacts, but only authorized users can publish.
 
 <a id="build-instructions"></a>
-## <hr>🏗️ Build Instructions
+## 🏗️ Build Instructions
 
 The POM actually has several build targets.  
 
@@ -174,7 +174,7 @@ The current list of reports includes:
 The reporting site be located [here](https://dcarda.github.io/aba.route.validator/).
 
 <a id="usage"></a>
-## <hr>🎨 Usage
+## 🎨 Usage
 
 The validator provides a static validation method.
 
@@ -302,12 +302,12 @@ Passing validation does not establish that:
 Additional verification may be required depending on the intended application.
 
 <a id="api-documentation"></a>
-## <hr>📝 API Documentation
+## 📝 API Documentation
 
 See the project Javadocs for complete API documentation.
 
 <a id="copyright-and-license"></a>
-## <hr>⚠️  Copyright and License
+## ⚠️  Copyright and License
 
 This software is free to use for personal, academic, commercial, or corporate projects.
 
@@ -325,7 +325,7 @@ to license your contribution under the Apache license
 version 2.0 to this project.
 
 <a id="about-the-developer"></a>
-## <hr>👋 About the Developer  
+## 👋 About the Developer  
 
 Follow this link to learn more about me:
 
@@ -338,7 +338,7 @@ Follow this link to learn more about me:
 <!--  ───────────────────────────────────────────────────────────────────────────  -->
 
 <a id="contributing"></a>
-## <hr>🙏 Contributing
+## 🙏 Contributing
 Donations are always welcome!  Help me out this this and other projects!
 
 [Show your support!](.github/donate.md)
